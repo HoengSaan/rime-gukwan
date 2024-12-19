@@ -1,10 +1,37 @@
 # 菊韻
 
-本方案是粵語沙田方言之拼音方案，基於分韻廣韻以兼容各地方音(如師讀作si1)同廣州化(如弧讀作wu4)既情況。爲兼容性同方便整理，輸入碼同實際拼音有所不同，但可直接以粵拼輸入。
+**測試階段**
+
+本方案爲Rime中州韻方案，用於輸入粵語沙田方言，拼音基於分韻廣韻以兼容各地方音(如師讀作si1)同廣州化(如弧讀作wu4)既情況。爲兼容性同方便整理，輸入碼同實際拼音有所不同，但可直接以粵拼輸入。
 
 現有字庫根據excel大批量轉換，有不少紕漏，敬請見諒。廣韻之外字庫未完成，目前缺少現代字同粵字，缺少部份白讀音。由於方案竝無詞庫，建議以粵拼詞庫代替之（須去除輸入碼）。
 
 此方案無法兼顧所有粵語方言，亦竝非本方案之目的。目前可以以小欖話（即本方案默認設定）、廣州話（須調整設定）、分韻音（勳小韻除外）輸入。
+
+## 安裝
+
+依賴rime-cantonese（必選，反查八股文用）、rime-kanas（可選，假名用），須安裝方可正常使用。
+
+用家可參攷以下文章，先安裝rime-cantonese，再安裝本方案。
+
+- [Home · rime/rime-cantonese Wiki](https://github.com/rime/rime-cantonese/wiki)（多平臺）
+- [Android 上的 RIME 输入法 trime 同文输入法使用 | Verne in GitHub](https://blog.einverne.info/post/2021/04/use-trime-input-method-rime-on-android.html#安装和基础使用)（Android）
+
+Android亦可選擇小企鵝（fcitx5），但安裝對一般用家來講較爲困難，亦無簡單易明既教程故不列擧。
+
+### 預設方案
+
+方案無法兼顧所有粵語方言，亦竝非本方案之目的。目前可以以菊韻音、小欖話、廣州話、分韻音（勳小韻除外）輸入。其他方音須自行調整轉換規則。刪除行頭井號啓用轉換，行頭鍵入井號停止轉換。若表內無適合規矩請自行增添，方法參考請參攷[SpellingAlgebra · rime/home Wiki](https://github.com/rime/home/wiki/SpellingAlgebra)。
+
+- 古音
+  - `gukwan.schema.yaml` 菊韻音（自用）
+  - `gukwan_fanwan.schema.yaml` 分韻音
+- 今音
+  - `gukwan_siulaam.schema.yaml` 小欖話
+  - `gukwan_siulaamcanton.schema.yaml` 小欖話（廣州音兼容）
+  - `gukwan_canton.schema.yaml` 廣州話
+
+廣州話建議閣下使用[rime/rime-cantonese: Rime Cantonese input schema | 粵語拼音輸入方案](https://github.com/rime/rime-cantonese)。
 
 ## 輸入
 
@@ -17,17 +44,6 @@
 聲調同大多數粵拼輸入法一樣：v爲平、x爲上、q爲去。單擊爲陰聲，雙擊爲陽聲。上陰入同陰平，下陰入同陰去，陽入同陽去。
 
 ※務必閱讀方案文件（即以schema.yaml結尾之文件）※
-
-方案無法兼顧所有粵語方言，亦竝非本方案之目的。目前可以以菊韻音、小欖話、廣州話、分韻音（勳小韻除外）輸入。其他方音須自行調整轉換規則。刪除行頭井號啓用轉換，行頭鍵入井號停止轉換。若表內無適合規矩請自行增添，方法參考請參攷[SpellingAlgebra · rime/home Wiki](https://github.com/rime/home/wiki/SpellingAlgebra)。
-
-#### 預設
-
-- `gukwan.schema.yaml` 菊韻音（自用）
-- `gukwan_standard.schema.yaml` 菊韻音
-- `gukwan_siulaam.schema.yaml` 小欖話
-- `gukwan_siulaamcanton.schema.yaml` 小欖話（廣州音兼容）
-
-廣州話建議閣下使用[rime/rime-cantonese: Rime Cantonese input schema | 粵語拼音輸入方案](https://github.com/rime/rime-cantonese)。
 
 ### 進階用家
 
