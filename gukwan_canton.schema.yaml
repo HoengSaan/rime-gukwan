@@ -2,16 +2,16 @@
 # encoding: utf-8
 
 schema:
-  schema_id: gukwan_fanwan
-  name: 菊韻廣州話
-  version: "1.0b"
+  schema_id: gukwan_canton
+  name: 菊韻——廣州話
+  version: "1.1b"
   author:
     靈帝（Hoengsaan）
   description: |-
     ※請務必閱讀方案文件※
     本方案是粵語沙田方言之拼音方案，基於分韻廣韻以兼容各地方音(如師讀作si1)同廣州化(如弧讀作wu4)既情況。爲兼容性同方便整理，輸入碼同實際拼音有所不同，但可直接以粵拼輸入。
     現有字庫根據excel大批量轉換，有不少紕漏，敬請見諒。廣韻之外字庫未完成，目前缺少不少現代字同粵字。無詞庫，建議以粵拼詞庫代替之（須去除輸入碼）。
-    反查:`粵拼(新) x普音 v倉頡 R假名。聲調可省：v爲平，x爲上，q爲去，單陰雙陽。詳細請至本方案github頁。
+    反查:`粵拼(新) x普音 v倉頡 R假名。聲調可省：v爲平，x爲上，q爲去，單陰雙陽。詳細請至本方案github頁。https://github.com/HoengSaan/rime-gukwan
 
   dependencies:
     - jyut6ping3
@@ -80,25 +80,25 @@ speller:
     #- derive/^ng([aeiou])/$1/              # 疑影不分(ng↔0) 懶音
     #- derive/^([aeiou])/ng$1/              # 疑影不分(ng==0) 懶音
 
-    #- derive/^n(?!g)/l/                    # 泥來合流(n->l) 共通
+    #- derive/^n(?!g|r|j)/l/                # 泥來合流(n->l) 共通
     #- derive/^t/h/                         # 透曉合流(t->h)
 
-    #- derive/^vu(?=\d)/fu$1/               # 遇攝合口(hu->fu)（如「護」讀作fu6）
-    #- derive/^vu(?=\d)/hu$1/               # 遇攝合口(hu fix)（如「護」讀作fu6）打字輔助
+    #- derive/^vu(?=\d)/fu$1/                # 遇攝合口(hu->fu)（如「護」讀作fu6）
+    #- derive/^vu(?=\d)/hu$1/                # 遇攝合口(hu fix)（如「護」讀作fu6）打字輔助
     #- derive/^(g|k)wo/$1o/                 # 口音補充(gk[w])（如「過」讀作go）
     #- derive/^(g|k)w/$1/                   # 口音補充(gk[w])（如「骨」讀作gat）
     - derive/^hj/j/                         # 口音補充(hj->j)（如「賢」讀若jin）多數
     #- derive/*hj/h/                        # 口音補充(hj->h)（如「賢」讀若hin）順德石歧等
 
-    - derive/^vu(?=\d)/wu$1/                # 遇攝合口(hu->wu)（如「護」讀作wu6）
+    - derive/^vu(?=\d)/wu$1/               # 遇攝合口(hu->wu)（如「護」讀作wu6）
     
     #聲母——古音
     #拼音以古音爲準，建議全開
-    #- derive/^(z|c|s)h/$1/                 # 精照合流
-    #- derive/^(z|c|s)j/$1/                 # 精照合流
-    #- derive/^(z|c)r/$1/                   # 精照合流
-    #- derive/^(z|c|s)jy(?=\d)/$1y/         # 止開師韻(jy->y) 特
-    #- derive/^(z|c|s)hy(?=\d)/$1y/         # 止開師韻(hy->y) 特
+    - derive/^(z|c|s)h/$1/                 # 精照合流
+    - derive/^(z|c|s)j/$1/                 # 精照合流
+    - derive/^(z|c)r/$1/                   # 精照合流
+    - derive/^(z|c|s)jy(?=\d)/$1y/          # 止開師韻(jy->y) 特
+    - derive/^(z|c|s)hy(?=\d)/$1y/          # 止開師韻(hy->y) 特
     - derive/^nj/j/                         # 日以合流(nj->j)
     - derive/^ngi/nji/                      # 疑日(ngi->nji)
     - derive/^ngy/njy/                      # 疑日(ngy->njy)
@@ -112,54 +112,66 @@ speller:
     #韻母——拼寫
     #現代音同廣州音無須郁動 全開可幾乎完全兼容分韻
     #其他口音請自行調校 若無影響者無需關閉 不建議關閉打字輔助
-    #- derive/^(z|c|s)ji(?=\d)/$1ii/        # 止開照組異拼(ji->ii)
-    #- derive/ea(?=\d)/u/                   # 遇攝分韻(ea->u)
-    #- derive/yo(?=\d)/yu/                  # 遇攝分韻(yo->yu)
-    #- derive/yi(?=\d)/ui/                  # 蟹合分韻(yi->ui)
-    #- derive/ooi(?=\d)/ui$1/               # 止蟹分韻(ooi->ui)
+    #- derive/^(z|c|s)ji(?=\d)/$1ii/         # 止開照組異拼(ji->ii)
+    #- derive/ea(?=\d)/u/                    # 遇攝分韻(ea->u)
+    - derive/yo(?=\d)/yu/                   # 遇攝分韻(yo->yu)
+    #- derive/yi(?=\d)/ui/                   # 蟹合分韻(yi->ui)
+    #- derive/ooi(?=\d)/ui$1/                # 止蟹分韻(ooi->ui)
     - derive/oo(?=\d)/ou$1/                 # 效一分韻(oo->ou) 打字輔助
     - derive/ea(n|t)(?=\d)/eo$1/            # 臻攝粵拼(ea->eo) 打字輔助
-    #- derive/jo(ng|k)/jio$1/               # 宕攝元音全拼(jo->jio) 打字輔助
+    - derive/jo(ng|k)/jio$1/                # 宕攝元音全拼(jo->jio) 打字輔助
 
-    #- derive/y(?=\d)/$1z/                  # 止開師韻分韻(y->z)
+    - derive/y(?=\d)/$1z/                  # 止開師韻分韻(y->z)
     
     #韻母——菊韻
-    #現代音衹需開「粵」 廣州音請開「穗」「粵」竝關「白」「菊」 
     #其他口音請自行調校 不建議關閉打字輔助
-    #「粵」即粵海片多數，「穗」即廣州音，「文」「白」爲文讀白讀，「菊」則爲小欖音
-    - derive/^(b|p|f)i(?=\d)/ei/            # 止攝裂化脣音(i->ei) 粵（如「備」讀若bei）
-    - derive/^(d|t|l|n)i(?=\d)/ei/          # 止攝裂化齒音(i->ei) 粵（如「地」讀若dei）
-    - derive/^(g|k|h)i(?=\d)/ei             # 止攝裂化牙音(i->ei) 穗（如「既」讀若gei）
-    #- derive/^(z|c|s)jy(?=\d)/$1ji/        # 止開師韻(jy->ji) 特
-    - derive/y(?=\d)/i/                     # 止攝師韻展脣(y->i) 穗（如「師」讀若si）民衆鎮等
+    - derive/^(b|p|f)i(?=\d)/ei/           # 止攝裂化脣音(i->ei) 粵（如「備」讀若bei）
+    - derive/^(d|t|l|n)i(?=\d)/ei/         # 止攝裂化齒音(i->ei) 粵（如「地」讀若dei）
+    - derive/^(g|k|h)i(?=\d)/ei            # 止攝裂化牙音(i->ei) 穗（如「既」讀若gei）
+    
+    - derive/y(?=\d)/i/                    # 止攝師韻展脣(y->i) 穗（如「師」讀若si）民衆鎮等
     #- derive/y(?=\d)/yu/                   # 止攝師韻圓脣(y->yu) 菊（如「仕」讀若syu） 參攷用 毋須開
-    #- derive/ooi(?=\d)/eoy$1/              # 止蟹央化(ooi->eoy) 粵（如「雖」讀若seoy）
-    #- derive/ooi(?=\d)/oi$1/               # 止蟹白讀音(ooi->oi) 白（如「隨」讀若coi） 參攷用 毋須開 此部分用字表實現
+    
+    - derive/ooi(?=\d)/eoy$1/               # 止蟹央化(ooi->eoy) 粵（如「雖」讀若seoy）
+    
     - derive/^ngu(?=\d)/ng/                 # 遇開一單獨成韻(ngu->ng) 粵（如「吳」讀若ng）
-    #- derive/ea(?=\d)/au/                  # 遇攝裂化(ea->au) 菊（如「度」讀若dau）
-    #- derive/ea(?=\d)/ou/                  # 遇攝裂化(ea->ou) 穗（如「都」讀若ou）
-    #- derive/^(z|c|s|n|l)yo(?=\d)/$1eoy/   # 遇開三裂化(yo->eoy) 粵（如「旅」讀若leoy）
-    #- derive/^(g|k|h)yo(?=\d)/$1eoy/       # 遇開三裂化(yo->eoy) 穗（如「去」讀若heoy）
-    #- derive/^(z|c|n|l)yu(?=\d)/$1eoy/     # 遇合三裂化(yu->eoy) 粵（如「聚」讀若zeoy）
-    #- derive/^(g|k|h)yu(?=\d)/$1eoy/       # 遇合三裂化(yu->eoy) 穗（如「巨」讀若geoy）
-    #- derive/^(z|c)yi(?=\d)/$1eoy/         # 蟹合一央化(yi->eoy) 粵（如「最」讀若zeoy） 部分地區毋須開啓
-    #- derive/yi(?=\d)/yu/                  # 蟹合一元音融合(yi->yu) 菊（如「對」讀若dyu） 打字輔助
-    #- derive/yi(?=\d)/eoy/                 # 蟹合一元音融合(yi->eoy) 穗（如「推」讀若teoy）
+    #- derive/ea(?=\d)/au/                   # 遇攝裂化(ea->au) 菊（如「度」讀若dau）
+    - derive/ea(?=\d)/ou/                  # 遇攝裂化(ea->ou) 穗（如「都」讀若ou）
+    
+    - derive/^(z|c|s|n|l)yo(?=\d)/$1eoy/    # 遇開三裂化(yo->eoy) 粵（如「旅」讀若leoy）
+    - derive/^(g|k|h)yo(?=\d)/$1eoy/       # 遇開三裂化(yo->eoy) 穗（如「去」讀若heoy）
+    
+    - derive/^(z|c|n|l)yu(?=\d)/$1eoy/      # 遇合三裂化(yu->eoy) 粵（如「聚」讀若zeoy）
+    - derive/^(s)yu(?=\d)/$1eoy/           # 遇合三裂化(yu->eoy) 菊Alt（如「須」讀若seoy） 部分地區毋須開啓
+    - derive/^(g|k|h)yu(?=\d)/$1eoy/       # 遇合三裂化(yu->eoy) 穗（如「巨」讀若geoy）
+    
+    #- derive/^(z|c)yi(?=\d)/$1eoy/          # 蟹合一央化(yi->eoy) 粵（如「最」讀若zeoy） 部分地區毋須開啓
+    #- derive/^(s)yi(?=\d)/$1eoy/           # 蟹合一央化(yi->eoy) 菊Alt（如「碎」讀若seoy） 部分地區毋須開啓
+    #- derive/^(d|t|n|l)yi(?=\d)/$yu/        # 蟹合一元音融合(yi->yu) 菊（如「對」讀若dyu） 部分地區毋須開啓
+    #- derive/yi(?=\d)/yu/                   # 蟹合一元音融合(yi->yu) 特（如「對」讀若dyu）
+    - derive/yi(?=\d)/eoy/                 # 蟹合一元音融合(yi->eoy) 穗（如「推」讀若teoy）
+    
     #- derive/ea(n|t)(?=\d)/a$1/            # 臻攝白讀音(ea->a) 白（如「順」讀若san）
-    #- derive/oo(?=\d)/o$1/                 # 效一元音融合(oo->o) 菊（如「高」讀若go）打字輔助
+    
+    #- derive/oo(?=\d)/o$1/                  # 效一元音融合(oo->o) 菊（如「高」讀若go）打字輔助
+    
     - derive/iaa(?=\d)/e$1/                 # 果假元音融合(iaa->e) 粵（如「車」讀若ce） 打字輔助
     - derive/jaa(?=\d)/je$1/                # 果假元音融合(jaa->je) 粵（如「邪」讀若je） 打字輔助
+    
     - derive/io(ng|k)/oe$1/                 # 宕攝元音融合(io->oe) 粵（如「量」讀若loeng） 打字輔助
     - derive/jo(ng|k)/joe$1/                # 宕攝元音融合(jo->joe) 粵（如「央」讀央joeng） 打字輔助
+    
     - derive/ae(u|n|m|t|p)(?=\d)/aa$1/      # 山效咸文讀音(ae->aa) 文（如「關」讀若gwaan）
-    #- derive/ae(u|n|m|t|p)(?=\d)/e$1/      # 山效咸白讀音(ae->e) 白（如「關」讀若gwen）
-    #- derive/o(m|p)(?=\d)/a$1/             # 咸攝音變(o->a) 粵（如「甘」讀若gom）
+    #- derive/ae(u|n|m|t|p)(?=\d)/e$1/       # 山效咸白讀音(ae->e) 白（如「關」讀若gwen）
+    
+    - derive/o(m|p)(?=\d)/a$1/              # 咸攝音變(o->a) 粵（如「甘」讀若gom）
 
     #韻母——示例
     #- derive/ap(?=\d)/aap$1/               # ap同aap混 示例
     #- derive/at(?=\d)/aat$1/               # at同aat混 示例
     #- derive/ak(?=\d)/aak$1/               # ak同aak混 菊常見
     #- derive/ai(?=\d)/aai$1/               # ai同aai混 示例
+    #- derive/ang(?=\d)/an$1/               # an同ang混
     #- derive/o(?=\d)/oe$1/                 # 口音補充（如「螺」讀若loe）
     #- derive/o(ng|k)(?=\d)/oe$1/           # 口音補充（如「江」讀若goeng）
     #- derive/y(?=\d)/i$1/                  # 口音補充（如「雨」讀若ji）
@@ -167,11 +179,10 @@ speller:
 
     #韻尾
     #根據自己口音偏好調校
-    
-    - derive/^jang([?=\d])$/jan$1/          # 孕(jang->jan)
+ 
     #- derive/^ngu([?=\d])$/m$1/            # 鼻音節混(ng->m)
     #- derive/ng([?=\d])$/n$1/              # 韻尾簡化(ng->n)
-    #- derive/m([?=\d])$/n$1/               # 韻尾閒花(m->n)
+    #- derive/m([?=\d])$/n$1/               # 韻尾簡化(m->n)
     #- derive/p([?=\d])$/t$1/               # 入聲弱化(p->t)
     #- derive/k([?=\d])$/t$1/               # 入聲弱化(k->t)
     #- derive/p([?=\d])$/h$1/               # 入聲弱化(p->h)
@@ -215,15 +226,15 @@ speller:
     - derive/eoy(?=\d)/eoi/                 # 粵拼(eoy->eoi)
     - derive/eo/oe/                         # 容錯(eo/oe)
     - derive/oe/eo/                         # 容錯(eo/oe)
-    - derive/ae/ea/                         # 容錯(ae/ea)
-    - derive/ea/ae/                         # 容錯(ae/ea)
+    #- derive/ae/ea/                         # 容錯(ae/ea)
+    #- derive/ea/ae/                         # 容錯(ae/ea)
 
     - abbrev/^([a-z]).+$/$1/                # 首字母簡拼
-    - abbrev/^(n[ghjy]).+$/$1/              # 聲母簡拼
-    - abbrev/^([gkh]w).+$/$1/               # 聲母簡拼
-    - abbrev/^([zcsn][h]).+$/$1/            # 聲母簡拼
-    - abbrev/^([zcsn][j]).+$/$1/            # 聲母簡拼
-    - abbrev/^([zcn][r]).+$/$1/             # 聲母簡拼
+    #- abbrev/^(n[ghjy]).+$/$1/              # 聲母簡拼
+    #- abbrev/^([gkh]w).+$/$1/               # 聲母簡拼
+    #- abbrev/^([zcsn][h]).+$/$1/            # 聲母簡拼
+    #- abbrev/^([zcsn][j]).+$/$1/            # 聲母簡拼
+    #- abbrev/^([zcn][r]).+$/$1/             # 聲母簡拼
 
     #聲調（勿動）
     - derive/\d//                           # 忽略聲調
