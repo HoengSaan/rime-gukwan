@@ -1,0 +1,20 @@
+# Rime dictionary
+# encoding: utf-8
+#
+# gukwan - 菊韻
+# 增添無拼音粵拼詞庫令菊韻可以正常打字
+
+
+---
+name: gukwan
+version: "1.3a"
+sort: by_weight
+vocabulary: essay-cantonese
+import_tables:
+  - gukwan.basic
+  - gukwan.one
+  - gukwan.two
+  - gukwan.temp
+  - jyut6ping3.maps
+  - jyut6ping3.phrase
+...

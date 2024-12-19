@@ -1,0 +1,940 @@
+# Rime dictionary
+# encoding: utf-8
+#
+# gukwan - 菊韻字庫——增廣一組
+# 廣韻異音異字補充
+
+---
+name: gukwan.one
+version: "1.3.1a"
+sort: by_weight
+...
+
+僮	zrong6	
+筒	tung2	
+沖	crung1	
+盅	zrung1	
+檬	mung1	
+朦	mung1	
+訌	hung3	
+蓬	fung4	
+篷	fung4	
+疼	tang4	
+胸	hung1	
+濃	jung4	
+慵	jung4	
+扛	kong4	
+窗	chiong1	
+缸	gong1	
+萎	wai2	
+痿	wai2	3%
+錘	crooi1	
+隨	coi4	
+𡃴	cooi4	
+奇	ke4	
+騎	ke4	
+匙	cji4	
+離	le4	
+疵	cy1	
+畸	ki1	
+彌	ni4	
+獼	ni4	
+瀰	ni4	
+危	ngaai4	
+篩	shai1	
+粢	cy1	
+餈	cy1	
+糍	ci1	
+糍	cy4	
+怩	nji1	
+荾	sai1	
+荽	sai1	
+茜	sai1	3%
+㵟	mi1	
+鎚	crooi1	
+槌	crooi1	
+時	sjy4	
+詩	sjy1	
+持	cry4	
+磁	cy4	
+微	mi1	
+韋	wai5	
+飛	fui1	
+痱	fi1	
+畿	gi1	
+魚	ngyo1	
+疽	zyo1	
+狙	zyo1	
+雎	zyo1	
+廬	leau4	
+蘆	leau4	
+儲	cryo5	
+儲	creau5	
+馳	cryo4	
+袪	kyo1	
+無	moo4	
+懦	no6	
+鬚	seau1	
+銖	zjyu1	
+茱	zjyu1	
+扶	pau4	
+孵	bea6	
+菢	bea6	
+諏	zau1	
+樞	sjyu1	
+姝	zjyu1	
+䇬	zjyu1	
+模	mo4	
+摸	mo1	
+箍	ku1	
+荼	to4	
+軲	gu1	
+都	do1	
+臍	ci4	
+莉	li4	
+蓖	bi6	
+篦	bi6	
+稽	kai1	3%
+嵇	kai1	3%
+兮	hai1	
+棲	cai1	
+栖	cai1	
+嘶	sy1	
+撕	sy1	3%
+錍	pei1	
+批	pei1	
+睽	kwai4	
+奎	hwui1	
+娃	waa1	
+洼	waa1	
+哇	waa1	
+偕	haai4	
+盔	kwai1	
+瑰	gwai3	
+摧	cyi1	
+脧	zoe1	
+檯	toi2	
+猜	caai1	
+孩	haai4	
+呻	sjan3	
+嗔	zjan1	
+繽	ban1	
+蘋	ping4	
+閩	man5	
+鶉	cjean1	
+迍	zrean6	
+竣	zean3	
+馴	sean4	
+文	man1	
+蚊	man1	
+芫	jim4	
+袁	hwun4	
+爰	hwun4	
+垣	hwun4	0%
+𩫧	hwun4	
+園	hwun4	
+援	hwun4	3%
+榬	hwun4	0%
+轅	hwun4	
+鶢	hwun4	0%
+媛	hwun4	0%
+洹	hwun4	3%
+溒	hwun4	3%
+𧻚	hwun4	3%
+蝯	hwun4	0%
+猨	hwun4	3%
+猿	hwun4	0%
+爰	wun4	0%
+援	wun4	0%
+鶢	wun4	
+媛	wun4	
+鴛	jin1	3%
+掀	kin4	3%
+魂	wan4	
+崑	kwan1	
+罇	zean1	
+樽	zean1	
+蹲	dean1	
+蹲	zean1	
+飩	tan1	0%
+邨	cyun1	
+燉	dean6	
+歺	caan1	
+𩛈	caan1	
+欄	laan1	
+刊	hon2	5%
+完	jyun4	5%
+𩾞	jyun4	
+丸	jyun4	
+紈	jyun4	3%
+汍	jyun4	
+芄	jyun4	3%
+豲	jyun4	3%
+綄	jyun4	3%
+㿪	jyun4	3%
+䎠	jyun4	3%
+垸	jyun4	3%
+寏	jyun4	3%
+院	jyun4	3%
+捖	jyun4	3%
+瘢	baan1	0%
+䊡	maan6	3%
+饅	maan6	3%
+鏝	maan6	3%
+槾	maan6	
+墁	maan6	3%
+鰻	maan4	3%
+曼	maan4	3%
+蔓	maan4	0%
+䜱	maan6	0%
+䟂	maan6	0%
+𦔔	maan6	3%
+灣	waan4	
+𣟴	shoen1	3%
+𣟴	shoet1	3%
+閂	shoen1	3%
+閂	shoet1	3%
+頑	ngan6	
+頑	an4	
+間	gaen1	
+閒	haen4	
+先	hin1	
+邊	ben1	
+錢	cin1	
+纏	cim4	
+聮	lyun4	
+聯	lyun4	
+𤣆	lyun4	3%
+𪚀	lyun4	
+㶌	lyun4	3%
+娟	gyun1	3%
+編	pin1	3%
+涎	jin4	
+湲	wun4	
+栓	shaan1	
+雕	tiu1	
+彫	tiu1	
+跳	tiu3	
+驍	hiu1	
+梟	hiu1	
+寥	leu1	
+撩	leu1	
+鷯	liu1	
+焦	zeu1	
+徭	jiu4	
+昭	cjiu1	
+釗	cjiu1	
+貓	miu1	
+猫	miu1	
+繑	keu2	
+姣	haeu4	
+貓	maeu1	3%
+猫	maeu1	3%
+泡	poo5	
+抓	zhaa1	
+咬	ngaeu5	3%
+撈	loo1	
+撈	laau4	
+撈	laau1	
+毛	mou1	
+艘	sau2	
+柯	o1	
+搓	chaai1	
+多	doe1	
+佗	taa1	
+他	taa1	
+它	taa1	
+那	naa4	
+鍋	wo1	
+莎	sraa1	5%
+摩	mo1	
+魔	mo1	
+坡	bo1	
+玻	bo1	
+伽	gaa1	
+奢	cjaa1	
+華	hwaa4	
+驊	hwaa4	
+鷨	hwaa4	5%
+𧑍	hwaa4	3%
+鋘	hwaa4	3%
+鏵	hwaa4	3%
+釫	hwaa4	3%
+樺	hwaa4	3%
+崋	hwaa4	3%
+划	hwaa4	5%
+蝸	wo1	5%
+媧	waa1	
+媧	wo1	
+譁	waa1	
+拿	nraa4	
+巴	paa4	
+扒	paa4	
+咤	craak1	
+吒	craak1	
+吒	zraa1	
+爹	diaa1	
+䱽	cjong1	
+瓤	nrong4	0%
+匡	hwong1	0%
+邼	hwong1	0%
+筐	hwong1	0%
+䖱	hwong1	0%
+框	hwong1	0%
+恇	hwong1	0%
+劻	hwong1	0%
+𩬹	hwong1	0%
+洭	hwong1	0%
+軭	hwong1	0%
+軭	waang1	0%
+眶	hwong1	0%
+䒰	hwong1	0%
+𩢼	hwong1	
+妨	fong4	
+檔	dong3	
+更	gaang1	
+𦉘	chaang1	
+驚	geng1	
+盟	mang4	3%
+𥁰	mang4	
+瑩	jing4	
+生	shaang1	
+牲	shaang1	
+行	haang4	
+氓	mong4	
+浜	bong1	3%
+罃	ang1	
+鶯	ang1	
+嚶	jing1	
+櫻	jing1	
+鸚	jing1	3%
+譻	jing1	3%
+鸎	jing1	
+崢	zhaang1	
+鬇	zhaang1	
+繃	maang1	
+爭	zhang1	
+精	zeng1	
+贏	jeng4	
+贏	jeng4	
+偵	zring1	
+蟶	sjing3	
+成	seng4	
+聲	sjeng1	
+平	peng4	
+拼	ping3	
+輕	heng1	
+名	meng2	
+青	ceng1	
+丁	deng1	
+釘	deng1	
+靪	deng1	
+腥	seng1	
+靈	leng4	
+靈	ling1	
+拎	ling1	
+擰	ning1	
+零	leng4	
+聽	teng1	
+廳	teng1	
+町	ding1	
+憑	pang4	
+繩	sjing1	
+瞢	mang1	
+鵬	paang4	
+留	jau2	
+由	jau2	
+讎	sjau4	
+搜	shau2	
+蒐	shau2	
+搊	jau1	
+拞	jau1	
+休	hau1	
+仇	sjau4	5%
+浮	pau4	
+矛	maau4	3%
+𢦧	maau4	
+摟	lau1	
+褸	lau1	
+頭	dau6	
+骰	sik1	
+鉤	ngau1	
+溝	kau1	
+篝	kau1	
+勾	kau1	
+勾	ngau1	
+呣	m2	
+吟	ngam4	
+衿	kam1	
+襟	kam1	
+禁	kam1	
+涵	haem4	
+探	taam3	
+檐	sim4	
+簷	sim4	
+暹	cim3	
+殲	cim1	
+嫌	jim4	
+稴	jim4	
+杉	chaem3	
+鵮	daem1	
+岩	ngaem4	
+嵌	ham6	
+懵	mung2	
+動	dung6	
+擁	ung2	
+捧	pung2	
+涌	jung2	
+涌	cjung1	
+竉	lung1	3%
+窿	lung1	
+湧	jung2	
+甬	jung2	
+踊	jung2	
+蛹	jung2	
+俑	jung2	
+棒	paang5	
+項	hong6	
+是	sy6	
+氏	sy6	
+你	nri5	
+渳	mi1	
+誃	cje2	
+弛	cji4	0%
+捶	crooi4	
+揣	cyun2	0%
+舐	shaai5	0%
+舐	laai2	
+舐	lim2	
+舐	lem2	
+兕	zy6	
+几	gi1	
+矢	cji2	
+雉	zy6	
+死	si2	
+恃	cji5	
+使	shai2	3%
+駛	shai2	3%
+裏	looi5	
+歭	zri6	
+跱	zri6	3%
+峙	zri6	3%
+痔	zri6	3%
+偫	zri6	3%
+洔	zri6	3%
+畤	zri6	
+秲	zri6	
+庤	zri6	
+杞	gi2	
+柹	zhi2	0%
+柿	zhi2	
+齒	sji2	0%
+祉	cri2	
+尾	mi1	
+屘	mi1	
+禦	ngyo6	
+拒	kyo5	
+貯	cryo5	
+貯	creau5	
+距	kyo5	
+齟	zhyo5	
+沮	zyo2	
+擧	gyo2	
+欅	gyo2	
+敍	zyo6	
+緒	syo5	
+墅	jaa5	
+墅	sjyo6	
+莆	pea4	
+釜	fu2	
+愈	jyu6	
+媽	maa1	
+𭡡	dea6	
+肚	tea5	
+簿	bea2	
+粗	cea1	
+塢	wu1	
+傀	hwaai3	
+眯	mei1	
+拐	gwaai2	
+拐	kwaai5	
+在	coi2	
+囤	tyun4	
+沌	dean6	
+坉	dean6	
+庉	dean6	
+遁	dean6	
+遯	dean6	
+棵	fo2	
+棵	po1	
+撚	nan2	
+撚	nang3	
+褦	nang3	
+齞	ngin1	
+餞	zin3	
+鳥	niu5	
+繚	leu2	
+巧	kiu2	
+那	naa5	
+朵	doe2	
+朶	doe2	
+妥	to5	
+橢	to5	
+裸	lo2	
+禍	wo6	
+夥	hwo2	
+爸	baa1	
+也	jaa5	3%
+丅	haa6	
+廈	haa6	
+姐	ziaa1	
+厏	zhaa6	
+傻	sho4	
+逛	gwaang6	
+㘢	gwaang6	
+趤	dong6	
+髒	zong1	
+哽	ang2	
+哽	ngang2	
+哽	kang2	
+鯁	kang2	
+慌	hwong1	
+晃	hwong2	
+幌	hwong2	
+憬	ging2	
+打	daa1	
+打	daa2	
+澋	ging2	
+睜	zang1	
+阱	zeng2	
+領	leng2	
+嶺	leng5	
+頸	geng2	
+餅	beng2	
+井	zeng2	
+請	ceng2	
+頂	deng2	
+頂	diong2	
+艇	teng5	
+竝	ping5	
+並	ping5	
+醒	seng2	
+右	jau6	
+紐	nau2	0%
+鈕	nau2	
+扭	nau2	0%
+朽	nau1	
+朽	nau2	
+朽	lau6	
+婦	fu5	
+婦	pea5	
+負	fu6	
+咎	gau3	
+厚	hau5	3%
+厚	gau3	
+吼	hau3	
+吼	hau1	
+毆	au1	
+口	hau2	
+糾	dau2	
+飪	jam6	
+餁	jam6	
+贛	gom3	
+糝	som2	
+坎	hom1	
+撼	hom6	
+纜	laam6	
+丼	dung1	3%
+丼	zing2	
+丼	zeng2	3%
+毯	taan2	
+儉	gim6	
+芡	him3	
+掩	am2	
+玷	dim3	
+玷	dim1	
+歉	him3	
+湛	zraem3	
+鹼	gaen2	
+檻	laem6	
+檻	kaem5	
+艦	laem6	
+哄	hung3	
+哄	hung1	
+衆	zjung3	
+綜	zung1	
+統	tung2	
+縫	fung4	
+賜	cy3	
+𧀩	cy3	0%
+跛	bai1	
+議	ngi5	
+漬	zik1	
+魅	mui6	
+祕	bai3	
+喟	wai2	
+嗜	sjy3	
+視	sjy6	
+蒞	li6	
+緻	zri3	0%
+冀	ki3	
+暨	gi3	
+悸	gwai3	
+肆	sy3	
+畀	bi2	
+示	sjy6	
+諡	sji3	
+謚	sji3	
+懟	dooi6	
+㨃	dooi2	
+伺	sy6	
+試	sjy3	
+餌	njooi6	
+侍	sjy6	
+緯	wai5	
+彙	wui6	
+沸	fai3	
+疿	fai3	
+誹	fi2	
+費	fai3	
+諱	wai5	
+痱	fai6	
+鋸	gio3	
+瘀	jyo2	3%
+瘀	jyo1	
+詛	zyo2	
+詛	zho2	
+處	sjyo3	
+孺	njyu4	
+芋	wu6	
+傅	fu6	
+娶	cyu2	
+娶	cooi4	
+娶	0	
+屢	lyu5	
+怖	bea3	
+嚏	tai3	
+締	dai3	
+睇	tai2	
+係	hai6	
+謎	mai4	
+嬖	pi3	
+媲	pi3	
+睥	pi5	
+睥	be1	
+戾	looi6	
+戾	lai2	
+隸	dai6	
+唳	looi6	
+脆	coi3	
+掣	zjai3	
+裔	jooi6	
+彘	zri6	
+厲	lei6	
+憩	hi3	
+蓋	koi3	
+藹	oi2	
+大	daai1	
+懈	haai6	
+阨	aai3	
+邂	haai5	3%
+眦	zhi6	
+聵	kwui2	
+𢞎	bi6	
+憊	bi6	
+佩	pui3	
+珮	pui3	
+潰	kwui2	
+酹	laai6	
+僅	gan2	
+瑾	gan2	
+饉	gan2	
+𧥺	kwan1	
+殉	sean1	
+徇	sean1	
+侚	sean1	
+暈	wan4	
+順	sean5	
+份	fan6	
+券	gwyun3	
+頓	dean6	
+困	wan3	
+睏	fan3	
+瞓	fan3	
+絆	bun6	
+胖	bun6	
+間	gaen3	
+霰	saan2	
+見	gen3	
+咽	jin1	
+譴	hin2	
+戀	lyun2	
+拚	pun3	
+囀	zryun2	
+掉	deu6	
+竅	kiu2	
+噍	zeu6	
+豹	paeu3	
+稍	shaeu2	
+噪	coo3	
+靠	kaau3	
+耗	hoo3	
+那	naa6	
+剁	diok1	
+架	gaak3	
+罅	laa3	
+靶	baa2	
+餉	hiong2	
+訪	fong2	
+妄	mong5	
+忘	mong4	
+誑	gwong2	
+舫	fong2	
+誆	hong1	
+擋	dong2	
+擴	kwong3	
+擴	kwok3	
+映	jing2	
+竟	ging2	
+鏡	geng3	
+命	meng6	
+柄	beng3	
+勁	ging6	
+勁	gang3	
+劥	gang3	
+正	zjeng3	
+鄭	zreng6	
+令	ding2	
+淨	zeng6	
+晟	sjing4	
+訂	deng3	
+孕	jang6	
+剩	zjing6	
+亙	gang2	
+凭	bang6	
+糅	jau6	
+姆	mou5	
+姆	mau5	
+竇	dau3	
+遘	kau3	
+遘	kau1	
+構	kau3	
+媾	kau3	
+購	kau3	
+佝	kwyu1	
+妊	jam4	
+殮	lim5	
+墊	din3	
+墊	zin3	
+陷	ham6	
+梵	faan4	
+睩	luk1	
+轆	luk1	
+鏃	zuk6	
+伏	buk6	
+馥	fuk1	
+毓	juk1	
+煜	juk1	
+畜	cruk1	
+搐	cruk1	
+蹙	cuk1	
+忸	njuk1	
+酷	hwuk6	
+嚳	gwuk1	
+斲	diok1	
+㧻	duk1	
+卓	criok3	
+桌	criok3	
+剝	mok1	
+搉	kok1	
+濁	zruk6	
+鐲	zruk6	
+搦	nik1	
+桎	zrat6	
+蛭	zrat6	
+侄	zrat6	
+寔	sjat6	
+秩	dit6	
+秩	dip6	
+悉	sik1	
+蟋	sik1	
+疋	pat1	
+暱	nrik1	
+昵	nrik1	
+窒	zrat6	
+必	bit1	
+橘	gat1	0%
+桔	gat1	
+律	lat1	
+寽	lyut3	
+黜	zryut3	
+怵	zreat1	
+出	cjyut1	
+不	bat1	
+拂	pat1	
+拂	fak6	
+礊	fak6	
+迄	ngat6	
+訖	ngat6	
+蠍	kit3	
+曷	hot3	
+褐	hot3	
+鞨	hot3	
+炟	taat1	
+撻	taat1	
+遏	at1	
+餲	et1	
+餲	et3	
+剌	laa2	
+剌	laat3	
+揦	laa2	
+瘌	laat3	
+捺	naat3	
+抹	mut3	
+抹	maat3	
+撥	but6	
+頡	git3	
+刹	shaet3	
+桔	gat1	
+切	cit1	
+𢪃	cit1	
+跌	dit3	
+涅	nip6	
+捏	nit1	
+噎	et1	
+竭	kit3	
+碣	kit3	
+蝕	sit6	
+搣	mit1	
+噦	oet6	
+啜	zryut1	
+吶	nraap6	
+畧	liok6	
+噱	ciok3	
+玃	hwok3	3%
+貜	hwok3	3%
+𧾵	hwok3	3%
+钁	hwok3	3%
+攫	hwok3	
+矍	hwok3	
+𡚠	hwok3	3%
+彏	hwok3	3%
+躩	hwok3	3%
+𪈴	hwok3	3%
+𨏹	hwok3	3%
+錯	co3	
+膊	bok3	
+泊	paak3	
+涸	kok3	
+昨	coi6	
+廓	kwaak1	
+佰	baak3	
+舶	bok6	
+榨	zhaa3	
+逆	ngaak6	
+赫	haak1	
+獲	wok6	
+蟈	gwok3	
+馘	gwok3	3%
+聝	gwok3	3%
+幗	gwok3	
+膕	gwok3	3%
+𩪐	gwok3	3%
+埻	gwok3	3%
+摑	gwok3	0%
+漍	gwok3	3%
+𢹖	gwok3	3%
+䂸	gwok3	3%
+慖	gwok3	3%
+嘓	gwok3	3%
+䬎	gwok3	3%
+讗	gwok3	3%
+𧖻	gwok3	3%
+擘	maak3	
+核	wat6	
+惜	sek3	
+脊	zik3	
+脊	zek3	
+膉	jek1	
+膉	ek1	
+膉	jet1	
+膉	et1	
+尺	cjek3	
+赤	cjik3	
+赤	cjek3	
+隻	zjek3	
+炙	zjek3	
+擲	zraak6	
+擿	zraak6	3%
+䵂	zraak6	3%
+躑	zraak6	3%
+蹢	zraak6	3%
+𧓸	zraak6	3%
+潪	zraak6	3%
+刺	cek3	
+席	zek6	
+蓆	zek6	
+瘠	zek3	
+錫	sek6	
+劈	pek3	
+檄	hat6	0%
+檄	gik1	
+笛	dek6	
+糴	dek6	
+踢	tek3	
+績	zek3	
+喫	jaak3	
+喫	hek3	
+鬩	jik1	
+息	sak1	
+測	caak1	
+惻	caak1	
+薏	ji3	
+即	zek1	3%
+即	ze1	
+這	ze1	
+鯽	zak1	
+鰂	zak1	
+閾	wik6	
+仄	zak1	
+側	zak1	
+則	zik1	
+黑	haak1	
+塞	zak1	
+劾	hat6	
+褶	zjip3	
+什	zaap6	
+輯	cap1	
+廿	njaa6	
+蟄	zrik1	
+立	laap6	
+粒	lap1	
+笠	lap1	
+汲	kap1	
+給	kap1	
+級	kap1	
+岌	kap1	
+澀	gip3	
+澁	gip3	3%
+吸	kap1	
+悒	ap1	
+熠	jap1	
+合	gaap3	
+佮	gaap3	
+夾	gaap3	
+卅	saa1aa6	
+踏	daap6	
+拉	laai1	
+擸	laap3	
+耷	dap1	
+搭	daap3	
+遢	taat3	
+䍇	taap3	
+頁	jip6	
+睫	zit6	
+俠	hap6	
+篋	gip1	
+洽	hap1	
+恰	hap1	
+眨	zhaem2	
+壓	aat3
