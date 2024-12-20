@@ -1,81 +1,23 @@
 # Rime schema
 # encoding: utf-8
 
+__include: gukwan.schema:/
+
 schema:
   schema_id: gukwan_fanwan
-  name: 菊韻——分韻音
-  version: "1.1b"
-  author:
-    靈帝（Hoengsaan）
+  name: 菊韻分韻音
+  version: "1.2b"
   description: |-
     ※請務必閱讀方案文件※
-    本方案是粵語沙田方言之拼音方案，基於分韻廣韻以兼容各地方音(如師讀作si1)同廣州化(如弧讀作wu4)既情況。爲兼容性同方便整理，輸入碼同實際拼音有所不同，但可直接以粵拼輸入。
+    【分韻音】詳細請至本方案github頁。https://github.com/HoengSaan/rime-gukwan
     現有字庫根據excel大批量轉換，有不少紕漏，敬請見諒。廣韻之外字庫未完成，目前缺少不少現代字同粵字。無詞庫，建議以粵拼詞庫代替之（須去除輸入碼）。
-    反查:`粵拼(新) x普音 v倉頡 R假名。聲調可省：v爲平，x爲上，q爲去，單陰雙陽。詳細請至本方案github頁。https://github.com/HoengSaan/rime-gukwan
-
-  dependencies:
-    - jyut6ping3
-    - luna_pinyin
-    - cangjie5
-    - kanas
-
-switches:
-  - name: ascii_mode
-    reset: 0
-    states: [ 粵文, 英文 ]
-  - name: full_shape
-    reset: 0
-    states: [ 半角, 全角 ]
-  - name: simplification
-    reset: 0
-    states: [ 深筆, 簡筆 ] 
-  - name: ascii_punct
-    reset: 0
-    states: [ 。，, ．， ]
-  - name: emoji_suggestion
-    reset: 0
-    states: [ 冇✖, 有🔴 ]
-
-engine:
-  processors:
-    - ascii_composer
-    - recognizer
-    - key_binder
-    - speller
-    - punctuator
-    - selector
-    - navigator
-    - express_editor
-  segmentors:
-    - ascii_segmentor
-    - matcher
-    - affix_segmentor@jyut6ping3
-    - affix_segmentor@luna_pinyin
-    - affix_segmentor@cangjie5
-    - affix_segmentor@kanas
-    - abc_segmentor
-    - punct_segmentor
-    - fallback_segmentor
-  translators:
-    - punct_translator
-    - script_translator
-    - script_translator@jyut6ping3
-    - script_translator@luna_pinyin
-    - script_translator@kanas
-    - table_translator@cangjie5
-  filters:
-    - simplifier
-    - simplifier@emoji_suggestion
-    - uniquifier
-    - reverse_lookup_filter@reverse_lookup
+    反查:`粵拼(新) x普音 v倉頡 R假名。聲調可省：v爲平，x爲上，q爲去，單陰雙陽。
 
 speller:
   alphabet: zyxwvutsrqponmlkjihgfedcba
   delimiter: " '"
   algebra:
-    #若表內無敬請自行增添，部分字或要用個人字庫。刪除行頭井號啓用轉換，行頭鍵入井號停止轉換。
     #聲母——菊韻
-    #根據自己口音偏好調校
 
     #- derive/^ng([aeiou])/$1/              # 疑影不分(ng↔0) 懶音
     #- derive/^([aeiou])/ng$1/              # 疑影不分(ng==0) 懶音
@@ -85,6 +27,7 @@ speller:
 
     #- derive/^vu(?=\d)/fu$1/                # 遇攝合口(hu->fu)（如「護」讀作fu6）
     #- derive/^vu(?=\d)/hu$1/                # 遇攝合口(hu fix)（如「護」讀作fu6）打字輔助
+    #- derive/^(s)(?!j)i(?=\d)/$1ei/        # 止攝裂化 粵
     #- derive/^(g|k)wo/$1o/                 # 口音補充(gk[w])（如「過」讀作go）
     #- derive/^(g|k)w/$1/                   # 口音補充(gk[w])（如「骨」讀作gat）
     - derive/^hj/j/                         # 口音補充(hj->j)（如「賢」讀若jin）多數
@@ -95,9 +38,9 @@ speller:
     #聲母——古音
     #拼音以古音爲準，建議全開
     #- derive/^(z|c|s)h/$1/                 # 精照合流
-    #- derive/^(z|c|s)j/$1/                 # 精照合流
+    #- derive/^(z|c|s)j(?!yo)/$1/           # 精照合流
     #- derive/^(z|c)r/$1/                   # 精照合流
-    - derive/^(z|c|s)jy(?=\d)/$1y/          # 止開師韻(jy->y) 特
+    #- derive/^(z|c|s)jy(?=\d)/$1y/          # 止開師韻(jy->y) 特
     - derive/^(z|c|s)hy(?=\d)/$1y/          # 止開師韻(hy->y) 特
     #- derive/^nj/j/                         # 日以合流(nj->j)
     - derive/^ngi/nji/                      # 疑日(ngi->nji)
@@ -125,9 +68,9 @@ speller:
     
     #韻母——菊韻
     #其他口音請自行調校 不建議關閉打字輔助
-    #- derive/^(b|p|f)i(?=\d)/ei/           # 止攝裂化脣音(i->ei) 粵（如「備」讀若bei）
-    #- derive/^(d|t|l|n)i(?=\d)/ei/         # 止攝裂化齒音(i->ei) 粵（如「地」讀若dei）
-    #- derive/^(g|k|h)i(?=\d)/ei            # 止攝裂化牙音(i->ei) 穗（如「既」讀若gei）
+    #- derive/^(b|p|f)i(?=\d)/$1ei/         # 止攝裂化脣音(i->ei) 粵（如「備」讀若bei）
+    #- derive/^(d|t|l|n)i(?=\d)/$1ei/       # 止攝裂化齒音(i->ei) 粵（如「地」讀若dei）
+    #- derive/^(g|k|h)i(?=\d)/$1ei/         # 止攝裂化牙音(i->ei) 穗（如「既」讀若gei）
     
     #- derive/y(?=\d)/i/                    # 止攝師韻展脣(y->i) 穗（如「師」讀若si）民衆鎮等
     #- derive/y(?=\d)/yu/                   # 止攝師韻圓脣(y->yu) 菊（如「仕」讀若syu） 參攷用 毋須開
@@ -140,6 +83,8 @@ speller:
     
     #- derive/^(z|c|s|n|l)yo(?=\d)/$1eoy/    # 遇開三裂化(yo->eoy) 粵（如「旅」讀若leoy）
     #- derive/^(g|k|h)yo(?=\d)/$1eoy/       # 遇開三裂化(yo->eoy) 穗（如「去」讀若heoy）
+    #- derive/^(zj|cj|sj)yo(?=\d)/$1yu/     # 特
+    #- derive/^(g|k|h|j)yo(?=\d)/$1yu/      # 特
     
     #- derive/^(z|c|n|l)yu(?=\d)/$1eoy/      # 遇合三裂化(yu->eoy) 粵（如「聚」讀若zeoy）
     #- derive/^(s)yu(?=\d)/$1eoy/           # 遇合三裂化(yu->eoy) 菊Alt（如「須」讀若seoy） 部分地區毋須開啓
@@ -147,6 +92,7 @@ speller:
     
     #- derive/^(z|c)yi(?=\d)/$1eoy/          # 蟹合一央化(yi->eoy) 粵（如「最」讀若zeoy） 部分地區毋須開啓
     #- derive/^(s)yi(?=\d)/$1eoy/           # 蟹合一央化(yi->eoy) 菊Alt（如「碎」讀若seoy） 部分地區毋須開啓
+    #- derive/^(s)yi(?=\d)/$1yu/            # 蟹合一元音融合(yi->yu) 菊（如「碎」讀若syu） 部分地區毋須開啓
     #- derive/^(d|t|n|l)yi(?=\d)/$yu/        # 蟹合一元音融合(yi->yu) 菊（如「對」讀若dyu） 部分地區毋須開啓
     #- derive/yi(?=\d)/yu/                   # 蟹合一元音融合(yi->yu) 特（如「對」讀若dyu）
     #- derive/yi(?=\d)/eoy/                 # 蟹合一元音融合(yi->eoy) 穗（如「推」讀若teoy）
@@ -246,88 +192,4 @@ speller:
     - xform/6/qq/                           # 陽去
     
 translator:
-  dictionary: gukwan
-  spelling_hints: 8
-  preedit_format:
-    - xform/([aeiouymngptk])vv/${1}4/
-    - xform/([aeiouymngptk])xx/${1}5/
-    - xform/([aeiouymngptk])qq/${1}6/
-    - xform/([aeiouymngptk])v/${1}1/
-    - xform/([aeiouymngptk])x/${1}2/
-    - xform/([aeiouymngptk])q/${1}3/
-
-jyut6ping3:
-  tag: jyut6ping3
-  dictionary: jyut6ping3
-  enable_user_dict: false
-  prefix: "`"
-  suffix: ";"
-  tips: 〔粵拼〕
-  preedit_format:
-    - xform/([aeiouymngptk])vv/${1}4/
-    - xform/([aeiouymngptk])xx/${1}5/
-    - xform/([aeiouymngptk])qq/${1}6/
-    - xform/([aeiouymngptk])v/${1}1/
-    - xform/([aeiouymngptk])x/${1}2/
-    - xform/([aeiouymngptk])q/${1}3/
-
-luna_pinyin:
-  tag: luna_pinyin
-  dictionary: luna_pinyin
-  enable_user_dict: false
-  prefix: "x"
-  suffix: ";"
-  tips: 〔普拼〕
-  preedit_format:
-    - xform/([nl])v/$1ü/
-    - xform/([nl])ue/$1üe/
-    - xform/([jqxy])v/$1u/
-
-cangjie5:
-  tag: cangjie5
-  dictionary: cangjie5
-  enable_user_dict: false
-  prefix: "v"
-  suffix: ";"
-  tips: 〔倉頡〕
-  preedit_format:
-    - 'xform/^([a-z]*)$/$1\t（\U$1\E）/'
-    - "xlit|ABCDEFGHIJKLMNOPQRSTUVWXYZ|日月金木水火土竹戈十大中一弓人心手口尸廿山女田難卜符|"
-  comment_format:
-    - "xlit|abcdefghijklmnopqrstuvwxyz~|日月金木水火土竹戈十大中一弓人心手口尸廿山女田難卜符～|"
-  disable_user_dict_for_patterns:
-    - "^z.*$"
-    - "^yyy.*$"
-
-kanas:
-  tag: kanas
-  dictionary: kanas
-  enable_user_dict: false
-  prefix: "R"
-  suffix: ";"
-  tips: 〔假名〕
-
-reverse_lookup:
-  tags: [ jyut6ping3, luna_pinyin, cangjie5, kanas ]
-  overwrite_comment: false
-  dictionary: gukwan
-
-emoji_suggestion:
-  opencc_config: emoji.json
-  option_name: emoji_suggestion
-  tips: all
-
-punctuator:
-  import_preset: symbols_cantonese
-
-key_binder:
-  import_preset: default
-
-recognizer:
-  import_preset: default
-  patterns:
-    punct: "^/([0-9]0?|[a-z]+)$"
-    jyut6ping3: "`[a-z']*;?$"
-    luna_pinyin: "^x[a-z']*;?$"
-    cangjie5: "^v[a-z]*;?$"
-    kanas: "^R[a-zA-Z-]*;?$"
+  prism: gukwan_fanwan

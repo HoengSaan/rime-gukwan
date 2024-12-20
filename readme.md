@@ -2,11 +2,15 @@
 
 **測試階段**
 
-此爲[RIME | 中州韻輸入法引擎](https://rime.im/)所用方案，用於輸入粵語沙田方言，拼音基於分韻廣韻以兼容各地方音(如師讀作si1)同廣州化(如弧讀作wu4)既情況。爲兼容性同方便整理，輸入碼同實際拼音有所不同，但可直接以粵拼輸入。
+此爲[RIME | 中州韻輸入法引擎](https://rime.im/)方案，用於輸入粵語沙田方言，拼音基於分韻廣韻以兼容各地方音(如師讀作si1)同廣州化(如弧讀作wu4)既情況。爲兼容性同方便整理，輸入碼同實際拼音有所不同，但可直接以粵拼輸入。
 
 現有字庫根據excel大批量轉換，有不少紕漏，敬請見諒。廣韻之外字庫未完成，目前缺少現代字同粵字，缺少部份白讀音。由於方案竝無詞庫，建議以粵拼詞庫代替之（須去除輸入碼）。
 
-此方案無法兼顧所有粵語方言，亦竝非本方案之目的。目前可以以小欖話（即本方案默認設定）、廣州話（須調整設定）、分韻音（勳小韻除外）輸入。
+此方案無法兼顧所有粵語方言，亦竝非本方案之目的。目前可以以小欖話、廣州話、分韻音輸入。
+
+## 示範
+
+![showcase](pic\showcase.gif)
 
 ## 安裝
 
@@ -34,34 +38,41 @@ Android亦可選擇小企鵝（fcitx5），但安裝對一般用家來講較爲�
    1. 普通用家須從Fcitx5進入。Fcitx5→Addons→Rime設定（齒輪符號）→User data dir→OK即可移動，左邊即有選單。將解壓後既文件全數Copy，然後送至上述地址（左邊選單→Fcitx5 for Android→rime）。
 7. 配置文件：開啓Fcitx5鍵盤竝切換至Rime輸入法，用左上角「>」符號開工具列，再撳「…」開輸入法設定，最後撳Reload Config等待輸入法配置完成。
 
-## 調整
+## 輸入
 
 方案無法兼顧所有粵語方言，亦竝非本方案之目的。目前可以以菊韻音、小欖話、廣州話、分韻音（勳小韻除外）輸入。其他方音須自行調整轉換規則。刪除行頭井號啓用轉換，行頭鍵入井號停止轉換。若表內無適合規矩請自行增添，方法參考請參攷[SpellingAlgebra · rime/home Wiki](https://github.com/rime/home/wiki/SpellingAlgebra)。
 
-注意小欖話之間竝非無區別，我所制訂既小欖話方案或不能符合閣下口音。詳見「進階用家」部分。
+其他方音目前須自行製作模糊音規矩。
 
 ### 預設方案
-
-由於本人RIME方案之低能問題，方案不能同時配置。未測試除自用以外之方案既可用性。
 
 - 古音
   - `gukwan.schema.yaml` 菊韻音（自用）
   - `gukwan_fanwan.schema.yaml` 分韻音
-- 今音
+    - 勳小韻應讀若fan1，本方案爲kwan1。
+- 小欖話
+  - 不能辨別透（t）曉（h）者須手動開啓模糊音，請刪除第29行頭井號
+    - 如「肚餓」讀作hau5 ngo6而非tau5 ngo6
+  - 不能辨別透（t）曉（h）者須手動開啓模糊音，請刪除第30行頭井號
+    - 如「南方」讀作laam4 fong1而非naam4 fong1
+  - 不能辨別om/op同am/at者須手動開啓模糊音，請刪除第116行頭井號
+    - 如「乳鴿」讀作jyu5 gap3而非jyu5 gop3
+  - 如能辨別ak同aak者可關閉模糊音，請在第121行頭加井號
+    - 如「勒索」讀作lak6 sok3而非laak6 sok3
   - `gukwan_sl1.schema.yaml` 小欖話——口音一
-    - 見下方小欖話段 
+    - 見下方小欖話段默認，若部分不符合可自行更改方案。
   - `gukwan_sl2.schema.yaml` 小欖話——口音二
-    - 能辨別透（t）曉（h）者
-      - 如「肚餓」讀作tau5 ngo6而非hau5 ngo6
-    - 能辨別來（l）孃（n）者
-      - 如「南方」讀作naam4 fong1而非laam4 fong1
+    - 見下方小欖話段異音，若部分不符合可自行更改方案。
     - 師韻讀作i者
       - 如「師資」讀成si1 zi1而非syu1 zyu1
-      - 如「廁所」讀成ci3 so2而非cyu zyu1
-    - 蟹合一等音，同心來兩母組合時讀作yu者
+      - 如「廁所」讀成ci3 so2而非cyu so2
+    - 蟹合一等音，同心來兩母組合時，不讀yu而讀作eoy者 
       - 如「碎片」讀成seoy3 pin3而非syu3 pin3
       - 如「行雷」讀成haang4 leoy6而非haang4 lyu4
+    - 遇開三等音，同心母組合時，不讀yu而讀作eoy者 
+      - 如「需求」讀成seoy1 kau4而非syu1 kau4
   - `gukwan_canton.schema.yaml` 廣州話（未測試或不能用）
+    - 臻小韻爲zeon1，本方案爲zan1。
     - 廣州話建議閣下使用[rime/rime-cantonese: Rime Cantonese input schema | 粵語拼音輸入方案](https://github.com/rime/rime-cantonese)，官網爲[粵語拼音輸入法 Jyutping IME](https://jyutping.net/)。
 
 ### 注意
@@ -69,8 +80,6 @@ Android亦可選擇小企鵝（fcitx5），但安裝對一般用家來講較爲�
 ※請閣下務必閱讀方案文件（即以schema.yaml結尾之文件）※
 
 爲貼合閣下口音，請閱讀方案文件，尤其`#聲母——菊韻`同`#韻母——菊韻`部份並進行調整。
-
-
 
 ### 反查
 
@@ -85,15 +94,13 @@ Android亦可選擇小企鵝（fcitx5），但安裝對一般用家來講較爲�
 
 ## 今音輸入
 
-### 示範
-
 ### 聲母
 
-<img src="pic\shingmau1.png" style="zoom: 67%;" />
+<img src="pic\shingmau.png" style="zoom: 50%;" />
 
 ### 韻母
 
-<img src="pic\wanmau1.png" style="zoom: 67%;" />
+<img src="pic\wanmau.png" style="zoom: 67%;" />
 
 ### 聲調
 
@@ -101,15 +108,15 @@ Android亦可選擇小企鵝（fcitx5），但安裝對一般用家來講較爲�
 
 ## 古音輸入
 
-進階用家用。
+進階用家用。韻母表複雜全爲兼容，實際擬音並無如此複雜。寬式音標本考慮作爲IPA版既輸出，但係太過離地，應該唔會整。毋須理會，正常打字即可。
 
-<img src="pic\shingmau2.png" style="zoom: 67%;" />
+<img src="pic\shingmaushingdiu.png" style="zoom: 67%;" />
 
-<img src="pic\wanmau2.png" style="zoom: 67%;" />
+<img src="pic\wanmaufull.png" style="zoom: 67%;" />
 
 ## 小欖話
 
-小欖話爲例。其他方音目前須自行製作模糊音規矩。本處僅列擧同現今廣州話既異同。如有繆誤，敬請見諒。
+本處僅列擧同現今廣州話既異同。如有繆誤，敬請見諒。
 
 ### 聲母
 
@@ -123,8 +130,6 @@ Android亦可選擇小企鵝（fcitx5），但安裝對一般用家來講較爲�
   - 如「戶」讀若fu6、「湖」讀若fu4。廣州話則讀若wu6、wu4。今受廣州影響，亦讀若wu6、wu4。
 
 ### 韻母
-
-韻母表複雜全爲兼容，實際擬音並無如此複雜。寬式音標本考慮作爲IPA版既輸出，但係太過離地，應該唔會整。毋須理會，正常打字即可。
 
 - 止攝
   - 小欖**見組**未裂化。
@@ -179,7 +184,7 @@ Android亦可選擇小企鵝（fcitx5），但安裝對一般用家來講較爲�
 
 本應陰去歸陽平，常用字詞亦符合此現象「睏覺」則爲fan4 geu4，但受廣州影響，單字讀時（讀書音）同廣州同。
 
-![shingdiudyibi](C:\Users\cn159\Desktop\gukwan\pic\shingdiudyibi.png)
+<img src="pic\shingdiudyibi.png" alt="shingdiudyibi" style="zoom:50%;" />
 
 ### 小項
 
@@ -193,7 +198,3 @@ Android亦可選擇小企鵝（fcitx5），但安裝對一般用家來講較爲�
 - 「隨」文讀同廣州亦讀若ceoy4，但白讀則爲coi4。「脆」亦有白讀（乾脆）coi3。
 - 聲旁爲「亘」者，如廣州話讀若wun4，小欖話則讀若fun4。
 - ……
-
-### 反查
-
-見上
