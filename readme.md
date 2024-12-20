@@ -10,7 +10,7 @@
 
 ## 示範
 
-![showcase](pic\showcase.gif)
+<img src="pic\showcase.gif" alt="showcase" style="zoom:100%;" />
 
 ## 安裝
 
