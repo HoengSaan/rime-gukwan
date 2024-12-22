@@ -6,12 +6,7 @@ __include: gukwan.schema:/
 schema:
   schema_id: gukwan_sl1
   name: 菊韻小欖話(口音一)
-  version: "1.2b"
-  description: |-
-    ※請務必閱讀方案文件※
-    【小欖話(口音一)】詳細請至本方案github頁。https://github.com/HoengSaan/rime-gukwan
-    現有字庫根據excel大批量轉換，有不少紕漏，敬請見諒。廣韻之外字庫未完成，目前缺少不少現代字同粵字。無詞庫，建議以粵拼詞庫代替之（須去除輸入碼）。
-    反查:`粵拼(新) x普音 v倉頡 R假名。聲調可省：v爲平，x爲上，q爲去，單陰雙陽。
+  version: "1.5b"
     
 speller:
   alphabet: zyxwvutsrqponmlkjihgfedcba
@@ -76,7 +71,7 @@ speller:
     - derive/^(d|t|l|n)i(?=\d)/$1ei/       # 止攝裂化齒音(i->ei) 粵（如「地」讀若dei）
     #- derive/^(g|k|h)i(?=\d)/$1ei/         # 止攝裂化牙音(i->ei) 穗（如「既」讀若gei）
     
-    #- derive/y(?=\d)/i/                    # 止攝師韻展脣(y->i) 穗（如「師」讀若si）民衆鎮等
+    #- xform/y(?=\d)/i/                    # 止攝師韻展脣(y->i) 穗（如「師」讀若si）民衆鎮等
     #- derive/y(?=\d)/yu/                   # 止攝師韻圓脣(y->yu) 菊（如「仕」讀若syu） 參攷用 毋須開
     
     - derive/ooi(?=\d)/eoy$1/               # 止蟹央化(ooi->eoy) 粵（如「雖」讀若seoy）

@@ -40,7 +40,7 @@ Android亦可選擇小企鵝（fcitx5），但安裝對一般用家來講較爲�
 
 ## 輸入
 
-方案無法兼顧所有粵語方言，亦竝非本方案之目的。目前可以以菊韻音、小欖話、廣州話、分韻音（勳小韻除外）輸入。其他方音須自行調整轉換規則。刪除行頭井號啓用轉換，行頭鍵入井號停止轉換。若表內無適合規矩請自行增添，方法參考請參攷[SpellingAlgebra · rime/home Wiki](https://github.com/rime/home/wiki/SpellingAlgebra)。
+方案無法兼顧所有粵語方言，亦竝非本方案之目的。目前可以以菊韻音、小欖話、廣州話、分韻音（勳小韻除外）輸入。其他方音須自行調整轉換規則。刪除行頭井號啓用轉換，行頭鍵入井號停止轉換。若表內無適合規矩請自行增添，方法請參攷[SpellingAlgebra · rime/home Wiki](https://github.com/rime/home/wiki/SpellingAlgebra)。
 
 其他方音目前須自行製作模糊音規矩。
 

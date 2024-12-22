@@ -4,12 +4,12 @@
 schema:
   schema_id: gukwan
   name: 菊韻
-  version: "1.2b"
+  version: "1.5b"
   author:
     靈帝（Hoengsaan）
   description: |-
     ※請務必閱讀方案文件※
-    【自用音】詳細請至本方案github頁。https://github.com/HoengSaan/rime-gukwan
+    詳細請至本方案github頁。https://github.com/HoengSaan/rime-gukwan
     反查:`粵拼(新) x普音 v倉頡 R假名。聲調可省：v爲平，x爲上，q爲去，單陰雙陽。
 
   dependencies:
@@ -132,7 +132,7 @@ speller:
     #- derive/^(d|t|l|n)i(?=\d)/$1ei/       # 止攝裂化齒音(i->ei) 粵（如「地」讀若dei）
     #- derive/^(g|k|h)i(?=\d)/$1ei/         # 止攝裂化牙音(i->ei) 穗（如「既」讀若gei）
     
-    #- derive/y(?=\d)/i/                    # 止攝師韻展脣(y->i) 穗（如「師」讀若si）民衆鎮等
+    #- xform/y(?=\d)/i/                    # 止攝師韻展脣(y->i) 穗（如「師」讀若si）民衆鎮等
     #- derive/y(?=\d)/yu/                   # 止攝師韻圓脣(y->yu) 菊（如「仕」讀若syu） 參攷用 毋須開
     
     - derive/ooi(?=\d)/eoy$1/               # 止蟹央化(ooi->eoy) 粵（如「雖」讀若seoy）
