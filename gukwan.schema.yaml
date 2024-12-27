@@ -121,7 +121,6 @@ speller:
     - derive/yi(?=\d)/ui/                   # 蟹合分韻(yi->ui)
     - derive/ooi(?=\d)/ui$1/                # 止蟹分韻(ooi->ui)
     - derive/oo(?=\d)/ou$1/                 # 效一分韻(oo->ou) 打字輔助
-    - derive/ea(n|t)(?=\d)/eo$1/            # 臻攝粵拼(ea->eo) 打字輔助
     - derive/jo(ng|k)/jio$1/                # 宕攝元音全拼(jo->jio) 打字輔助
 
     #- derive/y(?=\d)/$1z/                  # 止開師韻分韻(y->z)
@@ -235,8 +234,6 @@ speller:
     - derive/eoy(?=\d)/eoi/                 # 粵拼(eoy->eoi)
     - derive/eo/oe/                         # 容錯(eo/oe)
     - derive/oe/eo/                         # 容錯(eo/oe)
-    - derive/ae/ea/                         # 容錯(ae/ea)
-    - derive/ea/ae/                         # 容錯(ae/ea)
 
     - abbrev/^([a-z]).+$/$1/                # 首字母簡拼
     - abbrev/^(n[ghjy]).+$/$1/              # 聲母簡拼
