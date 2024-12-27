@@ -4,7 +4,7 @@
 schema:
   schema_id: gukwan
   name: 菊韻
-  version: "1.5b"
+  version: "1.6b"
   author:
     靈帝（Hoengsaan）
   description: |-
@@ -128,6 +128,9 @@ speller:
     
     #韻母——菊韻
     #其他口音請自行調校 不建議關閉打字輔助
+    - derive/^eau(?=\d)/au/                 # 合音（如「無有」合音「冇」）
+    - derive/^eau(?=\d)/ou/                 # 合音（如「無有」合音「冇」）
+    
     #- derive/^(b|p|f)i(?=\d)/$1ei/         # 止攝裂化脣音(i->ei) 粵（如「備」讀若bei）
     #- derive/^(d|t|l|n)i(?=\d)/$1ei/       # 止攝裂化齒音(i->ei) 粵（如「地」讀若dei）
     #- derive/^(g|k|h)i(?=\d)/$1ei/         # 止攝裂化牙音(i->ei) 穗（如「既」讀若gei）
