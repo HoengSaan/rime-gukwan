@@ -6,7 +6,7 @@
 
 ---
 name: gukwan.one
-version: "1.6b"
+version: "2.0b"
 sort: by_weight
 ...
 
@@ -123,10 +123,10 @@ sort: by_weight
 繽	ban1	
 蘋	ping4	
 閩	man5	
-鶉	cjean1	
-迍	zrean6	
-竣	zean3	
-馴	sean4	
+鶉	cjeon1	
+迍	zreon6	
+竣	zeon3	
+馴	seon4	
 文	man1	
 蚊	man1	
 芫	jim4	
@@ -142,13 +142,13 @@ sort: by_weight
 掀	kin4	3%
 魂	wan4	
 崑	kwan1	
-罇	zean1	
-樽	zean1	
-蹲	dean1	
-蹲	zean1	
+罇	zeon1	
+樽	zeon1	
+蹲	deon1	
+蹲	zeon1	
 飩	tan1	
 邨	cyun1	
-燉	dean6	
+燉	deon6	
 歺	caan1	
 𩛈	caan1	
 欄	laan1	
@@ -303,8 +303,8 @@ sort: by_weight
 鶯	ang1	
 嚶	jing1	
 櫻	jing1	
-鸚	jing1	3%
-譻	jing1	3%
+鸚	jing1	
+譻	jing1	
 鸎	jing1	
 崢	zhaang1	
 鬇	zhaang1	
@@ -465,11 +465,11 @@ sort: by_weight
 拐	kwaai5	
 在	coi2	
 囤	tyun4	
-沌	dean6	
-坉	dean6	
-庉	dean6	
-遁	dean6	
-遯	dean6	
+沌	deon6	
+坉	deon6	
+庉	deon6	
+遁	deon6	
+遯	deon6	
 棵	fo2	
 棵	po1	
 拌	bun6	
@@ -483,6 +483,7 @@ sort: by_weight
 窈	miu5	
 趙	zriu5	
 巧	kiu2	
+鮑	baeu1	
 那	naa5	
 朵	doe2	
 朶	doe2	
@@ -662,14 +663,14 @@ sort: by_weight
 瑾	gan2	
 饉	gan2	
 𧥺	kwan1	
-殉	sean1	
-徇	sean1	
-侚	sean1	
+殉	seon1	
+徇	seon1	
+侚	seon1	
 暈	wan4	
-順	sean5	
+順	seon5	
 份	fan6	
 券	gwyun3	
-頓	dean6	
+頓	deon6	
 困	wan3	
 睏	fan3	
 瞓	fan3	
@@ -802,7 +803,7 @@ sort: by_weight
 律	lat1	
 寽	lyut3	
 黜	zryut3	
-怵	zreat1	
+怵	zreot1	
 出	cjyut1	
 不	bat1	
 拂	pat1	
@@ -845,6 +846,7 @@ sort: by_weight
 啜	zryut1	
 吶	nraap6	
 畧	liok6	
+鵲	ziok3	
 噱	ciok3	
 玃	hwok3	3%
 貜	hwok3	3%
@@ -982,3 +984,4 @@ sort: by_weight
 眨	zhaem2	
 壓	aat3	
 砝	faat3	
+
