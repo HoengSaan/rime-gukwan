@@ -17,13 +17,17 @@ This work is licensed under a
 
 現有字庫根據excel大批量轉換，有不少紕漏，敬請見諒。廣韻之外字庫未完成，目前缺少現代字同粵字，缺少部份白讀音。由於方案竝無詞庫，建議以粵拼詞庫代替之（須去除輸入碼）。
 
-此方案無法兼顧所有粵語方言，亦竝非本方案之目的。目前可以以小欖話、廣州話、分韻音輸入。
+**預計字表將於元旦完成。**
+
+菊韻無法兼顧所有粵語方言，亦竝非本方案之目的。目前可以以小欖話、廣州話、分韻音輸入。
 
 ## 示範
 
 <img src="pic\showcase.gif" alt="showcase" style="zoom:100%;" />
 
 ## 安裝
+
+**由於拼法變動，方案需要大改，若要試用請用此版本https://github.com/HoengSaan/rime-gukwan/releases/tag/v1.6-beta。在字庫完成前除測試用方案`gukwan.schema.yaml`之外都唔會有update。**
 
 1. 安裝RIME（WINDOWS：[小狼毫](https://github.com/rime/weasel)；MacOS：[鼠鬚管](https://github.com/rime/squirrel)；Linux：[Fcitx5](https://github.com/fcitx/fcitx5)、[Fcitx5-Rime](https://github.com/fcitx/fcitx5-rime)；Android：[同文輸入法](https://github.com/osfans/trime)｜[Fcitx5-Android](https://github.com/fcitx5-android/fcitx5-android)、[Fcitx5-Android-Rime](https://github.com/fcitx5-android/fcitx5-android/blob/master/plugin/rime)）
 
@@ -51,16 +55,54 @@ Android亦可選擇小企鵝（fcitx5），但安裝對一般用家來講較爲�
 
 ## 輸入
 
-方案無法兼顧所有粵語方言，亦竝非本方案之目的。目前可以以菊韻音、小欖話、廣州話、分韻音（勳小韻除外）輸入。其他方音須自行調整轉換規則。刪除行頭井號啓用轉換，行頭鍵入井號停止轉換。若表內無適合規矩請自行增添，方法請參攷[SpellingAlgebra · rime/home Wiki](https://github.com/rime/home/wiki/SpellingAlgebra)。
+拼音方案基於粵拼，現代音（今音）同粵拼無區別，直接使用即可。
 
-其他方音目前須自行製作模糊音規矩。
+### 聲調
 
-**目前方案未完成，僅爲可用狀態。**
+同大多數粵拼輸入法一樣，可以輸入聲調以加快蒐字速度。
+
+- 陰：單擊
+  - 陰平（1｜55/53）：`v` 
+  - 陰上（2｜24）：`x`
+  - 陰去（3｜33）：`q`
+    - 應歸陽平
+  - 上陰入（1｜5）：`v`
+  - 新入（2｜24）：`x`
+    - 目前字表無收變調音
+  - 下陰入（3｜3）：`q`
+- 陽：雙擊
+  - 陽平（4｜42）：`vv`
+  - 陽上（5｜13）：`xx`
+  - 陰去（6｜21）：`qq`
+  - 陽入（6｜6）：`qq`
+
+### 反查
+
+目前方案預設四個反查：
+
+- 粵拼（[rime-cantonese](https://github.com/rime/rime-cantonese)），粵語廣州話反查。鍵值爲<code>`</code>
+- 明月拼音（rime-luna_pinyin），北語普通話反查。鍵值爲`x`。
+- 倉頡五代（rime-cangjie5），倉頡反查。鍵值爲`v`。
+- 假名（[rime-kanas](https://github.com/HoengSaan/rime-kanas)），以細階輸入平假名，大階輸入片假名。鍵值爲`R`。
+
+**粵拼同假名須安裝方可使用反查**，安裝方法見上方安裝段。如需使用其他方案反查，請自行搜索竝改變方案。
+
+### 注意
+
+※請閣下務必閱讀方案文件（即以schema.yaml結尾之文件）※
+
+方案無法兼顧所有粵語方言，亦竝非本方案之目的。目前可以以菊韻音、小欖話、廣州話、分韻音（勳小韻除外）輸入。其他方音須自行調整轉換規則。刪除行頭井號啓用轉換，行頭鍵入井號停止轉換。（即行頭有井號爲停止轉換，行頭無井號爲啓用轉換）若表內無適合規矩請自行增添，方法請參攷[SpellingAlgebra · rime/home Wiki](https://github.com/rime/home/wiki/SpellingAlgebra)。
+
+<img src="pic\ref1.png"/>
+
+爲貼合閣下口音，請閱讀方案文件，尤其`#聲母——菊韻`同`#韻母——菊韻`部份並進行調整。其他方音目前須自行製作模糊音規矩。
 
 ### 預設方案
 
+**由於拼法變動，方案需要大改，若要試用請用此版本https://github.com/HoengSaan/rime-gukwan/releases/tag/v1.6-beta。在字庫完成前除測試用方案`gukwan.schema.yaml`之外都唔會有update。**
+
 - 古音
-  - `gukwan.schema.yaml` 菊韻音（自用）
+  - `gukwan.schema.yaml` 菊韻音（測試用）
   - `gukwan_fanwan.schema.yaml` 分韻音
     - 勳小韻應讀若fan1，本方案爲kwan1。
 - 小欖話
@@ -84,48 +126,20 @@ Android亦可選擇小企鵝（fcitx5），但安裝對一般用家來講較爲�
       - 如「行雷」讀成haang4 leoy6而非haang4 lyu4
     - 遇開三等音，同心母組合時，不讀yu而讀作eoy者 
       - 如「需求」讀成seoy1 kau4而非syu1 kau4
-  - `gukwan_canton.schema.yaml` 廣州話（未測試或不能用）
-    - 臻小韻爲zeon1，本方案爲zan1。
-    - 廣州話建議閣下使用[rime/rime-cantonese: Rime Cantonese input schema | 粵語拼音輸入方案](https://github.com/rime/rime-cantonese)，官網爲[粵語拼音輸入法 Jyutping IME](https://jyutping.net/)。
-
-### 注意
-
-※請閣下務必閱讀方案文件（即以schema.yaml結尾之文件）※
-
-爲貼合閣下口音，請閱讀方案文件，尤其`#聲母——菊韻`同`#韻母——菊韻`部份並進行調整。
-
-### 反查
-
-目前方案預設四個反查：
-
-- 粵拼（[rime-cantonese](https://github.com/rime/rime-cantonese)），粵語廣州話反查。鍵值爲`。
-- 明月拼音（rime-luna_pinyin），北語普通話反查。鍵值爲x。
-- 倉頡五代（rime-cangjie5），倉頡反查。鍵值爲v。
-- 假名（[rime-kanas](https://github.com/HoengSaan/rime-kanas)），以細階輸入平假名，大階輸入片假名。鍵值爲R。
-
-**粵拼同假名須安裝方可使用反查**，安裝方法見上方安裝段。如需使用其他方案反查，請自行搜索竝改變方案。
+  - `gukwan_canton.schema.yaml` 廣州話
+    - 臻小韻爲zeon1，本方案爲zan1等，故廣州話用家建議使用[rime/rime-cantonese: Rime Cantonese input schema | 粵語拼音輸入方案](https://github.com/rime/rime-cantonese)，官網爲[粵語拼音輸入法 Jyutping IME](https://jyutping.net/)。
 
 ## 今音輸入
 
-### 聲母
+<img src="pic\gamjam.png"/>
 
-<img src="pic\shingmau.png" style="zoom: 33%;" />
+## 古音輸入（拼音表）
 
-### 韻母
+進階用家用。韻母表複雜全爲兼容，實際擬音並無如此複雜。（2.1b已修正）
 
-<img src="pic\wanmau.png" style="zoom: 33%;" />
+<img src="pic\gujam1.png"/>
 
-### 聲調
-
-聲調同大多數粵拼輸入法一樣：v爲平、x爲上、q爲去。單擊爲陰聲，雙擊爲陽聲。上陰入同陰平，下陰入同陰去，陽入同陽去。
-
-## 古音輸入
-
-進階用家用。韻母表複雜全爲兼容，實際擬音並無如此複雜。（正在改變拼法）
-
-<img src="pic\shingmaushingdiu.png" style="zoom: 33%;" />
-
-<img src="pic\wanmaufull.png" style="zoom: 33%;" />
+<img src="pic\gujam2.png"/>
 
 ## 小欖話
 
