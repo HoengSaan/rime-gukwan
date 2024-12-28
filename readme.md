@@ -1,5 +1,16 @@
 # 菊韻
 
+Shield: [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
+
+This work is licensed under a
+[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].
+
+[![CC BY-NC-SA 4.0][cc-by-nc-sa-image]][cc-by-nc-sa]
+
+[cc-by-nc-sa]: http://creativecommons.org/licenses/by-nc-sa/4.0/
+[cc-by-nc-sa-image]: https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png
+[cc-by-nc-sa-shield]: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg
+
 **測試階段**
 
 此爲[RIME | 中州韻輸入法引擎](https://rime.im/)方案，用於輸入粵語沙田方言，拼音基於分韻廣韻以兼容各地方音(如師讀作si1)同廣州化(如弧讀作wu4)既情況。爲兼容性同方便整理，輸入碼同實際拼音有所不同，但可直接以粵拼輸入。
@@ -43,6 +54,8 @@ Android亦可選擇小企鵝（fcitx5），但安裝對一般用家來講較爲�
 方案無法兼顧所有粵語方言，亦竝非本方案之目的。目前可以以菊韻音、小欖話、廣州話、分韻音（勳小韻除外）輸入。其他方音須自行調整轉換規則。刪除行頭井號啓用轉換，行頭鍵入井號停止轉換。若表內無適合規矩請自行增添，方法請參攷[SpellingAlgebra · rime/home Wiki](https://github.com/rime/home/wiki/SpellingAlgebra)。
 
 其他方音目前須自行製作模糊音規矩。
+
+**目前方案未完成，僅爲可用狀態。**
 
 ### 預設方案
 
@@ -96,11 +109,11 @@ Android亦可選擇小企鵝（fcitx5），但安裝對一般用家來講較爲�
 
 ### 聲母
 
-<img src="pic\shingmau.png" style="zoom: 50%;" />
+<img src="pic\shingmau.png" style="zoom: 33%;" />
 
 ### 韻母
 
-<img src="pic\wanmau.png" style="zoom: 67%;" />
+<img src="pic\wanmau.png" style="zoom: 33%;" />
 
 ### 聲調
 
@@ -108,11 +121,11 @@ Android亦可選擇小企鵝（fcitx5），但安裝對一般用家來講較爲�
 
 ## 古音輸入
 
-進階用家用。韻母表複雜全爲兼容，實際擬音並無如此複雜。寬式音標本考慮作爲IPA版既輸出，但係太過離地，應該唔會整。毋須理會，正常打字即可。
+進階用家用。韻母表複雜全爲兼容，實際擬音並無如此複雜。（正在改變拼法）
 
-<img src="pic\shingmaushingdiu.png" style="zoom: 67%;" />
+<img src="pic\shingmaushingdiu.png" style="zoom: 33%;" />
 
-<img src="pic\wanmaufull.png" style="zoom: 67%;" />
+<img src="pic\wanmaufull.png" style="zoom: 33%;" />
 
 ## 小欖話
 
@@ -184,7 +197,7 @@ Android亦可選擇小企鵝（fcitx5），但安裝對一般用家來講較爲�
 
 本應陰去歸陽平，常用字詞亦符合此現象「睏覺」則爲fan4 geu4，但受廣州影響，單字讀時（讀書音）同廣州同。
 
-<img src="pic\shingdiudyibi.png" alt="shingdiudyibi" style="zoom:50%;" />
+<img src="pic\shingdiudyibi.png" alt="shingdiudyibi" style="zoom: 25%;" />
 
 ### 小項
 
