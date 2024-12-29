@@ -4,7 +4,7 @@
 schema:
   schema_id: gukwan
   name: 菊韻
-  version: "2.1.1b"
+  version: "2.1.2b"
   author:
     靈帝（Hoengsaan）
   description: |-
@@ -77,23 +77,22 @@ speller:
     #刪除行頭井號啓用轉換，行頭鍵入井號停止轉換。
     
     #聲母——菊韻
-    #根據自己口音偏好調校
-
+    #根據自己口音偏好調
     #- derive/^ng([aeiou])/$1/              # 疑影不分(ng↔0) 懶音
     #- derive/^([aeiou])/ng$1/              # 疑影不分(ng==0) 懶音
 
     #- derive/^n(?!g|r|j)/l/                # 泥來合流(n->l) 共通
     #- derive/^t/h/                         # 透曉合流(t->h)
 
-    - derive/^vu(?=\d)/fu$1/                # 遇攝合口(hu->fu)（如「護」讀作fu6）
-    - derive/^vu(?=\d)/hu$1/                # 遇攝合口(hu fix)（如「護」讀作fu6）打字輔助
-    #- derive/^(s)(?!j)i(?=\d)/$1ei/        # 止攝裂化 粵
     #- derive/^(g|k)wo/$1o/                 # 口音補充(gk[w])（如「過」讀作go）
     #- derive/^(g|k)w/$1/                   # 口音補充(gk[w])（如「骨」讀作gat）
     - derive/^hj/j/                         # 口音補充(hj->j)（如「賢」讀若jin）多數
     #- derive/*hj/h/                        # 口音補充(hj->h)（如「賢」讀若hin）順德石歧等
-
-    #- derive/^vu(?=\d)/wu$1/               # 遇攝合口(hu->wu)（如「護」讀作wu6）
+    
+    #- derive/^(s)(?!j)i(?=\d)/$1ei/        # 心母特
+    
+    - xform/^vu(?=\d)/hu$1/                # 遇攝合口(hu fix)（如「護」讀作fu6）打字輔助
+    #- xform/^vu(?=\d)/wu$1/               # 遇攝合口(hu->wu)（如「護」讀作wu6）
     
     #聲母——古音
     #拼音以古音爲準，建議全開
@@ -113,14 +112,12 @@ speller:
     #- derive/^j(i|y)/h$1                   # 口音補充（如「以」讀作hi）
     
     #韻母——拼寫
-    #現代音同廣州音無須郁動 全開可幾乎完全兼容分韻
-    #其他口音請自行調校 若無影響者無需關閉 不建議關閉打字輔助
+    #其他口音請自行調校 不建議關閉打字輔助
     - derive/^(z|c|s)ji(?=\d)/$1ii/         # 止開照組異拼(ji->ii)
     - derive/yo(?=\d)/yu/                   # 遇攝分韻(yo->yu)
     - derive/yi(?=\d)/ui/                   # 蟹合分韻(yi->ui)
     - derive/ooi(?=\d)/ui$1/                # 止蟹分韻(ooi->ui)
     - derive/oo(?=\d)/ou$1/                 # 效一分韻(oo->ou) 打字輔助
-    - derive/jo(ng|k)/jio$1/                # 宕攝元音全拼(jo->jio) 打字輔助
 
     #- derive/y(?=\d)/$1z/                  # 止開師韻分韻(y->z)
     
@@ -160,7 +157,7 @@ speller:
     
     #- derive/ea(n|t)(?=\d)/a$1/            # 臻攝白讀音(ea->a) 白（如「順」讀若san）
     
-    - derive/oo(?=\d)/o$1/                  # 效一元音融合(oo->o) 菊（如「高」讀若go）打字輔助
+    - derive/oo(?=\d)/o$1/                  # 效一元音融合(oo->o) 菊（如「高」讀若go
     
     - derive/iaa(?=\d)/e$1/                 # 果假元音融合(iaa->e) 粵（如「車」讀若ce） 打字輔助
     - derive/jaa(?=\d)/je$1/                # 果假元音融合(jaa->je) 粵（如「邪」讀若je） 打字輔助
@@ -178,7 +175,8 @@ speller:
     #- derive/at(?=\d)/aat$1/               # at同aat混 示例
     #- derive/ak(?=\d)/aak$1/               # ak同aak混 菊常見
     #- derive/ai(?=\d)/aai$1/               # ai同aai混 示例
-    #- derive/ang(?=\d)/an$1/               # an同ang混
+    #- derive/ang(?=\d)/an$1/               # an同ang混 示例
+    
     #- derive/o(?=\d)/oe$1/                 # 口音補充（如「螺」讀若loe）
     #- derive/o(ng|k)(?=\d)/oe$1/           # 口音補充（如「江」讀若goeng）
     #- derive/y(?=\d)/i$1/                  # 口音補充（如「雨」讀若ji）
@@ -186,7 +184,6 @@ speller:
 
     #韻尾
     #根據自己口音偏好調校
- 
     #- derive/^ngu([?=\d])$/m$1/            # 鼻音節混(ng->m)
     #- derive/ng([?=\d])$/n$1/              # 韻尾簡化(ng->n)
     #- derive/m([?=\d])$/n$1/               # 韻尾簡化(m->n)
@@ -197,20 +194,25 @@ speller:
     #- derive/t([?=\d])$/h$1/               # 入聲弱化(t->h)
 
     #打字輔助
-    #根據自己偏好調校
-    - derive/^([aeiou])/q$1/                # 喉塞音
+    #正常情況下毋須郁動，可根據自己喜好調校。
+    #打字輔助——精照
     - derive/^(z|c|s|n)j/$1h/               # 打字輔助A組(-j->-h) 廣韻章組（h拼法）
     - derive/^(z|c)r/$1h/                   # 打字輔助A組(-r->-h) 廣韻知組（h拼法）
     - derive/^(z|c|s)jiong/$1jong/          # 打字輔助A組
     - derive/^(z|c|s)jiaa/$1jaa/            # 打字輔助A組
     #- derive/^(z|c|s)h/$1j/                # 打字輔助B組(-h->-j) 廣韻莊組（j拼法）
     #- derive/^(z|c)r/$1j/                  # 打字輔助B組(-r->-j) 廣韻知組（j拼法）
+    
+    #打字輔助——其他
+    - derive/^([aeiou])/q$1/                # 喉塞音
     - derive/^nr/n/                         # 打字輔助(nr->n) 廣韻孃母歸泥
     - derive/^ngw/w/                        # 打字輔助(ngw->w) 廣韻疑母脫落
     - derive/^ngun(?=\d)/wun$1/             # 打字輔助(ngw->w) 廣韻疑母脫落
     - derive/^hw/f/                         # 打字輔助(hw->f) 廣韻牙音合口讀若輕脣
     - derive/^hu(?=\d)/fu$1/                # 打字輔助(hu->fu) 廣韻牙音合口讀若輕脣
+    - derive/jo(ng|k)/jio$1/                # 打字輔助(jo->jio) 宕攝元音全拼
     
+    #打字輔助——其他
     #- derive/^dr/zr/                       # 打字輔助(dr->zr) 廣韻知組
     #- derive/^tr/cr/                       # 打字輔助(tr->cr) 廣韻知組
     #- derive/^dj/cr/                       # 打字輔助(dj->zr) 廣韻知組
@@ -220,7 +222,6 @@ speller:
 
     #全拼簡拼
     #正常情況下毋須郁動，可根據自己喜好調校
-
     - derive/(g|k|h)u/$1wu/                 # 全拼(g|k|h[w]u)
     - derive/(g|k)y/$1wy/                   # 全拼(g|k|h[w]y)
     - derive/^ngy/ngjy/                     # 全拼(ng[j]y)
@@ -249,7 +250,7 @@ speller:
     - xform/5/xx/                           # 陽上
     - xform/3/q/                            # 陰去
     - xform/6/qq/                           # 陽去
-    
+
 translator:
   dictionary: gukwan
   spelling_hints: 8
