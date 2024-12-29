@@ -4,7 +4,7 @@
 schema:
   schema_id: gukwan
   name: 菊韻
-  version: "2.1b"
+  version: "2.1.1b"
   author:
     靈帝（Hoengsaan）
   description: |-
@@ -139,8 +139,8 @@ speller:
     - derive/ooi(?=\d)/eoy$1/               # 止蟹央化(ooi->eoy) 粵（如「雖」讀若seoy）
     
     - derive/^ngu(?=\d)/ng/                 # 遇開一單獨成韻(ngu->ng) 粵（如「吳」讀若ng）
-    - derive/^(b|p|m|d|t|n|l|z|c|s|sh)u(?=\d)/au/  # 遇攝裂化(u->au) 菊（如「都」讀若dau）
-    #- derive/^(b|p|m|d|t|n|l|z|c|s|sh)u(?=\d)/ou/  # 遇攝裂化(u->ou) 穗（如「都」讀若dou）
+    - derive/^(b|p|m|d|t|n|l|z|c|s|sh)u(?=\d)/$1au/  # 遇攝裂化(u->au) 菊（如「都」讀若dau）
+    #- derive/^(b|p|m|d|t|n|l|z|c|s|sh)u(?=\d)/$1ou/  # 遇攝裂化(u->ou) 穗（如「都」讀若dou）
     
     - derive/^(z|c|s|n|l)yo(?=\d)/$1eoy/    # 遇開三裂化(yo->eoy) 粵（如「旅」讀若leoy）
     #- derive/^(g|k|h)yo(?=\d)/$1eoy/       # 遇開三裂化(yo->eoy) 穗（如「去」讀若heoy）
