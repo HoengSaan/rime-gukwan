@@ -4,7 +4,7 @@
 schema:
   schema_id: gukwan
   name: 菊韻
-  version: "2.1.2b"
+  version: "2.2b"
   author:
     靈帝（Hoengsaan）
   description: |-
@@ -211,6 +211,7 @@ speller:
     - derive/^hw/f/                         # 打字輔助(hw->f) 廣韻牙音合口讀若輕脣
     - derive/^hu(?=\d)/fu$1/                # 打字輔助(hu->fu) 廣韻牙音合口讀若輕脣
     - derive/jo(ng|k)/jio$1/                # 打字輔助(jo->jio) 宕攝元音全拼
+    - derive/^kwing(?=\d)/king$1/
     
     #打字輔助——其他
     #- derive/^dr/zr/                       # 打字輔助(dr->zr) 廣韻知組
