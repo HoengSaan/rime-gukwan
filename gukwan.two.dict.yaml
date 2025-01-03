@@ -2,467 +2,6512 @@
 # encoding: utf-8
 #
 # gukwan - 菊韻字庫——增廣二組
-# 粵字粵音補充
+# 今字異字異音訓讀增補
 
 ---
 name: gukwan.two
-version: "1.3.1a"
+version: "3.0a"
 sort: by_weight
 ...
 
-呢	ne1	
-呢	ni1	
-呢	nei1	
-孖	maa1	
-渠	kyo5	
-渠	hyo5	3%
-渠	jyo5	3%
+〇	ling4	
+丆	hon2	0%
+丆	hon3	
+丌	gi1	
+丌	ki4	
+丒	crau2	0%
+丗	sjai3	0%
+丟	diu1	
+両	liong5	0%
+丢	diu1	
+丬	baan6	0%
+丷	baet3	0%
+乁	ji4	0%
+乆	gau2	0%
+乇	tok3	0%
+乇	zraak6	0%
+么	jiu1	
+乒	bing1	
+乒	ping1	
+乓	bam1	
+乓	bong1	
+乓	pong1	
+乕	hu2	0%
+乗	sjing4	0%
+乗	sjing6	0%
+乚	jyut3	0%
+乚	hoo4	0%
+乢	goi3	0%
+乣	gau2	0%
+乨	cji2	0%
+乩	gi1	
+乪	kek6	0%
+乱	lyun6	0%
+乴	zyut6	0%
+乵	jim5	0%
+乸	naa2	
+乹	gon1	0%
+乹	kin4	0%
+乿	zri6	0%
+亀	gwai1	0%
+亁	gon1	0%
+亁	kin4	
+亃	leon6	0%
+亇	ding1	0%
+亊	shy6	0%
+亐	jyu4	0%
+亓	ki4	
+亗	sooi3	0%
+亘	gang2	0%
+亝	cai4	0%
+亝	zhaai1	0%
+亠	tau4	0%
+亣	daai6	0%
+享	hiong2	
+亰	ging1	0%
+亱	jaa6	0%
+亴	ngau6	0%
+亷	lim4	0%
+亻	njan4	0%
+亽	zaap6	0%
+亾	mong4	0%
+仅	fu3	0%
+仈	baet3	0%
+仌	bing1	0%
+仏	fat6	0%
+仐	saan2	0%
+仒	bing1	0%
+仦	chaeu3	0%
+仧	criong4	0%
+仨	saa1	0%
+仨	saam1	0%
+仩	criong4	0%
+仫	mo1	0%
+仭	njan6	0%
+仮	faan2	0%
+仱	ging1	0%
+仱	kim4	0%
+仱	kam4	
+仴	ngyut6	0%
+仺	cong1	0%
+仼	wong4	0%
+仾	dai1	0%
+伅	dan6	0%
+伅	deon6	0%
+伇	jik6	0%
+伌	aai3	0%
+伒	gan3	0%
+伓	pi1	0%
+伔	dam2	0%
+伕	fu1	0%
+伖	tong2	0%
+优	jau4	0%
+伙	hwo2	
+伝	wan4	0%
+伢	ngaa4	0%
+伨	seon1	0%
+伩	seon3	0%
+伩	man1	
+伬	ciaa2	0%
+伮	nu5	0%
+伲	nri5	0%
+伳	sit3	0%
+伵	kwik1	0%
+伵	hwai3	
+佄	hom4	0%
+佘	sjiaa4	0%
+你	nri5	
+佡	hin1	0%
 佢	kyo5	
 佢	hyo5	
 佢	jyo5	
+佣	jung2	0%
+佣	jung4	0%
+佣	jung6	0%
+佤	ngaa5	
+佦	jau6	0%
+佧	kaa1	
+佨	baeu1	0%
+佬	liu4	0%
+佬	loo2	
+佬	loo5	
+佭	gong3	0%
+佱	faat3	0%
+佲	ming5	0%
+佷	han2	0%
+侇	ji4	0%
+侌	jam1	0%
+侓	leot6	0%
+侕	nji4	0%
+侞	njyo4	0%
+侟	cyun4	0%
+価	cy5	0%
+侢	daai3	0%
+侤	haau2	0%
+侫	ning6	0%
+侭	zeon2	0%
+侰	kwan3	0%
+侱	cring2	0%
+侴	crau2	0%
+侼	but6	0%
+侽	naam4	0%
+侾	haeu1	0%
+俀	tyi2	0%
+俈	guk1	0%
+俉	ngu6	0%
+俐	li6	0%
+俢	sau1	0%
+俤	dai6	0%
+俥	cjiaa1	0%
+俥	gyo1	
+俧	zji3	0%
+俬	sy1	
+俲	haau6	0%
+俷	fai3	0%
+俼	juk6	0%
+俽	hjan1	0%
+俿	hu2	0%
+倁	cri4	0%
+倂	bing3	0%
+倂	bing6	0%
+倂	ping3	0%
+倆	liong5	0%
+倊	zung3	0%
+倎	tin2	0%
+倐	sjuk1	0%
+們	mun4	0%
+倘	siong4	
+倘	tong2	0%
+倛	hi1	0%
+値	zrik6	
+倮	lo2	0%
+倴	ban6	0%
+倵	mu5	0%
+倶	kyu1	0%
+倷	naai5	0%
+倷	noi6	0%
+倸	coi2	0%
+倻	jaa4	0%
+倽	sjaa2	0%
+倿	ning6	0%
+偀	jing1	0%
+偂	cin4	0%
+偊	gyu2	0%
+偊	jyu2	0%
+偊	jyu5	0%
+偌	njaa6	0%
+偌	njok6	0%
+偍	tai4	0%
+偖	cjiaa2	0%
+偗	shaang2	0%
+做	zu6	
+偢	cau2	0%
+偢	ciu2	0%
+偣	jim1	0%
+偦	syo2	0%
+偦	syo1	
+偧	zraa3	0%
+偨	chy1	0%
+偮	zhap1	0%
+偱	seon1	0%
+偸	tau1	
+偹	bi6	0%
+偺	zaa1	0%
+偼	zit6	0%
+偽	ngai6	0%
+傇	njung5	0%
+傈	leot6	0%
+傊	wan6	0%
+傐	hoo5	0%
+傟	ong2	0%
+傠	fat6	0%
+傡	bing6	0%
+傢	gaa1	
+傣	daai2	0%
+傣	taai3	
+傦	gwat1	0%
+傫	lyi5	0%
+傫	lyi6	
+傰	bang1	0%
+傰	pang4	0%
+傹	giong1	0%
+傹	ging2	
+傼	hon3	0%
+傽	zjiong1	0%
+僃	bi6	0%
+僈	maan6	0%
+僌	jing4	0%
+働	dung6	0%
+僠	bo1	0%
+僠	faan1	0%
+僡	wai6	0%
+僪	gwat6	0%
+僪	jyut6	0%
+僪	kyut3	0%
+僫	ok3	0%
+僱	gu3	
+僲	sin1	0%
+僳	suk1	
+僴	haan5	0%
+僷	jip6	0%
+僺	ciu3	0%
+僼	fung1	0%
+儍	sho4	0%
+儎	zoi6	0%
+儏	caan3	0%
+儘	zeon2	
+儘	zeon6	
+儙	hin3	0%
+儚	mung4	
+儝	kwing4	0%
+儞	nri5	0%
+儣	kwong2	0%
+儤	boo3	0%
+儧	zaan2	0%
+儧	zyun2	
+儨	zjat1	0%
+儫	hoo4	0%
+儬	ching3	0%
+儬	leng1	
+儮	lik6	0%
+儿	njan4	0%
+兊	dyi6	0%
+兎	tu3	0%
+兏	criong4	0%
+児	nji4	0%
+兑	dyi6	0%
+兘	cji2	0%
+兙	sjap6 haak1	0%
+党	dong2	0%
+兛	cin1 haak1	0%
+兝	fan1 haak1	0%
+兞	hoo4 haak1	0%
+兠	dau1	0%
+兡	baak3 haak1	0%
+兣	li4 haak1	0%
+兤	fong2	0%
+兦	mong4	0%
+兦	moo4	0%
+兪	jyu4	0%
+兪	jyu6	0%
+兯	zit3	0%
+兲	tin1	0%
+兿	ngai6	0%
+冄	njim5	0%
+円	jyun4	
+円	jen1	
 冇	meau5	
-冇	mou5	
-毋	m4	3%
-唔	m4	
-躝	laan1	
-𢺳	maan1	
-摱	maan1	3%
-𢶯	maan1	3%
-擝	mang1	
-掹	maang1	
+冏	gwing2	0%
+冐	mak6	0%
+冐	moo6	0%
+冖	mik6	0%
+冗	jung2	
+冗	jung5	
+冚	hom6	
+冝	ngi4	0%
+冣	zyi3	0%
+冦	kau3	0%
+冧	nam1	0%
+冧	lom3	
+冨	fu3	0%
+冩	siaa2	0%
+冪	mik6	
+冭	taai3	0%
+冮	gong1	0%
+冲	crung1	
+决	kyut3	
+冴	vu6	0%
+冺	man5	0%
+冼	sin2	0%
+冾	hap1	0%
+冿	zim1	0%
+凁	sau1	0%
+凂	mui5	0%
+凃	tu4	0%
+凎	gam3	0%
+减	gaem2	0%
+凐	jan1	0%
+凑	cau3	0%
+凕	ming5	0%
+凖	zjeon2	0%
+凗	cyi1	0%
+凗	cyi4	0%
+凞	hi1	0%
+凟	duk6	0%
+凢	faan4	0%
+凣	faan4	0%
+凥	gyu1	0%
+処	cjyo2	0%
+処	cjyo3	0%
+処	sjyo3	
+凧	ki4	0%
+凨	fung1	0%
+凩	do2	0%
+凪	hjau1	0%
+凬	fung1	0%
+凮	fung1	0%
+凲	gaem1	0%
+凲	gaem3	
+凴	pang4	0%
+凼	tam5	
+凾	haem4	0%
+刂	doo1	0%
+刄	njan6	0%
+刅	chong1	0%
+刉	gi1	0%
+刉	gaai3	
+刋	cin3	0%
+刋	hon1	0%
+刋	hon2	0%
+刐	daan2	0%
+刐	daan3	0%
+刔	kyut3	0%
+刟	diu1	0%
+刣	zjung1	0%
+刦	gip3	0%
+刧	gip3	0%
+刨	paeu4	
+刯	gang1	0%
+刴	do3	0%
+刴	diok1	0%
+刼	gip3	0%
+剎	chaat3	0%
+剎	shaet3	0%
+剏	chong1	0%
+剓	li4	0%
+剕	fai3	0%
+剕	fai6	0%
+剕	fi6	0%
+剘	ki4	0%
+剙	chong1	0%
+剦	jim2	0%
+剰	sjing6	0%
+剳	daap3	0%
+剷	chaen2	0%
+剻	fau4	0%
+剼	shaem1	0%
+劅	zrok3	0%
+劆	lim4	0%
+劍	gim3	
+劎	gim3	0%
+劏	tong1	
+劔	gim3	0%
+劚	zruk1	0%
+劧	zji2	0%
+劯	zjyo1	0%
+劰	mok6	0%
+劵	gyun3	
+劵	hyun3	0%
+劶	hau2	0%
+劷	jong4	0%
+劸	aai1	0%
+劽	lit6	0%
+勂	hoo4	0%
+勄	man5	0%
+勆	long4	
+勈	jung5	0%
+勊	haak1	0%
+勌	gyun6	0%
+勎	luk6	0%
+勏	bau6	0%
+勐	maang5	0%
+勓	hwaai3	0%
+勗	hjuk1	0%
+勪	kiu4	0%
+勫	faan1	0%
+勫	faan4	0%
+勭	tung4	0%
+勯	daan1	0%
+勲	hwan1	0%
+勶	crit3	0%
+勾	gau1	
+勾	kau1	
+勾	ngau1	
+匁	man4	
+匂	hung1	0%
+匄	gaat3	0%
+匄	got3	0%
+匄	koi3	0%
+匆	cung1	
+匇	cung1	0%
+匎	om1	0%
+匎	op1	0%
+匒	daap3	0%
+匔	kung4	0%
+匘	noo5	0%
+匛	gau6	0%
+匝	zaap3	0%
+匞	ziong6	0%
+匟	kong3	0%
+匢	hwat1	0%
+匩	kwaang1	0%
+匬	jyu6	0%
+匬	tau4	
+匲	lim4	0%
+匷	giok3	0%
+匷	kyo4	0%
+匼	om3	0%
+匼	hop1	0%
+匼	o1	0%
+卄	njaa6	0%
+卆	zeot1	0%
+卋	sjai3	0%
+卍	maan6	
+卐	maan6	
+卡	kaa1	
+卡	kaat1	
+卥	sai1	0%
+卧	ngo6	0%
+卨	sit3	0%
+卩	zit3	0%
+卪	zit3	0%
+卭	kung4	0%
+卮	zji1	0%
+卼	ngat6	0%
+卾	ngok6	0%
+厈	hon3	0%
+厈	ngon6	0%
+厑	ngaai4	0%
+厔	zat1	0%
+厔	zat6	0%
+厘	li4	
+厛	teng1	0%
+厞	fi6	0%
+厠	chy3	
+厡	ngyun4	0%
+厦	haa6	0%
+厩	gau3	0%
+厪	gan2	0%
+厫	ngoo4	0%
+厮	sy1	0%
+厯	lik6	0%
+厰	cjong2	0%
+厷	gwang1	0%
+厺	hyo3	0%
+厼	nji5	0%
+厾	duk1	
+叁	saam1	0%
+叄	caam1	0%
+叅	caam1	0%
+収	sjau1	0%
+叏	gwaai3	0%
+叐	bat6	0%
+叓	shy	0%
+叙	zyo6	0%
+叝	gap1	0%
+叞	wai3	0%
+叠	dip6	0%
+另	ling6	
+叧	waai1	0%
+叭	baa1	
+叺	cjek3	0%
+叻	lak3	
+叻	lek1	
+叼	diu1	
+叾	duk1	0%
+吀	mi5	0%
 吆	aeu1	
-㕭	njaeu1	
-㕭	aeu1	
-軨	ling1	
-邇	nji1	3%
-聻	nji1	3%
-呢	nji1	
-呢	ei1	
-呢	nji1	
-野	jaa5	
-嘢	jaa5	
-乜	mat1	
-乜	miaa1	
+吆	jiu1	
+吇	zy2	0%
+吊	diu3	
+吋	cyun3	
+吋	jing1 cyun3	0%
+吓	haa2	
+吔	jaa2	0%
+吖	a1	
+吖	aa1	
+吘	ngau5	
+吙	hoe1	0%
+吚	ji1	
+吜	crau2	0%
+吢	sam3	0%
+吤	gaai3	0%
+吤	go3	0%
+吤	haai6	0%
+吥	bat1	0%
+吩	fan1	
+吲	jan5	0%
+吲	sjan2	
+吿	goo3	0%
+吿	guk1	0%
+呃	aai3	0%
+呃	ak1	
+呃	aak1	0%
+呃	ngaak1	0%
+呄	gak1	0%
+呅	man5	0%
+呅	mui4	0%
+呆	daai1	0%
+呆	ngoi4	
+呇	hi2	0%
+呇	kai2	0%
+呇	man3	0%
+呉	ngu4	0%
+呋	fu1	0%
+呌	giu3	0%
+呍	ngau4	0%
+呎	cjek3	0%
+呎	jing1 cjek3	0%
+呏	sjing1	0%
+呐	naa3	0%
+呐	nraap6	
+呐	nat6	0%
+呐	niaa1	0%
+呐	nrooi6	0%
+呐	neot6	0%
+呑	tan1	
+呔	taai1	
+呚	mui4	0%
+呟	gyun2	0%
+呠	pan3	0%
+呡	man5	0%
+呧	dai2	0%
+呩	sji6	0%
+呮	ki4	0%
+呯	ping4	0%
+呲	ci1	0%
+呲	cy4	
+呲	zhy1	0%
+呸	pui1	
+呹	crik1	0%
+呹	jat6	0%
+咁	gom3	
+咂	zaap3	0%
+咃	to1	0%
+咐	fu3	0%
+咐	fu6	0%
+咑	daa1	0%
+咑	daak1	0%
+咒	zjau3	
+咓	aa5	
+咓	ngaa5	0%
+咔	kaa1	0%
+咕	gu1	
+咖	gaa3	
+咗	zho2	
+咘	boo3	0%
+咚	dung1	
+咜	zraa1	0%
+咞	ngin5	0%
+咣	gwong1	
+咧	le5	
+咧	lit6	0%
 咩	miaa1	
 咩	me1	
-諗	nam2	
-噉	gom3	
-咁	gom3	
-個	gaa3	
-噶	gaa3	0%
-𩛎	mom1	0%
-𩜠	mom1	
-戇	ngong6	
-澌	saai3	
-晒	saai3	
-嗮	saai3	0%
-既	ge3	
-既	ge2	
-嘅	ge3	
-嘅	ge2	
-靚	leng3	
-掟	deng3	
-碌	luk1	
-郁	njuk1	
-喐	njuk1	3%
-𧿔	njuk1	3%
-逳	njuk1	3%
-尐	dik1	
-滴	dki1	
-的	dik1	
-啲	dit1	5%
-啲	di1	5%
-戟	kik1	
-𠽤	kik1	3%
-噏	ngap1	
-屄	hai1	
-閪	hai1	
-熝	luk6	
-湴	baan6	
-攞	lo2	
-甩	lat1	
-㞘	duk1	
-㪗	tau2	
-唞	tau2	
-煠	shaep6	
-擤	sang3	
-竭	git6	
-䂿	dap6	3%
-㧺	dap6	
-塌	dap6	
-劏	tong1	
-燶	nung1	
-嘥	caai1	
-㩄	caai1	3%
-吟	ngam4	
-乸	naa2	
-冧	lom3	
-搵	wan2	
-𧨾	tam3	
-屙	o1	
-𢯎	ngaeu1	
-撓	ngaeu1	3%
-搲	aeu1	
-啱	ngaam1	
-孭	me1	
-劘	mai1	3%
 咪	mai1	
 咪	mai6	
-叻	lek1	
-冷	laang1	
-唥	laang1	3%
-㔶	kom2	3%
-𢫏	kom2	
-䊆	gau6	3%
-舊	gau6	
-嚿	gau6	
-㢥	dung6	
-棟	dung6	
-𧿒	dom6	
-哋	di6	
+咪	mei1	0%
+咪	mi1	0%
+咯	gok3	0%
+咯	lo1	
+咯	lok6	0%
+咱	zaa1	0%
+咲	siu3	0%
+咴	fui1	0%
+咵	kwaa2	0%
+咾	loo5	0%
+哅	hung1	0%
 哋	li6	
-埞	deng6	
-䅺	biu1	
-0	njyun5	
-𠼮	ngai1	
-𨂾	naam3	
-瀨	laai6	
-刏	gaai3	
-鎅	gaai3	
-𠝹	gaai3	
-搽	chaa4	
-抔	fat1	
-拗	aeu2	
-拗	aeu3	
-詏	aeu3	
-𧦠	ngaak1	
-眲	ngaak1	
-嬲	nau1	
-獳	nau1	0%
-扱	kap1	
-墟	hyu1	
-焗	guk6	
-飛	fei1	
-扻	hom2	
-㷫	hing3	
-㵒	fe6	
-屌	diu2	
-躉	dan2	
-啖	daam6	
-哱	bot1	
-𠼭	bot1	
-㩧	bok1	
-𢩦	zhit1	
-搲	we2	
-𧽼	dom6	
-呔	taai1	
-漝	sap1	
-啤	pe1	
-𠵿	pe1	
-啤	be1	
-𧟘	nong6	
-丫	ngaa1	
-椏	ngaa1	
-焫	naat3	
-晾	long6	
-嫽	leu5	
-騮	lau1	
-痕	han4	
-啡	fe1	
-啡	fe5	
-掂	dim6	
-扂	dim6	
-踮	dim3	3%
-腯	dyut1	
-掂	dim3	
-戥	dang6	
-譇	che1	
-泵	bam1	
-啫	ze1	
-踎	mau1	
-炆	man1	
-垃	laap6	
-圾	saap3	
-滰	king4	
-喺	hai2	
-硌	kak6	
-椗	ding3	
-蔸	dau1	
-抌	dam2	
-疍	daan6	
-搐	cuk1	
-唓	ce1	
-㿭	caak3	
-甂	bin1	
-罯	ap1	
-䂻	zhaang6	
-踭	zhaang1	
-曱	gaat6	
-甴	zaat6	
-喎	wo3	
-爩	wat1	
-壅	ung1	
-錔	taap3	
-𧘹	taai1	
-搧	shin3	
-搧	shing1	
-奀	ngan1	
-脷	li6	
-𡲢	ke1	
-醃	jip3	
-冚	hom6	
-睺	hau1	
-㗇	haa1	
-㓤	gat1	
-拮	gat1	
-𥄫	gap6	
-梘	gaen2	
-咖	gaa3	
-胐	fat1	
-㗧	dit1	
-咇	bit1	
-韸	bung6	
-磅	bong6	
-鍘	zhaap6	
-摣	zhaa6	
-蕹	ung1	
-瀡	soe4	
-擰	ning6	
-揇	naam3	
-睸	mi1	
-螂	long4	
-𦧲	loe1	
-𠼱	loe1	
-迾	laat6	
-孻	laai1	
-咳	kat1	
-熠	saap3	
-殼	hok3	
-𣢯	gut6	
-㞗	gau1	
-架	gaa2	
-颫	fu6	
-𠱂	dat1	
-𢴬	baan3	
-𠽻	zoet1	
-𠹻	zham6	
-䎺	zhai3	
-板	zam3	
-餸	sung3	
-𨭌	paang1	
-饟	njiong6	
-跐	njaai2	
-踹	njaai2	
-踩	njaai2	
-啀	njaai3	
-咧	le5	
-撚	lan2	
-𡳞	lan2	
-𨶙	lan2	
-凝	king4	
-蠄	kam4	
-蟧	loo4	
-𢫏	kam2	
-𢫏	ham2	
-扻	kam2	
-扻	ham2	
-乞	at1	
-喼	gip1	
-叮	deng1	
-𢭃	dau6	
-髧	dam3	
-揰	zhung1	
-𠯦	cit1	
-做	zau3	
-㬹	zhaang1	
-榨	zhaa3	
-剔	tik1	
-絀	sot1	
-裇	seot1	
-唼	shaap3	
-甏	paang1	
-蓻	zap1	
-捱	ngaai4	
-顉	ngap6	
-嬤	maa4	
-𣋟	maa1	
-囉	lo1	
-罧	lam6	
-㞗	kiu1	
-瞌	hap1	
-嘟	dyut1	
-𦻀	de6	
-尋	kam6	
-埄	bung6	
-抦	bing2	
-耾	wang1	
-踲	tan4	
-脬	paau1	
-吽	ngau6	
-哣	dau6	
-鈪	ngaak6	
-嗱	naa4	
-䁽	laap3	
-揦	laa2	
-胗	zjan1	
-硞	kak1	
-𦙓	jau2	
-孈	jai5	
-㗾	hoe4	
-㗾	hoe6	
-𥕏	gwak6	
-𥕏	gwat6	
-𥕏	kwok3	
-梗	kwaang2	
-䞘	gat6	
-鐖	gai1	
-滘	gaeu3	
-柫	fit1	
-𢞵	fit1	
-𢝵	fit1	
-幡	faan1	
-垤	dat6	
-躂	daat3	
-溚	daep6	
-涾	daep6	
-擢	chok3	
-膥	cheon1	
-鑱	chaang4	
-劖	chaang4	
-𥊼	chaang4	
-樸	buk1	
-𦤣	but6	
-脧	zoe1	
-䏘	pet1	
-啪	paak1	
-捳	ngok6	
-㿰	ngau1	
-𠊎	ngaai4	
-𧧝	ngaa6	
-𧨊	zhaa6	
-晾	long3	
-閬	long3	
-啷	long1	
-囉	lo3	
-菻	lam1	
-唥	laang6	
-蔃	kiong2	
-倀	craang4	
-癪	zik1	
-苴	zhaa2	
-嚌	zai6	
-趶	wu3	
-鏾	sin3	
-哽	ngang3	
-嘜	mak1	
-𨀤	looi1	
-勆	long4	
-蜞	ki4	
-欦	kem4	
-㾓	jyun1	
-咦	ji2	
-胍	gwaa1	
-𡃴	cooi4	
-啋	coi1	
-噃	bo3	
-扤	at1	
-咗	zho2	
-唨	zho2	
-雪	syut1	
-䠋	pe5	
-𨈚	pe5	
-朒	nuk1	
-䟴	ngan3	
-𠵛	nguk6	
-伩	man1	
-𪔳	lung4	
-煏	bik1	
-詖	be1	
-厏	zhaa6	
-哇	waa5	
-銻	tai1	
-噻	sak1	
-扲	ngam4	
-𨋢	lip1	
-蹸	lan4	
-攋	laai6	
-藞	laa5	
-䕢	zhaa2	
-啦	laa1	
-咿	ji1	
-𧽸	gat6	
+哋	di6	
+哌	paai3	0%
+响	hiong2	
+哎	ai1	
+哎	aai1	
+哏	gan1	0%
+哏	han2	0%
+哐	hong1	0%
+哖	nin4	0%
+哘	hang4	0%
+哚	doe2	0%
+哞	mau4	
+哠	hoo6	0%
+哣	dau6	0%
+哧	cji1	0%
+哧	cjik1	
 哩	le2	
-𩰶	haai4	
-嚡	haai4	
-戽	fu3	
-掅	ching3	
-捇	chik1	
-吖	aa1	
-𦣇	lo1	
-喇	laa3	
-掀	kin2	
-㩮	kin2	
-啡	fe1	
-呀	aa4	
-呀	aa6	
-挃	zhat1	
-咋	zhaa3	
-賺	zhaan2	
-賺	zhaan6	
-喴	wi1	
-囩	wan4	
-𢚖	ti4	
-熰	au3	
-圿	kaai2	
-𥹉	nap6	
-轥	lin2	
-䠄	lin2	
-捵	lin2	
-碾	lin2	
-鉼	peng1	
-僆	leng1	
-儬	leng1	
-吓	haa2	
-欸	e6	
-𡇙	doe4	
+哪	naa4	
+哪	no4	0%
+哬	ho4	0%
+哶	me1	0%
+哸	cyi1	0%
+哸	syi1	0%
+哻	hon4	0%
+哼	hang1	0%
+哼	hng1	
+哼	hng6	
+哾	sjyut3	0%
+唀	jau5	0%
+唃	guk1	0%
+唋	tu1	0%
+唍	waen5	0%
+唎	li6	0%
+唎	li1	0%
+唑	zo6	0%
+唒	cau4	0%
+唓	ce1	
+唔	m4	
+唔	ng4	
+唕	zoo6	0%
+唗	dau1	0%
+唘	kai2	0%
+唙	dik6	0%
+唚	sam3	0%
+唞	tau2	
+唣	zoo6	0%
+唥	laang1	
+唥	laang6	
+唦	shaa1	
+唨	zho2	
+唩	wo1	0%
+唰	shaet3	
+唰	shyut3	
+唷	jo1	0%
+唺	tin2	0%
+唼	cip3	0%
+唼	shaap3	
+唼	zaap3	0%
+唼	zit6	0%
+唽	sik1	0%
+唿	fat1	0%
+啃	shaap1	0%
+啃	hang2	0%
+啈	hang1	0%
+啈	hng6	0%
+啊	a3	
+啊	aa2	
+啊	aa3	
+啊	o3	0%
+啋	coi1	
+啔	kai2	0%
+啘	waa1	0%
+啛	cyi3	0%
+啝	wo3	
+啝	wo4	0%
+啟	kai2	
+啠	zrit3	0%
+啢	jing1 liong2	0%
+啢	liong2	0%
+啢	liong5	0%
+啣	haam4	0%
+啣	hom4	0%
+啤	be1	
+啤	pe1	
+啥	shaa2	0%
+啦	la1	
+啦	laa1	
+啨	jing1	0%
+啩	gwaa3	
+啪	paak1	
 啫	zhe1	
 啫	zhek1	
-𨃩	shin3	
-壟	lung4	
-蘭	laan1	
-𭠳	kwak1	
-𤜯	kap6	
-㗾	hoe1	
-碧	bi1	
-𢃇	li5	
-𠾸	chiu1	
-㩧	bok1	
-啩	gwaa3	
-鯭	maang1	
-咧	le4	
-咯	lok3	
-咇	bit1	
-趷	gat6	
-擙	ou1	
-挱	shaa3	
-躐	laap3	
-𤗈	sip3	
-𪐀	naa1	
-𠸎	naa1	
-𢲡	naa1	
-𦟌	zin2	
-妗	kam5	
-𣖕	peng1	
-坺	pet6	
-𡌀	bet6	
-𨅝	njaang3	
-𢆡	nin1	
-困	wan3	
-睏	fan3	0%
-瞓	fan3	
-癩	laai6	
-啊	aa2	
-咓	aa5	
-哎	aai1	
-呃	ak1	
+啱	ngaam1	
+啲	di1	
+啲	dit1	
+啳	kyun4	0%
+啵	bo1	
+啵	bo3	0%
+啶	ding6	0%
+啷	long1	
+啷	long4	0%
+啹	goe1	0%
+啹	koe1	0%
+啽	ngaam4	0%
+啽	ngom4	0%
+啿	daam6	0%
+啿	taam5	0%
+喂	wai2	
+喂	wai3	
+喂	wai6	
+喇	laa3	
+喇	laa2	
+喇	laak3	0%
+喇	laat3	0%
+喍	chaai4	0%
+喏	njaa5	0%
+喏	no6	0%
+喏	nok6	0%
+喐	njuk1	
+喒	zaa1	0%
+喕	min5	0%
+喖	vu4	0%
+喞	zek1	
+喞	zik1	
+喞	zit1	
+喡	wai4	0%
+喡	wai6	0%
+喨	liong6	0%
+喩	jyu6	0%
+喯	pan3	0%
+喰	caan1	0%
+喱	le1	
+喲	jo1	0%
+喳	zhaa1	
+喴	wi1	
+喴	wai1	0%
+喴	wei2	
+喵	meu1	
+喹	hwui1	0%
+喹	kwai4	0%
+喺	hai2	
+喼	gep1	0%
+喼	gip1	
+喼	kep1	
+喼	kip1	0%
+嗅	cjau3	
+嗅	hung3	0%
+嗆	ciong1	0%
+嗆	ciong3	0%
+嗍	shok3	0%
+嗎	ma3	
+嗎	maa3	
+嗎	maa5	0%
+嗏	craa1	0%
+嗐	haai6	0%
+嗐	hoi6	0%
+嗓	song1	0%
+嗓	song2	0%
+嗖	shau3	0%
+嗘	gai1	0%
+嗠	lok6	0%
+嗡	jung1	
+嗡	wung1	
+嗦	shok3	
+嗧	gaa1 leon4	0%
+嗨	haai1	0%
+嗩	so2	
+嗪	ceon4	0%
+嗬	ho2	
+嗮	saai3	
+嗯	ng2	
+嗯	ng4	
+嗯	ng5	
+嗯	ng6	
+嗰	go2	
+嗱	nraa4	
+嗲	de2	
+嗴	giong1	0%
+嗵	tung1	0%
+嗶	bat1	0%
+嘀	dik1	
+嘀	dik6	0%
+嘃	crung1	0%
+嘇	saam1	0%
+嘊	ngaai4	0%
+嘋	haeu1	0%
+嘙	po4	0%
+嘚	dak1	0%
+嘛	maa3	
+嘜	maak1	
+嘜	mak1	
+嘝	huk6	0%
+嘞	lea3	
+嘞	laak3	0%
+嘞	lak3	0%
+嘟	dyut1	
+嘠	gaa4	0%
+嘠	gaat3	0%
+嘡	tong1	0%
+嘢	jaa5	0%
+嘣	bang1	
+嘥	chaai1	
+嘥	shaai1	5%
+嘦	zjiu3	0%
+嘧	mat6	0%
+嘨	siu3	0%
+嘩	faa1	0%
+嘩	waa1	0%
+嘩	waa4	0%
+嘭	paang4	
+嘴	zooi2	
+嘷	hoo4	0%
+嘸	fu2	0%
+嘸	m4	
+嘸	moo5	0%
+嘿	mak6	0%
+噀	seon3	0%
+噃	bo3	
+噄	hek3	0%
+噉	gom3	
+噐	hi3	0%
+噑	hoo4	0%
+噒	leon1	0%
+噔	dang1	0%
+噕	hwai1	0%
+噖	ngiam4	0%
+噗	pok3	
+噘	gyut6	0%
+噙	kam4	0%
+噚	cam6	0%
+噛	ngaeu5	0%
+噝	sy1	
+噠	daat3	0%
+噠	daat6	0%
+噯	aai1	0%
 噯	oi2	
+噯	oi3	0%
+噵	doo6	0%
+噶	gaa1	
+噶	gaat3	0%
+噶	got3	0%
+噷	hm1	
+噸	deon1	
+噹	dong1	
+噺	san1	0%
+噻	sak1	
+噼	pet1	0%
+噼	pik1	
+噽	pi2	0%
+噾	jam1	0%
+嚁	dik6	0%
+嚆	haeu1	0%
+嚆	hoo1	0%
+嚈	aat3	0%
+嚈	jip3	0%
+嚉	dyut3	0%
+嚋	crau4	0%
+嚋	zrau1	
+嚍	zeon3	0%
+嚎	hoo4	
+嚐	sjiong4	
+嚑	hwan1	0%
+嚒	mo1	0%
+嚓	chaat2	
+嚔	dai3	0%
+嚕	lea1	
+嚕	lu3	
+嚙	ngaeu5	0%
+嚟	lai4	
+嚟	lei4	
+嚠	lau4	0%
+嚡	haai4	
+嚢	nong4	0%
+嚤	mo1	0%
+嚦	lik1	0%
+嚦	lik6	0%
+嚩	bok3	0%
+嚪	daam6	0%
+嚯	ho1	0%
+嚰	jiu1	0%
+嚷	njong5	0%
+嚷	njong6	0%
+嚸	dim2	0%
+嚹	la4	0%
+嚹	laa3	0%
+嚹	laa4	0%
+嚺	daap6	0%
+嚻	hiu1	0%
+嚽	zyut3	0%
+嚿	gau6	0%
+嚿	kau5	
+囄	li4	0%
+囅	crin2	0%
+囅	crat1	0%
+囆	craai3	0%
+囇	lai6	0%
+囌	soo1	0%
+囍	hi2	
+囎	zang6	0%
+囒	laan4	0%
+囓	ngit6	
+囔	nong4	0%
+囕	hi3	0%
+囖	lo1	
+囘	wui4	0%
+囙	jan1	0%
+囜	nan4	0%
+囝	zai2	0%
+囡	nryo1	0%
+囥	kong3	0%
+囨	pin1	0%
+囫	fat1	0%
+囫	wat6	0%
+囬	wui4	0%
+囯	gwok3	0%
+囱	chiong1	0%
+囱	cung1	0%
+囲	tung1	0%
+囶	gwok3	0%
+囸	njat6	0%
+囻	gwok3	0%
+囼	toi1	0%
+圀	gwok3	0%
+圇	leon4	0%
+圎	jyun4	0%
+圏	hyun1	
+圏	gyun6	
+圐	ku1	0%
+圑	pu2	0%
+圕	tu4 sjyo1 gun3	0%
+圗	tu4	0%
+圙	loe6	
+圚	kui2	0%
+圚	wui6	0%
+圞	lyun4	0%
+圡	tu2	0%
+圥	luk6	0%
+圦	njap6	0%
+圧	zhong1	0%
+圧	aat3	
+圩	hyo1	0%
+圩	jyu4	0%
+圩	wai4	0%
+圫	oo3	0%
+圲	cin1	0%
+圳	hyun2	0%
+圳	zhan3	5%
+圴	zjiok3	0%
+圵	jong6	0%
+圶	haep3	0%
+圷	haa6	0%
+圸	shaen1	0%
+圽	mut6	0%
+圾	kap1	0%
+圾	ngap6	0%
+圾	saap3	5%
+坃	hyun1	0%
+坆	mui4	0%
+坈	haang1	0%
+坈	njung5	
+坋	ban6	0%
+坋	fan5	0%
+坋	fan6	0%
+坍	taan1	0%
+坏	pui1	0%
+坏	pui4	0%
+坓	zing6	0%
+坔	di6	0%
+坕	ging1	0%
+坖	gi6	0%
+坘	cri4	0%
+坙	ging1	0%
+坧	zjik3	0%
+坨	to4	
+坨	ji4	
+坮	toi4	0%
+坵	jau1	0%
+坶	muk6	0%
+坸	gau3	0%
+坽	ling4	0%
+坾	cryo5	0%
+坾	zryo2	
+垀	hu1	0%
+垁	zri6	0%
+垃	laap6	5%
+垇	aeu3	0%
+垈	doi6	0%
+垉	paeu4	0%
+垊	man4	0%
+垌	dung6	0%
+垌	tung2	0%
+垌	tung4	0%
+垏	leot6	0%
+垖	dyi1	0%
+垜	do2	0%
+垞	craa4	0%
+垞	zraak6	
+垟	jong4	0%
+垥	hip3	0%
+垧	hiong2	0%
+垨	sjau2	0%
+垪	bing6	0%
+垬	hung4	0%
+垮	kwaa1	0%
+垰	lung6	0%
+垳	hang4	0%
+垵	om1	0%
+垵	om2	0%
+垺	fu1	0%
+垺	pau4	0%
+垺	pui1	0%
+垿	zyo6	0%
+埀	sjooi4	0%
+埁	sham4	0%
+埄	bung6	
+埅	fong4	0%
+埉	gaap3	0%
+埊	di6	0%
+埑	zrit3	0%
+埓	lyut6	0%
+埔	boo3	0%
+埕	cring4	5%
+埖	hwaa1	0%
+埗	beau2	
+埗	bu6	
+埗	fau6	0%
+埛	gwing1	0%
+埜	jaa5	0%
+埞	deng6	
+埠	bu6	
+埠	fau6	
+埡	aa3	0%
+埣	syi3	0%
+埣	seot1	0%
+埥	zhang1	0%
+埥	cing1	
+埦	wun2	0%
+埨	leon4	0%
+埨	leon5	
+埮	daam6	0%
+埮	taam4	0%
+埼	ki4	0%
+堃	kwan1	0%
+堌	gu3	0%
+堍	too3	0%
+堎	ling4	0%
+堎	ling6	0%
+堏	fong4	0%
+堐	ngaai4	0%
+堒	kwan1	0%
+堓	ngon6	0%
+堔	sam1	0%
+堘	sjing4	0%
+堚	waen4	
+堳	mi4	0%
+堷	bau6	0%
+堷	jam3	0%
+堺	gaai3	
+堻	zeon1	0%
+堼	hang6	0%
+堽	gong1	0%
+堾	cjeon1	0%
+堿	gaen2	0%
+堿	haam4	0%
+堿	hom2	0%
+塀	ping4	
+塂	hong4	0%
+塃	fong1	0%
+塄	ling4	0%
+塅	dyun6	0%
+塇	syun1	0%
+塌	dap1	0%
+塌	dap6	
+塌	taap3	
+塜	bung6	0%
+塝	bong6	0%
+塟	zong3	0%
+塡	tin4	
+塥	gaak3	0%
+塦	zran6	0%
+塧	aai3	0%
+塨	gung1	0%
+塪	hom2	0%
+塬	ngyun4	0%
+塭	wan1	0%
+塮	ziaa6	0%
+塰	hoi2	0%
+塱	long5	0%
+塳	bung6	
+塳	pung1	0%
+塴	baang6	0%
+塴	bang1	0%
+塴	bing3	0%
+塶	luk6	0%
+塷	loo5	0%
+塼	zjyun1	0%
+墂	biu1	0%
+墈	hom2	5%
+墍	gi6	0%
+墍	hi3	0%
+墍	ki3	0%
+墎	gwok3	0%
+墏	ciong2	0%
+墑	dik1	0%
+墒	sjiong1	0%
+墔	cyi1	0%
+墔	cyi4	0%
+墕	jin2	0%
+墖	taap3	0%
+増	zang1	0%
+墘	kin4	0%
+墚	liong4	0%
+墛	wai3	0%
+墢	baat6	0%
+墢	fat6	
+墢	but3	
+墢	fai3	
+墥	dung2	0%
+墥	teon2	0%
+墧	kok3	0%
+墧	kiu4	
+墪	deon1	0%
+墫	cyun4	0%
+墫	deon1	0%
+墫	zeon1	0%
+墯	do6	0%
+墯	fai1	0%
+墰	taam4	
+墱	dang3	0%
+墴	wong4	0%
+墵	taam4	0%
+墶	daat3	0%
+墷	jip6	0%
+墸	cryo4	0%
+墹	gaen1	0%
+壀	pi4	0%
+壄	jaa5	0%
+壆	bok3	
+壉	kyo5	
+壋	dong2	0%
+壖	njyun4	0%
+壗	zeon6	0%
+壟	lung5	
+壡	jooi6	0%
+壢	lek6	0%
+壢	lik6	0%
+壥	crin4	0%
+壦	hyun1	0%
+壧	ngaem4	0%
+壨	looi5	0%
+壩	baa3	
+壪	waen1	0%
+壳	hok3	0%
+壵	zhong3	0%
+壷	vu4	0%
+夀	sjau6	0%
+夁	jat1	0%
+夈	zhaai1	0%
+変	bin3	0%
+夐	hing3	0%
+夐	hyun3	0%
+夑	sip3	0%
+夒	njau4	0%
+夒	noo4	0%
+夒	nung4	
+夓	haa6	0%
+夘	maeu5	0%
+夛	do1	0%
+够	gau3	
+夣	mung6	0%
+夦	cram2	0%
+夯	ban6	0%
+夯	haang1	5%
+夳	taai3	0%
+夶	bi2	0%
+夻	ngu4	0%
+夼	kwong3	0%
+夿	baa1	0%
+奀	ngan1	
+奆	gyun6	0%
+奌	dim2	0%
+奍	hyun3	0%
+奙	bun2	0%
+奛	kwong3	0%
+奟	bang1	0%
+奟	kang1	
+奦	mu6	0%
+奩	lim4	0%
+奬	ziong2	0%
+奱	lyun4	0%
+奶	naai1	
+奶	naai5	
+奷	cin1	0%
+她	zy2	0%
+她	taa1	
+奺	gau2	0%
+奾	sin1	0%
+妅	hung4	0%
+妏	man6	0%
+妔	haang1	0%
+妕	zrung3	0%
+妚	fau2	0%
+妞	nrau5	0%
+妟	aan3	0%
+妡	hjan1	0%
+妮	nri4	0%
+妰	zriok3	0%
+妱	zjiu1	0%
+妳	naai5	0%
+妳	nri5	0%
+妴	jyun2	0%
+妶	hjin4	0%
+妶	hjyun4	0%
+妽	sjan1	0%
+姀	wo4	0%
+姃	zjing1	0%
+姄	man4	0%
+姉	zy2	0%
+姖	gyo1	0%
+姙	njam6	0%
+姠	hiong3	0%
+姢	gyun1	0%
+姧	gaan1	0%
+姩	nin4	0%
+姩	nin6	0%
+姩	nin1	
+姫	zran2	0%
+姫	gi1	
+姮	hang4	0%
+姯	gwong1	0%
+姲	aan3	0%
+姵	bui6	0%
+姵	pui3	0%
+姸	ngin4	0%
+姹	craa3	0%
+姾	cyun4	0%
+娂	hung4	0%
+娊	daam1	0%
+娊	jin5	0%
+娍	sjing4	0%
+娐	fu1	0%
+娐	fau4	
+娒	mui4	0%
+娒	mau5	
+娒	mu5	
+娔	haak1	0%
+娚	nraem4	0%
+娢	hom4	0%
+娤	zhong1	0%
+娦	pan4	0%
+娫	jin4	0%
+娮	ngin4	0%
+娯	ngyu4	0%
+娰	cy5	0%
+娳	li6	0%
+娹	hjin4	0%
+娻	dung1	0%
+娼	cjiong1	
+婀	o1	
+婂	min4	0%
+婃	cung4	0%
+婅	guk1	0%
+婇	coi2	0%
+婈	ling4	0%
+婊	biu2	5%
+婋	haeu1	0%
+婑	wo2	0%
+婑	nyi5	
+婑	njooi4	
+婒	taam4	0%
+婖	tim1	0%
+婙	zing6	0%
+婛	ging1	0%
+婜	gan2	0%
+婜	haan1	0%
+婝	din6	0%
+婡	loi4	0%
+婨	leon4	0%
+婩	ngiok6	0%
+婩	ngon6	0%
+婩	ngin5	
+婩	ngin6	
+婫	gwan1	0%
+婫	wan5	
+婮	gyo1	0%
+婯	lai6	0%
+婰	din2	0%
+婲	waa6	0%
+婷	ting4	
+婻	naam6	0%
+婾	jyu4	0%
+婾	tau1	0%
+婿	sai3	
+媂	dai3	0%
+媂	tai4	
+媃	njau4	0%
+媇	can1	0%
+媈	fai1	0%
+媋	cjeon1	0%
+媋	sjeon1	
+媍	fu5	0%
+媎	ziaa2	0%
+媏	dyun1	0%
+媑	zrung6	0%
+媑	crung4	
+媔	min4	0%
+媔	min5	
+媗	hyun1	0%
+媗	syun1	
+媘	gaai1	0%
+媙	wai1	0%
+媜	zring1	0%
+媝	cau1	0%
+媡	lin6	0%
+媤	sy1	0%
+媩	vu4	0%
+媪	oo2	0%
+媫	zip3	0%
+媬	boo2	0%
+媯	gwai1	0%
+媳	sik1	
+媴	jyun4	0%
+媶	njung4	0%
+媹	lau4	0%
+嫀	ceon4	0%
+嫀	shan1	0%
+嫃	zran1	0%
+嫅	ziaa1	0%
+嫅	so1	
+嫆	jung4	0%
+嫊	su3	0%
+嫍	too1	0%
+嫍	jiu5	
+嫍	jim6	
+嫎	pong4	0%
+嫏	long4	0%
+嫐	nat1	0%
+嫐	niu5	0%
+嫑	biu3	0%
+嫓	pi3	0%
+嫘	looi4	0%
+嫜	zjiong1	0%
+嫝	hong1	0%
+嫞	crung1	0%
+嫞	jung4	0%
+嫞	sjung4	0%
+嫟	nrik1	0%
+嫤	gan2	0%
+嫤	kan4	
+嫤	gan6	
+嫦	sjiong4	
+嫨	hon1	0%
+嫨	njin5	0%
+嫬	ziaa1	0%
+嫮	vu6	0%
+嫰	nyun6	0%
+嫲	maa4	
+嫶	ciu4	0%
+嫶	ziu1	0%
+嫹	maeu4	0%
+嫻	haan4	0%
+嫾	lin4	0%
+嬁	dang1	0%
+嬂	zik1	0%
+嬄	jat1	0%
+嬅	waa4	0%
+嬅	waa6	0%
+嬊	jin2	0%
+嬍	mi5	0%
+嬏	faan1	0%
+嬑	ji3	0%
+嬓	giu3	0%
+嬔	faan3	0%
+嬔	fu6	0%
+嬕	sjik1	0%
+嬘	sui6	0%
+嬝	niu5	0%
+嬞	dung2	0%
+嬟	ngi6	0%
+嬠	cam1	0%
+嬡	oi3	
+嬤	maa1	0%
+嬤	maa4	
+嬤	mo5	0%
+嬦	crau4	0%
+嬦	sjau6	
+嬧	zeon6	0%
+嬨	cy4	0%
+嬫	wing4	0%
+嬵	min4	0%
+嬶	bi6	0%
+嬸	sjam2	0%
+嬺	nrik1	0%
+嬽	jyun1	0%
+嬽	waan1	
+嬽	jin1	
+孄	laan5	0%
+孆	jing1	0%
+孇	shiong1	0%
+孊	mi5	0%
+孍	ngim4	0%
+孍	ngim5	0%
+孏	laan5	0%
+孓	kyut3	0%
+孓	gung1	
+孓	gwat1	
+孞	seon3	0%
+孢	baeu1	
+孧	njyu4	0%
+孬	boo2	0%
+孬	jai5	
+孭	me1	
+孯	haen1	0%
+孲	aa1	
+孶	zy1	0%
+孶	zy6	0%
+孹	maak3	0%
+孻	laai1	
+孽	ngip6	
+孽	ngit6	
+孾	jing1	0%
+孿	lyun4	
+孿	shyun3	0%
+宆	kung4	0%
+宊	dat6	0%
+宍	njuk6	0%
+宎	jiu2	0%
+宎	aeu1	0%
+宑	zeng2	0%
+宒	zreon1	0%
+宨	tiu2	0%
+宩	sji2	0%
+宯	haeu1	0%
+宱	zhaa6	0%
+宺	hwong2	0%
+宻	mat6	0%
+宼	kau3	0%
+寃	jyun1	0%
+寈	cing1	0%
+寉	huk6	0%
+寊	zring1	0%
+寕	ning4	0%
+寕	ning6	0%
+寗	ning4	0%
+寗	ning6	0%
+寙	jyu5	0%
+寚	boo2	0%
+寛	hwun1	0%
+寜	ning4	0%
+寠	gyu6	0%
+寠	lau4	0%
+寭	wai6	0%
+寲	ngi4	0%
+寳	boo2	0%
+尀	po2	0%
+尅	haak1	0%
+尓	nji5	0%
+尔	nji5	0%
+尕	gaa1	0%
+尙	sjiong6	
+尛	mo1	0%
+尜	gaat3	0%
+尡	kwan1	0%
+尣	wong1	0%
+尦	liu6	0%
+尩	wong1	0%
+尫	wong1	0%
+尮	do3	0%
+尶	gaem1	0%
+尶	gaem3	
+尷	gaem1	0%
+尷	gaem3	
+屄	bi1	0%
+屄	hai1	
+屇	tin4	0%
+屉	tai3	0%
+屌	diu2	
+屗	cyun3	0%
+屘	mi1	
+屙	o1	
+屛	bing1	0%
+屛	bing2	0%
+屛	ping4	0%
+屜	tai3	0%
+屜	sip3	
+屪	liu4	0%
+屫	giok3	0%
+屭	ai3	0%
+屭	hi3	0%
+屲	shaen1	0%
+屳	sin1	0%
+屶	wui6	0%
+屷	wui6	0%
+屻	njan6	0%
+屽	hon6	0%
+屽	ngon6	
+岀	cjeot1	0%
+岃	njan6	0%
+岄	ngyut6	0%
+岅	baan2	0%
+岅	faan2	0%
+岆	jiu2	0%
+岇	ngong4	0%
+岊	git3	0%
+岊	zit3	0%
+岊	zit6	
+岋	ngap6	0%
+岎	fan4	0%
+岒	kim4	0%
+岔	chaa3	0%
+岕	gaai3	0%
+岙	aau3	0%
+岙	oo3	0%
+岜	baa1	0%
+岞	zok6	0%
+岠	gyo6	0%
+岠	kyo5	0%
+岤	hjyut6	0%
+岥	bo1	0%
+岩	ngaem4	0%
+岪	fat6	0%
+岬	gaep3	
+岮	to4	0%
+岰	aeu3	0%
+岰	jau2	0%
+岲	hwong3	0%
+岴	kyo1	0%
+岶	paak3	0%
+岹	tiu4	0%
+岺	ling4	0%
+岼	ping4	0%
+岾	zjim1	0%
+峀	bong1	0%
+峁	maeu5	0%
+峂	tung4	0%
+峅	bin6	0%
+峆	gop3	0%
+峆	hop6	0%
+峇	baa1	
+峇	hop1	0%
+峇	hop6	0%
+峈	lok6	0%
+峊	fau6	0%
+峌	dit6	0%
+峍	leot6	0%
+峎	gan3	0%
+峎	ngwan5	0%
+峕	sji4	0%
+峖	on1	0%
+峖	on3	
+峚	mat6	0%
+峜	gai3	0%
+峝	dung6	0%
+峟	jau6	0%
+峠	kaa1	0%
+峢	lit6	0%
+峧	gaeu1	0%
+峩	ngo4	0%
+峪	juk6	0%
+峪	jyu6	0%
+峫	jaa4	0%
+峰	fung1	
+峲	li5	0%
+峳	jau4	0%
+峵	wing4	0%
+峷	shan1	0%
+峷	zhan1	
+峸	sjing4	0%
+峺	gang2	0%
+峼	hoo5	0%
+峾	ngan4	0%
+崁	hom2	0%
+崅	gok3	0%
+崉	daap6	0%
+崊	lam4	0%
+崏	man4	0%
+崑	gwan1	
+崑	kwan1	
+崓	gu3	0%
+崕	ngaai4	0%
+崙	leon4	
+崜	do1	0%
+崜	do2	
+崡	haem4	0%
+崣	wai2	0%
+崪	zeot6	0%
+崪	zyut6	0%
+崫	hwat1	0%
+崫	gwa6	
+崬	dung1	0%
+崮	gu3	0%
+崯	ngiam4	0%
+崰	zhy1	0%
+崲	wong4	0%
+崸	dan6	0%
+崸	ngong4	
+崻	zri6	0%
+崼	sji5	0%
+崼	sjy6	
+崾	jiu5	0%
+嵂	leot6	0%
+嵄	mi5	0%
+嵅	hom4	0%
+嵅	gom1	0%
+嵆	kai1	0%
+嵉	ting4	0%
+嵏	zung1	0%
+嵓	ngaem4	0%
+嵖	chaa4	0%
+嵖	zhaa6	
+嵗	sooi3	0%
+嵙	shaen1 hwo1	0%
+嵛	jyu4	0%
+嵜	ki1	0%
+嵡	jung2	0%
+嵢	cong1	0%
+嵨	wu2	0%
+嵪	haeu1	0%
+嵭	bang1	0%
+嵮	din1	0%
+嵳	co4	0%
+嵴	zek3	0%
+嵵	zri6	0%
+嵶	jok6	0%
+嵷	sung2	0%
+嵹	kiong4	0%
+嵺	liu4	0%
+嵻	hong1	0%
+嵿	ding2	0%
+嶄	chaem4	0%
+嶄	chaem5	0%
+嶄	zhaem2	
+嶄	zhaem3	0%
+嶆	coo4	0%
+嶋	doo2	0%
+嶌	doo2	0%
+嶍	zaap6	0%
+嶎	wai3	0%
+嶐	lung4	0%
+嶖	jim1	0%
+嶗	loo4	
+嶛	liu4	0%
+嶡	gwai3	0%
+嶡	kyut3	0%
+嶣	ciu4	0%
+嶤	ngiu4	0%
+嶥	gwai3	0%
+嶦	zjim1	0%
+嶦	sjim6	
+嶫	ngip6	0%
+嶬	ngi4	0%
+嶬	ngai4	0%
+嶬	hi1	0%
+嶯	zhap1	0%
+嶱	hot3	0%
+嶱	ngot6	0%
+嶳	di6	0%
+嶴	oo3	0%
+嶵	zyi2	0%
+嶶	mi4	0%
+嶹	doo2	0%
+嶿	syi1	0%
+巀	zit3	0%
+巀	zit6	0%
+巄	lung4	0%
+巆	jing4	0%
+巆	wing4	0%
+巏	kyun4	0%
+巓	din1	0%
+巕	ngit6	0%
+巗	ngaem4	0%
+巙	kwai4	0%
+巙	naau4	0%
+巚	ngin5	0%
+巛	cyun1	0%
+巛	cjyun1	
+巬	gung1 fu1	0%
+巭	gung1 fu1	0%
+巰	kau4	0%
+巶	cjiu1	0%
+巺	seon3	0%
+巻	gyun2	0%
+帄	ding1	0%
+帉	fan1	0%
+帎	daam3	0%
+帠	ngai6	0%
+帡	ping4	0%
+帲	ping4	0%
+幀	zring3	
+幁	sui1	0%
+幂	mik6	0%
+幆	ai3	0%
+幆	haai3	
+幇	bong1	0%
+幈	ping4	0%
+幉	jip6	0%
+幊	gung1	0%
+幓	shaem1	0%
+幓	sham1	0%
+幓	ciu1	0%
+幓	shim1	0%
+幓	sham2	0%
+幙	mok6	0%
+幚	bong1	0%
+幛	zhiong3	0%
+幜	ging2	0%
+幤	bai6	0%
+幥	zhiong2	0%
+幩	fan4	0%
+幩	fan5	
+幩	fan1	
+幩	bi3	
+幷	bing6	0%
+庂	zak1	0%
+広	gwong2	0%
+庍	baai3	0%
+庍	hjan3	0%
+庎	gaai3	0%
+庒	zhong1	0%
+庙	miu6	0%
+庝	tung4	0%
+庡	ji2	0%
+庬	mong4	0%
+庬	pong4	0%
+庹	tok3	0%
+庺	cung4	0%
+庻	sjyo3	0%
+廀	shau1	0%
+廀	sau2	
+廄	gau3	0%
+廍	bu6	0%
+廎	kwing2	0%
+廎	kwing1	
+廎	kwing3	
+廎	king3	
+廐	gau3	0%
+廒	ngoo4	0%
+廗	daai3	0%
+廫	liu4	0%
+廭	zik1	0%
+廵	ceon4	0%
+廸	dik6	0%
+廹	baak3	0%
+廹	bik1	0%
+廻	wui4	
+廼	naai5	0%
+廽	wui4	0%
+弉	zong6	0%
+弐	nji6	0%
+弒	sji3	0%
+弖	vu6	0%
+弙	wu1	0%
+弚	dai6	0%
+弡	gwat6	0%
+弫	cjan2	0%
+弳	ging3	0%
+强	giong6	0%
+强	kiong4	0%
+强	kiong5	0%
+弻	bat6	0%
+弿	gin2	0%
+彁	go1	0%
+彂	faat3	0%
+彅	zin2	0%
+彑	gai3	0%
+彚	wai6	0%
+彛	ji4	0%
+彜	ji4	0%
+彞	ji4	0%
+彮	jung5	0%
+彵	to5	0%
+徃	wong5	0%
+徆	sai1	0%
+徍	wong5	0%
+徏	zrik1	0%
+徖	cung4	0%
+徚	gaen2	0%
+徝	zri3	0%
+徝	zrik1	
+徟	zau1	0%
+徣	ziaa3	0%
+徤	gin6	0%
+徦	gaa2	0%
+徦	haa4	0%
+徫	wai5	0%
+徭	jiu4	0%
+徰	zjing1	0%
+徱	piu3	0%
+徲	cri4	0%
+徲	tai4	0%
+徴	zring1	0%
+徶	pit3	0%
+徶	bit3	
+徸	cjung1	0%
+徺	hiu1	0%
+徻	wai3	0%
+徻	wui3	0%
+徾	mi4	0%
+徿	lung5	0%
+徿	lung6	0%
+忁	boo3	0%
+忄	sam1	0%
+忇	lak6	0%
+忈	njan4	0%
+忊	ding6	0%
+忋	goi2	0%
+忎	njan4	0%
+忏	chaem3	0%
+忐	taan2	
+忑	tik1	
+忛	faan4	0%
+忟	man4	
+忟	mang2	
+忢	ngu6	0%
+忣	gap1	0%
+忰	sooi6	0%
+忲	taai3	0%
+忴	kam4	
+忴	kim4	
+忷	hung1	0%
+忹	kwong4	0%
+忺	him1	0%
+怀	waai4	0%
+怇	gyo6	0%
+怈	jai6	0%
+怉	baeu2	0%
+怉	poo5	0%
+怎	dim2	0%
+怎	zam2	0%
+怑	bun6	0%
+怘	gu3	0%
+怟	dai3	0%
+怢	dat6	0%
+怣	jau4	0%
+怬	hi3	0%
+怰	hjyun6	0%
+怱	cung1	0%
+怶	bi3	0%
+怷	sjeot6	0%
+怹	taa1	0%
+怺	wing5	0%
+怽	mut6	0%
+怾	gi1	0%
+恊	hip6	0%
+恏	hoo2	0%
+恒	gang2	0%
+恒	hang4	0%
+恓	cai1	0%
+恘	hjau1	0%
+恛	wui4	0%
+恝	aat3	0%
+恝	gaet3	0%
+恝	git3	0%
+恡	leon6	0%
+恦	hiong2	0%
+恱	jyut6	0%
+恴	dak1	0%
+恷	hjau1	0%
+悎	gaeu3	0%
+悎	hoo6	0%
+悓	jin5	0%
+悘	ji1	0%
+悡	li4	0%
+悥	ngi3	0%
+悦	jyut6	0%
+悧	li4	0%
+您	ni5	0%
+悩	noo5	0%
+悳	dak1	0%
+悻	hang5	0%
+悻	hang6	
+惉	zjim1	0%
+惊	ging1	0%
+惊	liong6	0%
+惍	gam1	0%
+惐	wik6	0%
+惒	wo4	0%
+惓	gyun6	0%
+惓	kyun4	0%
+惖	tik1	0%
+惝	cjong2	0%
+惝	tong2	0%
+惞	hjan1	0%
+惣	zung2	0%
+惤	gin1	0%
+惥	jung5	0%
+惦	dim3	
+惽	man5	0%
+惾	sau3	0%
+惾	zung1	0%
+惿	sji6	0%
+惿	tai4	0%
+愂	bui6	0%
+愄	wui4	0%
+愅	gaak3	0%
+愌	wun6	0%
+愑	jung5	0%
+愘	kok3	0%
+愝	jin2	0%
+愠	wan3	
+愡	zung2	0%
+愣	leng1	0%
+愣	ling4	0%
+愣	ling6	0%
+愥	jing1	
+愫	su3	0%
+愰	hwong5	0%
+愰	hwong2	
+愳	gyu6	0%
+愸	zjing2	0%
+愹	jung5	0%
+愼	sjan6	0%
+愽	bok3	0%
+慐	gung1	0%
+慠	ngoo6	0%
+慠	ngoo4	
+慡	shong2	0%
+慤	kok3	0%
+慦	gau3	0%
+慩	lin4	0%
+慪	au1	0%
+慪	au3	0%
+慻	gyun3	0%
+慿	pang4	0%
+憄	zri3	0%
+憅	dung6	0%
+憆	craang1	0%
+憇	hi3	0%
+憈	hyo1	0%
+憏	crai3	0%
+憏	zrai3	0%
+憗	ngan6	0%
+憗	jan6	
+憘	hi2	0%
+憣	faan1	0%
+憦	loo6	0%
+憱	chau3	0%
+憱	chuk1	0%
+憳	taam2	0%
+憻	taan2	0%
+憽	sung1	0%
+懂	dung2	
+懏	zeon3	0%
+懓	oi3	0%
+懗	haa3	0%
+懙	jyo4	0%
+懙	jyo5	0%
+懞	mung4	0%
+懞	mung5	0%
+懧	no6	0%
+懨	jim1	0%
+懩	jong5	0%
+懭	kwong3	0%
+懯	fu1	0%
+懳	wai6	0%
+戂	mi4	0%
+戅	ngong6	0%
+戅	zhong3	0%
+戓	gap3	0%
+戓	go1	
+戙	dong6	0%
+戙	dung6	0%
+戝	caak6	0%
+戞	gaat3	0%
+戤	koi3	0%
+戥	dang2	
+戥	dang6	
+戧	chiong1	0%
+戧	chiong3	0%
+戨	go1	0%
+戱	hu1	0%
+戱	hi3	0%
+戳	ciok3	
+戳	cok3	
+戳	ziok3	
+戸	vu6	0%
+扄	shiong2	0%
+扌	shau2	0%
+払	faan2	0%
+扖	njap6	0%
+扗	zoi6	0%
+扗	coi5	
+托	tok3	
+扙	zriong6	0%
+扥	dan3	0%
+扦	cin1	0%
+扨	njan6	0%
+扯	chiaa2	
+扰	njiu5	0%
+扲	ngam4	
+扷	oo3	0%
+扸	sik1	
+扻	hom2	
+扻	hom6	
+扻	zhit3	0%
+扼	aak1	
+扼	ak1	
+找	zjaau2	
+抂	kwong4	0%
+抅	kyu1	0%
+抇	wat6	0%
+抋	cam3	0%
+抙	pau4	0%
+抜	bat6	0%
+抝	aeu3	0%
+抝	aeu2	
+抣	gwan1	0%
+抦	bing2	0%
+抬	toi4	
+抰	jong2	
+抳	ni5	0%
+抳	ni4	0%
+抳	nai4	
+抷	pi1	0%
+抸	zaap3	0%
+抺	mui6	0%
+抿	man4	0%
+抿	man5	
+拀	zjuk1	0%
+拁	kiaa2	0%
+拆	craak3	
+拊	fu2	
+拞	jau1	
+拤	kaa1	0%
+拪	cin1	0%
+拷	haau1	0%
+拷	haau2	0%
+拻	hwui1	
+拽	jai6	
+拿	nraa4	
+挀	baak3	0%
+挄	kwok3	0%
+挅	do2	0%
+挊	lung6	0%
+挍	gaeu3	0%
+挍	haeu6	0%
+挓	zraa1	0%
+挔	lyo5	0%
+挕	dip3	0%
+挕	sjip3	0%
+挖	waet3	
+挗	kyut3	0%
+挘	lyut3	
+挧	jyu5	0%
+挳	hang1	0%
+挳	hin1	0%
+挵	lung6	0%
+挷	pong3	0%
+挿	chaep3	0%
+捁	gaeu2	0%
+捆	kwan2	
+捑	sjik6	0%
+捓	jaa4	0%
+捗	boo6	0%
+捗	poo4	0%
+捗	zik1	0%
+捙	jai6	0%
+捚	zhaai1	0%
+捛	lyo5	0%
+捜	shau1	0%
+捝	sjooi3	0%
+捝	tyut3	0%
+捝	dyut6	
+捠	bang1	0%
+捤	mi5	0%
+捬	fu2	0%
+捯	doo2	0%
+捯	doo3	0%
+捰	wo2	0%
+捱	ngaai4	
+捴	zung2	0%
+捵	cran2	0%
+捵	lin2	0%
+捸	dat6	0%
+捹	fing6	
+捿	cai1	0%
+掂	dim1	
+掂	dim3	
+掂	dim6	
+掋	dai2	0%
+掑	ki4	0%
+掗	aa2	0%
+掙	zhaang1	0%
+掙	zhaang6	0%
+掙	zhang1	0%
+掚	liong5	0%
+掦	tik1	0%
+掭	tim3	0%
+掭	tim5	0%
+掮	kin4	0%
+掯	kang3	0%
+掰	baai1	0%
+掰	baai2	
+掰	maak3	0%
+掱	paa4	0%
+掲	kit3	0%
+掵	ming6	0%
+掶	zit6	0%
+掹	mang1	
+掹	maang1	
+掹	mang3	0%
+掽	pung3	0%
+掿	nok6	0%
+揁	zring1	0%
+揍	cau3	0%
+揍	zau3	0%
+揑	nip6	0%
+揓	sji3	0%
+揓	to1	0%
+揔	zung2	0%
+揝	zaan6	0%
+揝	zyut3	0%
+揦	laa2	
+揦	laa5	0%
+揪	zau1	0%
+揰	cjung3	0%
+揰	zhung1	
+揰	dung2	
+揶	jaa4	
+揷	chaep3	0%
+揸	zhaa1	
+揹	bui3	0%
+揺	jiu4	0%
+揻	wai1	0%
+揼	dam3	0%
+揼	dap6	
+揾	wan3	0%
+搃	zung2	0%
+搇	gam6	0%
+搇	kom2	0%
+搐	craau1	0%
+搐	cruk1	
+搗	doo2	0%
+搘	zji1	0%
+搛	gim1	0%
+搛	lim4	0%
+搝	hau2	0%
+搞	gaeu2	
+搟	hin2	0%
+搠	shok3	0%
+搡	song2	0%
+搧	shin3	
+搧	shing1	
+搬	bun1	
+搲	waa2	0%
+搲	wiaa2	
+搳	hat6	0%
+搳	waa1	0%
+搳	waak6	0%
+搻	nik1	0%
+搻	nok6	0%
+搼	kyun4	0%
+搽	chaa4	
+搾	zhaa3	0%
+搿	gaep3	
+摀	ngu6	
+摀	wu2	
+摁	jan1	0%
+摁	on3	0%
+摃	gong1	0%
+摉	shau1	0%
+摓	fung4	0%
+摔	sheot1	0%
+摚	craang1	
+摚	tong3	0%
+摢	vu6	0%
+摨	nraai4	0%
+摪	ziong1	0%
+摰	ngit6	0%
+摱	maan1	
+摹	mu4	0%
+摾	giong6	0%
+摿	jiu4	0%
+撀	gau3	0%
+撁	hin1	0%
+撂	liok6	0%
+撇	pit3	0%
+撉	dan3	0%
+撉	deon1	0%
+撊	haen5	0%
+撌	gwai6	0%
+撐	craang1	
+撐	craang3	
+撑	craang1	0%
+撑	craang3	
+撒	saat3	
+撔	wang6	0%
+撗	gwong3	0%
+撡	coo1	0%
+撧	zyut6	0%
+撪	ban6	0%
+撬	giu6	
+撬	hiu3	0%
+撯	ziok3	0%
+撳	gam6	
+撴	dan3	0%
+撴	deon1	0%
+撶	hwaa4	0%
+撽	gik1	0%
+撽	haeu3	0%
+撾	gwo1	0%
+撾	wo1	
+撾	zraa1	0%
+擀	gon2	0%
+擂	lyi4	
+擃	nong5	0%
+擈	pok3	0%
+擏	ging6	0%
+擏	king4	0%
+擑	zip3	0%
+擓	hwaai1	0%
+擕	kwai4	0%
+擙	oo1	0%
+擛	jip6	0%
+擝	mang1	
+擟	mi4	0%
+擤	sang3	
+擤	san3	
+擦	caat3	
+擫	jip3	0%
+擮	zit6	0%
+擰	ning1	
+擰	ning2	
+擰	ning6	
+擱	gok3	
+擵	mo1	0%
+擶	zin3	0%
+擼	lu5	0%
+攁	jong5	0%
+攅	zaan3	0%
+攅	zyun6	
+攆	lin5	
+攌	waen5	0%
+攌	waen6	0%
+攓	hin1	0%
+攚	jing4	0%
+攛	cyun1	0%
+攛	cyun3	0%
+攟	kwan2	0%
+攟	kwan3	0%
+攠	mi4	0%
+攠	mo4	
+攠	mo6	
+攦	lai6	0%
+攧	din1	0%
+攭	lai5	0%
+攮	nong5	0%
+攰	gui6	0%
+攳	cam4	0%
+攵	pok3	0%
+攼	gon1	0%
+攼	hon6	0%
+敇	chaak3	0%
+敋	gwok3	0%
+敍	zyo6	
+敒	sjan1	0%
+敚	dyut6	0%
+敟	din2	0%
+敥	gaau2	0%
+敥	jim6	0%
+敧	gi1	0%
+敧	ji2	0%
+敨	tau2	
+敪	zyut3	0%
+敯	fan1	0%
+敯	man5	0%
+敱	ngoi4	0%
+敼	hi2	0%
+敾	sjin6	0%
+敿	giu2	0%
+斆	haeu6	0%
+斈	hok6	0%
+斊	cai4	0%
+斏	liong4	0%
+斔	jyu5	0%
+斘	sjing1	0%
+斚	gaa2	0%
+斱	diok3	0%
+斳	kan4	0%
+斴	leon4	0%
+斵	diok3	0%
+斶	cjuk1	0%
+斺	crin2	0%
+斺	haai6	
+斻	hong4	0%
+斾	bui3	0%
+旀	ji5	0%
+旈	lau4	0%
+旉	fu1	0%
+旊	fong2	0%
+旑	ji2	0%
+旘	cji3	0%
+旙	faan1	0%
+旣	gi3	5%
+旤	wo6	0%
+旪	hip3	0%
+旫	tiu1	0%
+旮	go3	
+旮	go1	0%
+旯	lok1	
+旯	lo1	0%
+旲	jing2	0%
+旲	toi4	0%
+旳	dik1	0%
+旽	tan1	0%
+旽	zjan3	0%
+旾	cjeon1	0%
+昀	wan4	0%
+昁	bui3	0%
+昍	hyun1	0%
+昐	fan1	0%
+昑	jam2	0%
+昖	jyun4	0%
+昗	zhik1	0%
+昘	fong2	0%
+昛	gyo6	0%
+昡	hjyun6	0%
+昣	cran2	0%
+昬	fan1	0%
+昮	cung6	0%
+昰	sji5	5%
+昰	sjy6	5%
+昷	wan1	0%
+昸	dung1	0%
+昹	oi2	0%
+昺	bing2	0%
+昻	ngong4	0%
+晀	tiu2	0%
+晄	hwong5	0%
+晅	hyun1	0%
+晅	hyun2	0%
+晆	kwai1	0%
+晇	hyu1	0%
+晇	kwaa1	0%
+晌	hiong2	5%
+晍	tung4	0%
+晎	hung2	0%
+晑	hiong2	0%
+晒	saai3	
+晗	hom4	0%
+晘	waen5	0%
+晠	sjing4	0%
+晩	maan5	0%
+晰	sik1	
+晱	sjim2	0%
+晳	sik1	0%
+晸	zring2	0%
+晽	lam4	0%
+晾	long3	
+晾	long6	
+黦	jyut3	
+鿁	hung6	0%
+㐀	jau1	0%
+㐂	hi2	5%
+㐅	ngu5	5%
+㐌	ji4	0%
+㐌	do4	0%
+㐖	kit3	3%
+㐜	sjau4	0%
+㐜	kau4	0%
+㐡	no6	0%
+㐤	daan1	0%
+㐧	dai6	0%
+㐨	zyo6	0%
+㐩	hjing4	0%
+㐪	hoi6	0%
+㐫	hung1	0%
+㐬	lau4	0%
+㐬	fau1	0%
+㐯	jung4	0%
+㐰	seon3	0%
+㐳	ngat6	0%
+㐴	paan1	0%
+㐵	njyu4	0%
+㐶	hwaa3	0%
+㐹	ngat6	0%
+㐹	hi3	0%
+㐺	ngiam4	0%
+㐻	noi6	0%
+㐼	cjing2	0%
+㐾	wun6	0%
+㐿	sjau2	0%
+㑀	taai3	0%
+㑂	fong2	0%
+㑄	mu5	0%
+㑅	zok3	0%
+㑆	hing1	0%
+㑊	jik6	0%
+㑋	hung3	0%
+㑌	hong1	0%
+㑍	looi6	0%
+㑎	noo5	0%
+㑏	cryo5	0%
+㑐	sjuk1	0%
+㑓	zeon3	0%
+㑖	zhung6	0%
+㑘	gaai3	0%
+㑚	no5	0%
+㑝	lung6	0%
+㑡	zik1	0%
+㑢	kiok3	0%
+㑣	laam4	0%
+㑤	maeu4	0%
+㑧	gwai3	0%
+㑨	ngyu5	0%
+㑫	nim6	0%
+㑬	gu1	0%
+㑭	bi2	0%
+㑯	syo2	0%
+㑰	hwui3	0%
+㑱	njiu5	0%
+㑲	naam4	0%
+㑴	cam1	0%
+㑶	hi3	5%
+㑷	taai3	3%
+㑸	jiu4	0%
+㑹	wui6	0%
+㑺	zeon3	0%
+㑼	liok6	0%
+㑽	tong4	0%
+㑾	jiu4	0%
+㒀	zraak3	0%
+㒀	zraa2	0%
+㒁	ngyu5	0%
+㒂	zriok3	0%
+㒃	nji6	0%
+㒆	hap1	0%
+㒉	chong2	0%
+㒉	tong2	0%
+㒍	looi4	0%
+㒍	lo4	0%
+㒍	lyi5	0%
+㒎	saap3	0%
+㒏	hon4	0%
+㒐	seon2	0%
+㒑	hwui2	0%
+㒑	wui6	0%
+㒒	buk6	0%
+㒕	jong1	0%
+㒖	ngau5	0%
+㒗	toi4	0%
+㒘	sjyu5	0%
+㒙	min4	0%
+㒛	tiu5	0%
+㒜	jyo5	0%
+㒞	wai6	0%
+㒡	jau4	0%
+㒢	jok6	0%
+㒣	jing3	0%
+㒤	cjip3	0%
+㒤	zjip3	0%
+㒦	looi5	0%
+㒧	lai6	0%
+㒧	li4	0%
+㒨	sin1	0%
+㒩	lo2	0%
+㒪	sek6	0%
+㒫	gi3	0%
+㒬	wong1	0%
+㒭	kwan1	0%
+㒮	hwui1	0%
+㒯	jip6	0%
+㒱	mung6	0%
+㒲	coi4	0%
+㒵	maeu6	0%
+㒶	gung1	0%
+㒷	hing1	0%
+㒺	mong5	0%
+㒻	moo6	0%
+㒻	muk6	0%
+㒻	mak6	0%
+㒿	li4	0%
+㓀	buk1	0%
+㓁	mong5	0%
+㓂	kau3	0%
+㓅	ting1	0%
+㓇	juk1	0%
+㓈	bing3	0%
+㓉	wut6	0%
+㓋	gung6	0%
+㓌	crang1	0%
+㓍	cjung1	0%
+㓎	cam1	0%
+㓏	gwing2	0%
+㓐	luk6	0%
+㓑	jing6	0%
+㓒	cat1	0%
+㓓	naam4	0%
+㓔	ziaa6	0%
+㓕	mit6	0%
+㓗	git3	0%
+㓘	suk1	0%
+㓙	hung1	0%
+㓛	gung1	0%
+㓜	jau3	0%
+㓟	pai1	0%
+㓡	fu2	0%
+㓦	baak3	0%
+㓦	maak3	0%
+㓧	gam1	0%
+㓨	cy3	0%
+㓩	hyun1	0%
+㓪	long5	0%
+㓫	fu1	0%
+㓬	fu1	0%
+㓭	hot6	0%
+㓮	diu1	0%
+㓮	tiu1	0%
+㓯	li4	0%
+㓰	waak6	0%
+㓲	pin1	0%
+㓴	njyun5	0%
+㓵	ngok6	0%
+㓶	kit3	0%
+㓸	diok1	0%
+㓸	dau1	0%
+㓾	sai1	0%
+㓿	lai5	0%
+㔀	king4	0%
+㔁	dang1	0%
+㔂	leon4	0%
+㔃	zyut6	0%
+㔃	hyut3	0%
+㔅	siu3	0%
+㔇	put3	0%
+㔈	fi6	0%
+㔐	cim1	0%
+㔑	chat1	0%
+㔕	gat6	0%
+㔘	creot1	0%
+㔚	hau2	0%
+㔛	kit3	0%
+㔜	but6	0%
+㔟	sjai3	0%
+㔤	sam3	0%
+㔦	jong5	0%
+㔧	lyo6	0%
+㔧	lu4	0%
+㔨	bui3	0%
+㔫	zo2	0%
+㔬	criok3	0%
+㔭	cji4	0%
+㔰	gang2	0%
+㔱	jyu5	0%
+㔲	gwai2	0%
+㔳	gwai2	0%
+㔵	syun2	0%
+㔷	lau6	0%
+㔺	sjai3	0%
+㔼	seon2	0%
+㔽	jau5	0%
+㔾	cim1	0%
+㔾	zit3	0%
+㔿	zau3	0%
+㕁	kiok3	0%
+㕂	ngiam4	0%
+㕃	kai1	0%
+㕄	zri3	0%
+㕅	gaep3	0%
+㕉	hop6	0%
+㕌	ngoi6	0%
+㕌	zraak3	0%
+㕌	dak1	0%
+㕍	dyi1	0%
+㕏	cryu4	0%
+㕐	siaa2	0%
+㕑	cryu4	0%
+㕓	crin4	0%
+㕔	teng1	0%
+㕔	ting1	0%
+㕕	waan6	0%
+㕖	su3	0%
+㕘	caam1	0%
+㕘	caam1	0%
+㕜	shy2	0%
+㕝	shy6	0%
+㕠	shiong1	0%
+㕤	kau4	0%
+㕥	sjan3	0%
+㕨	faan6	0%
+㕩	pong3	0%
+㕪	dam2	0%
+㕫	fung1	0%
+㕱	jau4	0%
+㕲	muk1	0%
+㕳	hung1	0%
+㕴	sjam2	0%
+㕵	gwok3	0%
+㕶	ng6	5%
+㕷	waak1	5%
+㕸	lap1	5%
+㕹	fat6	5%
+㕺	hiu1	0%
+㕻	tau3	0%
+㕼	hung1	0%
+㕽	cy5	0%
+㕿	wo4	0%
+㖀	leot6	5%
+㖁	leon6	0%
+㖂	jai6	0%
+㖄	zjau1	0%
+㖆	kuk1	0%
+㖆	hung1	0%
+㖇	nji4	0%
+㖇	ji4	0%
+㖉	ki5	0%
+㖐	wai5	0%
+㖓	hung4	0%
+㖔	tan3	0%
+㖕	san1	0%
+㖖	ngot6	0%
+㖗	ngiam4	0%
+㖠	no5	0%
+㖡	e6	
+㖡	je6	
+㖢	cy1	0%
+㖣	tau3	0%
+㖤	haam4	0%
+㖦	dung2	0%
+㖧	hwan1	0%
+㖧	man5	0%
+㖨	luk6	0%
+㖫	ling4	0%
+㖬	shau1	0%
+㖭	tim1	0%
+㖮	leon4	0%
+㖴	man5	0%
+㖵	got3	0%
+㖶	jin1	0%
+㖸	laa1	0%
+㖹	pan3	0%
+㖺	cjeon2	0%
+㖻	nrau4	0%
+㖼	mau4	0%
+㖽	zhaak3	0%
+㖾	ngok6	0%
+㖿	je5	0%
+㗀	jau1	0%
+㗂	shaang2	0%
+㗃	man5	0%
+㗄	ku1	0%
+㗅	wu4	0%
+㗆	gaak3	0%
+㗇	gaa5	0%
+㗇	haa1	
+㗈	maan6	0%
+㗋	hau4	0%
+㗌	zrat1	0%
+㗍	zraai1	0%
+㗎	ga3	
+㗎	gaa2	
+㗎	gaa3	
+㗏	waai1	0%
+㗏	wai1	0%
+㗐	hop3	0%
+㗑	baai3	0%
+㗒	oi1	0%
+㗓	zrooi1	0%
+㗖	daam6	0%
+㗜	cjau3	0%
+㗝	goo1	0%
+㗞	po3	0%
+㗣	tai3	0%
+㗥	kwok3	0%
+㗥	gwok3	0%
+㗪	pi1	0%
+㗭	sik1	0%
+㗰	cung4	0%
+㗳	dap1	0%
+㗶	put3	0%
+㗸	haem4	0%
+㗹	ziu1	0%
+㘂	cy4	0%
+㘃	nje5	0%
+㘄	lang1	0%
+㘅	haem4	0%
+㘇	wing4	0%
+㘊	kap1	0%
+㘊	jap6	0%
+㘍	zat1	0%
+㘐	paeu3	0%
+㘑	lai6	0%
+㘔	coi3	0%
+㘕	haam3	0%
+㘖	ngaan4	0%
+㘗	kyu1	0%
+㘚	haem2	0%
+㘚	haem3	0%
+㘛	haem1	0%
+㘞	wo6	0%
+㘟	chiong1	0%
+㘡	haep6	0%
+㘢	wang2	0%
+㘤	waan1	0%
+㘦	kan4	0%
+㘧	zyo6	0%
+㘩	bi6	0%
+㘪	hoo3	0%
+㘫	zeng2	0%
+㘬	aeu1	0%
+㘬	aeu3	0%
+㘭	aeu1	0%
+㘭	aeu3	0%
+㘮	jik6	0%
+㘯	criong4	0%
+㘳	jau1	0%
+㘵	bau3	0%
+㘶	git6	0%
+㘷	ngaai6	0%
+㘸	zong3	0%
+㘹	cy4	0%
+㘺	fat6	0%
+㘼	haau2	0%
+㘽	zoi1	0%
+㘾	jyu5	0%
+㙂	dyi6	0%
+㙅	boo2	0%
+㙆	wang4	0%
+㙈	haa3	0%
+㙉	tin2	0%
+㙋	gi1	0%
+㙍	zrooi3	0%
+㙎	wai1	0%
+㙐	do2	0%
+㙑	jyu5	0%
+㙒	jiaa5	0%
+㙓	kwai4	0%
+㙔	wai5	0%
+㙕	hwaai3	0%
+㙖	jyu5	0%
+㙗	wui1	0%
+㙘	jiu1	0%
+㙚	sing1	0%
+㙛	bau2	0%
+㙜	kok3	0%
+㙝	hip3	0%
+㙞	ngat6	0%
+㙟	long5	0%
+㙡	zung1	0%
+㙢	mun4	0%
+㙣	zriong3	0%
+㙥	gwan3	0%
+㙦	ciaa4	0%
+㙧	lau6	0%
+㙫	cap1	0%
+㙬	ngan4	0%
+㙭	kyut3	0%
+㙮	daap3	0%
+㙯	ngai6	0%
+㙰	haai5	0%
+㙲	jung1	0%
+㙳	ham2	0%
+㙳	ham5	0%
+㙵	toi4	0%
+㙶	tong4	0%
+㙸	pok3	0%
+㙹	mung6	0%
+㙺	kwai4	0%
+㙺	kwai6	0%
+㙼	looi5	0%
+㙽	sik1	0%
+㙾	hok6	0%
+㙾	hok3	0%
+㙿	hi1	0%
+㚄	zri3	0%
+㚆	fuk6	0%
+㚈	ngoi6	0%
+㚉	gu2	0%
+㚌	hwo2	0%
+㚎	hyo3	0%
+㚏	goo2	0%
+㚐	too3	0%
+㚓	loi4	0%
+㚕	bat6	0%
+㚙	gaa1	0%
+㚚	kwang1	0%
+㚝	zjooi1	0%
+㚞	sham2	0%
+㚟	criok3	0%
+㚡	gi2	0%
+㚣	gaeu2	0%
+㚥	jyu1	0%
+㚦	gi1	0%
+㚧	ngim5	0%
+㚨	shan1	0%
+㚩	njim5	0%
+㚪	hoo3	0%
+㚬	gwan1	0%
+㚭	jau4	0%
+㚮	daam1	0%
+㚰	pui1	0%
+㚰	pi1	0%
+㚱	jau1	0%
+㚳	o1	0%
+㚴	pu3	0%
+㚵	dung1	0%
+㚶	cy5	0%
+㚸	sy1	0%
+㚹	maeu5	0%
+㚹	lau5	0%
+㚺	jang6	0%
+㚻	gai1	0%
+㚼	nau2	0%
+㚽	haeu2	0%
+㚾	hing1	0%
+㚿	baeu1	0%
+㛃	git3	0%
+㛆	do3	0%
+㛇	zhong1	0%
+㛈	haau2	0%
+㛉	jiu3	0%
+㛋	nri5	0%
+㛌	mau4	0%
+㛎	lyo5	0%
+㛏	kau4	0%
+㛓	hi1	0%
+㛓	cri1	0%
+㛔	fung1	0%
+㛔	pung4	0%
+㛕	jap1	0%
+㛖	so1	0%
+㛙	san1	0%
+㛚	tung2	0%
+㛚	jung5	0%
+㛛	sjan1	0%
+㛜	jau4	0%
+㛜	diu4	0%
+㛝	bui3	0%
+㛞	lung6	0%
+㛡	wan6	0%
+㛢	sau3	0%
+㛦	lam5	0%
+㛨	kiong2	0%
+㛩	zruk6	0%
+㛫	sik1	0%
+㛬	luk6	0%
+㛭	sik1	0%
+㛯	faan3	0%
+㛰	hwan1	0%
+㛲	faat3	0%
+㛵	cjing1	0%
+㛷	gai1	0%
+㛸	sjyu6	0%
+㛺	jam1	0%
+㛻	waai1	0%
+㛽	saan1	0%
+㛾	haem4	0%
+㜀	shiong1	0%
+㜁	caa4	0%
+㜂	fung1	0%
+㜃	lyun2	0%
+㜄	cam4	0%
+㜆	mai6	0%
+㜈	muk6	0%
+㜉	jung1	0%
+㜋	jik1	0%
+㜍	tong4	0%
+㜏	wan4	0%
+㜐	sjyu6	0%
+㜑	po4	0%
+㜒	ngai6	0%
+㜔	ging2	0%
+㜕	lin4	0%
+㜖	coo4	0%
+㜙	luk6	0%
+㜚	shuk1	0%
+㜛	nyun5	0%
+㜜	ngoo6	0%
+㜞	cim3	0%
+㜞	caam3	0%
+㜟	haam3	0%
+㜠	cyi1	0%
+㜡	cung1	0%
+㜥	maai4	0%
+㜦	cam4	0%
+㜧	jyut3	0%
+㜨	naai4	0%
+㜩	oo3	0%
+㜫	mi5	0%
+㜬	daam1	0%
+㜭	dong1	0%
+㜯	hi1	0%
+㜱	zjat1	0%
+㜴	mang6	0%
+㜶	faan3	0%
+㜹	kyu4	0%
+㜹	au1	0%
+㜻	lyun2	0%
+㜼	zrat6	0%
+㜾	haai4	0%
+㜿	zyu6	0%
+㝀	hoo2	0%
+㝁	hyun1	0%
+㝄	sjeon4	0%
+㝆	hi2	0%
+㝇	cjeon1	0%
+㝊	sjau2	0%
+㝋	liu4	0%
+㝍	siaa2	0%
+㝎	ding6	0%
+㝑	pong4	0%
+㝒	gyo1	0%
+㝓	hop1	0%
+㝔	jiu2	5%
+㝔	jiu3	5%
+㝕	ning4	0%
+㝘	ngiung4	0%
+㝘	ngan4	0%
+㝙	jan4	0%
+㝚	jin4	0%
+㝛	suk1	0%
+㝜	sik1	0%
+㝝	lam4	0%
+㝟	moo6	0%
+㝠	ming4	0%
+㝡	zyi3	0%
+㝥	mai5	0%
+㝦	zeon3	0%
+㝧	wan2	0%
+㝨	waen4	0%
+㝫	lung4	0%
+㝬	fu2	0%
+㝭	sing2	0%
+㝮	cyi3	0%
+㝲	cam2	0%
+㝳	sam1	0%
+㝴	ngyun4	0%
+㝵	dak1	0%
+㝶	dak1	0%
+㝷	cam4	0%
+㝹	nau4	0%
+㝺	lim4	0%
+㞀	hwui1	0%
+㞃	kek6	0%
+㞅	lo6	0%
+㞈	but3	0%
+㞉	zaat3	0%
+㞊	seot1	0%
+㞌	jang6	0%
+㞍	hoo1	0%
+㞎	baa2	0%
+㞐	gyo1	0%
+㞑	mi5	0%
+㞔	ji4	0%
+㞔	sji2	0%
+㞕	sit3	0%
+㞖	cy1	0%
+㞗	gau1	
+㞗	kau4	0%
+㞘	duk1	
+㞝	cik1	0%
+㞞	cung4	0%
+㞞	sung4	5%
+㞠	liu4	0%
+㞤	jam4	0%
+㞧	wui6	0%
+㞨	zy2	0%
+㞩	laam4	0%
+㞪	noo4	0%
+㞫	zau2	0%
+㞬	jan2	0%
+㞭	daai6	0%
+㞮	cjeot3	0%
+㞯	hi2	0%
+㞰	hyo2	0%
+㞱	cung1	0%
+㞲	ngiung6	0%
+㞳	dau2	0%
+㞴	cri4	0%
+㞵	too1	0%
+㞶	man4	0%
+㞸	sooi3	0%
+㞹	ho2	0%
+㞺	zuk6	0%
+㞻	hoo6	0%
+㞼	sjing4	0%
+㞾	nri4	0%
+㞿	ki4	0%
+㟀	lin4	0%
+㟁	ngon6	0%
+㟂	mau5	0%
+㟃	sy1	0%
+㟄	ciong4	0%
+㟇	zo3	0%
+㟈	kau4	0%
+㟊	fau4	0%
+㟑	but6	0%
+㟒	kwan1	0%
+㟓	ki4	0%
+㟔	hom1	0%
+㟕	giu3	0%
+㟖	lung6	0%
+㟗	ban1	0%
+㟘	tiu4	0%
+㟙	zjaak6	0%
+㟚	ki4	0%
+㟜	mi4	0%
+㟝	pui4	0%
+㟟	hong6	0%
+㟠	gong1	0%
+㟡	kwai5	0%
+㟢	ki1	0%
+㟣	sung1	0%
+㟤	luk6	0%
+㟦	wan6	0%
+㟧	ngok6	0%
+㟨	dyun1	0%
+㟩	man4	0%
+㟪	wai3	0%
+㟪	wai1	0%
+㟫	cyun4	0%
+㟬	sau2	0%
+㟭	man4	0%
+㟮	dat6	0%
+㟯	ngaak6	0%
+㟰	ming5	0%
+㟱	jiu5	0%
+㟲	ngyun4	0%
+㟴	hwaai3	0%
+㟴	hwaai2	0%
+㟴	wai2	0%
+㟵	gong1	0%
+㟶	ngyun4	0%
+㟷	daat3	0%
+㟹	loo4	0%
+㟹	liu4	0%
+㟹	laeu4	0%
+㟺	lau5	0%
+㟻	cim3	0%
+㟼	ngoo4	0%
+㟿	mang4	0%
+㟿	mang6	0%
+㠀	doo2	0%
+㠁	cham1	0%
+㠂	ngoo6	0%
+㠃	dik1	0%
+㠄	zaap6	0%
+㠅	fuk6	0%
+㠅	buk6	0%
+㠈	njeon6	0%
+㠉	tung4	0%
+㠋	ngok6	0%
+㠌	kai1	0%
+㠌	hom6	0%
+㠎	zaap6	0%
+㠏	waa4	0%
+㠐	giu6	0%
+㠓	mung4	0%
+㠕	ngoi4	0%
+㠗	oo3	0%
+㠘	zyo6	0%
+㠙	hoo4	0%
+㠚	dyi6	0%
+㠜	jik6	0%
+㠝	cyun4	0%
+㠞	zjing1	0%
+㠟	lai4	0%
+㠡	niu5	0%
+㠣	lik6	0%
+㠤	siong1	0%
+㠧	mi5	0%
+㠨	wat1	0%
+㠩	hwong1	0%
+㠪	gyo6	0%
+㠮	pung1	0%
+㠮	gong1	0%
+㠱	gi2	0%
+㠱	gi1	0%
+㠲	bi2	0%
+㠳	mok6	0%
+㠶	faan4	0%
+㠻	hi1	0%
+㠼	sy1	0%
+㡂	lai6	0%
+㡃	fong1	0%
+㡄	seon1	0%
+㡈	man6	0%
+㡈	mun4	0%
+㡈	min5	0%
+㡌	moo6	0%
+㡍	goo1	0%
+㡐	zin1	0%
+㡕	jong1	0%
+㡖	crong4	0%
+㡚	kau1	0%
+㡛	mong4	0%
+㡛	fong1	0%
+㡞	lau4	0%
+㡠	zring3	0%
+㡡	cryu4	0%
+㡢	maan6	0%
+㡣	lung4	0%
+㡤	fuk6	0%
+㡦	pan1	0%
+㡩	lyun4	0%
+㡪	naan6	0%
+㡪	nyi4	0%
+㡫	ai3	0%
+㡬	gi2	0%
+㡭	gai3	0%
+㡮	gat6	0%
+㡰	jyu5	0%
+㡱	gau3	0%
+㡳	dai2	0%
+㡴	laap6	0%
+㡵	ling4	0%
+㡶	zy2	0%
+㡸	zhaa6	0%
+㡸	zhaa4	0%
+㡻	liu4	0%
+㡽	zriu6	0%
+㡾	haen6	0%
+㢃	long4	0%
+㢄	dau6	0%
+㢆	crin4	0%
+㢇	ngin4	0%
+㢉	craa4	0%
+㢉	zraa1	0%
+㢉	zraak3	0%
+㢌	o1	0%
+㢍	jing2	0%
+㢍	jing1	0%
+㢎	zhip3	0%
+㢐	o1	0%
+㢑	tyi4	0%
+㢕	jung1	0%
+㢘	lim4	0%
+㢙	gan6	0%
+㢛	jim6	0%
+㢜	kong3	0%
+㢜	kwong3	0%
+㢞	jik6	0%
+㢠	gwing5	0%
+㢢	bai6	0%
+㢣	king4	0%
+㢤	zoi1	0%
+㢦	go1	0%
+㢧	gyun2	0%
+㢩	dik1	0%
+㢪	wu1	0%
+㢫	seon1	0%
+㢬	wang4	0%
+㢭	too1	0%
+㢮	cji2	0%
+㢯	deon1	0%
+㢱	ni4	0%
+㢲	seon3	0%
+㢳	loo4	0%
+㢴	sai1	0%
+㢶	bat6	0%
+㢷	too1	0%
+㢹	san1	0%
+㢺	hjin4	0%
+㢽	nji6	0%
+㢿	hau4	0%
+㣀	zran3	0%
+㣃	juk6	0%
+㣄	kyo4	0%
+㣆	mi4	0%
+㣉	gung1	0%
+㣊	sau1	0%
+㣋	daan1	0%
+㣍	ji4	0%
+㣏	zing6	0%
+㣐	bin3	0%
+㣒	cing3	0%
+㣓	caan3	0%
+㣔	ding1	0%
+㣕	daai6	0%
+㣖	taai3	0%
+㣗	vu6	0%
+㣘	kyu1	0%
+㣚	tung2	0%
+㣛	taap3	0%
+㣛	wui6	0%
+㣜	jing4	0%
+㣞	dyut6	0%
+㣠	too1	0%
+㣡	zrung6	0%
+㣢	tai4	0%
+㣣	sjim3	0%
+㣥	zri6	0%
+㣦	wai1	0%
+㣧	jan6	0%
+㣨	gu1	0%
+㣩	lam4	0%
+㣪	wun6	0%
+㣬	cap1	0%
+㣮	naam4	0%
+㣯	sit3	0%
+㣰	sat1	0%
+㣲	mi4	0%
+㣳	moo4	0%
+㣴	wong4	0%
+㣵	taat3	0%
+㣷	ning6	0%
+㣸	njooi4	0%
+㣹	jing3	0%
+㣺	sam1	5%
+㣼	njan5	0%
+㣽	sjyo3	0%
+㣽	nu6	0%
+㣾	chaa3	0%
+㤀	mong4	0%
+㤁	tim2	0%
+㤂	gap1	0%
+㤃	fong1	0%
+㤃	hwong1	0%
+㤈	cam3	0%
+㤋	fan1	0%
+㤋	fan2	0%
+㤌	gom1	0%
+㤐	tip3	0%
+㤑	jau6	0%
+㤓	ban6	0%
+㤔	fu6	0%
+㤖	cryo5	0%
+㤖	zryo6	0%
+㤗	taai3	0%
+㤙	jan1	0%
+㤚	hong4	0%
+㤛	njam5	0%
+㤜	hyut3	0%
+㤟	hung2	0%
+㤡	lai6	0%
+㤢	juk1	0%
+㤣	paang1	0%
+㤤	jyu4	0%
+㤦	li6	0%
+㤧	hau4	0%
+㤪	jyun3	0%
+㤫	dak1	0%
+㤬	wai3	0%
+㤯	gwing2	0%
+㤰	zok6	0%
+㤳	bui2	0%
+㤵	cy4	0%
+㤶	mong4	0%
+㤷	hom1	0%
+㤹	kau4	0%
+㤺	hwong1	0%
+㤼	hip3	0%
+㥀	zjik6	0%
+㥀	dak1	0%
+㥁	dak1	0%
+㥃	mun6	0%
+㥅	sjau6	0%
+㥇	caan4	0%
+㥉	cjai3	0%
+㥍	gi6	0%
+㥎	li4	0%
+㥐	jyun3	0%
+㥑	jau1	0%
+㥔	juk6	0%
+㥕	lin4	0%
+㥖	cung1	0%
+㥗	man5	0%
+㥘	hip3	0%
+㥙	zrung1	0%
+㥞	sooi3	0%
+㥡	cri3	0%
+㥣	wai6	0%
+㥤	ging1	0%
+㥥	ngyu4	0%
+㥧	sjeon6	0%
+㥩	do2	0%
+㥫	deon1	0%
+㥬	pong4	0%
+㥭	taai3	0%
+㥮	chau1	0%
+㥰	soo1	0%
+㥱	fi2	0%
+㥲	cjan1	0%
+㥳	ngyun4	0%
+㥵	wan6	0%
+㥷	ai3	0%
+㥸	man5	0%
+㥹	fan2	0%
+㥺	hop6	0%
+㥻	cik1	0%
+㥼	jan3	0%
+㥼	jan1	0%
+㥿	ngoo6	0%
+㦀	fung4	0%
+㦂	sjiong4	0%
+㦆	hu1	0%
+㦇	luk6	0%
+㦈	oi3	0%
+㦉	ji3	0%
+㦊	waa4	0%
+㦋	zraa1	0%
+㦍	ngok6	0%
+㦏	seon2	0%
+㦐	nri6	0%
+㦑	haem3	0%
+㦔	jim1	0%
+㦕	lung4	0%
+㦖	mun5	0%
+㦘	gik1	0%
+㦙	ngyu4	0%
+㦞	crau4	0%
+㦠	dyi6	0%
+㦡	lok6	0%
+㦢	zit3	0%
+㦤	ji3	0%
+㦥	hyun1	0%
+㦧	caam2	0%
+㦨	laan5	0%
+㦩	jan2	0%
+㦪	sip3	0%
+㦫	zaat3	0%
+㦭	ling4	0%
+㦮	cin4	0%
+㦯	waak6	0%
+㦱	ngo5	0%
+㦲	zoi1	0%
+㦳	ngo5	0%
+㦶	dit6	0%
+㦷	jung5	0%
+㦸	gik1	0%
+㦹	jong4	0%
+㦻	zaap6	0%
+㦽	juk1	0%
+㦾	ji4	0%
+㧂	gaai3	0%
+㧃	sjau1	0%
+㧅	muk6	0%
+㧇	moo6	0%
+㧈	jan5	0%
+㧋	hyun2	0%
+㧌	moo4	0%
+㧍	fong2	0%
+㧎	ngaa4	0%
+㧕	lau5	0%
+㧙	pit3	0%
+㧚	waa5	0%
+㧜	laap6	0%
+㧝	kiaa2	0%
+㧞	bat6	0%
+㧠	mi4	0%
+㧣	zryu1	0%
+㧤	cjung3	0%
+㧥	sin2	0%
+㧧	sho1	0%
+㧨	kau4	0%
+㧩	bui6	0%
+㧪	gwai2	0%
+㧫	nji4	0%
+㧭	kung4	0%
+㧮	hwat1	0%
+㧯	loo5	0%
+㧱	nraa4	0%
+㧵	pau4	0%
+㧷	tan3	0%
+㧸	paang1	0%
+㧼	biu2	0%
+㧽	gu3	0%
+㧿	cung1	0%
+㧿	chong1	0%
+㨀	bing2	0%
+㨂	dung2	0%
+㨃	dyi2	
+㨃	craang4	0%
+㨄	criu5	0%
+㨄	tiu4	0%
+㨄	tiu5	0%
+㨆	lam6	0%
+㨇	po4	0%
+㨉	man4	0%
+㨊	wai5	0%
+㨌	gau3	0%
+㨑	zung1	0%
+㨓	loo4	0%
+㨔	ham6	0%
+㨕	jing4	0%
+㨗	zit6	0%
+㨘	shaang2	0%
+㨚	seon1	0%
+㨚	seon2	0%
+㨛	sjim2	0%
+㨛	sjim3	0%
+㨜	kin4	0%
+㨜	hin1	0%
+㨢	pi1	0%
+㨣	jung2	0%
+㨦	sung2	0%
+㨧	ban6	0%
+㨩	zit6	0%
+㨪	hwong2	0%
+㨬	jyun4	0%
+㨬	hwun4	0%
+㨭	vu6	0%
+㨮	dau1	
+㨯	kwok3	0%
+㨰	gwan3	0%
+㨱	jiu4	0%
+㨲	chaak3	0%
+㨳	gwai2	0%
+㨳	gi2	0%
+㨴	kin2	0%
+㨸	maat3	0%
+㨺	min5	0%
+㨼	liok6	0%
+㨽	pik1	0%
+㨿	gyo3	0%
+㩀	gyo3	0%
+㩁	kok1	0%
+㩂	huk6	0%
+㩃	gin2	0%
+㩄	chaai1	5%
+㩄	shaai1	0%
+㩅	crau1	0%
+㩆	zau3	0%
+㩆	zuk6	0%
+㩈	ngwan5	0%
+㩌	fi6	0%
+㩍	chaak3	0%
+㩎	jip3	0%
+㩎	jim2	0%
+㩏	hak1	0%
+㩐	dan3	0%
+㩑	saap3	0%
+㩑	zaap6	0%
+㩔	tyun4	0%
+㩕	ling1	0%
+㩖	kiong4	0%
+㩗	kwai4	0%
+㩘	ngai5	0%
+㩙	sak1	0%
+㩚	mung4	0%
+㩛	tyun4	0%
+㩛	cryun5	0%
+㩜	laam2	0%
+㩜	laam5	0%
+㩝	hoo4	0%
+㩞	chaak3	0%
+㩟	zhaai6	0%
+㩠	oo1	0%
+㩠	piu5	0%
+㩠	fau1	0%
+㩡	lo5	0%
+㩣	hwai1	0%
+㩥	shaem1	0%
+㩦	kwai4	0%
+㩪	kit3	0%
+㩫	zat1	0%
+㩬	hi1	0%
+㩭	gaeu2	0%
+㩯	pun4	0%
+㩰	ziu2	0%
+㩲	kyun4	0%
+㩴	guk1	0%
+㩶	nip6	0%
+㩷	hin1	0%
+㩸	dip6	0%
+㩺	pi1	0%
+㪀	jyu1	0%
+㪂	fat1	0%
+㪄	fat6	0%
+㪅	gang1	0%
+㪈	gwai3	0%
+㪉	hop6	0%
+㪊	kwan4	0%
+㪎	sjim1	0%
+㪎	nraap6	0%
+㪓	craai4	0%
+㪔	saan2	0%
+㪕	cjiok3	0%
+㪕	diu6	0%
+㪗	tau2	
+㪙	hwo2	0%
+㪚	saan2	0%
+㪛	zram2	0%
+㪞	moo6	0%
+㪟	deon1	0%
+㪠	zraem1	0%
+㪠	kaem1	0%
+㪣	haeu1	0%
+㪦	jan6	0%
+㪧	jap1	0%
+㪨	sjin6	0%
+㪪	saap3	0%
+㪫	jooi6	0%
+㪮	ling4	0%
+㪯	gyo2	0%
+㪰	zhaai1	0%
+㪱	wun6	0%
+㪴	git3	0%
+㪶	huk6	0%
+㪸	zjam1	0%
+㪼	ho2	0%
+㪽	sho2	0%
+㪾	lok6	0%
+㫀	ding2	0%
+㫁	dyun3	0%
+㫄	pong4	0%
+㫅	ki4	0%
+㫆	mi5	0%
+㫉	ngai4	0%
+㫋	zjin1	0%
+㫌	syun4	0%
+㫑	zji2	0%
+㫒	gung1	0%
+㫓	hi3	0%
+㫔	gan3	0%
+㫕	gwong1	0%
+㫖	zji2	0%
+㫗	hau5	0%
+㫙	fu4	0%
+㫛	gwong3	0%
+㫜	taan2	0%
+㫜	daan6	0%
+㫝	dai1	0%
+㫞	too1	0%
+㫟	jyun4	0%
+㫠	bun3	0%
+㫡	dung1	0%
+㫡	zjung1	0%
+㫢	hui3	0%
+㫣	man5	0%
+㫣	maang5	0%
+㫣	min5	0%
+㫤	crong2	0%
+㫤	crong3	0%
+㫥	ming4	0%
+㫦	too1	0%
+㫧	boo6	0%
+㫨	on1	0%
+㫩	cjeon1	0%
+㫪	zjung1	0%
+㫫	hin2	0%
+㫬	ceon4	0%
+㫭	sji4	0%
+㫮	zy6	0%
+㫮	zai6	0%
+㫯	moo6	0%
+㫰	long6	0%
+㫰	long5	0%
+㫲	bui6	0%
+㫲	but6	0%
+㫳	sjan4	0%
+㫴	haau1	0%
+㫵	fi1	0%
+㫶	zau2	0%
+㫷	gi1	0%
+㫸	zip3	0%
+㫺	sik1	0%
+㫻	gwan3	0%
+㫼	zrit3	0%
+㫾	siong6	0%
+㫿	sooi1	0%
+㬀	hiong2	0%
+㬁	chaep3	0%
+㬂	jyu4	0%
+㬃	toi4	0%
+㬅	maan6	0%
+㬆	man5	0%
+㬇	wun6	0%
+㬈	wan1	0%
+㬋	hau4	0%
+㬌	ging2	0%
+㬍	bok3	0%
+㬎	hin2	0%
+㬎	ngop6	0%
+㬏	lik6	0%
+㬐	zeon3	0%
+㬑	gwok3	0%
+㬔	hoo4	0%
+㬕	jong4	0%
+㬖	kai2	0%
+㬘	suk1	0%
+㬙	wai5	0%
+㬚	crit3	0%
+㬛	kap1	0%
+㬞	hot3	0%
+㬞	jit3	0%
+㬟	fan1	0%
+㬠	shaai3	0%
+㬠	shaet3	0%
+㬡	ling4	0%
+㬢	hi1	0%
+㬣	dyi6	0%
+㬥	boo6	0%
+㬥	buk6	0%
+㬥	buk6	0%
+㬦	wok3	0%
+㬧	boo6	0%
+㬨	haak1	0%
+㬩	wai3	0%
+㬪	dip6	0%
+㬬	kyu5	0%
+㬭	ziu3	0%
+㬭	ziok6	0%
+㬯	lit6	0%
+㬰	jyu4	0%
+㬰	gwai6	0%
+㬲	tim1	0%
+㬳	ngu5	0%
+㬴	hung2	0%
+㬶	hoo5	0%
+㬷	kwan5	0%
+㬸	tiu1	0%
+㬹	zhaang1	
+㬺	tang4	0%
+㬼	fuk6	0%
+㬽	ngok6	0%
+㬾	ai3	0%
+㬿	tan1	0%
+㭀	sjai6	0%
+㭃	gong1	0%
+㭄	seon3	0%
+㭄	cheon1	0%
+㭄	zan1	0%
+㭅	chaem3	0%
+㭆	naai5	0%
+㭇	jyun6	0%
+㭉	waa4	0%
+㭌	jyu4	0%
+㭌	mau4	0%
+㭍	cat1	0%
+㭐	naai6	0%
+㭑	mui6	0%
+㭒	zy6	0%
+㭒	ji4	0%
+㭓	bin6	0%
+㭓	faan6	0%
+㭖	doi6	0%
+㭗	wat1	0%
+㭙	zraak6	0%
+㭞	lyut3	0%
+㭟	gung2	0%
+㭟	guk1	0%
+㭡	sai3	0%
+㭡	seon3	0%
+㭢	hing1	0%
+㭦	to5	0%
+㭧	pun4	0%
+㭨	jiaa4	0%
+㭪	fu1	0%
+㭬	diok3	0%
+㭮	zaat3	0%
+㭱	haep6	0%
+㭲	gip6	0%
+㭳	haau3	0%
+㭵	din6	0%
+㭶	gwaai2	0%
+㭷	naam4	0%
+㭹	hjin4	0%
+㭻	tong4	0%
+㭽	dai2	0%
+㭾	gwat6	
+㮀	haem4	0%
+㮄	bong2	0%
+㮆	ngit6	0%
+㮈	noi6	0%
+㮉	hap6	0%
+㮊	mau6	0%
+㮊	moo4	0%
+㮋	jau5	0%
+㮋	juk1	0%
+㮎	bui1	0%
+㮏	noi6	0%
+㮑	chaep3	0%
+㮒	jin1	0%
+㮒	njin5	0%
+㮓	gang2	0%
+㮔	cjung3	0%
+㮗	ging1	0%
+㮛	cji4	0%
+㮜	zhong1	0%
+㮞	zit3	0%
+㮟	lin2	0%
+㮠	wing4	0%
+㮡	gun3	0%
+㮣	koi3	0%
+㮪	kung4	0%
+㮮	git3	0%
+㮱	shing1	0%
+㮳	cran5	0%
+㮳	cram5	0%
+㮵	zjin1	0%
+㮸	sung3	0%
+㮹	zri2	0%
+㮺	bun2	0%
+㮻	soo1	0%
+㮼	sjin3	0%
+㮽	pun4	0%
+㮾	long5	0%
+㯀	syun6	0%
+㯆	chaen2	0%
+㯆	shaan3	0%
+㯇	bai6	0%
+㯇	bai1	0%
+㯈	suk1	0%
+㯌	chyun4	0%
+㯎	nyun6	0%
+㯏	guk1	0%
+㯐	to2	0%
+㯑	ziong1	0%
+㯒	mik6	0%
+㯖	dak6	0%
+㯖	zraak3	0%
+㯗	haen4	0%
+㯘	hwun2	0%
+㯘	hwun4	0%
+㯘	wun5	0%
+㯜	zyut6	0%
+㯝	lu6	0%
+㯢	zram6	0%
+㯣	fan4	0%
+㯤	gik1	0%
+㯥	coo4	0%
+㯦	ki4	0%
+㯧	criu1	0%
+㯨	suk1	0%
+㯩	tai3	0%
+㯪	ling4	0%
+㯭	lu5	0%
+㯰	zjik6	0%
+㯳	king4	0%
+㯴	jung4	0%
+㯵	dung2	0%
+㯶	zung1	0%
+㯷	buk6	0%
+㯷	puk1	0%
+㯷	buk1	0%
+㯹	biu2	0%
+㯼	goi3	0%
+㯽	ban1	0%
+㯾	zoo1	0%
+㰀	lai4	0%
+㰀	li4	0%
+㰃	min4	0%
+㰄	zin1	0%
+㰅	dik1	0%
+㰅	zraak3	0%
+㰆	bai6	0%
+㰇	shaem1	0%
+㰉	zhan1	0%
+㰌	gok3	0%
+㰎	zooi1	0%
+㰎	cyi4	0%
+㰎	zooi3	0%
+㰏	goo1	0%
+㰐	to2	0%
+㰑	shaem1	0%
+㰒	hok6	0%
+㰓	laam5	0%
+㰔	sip3	0%
+㰕	hi1	0%
+㰖	laam5	0%
+㰗	cik1	0%
+㰙	no4	0%
+㰛	jok6	0%
+㰜	din1	0%
+㰝	ji5	0%
+㰝	hi1	0%
+㰝	hoi1	0%
+㰞	cji1	0%
+㰟	gat1	0%
+㰟	ki3	0%
+㰟	hi3	0%
+㰡	haai3	0%
+㰧	hoi1	0%
+㰩	hoi1	0%
+㰫	caam1	0%
+㰱	shaep3	0%
+㰷	zy3	0%
+㰷	cy3	0%
+㰺	haa6	0%
+㰺	haa4	0%
+㰿	hi1	0%
+㱁	sooi3	0%
+㱁	hwun2	0%
+㱅	ji3	0%
+㱆	hi1	0%
+㱈	gam6	0%
+㱉	ngip6	0%
+㱋	kok3	0%
+㱌	jip3	0%
+㱏	zhing3	0%
+㱐	mu5	0%
+㱑	sooi3	0%
+㱓	ling4	0%
+㱔	siaa1	0%
+㱗	hjau1	0%
+㱘	jim2	0%
+㱛	cjyun2	0%
+㱜	zit3	0%
+㱜	zhaet3	0%
+㱝	wun1	0%
+㱢	long4	0%
+㱧	waat3	0%
+㱧	jyun2	0%
+㱨	lim5	0%
+㱪	hwan1	0%
+㱫	laan6	0%
+㱭	dyun6	0%
+㱰	zoi2	0%
+㱳	mok6	0%
+㱶	paang4	0%
+㱷	zraak3	0%
+㱹	lik6	0%
+㱺	lyo4	0%
+㱼	hoi1	0%
+㲁	hung1	0%
+㲂	craang4	0%
+㲃	gau3	0%
+㲃	hjau1	0%
+㲆	ling4	0%
+㲇	dung1	0%
+㲊	jooi6	0%
+㲌	ning6	0%
+㲎	lyu4	0%
+㲐	gam1	0%
+㲑	sjooi2	0%
+㲒	boo6	0%
+㲘	kyu4	0%
+㲙	shau1	0%
+㲛	zri2	0%
+㲜	taan2	0%
+㲠	moo4	0%
+㲠	li4	0%
+㲣	shau1	0%
+㲣	sho1	0%
+㲣	sjyu1	0%
+㲤	shooi1	0%
+㲧	soo3	0%
+㲨	njung4	0%
+㲩	taap3	0%
+㲭	taan2	0%
+㲮	taap3	0%
+㲯	laam4	0%
+㲲	dip6	0%
+㲴	zrung3	0%
+㲵	siu1	0%
+㲶	luk6	0%
+㲶	lu5	0%
+㲷	daam6	0%
+㲸	kap1	0%
+㲸	hi3	0%
+㲹	gwai2	0%
+㲻	nrik6	0%
+㲾	jyu5	0%
+㳃	cyi3	0%
+㳆	tau2	0%
+㳆	tung2	0%
+㳇	fu6	0%
+㳈	pui3	0%
+㳉	jyut6	0%
+㳊	jau4	0%
+㳋	jau1	0%
+㳌	aep3	0%
+㳍	bu3	0%
+㳎	bin6	0%
+㳏	shy3	0%
+㳑	jat6	0%
+㳒	faat3	0%
+㳓	jau6	0%
+㳖	ji1	0%
+㳙	gyun1	0%
+㳚	hjyut6	0%
+㳚	hyut3	0%
+㳚	kut3	0%
+㳜	hjau1	0%
+㳝	hong1	0%
+㳞	crung1	0%
+㳟	gung1	0%
+㳣	loo5	0%
+㳤	sjuk6	0%
+㳩	taam1	0%
+㳪	pi3	0%
+㳫	daap6	0%
+㳭	cin4	0%
+㳭	jin6	0%
+㳮	niu6	0%
+㳯	cyi3	0%
+㳰	kau1	0%
+㳱	jong4	0%
+㳲	taai3	0%
+㳳	hak1	0%
+㳴	mat6	0%
+㳵	gwai3	0%
+㳷	fui3	0%
+㳸	hwaa1	0%
+㳺	jau4	0%
+㳼	bat1	0%
+㳾	giong1	0%
+㳿	sit3	0%
+㳿	zhaep6	0%
+㴀	faan1	0%
+㴁	jik1	0%
+㴃	looi6	0%
+㴅	siu1	0%
+㴆	zam3	0%
+㴇	sjip6	0%
+㴈	ngan6	0%
+㴉	zai3	0%
+㴊	jyun1	0%
+㴌	gu1	0%
+㴍	sjing4	0%
+㴎	noi6	0%
+㴏	wong2	0%
+㴑	su3	0%
+㴓	shaai1	0%
+㴔	hap1	0%
+㴕	zap1	0%
+㴖	lok6	0%
+㴗	jau1	0%
+㴘	fu4	0%
+㴘	moo6	0%
+㴙	zhaep3	0%
+㴚	sooi6	0%
+㴛	zri3	0%
+㴜	pin3	0%
+㴝	lai4	0%
+㴞	too1	0%
+㴟	ngyun4	0%
+㴠	haem4	0%
+㴡	hiong1	0%
+㴢	zrung6	0%
+㴣	ji4	0%
+㴤	cryu5	0%
+㴨	zram6	0%
+㴩	jung1	0%
+㴪	ngit6	0%
+㴭	jiu2	0%
+㴮	sit3	0%
+㴰	nang4	0%
+㴱	sjam1	0%
+㴳	lung5	0%
+㴵	mat6	0%
+㴶	kok3	0%
+㴷	daam1	0%
+㴹	mai4	0%
+㴺	gaep3	0%
+㴻	sjyu6	0%
+㴻	zjyu3	
+㴼	suk1	0%
+㴼	chuk1	0%
+㴾	but6	0%
+㴿	ding2	0%
+㵀	zuk6	0%
+㵁	hwong1	0%
+㵃	sjiaa4	0%
+㵄	hon3	0%
+㵅	taam1	0%
+㵅	taam3	0%
+㵆	goo2	0%
+㵇	tim4	0%
+㵈	gu1	0%
+㵉	lam4	0%
+㵊	naap6	0%
+㵌	ceon4	0%
+㵍	mun5	0%
+㵎	gaen3	0%
+㵏	cyi2	0%
+㵓	zjik6	0%
+㵔	cjiaa2	0%
+㵕	sham3	0%
+㵖	nyo6	0%
+㵘	maan6	0%
+㵙	hi2	0%
+㵚	fu2	0%
+㵛	sin6	0%
+㵜	naam4	0%
+㵠	hwat1	0%
+㵡	bok6	0%
+㵢	lyi4	0%
+㵤	shaep3	0%
+㵥	mat6	0%
+㵦	sooi3	0%
+㵪	jin6	0%
+㵪	cin4	0%
+㵬	jing4	0%
+㵭	zjyo2	0%
+㵮	sjeon4	0%
+㵯	fung4	0%
+㵰	zyo6	0%
+㵱	piu2	0%
+㵲	moo5	0%
+㵳	liu4	0%
+㵴	cong4	0%
+㵵	zhau6	0%
+㵷	bin6	0%
+㵸	jok6	0%
+㵹	maak6	0%
+㵼	siaa3	0%
+㵼	siaa2	0%
+㶂	wong4	0%
+㶃	moo4	0%
+㶅	hok6	0%
+㶈	jing4	0%
+㶈	jing2	0%
+㶊	sjan2	0%
+㶋	njooi4	0%
+㶍	sin2	0%
+㶎	weon4	0%
+㶐	jing3	0%
+㶑	lim6	0%
+㶓	cong4	0%
+㶙	jui6	0%
+㶚	baa3	0%
+㶜	jyun1	0%
+㶝	jing3	0%
+㶞	njong4	0%
+㶠	jik6	0%
+㶡	daai6	0%
+㶢	gwong1	0%
+㶤	chaeu2	0%
+㶥	gon1	0%
+㶦	ce5	0%
+㶨	pui1	0%
+㶩	jam4	0%
+㶪	pui1	0%
+㶫	liu4	0%
+㶬	mut6	0%
+㶭	jau2	0%
+㶮	sjiu1	0%
+㶯	lau6	0%
+㶰	sjim2	0%
+㶱	bun2	0%
+㶲	jung6	0%
+㶵	njam5	0%
+㶷	ceon4	0%
+㶸	hip3	0%
+㶹	hung6	0%
+㶺	sjim2	0%
+㶻	fung1	0%
+㶾	biu1	0%
+㷀	king4	0%
+㷁	jung2	0%
+㷂	sjyo5	0%
+㷃	crooi2	0%
+㷈	op1	0%
+㷊	fan4	0%
+㷋	taam4	0%
+㷌	gwai1	0%
+㷍	leon4	0%
+㷎	hot3	0%
+㷎	jit3	0%
+㷏	jung2	0%
+㷐	wai2	0%
+㷑	jin1	0%
+㷓	cung1	0%
+㷔	jim6	0%
+㷕	cau4	0%
+㷖	zjiu3	0%
+㷗	gwing2	0%
+㷘	toi4	0%
+㷙	zin1	0%
+㷚	ting4	0%
+㷛	boo1	5%
+㷜	jik6	0%
+㷝	dat6	0%
+㷞	hau5	0%
+㷡	gwing2	0%
+㷢	zhaa2	0%
+㷣	sing1	0%
+㷥	zjing1	0%
+㷦	gwik1	0%
+㷦	hik1	0%
+㷧	ngyun4	0%
+㷨	fung1	0%
+㷩	hi1	0%
+㷪	zyun2	0%
+㷪	zooi1	0%
+㷫	hing3	
+㷬	mok6	0%
+㷯	bung6	0%
+㷱	hung4	0%
+㷲	dung6	0%
+㷴	lik6	0%
+㷵	mak6	0%
+㷶	bik1	0%
+㷸	jip6	0%
+㷺	jim6	0%
+㷻	mu4	0%
+㷼	jin3	0%
+㷽	sjin6	0%
+㷾	kiok3	0%
+㷿	him1	0%
+㸀	toi4	0%
+㸁	hon3	0%
+㸂	sui6	0%
+㸃	dim2	5%
+㸄	zai6	0%
+㸆	kaau3	0%
+㸇	zyun3	0%
+㸈	ziu1	0%
+㸉	sip3	0%
+㸋	faan4	0%
+㸌	hwok3	0%
+㸍	hi3	0%
+㸐	njin4	0%
+㸑	cyun3	0%
+㸓	mat6	0%
+㸔	hon3	0%
+㸕	hwok3	0%
+㸖	cyu1	0%
+㸗	tung4	0%
+㸘	maan6	0%
+㸜	hung3	0%
+㸝	him1	0%
+㸞	zjit3	0%
+㸟	zy1	0%
+㸠	tiu5	0%
+㸥	zhaem6	0%
+㸦	vu6	0%
+㸧	ngan4	0%
+㸨	gau1	0%
+㸩	ngon4	0%
+㸫	gin1	0%
+㸭	baa1	0%
+㸮	fan4	0%
+㸯	hwo1	0%
+㸱	hwo1	0%
+㸴	sjek6	0%
+㸵	gwai2	0%
+㸷	sjai6	0%
+㸺	shaa1	0%
+㸻	zhy6	0%
+㸽	bui3	0%
+㸾	njan6	0%
+㸿	duk6	0%
+㹀	bui6	0%
+㹅	zung2	0%
+㹆	hwai1	0%
+㹇	hot6	0%
+㹇	gin1	0%
+㹈	moo4	0%
+㹋	sau1	0%
+㹎	looi4	0%
+㹐	sjung4	0%
+㹑	si3	0%
+㹓	ngiu5	0%
+㹕	ngwaen4	0%
+㹖	waen6	0%
+㹙	wang2	0%
+㹚	wang2	0%
+㹝	sji6	0%
+㹟	kyut3	0%
+㹟	kui2	0%
+㹡	jyun4	0%
+㹢	gaa1	0%
+㹣	zjung1	0%
+㹦	diu1	0%
+㹨	jau6	0%
+㹩	hing5	0%
+㹪	shaan1	0%
+㹫	ji4	0%
+㹬	shy2	0%
+㹰	gwong1	0%
+㹴	gang1	0%
+㹵	nging5	0%
+㹷	hi1	0%
+㹸	maeu6	0%
+㹹	gang1	0%
+㹻	wo1	0%
+㹻	wai1	0%
+㹿	zruk6	0%
+㹿	zraeu3	0%
+㺀	hwat1	0%
+㺃	gau2	0%
+㺄	jyu5	0%
+㺅	hau4	0%
+㺈	cji1	0%
+㺉	kau3	0%
+㺉	huk1	0%
+㺉	hok1	0%
+㺋	jung1	0%
+㺐	liu4	0%
+㺓	zhaak3	0%
+㺘	zhaam3	0%
+㺚	craat3	0%
+㺠	jau6	0%
+㺡	lik6	0%
+㺢	hwok3	0%
+㺤	sim1	0%
+㺦	lin4	0%
+㺦	cran1	0%
+㺦	craen4	0%
+㺩	gau6	0%
+㺫	kau4	0%
+㺬	gung2	0%
+㺭	zy2	0%
+㺮	jyu1	0%
+㺯	lung6	0%
+㺰	shy1	0%
+㺱	njing4	0%
+㺲	nau5	0%
+㺳	mui4	0%
+㺵	gau2	0%
+㺶	dau2	0%
+㺷	seot1	0%
+㺸	ping4	0%
+㺺	moo6	0%
+㺻	fat1	0%
+㺼	syun4	0%
+㺽	pi1	0%
+㺾	gwing1	0%
+㻀	jyu4	0%
+㻁	gwai3	0%
+㻂	ping4	0%
+㻂	bing2	0%
+㻃	kuk1	0%
+㻄	boo2	0%
+㻆	jyun5	0%
+㻇	cyun4	0%
+㻈	gau2	0%
+㻉	boo6	0%
+㻊	mun4	0%
+㻋	laat6	0%
+㻎	shat1	0%
+㻐	ceon1	0%
+㻑	gwai3	0%
+㻓	zhau1	0%
+㻔	do2	0%
+㻕	gwat6	0%
+㻖	doi6	0%
+㻗	bui6	0%
+㻙	juk6	0%
+㻚	pang4	0%
+㻛	jong4	0%
+㻛	craang5	0%
+㻜	cung1	0%
+㻟	cooi4	0%
+㻠	dat6	0%
+㻡	sit3	0%
+㻢	sy1	0%
+㻣	hom1	0%
+㻤	gau2	0%
+㻥	jau4	0%
+㻦	jyu4	0%
+㻧	do6	0%
+㻨	jyun2	0%
+㻩	gim1	0%
+㻪	zyun6	0%
+㻭	shat1	0%
+㻮	caan3	0%
+㻰	wai6	0%
+㻰	zrai6	0%
+㻰	hjyut6	0%
+㻱	fung4	0%
+㻲	lau4	0%
+㻳	li6	0%
+㻴	maan6	0%
+㻵	zhaan6	0%
+㻹	hyun1	0%
+㻺	lik6	0%
+㻻	deon1	0%
+㻼	taam4	0%
+㻽	zyun6	0%
+㼀	daat6	0%
+㼁	ngi6	0%
+㼂	man6	0%
+㼃	laap6	0%
+㼄	gi1	0%
+㼅	kwong3	0%
+㼆	jing4	0%
+㼇	wai6	0%
+㼈	lo4	0%
+㼊	tyun4	0%
+㼍	lyi5	0%
+㼓	lim5	0%
+㼖	lai6	0%
+㼘	ngaa5	0%
+㼙	zhau3	0%
+㼚	gong1	0%
+㼜	ong3	0%
+㼝	wun2	0%
+㼞	pang3	0%
+㼞	paang1	0%
+㼣	baak3	0%
+㼥	tau2	0%
+㼥	hoo2	0%
+㼨	hom4	0%
+㼩	sjing4	0%
+㼩	sjing6	0%
+㼫	wun5	0%
+㼫	waa5	0%
+㼷	zjyun1	0%
+㼷	sjyun4	0%
+㼼	piu4	0%
+㽂	saap3	0%
+㽆	dong1	0%
+㽊	sip3	0%
+㽋	lo4	0%
+㽍	hom1	0%
+㽏	gom3	0%
+㽒	shang1	0%
+㽓	shang1	0%
+㽔	njooi4	0%
+㽕	jau4	0%
+㽖	naam4	0%
+㽗	mau5	0%
+㽙	zeon3	0%
+㽛	kau1	0%
+㽛	kyu4	0%
+㽜	jyun2	0%
+㽝	lai6	0%
+㽞	lau4	0%
+㽟	lyut3	0%
+㽠	haap6	0%
+㽡	bi1	0%
+㽢	om2	0%
+㽣	wik6	0%
+㽧	zy1	0%
+㽪	zang2	0%
+㽫	jung1	0%
+㽭	njyun4	0%
+㽮	sing1	0%
+㽯	kwai4	0%
+㽶	gi2	0%
+㽼	jan5	0%
+㾃	to4	0%
+㾅	zhy2	0%
+㾌	sin2	0%
+㾎	aep3	0%
+㾒	njyo4	0%
+㾔	lyo5	0%
+㾗	liong6	0%
+㾘	gang2	0%
+㾚	siaa1	0%
+㾝	cjiaa3	0%
+㾟	bu6	0%
+㾠	kwong4	0%
+㾡	kiok3	0%
+㾣	hjam1	0%
+㾣	hop1	0%
+㾥	cruk1	0%
+㾥	zruk1	0%
+㾬	gaai1	0%
+㾮	wong4	0%
+㾱	fai3	0%
+㾲	ngoo4	0%
+㾳	zy1	0%
+㾴	chaa4	0%
+㾵	gai3	0%
+㾸	goo2	0%
+㾼	tyi2	0%
+㾽	zrooi6	0%
+㾿	long4	0%
+㿀	baan1	0%
+㿂	zring1	0%
+㿅	sin2	0%
+㿆	gwo1	0%
+㿇	zaap6	0%
+㿈	jung1	0%
+㿍	gaai3	0%
+㿏	kwan4	0%
+㿏	ngwaen4	0%
+㿐	gai3	0%
+㿔	lyi5	0%
+㿗	tyi4	0%
+㿘	jing4	0%
+㿜	bit6	0%
+㿜	pit3	0%
+㿝	hiong1	0%
+㿞	moo6	0%
+㿠	gwong1	0%
+㿡	dau1	0%
+㿢	jiu6	0%
+㿤	cjeon2	0%
+㿦	ning6	0%
+㿦	cji1	0%
+㿧	crau4	0%
+㿨	lik6	0%
+㿫	bi3	0%
+㿰	ngaeu4	0%
+㿰	bik1	0%
+㿲	ji1	0%
+㿵	njin5	0%
+㿶	bong1	0%
+㿹	taat3	0%
+㿽	hi1	0%
+㿾	cryo5	0%
+䀃	tyi4	0%
+䀅	sjiaa5	0%
+䀆	zeon6	0%
+䀇	gu2	0%
+䀋	jim4	0%
+䀌	jol1	0%
+䀍	hom3	0%
+䀎	min5	0%
+䀎	min6	0%
+䀑	waat3	0%
+䀒	cin1	0%
+䀔	njan6	0%
+䀖	tin1	0%
+䀖	tin3	0%
+䀚	ngong4	0%
+䀜	maai6	0%
+䀝	pi4	0%
+䀞	too1	0%
+䀟	fai6	0%
+䀤	mau6	0%
+䀦	gu2	0%
+䀧	hung2	0%
+䀪	hong4	0%
+䀭	goi1	0%
+䀯	bu1	0%
+䀱	fung1	0%
+䀲	muk6	0%
+䀳	laat6	0%
+䀺	too1	0%
+䀺	crau1	0%
+䀻	ping3	0%
+䀾	du2	0%
+䀾	kai3	0%
+䀿	crai3	0%
+䀿	zrai3	0%
+䁀	dai3	0%
+䁃	biu1	0%
+䁄	jing6	0%
+䁉	kai3	0%
+䁉	du2	0%
+䁏	jiu2	0%
+䁐	jing1	0%
+䁐	jing3	0%
+䁑	jong4	0%
+䁑	jong6	0%
+䁕	man4	0%
+䁗	hoi2	0%
+䁚	syun2	0%
+䁞	shaang2	0%
+䁞	shing2	
+䁟	chaa1	0%
+䁠	lim4	0%
+䁡	sjim2	0%
+䁣	sjyun4	0%
+䁥	nrik1	0%
+䁧	miu4	0%
+䁪	zhaem2	0%
+䁫	wat6	0%
+䁫	mung4	0%
+䁭	biu1	0%
+䁯	hap1	0%
+䁯	hip1	0%
+䁰	hong2	0%
+䁶	gik1	0%
+䁹	pai5	0%
+䁼	mak6	0%
+䁾	mit6	0%
+䂀	hi1	0%
+䂁	chaem4	0%
+䂂	kyu4	0%
+䂅	haan1	0%
+䂆	gwik1	0%
+䂉	hau4	0%
+䂊	jyo6	0%
+䂋	njau5	0%
+䂍	bok6	0%
+䂓	kwai1	0%
+䂔	hing5	0%
+䂖	sjek6	0%
+䂗	hwat1	0%
+䂘	chaai1	0%
+䂙	dyi1	0%
+䂛	jyo4	0%
+䂜	pong5	0%
+䂝	zraak3	0%
+䂝	tok3	0%
+䂝	daap3	
+䂞	zjiaa3	0%
+䂟	gaa1	0%
+䂠	sji2	0%
+䂡	dai2	0%
+䂡	zji1	0%
+䂡	zji2	0%
+䂢	dung2	0%
+䂣	cy1	0%
+䂤	fu6	0%
+䂥	man4	0%
+䂦	zjan1	0%
+䂦	zjan2	0%
+䂧	zjan2	0%
+䂨	cjaak1	0%
+䂩	ngin6	0%
+䂯	gwaai3	0%
+䂰	laap6	0%
+䂱	jooi6	0%
+䂲	gop3	0%
+䂲	gip3	0%
+䂴	ngin4	0%
+䂶	gip3	0%
+䂷	gwaai1	0%
+䂺	hwo2	0%
+䂼	nit6	0%
+䂾	loi5	0%
+䃃	mong5	0%
+䃄	ging1	0%
+䃆	ki4	0%
+䃇	min4	0%
+䃈	gaai1	0%
+䃉	man4	0%
+䃋	jyu4	0%
+䃌	zjan1	0%
+䃌	jan1	0%
+䃎	zraa3	0%
+䃏	sing1	0%
+䃐	dat6	0%
+䃑	baan1	0%
+䃘	hang1	0%
+䃙	luk6	0%
+䃝	hat6	0%
+䃟	saan3	0%
+䃠	syun4	0%
+䃡	zam1	0%
+䃡	cam4	0%
+䃢	hjam1	0%
+䃣	wai2	0%
+䃥	crong4	0%
+䃦	deon1	0%
+䃨	kiong4	0%
+䃪	taan4	0%
+䃮	daat6	0%
+䃯	lik6	0%
+䃰	caet3	0%
+䃱	sim3	0%
+䃲	pun4	0%
+䃶	waai4	0%
+䃶	gwai1	0%
+䃶	gwaai3	0%
+䃶	waai1	0%
+䃶	wui4	0%
+䃷	jing4	0%
+䃹	laan6	0%
+䃻	baa3	0%
+䃼	buk1	0%
+䄀	wo6	0%
+䄁	jai6	0%
+䄂	lau6	0%
+䄂	crau4	0%
+䄂	zrau6	0%
+䄄	jan1	0%
+䄅	gyun3	0%
+䄇	cring4	0%
+䄊	zji3	0%
+䄋	jim2	0%
+䄎	ki2	0%
+䄏	jiu1	0%
+䄑	wut6	0%
+䄒	njam5	0%
+䄔	gyu2	0%
+䄕	sjiaa5	0%
+䄖	jyu4	0%
+䄗	jyun3	0%
+䄙	ming4	0%
+䄛	lyu4	0%
+䄛	lau4	0%
+䄜	li4	0%
+䄞	zai3	0%
+䄟	cooi3	0%
+䄟	cyun2	0%
+䄟	cjooi3	0%
+䄟	chooi3	0%
+䄡	daam1	0%
+䄢	zhaai1	0%
+䄣	sjuk6	0%
+䄥	ling4	0%
+䄦	liu5	0%
+䄧	njing4	0%
+䄨	jyu4	0%
+䄫	hi2	0%
+䄭	nin4	0%
+䄯	gin2	0%
+䄰	ngaa4	0%
+䄳	sin1	0%
+䄴	shok3	0%
+䄵	nin4	0%
+䄸	pok3	0%
+䄹	nin4	0%
+䄺	zri6	0%
+䄽	sin1	0%
+䄾	njuk6	0%
+䅄	lai6	0%
+䅅	gwai1	0%
+䅆	zhy3	0%
+䅇	suk1	0%
+䅈	jyun2	0%
+䅋	maan5	0%
+䅍	ting5	0%
+䅎	jau5	0%
+䅐	gin2	0%
+䅒	mong4	0%
+䅔	zhy1	0%
+䅕	gyo1	0%
+䅖	om1	0%
+䅖	om2	0%
+䅖	jim1	0%
+䅖	jim2	0%
+䅖	jip3	0%
+䅖	jim3	0%
+䅙	muk6	0%
+䅛	cjiong1	0%
+䅞	nak6	0%
+䅠	tai4	0%
+䅤	chap1	0%
+䅦	maeu4	0%
+䅨	hiong1	0%
+䅫	liok6	0%
+䅮	cong3	0%
+䅯	tong4	0%
+䅰	an2	0%
+䅱	ngan6	0%
+䅴	sok3	0%
+䅴	shaak3	0%
+䅶	nau6	0%
+䅸	shan1	0%
+䅸	zuk1	0%
+䅺	biu1	
+䅽	hing1	0%
+䅿	waa4	0%
+䆆	coo3	0%
+䆇	fung6	0%
+䆈	zri6	0%
+䆉	baa6	0%
+䆋	cau1	0%
+䆌	kai1	0%
+䆐	gwok3	0%
+䆒	gau3	0%
+䆓	njaai6	0%
+䆓	njyun5	0%
+䆔	crung1	0%
+䆖	wang4	0%
+䆗	jiu2	0%
+䆗	giu3	0%
+䆙	jiu4	0%
+䆛	zraa3	0%
+䆜	jau6	0%
+䆠	waen6	0%
+䆡	long4	0%
+䆡	long5	0%
+䆣	sjan4	0%
+䆤	cjyun1	0%
+䆥	cjyun1	0%
+䆦	sjam1	0%
+䆧	wo1	0%
+䆩	ming4	0%
+䆪	hung1	0%
+䆫	cjiong1	0%
+䆬	wan5	0%
+䆭	hin1	0%
+䆮	zam3	0%
+䆯	zraet1	0%
+䆯	zreot1	0%
+䆯	kut3	0%
+䆰	jyu1	0%
+䆲	hong1	0%
+䆲	hong2	0%
+䆳	sooi6	0%
+䆴	zoo3	0%
+䆶	zau1	0%
+䆶	zat1	0%
+䆹	cjung1	0%
+䆹	tung2	0%
+䆺	pun1	0%
+䆻	kiu3	0%
+䆼	hwo1	0%
+䆿	ngai6	0%
+䇀	njung4	0%
+䇀	njung6	0%
+䇁	sy1	0%
+䇃	zhy6	0%
+䇄	hat1	0%
+䇅	fat6	0%
+䇆	sjap6 sjing1	
+䇇	mong4	0%
+䇈	waa6	0%
+䇉	baak3 sjing1	
+䇊	gwong2	0%
+䇋	hoi6	0%
+䇌	ciu3	0%
+䇍	chuk1	0%
+䇒	gaai3	0%
+䇓	syu1	0%
+䇕	syu1	0%
+䇖	wan5	0%
+䇙	jan5	0%
+䇚	pok3	0%
+䇚	puk1	0%
+䇛	zji2	0%
+䇝	zim1	0%
+䇟	gin6	0%
+䇠	cryu5	0%
+䇡	cryo5	0%
+䇡	cryo6	0%
+䇢	hu2	0%
+䇣	nip6	0%
+䇤	njooi6	0%
+䇥	zhaak3	0%
+䇥	zhaa3	0%
+䇥	zok6	0%
+䇧	zrai6	0%
+䇪	cji1	0%
+䇭	loo5	0%
+䇰	zjing1	0%
+䇱	naap6	0%
+䇳	zin1	0%
+䇴	sai1	0%
+䇵	ngan4	0%
+䇶	gok3	0%
+䇶	aak1	0%
+䇺	dau6	0%
+䇻	mi5	0%
+䇼	jap1	0%
+䇿	chaak3	0%
+䈅	wok6	0%
+䈆	daai6	0%
+䈆	daai5	0%
+䈊	ling4	0%
+䈌	cyo1	0%
+䈍	mang4	0%
+䈔	gaa1	0%
+䈘	cy4	0%
+䈞	duk1	0%
+䈟	zrit3	0%
+䈡	sung1	0%
+䈡	cung3	0%
+䈢	soi2	0%
+䈢	sy2	0%
+䈣	zjing3	0%
+䈤	kim4	0%
+䈦	zung1	0%
+䈧	wai5	0%
+䈨	haen6	0%
+䈩	gim3	0%
+䈫	naap6	0%
+䈬	poo4	0%
+䈭	shau1	0%
+䈭	waai4	0%
+䈭	hwui2	0%
+䈭	waai6	0%
+䈯	zjan1	0%
+䈴	him3	0%
+䈷	gaak3	0%
+䈹	sau2	0%
+䈼	mit6	0%
+䈼	mat6	0%
+䈽	gan1	0%
+䈽	gan2	
+䈾	shaeu1	0%
+䈾	shok3	0%
+䉀	sjyo3	0%
+䉄	ling4	0%
+䉅	zjap1	0%
+䉅	zji3	0%
+䉅	zap1	0%
+䉆	niu5	0%
+䉇	zraem1	0%
+䉊	faan6	0%
+䉍	gaen2	0%
+䉏	haai5	0%
+䉐	hwu1	0%
+䉒	faan1	0%
+䉓	lo6	0%
+䉕	cang4	0%
+䉖	ling4	0%
+䉗	jap1	0%
+䉘	shiong3	0%
+䉜	zri6	0%
+䉝	ngai5	0%
+䉟	wok6	0%
+䉟	vu6	0%
+䉡	taan4	0%
+䉩	au1	0%
+䉪	lyi6	0%
+䉫	lai4	0%
+䉯	haen6	0%
+䉱	au1	0%
+䉲	mi4	0%
+䉸	bin6	0%
+䉸	bin2	0%
+䉼	liu6	0%
+䉿	vu4	0%
+䊁	shan1	0%
+䊂	chaak3	0%
+䊂	shaak3	0%
+䊃	bui6	0%
+䊄	kung4	0%
+䊅	ming4	0%
+䊇	boo1	0%
+䊌	bi3	0%
+䊍	li4	0%
+䊏	sam2	0%
+䊐	wan4	0%
+䊑	hiong2	0%
+䊒	zing1	0%
+䊔	jing1	0%
+䊕	zjin1	0%
+䊕	gin1	0%
+䊖	naam5	0%
+䊗	wong4	0%
+䊘	zau3	0%
+䊙	ngin4	0%
+䊚	dyi1	0%
+䊚	crooi1	0%
+䊛	saat3	0%
+䊜	tyun4	0%
+䊢	ziong1	0%
+䊣	wong4	0%
+䊥	siu3	0%
+䊨	lo4	0%
+䊩	faan4	0%
+䊪	laai6	0%
+䊪	laat6	0%
+䊯	kwong3	0%
+䊰	cryo4	0%
+䊱	sim1	0%
+䊴	jim3	0%
+䊶	cran5	0%
+䊸	jyu1	0%
+䊹	hin1	0%
+䊺	vu6	0%
+䊻	gom1	0%
+䊽	gwaai3	0%
+䊽	hjyut6	0%
+䊾	muk6	0%
+䊿	fu1	0%
+䋁	gang2	0%
+䋄	mong5	0%
+䋅	ngau4	0%
+䋆	lu4	0%
+䋇	jik6	0%
+䋋	man4	0%
+䋌	giong2	0%
+䋍	o1	0%
+䋑	lit6	0%
+䋑	bing2	0%
+䋒	sjyo1	0%
+䋓	zhau3	0%
+䋓	chaeu3	0%
+䋔	pi1	0%
+䋕	njam4	0%
+䋗	gin1	0%
+䋘	zrooi6	0%
+䋚	jik6	0%
+䋜	hing3	0%
+䋜	kai2	0%
+䋝	jing1	0%
+䋞	mong5	0%
+䋠	bu2	0%
+䋡	sjyo1	0%
+䋥	li4	0%
+䋦	faan4	0%
+䋧	kyu4	0%
+䋧	gyu3	0%
+䋩	nji4	0%
+䋩	shaai1	0%
+䋬	tim1	0%
+䋮	gam1	0%
+䋯	hing3	0%
+䋯	kai2	0%
+䋲	sjing4	0%
+䋳	bui3	0%
+䋴	nrau6	0%
+䋶	syu1	0%
+䋶	seot1	0%
+䋶	sung2	0%
+䋹	fuk1	0%
+䋺	cau1	0%
+䋽	bung2	0%
+䌀	hwo1	0%
+䌁	jiu1	0%
+䌂	au3	0%
+䌃	siu1	0%
+䌄	gang2	0%
+䌅	tong4	0%
+䌆	gwai3	0%
+䌆	bai3	0%
+䌇	sok3	0%
+䌈	taap3	0%
+䌉	gong1	0%
+䌊	jau4	0%
+䌋	dup3	0%
+䌍	gan2	0%
+䌏	mat6	0%
+䌒	luk6	0%
+䌓	faan4	0%
+䌔	au1	0%
+䌕	mi4	0%
+䌙	wong6	0%
+䌚	suk1	0%
+䌛	jau4	0%
+䌛	jiu4	0%
+䌝	gam3	0%
+䌡	tai2	0%
+䌢	ling4	0%
+䌣	zyun2	0%
+䌤	sji1	0%
+䌧	crau4	0%
+䌩	mit6	0%
+䌫	laam6	0%
+䌬	crung1	0%
+䌮	siong1	0%
+䌯	hyun1	0%
+䌰	nrip6	0%
+䌱	lo6	0%
+䌲	fan1	0%
+䍂	jyu4	0%
+䍅	ling4	0%
+䍈	ping4	0%
+䍉	zraai2	0%
+䍋	sjooi4	0%
+䍏	jyun4	0%
+䍑	hon2	0%
+䍒	mau5	0%
+䍓	ngaa4	0%
+䍕	dai1	0%
+䍕	dai2	0%
+䍗	hjyun6	0%
+䍚	long6	0%
+䍞	wik6	0%
+䍟	zung1	0%
+䍣	lyi4	0%
+䍧	zong1	0%
+䍩	jong5	0%
+䍪	mat6	0%
+䍭	zong1	0%
+䍯	gwai2	0%
+䍰	jin1	0%
+䍳	kyut3	0%
+䍳	zryut3	0%
+䍵	zrang1	0%
+䍷	wai5	0%
+䍹	haen1	0%
+䍹	sjin1	0%
+䍾	ngin5	0%
+䎁	vu4	0%
+䎅	pok3	0%
+䎆	liu6	0%
+䎇	zau1	0%
+䎉	wat1	0%
+䎊	lok6	0%
+䎋	kaau3	0%
+䎍	fu1	0%
+䎏	hom1	0%
+䎐	craau2	0%
+䎓	daep6	0%
+䎚	wai6	0%
+䎚	jai6	0%
+䎛	loo5	0%
+䎜	fan1	0%
+䎝	zjyo3	0%
+䎟	nji4	0%
+䎡	njyun5	0%
+䎢	hat1	0%
+䎣	cy5	0%
+䎥	gaak3	0%
+䎭	coo1	0%
+䎱	paa4	0%
+䎱	pi1	0%
+䎲	zrip3	0%
+䎲	ngat6	0%
+䎴	gaang1	0%
+䎴	sjing3	0%
+䎵	bi3	0%
+䎵	mat6	0%
+䎹	man4	0%
+䎹	man6	0%
+䎻	zjau3	0%
+䎼	luk6	0%
+䎽	man4	0%
+䎾	gwan3	0%
+䏀	laat6	0%
+䏈	lyun4	0%
+䏊	lung4	0%
+䏋	suk1	0%
+䏌	hat1	0%
+䏍	jyun3	0%
+䏎	fung4	0%
+䏏	hyu1	0%
+䏑	zjek3	0%
+䏓	gun2	0%
+䏗	gui3	0%
+䏚	miu5	0%
+䏛	cjeon2	0%
+䏜	hop1	0%
+䏞	mut6	0%
+䏠	jap1	0%
+䏠	laap6	0%
+䏡	sji6	0%
+䏢	bi2	0%
+䏤	seon3	0%
+䏤	sy3	0%
+䏥	taam1	0%
+䏦	gwaat3	0%
+䏦	tim4	0%
+䏩	hip3	0%
+䏩	op3	0%
+䏩	hap1	0%
+䏫	hjau1	0%
+䏬	mau4	0%
+䏭	zjyu1	0%
+䏮	hip3	0%
+䏯	zji3	0%
+䏱	guk1	0%
+䏲	dit6	0%
+䏲	tai1	0%
+䏴	shaeu3	0%
+䏶	bai3	0%
+䏸	ngyo4	0%
+䏹	jin6	0%
+䏹	cram3	0%
+䏺	pong1	0%
+䏻	nang4	0%
+䏾	pong1	0%
+䐂	luk6	0%
+䐇	man5	0%
+䐉	zhy3	0%
+䐊	gwan1	0%
+䐊	wan4	0%
+䐊	wan5	0%
+䐋	cung1	0%
+䐌	tin2	0%
+䐍	cho3	0%
+䐐	cau1	0%
+䐔	ban2	0%
+䐔	pin5	0%
+䐕	zap1	0%
+䐕	zhap1	0%
+䐖	hi1	0%
+䐙	gaak3	0%
+䐛	daap3	0%
+䐟	hong2	0%
+䐟	kau1	0%
+䐡	ci4	0%
+䐦	hop1	0%
+䐧	hoo3	0%
+䐪	zooi1	0%
+䐪	zyun2	0%
+䐭	dai3	0%
+䐰	sau1	0%
+䐱	zraai3	0%
+䐱	zjek3	0%
+䐱	zraak3	0%
+䐱	zjik1	0%
+䐳	ngyo4	0%
+䐵	gwang1	0%
+䐵	wong4	0%
+䐽	mun4	0%
+䑀	pik1	0%
+䑀	bik6	0%
+䑅	mang4	0%
+䑆	jong5	0%
+䑉	jing4	0%
+䑊	wai4	0%
+䑌	laan4	0%
+䑌	laan6	0%
+䑍	jin1	0%
+䑐	zjan2	0%
+䑒	ging6	0%
+䑓	toi4	0%
+䑕	sjyo2	0%
+䑖	zit3	0%
+䑙	daam1	0%
+䑙	njim4	0%
+䑚	tim4	0%
+䑛	shaai5	0%
+䑝	gaa2	0%
+䑟	wong4	0%
+䑤	gam6	0%
+䑧	fu1	0%
+䑧	boo6	0%
+䑧	fu1	0%
+䑨	to5	0%
+䑩	gu2	0%
+䑪	ngop6	0%
+䑬	too1	0%
+䑬	jiu3	0%
+䑬	too4	0%
+䑭	dai3	0%
+䑮	do2	0%
+䑰	boo6	0%
+䑱	jyun2	0%
+䑲	zraeu6	0%
+䑵	muk6	0%
+䑷	gin1	0%
+䑸	zung1	0%
+䑹	sau1	0%
+䑺	faan4	0%
+䑻	jau4	0%
+䑽	taap3	0%
+䑾	zjek3	0%
+䒂	ziong2	0%
+䒃	zoo6	0%
+䒄	fu3	0%
+䒅	jing6	0%
+䒅	tang4	0%
+䒇	fu3	0%
+䒋	jong2	0%
+䒑	coo2	0%
+䒒	tiu4	0%
+䒔	baai3	0%
+䒖	seon3	0%
+䒙	cong4	0%
+䒛	waan6	0%
+䒜	ngau4	0%
+䒝	ngaeu4	0%
+䒟	daan1	0%
+䒠	fung1	0%
+䒡	jan5	0%
+䒣	njim5	0%
+䒤	njat6	0%
+䒥	mun4	0%
+䒫	doi6	0%
+䒬	mok6	0%
+䒭	dang2	0%
+䒮	kwing4	0%
+䒯	kwing4	0%
+䒳	do2	0%
+䒵	hoo1	0%
+䒺	gan2	0%
+䒻	hi2	0%
+䒽	mong5	0%
+䒾	ji1	0%
+䒿	liu4	0%
+䓀	gat1	0%
+䓁	dang2	0%
+䓅	kan4	0%
+䓆	zjit3	0%
+䓇	haak1	0%
+䓋	zji1	0%
+䓎	chuk1	0%
+䓐	sjeon4	0%
+䓑	ping4	0%
+䓒	gwaai2	0%
+䓔	haau3	0%
+䓗	cung1	0%
+䓚	cyo1	0%
+䓚	coo4	0%
+䓚	cyo4	0%
+䓝	maang6	0%
+䓟	zjau1	0%
+䓡	zri1	0%
+䓢	gu3	0%
+䓣	liong5	0%
+䓤	hwat1	0%
+䓥	laat6	0%
+䓦	din2	0%
+䓧	gik1	0%
+䓨	aang1	0%
+䓩	zji1	0%
+䓪	ji6	0%
+䓫	ki4	0%
+䓬	criok3	0%
+䓯	duk6	0%
+䓰	jan1	0%
+䓱	caai4	0%
+䓱	zai1	0%
+䓷	hang6	0%
+䓸	gaan1	0%
+䓹	ji3	0%
+䓺	mi5	0%
+䓻	kau3	0%
+䓼	mong4	0%
+䓽	gi3	0%
+䓿	hom5	0%
+䔀	njooi4	0%
+䔅	go1	0%
+䔆	li4	0%
+䔈	gung3	0%
+䔉	lik6	0%
+䔉	syun3	0%
+䔊	bang1	0%
+䔋	so1	0%
+䔍	duk1	0%
+䔎	suk1	0%
+䔐	zin1	0%
+䔒	pui5	0%
+䔓	hyo2	0%
+䔔	ging3	0%
+䔗	ciong4	0%
+䔘	zoo6	0%
+䔙	diu3	0%
+䔝	zhaai1	0%
+䔠	shaeu2	0%
+䔠	shok3	0%
+䔡	ngyo4	0%
+䔢	waa4	0%
+䔣	lai4	0%
+䔤	paa1	0%
+䔥	siu1	0%
+䔦	mui4	0%
+䔧	lai4	0%
+䔨	ung3	0%
+䔩	suk1	0%
+䔪	shong2	0%
+䔫	sho1	0%
+䔱	jap1	0%
+䔳	njin4	0%
+䔶	tai4	0%
+䔹	sooi6	0%
+䔹	dyi6	0%
+䔻	deon1	0%
+䔻	dyi1	0%
+䔼	shap1	0%
+䔼	zhap1	0%
+䕀	hwun2	0%
+䕂	jyun5	0%
+䕃	jam1	0%
+䕉	zraak6	0%
+䕊	taan4	0%
+䕋	tong4	0%
+䕌	zri6	0%
+䕎	fuk1	0%
+䕏	ngo4	0%
+䕐	fuk1	0%
+䕑	sooi1	0%
+䕑	so2	0%
+䕑	shaa2	0%
+䕒	gaa1	0%
+䕔	haem4	0%
+䕔	hjam1	0%
+䕕	maan6	0%
+䕖	syun1	0%
+䕗	bi6	0%
+䕚	gwai6	0%
+䕛	gaap3	0%
+䕜	cooi3	0%
+䕝	cjing1	0%
+䕝	sjing3	0%
+䕟	hing1	0%
+䕠	fai3	0%
+䕢	zraa2	
+䕣	hot6	0%
+䕤	ki4	0%
+䕥	nai5	0%
+䕨	tang4	0%
+䕫	kwai4	0%
+䕬	giong1	0%
+䕮	guk1	0%
+䕯	piu1	0%
+䕰	faan4	0%
+䕱	tau4	0%
+䕲	lam5	0%
+䕳	mi4	0%
+䕴	zhuk1	0%
+䕵	kit3	0%
+䕶	vu6	0%
+䕷	mi4	0%
+䕽	zruk6	0%
+䕾	ngiam4	0%
+䕾	ngim4	0%
+䕿	hon3	0%
+䕿	hon2	0%
+䕿	naan4	0%
+䖁	jik1	0%
+䖂	lyun4	0%
+䖄	njin4	0%
+䖅	ling4	0%
+䖇	wat1	0%
+䖈	ngiok6	0%
+䖉	hyu1	0%
+䖋	ngiok6	0%
+䖌	ngat6	0%
+䖍	kin4	0%
+䖎	haep6	0%
+䖓	neot6	0%
+䖕	zoo2	0%
+䖖	haep6	0%
+䖗	ngaem4	0%
+䖚	wu1	0%
+䖛	sok3	0%
+䖝	wai2	0%
+䖞	zrau2	0%
+䖟	mong4	0%
+䖠	ngyun4	0%
+䖠	ngun4	0%
+䖣	zoo2	0%
+䖥	maau4	0%
+䖨	sjek6	0%
+䖨	zjik1	0%
+䖫	pong5	0%
+䖬	gaep3	0%
+䖰	paai3	0%
+䖴	jiu4	0%
+䖷	hi1	0%
+䖸	ngo4	0%
+䖺	tiu4	0%
+䖼	kiok6	0%
+䖽	li4	0%
+䖾	jyun4	0%
+䖿	li4	0%
+䗀	cring1	0%
+䗄	hu2	0%
+䗈	mong4	0%
+䗉	cjiong1	0%
+䗊	taam3	0%
+䗋	mau4	0%
+䗌	sing1	0%
+䗍	lai5	0%
+䗍	lo4	0%
+䗎	jin1	0%
+䗏	shau1	0%
+䗏	sho1	0%
+䗑	jap6	0%
+䗒	bing6	0%
+䗓	cung1	0%
+䗕	jyun1	0%
+䗙	hon4	0%
+䗛	sau1	0%
+䗜	lau4	0%
+䗝	caam4	0%
+䗞	caam4	0%
+䗟	ai3	0%
+䗢	zoo2	0%
+䗦	fung1	0%
+䗨	ngyo4	0%
+䗩	cik1	0%
+䗫	maa4	0%
+䗬	fung1	0%
+䗭	waan6	0%
+䗮	shong2	0%
+䗰	gun3	0%
+䗳	dang1	0%
+䗴	ting4	0%
+䗸	jung1	0%
+䗹	cy3	0%
+䗺	jin5	0%
+䗺	daan6	0%
+䗻	zit6	0%
+䗼	hwan1	0%
+䗾	hin2	0%
+䘂	zim1	0%
+䘈	lai6	0%
+䘉	caam4	0%
+䘊	mit6	0%
+䘋	zim1	0%
+䘍	craai3	0%
+䘍	taat3	0%
+䘏	seot1	0%
+䘐	nruk6	0%
+䘐	njuk6	0%
+䘑	maak6	0%
+䘔	haak3	0%
+䘕	hong4	0%
+䘖	haem4	0%
+䘗	hwai1	0%
+䘘	ngyo6	0%
+䘙	wai6	5%
+䘚	zeot1	0%
+䘜	gan1	0%
+䘞	maa6	0%
+䘟	diu1	0%
+䘠	fat1	0%
+䘠	but3	0%
+䘡	bi6	0%
+䘣	zhy2	0%
+䘣	zy2	0%
+䘤	sjeot6	0%
+䘥	haep6	0%
+䘥	gup3	0%
+䘦	nai4	0%
+䘧	jong1	0%
+䘩	ceon4	0%
+䘩	hjyun6	0%
+䘩	hyun3	0%
+䘫	njyo4	0%
+䘬	njung4	0%
+䘭	zji3	0%
+䘮	song1	0%
+䘮	song3	0%
+䘲	zam1	0%
+䘴	zjung1	0%
+䘵	luk6	0%
+䘶	haem4	0%
+䘹	zyi3	0%
+䘹	cyi3	0%
+䘹	syi3	0%
+䘺	zraen6	0%
+䘺	din6	0%
+䘺	zrin6	0%
+䘻	juk6	0%
+䙀	bang1	0%
+䙁	zin1	0%
+䙂	zjung1	0%
+䙃	do6	0%
+䙆	wai3	0%
+䙉	ceon4	0%
+䙋	syun1	0%
+䙍	fi1	0%
+䙑	cyi1	0%
+䙒	huk1	0%
+䙓	pi3	0%
+䙓	bi1	0%
+䙖	bang1	0%
+䙗	tai3	0%
+䙙	cri4	0%
+䙚	niu5	0%
+䙛	gwan2	0%
+䙜	fung4	0%
+䙝	dip6	0%
+䙞	dang1	0%
+䙠	gyut6	0%
+䙠	kyut3	0%
+䙣	saap3	0%
+䙤	do2	0%
+䙥	ling4	0%
+䙦	mung4	0%
+䙧	hwan1	0%
+䙨	gwo2	0%
+䙩	mung4	0%
+䙪	paan3	0%
+䙫	ki3	0%
+䙮	gyun6	0%
+䙯	zuk1	0%
+䙰	li4	0%
+䙲	hjyun4	0%
+䙳	piu3	0%
+䙳	piu1	0%
+䙴	cin1	0%
+䙴	sin1	0%
+䙶	nung4	0%
+䙸	dak1	0%
+䙹	jin5	0%
+䙺	lim4	0%
+䙻	cy1	0%
+䙿	mi6	0%
+䚀	cram1	0%
+䚁	cram1	0%
+䚂	haak3	0%
+䚃	jau4	0%
+䚆	jing2	0%
+䚉	kai3	0%
+䚊	gyun1	0%
+䚍	cik1	0%
+䚍	dik6	0%
+䚏	leon6	0%
+䚑	maai4	0%
+䚒	crong4	0%
+䚒	zrong6	0%
+䚓	sjam2	0%
+䚖	ling4	0%
+䚗	gong1	0%
+䚗	zjung1	0%
+䚚	sin2	0%
+䚛	huk6	0%
+䚞	daai2	0%
+䚟	daai2	0%
+䚤	ngyu4	0%
+䚪	gwaan1	0%
+䚬	leon4	0%
+䚯	too2	0%
+䚰	pi2	0%
+䚱	seon3	0%
+䚲	shaan3	0%
+䚵	tau2	0%
+䚶	tin1	0%
+䚸	haai6	0%
+䚺	jiu4	0%
+䚼	nuk6	0%
+䚽	hoo3	0%
+䚾	njam4	0%
+䚿	jam6	0%
+䛀	faan2	0%
+䛀	faan3	0%
+䛀	bun3	0%
+䛁	njim4	0%
+䛁	naam4	0%
+䛂	cri4	0%
+䛃	ngun6	0%
+䛇	jin5	0%
+䛈	sji3	0%
+䛉	min6	0%
+䛊	hi1	0%
+䛏	nai4	0%
+䛏	nri5	0%
+䛏	nai6	0%
+䛐	cy4	0%
+䛑	mat6	0%
+䛒	bin6	0%
+䛓	gaam1	0%
+䛔	nraa4	0%
+䛕	jyu4	0%
+䛖	jai6	0%
+䛖	sjai6	0%
+䛖	sit3	0%
+䛙	hjuk1	0%
+䛜	seon3	0%
+䛝	noo4	0%
+䛟	gaap3	0%
+䛡	waa6	0%
+䛣	ping1	0%
+䛣	crau1	0%
+䛤	cuk1	0%
+䛦	zung6	0%
+䛧	mai4	0%
+䛨	seon3	0%
+䛫	zriong1	0%
+䛫	zraang3	0%
+䛯	gyo3	0%
+䛰	wan6	0%
+䛱	tai4	0%
+䛲	maan4	0%
+䛴	gi1	0%
+䛵	sjau6	0%
+䛶	looi5	0%
+䛷	jyun2	0%
+䛸	zraem1	0%
+䛺	gaai3	0%
+䛼	wai2	0%
+䛿	gaak3	0%
+䜀	noo5	0%
+䜁	hai5	0%
+䜁	hai4	0%
+䜄	cri4	0%
+䜄	cri6	0%
+䜇	gwan2	0%
+䜇	gwan3	0%
+䜊	zoo1	0%
+䜊	zoo6	0%
+䜍	liu4	0%
+䜎	loo4	0%
+䜎	loo6	0%
+䜓	sjip3	0%
+䜔	cooi4	0%
+䜖	taam4	0%
+䜗	hjam3	0%
+䜘	ging2	0%
+䜛	chaem4	0%
+䜛	zhaem6	0%
+䜝	tyun2	0%
+䜞	zai1	0%
+䜟	cham3	0%
+䜠	zjat1	0%
+䜡	juk1	0%
+䜬	zau6	0%
+䜭	zeon3	0%
+䜵	sji6	0%
+䜹	cjuk1	0%
+䜻	sji6	0%
+䜿	sjyu6	0%
+䝀	lau4	0%
+䝀	liu4	0%
+䝂	sjyu6	0%
+䝃	zrip6	0%
+䝅	hwui1	0%
+䝆	hwat1	0%
+䝇	hwui1	0%
+䝈	aak1	0%
+䝉	mung4	0%
+䝊	shaep3	0%
+䝌	kyut3	0%
+䝌	gwan3	0%
+䝌	gwat1	0%
+䝌	gwat6	0%
+䝎	teon1	0%
+䝓	lip6	0%
+䝔	hwun1	0%
+䝗	hjau1	0%
+䝘	ngai6	0%
+䝛	bo1	0%
+䝝	ji1	0%
+䝞	hwu2	0%
+䝠	ngyun4	0%
+䝠	wun4	0%
+䝥	hoo4	0%
+䝧	man4	0%
+䝩	zjan3	0%
+䝩	zjan2	0%
+䝫	zok6	0%
+䝬	zryu3	0%
+䝯	ji4	0%
+䝯	sji6	0%
+䝯	ji6	0%
+䝰	zri6	0%
+䝱	hip3	0%
+䝲	zeon2	0%
+䝲	zeon6	0%
+䝳	caan4	0%
+䝴	zai1	0%
+䝵	boo6	0%
+䝺	gun3	0%
+䝽	ngaai6	0%
+䝾	fu3	0%
+䝿	gwai3	0%
+䞄	biu3	0%
+䞅	ji4	0%
+䞆	so3	0%
+䞇	zji3	0%
+䞉	sjing6	0%
+䞉	jing6	0%
+䞊	seon3	0%
+䞑	hung4	0%
+䞒	dung6	0%
+䞖	sjuk6	0%
+䞛	jin1	0%
+䞜	fu3	0%
+䞝	ngiuk6	0%
+䞟	paak3	0%
+䞡	taan2	0%
+䞢	zok3	0%
+䞫	ngwan5	0%
+䞬	tau3	0%
+䞱	huk6	0%
+䞲	ngo5	0%
+䞶	tik1	0%
+䞸	fu3	0%
+䞹	wong4	0%
+䞺	creon1	0%
+䞻	jung5	0%
+䞼	cyun3	0%
+䟀	caai1	0%
+䟁	haeu1	0%
+䟁	chaeu1	0%
+䟋	zjim2	0%
+䟎	zaan3	0%
+䟎	caan5	0%
+䟕	chaa1	0%
+䟖	zji2	0%
+䟚	ki4	0%
+䟜	neot6	0%
+䟜	naap6	0%
+䟞	cryu4	0%
+䟟	cuk1	0%
+䟢	nin2	0%
+䟤	bai6	0%
+䟤	bit6	0%
+䟥	mung4	0%
+䟦	bat6	0%
+䟩	liaa5	0%
+䟪	fung2	0%
+䟪	faan2	0%
+䟬	hjau3	0%
+䟭	tiu3	0%
+䟮	fuk6	0%
+䟰	gin2	0%
+䟱	zik1	0%
+䟲	cung1	0%
+䟳	cuk1	0%
+䟶	co3	0%
+䟻	doo6	0%
+䟻	craa5	
+䟼	mu5	0%
+䟽	sho1	0%
+䠀	tong1	0%
+䠀	tong3	0%
+䠁	zai1	0%
+䠂	cho2	0%
+䠃	liong5	0%
+䠅	kwan2	0%
+䠉	wun6	0%
+䠋	piaa5	
+䠋	bi2	0%
+䠌	daap6	0%
+䠎	aak1	0%
+䠏	gwai6	0%
+䠒	vu4	0%
+䠓	cau1	0%
+䠓	cuk1	0%
+䠔	sooi3	0%
+䠕	caai1	0%
+䠖	zy1	0%
+䠜	njung4	0%
+䠜	njung5	0%
+䠝	hyun1	0%
+䠞	cuk1	0%
+䠤	do2	0%
+䠤	do3	0%
+䠥	bit6	0%
+䠦	zri3	0%
+䠩	gwai6	0%
+䠬	dang3	0%
+䠭	laai6	0%
+䠮	tang4	0%
+䠲	ling4	0%
+䠳	cran1	0%
+䠴	zhan2	0%
+䠹	haai4	0%
+䠾	sjim2	0%
+䠿	waai6	0%
+䡁	lung5	0%
+䡃	leot6	0%
+䡄	gwai2	0%
+䡇	ngyut6	0%
+䡇	ngat6	0%
+䡌	wang4	0%
+䡍	fu4	0%
+䡎	lu4	0%
+䡏	wang4	0%
+䡑	man4	0%
+䡒	tin4	0%
+䡕	cjing2	0%
+䡖	hing1	0%
+䡛	jan6	0%
+䡟	pai3	0%
+䡠	hang1	0%
+䡡	haai4	0%
+䡢	bin6	0%
+䡤	zjyo1	0%
+䡥	jung4	0%
+䡦	song2	0%
+䡨	caai4	0%
+䡪	sjin3	0%
+䡫	pung4	0%
+䡱	kyu1	0%
+䡳	sy1	0%
+䡶	pik1	0%
+䡷	hat6	0%
+䡸	mit6	0%
+䡹	zri3	0%
+䡺	wai6	0%
+䡺	zooi6	0%
+䡻	min4	0%
+䡿	ling4	0%
+䢄	sy2	0%
+䢆	njung5	0%
+䢊	jau4	0%
+䢋	gi3	0%
+䢍	fong6	0%
+䢎	gi3	0%
+䢏	dau2	0%
+䢑	dai2	0%
+䢑	dai3	0%
+䢕	wat1	0%
+䢗	kuk1	0%
+䢘	sjau2	0%
+䢛	gwing2	0%
+䢜	gwai1	0%
+䢞	sjeot6	0%
+䢟	jau4	0%
+䢠	sung3	0%
+䢢	cong3	0%
+䢣	jiu4	0%
+䢤	sjeot6	0%
+䢥	jin4	0%
+䢥	cyun3	0%
+䢧	liu6	0%
+䢨	cung1	0%
+䢩	ngyo6	0%
+䢪	hiu1	0%
+䢫	cooi4	0%
+䢬	cin1	0%
+䢮	lyi5	0%
+䢯	leon6	0%
+䢴	cin1	0%
+䢶	bong1	0%
+䢷	daan1	0%
+䢺	cjeot1	0%
+䢽	hong6	0%
+䢾	sin1	0%
+䣃	siaa3	0%
+䣈	hong6	0%
+䣉	saa1	0%
+䣊	dong2	0%
+䣊	cjong2	0%
+䣋	coi2	0%
+䣌	dai2	0%
+䣏	gung1	0%
+䣐	jing1	0%
+䣑	cin4	0%
+䣓	lai4	0%
+䣖	maa5	0%
+䣖	maa6	0%
+䣞	ngok6	0%
+䣢	zok6	0%
+䣥	bi2	0%
+䣦	looi6	0%
+䣨	sjeon4	0%
+䣫	li4	0%
+䣬	seon4	0%
+䣭	jau4	0%
+䣯	coo4	0%
+䣰	gyo6	0%
+䣰	gyo4	0%
+䣱	hyu2	0%
+䣱	hyu3	0%
+䣱	jyu3	0%
+䣲	faan3	0%
+䣳	sy1	0%
+䣴	hyu3	0%
+䣶	wut6	0%
+䣷	zjyu1	0%
+䣻	hom1	0%
+䣾	mik6	0%
+䤀	njok6	0%
+䤄	min5	0%
+䤆	kwai4	0%
+䤇	shau1	0%
+䤇	shau2	0%
+䤈	hi1	0%
+䤈	hoi2	0%
+䤊	njung4	0%
+䤋	juk1	0%
+䤌	ciong1	0%
+䤓	mung4	0%
+䤖	boo6	0%
+䤚	li5	0%
+䤛	kau4	0%
+䤜	deon6	0%
+䤝	ngaang6	0%
+䤞	wan5	0%
+䤟	cram4	0%
+䤟	cam4	0%
+䤠	zji2	0%
+䤡	njim5	0%
+䤣	lyut6	0%
+䤤	hoi1	0%
+䤦	hjyut6	0%
+䤧	hwui3	0%
+䤩	zraak6	0%
+䤫	chaem4	0%
+䤭	sjik1	0%
+䤯	jing4	0%
+䤰	jing4	0%
+䤱	sjai6	0%
+䤲	cjek3	0%
+䤵	fi6	0%
+䤷	jin2	0%
+䤸	cung1	0%
+䤸	chong1	0%
+䤹	shau1	0%
+䤺	gan1	0%
+䤼	sin3	0%
+䤾	too1	0%
+䤿	kit3	0%
+䥀	crin2	0%
+䥁	hom4	0%
+䥂	mung6	0%
+䥂	mung4	0%
+䥃	ngok6	0%
+䥄	coo3	0%
+䥅	kam4	0%
+䥆	kam4	0%
+䥇	sjin3	0%
+䥊	ciong1	0%
+䥋	paang1	0%
+䥌	zjing3	0%
+䥎	sjeon4	0%
+䥐	mau4	0%
+䥑	faan6	0%
+䥑	maak6	
+䥒	kiong5	0%
+䥓	gi1	0%
+䥔	suk1	0%
+䥕	pit3	0%
+䥖	tin4	0%
+䥖	tin6	0%
+䥘	co3	0%
+䥙	sooi6	0%
+䥚	cho1	0%
+䥜	gaen3	0%
+䥞	giu2	0%
+䥟	jit3	0%
+䥠	zjam1	0%
+䥢	lung4	0%
+䥣	zok6	0%
+䥤	bok6	0%
+䥥	lim4	0%
+䥦	cooi4	0%
+䥧	syun4	0%
+䥨	lyo6	0%
+䥨	lyo4	0%
+䥪	hin2	0%
+䥫	tit3	0%
+䥬	bok3	0%
+䥭	zjing3	0%
+䥮	zruk1	0%
+䥱	siaa2	0%
+䥲	au1	0%
+䥳	jau1	0%
+䥴	kwai4	0%
+䥷	zhaap6	0%
+䥹	ngit6	0%
+䦇	gai3	0%
+䦉	si3	0%
+䦌	cjyu3	0%
+䦎	gun2	0%
+䦐	ting2	0%
+䦒	dong6	0%
+䦓	crim1	0%
+䦕	ping1	0%
+䦙	zy6	0%
+䦚	hwut3	0%
+䦛	zhang1	0%
+䦜	ngu4	0%
+䦞	njeon6	0%
+䦟	wan2	0%
+䦠	duk1	0%
+䦠	zrok1	0%
+䦡	wun4	0%
+䦢	hwut3	0%
+䦣	fu3	0%
+䦤	chyut3	0%
+䦥	haen4	0%
+䦦	kam4	0%
+䦧	jik1	0%
+䦨	laan4	0%
+䦩	man4	0%
+䦫	jing1	0%
+䦬	kyut3	0%
+䦭	hong1	0%
+䦮	ceon2	0%
+䦯	zri3	0%
+䦰	gau1	0%
+䦴	jik6	0%
+䦵	nai5	0%
+䦹	sjap6	0%
+䦻	zy2	0%
+䦽	zyo6	0%
+䦾	jyun4	0%
+䦿	zrung1	0%
+䧀	gwang1	0%
+䧂	zjiu3	0%
+䧃	tin4	0%
+䧄	gok3	0%
+䧄	gaak3	0%
+䧈	jan1	0%
+䧉	li5	0%
+䧋	hin5	0%
+䧌	sooi1	0%
+䧍	kwik1	0%
+䧏	gong3	0%
+䧐	gwok3	0%
+䧒	loi4	0%
+䧓	zau1	0%
+䧔	nim6	0%
+䧕	wik6	0%
+䧖	cin5	0%
+䧗	bik6	0%
+䧙	ling4	0%
+䧚	hoo5	0%
+䧚	haeu1	
+䧚	kok3	
+䧛	bong6	0%
+䧝	cji1	0%
+䧝	cri5	
+䧟	ham6	0%
+䧠	zjyun1	0%
+䧡	jung4	0%
+䧣	jan1	0%
+䧥	wai6	0%
+䧧	ngai5	0%
+䧩	gom2	0%
+䧫	hoo4	0%
+䧬	ban1	0%
+䧭	sy1	0%
+䧮	hin3	0%
+䧮	hin2	
+䧯	chaem4	0%
+䧯	zhaem6	
+䧱	gau1	0%
+䧲	gon1	0%
+䧳	cy1	0%
+䧵	zram6	0%
+䧶	kwai4	0%
+䧷	njau4	0%
+䧸	gu1	0%
+䧹	jing1	0%
+䧺	hung4	0%
+䧻	gop3	0%
+䧽	cooi2	0%
+䧾	sjyu1	0%
+䧿	ziok3	0%
+䨀	dek6	0%
+䨃	aan3	0%
+䨄	om1	0%
+䨅	liu4	0%
+䨆	bai3	0%
+䨇	shiong1	0%
+䨈	ban1	0%
+䨉	jing1	0%
+䨋	ngiok6	0%
+䨌	bok6	0%
+䨍	jing2	0%
+䨎	wang4	0%
+䨏	cy4	0%
+䨓	lyi4	0%
+䨔	bok6	0%
+䨖	zai3	0%
+䨙	jam4	0%
+䨚	hwat1	0%
+䨜	bang1	0%
+䨝	cing1	0%
+䨟	waa1	0%
+䨠	oi2	0%
+䨧	jam1	0%
+䨩	ling4	0%
+䨪	maai4	0%
+䨫	maak6	0%
+䨬	lim4	0%
+䨭	siu1	0%
+䨯	zran6	0%
+䨱	fuk1	0%
+䨵	daam6	0%
+䨶	wan5	0%
+䨷	sin3	0%
+䨸	jan2	0%
+䨹	sjuk1	0%
+䨺	dyi6	0%
+䨿	saap3	0%
+䨿	zaap3	
+䩀	bi6	0%
+䩅	zrin2	0%
+䩅	nraan5	
+䩈	hwui3	0%
+䩋	mo5	0%
+䩎	cim1	0%
+䩑	wang4	0%
+䩓	ki4	0%
+䩔	do6	0%
+䩔	shaem1	
+䩔	pun4	
+䩖	shaa1	0%
+䩗	baa3	0%
+䩘	dai3	0%
+䩜	zrau6	0%
+䩝	baeu6	0%
+䩟	ji4	0%
+䩟	tai3	
+䩧	kit3	0%
+䩫	liong5	0%
+䩬	bung2	0%
+䩭	gi1	0%
+䩮	luk6	0%
+䩰	jyun5	0%
+䩰	zap1	
+䩴	vu4	0%
+䩷	bong1	0%
+䩻	baa3	0%
+䩾	zjiaa3	0%
+䪀	gun2	0%
+䪃	deon1	0%
+䪄	wong4	0%
+䪅	duk6	0%
+䪇	bok6	0%
+䪋	wai6	0%
+䪑	to4	0%
+䪓	dip3	0%
+䪕	guk6	0%
+䪖	pok3	0%
+䪘	wai5	0%
+䪛	faan1	0%
+䪛	faan4	
+䪟	zai1	0%
+䪠	zai1	0%
+䪢	zai1	0%
+䪣	zai1	0%
+䪤	faan4	0%
+䪨	bok3	0%
+䪪	gaa1	0%
+䪭	ngyun5	
+䪮	chau2	0%
+䪰	ji1	0%
+䪱	goi2	0%
+䪲	ngat6	0%
+䪵	ngaa5	0%
+䪶	zyo1	0%
+䪺	gop3	0%
+䪽	hoo6	0%
+䪿	seon3	0%
+䫃	sjeon4	0%
+䫇	njim4	0%
+䫈	sjam6	0%
+䫈	sham4	
+䫈	cham5	
+䫊	pui4	0%
+䫋	wai1	0%
+䫋	tyi4	
+䫍	fu2	0%
+䫐	lam4	0%
+䫐	lam6	
+䫑	ji1	0%
+䫓	ngu4	0%
+䫕	dit3	0%
+䫙	song2	0%
+䫚	gwaa1	0%
+䫝	fuk1	0%
+䫣	hai4	0%
+䫫	lau4	0%
+䫫	looi6	0%
+䫭	wui6	0%
+䫮	sjaam4	0%
+䫯	ji1	0%
+䫰	leon6	0%
+䫱	njyu4	0%
+䫷	ngok6	0%
+䫺	wang4	0%
+䫼	hyut3	0%
+䬃	saap3	0%
+䬄	hyut3	0%
+䬅	lai6	0%
+䬅	hip6	
+䬅	lip6	
+䬇	jyun6	0%
+䬇	jyun5	
+䬈	dyi6	0%
+䬋	ling4	0%
+䬏	bau6	0%
+䬒	shau1	0%
+䬓	om3	0%
+䬔	jyu4	0%
+䬕	hong1	0%
+䬖	waang4	0%
+䬗	jong4	0%
+䬙	jiu4	0%
+䬚	faan4	0%
+䬚	faan6	
+䬛	bat1	0%
+䬜	cri1	0%
+䬢	too1	0%
+䬣	hat1	0%
+䬤	zaan3	0%
+䬥	ji3	0%
+䬨	gau3	0%
+䬩	zhaai1	0%
+䬪	bok3	0%
+䬭	too1	0%
+䬱	ban6	0%
+䬲	kau1	0%
+䬶	ngan6	0%
+䬸	caan1	0%
+䬹	zrat1	0%
+䬺	jong6	0%
+䬻	zin3	0%
+䭀	seon3	0%
+䭄	shy6	0%
+䭅	vu4	0%
+䭅	gu3	
+䭇	jit3	0%
+䭊	jing2	0%
+䭋	baeu2	0%
+䭌	vu4	0%
+䭍	vu4	0%
+䭎	jip6	0%
+䭏	bin2	0%
+䭗	jing2	0%
+䭚	crong4	0%
+䭛	daam6	0%
+䭜	liu4	0%
+䭝	kui2	0%
+䭞	jik6	0%
+䭟	jip6	0%
+䭠	gim2	0%
+䭣	cy4	0%
+䭣	zy1	
+䭥	jong6	0%
+䭧	mi4	0%
+䭫	kai2	0%
+䭯	but6	0%
+䭰	bung6	
+䭲	ji2	0%
+䭳	ngai6	0%
+䭵	faan4	0%
+䭵	faan6	
+䭶	ki4	0%
+䭷	moo4	0%
+䭺	ngong5	0%
+䭻	fan1	0%
+䭼	ki4	0%
+䭽	kwan4	0%
+䭾	to4	0%
+䮁	pin4	0%
+䮃	kyu1	0%
+䮅	hjyut6	0%
+䮆	pi1	0%
+䮇	wat6	0%
+䮈	cri4	0%
+䮊	ji4	0%
+䮋	lai6	0%
+䮌	hjau1	0%
+䮍	niu5	0%
+䮏	ngu4	0%
+䮐	gwing1	0%
+䮑	lyi6	0%
+䮑	lo6	
+䮑	lut6	
+䮓	diok3	0%
+䮕	zryut3	0%
+䮖	cjiong1	0%
+䮘	ngi4	0%
+䮚	lang6	0%
+䮚	ling4	
+䮛	fu6	0%
+䮜	sjip1	0%
+䮜	jip6	
+䮞	ceon2	0%
+䮟	shau1	0%
+䮡	bat6	0%
+䮡	bok3	
+䮣	song1	0%
+䮣	song2	
+䮦	giu1	0%
+䮨	zoi2	0%
+䮪	sjing4	0%
+䮫	lau4	0%
+䮫	lyo4	
+䮬	mok6	0%
+䮮	maak6	0%
+䮯	ngoo4	0%
+䮰	zraak6	0%
+䮲	wong4	0%
+䮵	tung4	0%
+䮶	biu1	0%
+䮺	zai1	0%
+䮼	leon4	0%
+䮽	biu1	0%
+䮿	gin2	0%
+䯀	nrip6	0%
+䯁	lo4	0%
+䯆	jik6	0%
+䯌	hoo1	0%
+䯎	gon3	0%
+䯐	haai4	0%
+䯔	zraak3	0%
+䯕	ting1	0%
+䯙	bok3	0%
+䯚	jiu5	0%
+䯛	wun3	0%
+䯝	sooi5	0%
+䯡	gim3	0%
+䯥	ngam6	0%
+䯥	kap1	
+䯧	kwing2	0%
+䯧	kwing3	
+䯨	haeu1	0%
+䯩	hoo6	0%
+䯫	hoo5	0%
+䯭	cim1	0%
+䯮	noi4	0%
+䯮	nang4	
+䯯	so1	0%
+䯱	pi1	0%
+䯱	pui1	
+䯱	fu6	
+䯲	paa1	0%
+䯲	baa6	
+䯴	criong4	0%
+䯵	ngot6	0%
+䯶	maan4	0%
+䯺	kut3	0%
+䯻	gai3	0%
+䯼	dik6	0%
+䯿	zeot1	0%
+䯿	syi1	
+䯿	zyi6	
+䰀	wo1	0%
+䰀	wo2	0%
+䰁	fai3	0%
+䰁	puk1	
+䰄	soi1	0%
+䰄	shy3	
+䰅	su1	0%
+䰇	ki4	0%
+䰊	bok3	0%
+䰋	faat3	0%
+䰌	zung2	0%
+䰌	cung1	
+䰑	su1	0%
+䰔	pun4	0%
+䰗	gau1	0%
+䰛	lik6	0%
+䰜	lik6	0%
+䰢	hang4	0%
+䰣	mong5	0%
+䰥	waak6	0%
+䰦	pai2	0%
+䰨	mi6	0%
+䰪	mi6	0%
+䰬	gwat6	0%
+䰭	njyu4	0%
+䰭	nau4	
+䰮	ngi6	0%
+䰱	ling4	0%
+䰳	ding1	0%
+䰵	zy2	0%
+䰶	mong4	0%
+䰷	pong5	0%
+䰸	gung1	0%
+䰹	zaak6	0%
+䰺	gaai3	0%
+䰾	baa1	0%
+䰾	bat6	0%
+䰿	to4	0%
+䱀	jong1	0%
+䱁	kiu4	0%
+䱃	zrat6	0%
+䱄	gaai3	0%
+䱆	jing6	0%
+䱇	sjin5	0%
+䱈	ngai6	0%
+䱉	sjin5	0%
+䱎	gang2	0%
+䱑	zyut6	0%
+䱓	ting4	0%
+䱔	tiu4	0%
+䱗	caan1	0%
+䱘	li4	0%
+䱙	sjuk1	0%
+䱛	kwik1	0%
+䱞	noi6	0%
+䱠	zhaen5	0%
+䱦	zyi1	0%
+䱧	sjin5	0%
+䱨	zjai3	0%
+䱩	mong5	0%
+䱪	biu2	0%
+䱫	laat6	0%
+䱭	gang2	0%
+䱯	leon4	0%
+䱰	zrung6	0%
+䱳	zrin1	0%
+䱴	gang2	0%
+䱶	long4	0%
+䱸	shau1	0%
+䱹	zhaa2	0%
+䱼	zrin2	0%
+䱽	cjong1	0%
+䱿	chaem3	0%
+䲂	syun4	0%
+䲄	min5	0%
+䲅	kwai1	0%
+䲆	sin1	0%
+䲇	cuk1	0%
+䲈	maa4	0%
+䲉	sy1	0%
+䲋	sham4	0%
+䲋	zam1	
+䲍	tang4	0%
+䲎	nyi5	0%
+䲏	loo4	0%
+䲑	ngi4	0%
+䲕	pu1	0%
+䲖	crau4	0%
+䲗	haem4	0%
+䲘	gun2	0%
+䲤	zau2	0%
+䲥	gau1	0%
+䲧	doo6	0%
+䲨	hung4	0%
+䲩	sji1	0%
+䲪	ji6	0%
+䲫	gau1	0%
+䲭	cji1	0%
+䲮	ngyun4	0%
+䲱	fong2	0%
+䲲	gung1	0%
+䲲	sung1	
+䲳	hong4	0%
+䲴	zram6	0%
+䲵	ziok3	0%
+䲶	ngyun4	0%
+䲷	hiu1	0%
+䲺	gom3	0%
+䲻	ngyun4	0%
+䲼	shang1	0%
+䲿	zy1	0%
+䳁	bat6	0%
+䳂	diu1	0%
+䳂	diu4	
+䳂	hiu1	
+䳂	criu1	
+䳃	jyun2	0%
+䳄	cy1	0%
+䳆	baak6	0%
+䳈	boo2	0%
+䳉	dung1	0%
+䳌	gyun1	0%
+䳒	jyun4	0%
+䳓	loo5	0%
+䳗	ngo4	0%
+䳘	ngo4	0%
+䳙	hing2	0%
+䳛	aan3	0%
+䳜	too4	0%
+䳜	jyo4	
+䳞	bung2	0%
+䳞	bung5	
+䳠	sjooi6	0%
+䳠	sjooi4	
+䳠	zryu3	
+䳡	aan3	0%
+䳣	jyun4	0%
+䳥	ling4	0%
+䳧	hau1	0%
+䳨	wong4	0%
+䳪	tyun4	0%
+䳪	zjyun1	
+䳬	jik6	0%
+䳭	zik3	0%
+䳮	maak6	0%
+䳰	boo2	0%
+䳱	mu6	0%
+䳵	crik1	0%
+䳶	kai1	0%
+䳷	cung4	0%
+䳸	maa4	0%
+䳹	kau3	0%
+䳼	au1	0%
+䳽	hok6	0%
+䳿	njin4	0%
+䴂	ziong6	0%
+䴄	sjeon3	0%
+䴈	oo2	0%
+䴉	syun4	0%
+䴉	waen4	0%
+䴋	waen4	0%
+䴌	mung4	0%
+䴍	ang1	0%
+䴎	looi5	0%
+䴎	looi4	
+䴏	jin3	0%
+䴐	boo2	0%
+䴒	ling4	0%
+䴞	dik6	0%
+䴡	lai6	0%
+䴢	mi4	0%
+䴣	hu1	0%
+䴨	ngyun4	0%
+䴩	piu4	0%
+䴪	luk6	0%
+䴫	ling4	0%
+䴯	hwat1	0%
+䴰	sjuk6	0%
+䴱	to1	0%
+䴴	tip3	0%
+䴴	nrim4	
+䴶	pung4	0%
+䴸	fu1	0%
+䵁	ciong3	0%
+䵄	fung1	0%
+䵅	ngoo4	0%
+䵆	mung4	0%
+䵇	sin3	0%
+䵉	tau4	0%
+䵊	tyun1	0%
+䵊	tan1	
+䵍	tyun1	0%
+䵍	tan1	
+䵓	li4	0%
+䵕	gyu3	0%
+䵙	zraa1	0%
+䵙	zraa2	
+䵙	zraa3	
+䵚	too2	0%
+䵛	hin3	0%
+䵛	hin2	
+䵜	nung5	0%
+䵠	dik1	0%
+䵠	zjiok3	
+䵡	ngin5	0%
+䵢	mui6	0%
+䵥	wat1	0%
+䵩	lai4	0%
+䵪	gwan3	0%
+䵪	hwan3	
+䵫	hwan1	0%
+䵭	zjiaa3	0%
+䵯	teon2	0%
+䵰	sjiong1	0%
+䵲	ciu1	0%
+䵶	kyu4	0%
+䵷	waa1	0%
+䵺	ting5	0%
+䵾	fu4	0%
+䵿	tip3	0%
+䶁	taap3	0%
+䶇	zrau6	0%
+䶉	lau4	0%
+䶊	nuk6	0%
+䶋	hap1	0%
+䶌	baeu6	0%
+䶍	tai3	0%
+䶏	tai3	0%
+䶏	tai2	
+䶏	hi2	
+䶑	tai3	
+䶕	baa6	0%
+䶕	baa1	
+䶚	kyu2	0%
+䶝	haep6	0%
+䶟	haem6	0%
+䶠	gaem1	0%
+䶠	gaep3	
+䶠	haep1	
+䶠	ngaem4	
+䶡	zhit6	0%
+䶤	hat6	0%
+䶧	ngaeu5	0%
+䶨	zhaem1	0%
+䶫	ngim6	0%
+䶫	ngaem4	
+䶫	ngaem6	
+䶭	wong1	0%
+䶯	kwai1	0%
+䶰	ziu1	0%
+䶳	jok6	0%
+𡩤	sik1	0%
+𡯑	sjooi2	0%
+𡯑	cjooi2	0%
+𡽅	wan6	0%
+𡾱	mi4	0%
+𢅼	naan6	0%
+𢅼	nyi4	0%
+𢎄	go1	0%
+𢚅	fan2	0%
+𢛃	kau4	0%
+𢛃	kau5	0%
+𤷽	kiok3	0%
+𦢧	mang4	0%
+𩰶	haai4	

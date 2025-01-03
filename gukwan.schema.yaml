@@ -4,10 +4,11 @@
 schema:
   schema_id: gukwan
   name: 菊韻
-  version: "2.2b"
+  version: "3.0b"
   author:
     靈帝（Hoengsaan）
   description: |-
+    測試階段
     ※請務必閱讀方案文件※
     詳細請至本方案github頁。https://github.com/HoengSaan/rime-gukwan
     反查:`粵拼(新) x普音 v倉頡 R假名。聲調可省：v爲平，x爲上，q爲去，單陰雙陽。
@@ -34,6 +35,9 @@ switches:
   - name: emoji_suggestion
     reset: 0
     states: [ 冇✖, 有🔴 ]
+    
+menu:
+  page_size: 7
 
 engine:
   processors:
@@ -101,11 +105,11 @@ speller:
     #- derive/^(z|c)r/$1/                   # 精照合流
     - derive/^(z|c|s)jy(?=\d)/$1y/          # 止開師韻(jy->y) 特
     - derive/^(z|c|s)hy(?=\d)/$1y/          # 止開師韻(hy->y) 特
-    - derive/^nj/j/                         # 日以合流(nj->j)
+    #- derive/^nj/j/                         # 日以合流(nj->j)
     - derive/^ngi/nji/                      # 疑日(ngi->nji)
     - derive/^ngy/njy/                      # 疑日(ngy->njy)
-    - derive/^ngi/ji/                       # 疑日(ngi->ji)
-    - derive/^ngy/jy/                       # 疑日(ngy->jy)
+    #- derive/^ngi/ji/                       # 疑日(ngi->ji)
+    #- derive/^ngy/jy/                       # 疑日(ngy->jy)
 
     #聲母——示例
     #- derive/^hw/w/                        # 口音補充（如「花」讀作waa）
@@ -338,3 +342,18 @@ recognizer:
     luna_pinyin: "^x[a-z']*;?$"
     cangjie5: "^v[a-z]*;?$"
     kanas: "^R[a-zA-Z-]*;?$"
+
+style:
+  font_face: "Shanggu"
+  font_point: 18
+  #horizontal: true
+  #inline_preedit: false
+  layout:
+    border_width: 3
+    candidate_spacing: 5
+    hilite_padding: 2
+    hilite_spacing: 4
+    margin_x: 12
+    margin_y: 12
+    round_corner: 4
+    spacing: 10

@@ -2,12 +2,10 @@
 # encoding: utf-8
 #
 # gukwan - 菊韻
-# 增添無拼音粵拼詞庫令菊韻可以正常打字
-
 
 ---
 name: gukwan
-version: "1.3a"
+version: "3.0b"
 sort: by_weight
 vocabulary: essay-cantonese
 import_tables:

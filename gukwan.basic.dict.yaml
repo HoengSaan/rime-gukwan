@@ -6,7 +6,7 @@
 
 ---
 name: gukwan.basic
-version: "2.2b"
+version: "3.0b"
 sort: by_weight
 ...
 
@@ -1399,7 +1399,7 @@ sort: by_weight
 怩	nri4	
 蚭	nri4	0%
 跜	nri4	0%
-呢	nri4	
+呢	nri4	0%
 𩚯	nri4	0%
 䝚	nri4	0%
 墀	cri4	0%
@@ -6232,7 +6232,7 @@ sort: by_weight
 簩	loo4	0%
 䝁	loo4	0%
 𧰉	loo4	0%
-蟧	loo4	0%
+蟧	loo4	3%
 醪	loo4	0%
 撈	loo4	0%
 㟉	loo4	0%
@@ -8574,9 +8574,9 @@ sort: by_weight
 惆	crau1	0%
 瘳	crau1	0%
 妯	crau1	0%
-𠁫	kau1	0%
-惆	kau1	0%
-𣪘	kau1	0%
+𠁫	hjau1	0%
+惆	hjau1	0%
+𣪘	hjau1	0%
 犫	cjau1	0%
 犨	cjau1	0%
 周	zjau1	
@@ -12133,19 +12133,19 @@ sort: by_weight
 𢺃	gin2	0%
 挸	gin2	0%
 𢹕	gin2	0%
-峴	ngin5	0%
-臔	ngin5	0%
-哯	ngin5	0%
-晛	ngin5	0%
-垷	ngin5	0%
-蜆	ngin5	0%
-俔	ngin5	0%
-顈	ngin5	0%
-䵤	ngin5	0%
-睍	ngin5	0%
-詪	ngin5	0%
-㦓	ngin5	0%
-嫢	ngin5	0%
+峴	jin5	0%
+臔	jin5	0%
+哯	jin5	0%
+晛	jin5	0%
+垷	jin5	0%
+蜆	jin5	0%
+俔	jin5	0%
+顈	jin5	0%
+䵤	jin5	0%
+睍	jin5	0%
+詪	jin5	0%
+㦓	jin5	0%
+嫢	jin5	0%
 顯	hin2	
 韅	hin2	0%
 蜆	hin2	
@@ -13205,7 +13205,7 @@ sort: by_weight
 𧫝	shaa2	0%
 傻	shaa2	0%
 奼	craa2	
-藞	laa5	0%
+藞	laa5	3%
 養	jong5	
 痒	jong5	
 癢	jong5	
@@ -21143,7 +21143,7 @@ sort: by_weight
 㧒	wat6	0%
 率	sheot1	
 帥	sheot1	0%
-蟀	sheot1	
+蟀	sheot1	3%
 𧍓	sheot1	0%
 䢦	sheot1	0%
 𠞩	sheot1	0%
@@ -21296,12 +21296,12 @@ sort: by_weight
 怴	wat1	0%
 䬂	wat1	0%
 𥄵	wat1	0%
-櫛	zhat1	0%
-楖	zhat1	0%
-瀄	zhat1	0%
-㘉	zhat1	0%
-𥠈	zhat1	0%
-擳	zhat1	0%
+櫛	zhit3	0%
+楖	zhit3	0%
+瀄	zhit3	0%
+㘉	zhit3	0%
+𥠈	zhit3	0%
+擳	zhit3	0%
 瑟	shat1	
 飋	shat1	0%
 蟋	shat1	0%
