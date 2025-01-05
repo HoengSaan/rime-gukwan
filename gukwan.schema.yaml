@@ -4,7 +4,7 @@
 schema:
   schema_id: gukwan
   name: 菊韻
-  version: "3.0b"
+  version: "3.1b"
   author:
     靈帝（Hoengsaan）
   description: |-
@@ -106,7 +106,8 @@ speller:
     - derive/^(z|c|s)jy(?=\d)/$1y/          # 止開師韻(jy->y) 特
     - derive/^(z|c|s)hy(?=\d)/$1y/          # 止開師韻(hy->y) 特
     #- derive/^nj/j/                         # 日以合流(nj->j)
-    - derive/^ngi/nji/                      # 疑日(ngi->nji)
+    - derive/^ngi/nji/                       # 疑日(ngi->nji)
+    - derive/^ngiuk/njuk/                   # 疑日(ngiuk->njuk)
     - derive/^ngy/njy/                      # 疑日(ngy->njy)
     #- derive/^ngi/ji/                       # 疑日(ngi->ji)
     #- derive/^ngy/jy/                       # 疑日(ngy->jy)
@@ -209,7 +210,6 @@ speller:
     
     #打字輔助——其他
     - derive/^([aeiou])/q$1/                # 喉塞音
-    - derive/^nr/n/                         # 打字輔助(nr->n) 廣韻孃母歸泥
     - derive/^ngw/w/                        # 打字輔助(ngw->w) 廣韻疑母脫落
     - derive/^ngun(?=\d)/wun$1/             # 打字輔助(ngw->w) 廣韻疑母脫落
     - derive/^hw/f/                         # 打字輔助(hw->f) 廣韻牙音合口讀若輕脣
@@ -345,7 +345,7 @@ recognizer:
 
 style:
   font_face: "Shanggu"
-  font_point: 18
+  font_point: 16
   #horizontal: true
   #inline_preedit: false
   layout:

@@ -155,7 +155,8 @@ sort: by_weight
 蹲	zeon1	
 飩	tan1	
 邨	cyun1	
-燉	deon6	
+燉	deon6	0%
+燉	dan6	
 歺	caan1	
 𩛈	caan1	
 欄	laan1	
@@ -241,7 +242,7 @@ sort: by_weight
 撈	loo1	
 撈	laau4	
 撈	laau1	
-毛	mou1	
+毛	moo1	
 艘	sau2	
 熬	ngaau4	
 尻	haau1	
@@ -289,7 +290,8 @@ sort: by_weight
 吒	zraa1	
 爹	diaa1	
 鯧	cjong1	
-瓤	nrong4	0%
+芒	mong1	
+瓤	nong4	0%
 匡	hwong1	0%
 邼	hwong1	0%
 筐	hwong1	0%
@@ -398,9 +400,9 @@ sort: by_weight
 簷	sim4	
 簾	lim2	
 暹	cim3	
-𧦦	nraem4	
-黏	nrim1	
-粘	nrim1	
+𧦦	naem4	
+黏	nim1	
+粘	nim1	
 殲	cim1	
 恬	tim5	
 嫌	him4	
@@ -534,7 +536,7 @@ sort: by_weight
 繭	gaan2	
 撚	nan2	
 撚	nang3	
-蹨	nrim3	
+蹨	nim3	
 扁	ben2	
 辮	bin1	
 齞	ngin1	
@@ -548,6 +550,7 @@ sort: by_weight
 趙	zriu5	
 巧	kiu2	
 鮑	baeu1	
+燥	coo3	
 攞	lo2	
 那	naa5	
 朵	doe2	
@@ -778,8 +781,8 @@ sort: by_weight
 面	min2	
 戀	lyun2	
 拚	pun3	
-輾	nrin5	
-碾	nrin5	
+輾	nin5	
+碾	nin5	
 囀	zryun2	
 掉	deu6	
 竅	kiu2	
@@ -834,7 +837,6 @@ sort: by_weight
 驟	zhaau6	
 就	zou6	
 糅	njau6	
-姆	mou5	
 姆	mau5	
 竇	dau3	
 遘	kau3	
@@ -901,8 +903,8 @@ sort: by_weight
 蟋	sik1	
 疋	pat1	
 䏘	pet1	
-暱	nrik1	
-昵	nrik1	
+暱	nik1	
+昵	nik1	
 溢	jik1	
 窒	zrat6	
 必	bit1	
@@ -959,8 +961,9 @@ sort: by_weight
 搣	lit1	
 噦	oet6	
 啜	zryut1	
-吶	nraap6	
+吶	naap6	
 掠	liok1	
+溺	nik1	
 鵲	ziok3	
 噱	ciok3	
 玃	hwok3	3%
@@ -1269,6 +1272,7 @@ sort: by_weight
 欸	e6	
 揚	jong2	
 
+
 呢	ne1	
 呢	ni1	
 呢	nei1	
@@ -1381,8 +1385,7 @@ sort: by_weight
 哋	di6	
 哋	li6	
 埞	deng6	
-䅺	biu1	
-0	njyun5	
+䅺	biu1
 𠼮	ngai1	
 𨂾	naam3	
 瀨	laai6	
