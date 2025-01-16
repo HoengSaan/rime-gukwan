@@ -4,11 +4,12 @@
 schema:
   schema_id: gukwan
   name: 菊韻
-  version: "4.0b"
+  version: "4.1b"
   author:
     靈帝（Hoengsaan）
+  
   description: |-
-    測試階段（0.4.0b轉換式更新）
+    測試階段（0.4.1b 轉換式更新）
     ※請務必閱讀方案文件※
     詳細請至本方案github頁。https://github.com/HoengSaan/rime-gukwan
     反查:`粵拼(新) X普音 V倉頡 R假名。聲調可省：v爲平，x爲上，q爲去，單陰雙陽。
@@ -77,7 +78,7 @@ speller:
     #刪除行頭井號啓用轉換，行頭鍵入井號停止轉換。
     
     #聲母（根據自己口音偏好調校即可）
-    #- derive/^ng([aeiou])/$1/              # 疑影不分(ng↔0)
+    #- derive/^ng([aeiou])/$1/              # 疑母脫落(ng->0)
     #- derive/^([aeiou])/ng$1/              # 疑影不分(ng==0)
     
     #聲母——菊韻
@@ -95,13 +96,18 @@ speller:
     #- xform/^vu(?=\d)/wu$1/                # 遇攝合口(*u->wu)：「護」讀作wu6 多數方音
     
     #聲母——分韻（現代音無用）
-    - derive/^(z|c|s)jy(?=\d)/$1y/          # 
-    - derive/^(z|c|s)hy(?=\d)/$1y/          #
+    - derive/^(z|c|s)jy(?=\d)/$1y/          # 師韻不分精照
+    - derive/^(z|c|s)hy(?=\d)/$1y/          # 師韻不分精照
     - derive/^ngi/nji/                      # 疑母齶化(ngi->nji)
     - derive/^ngiuk/njuk/                   # 疑母齶化(ngiuk->njuk)
     - derive/^ngy/njy/                      # 疑母齶化(ngy->njy)
 
     #聲母——現代
+    - derive/^ngw/w/                        # 疑合脫落(ngw->w)
+    - derive/^ngun(?=\d)/wun$1/             # 疑合脫落(ngw->w)
+    - derive/^hw/f/                         # 曉合輕脣(hw->f)
+    - derive/^hu(?=\d)/fu$1/                # 曉合輕脣(hu->fu)
+    - derive/^kwing(?=\d)/king$1/
     #- derive/^(z|c|s)h/$1/                 # 精照合流(zh->z)
     #- derive/^(zj|cj|sj)yo(?=\d)/$1yu/     # 精照合流
     #- derive/^(z|c|s)j(?!yo)/$1/           # 精照合流(ch->c)
@@ -209,17 +215,9 @@ speller:
     - derive/^(z|c|s)jiong/$1jong/          # 打字輔助A組
     - derive/^(z|c|s)jiaa/$1jaa/            # 打字輔助A組
 
-    #打字輔助——照組h拼法
+    #打字輔助——照組j拼法
     #- derive/^(z|c|s)h/$1j/                # 打字輔助B組(-h->-j) 廣韻莊組（j拼法）
     #- derive/^(z|c)r/$1j/                  # 打字輔助B組(-r->-j) 廣韻知組（j拼法）
-    
-    #打字輔助——其他
-    - derive/^ngw/w/                        # 打字輔助(ngw->w) 廣韻疑母脫落
-    - derive/^ngun(?=\d)/wun$1/             # 打字輔助(ngw->w) 廣韻疑母脫落
-    - derive/^hw/f/                         # 打字輔助(hw->f) 廣韻牙音合口讀若輕脣
-    - derive/^hu(?=\d)/fu$1/                # 打字輔助(hu->fu) 廣韻牙音合口讀若輕脣
-    - derive/jo(ng|k)/jio$1/                # 打字輔助(jo->jio) 宕攝元音全拼
-    - derive/^kwing(?=\d)/king$1/
     
     #打字輔助——增廣
     #- derive/^dr/zr/                       # 打字輔助(dr->zr) 廣韻知組
@@ -243,6 +241,7 @@ speller:
     - derive/(g|k)y/$1wy/                   # 全拼(g|k|h[w]y)
     - derive/^ngy/ngjy/                     # 全拼(ng[j]y)
     - derive/jaa(?=\d)/jiaa$1/              # 全拼(j[i]aa)
+    - derive/jo(ng|k)/jio$1/                # 全拼(j[i]o)
     
     #簡拼
     #- derive/^([aeiou])/q$1/               # 喉塞音(q~)
