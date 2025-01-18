@@ -1,15 +1,18 @@
 # Rime schema
 # encoding: utf-8
 
+__include: gukwan.schema:/
+
 schema:
-  schema_id: gukwan
-  name: 菊韻
+  schema_id: gukwan-fanwan
+  name: 菊韻分韻音
   version: "4.2b"
   author:
     靈帝（Hoengsaan）
   
   description: |-
     測試階段
+    本方案準確來講爲分韻風竝非眞正分韻音，示範如何自製方案
     ※請務必閱讀方案文件※
     詳細請至本方案github頁。https://github.com/HoengSaan/rime-gukwan
     反查:`粵拼(新) X普音 V倉頡 R假名。聲調可省：v爲平，x爲上，q爲去，單陰雙陽。
@@ -20,60 +23,12 @@ schema:
     - cangjie5
     - kanas
 
-switches:
-  - name: ascii_mode
-    reset: 0
-    states: [ 粵文, 英文 ]
-  - name: full_shape
-    reset: 0
-    states: [ 半角, 全角 ]
-  - name: simplification
-    reset: 0
-    states: [ 深筆, 簡筆 ] 
-  - name: ascii_punct
-    reset: 0
-    states: [ 。，, ．， ]
-    
-menu:
-  page_size: 7
-
-engine:
-  processors:
-    - ascii_composer
-    - recognizer
-    - key_binder
-    - speller
-    - punctuator
-    - selector
-    - navigator
-    - express_editor
-  segmentors:
-    - ascii_segmentor
-    - matcher
-    - affix_segmentor@jyut6ping3
-    - affix_segmentor@luna_pinyin
-    - affix_segmentor@cangjie5
-    - affix_segmentor@kanas
-    - abc_segmentor
-    - punct_segmentor
-    - fallback_segmentor
-  translators:
-    - punct_translator
-    - script_translator
-    - script_translator@jyut6ping3
-    - script_translator@luna_pinyin
-    - script_translator@kanas
-    - table_translator@cangjie5
-  filters:
-    - simplifier
-    - uniquifier
-    - reverse_lookup_filter@reverse_lookup
-
 speller:
   alphabet: zyxwvutsrqponmlkjihgfedcba
   delimiter: " '"
   algebra:
     #範例
+    #大幅度更改最好以gukwan.schema.yaml爲藍本
     #建議參攷範例自行調整，表內無敬請自行增添，部分字或要用個人字庫。
     #刪除行頭井號啓用轉換，行頭鍵入井號停止轉換。
     
@@ -92,20 +47,20 @@ speller:
     - xform/^hj/j/                          # 口音補充(hj->j)：「賢」讀若jin者 多數方音
     #- xform/*hj/h/                         # 口音補充(hj->h)：「賢」讀若hin者 順德石歧
     
-    - xform/^vu(?=\d)/hu$1/                 # 遇攝合口(*u->hu)：「護」讀作fu6 沙田欽廉
-    #- xform/^vu(?=\d)/wu$1/                # 遇攝合口(*u->wu)：「護」讀作wu6 多數方音
+    #- xform/^vu(?=\d)/hu$1/                # 遇攝合口(*u->hu)：「護」讀作fu6 沙田欽廉
+    - xform/^vu(?=\d)/wu$1/                 # 遇攝合口(*u->wu)：「護」讀作wu6 多數方音
     
-    #聲母——分韻
-    - derive/^(z|c|s)jy(?=\d)/$1y/          # 師韻不分精照
-    - derive/^(z|c|s)hy(?=\d)/$1y/          # 師韻不分精照
-    - derive/^ngi/nji/                      # 疑母齶化(ngi->nji)
-    - derive/^ngiuk/njuk/                   # 疑母齶化(ngiuk->njuk)
-    - derive/^ngy/njy/                      # 疑母齶化(ngy->njy)
-    - derive/^ngw/w/                        # 疑合脫落(ngw->w)
-    - derive/^ngun(?=\d)/wun$1/             # 疑合脫落(ngw->w)
-    - derive/^hw/f/                         # 曉合輕脣(hw->f)
-    - derive/^hu(?=\d)/fu$1/                # 曉合輕脣(hu->fu)
-    - derive/^kwing(?=\d)/king$1/
+    #聲母——分韻（現代音無用）
+    - xform/^(z|c|s)jy(?=\d)/$1y/           # 師韻不分精照
+    - xform/^(z|c|s)hy(?=\d)/$1y/           # 師韻不分精照
+    - xform/^ngi/nji/                       # 疑母齶化(ngi->nji)
+    - xform/^ngiuk/njuk/                    # 疑母齶化(ngiuk->njuk)
+    - xform/^ngy/njy/                       # 疑母齶化(ngy->njy)
+    - xform/^ngw/w/                         # 疑合脫落(ngw->w)
+    - xform/^ngun(?=\d)/wun$1/              # 疑合脫落(ngw->w)
+    - xform/^hw/f/                          # 曉合輕脣(hw->f)
+    - xform/^hu(?=\d)/fu$1/                 # 曉合輕脣(hu->fu)
+    - xform/^kwing(?=\d)/king$1/
 
     #聲母——現代
     #- derive/^(z|c|s)h/$1/                 # 精照合流(zh->z)
@@ -113,24 +68,17 @@ speller:
     #- derive/^(z|c|s)j(?!yo)/$1/           # 精照合流(ch->c)
     #- derive/^(z|c)r/$1/                   # 精照合流(sj->s)
     #- derive/^nj/j/                        # 日以合流(nj->j)
-    #- derive/^ngi/ji/                      # 疑母齶化(ngi->ji)
-    #- derive/^ngiuk/juk/                   # 疑母齶化(ngi->ji)
-    #- derive/^ngy/jy/                      # 疑母齶化(ngy->jy)
-
-    #聲母——增廣
-    #- derive/^hw/w/                        # 示範：「花」讀作waa
-    #- derive/^j(i|y)/h$1                   # 示範：「以」讀作hi
     
     #韻母
     - derive/eau(?=\d)/au/                  # 合音
     - derive/eau(?=\d)/ou/                  # 合音
-    - derive/ooi(?=\d)/ui/                  # (ooi->eoy)
+    #- derive/ooi(?=\d)/ui/                 # (ooi->ui)
 
     #韻母——分韻（非現代音建議維持）
     - derive/yo(?=\d)/yu/                   # 遇開分韻(yo->yu)
-    - derive/yi(?=\d)/ui/                   # 蟹合分韻(yi->ui)
+    - xform/yi(?=\d)/ui/                    # 蟹合分韻(yi->ui)
     - derive/ooi(?=\d)/eoy/                 # 其他分韻(ooi->eoy)
-    - derive/oo(?=\d)/ou/                   # 效一分韻(oo->ou)
+    - xform/oo(?=\d)/ou/                    # 效一分韻(oo->ou)
     
     #韻母——現代
     #其他口音請自行調校 不建議關閉打字輔助
@@ -144,39 +92,39 @@ speller:
     #- xform/y(?=\d)/yu/                    # 止攝師韻圓脣(y->yu)：「仕」讀若syu 不建議開啓
     #- derive/^(z|c|s)ji(?=\d)/$1ii/        # 止開照組異拼(ji->ii)
     
-    - derive/^ngu(?=\d)/ng/                           # 遇開一單獨成韻(ngu->ng)：「吳」讀若ng
-    - derive/^(b|p|m|d|t|n|l|z|c|s|sh)u(?=\d)/$1au/   # 遇攝裂化(u->au)：「都」讀若dau
+    - xform/^ngu(?=\d)/ng/                            # 遇開一單獨成韻(ngu->ng)：「吳」讀若ng
+    #- derive/^(b|p|m|d|t|n|l|z|c|s|sh)u(?=\d)/$1au/  # 遇攝裂化(u->au)：「都」讀若dau
     #- derive/^(b|p|m|d|t|n|l|z|c|s|sh)u(?=\d)/$1ou/  # 遇攝裂化(u->ou)：「都」讀若dou
     
-    - derive/^(z|c|s|n|l)yo(?=\d)/$1eoy/    # 遇開三(yo->eoy)：「旅」讀若leoy
+    #- derive/^(z|c|s|n|l)yo(?=\d)/$1eoy/   # 遇開三(yo->eoy)：「旅」讀若leoy
     #- derive/^(g|k|h)yo(?=\d)/$1eoy/       # 遇開三(yo->eoy)：「去」讀若heoy
     #- derive/^(g|k|h|j)yo(?=\d)/$1yu/      # 遇開三(yo->yu)：「去」讀若hyu
     
-    - derive/^(z|c|n|l)yu(?=\d)/$1eoy/      # 遇合三裂化(yu->eoy)：「聚」讀若zeoy
+    #- derive/^(z|c|n|l)yu(?=\d)/$1eoy/     # 遇合三裂化(yu->eoy)：「聚」讀若zeoy
     #- derive/^(s)yu(?=\d)/$1eoy/           # 遇合三裂化(yu->eoy)：「須」讀若seoy
     #- derive/^(g|k|h)yu(?=\d)/$1eoy/       # 遇合三裂化(yu->eoy)：「巨」讀若geoy
     
-    - derive/^(z|c)yi(?=\d)/$1eoy/          # 蟹合一(yi->eoy)：「最」讀若zeoy
+    #- derive/^(z|c)yi(?=\d)/$1eoy/         # 蟹合一(yi->eoy)：「最」讀若zeoy
     #- derive/^(s)yi(?=\d)/$1eoy/           # 蟹合一(yi->eoy)：「碎」讀若seoy
     #- derive/^(s)yi(?=\d)/$1yu/            # 蟹合一(yi->yu)「碎」讀若syu
     #- derive/^(d|t|n|l)yi(?=\d)/$yu/       # 蟹合一(yi->yu)「對」讀若dyu
     #- derive/yi(?=\d)/eoy/                 # 蟹合一(yi->eoy)：皆讀作eoy者可用，其他關閉
-    - derive/yi(?=\d)/yu/                   # 蟹合一(yi->yu)：皆讀作yu者可用，其他關閉
+    #- derive/yi(?=\d)/yu/                  # 蟹合一(yi->yu)：皆讀作yu者可用，其他關閉
     
     #- derive/eo(n|t)(?=\d)/a$1/            # 臻攝混音(ea->a)：「順」讀若san 多只見於白讀音
     
-    - derive/oo(?=\d)/o$1/                  # 效一元音融合(oo->o)：「高」讀若go
+    #- derive/oo(?=\d)/o$1/                 # 效一元音融合(oo->o)：「高」讀若go
     
-    - derive/iaa(?=\d)/e$1/                 # 果假元音融合(iaa->e)：「車」讀若ce
-    - derive/jaa(?=\d)/je$1/                # 果假元音融合(jaa->je)：「野」讀若je
+    - xform/iaa(?=\d)/e$1/                  # 果假元音融合(iaa->e)：「車」讀若ce
+    - xform/jaa(?=\d)/je$1/                 # 果假元音融合(jaa->je)：「野」讀若je
     
-    - derive/io(ng|k)/oe$1/                 # 宕攝元音融合(io->oe) ：「量」讀若loeng
-    - derive/jo(ng|k)/joe$1/                # 宕攝元音融合(jo->joe) ：「央」讀央joeng
+    - xform/io(ng|k)/oe$1/                  # 宕攝元音融合(io->oe) ：「量」讀若loeng
+    - xform/jo(ng|k)/joe$1/                 # 宕攝元音融合(jo->joe) ：「央」讀央joeng
     
-    - derive/ae(u|n|m|t|p)(?=\d)/aa$1/      # 山效咸文(ae->aa)：「關」讀若gwaan
-    - derive/ae(u|n|m|t|p)(?=\d)/e$1/       # 山效咸白(ae->e)：「關」讀若gwen 多只見於白讀音
+    - xform/ae(u|n|m|t|p)(?=\d)/aa$1/       # 山效咸文(ae->aa)：「關」讀若gwaan
+    #- derive/ae(u|n|m|t|p)(?=\d)/e$1/      # 山效咸白(ae->e)：「關」讀若gwen 多只見於白讀音
     
-    - derive/o(m|p)(?=\d)/a$1/              # 咸攝音變(o->a)：「甘」讀若gam
+    #- derive/o(m|p)(?=\d)/a$1/             # 咸攝音變(o->a)：「甘」讀若gam
 
     #韻母——長短音混
     #- derive/ap(?=\d)/aap$1/               # ap同aap混 
@@ -212,7 +160,7 @@ speller:
     #打字輔助——照組h拼法
     - derive/^(z|c|s|n)j/$1h/               # 打字輔助A組(-j->-h) 廣韻章組（h拼法）
     - derive/^(z|c)r/$1h/                   # 打字輔助A組(-r->-h) 廣韻知組（h拼法）
-    - derive/^(z|c|s)jiong/$1jong/          # 打字輔助A組
+    - derive/^(z|c|s)jiong/$1jong/          # 打字輔助A組 
     - derive/^(z|c|s)jiaa/$1jaa/            # 打字輔助A組
 
     #打字輔助——照組j拼法
@@ -236,7 +184,7 @@ speller:
     #- derive/^z/dz/                        # 教院拼音
     #- derive/^c/ts/                        # 教院拼音
     #- derive/y(?=\d)/z/                    # 英華拼法(y->z)
-    #- derive/y(?=\d)/ii/                   # 擴展粵拼(y->ii)
+    - derive/y(?=\d)/ii/                    # 擴展粵拼(y->ii)
 
     #全拼
     - derive/(g|k|h)u/$1wu/                 # 全拼(g|k|h[w]u)
@@ -285,6 +233,7 @@ speller:
 
 translator:
   dictionary: gukwan
+  prism: gukwan-fanwan
   spelling_hints: 9
   preedit_format:
     - xform/([aeiouymngptk])vv/${1}4/
@@ -293,94 +242,3 @@ translator:
     - xform/([aeiouymngptk])v/${1}1/
     - xform/([aeiouymngptk])x/${1}2/
     - xform/([aeiouymngptk])q/${1}3/
-
-jyut6ping3:
-  tag: jyut6ping3
-  dictionary: jyut6ping3
-  enable_user_dict: false
-  prefix: "`"
-  suffix: ";"
-  tips: 〔粵拼〕
-  preedit_format:
-    - xform/([aeiouymngptk])vv/${1}4/
-    - xform/([aeiouymngptk])xx/${1}5/
-    - xform/([aeiouymngptk])qq/${1}6/
-    - xform/([aeiouymngptk])v/${1}1/
-    - xform/([aeiouymngptk])x/${1}2/
-    - xform/([aeiouymngptk])q/${1}3/
-
-luna_pinyin:
-  tag: luna_pinyin
-  dictionary: luna_pinyin
-  enable_user_dict: false
-  prefix: "X"
-  suffix: ";"
-  tips: 〔普拼〕
-  preedit_format:
-    - xform/([nl])v/$1ü/
-    - xform/([nl])ue/$1üe/
-    - xform/([jqxy])v/$1u/
-
-cangjie5:
-  tag: cangjie5
-  dictionary: cangjie5
-  enable_user_dict: false
-  prefix: "V"
-  suffix: ";"
-  tips: 〔倉頡〕
-  preedit_format:
-    - 'xform/^([a-z]*)$/$1\t（\U$1\E）/'
-    - "xlit|ABCDEFGHIJKLMNOPQRSTUVWXYZ|日月金木水火土竹戈十大中一弓人心手口尸廿山女田難卜符|"
-  comment_format:
-    - "xlit|abcdefghijklmnopqrstuvwxyz~|日月金木水火土竹戈十大中一弓人心手口尸廿山女田難卜符～|"
-  disable_user_dict_for_patterns:
-    - "^z.*$"
-    - "^yyy.*$"
-
-kanas:
-  tag: kanas
-  dictionary: kanas
-  enable_user_dict: false
-  prefix: "R"
-  suffix: ";"
-  tips: 〔假名〕
-
-reverse_lookup:
-  tags: [ jyut6ping3, luna_pinyin, cangjie5, kanas ]
-  overwrite_comment: false
-  dictionary: gukwan
-
-emoji_suggestion:
-  opencc_config: emoji.json
-  option_name: emoji_suggestion
-  tips: all
-
-punctuator:
-  import_preset: symbols_cantonese
-
-key_binder:
-  import_preset: default
-
-recognizer:
-  import_preset: default
-  patterns:
-    punct: "^/([0-9]0?|[a-z]+)$"
-    jyut6ping3: "`[a-z']*;?$"
-    luna_pinyin: "^X[a-z']*;?$"
-    cangjie5: "^V[a-z]*;?$"
-    kanas: "^R[a-zA-Z-]*;?$"
-
-style:
-  #font_face: "Shanggu"
-  font_point: 16
-  #horizontal: true
-  #inline_preedit: false
-  layout:
-    border_width: 3
-    candidate_spacing: 5
-    hilite_padding: 2
-    hilite_spacing: 4
-    margin_x: 12
-    margin_y: 12
-    round_corner: 4
-    spacing: 10
