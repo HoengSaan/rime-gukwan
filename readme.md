@@ -13,7 +13,7 @@ This work is licensed under a
 
 **測試階段：預計4月完成**
 
-此爲[RIME | 中州韻輸入法引擎](https://rime.im/)方案，用於輸入粵語沙田方言，拼音基於分韻廣韻以兼容各地方音(如師讀作si1)同廣州化(如弧讀作wu4)既情況。爲兼容性同方便整理，輸入碼同實際拼音有所不同，但可直接以粵拼輸入。
+此爲[RIME | 中州韻輸入法引擎](https://rime.im/)方案，用於輸入粵語（沙田方言），拼音基於分韻廣韻以兼容各地方音(如師syu1 si1兩音)同廣州化(如弧本讀fu4受廣州影響讀wu4)既情況。爲兼容性同方便整理，輸入碼同實際拼音有所不同，但可直接以粵拼輸入。
 
 現有字庫根據excel大批量轉換，有不少紕漏，敬請見諒。廣韻之外字庫未完成，目前缺少現代字同粵字，缺少部份白讀音。由於方案竝無詞庫，建議以粵拼詞庫代替之（須去除輸入碼）。
 
@@ -21,18 +21,12 @@ This work is licensed under a
 
 ###目前現代音皆須調整模糊音規矩方可使用，具體方法請見下方定製段，竝參攷[SpellingAlgebra · rime/home Wiki](https://github.com/rime/home/wiki/SpellingAlgebra)。廣州話（穗港澳）請用[rime/rime-cantonese: Rime Cantonese input schema | 粵語拼音輸入方案](https://github.com/rime/rime-cantonese)###
 
-## 進度
+## 預設方案
 
-- 3.0b（目前版本）
-  - 現代字異體字字庫部分完成（6500條）
-  - 發音修正
-- 2.0b
-  - 拼音方案改定
-  - 發音修正
-- 1.0b（方案雛形）
-  - 添加部分粵語字，粵語特有發音訓讀音等。
-  - 發音修正
-  - 地方方音轉換測試
+- `gukwan.schema.yaml`：調試用・自用
+- `gukwan-fanwan.schema.yaml`：分韻音
+  - 準確來講此方案係分韻風，並不能準確反映所有分韻發音。若欲使用完全分韻音打字，可參攷以下方案：
+    - [GitHub - leimaau/old-Cantonese: Rime Old Cantonese Input Scheme | 《分韻撮要》音系及輸入方案](https://github.com/leimaau/old-Cantonese)
 
 ## 示範
 
@@ -41,13 +35,13 @@ This work is licensed under a
 ## 安裝
 
 1. 安裝RIME（WINDOWS：[小狼毫](https://github.com/rime/weasel)；MacOS：[鼠鬚管](https://github.com/rime/squirrel)；Linux：[Fcitx5](https://github.com/fcitx/fcitx5)、[Fcitx5-Rime](https://github.com/fcitx/fcitx5-rime)；Android：[同文輸入法](https://github.com/osfans/trime)｜[Fcitx5-Android](https://github.com/fcitx5-android/fcitx5-android)、[Fcitx5-Android-Rime](https://github.com/fcitx5-android/fcitx5-android/blob/master/plugin/rime)）
+2. 安裝以下倉庫
+   1. [rime-cantonese](https://github.com/rime/rime-cantonese)（必選，用於反查廣州話、八股文）
+   2. [rime-kanas](https://github.com/HoengSaan/rime-kanas)（可選，用於輸入假名）
+   3. [rime-cantonese-emoji](https://github.com/rime/rime-emoji-cantonese)（可選，用於輸入Emoji）
+   4. **rime-gukwan**（本方案）
 
-2. 安裝以下方案
-   1. [rime-cantonese](https://github.com/rime/rime-cantonese)（必選，反查八股文用）
-   2. [rime-kanas](https://github.com/HoengSaan/rime-kanas)（可選，假名用）
-   3. **rime-gukwan**（本方案）
-
-用家可參攷以下文章，先安裝RIME，再安裝方案。
+用家可參攷以下文章：
 
 - [Home · rime/rime-cantonese Wiki](https://github.com/rime/rime-cantonese/wiki)（多平臺）
 - [Android 上的 RIME 输入法 trime 同文输入法使用 | Verne in GitHub](https://blog.einverne.info/post/2021/04/use-trime-input-method-rime-on-android.html#安装和基础使用)（Android：同文）
@@ -62,7 +56,7 @@ Android亦可選擇小企鵝（fcitx5），但安裝對一般用家來講較爲�
 6. 於Android設備解壓文件並送至`/Android/data/org.fcitx.fcitx5.android/files/data/rime/`。
    1. 普通用家須從Fcitx5進入。Fcitx5→Addons→Rime設定（齒輪符號）→User data dir→OK即可移動，左邊即有選單。將解壓後既文件全數Copy，然後送至上述地址（左邊選單→Fcitx5 for Android→rime）。
    1. Root用家直接連接電腦即可傳送文件，毋須經過以上麻煩步驟。
-7. 配置文件：開啓Fcitx5鍵盤竝切換至Rime輸入法，用左上角「>」符號開工具列，再撳「…」開輸入法設定，最後撳Reload Config等待輸入法配置完成。
+7. 配置文件：開啓Fcitx5鍵盤竝切換至Rime輸入法，用左上角「>」符號開工具列，再撳「…」開輸入法設定，最後撳Reload Config等待輸入法配置完成。 
 
 ## 輸入
 
@@ -79,7 +73,6 @@ Android亦可選擇小企鵝（fcitx5），但安裝對一般用家來講較爲�
     - 應歸陽平
   - 上陰入（1｜5）：`v`
   - 新入（2｜24）：`x`
-    - 目前字表無收變調音
   - 下陰入（3｜3）：`q`
 - 陽：雙擊
   - 陽平（4｜42）：`vv`
@@ -115,18 +108,15 @@ Android亦可選擇小企鵝（fcitx5），但安裝對一般用家來講較爲�
 本方案聲母極其簡單，同分韻竝無大區別，現代音請直接將此部份所有轉換規全數啓用。
 
 ```yaml
-    #聲母——古音
-    #拼音以古音爲準，建議全開
-    - derive/^(z|c|s)h/$1/                 # 精照合流
-    - derive/^(z|c|s)j(?!yo)/$1/           # 精照合流
-    - derive/^(z|c)r/$1/                   # 精照合流
-    - derive/^(z|c|s)jy(?=\d)/$1y/          # 止開師韻(jy->y) 特
-    - derive/^(z|c|s)hy(?=\d)/$1y/          # 止開師韻(hy->y) 特
-    - derive/^nj/j/                         # 日以合流(nj->j)
-    - derive/^ngi/nji/                      # 疑日(ngi->nji)
-    - derive/^ngy/njy/                      # 疑日(ngy->njy)
-    - derive/^ngi/ji/                       # 疑日(ngi->ji)
-    - derive/^ngy/jy/                       # 疑日(ngy->jy)
+    #聲母——現代
+    #- derive/^(z|c|s)h/$1/                 # 精照合流(zh->z)
+    #- derive/^(zj|cj|sj)yo(?=\d)/$1yu/     # 精照合流
+    #- derive/^(z|c|s)j(?!yo)/$1/           # 精照合流(ch->c)
+    #- derive/^(z|c)r/$1/                   # 精照合流(sj->s)
+    #- derive/^nj/j/                        # 日以合流(nj->j)
+    #- derive/^ngi/ji/                      # 疑母齶化(ngi->ji)
+    #- derive/^ngiuk/juk/                   # 疑母齶化(ngi->ji)
+    #- derive/^ngy/jy/                      # 疑母齶化(ngy->jy)
 ```
 
 ### 韻母定製
