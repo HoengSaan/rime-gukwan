@@ -4,7 +4,7 @@
 schema:
   schema_id: gukwan
   name: 菊韻
-  version: "4.3b"
+  version: "4.4b"
   author:
     靈帝（Hoengsaan）
   
@@ -102,8 +102,8 @@ speller:
     #聲母——分韻
     - derive/^(z|c|s)jy(?=\d)/$1y/          # 師韻不分精照
     - derive/^(z|c|s)hy(?=\d)/$1y/          # 師韻不分精照
-    - derive/^ngi/nji/                      # 疑母齶化(ngi->nji)
     - derive/^ngiuk/njuk/                   # 疑母齶化(ngiuk->njuk)
+    - derive/^ngi/nji/                      # 疑母齶化(ngi->nji)
     - derive/^ngy/njy/                      # 疑母齶化(ngy->njy)
     - derive/^ngw/w/                        # 疑合脫落(ngw->w)
     - derive/^ngun(?=\d)/wun$1/             # 疑合脫落(ngw->w)
