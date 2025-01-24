@@ -19,13 +19,13 @@ This work is licensed under a
 
 現有字庫根據excel大批量轉換，有不少紕漏，敬請見諒。廣韻之外字庫未完成，目前缺少現代字同粵字，缺少部份白讀音。由於方案竝無詞庫，建議以粵拼詞庫代替之（須去除輸入碼）。
 
-菊韻無法兼顧所有粵語方言，亦竝非本方案之目的。本方案並非廣州話方案，廣州話（穗港澳）請用[rime/rime-cantonese: Rime Cantonese input schema | 粵語拼音輸入方案](https://github.com/rime/rime-cantonese)###
+菊韻無法兼顧所有粵語方言，亦竝非本方案之目的。本方案並非廣州話方案，廣州話（穗港澳）請用[rime/rime-cantonese: Rime Cantonese input schema | 粵語拼音輸入方案](https://github.com/rime/rime-cantonese)
 
 ### 沙田方言
 
-所謂沙田方言，多爲文件資料上既講法，實際上無幾個人眞係聽過呢個講法。不過沙田話亦都係貼切既，因爲渠分佈既地方以前基本上眞係沙田，呢幾十年工業發展先填起來既。
+所謂沙田方言，多爲文件資料上既講法，實際上無幾個人眞係聽過呢個講法。不過沙田話亦都係貼切既，因爲渠分佈既地方以前基本上眞係田基，呢幾十年工業發展先填起來既。
 
-雖然好多人講到中山既語言，多會諗到石歧話，但係其實最爲廣泛係呢個所謂沙田方言。沙田方言分佈中山北部爲主：詳細爲小欖、東昇、坦背、橫欄、東鳳、阜沙、南頭、黃圃、民眾、浪網、沙蓢、橫門、板芙、坦洲、港口以上各鎮。同疍家
+雖然好多人講到中山既語言，多會諗到石歧話，但係其實最爲廣泛係呢個所謂沙田方言。沙田方言分佈中山北部爲主：詳細爲小欖、東昇、坦背、橫欄、東鳳、阜沙、南頭、黃圃、民眾、浪網、沙蓢、橫門、板芙、坦洲、港口以上各鎮。
 
 由於方音近似順德，出到去唔少人聞到都以爲係順德話，雖然大體確實如此，但係細節上不然。
 
@@ -36,11 +36,6 @@ This work is licensed under a
   - 準確來講此方案係分韻風，並不能準確反映所有分韻發音。若欲使用完全分韻音打字，可參攷以下方案：[leimaau/old-Cantonese: Rime Old Cantonese Input Scheme | 《分韻撮要》音系及輸入方案](https://github.com/leimaau/old-Cantonese)
 - `gukwan-fanwan.schema.yaml`：廣州音
   - 準確來講此方案係廣州風，並不能準確反映所有廣州發音。若欲使用完全廣州音打字，可參攷以下方案：[rime/rime-cantonese: Rime Cantonese input schema | 粵語拼音輸入方案](https://github.com/rime/rime-cantonese)
-
-
-## 示範
-
-<img src="pic\showcase.gif" alt="showcase" style="zoom:100%;" />
 
 ## 安裝
 
@@ -70,7 +65,13 @@ Android亦可選擇小企鵝（fcitx5），但安裝對一般用家來講較爲�
 
 ## 輸入
 
-拼音方案基於粵拼，現代音（今音）同粵拼無區別，直接使用即可。
+拼音方案基於擴展粵拼，現代音（今音）同粵拼無區別，直接使用即可。
+
+註：師韻默認y，擴展粵拼標準爲ii，須手動開啓轉換式。
+
+### 鍵位
+
+<img src="pic\key.png"/>
 
 ### 聲調
 
@@ -95,8 +96,8 @@ Android亦可選擇小企鵝（fcitx5），但安裝對一般用家來講較爲�
 目前方案預設四個反查：
 
 - 粵拼（[rime-cantonese](https://github.com/rime/rime-cantonese)），粵語廣州話反查。鍵值爲<code>`</code>
-- 明月拼音（rime-luna_pinyin），北語普通話反查。鍵值爲`x`。
-- 倉頡五代（rime-cangjie5），倉頡反查。鍵值爲`v`。
+- 明月拼音（rime-luna_pinyin），北語普通話反查。鍵值爲`X`。
+- 倉頡五代（rime-cangjie5），倉頡反查。鍵值爲`V`。
 - 假名（[rime-kanas](https://github.com/HoengSaan/rime-kanas)），以細階輸入平假名，大階輸入片假名。鍵值爲`R`。
 
 **粵拼同假名須安裝方可使用反查**，安裝方法見上方安裝段。如需使用其他方案反查，請自行搜索竝改變方案。

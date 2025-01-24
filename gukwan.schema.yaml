@@ -4,7 +4,7 @@
 schema:
   schema_id: gukwan
   name: 菊韻
-  version: "5.1b"
+  version: "5.2b"
   author:
     靈帝（Hoengsaan）
   
@@ -261,6 +261,8 @@ speller:
 
     - derive/^nj/r/                         # 簡拼(nj->r)
     - derive/aa(i|u|m|n|ng|p|t|k)/r$1/      # 簡拼(aa->r)
+
+    - derive/^wu/u/                         # 簡拼(wu->u)
 
     - derive/^jy?([aeiou])/y$1/             # 簡拼(jy->y)
     - derive/yu(?!ng|k)/y/                  # 簡拼(yu->y)
