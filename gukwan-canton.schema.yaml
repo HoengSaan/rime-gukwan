@@ -6,7 +6,7 @@ __include: gukwan.schema:/
 schema:
   schema_id: gukwan-canton
   name: 菊韻廣州音
-  version: "5.1b"
+  version: "4.5b"
   author:
     靈帝（Hoengsaan）
   
@@ -38,23 +38,20 @@ speller:
     
     #聲母——菊韻
 
-    - xform/^nr/[nj]/                       # N爲文讀J爲白讀
-
-    #- derive/^n(?!g|j)/l/                  # 泥來合流(n->l) 沙田方音
+    #- derive/^n(?!g|r|j)/l/                # 泥來合流(n->l) 沙田方音
     #- derive/^t/h/                         # 透曉合流(t->h) 小欖部份
 
     #- derive/^gwo/go/                      # 口音補充(gwo->go)：「過」讀作go
     #- derive/^(g|k)w/$1/                   # 口音補充(gk[!w])：完全不能分辨脣化聲母者
 
     - xform/^hj/j/                          # 口音補充(hj->j)：「賢」讀若jin者 多數方音
-    #- xform/^hj/h/                         # 口音補充(hj->h)：「賢」讀若hin者 順德石歧
+    #- xform/*hj/h/                         # 口音補充(hj->h)：「賢」讀若hin者 順德石歧
     
     #- xform/^vu(?=\d)/hu$1/                # 遇攝合口(*u->hu)：「護」讀作fu6 沙田欽廉
     - xform/^vu(?=\d)/wu$1/                 # 遇攝合口(*u->wu)：「護」讀作wu6 多數方音
     
     #聲母——分韻（現代音無用）
     - xform/^ngiuk/njuk/                    # 疑母齶化(ngiuk->njuk)
-    - xform/^ngiong/njong/                  # 疑母齶化(ngiong->njong)
     - xform/^ngi/nji/                       # 疑母齶化(ngi->nji)
     - xform/^ngy/njy/                       # 疑母齶化(ngy->njy)
     - xform/^ngw/w/                         # 疑合脫落(ngw->w)
@@ -189,7 +186,7 @@ speller:
     #正常情況下毋須郁動，可根據自己喜好調校
     
     - derive/eoy(?=\d)/eoi/                 # 粵拼(eoy->eoi)
-    #- derive/^j([aeiouy])/i$1/             # 澳門拼法
+    - derive/^j([aeiouy])/i$1/              # 澳門拼法
     #- derive/^w([aeiou])/v$1/              # 澳門拼法
     #- derive/^z/dz/                        # 教院拼音
     #- derive/^c/ts/                        # 教院拼音
@@ -202,8 +199,6 @@ speller:
     - derive/^ngy/ngjy/                     # 全拼(ng[j]y)
     - derive/^jaa(?=\d)/jiaa$1/             # 全拼(j[i]aa)
     - derive/^jo(ng|k)/jio$1/               # 全拼(j[i]o)
-    - derive/^njaa(?=\d)/njiaa$1/           # 全拼(j[i]aa)
-    - derive/^njo(ng|k)/njio$1/             # 全拼(j[i]o)
     
     #簡拼
     #- derive/^([aeiou])/q$1/               # 喉塞音(q~)
@@ -262,9 +257,8 @@ translator:
 
     - xform/^(z|c|s)jy(?=\d)/$1y/           # 師韻不分精照
     - xform/^(z|c|s)hy(?=\d)/$1y/           # 師韻不分精照
-    - xform/^ngiuk/njuk/                    # 疑母齶化(ngiuk->njuk)
-    - xform/^ngiong/njong/                  # 疑母齶化(ngiong->njong)
     - xform/^ngi/nji/                       # 疑母齶化(ngi->nji)
+    - xform/^ngiuk/njuk/                    # 疑母齶化(ngiuk->njuk)
     - xform/^ngy/njy/                       # 疑母齶化(ngy->njy)
     - xform/^ngw/w/                         # 疑合脫落(ngw->w)
     - xform/^ngun(?=\d)/wun$1/              # 疑合脫落(ngw->w)
