@@ -6,7 +6,7 @@
 
 ---
 name: gukwan.basic
-version: "5.0b"
+version: "5.1"
 sort: by_weight
 ...
 
@@ -549,14 +549,14 @@ sort: by_weight
 𪄉	jung1	0%
 㻾	jung1	0%
 𧴗	jung1	0%
-醲	nung4	0%
-𨑊	nung4	0%
-濃	nung4	
-襛	nung4	0%
-穠	nung4	0%
-檂	nung4	0%
-𪒬	nung4	0%
-𨲳	nung4	0%
+醲	nrung4	0%
+𨑊	nrung4	0%
+濃	nrung4	
+襛	nrung4	0%
+穠	nrung4	0%
+檂	nrung4	0%
+𪒬	nrung4	0%
+𨲳	nrung4	0%
 重	crung4	
 穜	crung4	0%
 緟	crung4	0%
@@ -690,14 +690,14 @@ sort: by_weight
 𥆙	mong4	0%
 痝	mong4	0%
 𠈵	mong4	0%
-𦗳	nong4	0%
-𣰊	nong4	0%
-涳	nong4	0%
-噥	nong4	0%
-𩟊	nong4	0%
-鬞	nong4	0%
-䁸	nong4	0%
-𪆯	nong4	0%
+𦗳	nrong4	0%
+𣰊	nrong4	0%
+涳	nrong4	0%
+噥	nrong4	0%
+𩟊	nrong4	0%
+鬞	nrong4	0%
+䁸	nrong4	0%
+𪆯	nrong4	0%
 囪	chiong1	0%
 窻	chiong1	
 牕	chiong1	0%
@@ -2224,12 +2224,12 @@ sort: by_weight
 沮	zho1	0%
 蜍	sjyo4	
 𧄔	sjyo4	0%
-袽	nyo4	0%
-帤	nyo4	0%
-𣭠	nyo4	0%
-蒘	nyo4	0%
-𣖹	nyo4	0%
-挐	nyo4	0%
+袽	njyo4	0%
+帤	njyo4	0%
+𣭠	njyo4	0%
+蒘	njyo4	0%
+𣖹	njyo4	0%
+挐	njyo4	0%
 虞	ngyu4	
 𩦢	ngyu4	0%
 愚	ngyu4	
@@ -3858,7 +3858,7 @@ sort: by_weight
 蔩	jan4	0%
 螾	jan4	0%
 𡐔	jan4	0%
-紉	nan4	
+紉	njan4	
 繽	pan1	0%
 䎙	pan1	0%
 𩴱	pan1	0%
@@ -19402,11 +19402,11 @@ sort: by_weight
 鷲	zau6	0%
 殧	zau6	0%
 㠇	zau6	0%
-糅	nau6	
-𩚖	nau6	0%
-腬	nau6	
-猱	nau6	
-狃	nau6	0%
+糅	njau6	
+𩚖	njau6	0%
+腬	njau6	
+猱	njau6	
+狃	njau6	0%
 復	fau6	0%
 𢕒	fau6	0%
 𤸑	fau6	0%
