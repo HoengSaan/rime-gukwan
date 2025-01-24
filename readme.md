@@ -13,20 +13,30 @@ This work is licensed under a
 
 **測試階段：預計4月完成**
 
-此爲[RIME | 中州韻輸入法引擎](https://rime.im/)方案，用於輸入粵語（沙田方言），拼音基於分韻廣韻以兼容各地方音(如師syu1 si1兩音)同廣州化(如弧本讀fu4受廣州影響讀wu4)既情況。爲兼容性同方便整理，輸入碼同實際拼音有所不同，但可直接以粵拼輸入。
+## 簡介
+
+此爲[RIME | 中州韻輸入法引擎](https://rime.im/)方案，用於輸入粵語之所謂沙田方言，拼音基於分韻廣韻以兼容各地方音(如師syu1 si1兩音)同廣州化(如弧本讀fu4受廣州影響讀wu4)既情況。爲兼容性同方便整理，輸入碼同實際拼音有所不同，但可直接以粵拼輸入。
 
 現有字庫根據excel大批量轉換，有不少紕漏，敬請見諒。廣韻之外字庫未完成，目前缺少現代字同粵字，缺少部份白讀音。由於方案竝無詞庫，建議以粵拼詞庫代替之（須去除輸入碼）。
 
-菊韻無法兼顧所有粵語方言，亦竝非本方案之目的。
+菊韻無法兼顧所有粵語方言，亦竝非本方案之目的。本方案並非廣州話方案，廣州話（穗港澳）請用[rime/rime-cantonese: Rime Cantonese input schema | 粵語拼音輸入方案](https://github.com/rime/rime-cantonese)###
 
-###目前現代音皆須調整模糊音規矩方可使用，具體方法請見下方定製段，竝參攷[SpellingAlgebra · rime/home Wiki](https://github.com/rime/home/wiki/SpellingAlgebra)。廣州話（穗港澳）請用[rime/rime-cantonese: Rime Cantonese input schema | 粵語拼音輸入方案](https://github.com/rime/rime-cantonese)###
+### 沙田方言
+
+所謂沙田方言，多爲文件資料上既講法，實際上無幾個人眞係聽過呢個講法。不過沙田話亦都係貼切既，因爲渠分佈既地方以前基本上眞係沙田，呢幾十年工業發展先填起來既。
+
+雖然好多人講到中山既語言，多會諗到石歧話，但係其實最爲廣泛係呢個所謂沙田方言。沙田方言分佈中山北部爲主：詳細爲小欖、東昇、坦背、橫欄、東鳳、阜沙、南頭、黃圃、民眾、浪網、沙蓢、橫門、板芙、坦洲、港口以上各鎮。同疍家
+
+由於方音近似順德，出到去唔少人聞到都以爲係順德話，雖然大體確實如此，但係細節上不然。
 
 ## 預設方案
 
 - `gukwan.schema.yaml`：調試用・自用
 - `gukwan-fanwan.schema.yaml`：分韻音
-  - 準確來講此方案係分韻風，並不能準確反映所有分韻發音。若欲使用完全分韻音打字，可參攷以下方案：
-    - [GitHub - leimaau/old-Cantonese: Rime Old Cantonese Input Scheme | 《分韻撮要》音系及輸入方案](https://github.com/leimaau/old-Cantonese)
+  - 準確來講此方案係分韻風，並不能準確反映所有分韻發音。若欲使用完全分韻音打字，可參攷以下方案：[leimaau/old-Cantonese: Rime Old Cantonese Input Scheme | 《分韻撮要》音系及輸入方案](https://github.com/leimaau/old-Cantonese)
+- `gukwan-fanwan.schema.yaml`：廣州音
+  - 準確來講此方案係廣州風，並不能準確反映所有廣州發音。若欲使用完全廣州音打字，可參攷以下方案：[rime/rime-cantonese: Rime Cantonese input schema | 粵語拼音輸入方案](https://github.com/rime/rime-cantonese)
+
 
 ## 示範
 
@@ -114,19 +124,35 @@ Android亦可選擇小企鵝（fcitx5），但安裝對一般用家來講較爲�
     #- derive/^(z|c|s)j(?!yo)/$1/           # 精照合流(ch->c)
     #- derive/^(z|c)r/$1/                   # 精照合流(sj->s)
     #- derive/^nj/j/                        # 日以合流(nj->j)
-    #- derive/^ngi/ji/                      # 疑母齶化(ngi->ji)
-    #- derive/^ngiuk/juk/                   # 疑母齶化(ngi->ji)
-    #- derive/^ngy/jy/                      # 疑母齶化(ngy->jy)
 ```
 
 ### 韻母定製
 
 請閣下詳細閱讀下方韻母段。
 
+## 特徵表
+
+關於韻母區別對比詳細見韻母表段。
+
+| 特徵表             | 例              | 菊韻 | 沙田     | 分韻 | 廣州^穗港澳^ |
+| ------------------ | --------------- | ---- | -------- | ---- | ------------ |
+| 區分精照           | 精(z)貞(zh)     | 是   | 否       | 是   | 否           |
+| 區分來孃(l/n)      | 靈(l)寧(n)      | 是   | 方音有別 | 是   | 老派         |
+| 區分透曉(t/h)      | 聽(t)輕(h)      | 是   | 方音有別 | 是   | 是           |
+| 疑母細音齶化       | 疑(ng)兒(nj)    | 否   | 是       | 是   | 是           |
+| 區分日以(nj/j)     | 日(nj)逸(j)     | 是   | 否       | 是   | 否           |
+| 曉合口讀脣齒(hw/f) | 虎(fu)化(faa)   | 否   | 是       | 是   | 是           |
+| 匣母遇攝讀wu       | 壺護互(hu/wu)   | 否   | 方音有別 | 是   | 是           |
+| 有無師韻(y)        | 詩(i)師(y)      | 有   | 無(i/yu) | 有   | 無(i)        |
+| 有無介音(io/iaa)   | 良(iong)茄(iaa) | 有   | 無       | 有   | 無           |
+| 山咸效攝是否有白讀 | 扁(aan/en)      |      | 是       |      | 否           |
+| 區分見系咸一深攝   | 甘(om)今(am)    | 是   | 老派     | 否   | 否           |
+| 陰去歸陽平         |                 | 否   | 方音有別 | 否   | 否           |
+
 ## 拼音表
 
 <img src="pic\gujam1.png"/>
 
-## 韻母
+## 韻母表
 
 <img src="pic\wanmaubiu.png" style="zoom: 150%;" />
