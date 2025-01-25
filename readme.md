@@ -11,6 +11,8 @@ This work is licensed under a
 [cc-by-nc-sa-image]: https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png
 [cc-by-nc-sa-shield]: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg
 
+`gukwan.temp.dict.yaml`爲`jyut6ping3.words.dict.yaml`無輸入碼版本，作者爲粵語計算語言學基礎建設組」([@CanCLID](https://github.com/CanCLID)) ，證書跟隨源文件爲[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)。
+
 **測試階段：預計4月完成**
 
 ## 簡介
@@ -29,19 +31,34 @@ This work is licensed under a
 
 由於方音近似順德，出到去唔少人聞到都以爲係順德話，雖然大體確實如此，但係細節上不然。
 
-## 預設方案
+## 文件結構
+
+### 方案
 
 - `gukwan.schema.yaml`：調試用・自用
-- `gukwan-fanwan.schema.yaml`：分韻音
-  - 準確來講此方案係分韻風，並不能準確反映所有分韻發音。若欲使用完全分韻音打字，可參攷以下方案：[leimaau/old-Cantonese: Rime Old Cantonese Input Scheme | 《分韻撮要》音系及輸入方案](https://github.com/leimaau/old-Cantonese)
-- `gukwan-fanwan.schema.yaml`：廣州音
-  - 準確來講此方案係廣州風，並不能準確反映所有廣州發音。若欲使用完全廣州音打字，可參攷以下方案：[rime/rime-cantonese: Rime Cantonese input schema | 粵語拼音輸入方案](https://github.com/rime/rime-cantonese)
+- 古代音
+  - `gukwan-fanwan.schema.yaml`：分韻音
+    - 準確來講此方案係分韻風，並不能準確反映所有分韻發音。若欲使用完全分韻音打字，可參攷以下方案：[leimaau/old-Cantonese: Rime Old Cantonese Input Scheme | 《分韻撮要》音系及輸入方案](https://github.com/leimaau/old-Cantonese)
+- 現代音
+  - `gukwan-fanwan.schema.yaml`：廣州音
+    - 準確來講此方案係廣州風，並不能準確反映所有廣州發音。若欲使用完全廣州音打字，可參攷以下方案：[rime/rime-cantonese: Rime Cantonese input schema | 粵語拼音輸入方案](https://github.com/rime/rime-cantonese)
+
+### 字詞
+
+`gukwan.dict.yaml`用於調用字庫詞庫，默認亦調用rime-cantonese部份詞庫。
+
+- 字庫
+  - `gukwan.basic.dict.yaml`：廣韻字庫
+  - `gukwan.one.dict.yaml`：增廣一組廣韻異音訓讀增補
+  - `gukwan.two.dict.yaml`：增廣二組今字異字異音訓讀增補
+- 詞庫
+  - `gukwan.temp.dict.yaml`：`jyut6ping3.words.dict.yaml`無輸入碼版本
 
 ## 安裝
 
 1. 安裝RIME（WINDOWS：[小狼毫](https://github.com/rime/weasel)；MacOS：[鼠鬚管](https://github.com/rime/squirrel)；Linux：[Fcitx5](https://github.com/fcitx/fcitx5)、[Fcitx5-Rime](https://github.com/fcitx/fcitx5-rime)；Android：[同文輸入法](https://github.com/osfans/trime)｜[Fcitx5-Android](https://github.com/fcitx5-android/fcitx5-android)、[Fcitx5-Android-Rime](https://github.com/fcitx5-android/fcitx5-android/blob/master/plugin/rime)）
 2. 安裝以下倉庫
-   1. [rime-cantonese](https://github.com/rime/rime-cantonese)（必選，用於反查廣州話、八股文）
+   1. [rime-cantonese](https://github.com/rime/rime-cantonese)（必選，用於反查廣州話、八股文、部份詞庫）
    2. [rime-kanas](https://github.com/HoengSaan/rime-kanas)（可選，用於輸入假名）
    3. [rime-cantonese-emoji](https://github.com/rime/rime-emoji-cantonese)（可選，用於輸入Emoji）
    4. **rime-gukwan**（本方案）
