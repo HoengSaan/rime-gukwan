@@ -6,13 +6,13 @@ __include: gukwan.schema:/
 schema:
   schema_id: gukwan-canton
   name: 菊韻廣州音
-  version: "5.2b"
+  version: "6.0b"
   author:
     靈帝（Hoengsaan）
   
   description: |-
     測試階段
-    本方案準確來講爲分韻風竝非眞正分韻音，用於示範如何自製方案
+    本方案準確來講爲分韻風竝非眞正廣州音，用於示範如何自製方案
     ※請務必閱讀方案文件※
     詳細請至本方案github頁。https://github.com/HoengSaan/rime-gukwan
     反查:`粵拼(新) X普音 V倉頡 R假名。聲調可省：v爲平，x爲上，q爲去，單陰雙陽。
@@ -79,7 +79,6 @@ speller:
     #- derive/yo(?=\d)/yu/                  # 遇開分韻(yo->yu)
     #- derive/yi(?=\d)/ui/                  # 蟹合分韻(yi->ui)
     - xform/ooi(?=\d)/eoy/                  # 其他分韻(ooi->eoy)
-    - xform/oo(?=\d)/ou/                    # 效一分韻(oo->ou)
     
     #韻母——現代
     #其他口音請自行調校 不建議關閉打字輔助
@@ -116,7 +115,7 @@ speller:
     
     #- derive/eo(n|t)(?=\d)/a$1/            # 臻攝混音(ea->a)：「順」讀若san 多只見於白讀音
     
-    #- derive/oo(?=\d)/o$1/                 # 效一元音融合(oo->o)：「高」讀若go
+    #- derive/ou(?=\d)/o$1/                 # 效一元音融合(ou->o)：「高」讀若go
     
     - xform/iaa(?=\d)/e$1/                  # 果假元音融合(iaa->e)：「車」讀若ce
     - xform/jaa(?=\d)/je$1/                 # 果假元音融合(jaa->je)：「野」讀若je
@@ -275,7 +274,6 @@ translator:
     - xform/^kwing(?=\d)/king$1
     
     - xform/ooi(?=\d)/eoy/                  # 其他分韻(ooi->eoy)
-    - xform/oo(?=\d)/ou/                    # 效一分韻(oo->ou)
     
     - xform/^(b|p|f)i(?=\d)/$1ei/           # 止攝裂化脣音(i->ei) ：「備」讀若bei
     - xform/^(d|t|l|n)i(?=\d)/$1ei/         # 止攝裂化齒音(i->ei)：「地」讀若dei

@@ -6,7 +6,7 @@ __include: gukwan.schema:/
 schema:
   schema_id: gukwan-fanwan
   name: 菊韻分韻音
-  version: "5.2b"
+  version: "6.0b"
   author:
     靈帝（Hoengsaan）
   
@@ -81,7 +81,6 @@ speller:
     - derive/yo(?=\d)/yu/                   # 遇開分韻(yo->yu)
     - xform/yi(?=\d)/ui/                    # 蟹合分韻(yi->ui)
     - derive/ooi(?=\d)/eoy/                 # 其他分韻(ooi->eoy)
-    - xform/oo(?=\d)/ou/                    # 效一分韻(oo->ou)
     
     #韻母——現代
     #其他口音請自行調校 不建議關閉打字輔助
@@ -116,7 +115,7 @@ speller:
     
     #- derive/eo(n|t)(?=\d)/a$1/            # 臻攝混音(ea->a)：「順」讀若san 多只見於白讀音
     
-    #- derive/oo(?=\d)/o$1/                 # 效一元音融合(oo->o)：「高」讀若go
+    #- derive/ou(?=\d)/o$1/                 # 效一元音融合(ou->o)：「高」讀若go
     
     - xform/iaa(?=\d)/e$1/                  # 果假元音融合(iaa->e)：「車」讀若ce
     - xform/jaa(?=\d)/je$1/                 # 果假元音融合(jaa->je)：「野」讀若je
@@ -269,7 +268,6 @@ translator:
     
     - xform/yo(?=\d)/yu/                    # 遇開分韻(yo->yu)
     - xform/yi(?=\d)/ui/                    # 蟹合分韻(yi->ui)
-    - xform/oo(?=\d)/ou/                    # 效一分韻(oo->ou)
     
     - xform/^ngu(?=\d)/ng/                  # 遇開一單獨成韻(ngu->ng)：「吳」讀若ng
     

@@ -188,6 +188,8 @@ Android亦可選擇小企鵝（fcitx5），但安裝對一般用家來講較爲�
 
 <img src="pic\gujam1.png"/>
 
+<img src="pic\gujam2.png"/>
+
 ## 韻母表
 
 <img src="pic\wanmaubiu.png" style="zoom: 150%;" />
