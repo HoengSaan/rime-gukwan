@@ -6,7 +6,7 @@
 
 ---
 name: gukwan.one
-version: "6.0b"
+version: "6.1b"
 sort: by_weight
 ...
 
@@ -111,7 +111,7 @@ sort: by_weight
 錍	pei1	
 批	pei1	
 睽	kwai4	3%
-奎	hwui1	
+奎	hui1	
 娃	waa1	
 洼	waa1	
 哇	waa1	
@@ -138,12 +138,12 @@ sort: by_weight
 蚊	man1	
 芫	jim4	
 爰	wun4	
-垣	hwun4	
+垣	hun4	
 援	wun4	
 鶢	wun4	
 媛	wun4	
-洹	hwun4	
-𧻚	hwun4	
+洹	hun4	
+𧻚	hun4	
 鴛	jin1	3%
 㩮	hin1	3%
 掀	kin4	3%
@@ -883,7 +883,7 @@ sort: by_weight
 畜	cruk1	
 蹙	cuk1	
 忸	njuk1	
-酷	hwuk6	
+酷	huk6	
 嚳	gwuk1	
 榷	kok3	
 斲	diok1	
@@ -1094,16 +1094,16 @@ sort: by_weight
 搭	daap3	0%
 遢	taat3	
 䍇	taap3	0%
-榼	hap1	0%
-磕	hap1	0%
-𧛾	hap1	0%
-㕎	hap1	0%
-䶀	hap1	0%
-𨍰	hap1	0%
-鰪	ap1	0%
-盦	ap1	
-廅	ap1	
-𤸱	ap1	
+榼	hop1	0%
+磕	hop1	0%
+𧛾	hop1	0%
+㕎	hop1	0%
+䶀	hop1	0%
+𨍰	hop1	0%
+鰪	op1	0%
+盦	op1	
+廅	op1	
+𤸱	op1	
 頁	jip6	
 睫	zit6	
 䑜	dep1	

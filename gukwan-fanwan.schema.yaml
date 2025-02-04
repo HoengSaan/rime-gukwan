@@ -6,7 +6,7 @@ __include: gukwan.schema:/
 schema:
   schema_id: gukwan-fanwan
   name: 菊韻分韻音
-  version: "6.0b"
+  version: "6.1b"
   author:
     靈帝（Hoengsaan）
   
@@ -49,6 +49,9 @@ speller:
     - xform/^hj/j/                          # 口音補充(hj->j)：「賢」讀若jin者 多數方音
     #- xform/^hj/h/                         # 口音補充(hj->h)：「賢」讀若hin者 順德石歧
     
+    #- xform/^hw/h/                         # 口音補充(hw->h)：「桓」讀若fun者
+    - xform/^hw/w/                          # 口音補充(hw->w)：「桓」讀若wun者
+
     #- xform/^vu(?=\d)/hu$1/                # 遇攝合口(*u->hu)：「護」讀作fu6 沙田欽廉
     - xform/^vu(?=\d)/wu$1/                 # 遇攝合口(*u->wu)：「護」讀作wu6 多數方音
     
@@ -62,7 +65,7 @@ speller:
     - xform/^ngw/w/                         # 疑合脫落(ngw->w)
     - xform/^ngun(?=\d)/wun$1/              # 疑合脫落(ngw->w)
     - xform/^hw/f/                          # 曉合輕脣(hw->f)
-    - xform/^hu(?=\d)/fu$1/                 # 曉合輕脣(hu->fu)
+    - xform/^hu/fu/                         # 曉合輕脣(hu->fu)
     - xform/^kwing(?=\d)/king$1/
 
     #聲母——現代
@@ -251,6 +254,7 @@ translator:
 
   comment_format:
     - xform/^hj/j/                          # 口音補充(hj->j)：「賢」讀若jin者 多數方音
+    - xform/^hw/w/                          # 口音補充(hw->w)：「桓」讀若wun者
     
     - xform/^vu(?=\d)/wu$1/                 # 遇攝合口(*u->wu)：「護」讀作wu6 多數方音
 
@@ -263,7 +267,7 @@ translator:
     - xform/^ngw/w/                         # 疑合脫落(ngw->w)
     - xform/^ngun(?=\d)/wun$1/              # 疑合脫落(ngw->w)
     - xform/^hw/f/                          # 曉合輕脣(hw->f)
-    - xform/^hu(?=\d)/fu$1/                 # 曉合輕脣(hu->fu)
+    - xform/^hu/fu/                         # 曉合輕脣(hu->fu)
     - xform/^kwing(?=\d)/king$1
     
     - xform/yo(?=\d)/yu/                    # 遇開分韻(yo->yu)

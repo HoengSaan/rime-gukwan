@@ -1,0 +1,369 @@
+# Rime dictionary
+# encoding: utf-8
+#
+# gukwan - 菊韻字母
+
+---
+name: gukwan.lettered
+version: "6.1b"
+sort: by_weight
+use_preset_vocabulary: true
+...
+
+# English Alphabet
+A	ei1
+B	bi1
+C	si1
+D	di1
+E	ji1
+F	e1 fu6
+G	zjyu1
+G	zji1
+H	ei1 cjyu6
+I	aai1
+J	zjei1
+K	kei1
+L	e1 leau6
+M	em1
+N	en1
+O	eau1
+P	pi1
+Q	kiu1
+R	aau1 leau6
+S	e1 si6
+T	ti1
+U	ju1
+V	wi1
+W	dap1 bu6 liu6
+X	ek1 si6
+Y	waai1
+Z	ji6 set1
+
+# Based on jyut6ping3.lettered.dict.yaml
+# 詞條數據參考
+# LSHK Jyutping Word List https://corpus.eduhk.hk/JPwordlist/
+# Cantonese dictionary https://words.hk/
+# open Cantonese dictionary http://kaifangcidian.com/han/yue
+# open-source Cantonese-to-English dictionary (CC-Canto) http://www.cccanto.org/
+# Kingsley Bolton, Christopher Hutton. A Dictionary of Cantonese Slang.
+#
+# 碼表製作與校對人員
+# Ayaka Mikazuki <ayaka@mail.shn.hk>
+# chaaklau <chaakming@gmail.com>
+# LeiMaau <leimaau@qq.com>
+# laubonghaudoi <laubonghaudoi@icloud.com>
+# tanxpyox <tanxpyox@gmail.com>
+# William915 <William915@gmail.com>
+# szc126 (@szc126)
+# Bing Jeung <bing@ososo.io>
+
+%	pat6 sen1
+21點	jaa6 jat1 dim2
+AB膠	ei1 bi1 gaeu1
+ABC	ei1 bi1 si1
+AB制	ei1 bi1 zjai3
+AA膠	ei1 ei1 gaeu1
+AA制	ei1 ei1 zjai3
+A4紙	ei1 fo1 zi2
+A貨	ei1 hwo3
+A咖	ei1 kaa1
+AK	ei1 kei1
+AK47	ei1 kei1 si3 cat1
+A0	ei1 ling4
+AO	ei1 ou1
+A片	ei1 pin2
+ACE	ei1 si2
+ATM	ei1 ti1 em1
+AV	ei1 wi1
+AV女優	ei1 wi1 nyo5 jau1
+AV女郎	ei1 wi1 nyo5 long4
+APP	ep1
+Apps	ep1 si2
+Bra	bwaa1
+Bra	baa1
+Buy	baai1
+Bug	bak1
+Baby	bei1 bi4
+Backup	bek1 ap1
+Ban	ben1
+Benz	ben1 si2
+Band	ben1
+BB	bi1 bi1
+BB彈	bi1 bi1 daan2
+BBA	bi1 bi1 ei1
+BB機	bi1 bi1 gi1
+BBQ	bi1 bi1 kiu1
+B超	bi1 criu1
+B型超聲	bi1 jing4 criu1 sjing1
+BT	bi1 ti1
+B站	bi1 zraem6
+B仔	bi1 zaai2
+BB	bi4 bi1
+BB車	bi4 bi1 cjiaa1
+BB牀	bi4 bi1 chong4
+BB櫈	bi4 bi1 dang3
+BB骨	bi4 bi1 gwat1
+BB衫	bi4 bi1 shaem1
+BB話	bi4 bi1 waa2
+BB仔	bi4 bi1 zaai2
+Bingo	bing1 geau4
+Ball	bo1
+BNO	bi1 en1 ou1
+Boy	boi1
+Buffet	peau6 fei1
+Book	buk1
+Book機票	buk1 gi1 piu3
+Book唔到位	buk1 m4 dou2 wai2
+Book位	buk1 wai2
+Book酒店	buk1 zau2 dim3
+Boot	but1
+Boot機	but1 gi1
+Charge	chaa1 zjyu6
+Check	cjek1
+Check-out	cjek1 au1
+Check下	cjek1 haa5
+Check-in	cjek1 jin1
+Cheap	cjip1
+Cheap到痺	cjip1 dou3 bi3
+Cheap嘢	cjip1 nje5
+Chalk粉	chok1 fan2
+Comment	kom1 men4
+Command	kom6 men1
+Club	kap1
+Cut	kat1
+Cut線	kat1 sin3
+Cafe	kat6 fei1
+Café	kat6 fei1
+Close	kat6 leau4 si4
+Cult	kau1
+Care	ke1 aa4
+Casual	ke1 sjeau4
+Cash	ke1 sjyu4
+Carry	ke1 wi4
+Case	kei1 si2
+Cam	kem1
+Camp	kem1
+Claim	kem1
+Claim保險	kem1 bou2 him2
+Claim稅	kem1 sjooi3
+Cancer	ken1 saa6
+Cap	kep1
+Cap帽	kep1 mou2
+Catalog	ket1 taa4 lok4
+Catalogue	ket1 taa4 lok4
+Cake	kik1
+Click	kik1
+Click入去	kik1 njap6 hyo3
+Cream	kwim1
+Cue	kiu1
+Cue頭	kiu1 tau4
+Cute	kiu1
+Cue卡	kiu1 kaat1
+Cue咭	kiu1 kaat1
+cute-cute	kiu1 kiu1
+Coupon	kiu1 pon4
+Cutie	kiu1 ti2
+Call	ko1
+Call白車	ko1 baak6 cjiaa1
+Call機	ko1 gi1
+Course	ko1 si4
+Call台	ko1 toi4
+Call鐘	ko1 zjung1
+Con	kon1
+Chord	kot1
+Cool	ku1
+Cushion	ku1 sheon2
+Code	kuk1
+Cyber	saai1 baa4
+C眼	si1 ngaan5
+C盤	si1 pun4
+CCTV	si1 si1 ti1 wi1
+CV	si1 wi1
+Cert	soet1
+Darling	daa1 ling2
+Down	daan1
+Down機	daan1 gi1
+Download	daan1 leau1
+Data	dei1 taa4
+Demo	dem1 mou2
+D場	di1 coeng4
+Email	ji1 me1 leau4
+Email	ji1 meu1
+EVA膠	ji1 wi1 ei1 gaau1
+E仔	ji1 zai2
+File	faai1 leau2
+Foul	fau1
+Foul出局	fau1 ceot1 guk6
+Face	fei1 si2
+FAX	fek1 si2
+FAX機	fek1 si2 gi1
+Friend	fen1
+Friend過打band	fen1 gwo3 daa2 ben1
+Friend過夾band	fen1 gwo3 gaap3 ben1
+Fans	fen1 si2
+Fail	feu1
+Figure	fik1 gaa4
+Fit	fit1
+Feel	fiu1
+Fuse	fiu1 si2
+Follow	fo1 leau4
+GAs	ge1 si2
+Gas爐	ge1 si2 lu4
+Gag	gek1
+Game	gem1
+GYM	zjim1
+GYM房	zjim1 fong2
+High	haai1
+Hi	haai1
+High	haai1
+High大咗	haai1 daai6 zo2
+Hi-fi	haai1 faai1
+High卡士	haai1 kaa1 si2
+Highlight	haai1 lai1
+High-tech	haai1 tek1
+High-tea	haai1 ti1
+House	hau1 si2
+Hack	hek1
+Hacker	hek1 kaa2
+Ham	hem1
+Hang機	heng1 gei1
+K金	ke1 gam1
+K壓	kei1 aat3
+K巴	kei1 baa1
+K場	kei1 criong4
+K粉	kei1 fan2
+K房	kei1 fong2
+K金	kei1 gam1
+K歌	kei1 go1
+K客	kei1 haak3
+K-car	kei1 kaa1
+Kilo	ki1 lou2
+K書	kei1 sjyo1
+K他命	kei1 taa1 ming6
+K仔	kei1 zai2
+License	laai1 san2
+Level	le1 fou2
+Lego	lek1 gou4
+Label	lei1 bou2
+Laser	lei1 saa2
+Lag機	lek1 gi1
+LAN線	len1 sin3
+M巾	em1 gan1
+M記	em1 gei3
+M字額	em1 zy6 ngaak3
+Mark	maak1
+Mark鐘	maak1 zjung1
+Mark低	maak1 dai1
+Mark實	maak1 sjat6
+Mark住	maak1 zryu6
+Mouse	mau1 si2
+Miss	mi1 si4
+Model	mo1 deau4
+Mon	mon1
+Modem	mou1 dem4
+Outdate	au1 dei1
+Outday	au1 dei1
+Outlet	au1 let4
+Offer	o1 faa4
+Open	ou1 pan4
+O咀	ou1 zooi2
+O嘴	ou1 zooi2
+Physics	fi1 sik4
+Pass	paa1 si6
+Passport	paa1 si6 pot1
+Parkour	paal6 ko1
+Part	paat1
+Partner	paat1 naa4
+Parttime	paat1 taai1
+Party	paat1 ti4
+Percent	pat6 sen1
+Pair	pe1
+Pack	pek1
+Pan	pen1
+Pizza	pi1 saa2
+P圖	pi1 tu4
+PG	pi1 zi1
+PG	pi1 zyu1
+Point	pon1
+QR-code	kiu1 aau1 kuk1
+Q版	kiu1 baan2
+Round	waang1
+Router	waau1 taa2
+RAM	wem1
+Roll機	wou1 gei1
+SPA	si6 baa1
+Stupid	si6 diu1 bat6
+Save	sei1 fu4
+Send	sen1
+Send咗	sen1 zo2
+Send份	sen1 fan6
+Send晒畀	sen1 saai3 bi2
+Send完	sen1 jyun4
+Sense	sen1 si2
+Set	set1
+Set頭	set1 tau4
+Sell	seu1
+Sales	seu1 si2
+Snooker	si6 luk1 gaa2
+Sink盤	sing1 pun2
+Seed	sit1
+Show	sou1
+T尺	ti1 cek3
+T骨	ti1 gwat1
+T骨牛扒	ti1 gwat1 ngau4 paa2
+T骨扒	ti1 gwat1 paa2
+T恤	ti1 seot1
+T裇	ti1 seot1
+T字褲	ti1 zy6 fu3
+T字帳	ti1 zy6 zriong3
+Take	tik1
+Take嘢	tik1 je5
+Team	tim1
+Talk	tok1
+U型枕	ju1 jing4 zam2
+U形轉彎	ju1 jing4 zyun3 waan1
+U盤	ju1 pun2
+Vaseline	waa1 si6 lin1
+VAN	wen1
+VAN仔	wen1 zai2
+V溝	wi1 kau1
+V領	wi1 leng5
+Volt	wuk1
+Vodka	wuk1 kaa2
+Wi-Fi	waai1 faai1
+Wasabi	waat6 saa1 bi4
+Wing	wing1
+Work	woek1
+Watt	wok1
+X光	ek1 si4 gwong1
+XO醬	ek1 seau1 ziong3
+Young	jaang1
+Yeah	je1
+Yen	jen1
+YouTube	ju1 tup1
+YouTuber	ju1 tup1 baa4
+阿Q	aa3 kiu1
+阿Q正傳	aa3 kiu1 zing3 zyun6
+亞sir	aa3 soe4
+阿sir	aa3 soe4
+車Cam	cjiaa1 kem1
+鋤大D	cho4 daai6 di2
+鋤D	cho1 di2
+唱卡啦OK	cjiong3 kaa1 laa1 ou1 kei1
+唱K	cjiong3 kei1
+低B	dai1 bi1
+低B仔	dai1 bi1 zai2
+哆啦A夢	do1 laa1 ei1 mung6
+貨VAN	fo3 wen1
+攪gag	gaeu2 gek1
+攪爛ag	gaeu2 laan6 gek1
+果Jam	gwo2 zjem1
+紅VAN	hung4 wen1
+一Cue清袋	jat1 kiu1 cing1 doi2
+一Cue清枱	jat1 kiu1 cing1 toi2
+卡啦OK	kaa1 laa1 ou1 kei1
+爛gag	laan6 gek1
+自High	zy6 haai1
+煎Pan	zin1 pen1
+照X光	zjiu3 ek1 si6 gwong1
+做GYM	zu6 zjim1

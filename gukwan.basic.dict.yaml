@@ -6,7 +6,7 @@
 
 ---
 name: gukwan.basic
-version: "6.0b"
+version: "6.1b"
 sort: by_weight
 ...
 
@@ -3408,20 +3408,20 @@ sort: by_weight
 䐯	laai4	0%
 膗	chaai4	0%
 𢶀	chaai4	0%
-灰	hwui1	
-䖶	hwui1	0%
-鼿	hwui1	0%
-豗	hwui1	0%
-㾯	hwui1	0%
-虺	hwui1	0%
-恢	hwui1	
-詼	hwui1	
-悝	hwui1	0%
-魁	hwui1	
-䈛	hwui1	0%
-㷇	hwui1	0%
-顝	hwui1	0%
-盔	hwui1	
+灰	hui1	
+䖶	hui1	0%
+鼿	hui1	0%
+豗	hui1	0%
+㾯	hui1	0%
+虺	hui1	0%
+恢	hui1	
+詼	hui1	
+悝	hui1	0%
+魁	hui1	
+䈛	hui1	0%
+㷇	hui1	0%
+顝	hui1	0%
+盔	hui1	
 隈	wui1	0%
 煨	wui1	
 䋿	wui1	0%
@@ -4823,21 +4823,21 @@ sort: by_weight
 𤼙	lyun4	0%
 圝	lyun4	0%
 曫	lyun4	0%
-歡	hwun1	
-懽	hwun1	
-驩	hwun1	0%
-貆	hwun1	0%
-貛	hwun1	0%
-𪈩	hwun1	0%
-鴅	hwun1	0%
-酄	hwun1	0%
-獾	hwun1	0%
-犿	hwun1	0%
-𡚊	hwun1	0%
-讙	hwun1	0%
-𠂄	hwun1	0%
-寬	hwun1	
-髖	hwun1	
+歡	hun1	
+懽	hun1	
+驩	hun1	0%
+貆	hun1	0%
+貛	hun1	0%
+𪈩	hun1	0%
+鴅	hun1	0%
+酄	hun1	0%
+獾	hun1	0%
+犿	hun1	0%
+𡚊	hun1	0%
+讙	hun1	0%
+𠂄	hun1	0%
+寬	hun1	
+髖	hun1	
 鑽	zyun1	
 𩎑	zyun1	0%
 𩎈	zyun1	0%
@@ -11247,13 +11247,13 @@ sort: by_weight
 𧡋	ngaai5	0%
 挨	aai2	
 唉	aai2	0%
-賄	hwui2	
-𧶅	hwui2	0%
-䏨	hwui2	0%
-燘	hwui2	0%
-悔	hwui2	0%
-蛕	hwui2	0%
-㷄	hwui2	0%
+賄	hui2	
+𧶅	hui2	0%
+䏨	hui2	0%
+燘	hui2	0%
+悔	hui2	0%
+蛕	hui2	0%
+㷄	hui2	0%
 猥	wui2	
 腲	wui2	0%
 嵔	wui2	0%
@@ -11311,11 +11311,11 @@ sort: by_weight
 䕇	wui6	0%
 輠	wui6	0%
 𨝀	wui6	0%
-䫥	hwui2	0%
-㚍	hwui2	0%
-傀	hwui2	0%
-顝	hwui2	0%
-磈	hwui2	0%
+䫥	hui2	0%
+㚍	hui2	0%
+傀	hui2	0%
+顝	hui2	0%
+磈	hui2	0%
 𦞙	dyi2	0%
 䇏	dyi2	0%
 𡑈	dyi2	0%
@@ -11954,14 +11954,14 @@ sort: by_weight
 䗆	gun2	0%
 䘾	gun2	0%
 卵	lyun5	
-款	hwun2	
-歀	hwun2	0%
-欵	hwun2	
-窾	hwun2	0%
-䥗	hwun2	0%
-梡	hwun2	0%
-棵	hwun2	0%
-䲌	hwun2	0%
+款	hun2	
+歀	hun2	0%
+欵	hun2	
+窾	hun2	0%
+䥗	hun2	0%
+梡	hun2	0%
+棵	hun2	0%
+䲌	hun2	0%
 煗	nyun5	0%
 㬉	nyun5	0%
 暖	nyun5	
@@ -16849,17 +16849,17 @@ sort: by_weight
 昢	pui3	0%
 妃	pui3	0%
 嶏	pui3	0%
-誨	hwui3	
-悔	hwui3	
-晦	hwui3	
-𠧩	hwui3	0%
-靧	hwui3	0%
-頮	hwui3	0%
-秏	hwui3	0%
-痗	hwui3	0%
-𩔁	hwui3	0%
-詯	hwui3	0%
-𣴵	hwui3	0%
+誨	hui3	
+悔	hui3	
+晦	hui3	
+𠧩	hui3	0%
+靧	hui3	0%
+頮	hui3	0%
+秏	hui3	0%
+痗	hui3	0%
+𩔁	hui3	0%
+詯	hui3	0%
+𣴵	hui3	0%
 對	dyi3	
 𡭊	dyi3	
 碓	dyi3	0%
@@ -17050,12 +17050,12 @@ sort: by_weight
 茷	fai6	0%
 𩵥	fai6	0%
 鼣	fai6	0%
-喙	hwui3	
-𤸁	hwui3	0%
-𣨶	hwui3	0%
-𧾣	hwui3	0%
-餯	hwui3	0%
-顪	hwui3	0%
+喙	hui3	
+𤸁	hui3	0%
+𣨶	hui3	0%
+𧾣	hui3	0%
+餯	hui3	0%
+顪	hui3	0%
 𤜂	gwai6	0%
 刈	ngaai6	
 乂	ngaai6	0%
@@ -17735,8 +17735,8 @@ sort: by_weight
 渜	nyun6	0%
 𪋐	nyun6	0%
 攢	zyun6	0%
-䥗	hwun3	0%
-䲌	hwun3	0%
+䥗	hun3	0%
+䲌	hun3	0%
 諫	gaan3	
 澗	gaan3	
 鐧	gaan3	0%
@@ -21922,12 +21922,12 @@ sort: by_weight
 懖	kut3	0%
 𦗾	kut3	0%
 筈	kut3	0%
-闊	hwut3	
-蛞	hwut3	0%
-筈	hwut3	0%
-适	hwut3	0%
-䟯	hwut3	0%
-𤫵	hwut3	0%
+闊	hut3	
+蛞	hut3	0%
+筈	hut3	0%
+适	hut3	0%
+䟯	hut3	0%
+𤫵	hut3	0%
 活	wut6	
 𣽅	wut6	0%
 䄆	wut6	0%
