@@ -6,7 +6,7 @@
 
 ---
 name: gukwan.basic
-version: "6.1b"
+version: "6.2b"
 sort: by_weight
 ...
 
@@ -6677,14 +6677,14 @@ sort: by_weight
 𡑟	wo1	0%
 踒	wo1	0%
 𥟿	wo1	0%
-鞾	hoe1	
-靴	hoe1	
-𢪎	hoe1	0%
-㗾	hoe1	0%
-𦚢	joe1	0%
-𠏃	joe1	0%
-𩨷	hoe1	0%
-𩨭	hoe1	0%
+鞾	hio1	
+靴	hio1	
+𢪎	hio1	0%
+㗾	hio1	0%
+𦚢	jo1	0%
+𠏃	jo1	0%
+𩨷	hio1	0%
+𩨭	hio1	0%
 伽	kiaa4	0%
 茄	kiaa4	
 枷	kiaa4	0%
@@ -6693,12 +6693,12 @@ sort: by_weight
 㰦	kiaa1	0%
 𠋧	kiaa1	0%
 迦	giaa1	0%
-脞	coe1	0%
-㛗	coe1	0%
-侳	zoe1	0%
-𩛠	zoe1	0%
-瘸	koe4	
-𦣛	loe4	0%
+脞	cio1	0%
+㛗	cio1	0%
+侳	zio1	0%
+𩛠	zio1	0%
+瘸	kio4	
+𦣛	lio4	0%
 麻	maa4	
 犘	maa4	0%
 蟆	maa4	
@@ -8593,7 +8593,7 @@ sort: by_weight
 𣫐	sjau4	0%
 𣀓	sjau4	0%
 鮋	sjau4	0%
-酬	sjau4	
+酬	sjau4	0%
 醻	sjau4	0%
 詶	sjau4	0%
 雔	sjau4	
@@ -9398,7 +9398,7 @@ sort: by_weight
 蘫	laam4	0%
 坩	hom1	0%
 舑	taam1	0%
-聃	taam1	
+聃	taam1	0%
 𨈭	taam1	0%
 緂	taam1	0%
 㘱	taam1	0%
@@ -11419,7 +11419,7 @@ sort: by_weight
 軫	zjan2	0%
 縝	zjan2	0%
 胗	zjan2	0%
-疹	zjan2	0%
+疹	zjan2	
 畛	zjan2	0%
 賑	zjan2	0%
 㐱	zjan2	0%
@@ -11993,7 +11993,7 @@ sort: by_weight
 鄹	cyun5	0%
 斷	tyun5	
 𩏇	tyun5	0%
-緞	tyun5	
+緞	tyun5	0%
 攤	naan5	0%
 坢	pun2	0%
 𧺾	pun2	0%
@@ -12418,20 +12418,20 @@ sort: by_weight
 喘	cjyun2	
 荈	cjyun2	0%
 㪜	cjyun2	0%
-膞	sjyun5	0%
-腨	sjyun5	0%
-鄟	sjyun5	0%
-𡭐	sjyun5	0%
-歂	sjyun5	0%
-踹	sjyun5	0%
-𦺲	sjyun5	0%
-篆	cryun5	
-瑑	cryun5	0%
-沌	cryun5	0%
-摶	cryun5	0%
-𦁆	cryun5	0%
-䧘	cryun5	0%
-堟	cryun5	0%
+膞	sjyun6	0%
+腨	sjyun6	0%
+鄟	sjyun6	0%
+𡭐	sjyun6	0%
+歂	sjyun6	0%
+踹	sjyun6	0%
+𦺲	sjyun6	0%
+篆	zryun6	0%
+瑑	zryun6	0%
+沌	zryun6	0%
+摶	zryun6	0%
+𦁆	zryun6	0%
+䧘	zryun6	0%
+堟	zryun6	0%
 剸	zjyun2	0%
 剬	zjyun2	0%
 孨	zjyun2	0%
@@ -12576,17 +12576,17 @@ sort: by_weight
 小	siu2	
 𩵖	siu2	0%
 䒕	siu2	0%
-肈	sriu5	
-肁	sriu5	0%
-兆	sriu5	
-趙	sriu5	0%
-旐	sriu5	0%
-狣	sriu5	0%
-䍮	sriu5	0%
-鮡	sriu5	0%
-駣	sriu5	0%
-垗	sriu5	0%
-𠧞	sriu5	0%
+肈	sriu6	
+肁	sriu6	0%
+兆	sriu6	
+趙	sriu6	0%
+旐	sriu6	0%
+狣	sriu6	0%
+䍮	sriu6	0%
+鮡	sriu6	0%
+駣	sriu6	0%
+垗	sriu6	0%
+𠧞	sriu6	0%
 沼	zjiu2	
 菬	zjiu2	0%
 䈃	zjiu2	0%
@@ -17636,7 +17636,7 @@ sort: by_weight
 貫	gun3	
 矔	gun3	0%
 祼	gun3	0%
-館	gun3	
+館	gun3	0%
 瓘	gun3	0%
 罐	gun3	
 𤼐	gun3	0%
@@ -17785,7 +17785,7 @@ sort: by_weight
 矔	gwaen3	0%
 㝈	shaen3	0%
 涮	shaen3	
-篡	chaen3	
+篡	shaen3	
 薍	ngaen6	0%
 輚	zhaan6	0%
 棧	zhaan6	0%
@@ -18116,7 +18116,7 @@ sort: by_weight
 繏	syun3	0%
 渲	syun3	
 䉵	zhyun6	0%
-饌	zhyun6	
+饌	zhyun6	0%
 𦠆	zhyun6	0%
 襈	zhyun6	0%
 僎	zhyun6	0%
