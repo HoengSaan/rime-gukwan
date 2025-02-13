@@ -6,7 +6,7 @@
 
 ---
 name: gukwan.basic
-version: "6.2b"
+version: "6.3b"
 sort: by_weight
 ...
 
@@ -101,10 +101,10 @@ sort: by_weight
 忡	crung1	
 浺	crung1	0%
 盅	crung1	0%
-崇	shung4	0%
-崈	shung4	0%
-㓽	shung4	0%
-𩞉	shung4	0%
+崇	sung4	0%
+崈	sung4	0%
+㓽	sung4	0%
+𩞉	sung4	0%
 嵩	sung1	
 崧	sung1	0%
 𪀚	sung1	0%
@@ -1550,7 +1550,7 @@ sort: by_weight
 矀	mi4	0%
 覹	mi4	0%
 䉠	mi4	0%
-黴	mi4	
+黴	mi4	0%
 麋	mi4	
 蘪	mi4	0%
 郿	mi4	0%
@@ -4028,8 +4028,8 @@ sort: by_weight
 窀	zreon1	0%
 迍	zreon1	0%
 㡒	zreon1	0%
-逡	ceon1	
-竣	ceon1	
+逡	ceon1	0%
+竣	ceon1	0%
 皴	ceon1	0%
 㕙	ceon1	0%
 壿	ceon1	0%
@@ -4451,26 +4451,26 @@ sort: by_weight
 顐	wan4	0%
 𧡡	wan4	0%
 琿	wan4	0%
-昆	kwan1	
-晜	kwan1	0%
-𥊽	kwan1	0%
-菎	kwan1	0%
-㡓	kwan1	0%
-褌	kwan1	0%
-崐	kwan1	0%
-琨	kwan1	0%
-鵾	kwan1	0%
-鶤	kwan1	0%
-鯤	kwan1	0%
-䖵	kwan1	0%
-蜫	kwan1	0%
-惃	kwan1	0%
-㱎	kwan1	0%
-錕	kwan1	0%
-瑻	kwan1	0%
-𪋆	kwan1	0%
-猑	kwan1	0%
-騉	kwan1	0%
+昆	gwan1	0%
+晜	gwan1	0%
+𥊽	gwan1	0%
+菎	gwan1	0%
+㡓	gwan1	0%
+褌	gwan1	0%
+崐	gwan1	0%
+琨	gwan1	0%
+鵾	gwan1	0%
+鶤	gwan1	0%
+鯤	gwan1	0%
+䖵	gwan1	0%
+蜫	gwan1	0%
+惃	gwan1	0%
+㱎	gwan1	0%
+錕	gwan1	0%
+瑻	gwan1	0%
+𪋆	gwan1	0%
+猑	gwan1	0%
+騉	gwan1	0%
 𥁕	wan1	3%
 溫	wan1	
 轀	wan1	0%
@@ -11699,7 +11699,7 @@ sort: by_weight
 䜢	hin2	0%
 晚	maan5	
 娩	maan5	0%
-挽	maan5	
+挽	maan5	0%
 輓	maan5	0%
 㿸	maan5	0%
 㝃	maan5	0%
@@ -11915,7 +11915,7 @@ sort: by_weight
 䰖	zaan2	0%
 緩	wun6	
 澣	wun6	0%
-浣	wun6	
+浣	wun6	0%
 綄	wun6	0%
 㬊	wun6	0%
 䁔	wun6	0%
@@ -14172,22 +14172,22 @@ sort: by_weight
 𧆐	gom2	0%
 䃭	gom2	0%
 灨	gom2	0%
-禫	taam5	0%
-䊤	taam5	0%
-䨢	taam5	0%
-黮	taam5	0%
-窞	taam5	0%
-髧	taam5	0%
-萏	taam5	0%
-𧂄	taam5	0%
-倓	taam5	0%
-𥥍	taam5	0%
-𧡪	taam5	0%
-醰	taam5	0%
-嘾	taam5	0%
-贉	taam5	0%
-譚	taam5	0%
-𣛱	taam5	0%
+禫	daam6	0%
+䊤	daam6	0%
+䨢	daam6	0%
+黮	daam6	0%
+窞	daam6	0%
+髧	daam6	0%
+萏	daam6	0%
+𧂄	daam6	0%
+倓	daam6	0%
+𥥍	daam6	0%
+𧡪	daam6	0%
+醰	daam6	0%
+嘾	daam6	0%
+贉	daam6	0%
+譚	daam6	0%
+𣛱	daam6	0%
 晻	om2	0%
 黭	om2	0%
 揞	om2	0%
@@ -14662,7 +14662,7 @@ sort: by_weight
 癑	nung6	0%
 眾	zjung3	
 銃	cjung3	
-㓽	zhung6	0%
+㓽	shung6	0%
 烘	hung3	
 戇	hung3	0%
 宋	sung3	
@@ -15535,10 +15535,10 @@ sort: by_weight
 㧁	hyo3	0%
 䒧	hyo3	0%
 𩿟	hyo3	0%
-署	sjyo6	
+署	sjyo6	0%
 藷	sjyo6	0%
-薯	sjyo6	
-曙	sjyo6	
+薯	sjyo6	0%
+曙	sjyo6	0%
 恕	sjyo3	
 庶	sjyo3	
 樜	sjyo3	0%
@@ -15698,7 +15698,7 @@ sort: by_weight
 𡦗	njyu6	0%
 擩	njyu6	0%
 㹘	njyu6	0%
-赴	fu3	
+赴	fu3	0%
 𠓗	fu3	0%
 䞯	fu3	0%
 䎷	fu3	0%
@@ -17306,7 +17306,7 @@ sort: by_weight
 𡊅	fan3	0%
 拚	fan3	0%
 僨	fan3	0%
-奮	fan3	
+奮	fan3	0%
 瀵	fan3	0%
 㱵	fan3	0%
 醞	wan3	0%
@@ -19091,7 +19091,7 @@ sort: by_weight
 䛭	haang3	0%
 𥥈	waang3	0%
 諍	zhaang3	
-迸	baang3	
+迸	bing3	
 𠊧	baang6	0%
 䨻	baang6	0%
 䙬	aang3	0%
@@ -20604,7 +20604,7 @@ sort: by_weight
 属	sjuk6	0%
 㻿	sjuk6	0%
 鐲	sjuk6	0%
-觸	cjuk1	
+觸	cjuk1	0%
 觕	cjuk1	0%
 歜	cjuk1	0%
 臅	cjuk1	0%
@@ -23246,7 +23246,7 @@ sort: by_weight
 迫	baak3	
 敀	baak3	0%
 百	baak3	
-柏	baak3	
+柏	baak3	0%
 湐	baak3	0%
 𦯉	baak3	0%
 㼟	baak3	0%

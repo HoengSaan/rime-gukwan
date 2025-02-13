@@ -6,7 +6,7 @@ __include: gukwan.schema:/
 schema:
   schema_id: gukwan-fanwan
   name: 菊韻分韻音
-  version: "6.2b"
+  version: "6.3b"
   author:
     靈帝（Hoengsaan）
   
@@ -189,6 +189,7 @@ speller:
     
     - derive/eoy(?=\d)/eoi/                 # 粵拼(eoy->eoi)
     #- derive/^j([aeiouy])/i$1/             # 澳門拼法
+    #- derive/^ji([aeiouy])/i$1/            # 澳門拼法
     #- derive/^w([aeiou])/v$1/              # 澳門拼法
     #- derive/^z/dz/                        # 教院拼音
     #- derive/^c/ts/                        # 教院拼音
