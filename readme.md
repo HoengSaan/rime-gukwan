@@ -11,15 +11,15 @@ This work is licensed under a
 [cc-by-nc-sa-image]: https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png
 [cc-by-nc-sa-shield]: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg
 
-`gukwan.temp.dict.yaml`爲`jyut6ping3.words.dict.yaml`無輸入碼版本，作者爲粵語計算語言學基礎建設組」([@CanCLID](https://github.com/CanCLID)) ，證書跟隨源文件爲[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)。
+`gukwan.temp.dict.yaml`爲`jyut6ping3.words.dict.yaml`無輸入碼版本，`gukwan.lettered.dict.yaml`基於`jyut6ping3.lettered.dict.yaml`。作者爲「粵語計算語言學基礎建設組」([@CanCLID](https://github.com/CanCLID)) ，證書跟隨源文件爲[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)。
 
 **測試階段：預計4月完成**
 
 ## 簡介
 
-此爲[RIME | 中州韻輸入法引擎](https://rime.im/)方案，用於輸入粵語之所謂沙田方言，拼音基於分韻廣韻以兼容各地方音(如師syu1 si1兩音)同廣州化(如弧本讀fu4受廣州影響讀wu4)既情況。爲兼容性同方便整理，輸入碼同實際拼音有所不同，但可直接以粵拼輸入。
+此爲[RIME | 中州韻輸入法引擎](https://rime.im/)方案，用於輸入粵語之所謂「沙田方言」，拼音基於分韻廣韻以兼容各地方音(如師syu1 si1兩音)同廣州化(如弧本讀fu4受廣州影響讀wu4)既情況。爲兼容性同方便整理，輸入碼同實際拼音有所不同，但可直接以粵拼輸入。
 
-現有字庫根據excel大批量轉換，有不少紕漏，敬請見諒。廣韻之外字庫未完成，目前缺少現代字同粵字，缺少部份白讀音。由於方案竝無詞庫，建議以粵拼詞庫代替之（須去除輸入碼）。
+現有字庫根據excel大批量轉換，有不少紕漏，敬請見諒。廣韻之外字庫未完成，目前缺少現代字同粵字，缺少部份白讀音。（7.0更新：多數現代字粵字已完成）
 
 菊韻無法兼顧所有粵語方言，亦竝非本方案之目的。本方案並非廣州話方案，廣州話（穗港澳）請用[rime/rime-cantonese: Rime Cantonese input schema | 粵語拼音輸入方案](https://github.com/rime/rime-cantonese)
 
@@ -54,6 +54,8 @@ This work is licensed under a
 
 - `gukwan.schema.yaml`：調試用・自用
 - 古代音
+  - `gukwan-default.schema.yaml`：構擬音
+    - 根據菊韻標準所構擬之古音
   - `gukwan-fanwan.schema.yaml`：分韻音
     - 準確來講此方案係分韻風，並不能準確反映所有分韻發音。若欲使用完全分韻音打字，可參攷以下方案：[leimaau/old-Cantonese: Rime Old Cantonese Input Scheme | 《分韻撮要》音系及輸入方案](https://github.com/leimaau/old-Cantonese)
 - 現代音
@@ -70,6 +72,7 @@ This work is licensed under a
   - `gukwan.two.dict.yaml`：增廣二組今字異字異音訓讀增補
 - 詞庫
   - `gukwan.temp.dict.yaml`：`jyut6ping3.words.dict.yaml`無輸入碼版本
+  - `gukwan.lettered.dict.yaml`：基於`jyut6ping3.lettered.dict.yaml`
 
 ## 安裝
 
@@ -169,20 +172,20 @@ Android亦可選擇小企鵝（fcitx5），但安裝對一般用家來講較爲�
 
 關於韻母區別對比詳細見韻母表段。
 
-| 特徵表             | 例              | 菊韻 | 沙田     | 分韻 | 廣州^穗港澳^ |
-| ------------------ | --------------- | ---- | -------- | ---- | ------------ |
-| 區分精照           | 精(z)貞(zh)     | 是   | 否       | 是   | 否           |
-| 區分來孃(l/n)      | 靈(l)寧(n)      | 是   | 方音有別 | 是   | 老派         |
-| 區分透曉(t/h)      | 聽(t)輕(h)      | 是   | 方音有別 | 是   | 是           |
-| 疑母細音齶化       | 疑(ng)兒(nj)    | 否   | 是       | 是   | 是           |
-| 區分日以(nj/j)     | 日(nj)逸(j)     | 是   | 否       | 是   | 否           |
-| 曉合口讀脣齒(hw/f) | 虎(fu)化(faa)   | 否   | 是       | 是   | 是           |
-| 匣母遇攝讀wu       | 壺護互(hu/wu)   | 否   | 方音有別 | 是   | 是           |
-| 有無師韻(y)        | 詩(i)師(y)      | 有   | 無(i/yu) | 有   | 無(i)        |
-| 有無介音(io/iaa)   | 良(iong)茄(iaa) | 有   | 無       | 有   | 無           |
-| 山咸效攝是否有白讀 | 扁(aan/en)      |      | 是       |      | 否           |
-| 區分見系咸一深攝   | 甘(om)今(am)    | 是   | 老派     | 否   | 否           |
-| 陰去歸陽平         |                 | 否   | 方音有別 | 否   | 否           |
+| 特徵表             | 例              | 菊韻    | 沙田      | 分韻 | 廣州<sup>穗港澳</sup> |
+| ------------------ | --------------- | ------- | --------- | ---- | --------------------- |
+| 區分平翹           | 精(z)貞(zh)     | ✔️濟南型 | ✖否       | ✔️是  | ✖否                   |
+| 區分來孃(l/n)      | 靈(l)寧(n)      | ✔️是     | 方音有別  | ✔️是  | 老派                  |
+| 區分透曉(t/h)      | 聽(t)輕(h)      | ✔️是     | 方音有別  | ✔️是  | ✔️是                   |
+| 疑母細音齶化       | 疑(ng)兒(nj)    | ✖否     | ✔️是       | ✔️是  | ✔️是                   |
+| 區分日以(nj/j)     | 日(nj)逸(j)     | ✔️是     | ✖否       | ✔️是  | ✖否                   |
+| 曉合口讀脣齒(hw/f) | 虎(fu)化(faa)   | ✖否     | ✔️是       | ✔️是  | ✔️是                   |
+| 匣母遇攝讀wu       | 壺護互(hu/wu)   | ✖否     | 方音有別  | ✔️是  | ✔️是                   |
+| 有無師韻           | 詩(i)師(y)      | ✔️有     | ✖無(i/yu) | ✔️有  | ✖無(i)                |
+| 有無介音           | 良(iong)茄(iaa) | ✔️有     | ✖無       | ✔️有  | ✖無                   |
+| 山咸效攝是否有白讀 | 扁(aan/en)      |         | ✔️是       |      | ✖否                   |
+| 區分見系咸一深攝   | 甘(om)今(am)    | ✔️是     | 老派      | ✔️是  | ✖否                   |
+| 陰去歸陽平         |                 | ✖否     | 方音有別  | ✖否  | ✖否                   |
 
 ## 拼音表
 

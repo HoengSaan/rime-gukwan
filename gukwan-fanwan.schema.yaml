@@ -6,14 +6,13 @@ __include: gukwan.schema:/
 schema:
   schema_id: gukwan-fanwan
   name: 菊韻分韻音
-  version: "6.3b"
+  version: "7.0b"
   author:
     靈帝（Hoengsaan）
   
   description: |-
     測試階段
     本方案準確來講爲分韻風竝非眞正分韻音，用於示範如何自製方案
-    ※請務必閱讀方案文件※
     詳細請至本方案github頁。https://github.com/HoengSaan/rime-gukwan
     反查:`粵拼(新) X普音 V倉頡 R假名。聲調可省：v爲平，x爲上，q爲去，單陰雙陽。
 
@@ -37,8 +36,7 @@ speller:
     #- derive/^([aeiou])/ng$1/              # 疑影不分(ng==0)
     
     #聲母——菊韻
-
-    - xform/^nr/[nj]/                       # N爲文讀J爲白讀
+    - xform/^nr/n/                          #
 
     #- derive/^n(?!g|j)/l/                  # 泥來合流(n->l) 沙田方音
     #- derive/^t/h/                         # 透曉合流(t->h) 小欖部份
@@ -118,7 +116,6 @@ speller:
     #- derive/^(s)yi(?=\d)/$1yu/            # 蟹合一(yi->yu)「碎」讀若syu
     #- derive/^(d|t|n|l)yi(?=\d)/$yu/       # 蟹合一(yi->yu)「對」讀若dyu
     #- derive/yi(?=\d)/eoy/                 # 蟹合一(yi->eoy)：皆讀作eoy者可用，其他關閉
-    #- derive/yi(?=\d)/yu/                  # 蟹合一(yi->yu)：皆讀作yu者可用，其他關閉
     
     #- derive/eo(n|t)(?=\d)/a$1/            # 臻攝混音(ea->a)：「順」讀若san 多只見於白讀音
     
@@ -189,7 +186,7 @@ speller:
     
     - derive/eoy(?=\d)/eoi/                 # 粵拼(eoy->eoi)
     #- derive/^j([aeiouy])/i$1/             # 澳門拼法
-    #- derive/^ji([aeiouy])/i$1/            # 澳門拼法
+    #- derive/^ji/i$1/                      # 澳門拼法
     #- derive/^w([aeiou])/v$1/              # 澳門拼法
     #- derive/^z/dz/                        # 教院拼音
     #- derive/^c/ts/                        # 教院拼音

@@ -6,7 +6,7 @@
 
 ---
 name: gukwan.one
-version: "6.3b"
+version: "7.0b"
 sort: by_weight
 ...
 
@@ -20,8 +20,7 @@ sort: by_weight
 蓬	fung4	
 篷	fung4	
 疼	tang4	
-涌	cjung1	
-濃	jung4	
+涌	cjung1
 慵	jung4	
 扛	kong4	
 窗	chiong1	
@@ -132,6 +131,7 @@ sort: by_weight
 蘋	ping4	
 閩	man5	
 鶉	cjeon1	
+瞤	sjeon3	0%
 迍	zreon6	
 逡	seon1	
 竣	zeon3	
@@ -222,6 +222,7 @@ sort: by_weight
 間	gaen3	
 閒	haen4	
 先	hin1	
+癲	den1	
 邊	ben1	
 錢	cin1	
 纏	cim4	
@@ -447,6 +448,7 @@ sort: by_weight
 岩	ngaem4	
 嵌	ham6	
 懵	mung2	
+䁓	zong1	
 竉	lung1	3%
 窿	lung1	
 擁	ung2	
@@ -479,6 +481,12 @@ sort: by_weight
 雉	zy6	
 死	si2	
 恃	cji5	
+祀	zy6	
+𥘰	zy6	0%
+禩	zy6	0%
+巳	zy6	
+耜	zy6	0%
+𦓨	zy6	0%
 使	shai2	3%
 駛	shai2	3%
 裏	looi5	
@@ -591,6 +599,7 @@ sort: by_weight
 瑑	sjyun6	
 䧘	sjyun6	
 堟	sjyun6	
+皎	gaeu2	
 鳥	niu5	
 撩	liu2	
 繚	leu2	
@@ -755,7 +764,6 @@ sort: by_weight
 藷	sjyo4	0%
 薯	sjyo4	
 曙	cjyo5	
-曙	cjyo5	
 瘀	jyo2	3%
 瘀	jyo1	
 詛	zyo2	
@@ -785,7 +793,15 @@ sort: by_weight
 唳	looi6	
 捩	lai2	
 脆	coi3	
+篲	wai6	
+鏏	wai6	
+槥	wai6	
+軎	wai6	
+轊	wai6	
 掣	zjai3	
+迣	lai6	0%
+迣	lit6	0%
+迣	crai3	0%
 裔	jooi6	
 彘	zri6	
 厲	lei6	
@@ -1122,6 +1138,8 @@ sort: by_weight
 礫	lik1	
 櫟	lik1	
 瀝	lek6	
+鏑	dik6	3%
+滴	dik6	
 檄	hat6	0%
 檄	gik1	
 笛	dek6	
@@ -1136,6 +1154,13 @@ sort: by_weight
 喫	hek3	
 鬩	jik1	
 息	sak1	
+匿	nik1	
+匿	ni1	
+𧈟	nik1	0%
+𧏾	nik1	0%
+㥾	nik1	0%
+恧	nik1	0%
+𩺱	nik1	0%
 測	chaak1	
 惻	chaak1	
 薏	ji3	

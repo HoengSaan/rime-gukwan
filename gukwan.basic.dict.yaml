@@ -6,7 +6,7 @@
 
 ---
 name: gukwan.basic
-version: "6.3b"
+version: "7.0b"
 sort: by_weight
 ...
 
@@ -101,10 +101,10 @@ sort: by_weight
 忡	crung1	
 浺	crung1	0%
 盅	crung1	0%
-崇	sung4	0%
-崈	sung4	0%
-㓽	sung4	0%
-𩞉	sung4	0%
+崇	shung4	0%
+崈	shung4	0%
+㓽	shung4	0%
+𩞉	shung4	0%
 嵩	sung1	
 崧	sung1	0%
 𪀚	sung1	0%
@@ -10421,11 +10421,11 @@ sort: by_weight
 攺	ji5	0%
 似	cy5	
 佀	cy5	0%
-祀	cy5	
+祀	cy5	0%
 𥘰	cy5	0%
 禩	cy5	0%
 姒	cy5	
-巳	cy5	
+巳	cy5	0%
 耜	cy5	0%
 𦓨	cy5	0%
 汜	cy5	0%
@@ -12487,7 +12487,7 @@ sort: by_weight
 謏	siu2	0%
 䃤	siu2	0%
 㩋	siu2	0%
-皎	giu2	
+皎	giu2	0%
 璬	giu2	0%
 𢅎	giu2	0%
 䥵	giu2	0%
@@ -23848,7 +23848,7 @@ sort: by_weight
 靮	dik1	0%
 鏑	dik1	0%
 馰	dik1	0%
-滴	dik1	
+滴	dik1	0%
 肑	dik1	0%
 弔	dik1	0%
 芍	dik1	0%
@@ -24102,7 +24102,7 @@ sort: by_weight
 溭	zhik6	0%
 萴	zhik6	0%
 極	gik6	
-匿	nik6	
+匿	nik6	0%
 𧈟	nik6	0%
 𧏾	nik6	0%
 㥾	nik6	0%
