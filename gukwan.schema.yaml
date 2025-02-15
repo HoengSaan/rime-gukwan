@@ -4,7 +4,7 @@
 schema:
   schema_id: gukwan
   name: 菊韻
-  version: "7.0b"
+  version: "7.1b"
   author:
     靈帝（Hoengsaan）
   
@@ -86,8 +86,10 @@ speller:
     - derive/^nr/n/                         #
     - derive/^nr/nj/                        #
 
-    #- derive/^n(?!g|j)/l/                  # 泥來合流(n->l) 沙田方音
+    #- derive/^n(?!g|j)/l/                  # 泥來合流(n->l)
     #- derive/^t/h/                         # 透曉合流(t->h) 小欖部份
+
+    #- derive/^w([aeiou])/v$1/              # 口音補充（考慮重碼率，不建議開啓）
 
     #- derive/^gwo/go/                      # 口音補充(gwo->go)：「過」讀作go
     #- derive/^(g|k)w/$1/                   # 口音補充(gk[!w])：完全不能分辨脣化聲母者
@@ -98,7 +100,7 @@ speller:
     - xform/^hwun(?=\d)/hun$1/              # 口音補充(hw->h)：「桓」讀若fun者
     #- xform/^hwun(?=\d)/wun$1/             # 口音補充(hw->w)：「桓」讀若wun者
 
-    - xform/^vu(?=\d)/hu$1/                 # 遇攝合口(*u->hu)：「護」讀作fu6 沙田欽廉
+    - xform/^vu(?=\d)/hu$1/                 # 遇攝合口(*u->hu)：「護」讀作fu6
     #- xform/^vu(?=\d)/wu$1/                # 遇攝合口(*u->wu)：「護」讀作wu6 多數方音
     
     #聲母——分韻
@@ -137,7 +139,8 @@ speller:
     #韻母——分韻（非現代音建議維持）
     - derive/yo(?=\d)/yu/                   # 遇開分韻(yo->yu)
     - derive/yi(?=\d)/ui/                   # 蟹合分韻(yi->ui)
-    - derive/ooi(?=\d)/eoy/                 # 其他分韻(ooi->eoy)
+    - derive/ooi(?=\d)/eoy/                 # 其他分韻(ooi->eoy)：「脆」讀若ceoy
+    #- derive/ooi(?=\d)/oi/                 # 蟹合三止合銳(ooi->oi)「脆」讀若coi 少見（海洲好似係讀oi）
     
     #韻母——現代
     #其他口音請自行調校 不建議關閉打字輔助
@@ -147,13 +150,14 @@ speller:
     #- derive/^(g|k|h)i(?=\d)/$1ei/         # 止攝裂化牙音(i->ei)：「既」讀若gei
     #- derive/^(s)(?!j)i(?=\d)/$1ei/        # 止攝心母特音（現代音裂化專用） 
     
-    #- xform/y(?=\d)/i/                     # 止攝師韻展脣(y->i) ：「師」讀若si
+    #- xform/y(?=\d)/i/                     # 止攝師韻展脣(y->i) ：「師」讀若si 現代音應開
     #- xform/y(?=\d)/yu/                    # 止攝師韻圓脣(y->yu)：「仕」讀若syu 不建議開啓
     #- derive/^(z|c|s)ji(?=\d)/$1ii/        # 止開照組異拼(ji->ii)
     
     - derive/^ngu(?=\d)/ng/                           # 遇開一單獨成韻(ngu->ng)：「吳」讀若ng
-    - derive/^(b|p|m|d|t|n|l|z|c|s|sh)u(?=\d)/$1au/   # 遇攝裂化(u->au)：「都」讀若dau
-    #- derive/^(b|p|m|d|t|n|l|z|c|s|sh)u(?=\d)/$1ou/  # 遇攝裂化(u->ou)：「都」讀若dou
+    - derive/^(b|p|m|d|t|n|l|z|c|s|sh)u(?=\d)/$1au/   # 遇攝裂化(u->au)：「渡」讀若dau
+    #- derive/^(b|p|m|d|t|n|l|z|c|s|sh)u(?=\d)/$1ou/  # 遇攝裂化(u->ou)：「渡」讀若dou
+    #- derive/^(b|p|m|d|t|n|l|z|c|s|sh)u(?=\d)/$1o/   # 遇攝裂化(u->o)：「渡」讀若do
     
     - derive/^(z|c|s|n|l)yo(?=\d)/$1eoy/    # 遇開三(yo->eoy)：「旅」讀若leoy
     #- derive/^(g|k|h)yo(?=\d)/$1eoy/       # 遇開三(yo->eoy)：「去」讀若heoy
@@ -165,13 +169,14 @@ speller:
     
     - derive/^(z|c)yi(?=\d)/$1eoy/          # 蟹合一(yi->eoy)：「最」讀若zeoy
     #- derive/^(s)yi(?=\d)/$1eoy/           # 蟹合一(yi->eoy)：「碎」讀若seoy
-    #- derive/^(s)yi(?=\d)/$1yu/            # 蟹合一(yi->yu)「碎」讀若syu
-    #- derive/^(d|t|n|l)yi(?=\d)/$yu/       # 蟹合一(yi->yu)「對」讀若dyu
+    #- derive/^(s)yi(?=\d)/$1yu/            # 蟹合一(yi->yu)：「碎」讀若syu
+    #- derive/^(d|t|n|l)yi(?=\d)/$yu/       # 蟹合一(yi->yu)：「對」讀若dyu
     #- derive/yi(?=\d)/eoy/                 # 蟹合一(yi->eoy)：皆讀作eoy者可用，其他關閉
     
     #- derive/eo(n|t)(?=\d)/a$1/            # 臻攝混音(ea->a)：「順」讀若san 多只見於白讀音
     
     - derive/ou(?=\d)/o$1/                  # 效一元音融合(ou->o)：「高」讀若go
+    #- derive/ou(?=\d)/au$1/                # 效一元音(ou->au)：「高」讀若gau
     
     - derive/iaa(?=\d)/e$1/                 # 果假元音融合(iaa->e)：「車」讀若ce
     - derive/jaa(?=\d)/je$1/                # 果假元音融合(jaa->je)：「野」讀若je
@@ -239,7 +244,6 @@ speller:
     - derive/eoy(?=\d)/eoi/                 # 粵拼(eoy->eoi)
     - derive/^j([aeiouy])/i$1/              # 澳門拼法
     - derive/^ji/i/                         # 澳門拼法
-    #- derive/^w([aeiou])/v$1/              # 澳門拼法
     #- derive/^z/dz/                        # 教院拼音
     #- derive/^c/ts/                        # 教院拼音
     #- derive/y(?=\d)/z/                    # 英華拼法(y->z)

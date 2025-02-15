@@ -6,7 +6,7 @@
 
 ---
 name: gukwan.one
-version: "7.0b"
+version: "7.1b"
 sort: by_weight
 ...
 
@@ -20,7 +20,7 @@ sort: by_weight
 蓬	fung4	
 篷	fung4	
 疼	tang4	
-涌	cjung1
+涌	cjung1	
 慵	jung4	
 扛	kong4	
 窗	chiong1	
@@ -222,6 +222,8 @@ sort: by_weight
 間	gaen3	
 閒	haen4	
 先	hin1	
+煙	en1	
+烟	en1	0%
 癲	den1	
 邊	ben1	
 錢	cin1	
@@ -501,7 +503,7 @@ sort: by_weight
 秲	zri6	
 庤	zri6	
 杞	gi2	
-柹	zhi2	0%
+柹	zhy2	0%
 齒	sji2	0%
 祉	cri2	
 尾	mi1	
@@ -517,7 +519,8 @@ sort: by_weight
 嶼	jyo5	
 墅	jaa5	
 墅	sjyo6	
-莆	pu4	
+脯	pu2	
+莆	pu2	
 釜	fu2	
 豎	sjyu6	
 竪	sjyu6	
@@ -678,6 +681,8 @@ sort: by_weight
 婦	pu5	
 負	fu6	
 咎	gau3	
+某	maau5	
+畝	maau5	
 垢	gau3	
 吼	hau3	
 吼	hau1	
@@ -835,7 +840,7 @@ sort: by_weight
 殉	seon1	
 徇	seon1	
 侚	seon1	
-順	san5	
+順	sjan6	
 暈	wan4	
 奮	fan5	
 份	fan6	
