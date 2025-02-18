@@ -6,7 +6,7 @@
 
 ---
 name: gukwan.basic
-version: "8.0b"
+version: "8.1b"
 sort: by_weight
 ...
 
@@ -2648,36 +2648,36 @@ sort: by_weight
 蒲	pu4	
 蒱	pu4	0%
 䈻	pu4	0%
-胡	vu4	
-𩑶	vu4	0%
-𠴱	vu4	0%
-壺	vu4	
-狐	vu4	
-瓳	vu4	0%
-餬	vu4	
-瑚	vu4	
-湖	vu4	
-鶘	vu4	
-猢	vu4	
-醐	vu4	
-𪏻	vu4	0%
-䊀	vu4	0%
-𪍒	vu4	
-糊	vu4	
-弧	vu4	
-乎	vu4	
-𠂞	vu4	0%
-𪕱	vu4	0%
-瓠	vu4	0%
-葫	vu4	
-㾰	vu4	0%
-魱	vu4	0%
-箶	vu4	0%
-䉉	vu4	0%
-𥶜	vu4	0%
-𧛞	vu4	0%
-㯛	vu4	0%
-虖	vu4	0%
+胡	xu4	
+𩑶	xu4	0%
+𠴱	xu4	0%
+壺	xu4	
+狐	xu4	
+瓳	xu4	0%
+餬	xu4	
+瑚	xu4	
+湖	xu4	
+鶘	xu4	
+猢	xu4	
+醐	xu4	
+𪏻	xu4	0%
+䊀	xu4	0%
+𪍒	xu4	
+糊	xu4	
+弧	xu4	
+乎	xu4	0%
+𠂞	xu4	0%
+𪕱	xu4	0%
+瓠	xu4	0%
+葫	xu4	
+㾰	xu4	0%
+魱	xu4	0%
+箶	xu4	0%
+䉉	xu4	0%
+𥶜	xu4	0%
+𧛞	xu4	0%
+㯛	xu4	0%
+虖	xu4	0%
 孤	gu1	
 苽	gu1	0%
 菰	gu1	0%
@@ -10243,7 +10243,7 @@ sort: by_weight
 㨖	zri2	0%
 𧛢	zri2	0%
 𪖥	hi2	0%
-企	ki2	
+企	ki2	0%
 跂	ki2	
 菙	sjooi5	0%
 㥨	sjooi5	0%
