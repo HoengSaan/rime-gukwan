@@ -6,7 +6,7 @@
 
 ---
 name: gukwan.basic
-version: "7.0b"
+version: "8.0b"
 sort: by_weight
 ...
 
@@ -6309,7 +6309,7 @@ sort: by_weight
 颾	sou1	0%
 鱢	sou1	0%
 㮴	sou1	0%
-艘	sou1	
+艘	sou1	0%
 𠋺	sou1	0%
 慅	sou1	0%
 袍	pou4	
@@ -6685,14 +6685,14 @@ sort: by_weight
 𠏃	jo1	0%
 𩨷	hio1	0%
 𩨭	hio1	0%
-伽	kiaa4	0%
-茄	kiaa4	
-枷	kiaa4	0%
-佉	kiaa1	0%
-呿	kiaa1	0%
-㰦	kiaa1	0%
-𠋧	kiaa1	0%
-迦	giaa1	0%
+伽	kia4	0%
+茄	kia4	
+枷	kia4	0%
+佉	kia1	0%
+呿	kia1	0%
+㰦	kia1	0%
+𠋧	kia1	0%
+迦	gia1	0%
 脞	cio1	0%
 㛗	cio1	0%
 侳	zio1	0%
@@ -6707,11 +6707,11 @@ sort: by_weight
 痲	maa4	0%
 𥂓	maa4	0%
 㦄	maa4	0%
-車	cjiaa1	
-硨	cjiaa1	0%
-奢	sjiaa1	
-賒	sjiaa1	
-畬	sjiaa1	
+車	cjia1	
+硨	cjia1	0%
+奢	sjia1	
+賒	sjia1	
+畬	sjia1	
 邪	jaa4	
 耶	jaa4	
 瑘	jaa4	0%
@@ -6725,25 +6725,25 @@ sort: by_weight
 䔑	jaa4	0%
 𦭿	jaa4	0%
 𥯘	jaa4	0%
-遮	zjiaa1	
-𠌮	zjiaa1	0%
-㸙	zjiaa1	0%
-諸	zjiaa1	0%
-嗟	ziaa1	
-𧨁	ziaa1	0%
-罝	ziaa1	0%
-蒫	ziaa1	0%
-謯	ziaa1	0%
-瘥	ziaa1	0%
-𨲠	ziaa1	0%
-袓	ziaa1	0%
-㜘	ziaa1	0%
-怚	ziaa1	0%
-𣩈	ziaa1	0%
-䦈	ziaa1	0%
-蛇	sjiaa4	
-虵	sjiaa4	0%
-荼	sjiaa4	0%
+遮	zjia1	
+𠌮	zjia1	0%
+㸙	zjia1	0%
+諸	zjia1	0%
+嗟	zia1	
+𧨁	zia1	0%
+罝	zia1	0%
+蒫	zia1	0%
+謯	zia1	0%
+瘥	zia1	0%
+𨲠	zia1	0%
+袓	zia1	0%
+㜘	zia1	0%
+怚	zia1	0%
+𣩈	zia1	0%
+䦈	zia1	0%
+蛇	sjia4	
+虵	sjia4	0%
+荼	sjia4	0%
 華	waa4	
 驊	waa4	0%
 鷨	waa4	0%
@@ -6898,15 +6898,15 @@ sort: by_weight
 𨼑	craa4	0%
 梌	craa4	0%
 䅊	craa4	0%
-衺	ciaa4	0%
-斜	ciaa4	
-邪	ciaa4	
-䔑	ciaa4	0%
-闍	sjiaa4	0%
-余	sjiaa4	
-鉈	sjiaa4	0%
-鍦	sjiaa4	0%
-𥍸	sjiaa4	0%
+衺	cia4	0%
+斜	cia4	
+邪	cia4	
+䔑	cia4	0%
+闍	sjia4	0%
+余	sjia4	
+鉈	sjia4	0%
+鍦	sjia4	0%
+𥍸	sjia4	0%
 窊	waa1	0%
 洼	waa1	
 畖	waa1	0%
@@ -6948,11 +6948,11 @@ sort: by_weight
 䶗	kaa1	0%
 㤉	kaa1	0%
 𡤫	kaa1	0%
-㚗	ciaa4	0%
+㚗	cia4	0%
 若	njaa4	0%
 婼	njaa4	0%
-些	siaa1	
-爹	zriaa1	0%
+些	sia1	
+爹	zria1	0%
 𣢉	ngaa4	0%
 𩨾	ngaa4	0%
 𣘟	kaa1	0%
@@ -7146,9 +7146,9 @@ sort: by_weight
 蔣	ziong1	0%
 螿	ziong1	0%
 𢪇	ziong1	0%
-創	chong1	
-瘡	chong1	
-𠛂	chong1	0%
+創	choong1	
+瘡	choong1	
+𠛂	choong1	0%
 亡	mong4	
 芒	mong4	0%
 莣	mong4	0%
@@ -7164,14 +7164,14 @@ sort: by_weight
 娘	niong4	
 瓤	niong4	3%
 鑲	niong4	0%
-牀	chong4	
-床	chong4	
-疒	chong4	0%
-莊	zhong1	
-㽵	zhong1	0%
-妝	zhong1	
-裝	zhong1	
-䊋	zhong1	0%
+牀	choong4	
+床	choong4	
+疒	choong4	0%
+莊	zhoong1	
+㽵	zhoong1	0%
+妝	zhoong1	
+裝	zhoong1	
+䊋	zhoong1	0%
 常	sjiong4	
 尚	sjiong4	0%
 裳	sjiong4	
@@ -7252,130 +7252,130 @@ sort: by_weight
 軭	kwong4	0%
 鵟	kwong4	0%
 㞷	kwong4	0%
-唐	tong4	
-啺	tong4	0%
-𥏬	tong4	0%
-煻	tong4	0%
-糖	tong4	
-糛	tong4	0%
-堂	tong4	
-坣	tong4	0%
-𪕹	tong4	0%
-棠	tong4	
-搪	tong4	
-蓎	tong4	0%
-瑭	tong4	0%
-餹	tong4	0%
-篖	tong4	0%
-螗	tong4	0%
-𤚫	tong4	0%
-𤛋	tong4	0%
-螳	tong4	
-塘	tong4	
-碭	tong4	0%
-鶶	tong4	0%
-𩹶	tong4	0%
-踼	tong4	0%
-闛	tong4	0%
-赯	tong4	0%
-磄	tong4	0%
-溏	tong4	0%
-䣘	tong4	0%
-傏	tong4	0%
-隚	tong4	0%
-䧜	tong4	0%
-𨶈	tong4	0%
-鎕	tong4	0%
-䉎	tong4	0%
-𨍴	tong4	0%
-橖	tong4	0%
-榶	tong4	0%
-㲥	tong4	0%
-㼺	tong4	0%
-郎	long4	
-蓈	long4	0%
-稂	long4	0%
-桹	long4	0%
-廊	long4	
-榔	long4	
-鋃	long4	0%
-硠	long4	0%
-𪁜	long4	0%
-浪	long4	0%
-䯖	long4	0%
-蜋	long4	0%
-𩷕	long4	0%
-琅	long4	
-瑯	long4	
-㝗	long4	0%
-狼	long4	
-欴	long4	0%
-𦵧	long4	0%
-踉	long4	0%
-莨	long4	0%
-㟍	long4	0%
-䡙	long4	0%
-艆	long4	0%
-駺	long4	0%
-躴	long4	0%
-筤	long4	0%
-𥍫	long4	0%
-閬	long4	0%
-哴	long4	0%
-當	dong1	
-鐺	dong1	
-簹	dong1	0%
-襠	dong1	
-璫	dong1	0%
-𨎴	dong1	0%
-檔	dong1	0%
-儅	dong1	0%
-𦡁	dong1	0%
-㼕	dong1	0%
-蟷	dong1	0%
-倉	cong1	
-蒼	cong1	
-鶬	cong1	0%
-𩀞	cong1	0%
-滄	cong1	
-凔	cong1	0%
-𠥐	cong1	0%
-岡	gong1	
-崗	gong1	
-剛	gong1	
-㓻	gong1	0%
-掆	gong1	0%
-笐	gong1	0%
-鋼	gong1	
-綱	gong1	
-亢	gong1	0%
-犅	gong1	
-堈	gong1	0%
-𤭛	gong1	0%
-牨	gong1	0%
-苀	gong1	0%
-魧	gong1	0%
-迒	gong1	0%
-桑	song1	
-桒	song1	0%
-𠸶	song1	0%
-喪	song1	
-𦅇	song1	0%
-𩦌	song1	0%
-康	hong1	
-穅	hong1	
-糠	hong1	
-㱂	hong1	0%
-㝩	hong1	0%
-槺	hong1	0%
-𨻷	hong1	0%
-䗧	hong1	0%
-𥉽	hong1	0%
-邟	hong1	0%
-漮	hong1	0%
-𤮊	hong1	0%
-㼹	hong1	0%
-躿	hong1	0%
+唐	toong4	
+啺	toong4	0%
+𥏬	toong4	0%
+煻	toong4	0%
+糖	toong4	
+糛	toong4	0%
+堂	toong4	
+坣	toong4	0%
+𪕹	toong4	0%
+棠	toong4	
+搪	toong4	
+蓎	toong4	0%
+瑭	toong4	0%
+餹	toong4	0%
+篖	toong4	0%
+螗	toong4	0%
+𤚫	toong4	0%
+𤛋	toong4	0%
+螳	toong4	
+塘	toong4	
+碭	toong4	0%
+鶶	toong4	0%
+𩹶	toong4	0%
+踼	toong4	0%
+闛	toong4	0%
+赯	toong4	0%
+磄	toong4	0%
+溏	toong4	0%
+䣘	toong4	0%
+傏	toong4	0%
+隚	toong4	0%
+䧜	toong4	0%
+𨶈	toong4	0%
+鎕	toong4	0%
+䉎	toong4	0%
+𨍴	toong4	0%
+橖	toong4	0%
+榶	toong4	0%
+㲥	toong4	0%
+㼺	toong4	0%
+郎	loong4	
+蓈	loong4	0%
+稂	loong4	0%
+桹	loong4	0%
+廊	loong4	
+榔	loong4	
+鋃	loong4	0%
+硠	loong4	0%
+𪁜	loong4	0%
+浪	loong4	0%
+䯖	loong4	0%
+蜋	loong4	0%
+𩷕	loong4	0%
+琅	loong4	
+瑯	loong4	
+㝗	loong4	0%
+狼	loong4	
+欴	loong4	0%
+𦵧	loong4	0%
+踉	loong4	0%
+莨	loong4	0%
+㟍	loong4	0%
+䡙	loong4	0%
+艆	loong4	0%
+駺	loong4	0%
+躴	loong4	0%
+筤	loong4	0%
+𥍫	loong4	0%
+閬	loong4	0%
+哴	loong4	0%
+當	doong1	
+鐺	doong1	
+簹	doong1	0%
+襠	doong1	
+璫	doong1	0%
+𨎴	doong1	0%
+檔	doong1	0%
+儅	doong1	0%
+𦡁	doong1	0%
+㼕	doong1	0%
+蟷	doong1	0%
+倉	coong1	
+蒼	coong1	
+鶬	coong1	0%
+𩀞	coong1	0%
+滄	coong1	
+凔	coong1	0%
+𠥐	coong1	0%
+岡	goong1	
+崗	goong1	
+剛	goong1	
+㓻	goong1	0%
+掆	goong1	0%
+笐	goong1	0%
+鋼	goong1	
+綱	goong1	
+亢	goong1	0%
+犅	goong1	
+堈	goong1	0%
+𤭛	goong1	0%
+牨	goong1	0%
+苀	goong1	0%
+魧	goong1	0%
+迒	goong1	0%
+桑	soong1	
+桒	soong1	0%
+𠸶	soong1	0%
+喪	soong1	
+𦅇	soong1	0%
+𩦌	soong1	0%
+康	hoong1	
+穅	hoong1	
+糠	hoong1	
+㱂	hoong1	0%
+㝩	hoong1	0%
+槺	hoong1	0%
+𨻷	hoong1	0%
+䗧	hoong1	0%
+𥉽	hoong1	0%
+邟	hoong1	0%
+漮	hoong1	0%
+𤮊	hoong1	0%
+㼹	hoong1	0%
+躿	hoong1	0%
 荒	hwong1	
 𥡃	hwong1	0%
 肓	hwong1	
@@ -7436,24 +7436,24 @@ sort: by_weight
 茪	gwong1	0%
 僙	gwong1	0%
 侊	gwong1	0%
-湯	tong1	
-簜	tong1	0%
-鏜	tong1	0%
-闛	tong1	0%
-𧼮	tong1	0%
-踼	tong1	0%
-盪	tong1	0%
-蝪	tong1	0%
-鼞	tong1	0%
-薚	tong1	0%
-𦳝	tong1	0%
-滂	pong4	
-鎊	pong4	0%
-霶	pong4	0%
-雱	pong4	0%
-䨦	pong4	0%
-磅	pong4	
-𣂆	pong4	0%
+湯	toong1	
+簜	toong1	0%
+鏜	toong1	0%
+闛	toong1	0%
+𧼮	toong1	0%
+踼	toong1	0%
+盪	toong1	0%
+蝪	toong1	0%
+鼞	toong1	0%
+薚	toong1	0%
+𦳝	toong1	0%
+滂	poong4	
+鎊	poong4	0%
+霶	poong4	0%
+雱	poong4	0%
+䨦	poong4	0%
+磅	poong4	
+𣂆	poong4	0%
 汪	wong1	
 尢	wong1	0%
 尪	wong1	0%
@@ -7466,77 +7466,77 @@ sort: by_weight
 㹧	jong1	0%
 眏	jong1	0%
 姎	jong1	0%
-炕	hong1	0%
-㰠	hong1	0%
-䐠	hong1	0%
-忼	hong1	0%
-航	hong4	
-筕	hong4	0%
-桁	hong4	0%
-行	hong4	
-迒	hong4	0%
-𨁈	hong4	0%
-頏	hong4	
-𦐄	hong4	0%
-魧	hong4	0%
-胻	hong4	0%
-邟	hong4	0%
-杭	hong4	
-沆	hong4	0%
-蚢	hong4	0%
-肮	hong4	0%
-苀	hong4	0%
-抗	hong4	0%
-吭	hong4	
-茫	mong4	
-吂	mong4	0%
-䀮	mong4	0%
-汒	mong4	0%
-恾	mong4	0%
-忙	mong4	
-朚	mong4	0%
-邙	mong4	0%
-芒	mong4	
-𥐞	mong4	0%
-杗	mong4	0%
-蘉	mong4	0%
-𡩩	mong4	0%
-𨛌	mong4	0%
-臧	zong1	
-匨	zong1	0%
-牂	zong1	0%
-戕	zong1	0%
-贓	zong1	
-样	zong1	0%
-囊	nong4	
-蠰	nong4	0%
-傍	pong4	
-彷	pong4	
-膀	pong4	
-髈	pong4	0%
-䠙	pong4	0%
-趽	pong4	0%
-房	pong4	0%
-旁	pong4	
-篣	pong4	0%
-𨜷	pong4	0%
-螃	pong4	0%
-䅭	pong4	0%
-騯	pong4	0%
-卬	ngong4	
-䭹	ngong4	0%
-枊	ngong4	0%
-昂	ngong4	
-䒢	ngong4	0%
-㭿	ngong4	0%
-䩕	ngong4	0%
-藏	cong4	
+炕	hoong1	0%
+㰠	hoong1	0%
+䐠	hoong1	0%
+忼	hoong1	0%
+航	hoong4	
+筕	hoong4	0%
+桁	hoong4	0%
+行	hoong4	
+迒	hoong4	0%
+𨁈	hoong4	0%
+頏	hoong4	
+𦐄	hoong4	0%
+魧	hoong4	0%
+胻	hoong4	0%
+邟	hoong4	0%
+杭	hoong4	
+沆	hoong4	0%
+蚢	hoong4	0%
+肮	hoong4	0%
+苀	hoong4	0%
+抗	hoong4	0%
+吭	hoong4	
+茫	moong4	
+吂	moong4	0%
+䀮	moong4	0%
+汒	moong4	0%
+恾	moong4	0%
+忙	moong4	
+朚	moong4	0%
+邙	moong4	0%
+芒	moong4	
+𥐞	moong4	0%
+杗	moong4	0%
+蘉	moong4	0%
+𡩩	moong4	0%
+𨛌	moong4	0%
+臧	zoong1	
+匨	zoong1	0%
+牂	zoong1	0%
+戕	zoong1	0%
+贓	zoong1	
+样	zoong1	0%
+囊	noong4	
+蠰	noong4	0%
+傍	poong4	
+彷	poong4	
+膀	poong4	
+髈	poong4	0%
+䠙	poong4	0%
+趽	poong4	0%
+房	poong4	0%
+旁	poong4	
+篣	poong4	0%
+𨜷	poong4	0%
+螃	poong4	0%
+䅭	poong4	0%
+騯	poong4	0%
+卬	ngoong4	
+䭹	ngoong4	0%
+枊	ngoong4	0%
+昂	ngoong4	
+䒢	ngoong4	0%
+㭿	ngoong4	0%
+䩕	ngoong4	0%
+藏	coong4	
 䯑	kwong1	0%
-幫	bong1	
-縍	bong1	0%
-㨍	bong1	0%
-𨢐	bong1	0%
-鞤	bong1	
+幫	boong1	
+縍	boong1	0%
+㨍	boong1	0%
+𨢐	boong1	0%
+鞤	boong1	
 庚	gang1	
 鶊	gang1	0%
 更	gang1	
@@ -8431,67 +8431,67 @@ sort: by_weight
 纋	jau1	0%
 㱊	jau1	0%
 妋	jau1	0%
-劉	lau4	
-留	lau4	
-蒥	lau4	0%
-勠	lau4	0%
-摎	lau4	0%
-鶹	lau4	0%
-騮	lau4	0%
-駠	lau4	0%
-疁	lau4	0%
-𥹷	lau4	0%
-流	lau4	
-㳅	lau4	0%
-飂	lau4	0%
-飀	lau4	0%
-瘤	lau4	0%
-榴	lau4	
-瑬	lau4	0%
-旒	lau4	
-瑠	lau4	0%
-𪕋	lau4	0%
-𤠑	lau4	0%
-䉧	lau4	0%
-𥰣	lau4	0%
-瀏	lau4	0%
-䬟	lau4	0%
-䱖	lau4	0%
-鰡	lau4	0%
-嵧	lau4	0%
-𣠚	lau4	0%
-鎦	lau4	
-𦃓	lau4	0%
-𢷶	lau4	0%
-䰘	lau4	0%
-懰	lau4	0%
-餾	lau4	
-䖻	lau4	0%
-裗	lau4	0%
-𪆱	lau4	0%
-𪎣	lau4	0%
-硫	lau4	
-遛	lau4	0%
-䚧	lau4	0%
-憀	lau4	0%
-鏐	lau4	0%
-秋	cau1	
-秌	cau1	0%
-鞧	cau1	0%
-緧	cau1	0%
-𦃈	cau1	0%
-鞦	cau1	
-湫	cau1	0%
-鶖	cau1	0%
-鰍	cau1	
-楸	cau1	0%
-萩	cau1	0%
-𪓰	cau1	0%
-䵸	cau1	0%
-蟗	cau1	0%
-䨂	cau1	0%
-篍	cau1	0%
-趥	cau1	0%
+劉	liau4	
+留	liau4	
+蒥	liau4	0%
+勠	liau4	0%
+摎	liau4	0%
+鶹	liau4	0%
+騮	liau4	0%
+駠	liau4	0%
+疁	liau4	0%
+𥹷	liau4	0%
+流	liau4	
+㳅	liau4	0%
+飂	liau4	0%
+飀	liau4	0%
+瘤	liau4	0%
+榴	liau4	
+瑬	liau4	0%
+旒	liau4	
+瑠	liau4	0%
+𪕋	liau4	0%
+𤠑	liau4	0%
+䉧	liau4	0%
+𥰣	liau4	0%
+瀏	liau4	0%
+䬟	liau4	0%
+䱖	liau4	0%
+鰡	liau4	0%
+嵧	liau4	0%
+𣠚	liau4	0%
+鎦	liau4	
+𦃓	liau4	0%
+𢷶	liau4	0%
+䰘	liau4	0%
+懰	liau4	0%
+餾	liau4	
+䖻	liau4	0%
+裗	liau4	0%
+𪆱	liau4	0%
+𪎣	liau4	0%
+硫	liau4	
+遛	liau4	0%
+䚧	liau4	0%
+憀	liau4	0%
+鏐	liau4	0%
+秋	ciau1	
+秌	ciau1	0%
+鞧	ciau1	0%
+緧	ciau1	0%
+𦃈	ciau1	0%
+鞦	ciau1	
+湫	ciau1	0%
+鶖	ciau1	0%
+鰍	ciau1	
+楸	ciau1	0%
+萩	ciau1	0%
+𪓰	ciau1	0%
+䵸	ciau1	0%
+蟗	ciau1	0%
+䨂	ciau1	0%
+篍	ciau1	0%
+趥	ciau1	0%
 猷	jau4	
 猶	jau4	
 悠	jau4	
@@ -8537,68 +8537,68 @@ sort: by_weight
 𣔴	jau4	0%
 𧡹	jau4	0%
 𦵵	jau4	0%
-牛	ngau4	
-遒	zau1	0%
-鮂	zau1	0%
-䎿	zau1	0%
-蝤	zau1	0%
-啾	zau1	0%
-逎	zau1	0%
-𩭓	zau1	0%
-揂	zau1	0%
-揫	zau1	0%
-湫	zau1	0%
-𣟼	zau1	0%
-酋	cau4	
-㥢	cau4	0%
-遒	cau4	
-䎿	cau4	0%
-崷	cau4	0%
-鰌	cau4	0%
-蝤	cau4	0%
-煪	cau4	0%
-𧤕	cau4	0%
-𦵩	cau4	0%
-脩	sau1	
-修	sau1	
-羞	sau1	
-𩛢	sau1	0%
-𩝧	sau1	0%
-䡭	sau1	0%
-樇	sau1	0%
-抽	crau1	
-𢭆	crau1	0%
-㨨	crau1	0%
-婤	crau1	0%
-𥈌	crau1	0%
-惆	crau1	0%
-瘳	crau1	0%
-妯	crau1	0%
+牛	ngiau4	
+遒	ziau1	0%
+鮂	ziau1	0%
+䎿	ziau1	0%
+蝤	ziau1	0%
+啾	ziau1	0%
+逎	ziau1	0%
+𩭓	ziau1	0%
+揂	ziau1	0%
+揫	ziau1	0%
+湫	ziau1	0%
+𣟼	ziau1	0%
+酋	ciau4	0%
+㥢	ciau4	0%
+遒	ciau4	
+䎿	ciau4	0%
+崷	ciau4	0%
+鰌	ciau4	0%
+蝤	ciau4	0%
+煪	ciau4	0%
+𧤕	ciau4	0%
+𦵩	ciau4	0%
+脩	siau1	
+修	siau1	
+羞	siau1	
+𩛢	siau1	0%
+𩝧	siau1	0%
+䡭	siau1	0%
+樇	siau1	0%
+抽	criau1	
+𢭆	criau1	0%
+㨨	criau1	0%
+婤	criau1	0%
+𥈌	criau1	0%
+惆	criau1	0%
+瘳	criau1	0%
+妯	criau1	0%
 𠁫	hjau1	0%
 惆	hjau1	0%
 𣪘	hjau1	0%
-犫	cjau1	0%
-犨	cjau1	0%
-周	zjau1	
-州	zjau1	
-𥺝	zjau1	0%
-輖	zjau1	0%
-洲	zjau1	
-賙	zjau1	0%
-喌	zjau1	0%
-舟	zjau1	
-郮	zjau1	0%
-婤	zjau1	0%
-讎	sjau4	
-𣫐	sjau4	0%
-𣀓	sjau4	0%
-鮋	sjau4	0%
-酬	sjau4	0%
-醻	sjau4	0%
-詶	sjau4	0%
-雔	sjau4	
-魗	sjau4	0%
-𨞪	sjau4	0%
+犫	cjiau1	0%
+犨	cjiau1	0%
+周	zjiau1	
+州	zjiau1	
+𥺝	zjiau1	0%
+輖	zjiau1	0%
+洲	zjiau1	
+賙	zjiau1	0%
+喌	zjiau1	0%
+舟	zjiau1	
+郮	zjiau1	0%
+婤	zjiau1	0%
+讎	sjiau4	
+𣫐	sjiau4	0%
+𣀓	sjiau4	0%
+鮋	sjiau4	0%
+酬	sjiau4	0%
+醻	sjiau4	0%
+詶	sjiau4	0%
+雔	sjiau4	
+魗	sjiau4	0%
+𨞪	sjiau4	0%
 柔	njau4	
 鍒	njau4	0%
 㽥	njau4	0%
@@ -8615,75 +8615,75 @@ sort: by_weight
 䰆	njau4	0%
 𨛶	njau4	0%
 䐓	njau4	0%
-收	sjau1	
+收	sjiau1	
 丘	jau1	
 丠	jau1	0%
 蓲	jau1	0%
 蚯	jau1	
 邱	jau1	
 訄	jau1	0%
-䬌	fau1	0%
-秠	fau1	0%
-𡫺	fau1	0%
-衃	fau1	0%
-肧	fau1	0%
-紑	fau1	0%
-醅	fau1	0%
-鳩	gau1	
-𦫶	gau1	0%
-𠠳	gau1	0%
-朻	gau1	0%
-䡂	gau1	0%
-㽱	gau1	0%
-鬮	gau1	
-丩	gau1	0%
-龜	gau1	0%
-勼	gau1	0%
-不	fau1	0%
-哹	fau1	0%
-紑	fau1	0%
-䍍	fau1	0%
-鴀	fau1	0%
-𢯱	shau1	0%
-搜	shau1	
-餿	shau1	
-颼	shau1	0%
-溲	shau1	0%
-鎪	shau1	0%
-廋	shau1	
-蒐	shau1	
-䕅	shau1	0%
-獀	shau1	0%
-䐹	shau1	0%
-鄋	shau1	0%
-螋	shau1	0%
-騪	shau1	0%
-犙	shau1	0%
-醙	shau1	0%
-𧽏	shau1	0%
-搊	chau1	
-𢬆	chau1	0%
-篘	chau1	0%
-醔	chau1	0%
-㮲	chau1	0%
-𥻤	chau1	0%
-謅	chau1	0%
-鄒	zhau1	
-鄹	zhau1	0%
-郰	zhau1	0%
-騶	zhau1	0%
-齱	zhau1	0%
-陬	zhau1	0%
-緅	zhau1	0%
-䑼	zhau1	0%
-𨃘	zhau1	0%
-菆	zhau1	0%
-棷	zhau1	0%
-箃	zhau1	0%
-𠿈	zhau1	0%
-黀	zhau1	0%
-愁	shau4	
-㵞	shau4	0%
+䬌	fiau1	0%
+秠	fiau1	0%
+𡫺	fiau1	0%
+衃	fiau1	0%
+肧	fiau1	0%
+紑	fiau1	0%
+醅	fiau1	0%
+鳩	giau1	
+𦫶	giau1	0%
+𠠳	giau1	0%
+朻	giau1	0%
+䡂	giau1	0%
+㽱	giau1	0%
+鬮	giau1	
+丩	giau1	0%
+龜	giau1	0%
+勼	giau1	0%
+不	fiau1	0%
+哹	fiau1	0%
+紑	fiau1	0%
+䍍	fiau1	0%
+鴀	fiau1	0%
+𢯱	shiau1	0%
+搜	shiau1	
+餿	shiau1	
+颼	shiau1	0%
+溲	shiau1	0%
+鎪	shiau1	0%
+廋	shiau1	
+蒐	shiau1	
+䕅	shiau1	0%
+獀	shiau1	0%
+䐹	shiau1	0%
+鄋	shiau1	0%
+螋	shiau1	0%
+騪	shiau1	0%
+犙	shiau1	0%
+醙	shiau1	0%
+𧽏	shiau1	0%
+搊	chiau1	
+𢬆	chiau1	0%
+篘	chiau1	0%
+醔	chiau1	0%
+㮲	chiau1	0%
+𥻤	chiau1	0%
+謅	chiau1	0%
+鄒	zhiau1	
+鄹	zhiau1	0%
+郰	zhiau1	0%
+騶	zhiau1	0%
+齱	zhiau1	0%
+陬	zhiau1	0%
+緅	zhiau1	0%
+䑼	zhiau1	0%
+𨃘	zhiau1	0%
+菆	zhiau1	0%
+棷	zhiau1	0%
+箃	zhiau1	0%
+𠿈	zhiau1	0%
+黀	zhiau1	0%
+愁	shiau4	
+㵞	shiau4	0%
 休	hjau1	
 貅	hjau1	
 㹯	hjau1	0%
@@ -8697,142 +8697,142 @@ sort: by_weight
 䰍	hjau1	0%
 咻	hjau1	0%
 㵻	hjau1	0%
-囚	cau4	
-泅	cau4	
-汓	cau4	0%
-苬	cau4	0%
-慒	cau4	0%
-鮂	cau4	0%
-儔	crau4	
-檮	crau4	0%
-躊	crau4	
-幬	crau4	0%
-𢃖	crau4	0%
-裯	crau4	0%
-𠷎	crau4	0%
-疇	crau4	
-紬	crau4	0%
-綢	crau4	
-稠	crau4	
-燽	crau4	0%
-薵	crau4	0%
-鯈	crau4	0%
-籌	crau4	
-𪆇	crau4	0%
-𪇘	crau4	0%
-棸	crau4	0%
-椆	crau4	0%
-怞	crau4	0%
-𦡴	crau4	0%
-懤	crau4	0%
-鮋	crau4	0%
-䬞	crau4	0%
-菗	crau4	0%
-𨞪	crau4	0%
-𥲅	crau4	0%
-輈	zrau1	0%
-盩	zrau1	0%
-啁	zrau1	0%
-譸	zrau1	0%
-侜	zrau1	0%
-𩢸	zrau1	0%
-調	zrau1	0%
-咮	zrau1	0%
-𧻖	zrau1	0%
-𥎻	zrau1	0%
-矪	zrau1	0%
-𧚍	kau4	0%
-裘	kau4	
-仇	kau4	0%
-叴	kau4	0%
-厹	kau4	0%
-求	kau4	
-𡨃	kau4	0%
-頄	kau4	0%
-蛷	kau4	0%
-𧒔	kau4	0%
-逑	kau4	0%
-球	kau4	
-璆	kau4	0%
-艽	kau4	0%
-鼽	kau4	0%
-莍	kau4	0%
-䣇	kau4	0%
-賕	kau4	0%
-殏	kau4	0%
-梂	kau4	0%
-朹	kau4	0%
-㭝	kau4	0%
-俅	kau4	0%
-脙	kau4	0%
-𦜵	kau4	0%
-馗	kau4	0%
-䊵	kau4	0%
-絿	kau4	0%
-䜪	kau4	0%
-扏	kau4	0%
-銶	kau4	0%
-𩒮	kau4	0%
-𥭑	kau4	0%
-毬	kau4	0%
-䟵	kau4	0%
-犰	kau4	0%
-𧻱	kau4	0%
-訅	kau4	0%
-釚	kau4	0%
-捄	kau4	0%
-肍	kau4	0%
-𢛃	kau4	0%
-𦬖	kau4	0%
-訄	kau4	0%
-浮	fau4	
-哹	fau4	0%
-桴	fau4	0%
-枹	fau4	0%
-𥰛	fau4	0%
-罦	fau4	0%
-䍖	fau4	0%
-琈	fau4	0%
-粰	fau4	0%
-䳕	fau4	0%
-罘	fau4	0%
-䱐	fau4	0%
-涪	fau4	0%
-芣	fau4	
-蜉	fau4	0%
-烰	fau4	0%
-鉜	fau4	0%
-𡦄	fau4	0%
-𦮹	fau4	0%
-艀	fau4	0%
-棓	fau4	0%
-掊	fau4	0%
-䍌	fau4	0%
-䨗	fau4	0%
-謀	mau4	
-䱕	mau4	0%
-雺	mau4	0%
-眸	mau4	
-牟	mau4	
-侔	mau4	0%
-矛	mau4	
-𢦧	mau4	0%
-鍪	mau4	
-鞪	mau4	0%
-麰	mau4	0%
-𦭷	mau4	0%
-堥	mau4	0%
-劺	mau4	0%
-𨡭	mau4	0%
-蝥	mau4	0%
-蟊	mau4	0%
-鷚	mau4	0%
-𩭾	mau4	0%
-䋷	mau4	0%
-恈	mau4	0%
-鴾	mau4	0%
-蛑	mau4	0%
-繆	mau4	
+囚	ciau4	
+泅	ciau4	
+汓	ciau4	0%
+苬	ciau4	0%
+慒	ciau4	0%
+鮂	ciau4	0%
+儔	criau4	
+檮	criau4	0%
+躊	criau4	
+幬	criau4	0%
+𢃖	criau4	0%
+裯	criau4	0%
+𠷎	criau4	0%
+疇	criau4	
+紬	criau4	0%
+綢	criau4	
+稠	criau4	
+燽	criau4	0%
+薵	criau4	0%
+鯈	criau4	0%
+籌	criau4	
+𪆇	criau4	0%
+𪇘	criau4	0%
+棸	criau4	0%
+椆	criau4	0%
+怞	criau4	0%
+𦡴	criau4	0%
+懤	criau4	0%
+鮋	criau4	0%
+䬞	criau4	0%
+菗	criau4	0%
+𨞪	criau4	0%
+𥲅	criau4	0%
+輈	zriau1	0%
+盩	zriau1	0%
+啁	zriau1	0%
+譸	zriau1	0%
+侜	zriau1	0%
+𩢸	zriau1	0%
+調	zriau1	0%
+咮	zriau1	0%
+𧻖	zriau1	0%
+𥎻	zriau1	0%
+矪	zriau1	0%
+𧚍	kiau4	0%
+裘	kiau4	
+仇	kiau4	0%
+叴	kiau4	0%
+厹	kiau4	0%
+求	kiau4	
+𡨃	kiau4	0%
+頄	kiau4	0%
+蛷	kiau4	0%
+𧒔	kiau4	0%
+逑	kiau4	0%
+球	kiau4	
+璆	kiau4	0%
+艽	kiau4	0%
+鼽	kiau4	0%
+莍	kiau4	0%
+䣇	kiau4	0%
+賕	kiau4	0%
+殏	kiau4	0%
+梂	kiau4	0%
+朹	kiau4	0%
+㭝	kiau4	0%
+俅	kiau4	0%
+脙	kiau4	0%
+𦜵	kiau4	0%
+馗	kiau4	0%
+䊵	kiau4	0%
+絿	kiau4	0%
+䜪	kiau4	0%
+扏	kiau4	0%
+銶	kiau4	0%
+𩒮	kiau4	0%
+𥭑	kiau4	0%
+毬	kiau4	0%
+䟵	kiau4	0%
+犰	kiau4	0%
+𧻱	kiau4	0%
+訅	kiau4	0%
+釚	kiau4	0%
+捄	kiau4	0%
+肍	kiau4	0%
+𢛃	kiau4	0%
+𦬖	kiau4	0%
+訄	kiau4	0%
+浮	fiau4	
+哹	fiau4	0%
+桴	fiau4	0%
+枹	fiau4	0%
+𥰛	fiau4	0%
+罦	fiau4	0%
+䍖	fiau4	0%
+琈	fiau4	0%
+粰	fiau4	0%
+䳕	fiau4	0%
+罘	fiau4	0%
+䱐	fiau4	0%
+涪	fiau4	0%
+芣	fiau4	
+蜉	fiau4	0%
+烰	fiau4	0%
+鉜	fiau4	0%
+𡦄	fiau4	0%
+𦮹	fiau4	0%
+艀	fiau4	0%
+棓	fiau4	0%
+掊	fiau4	0%
+䍌	fiau4	0%
+䨗	fiau4	0%
+謀	miau4	
+䱕	miau4	0%
+雺	miau4	0%
+眸	miau4	
+牟	miau4	
+侔	miau4	0%
+矛	miau4	
+𢦧	miau4	0%
+鍪	miau4	
+鞪	miau4	0%
+麰	miau4	0%
+𦭷	miau4	0%
+堥	miau4	0%
+劺	miau4	0%
+𨡭	miau4	0%
+蝥	miau4	0%
+蟊	miau4	0%
+鷚	miau4	0%
+𩭾	miau4	0%
+䋷	miau4	0%
+恈	miau4	0%
+鴾	miau4	0%
+蛑	miau4	0%
+繆	miau4	
 侯	hau4	
 矦	hau4	0%
 𥎦	hau4	0%
@@ -8997,34 +8997,34 @@ sort: by_weight
 𧍘	jau1	0%
 怮	jau1	0%
 𢆶	jau1	0%
-虯	kau4	
-觩	kau4	0%
-璆	kau4	0%
-觓	kau4	0%
-鷚	kau4	0%
-蟉	kau4	0%
-𤙠	kau4	0%
-彪	bau1	
-髟	bau1	0%
-驫	bau1	0%
-鏐	lau4	0%
-蟉	lau4	0%
-樛	gau1	0%
-𠃚	gau1	0%
-𦱠	gau1	0%
-朻	gau1	0%
-㽱	gau1	0%
-淲	pau4	0%
-瀌	pau4	0%
-𩖛	pau4	0%
-稵	zau1	0%
-犙	shau1	0%
-聱	ngau4	0%
-飍	hau1	0%
-烋	hau1	0%
-繆	mau4	0%
-鷚	mau4	0%
-䋷	mau4	0%
+虯	kiau4	
+觩	kiau4	0%
+璆	kiau4	0%
+觓	kiau4	0%
+鷚	kiau4	0%
+蟉	kiau4	0%
+𤙠	kiau4	0%
+彪	biau1	0%
+髟	biau1	0%
+驫	biau1	0%
+鏐	liau4	0%
+蟉	liau4	0%
+樛	giau1	0%
+𠃚	giau1	0%
+𦱠	giau1	0%
+朻	giau1	0%
+㽱	giau1	0%
+淲	piau4	0%
+瀌	piau4	0%
+𩖛	piau4	0%
+稵	ziau1	0%
+犙	shiau1	0%
+聱	ngiau4	0%
+飍	hiau1	0%
+烋	hiau1	0%
+繆	miau4	0%
+鷚	miau4	0%
+䋷	miau4	0%
 侵	cam1	
 𢔀	cam1	0%
 駸	cam1	0%
@@ -10774,7 +10774,7 @@ sort: by_weight
 聚	cyu5	0%
 鄹	cyu5	0%
 甫	fu2	
-脯	fu2	
+脯	fu2	0%
 斧	fu2	
 頫	fu2	0%
 俯	fu2	
@@ -13093,9 +13093,9 @@ sort: by_weight
 𥧓	maa5	0%
 鷌	maa5	0%
 鰢	maa5	0%
-者	zjiaa2	
-赭	zjiaa2	0%
-堵	zjiaa2	0%
+者	zjia2	
+赭	zjia2	0%
+堵	zjia2	0%
 野	jaa5	
 𡐨	jaa5	0%
 也	jaa5	0%
@@ -13120,38 +13120,38 @@ sort: by_weight
 啞	aa2	
 瘂	aa2	0%
 𤺘	aa2	0%
-灺	ciaa5	0%
-抯	ciaa5	0%
-䵦	ciaa5	0%
+灺	cia5	0%
+抯	cia5	0%
+䵦	cia5	0%
 下	haa5	
 丅	haa5	0%
 夏	haa5	0%
 廈	haa5	0%
-寫	siaa2	
-𣞐	siaa2	0%
-瀉	siaa2	
-𣬕	siaa2	0%
+寫	sia2	
+𣞐	sia2	0%
+瀉	sia2	
+𣬕	sia2	0%
 𡎬	zhaa2	0%
-乜	miaa5	
-且	ciaa2	
+乜	mia5	
+且	cia2	
 㗿	haa2	0%
 閜	haa2	0%
 襾	haa2	0%
-社	sjiaa5	
-𥁹	sjiaa5	0%
-𣝒	sjiaa5	0%
+社	sjia5	
+𥁹	sjia5	0%
+𣝒	sjia5	0%
 跒	kaa2	0%
 跁	paa5	0%
 䇑	paa5	0%
 笆	paa5	0%
-捨	sjiaa2	
-舍	sjiaa2	
-騇	sjiaa2	0%
-䬷	sjiaa2	0%
-𩜉	sjiaa2	0%
-姐	ziaa2	
-抯	ziaa2	0%
-飷	ziaa2	0%
+捨	sjia2	
+舍	sjia2	
+騇	sjia2	0%
+䬷	sjia2	0%
+𩜉	sjia2	0%
+姐	zia2	
+抯	zia2	0%
+飷	zia2	0%
 把	baa2	
 踝	waa5	
 稞	waa5	0%
@@ -13185,11 +13185,11 @@ sort: by_weight
 觰	zraa2	0%
 槎	chaa5	0%
 厏	chaa5	0%
-奲	cjiaa2	0%
-㨋	cjiaa2	0%
-䰩	cjiaa2	0%
-哆	cjiaa2	0%
-撦	cjiaa2	
+奲	cjia2	0%
+㨋	cjia2	0%
+䰩	cjia2	0%
+哆	cjia2	0%
+撦	cjia2	
 䋾	zraa2	0%
 䋈	naa5	0%
 髁	kwaa2	0%
@@ -13257,26 +13257,26 @@ sort: by_weight
 仰	ngiong5	
 䒢	ngiong5	0%
 卬	ngiong5	0%
-磢	chong2	0%
-㼽	chong2	0%
-𠞮	chong2	0%
-搶	chong2	0%
-漺	chong2	0%
-愴	chong2	0%
+磢	choong2	0%
+㼽	choong2	0%
+𠞮	choong2	0%
+搶	choong2	0%
+漺	choong2	0%
+愴	choong2	0%
 想	siong2	
 鯗	siong2	0%
 掌	zjiong2	
 仉	zjiong2	0%
 𤓯	zjiong2	0%
-𤕤	shong2	0%
-爽	shong2	
-𦄍	shong2	0%
-鷞	shong2	0%
-塽	shong2	0%
-樉	shong2	0%
-㼽	shong2	0%
-漺	shong2	0%
-䫪	shong2	0%
+𤕤	shoong2	0%
+爽	shoong2	
+𦄍	shoong2	0%
+鷞	shoong2	0%
+塽	shoong2	0%
+樉	shoong2	0%
+㼽	shoong2	0%
+漺	shoong2	0%
+䫪	shoong2	0%
 響	hiong2	
 饗	hiong2	
 蠁	hiong2	0%
@@ -13285,13 +13285,13 @@ sort: by_weight
 亨	hiong2	0%
 嚮	hiong2	0%
 曏	hiong2	0%
-敞	cjong2	
-𢠵	cjong2	0%
-氅	cjong2	0%
-𪅶	cjong2	0%
-廠	cjong2	
-䟫	cjong2	0%
-僘	cjong2	0%
+敞	cjoong2	
+𢠵	cjoong2	0%
+氅	cjoong2	0%
+𪅶	cjoong2	0%
+廠	cjoong2	
+䟫	cjoong2	0%
+僘	cjoong2	0%
 繈	giong2	0%
 鏹	giong2	0%
 襁	giong2	0%
@@ -13358,77 +13358,77 @@ sort: by_weight
 𠏤	gwong2	0%
 逛	gwong2	0%
 𩦠	fong5	0%
-䫪	chong2	0%
-傸	chong2	0%
-蕩	dong6	
-崵	dong6	0%
-婸	dong6	0%
-𥯕	dong6	0%
-潒	dong6	0%
-𢠽	dong6	0%
-愓	dong6	0%
-璗	dong6	0%
-盪	dong6	
-䑗	dong6	0%
-簜	dong6	0%
-嵣	dong6	0%
-顙	song2	0%
-𣞙	song2	0%
-𣡆	song2	0%
-磉	song2	0%
+䫪	choong2	0%
+傸	choong2	0%
+蕩	doong6	
+崵	doong6	0%
+婸	doong6	0%
+𥯕	doong6	0%
+潒	doong6	0%
+𢠽	doong6	0%
+愓	doong6	0%
+璗	doong6	0%
+盪	doong6	
+䑗	doong6	0%
+簜	doong6	0%
+嵣	doong6	0%
+顙	soong2	0%
+𣞙	soong2	0%
+𣡆	soong2	0%
+磉	soong2	0%
 廣	gwong2	
 鄺	gwong2	0%
-榜	bong2	
-牓	bong2	0%
-𣮧	bong2	0%
-螃	bong2	0%
-蒡	bong2	
-䰃	bong2	0%
-駔	zong2	0%
-驡	zong2	0%
-髒	zong2	0%
-曩	nong5	0%
-灢	nong5	0%
-沆	hong5	0%
-骯	hong5	0%
-䟘	hong5	0%
-𡕬	hong5	0%
-蚢	hong5	0%
-吭	hong5	0%
-曭	tong2	0%
-儻	tong2	
-偒	tong2	0%
-戃	tong2	0%
-矘	tong2	0%
-𥯕	tong2	0%
-帑	tong2	
-爣	tong2	0%
-𣎲	tong2	0%
-㼒	tong2	0%
-㿩	tong2	0%
-攩	tong2	0%
-莽	mong5	
-茻	mong5	0%
-壾	mong5	0%
-䁳	mong5	0%
-䒎	mong5	0%
-㬒	mong5	0%
-䥈	mong5	0%
-蟒	mong5	
-漭	mong5	0%
-㟐	mong5	0%
-黨	dong2	
-讜	dong2	0%
-欓	dong2	0%
-䣣	dong2	0%
-𧅗	dong2	0%
-朗	long5	
-朖	long5	0%
-誏	long5	0%
-俍	long5	0%
-崀	long5	0%
-榔	long5	0%
-㝗	long5	0%
+榜	boong2	
+牓	boong2	0%
+𣮧	boong2	0%
+螃	boong2	0%
+蒡	boong2	
+䰃	boong2	0%
+駔	zoong2	0%
+驡	zoong2	0%
+髒	zoong2	0%
+曩	noong5	0%
+灢	noong5	0%
+沆	hoong5	0%
+骯	hoong5	0%
+䟘	hoong5	0%
+𡕬	hoong5	0%
+蚢	hoong5	0%
+吭	hoong5	0%
+曭	toong2	0%
+儻	toong2	
+偒	toong2	0%
+戃	toong2	0%
+矘	toong2	0%
+𥯕	toong2	0%
+帑	toong2	
+爣	toong2	0%
+𣎲	toong2	0%
+㼒	toong2	0%
+㿩	toong2	0%
+攩	toong2	0%
+莽	moong5	
+茻	moong5	0%
+壾	moong5	0%
+䁳	moong5	0%
+䒎	moong5	0%
+㬒	moong5	0%
+䥈	moong5	0%
+蟒	moong5	
+漭	moong5	0%
+㟐	moong5	0%
+黨	doong2	
+讜	doong2	0%
+欓	doong2	0%
+䣣	doong2	0%
+𧅗	doong2	0%
+朗	loong5	
+朖	loong5	0%
+誏	loong5	0%
+俍	loong5	0%
+崀	loong5	0%
+榔	loong5	0%
+㝗	loong5	0%
 坱	jong2	0%
 姎	jong2	0%
 映	jong2	0%
@@ -13439,13 +13439,13 @@ sort: by_weight
 盎	jong2	0%
 駚	jong2	0%
 軮	jong2	0%
-慷	hong2	
-忼	hong2	0%
-𡻚	hong2	0%
-骯	hong2	0%
-䡉	hong2	0%
-㝩	hong2	0%
-懬	hong2	0%
+慷	hoong2	
+忼	hoong2	0%
+𡻚	hoong2	0%
+骯	hoong2	0%
+䡉	hoong2	0%
+㝩	hoong2	0%
+懬	hoong2	0%
 㳹	wong2	0%
 瀇	wong2	0%
 晃	hwong5	0%
@@ -13455,8 +13455,8 @@ sort: by_weight
 滉	hwong5	0%
 攩	hwong5	0%
 皝	hwong5	0%
-髈	pong2	0%
-䒍	pong2	0%
+髈	poong2	0%
+䒍	poong2	0%
 慌	hwong2	0%
 爌	hwong2	0%
 𡧽	hwong2	0%
@@ -13464,16 +13464,16 @@ sort: by_weight
 㬻	hwong2	0%
 𣆖	hwong2	0%
 𧧢	hwong2	0%
-䴚	gong2	0%
-𨟼	gong2	0%
-㽘	gong2	0%
-䟘	gong2	0%
-䭹	ngong5	0%
-奘	zong6	
-蒼	cong2	0%
-汻	hong2	0%
-酐	hong2	0%
-𤰟	hong2	0%
+䴚	goong2	0%
+𨟼	goong2	0%
+㽘	goong2	0%
+䟘	goong2	0%
+䭹	ngoong5	0%
+奘	zoong6	
+蒼	coong2	0%
+汻	hoong2	0%
+酐	hoong2	0%
+𤰟	hoong2	0%
 懬	kwong2	0%
 䡉	kwong2	0%
 爌	kwong2	0%
@@ -13759,84 +13759,84 @@ sort: by_weight
 𥁓	jau5	0%
 栯	jau5	0%
 䒴	jau5	0%
-柳	lau5	
-罶	lau5	0%
-𦊑	lau5	0%
-懰	lau5	0%
-珋	lau5	0%
-𩖴	lau5	0%
-嬼	lau5	0%
-䉧	lau5	0%
-𪕋	lau5	0%
-熮	lau5	0%
-瀏	lau5	0%
-綹	lau5	0%
-𨋖	lau5	0%
-茆	lau5	0%
-狃	nau5	0%
-紐	nau5	
-鈕	nau5	
-杻	nau5	0%
-莥	nau5	0%
-禸	nau5	0%
-扭	nau5	
-𢔟	nau5	0%
-䏔	nau5	0%
-𨙺	nau5	0%
-𦱙	nau5	0%
-丑	crau2	
-杻	crau2	0%
-杽	crau2	0%
-肘	zrau2	
-疛	zrau2	0%
-𤶡	zrau2	0%
-扭	zrau2	0%
-朽	hau2	0%
-㱙	hau2	0%
-㽲	hau2	0%
-殠	hau2	0%
-久	gau2	
-九	gau2	
-玖	gau2	
-灸	gau2	0%
-韭	gau2	
-𡚮	gau2	0%
-𨾉	gau2	0%
-首	sjau2	
-𩠐	sjau2	0%
-𦣻	sjau2	0%
-手	sjau2	
-䭭	sjau2	0%
-守	sjau2	
-醜	cjau2	
-𧃝	cjau2	0%
-魗	cjau2	0%
-湫	cau5	0%
-愀	cau5	0%
-婦	fau6	0%
-䘀	fau6	0%
-負	fau6	0%
-萯	fau6	0%
-蝜	fau6	0%
-阜	fau6	
-𨸏	fau6	0%
-𪃓	fau6	0%
-偩	fau6	0%
-𦰺	fau6	0%
-𩣸	fau6	0%
-䧞	fau6	0%
-㷆	fau6	0%
-菩	fau6	0%
-𧌈	fau6	0%
-缶	fau2	
-缹	fau2	0%
-否	fau2	
-不	fau2	0%
-鴀	fau2	0%
-痞	fau2	0%
-殕	fau2	0%
-𡜊	fau2	0%
-糗	hau2	0%
+柳	liau5	
+罶	liau5	0%
+𦊑	liau5	0%
+懰	liau5	0%
+珋	liau5	0%
+𩖴	liau5	0%
+嬼	liau5	0%
+䉧	liau5	0%
+𪕋	liau5	0%
+熮	liau5	0%
+瀏	liau5	0%
+綹	liau5	0%
+𨋖	liau5	0%
+茆	liau5	0%
+狃	niau5	0%
+紐	niau5	
+鈕	niau5	
+杻	niau5	0%
+莥	niau5	0%
+禸	niau5	0%
+扭	niau5	
+𢔟	niau5	0%
+䏔	niau5	0%
+𨙺	niau5	0%
+𦱙	niau5	0%
+丑	criau2	
+杻	criau2	0%
+杽	criau2	0%
+肘	zriau2	
+疛	zriau2	0%
+𤶡	zriau2	0%
+扭	zriau2	0%
+朽	hiau2	0%
+㱙	hiau2	0%
+㽲	hiau2	0%
+殠	hiau2	0%
+久	giau2	
+九	giau2	
+玖	giau2	
+灸	giau2	0%
+韭	giau2	
+𡚮	giau2	0%
+𨾉	giau2	0%
+首	sjiau2	
+𩠐	sjiau2	0%
+𦣻	sjiau2	0%
+手	sjiau2	
+䭭	sjiau2	0%
+守	sjiau2	
+醜	cjiau2	
+𧃝	cjiau2	0%
+魗	cjiau2	0%
+湫	ciau5	0%
+愀	ciau5	0%
+婦	fiau6	0%
+䘀	fiau6	0%
+負	fiau6	0%
+萯	fiau6	0%
+蝜	fiau6	0%
+阜	fiau6	
+𨸏	fiau6	0%
+𪃓	fiau6	0%
+偩	fiau6	0%
+𦰺	fiau6	0%
+𩣸	fiau6	0%
+䧞	fiau6	0%
+㷆	fiau6	0%
+菩	fiau6	0%
+𧌈	fiau6	0%
+缶	fiau2	
+缹	fiau2	0%
+否	fiau2	
+不	fiau2	0%
+鴀	fiau2	0%
+痞	fiau2	0%
+殕	fiau2	0%
+𡜊	fiau2	0%
+糗	hjau2	0%
 蹂	njau5	0%
 楺	njau5	0%
 煣	njau5	0%
@@ -13847,23 +13847,23 @@ sort: by_weight
 𥠊	njau5	0%
 韖	njau5	0%
 粈	njau5	0%
-舅	kau5	
-倃	kau5	0%
-臼	kau5	
-齨	kau5	0%
-麔	kau5	0%
-䳎	kau5	0%
-咎	kau5	0%
-䊆	kau5	0%
-𤷑	kau5	0%
-𢛃	kau5	0%
-䛮	kau5	0%
-紂	zrau6	
-䈙	zrau6	0%
-鮦	zrau6	0%
-葤	zrau6	0%
-棸	zrau6	0%
-𦡴	zrau6	0%
+舅	kiau5	
+倃	kiau5	0%
+臼	kiau5	
+齨	kiau5	0%
+麔	kiau5	0%
+䳎	kiau5	0%
+咎	kiau5	0%
+䊆	kiau5	0%
+𤷑	kiau5	0%
+𢛃	kiau5	0%
+䛮	kiau5	0%
+紂	zriau6	
+䈙	zriau6	0%
+鮦	zriau6	0%
+葤	zriau6	0%
+棸	zriau6	0%
+𦡴	zriau6	0%
 酉	jau5	
 丣	jau5	0%
 誘	jau5	
@@ -13885,35 +13885,35 @@ sort: by_weight
 輶	jau5	0%
 𨣆	jau5	0%
 𦏇	jau5	0%
-受	sjau6	
-壽	sjau6	
-𨞪	sjau6	0%
-璹	sjau6	0%
-綬	sjau6	
-滫	sau2	0%
-糔	sau2	0%
-醙	sau2	0%
-𦄼	sau2	0%
+受	sjiau6	
+壽	sjiau6	
+𨞪	sjiau6	0%
+璹	sjiau6	0%
+綬	sjiau6	
+滫	siau2	0%
+糔	siau2	0%
+醙	siau2	0%
+𦄼	siau2	0%
 䬀	jau2	0%
 䱂	jau2	0%
 懮	jau2	0%
-酒	zau2	
-溲	shau2	0%
-帚	zjau2	
-箒	zjau2	0%
-鯞	zjau2	0%
-晭	zjau2	0%
-𧳜	zjau2	0%
-㤱	fau2	0%
-紑	fau2	0%
-𩂆	fau2	0%
-掫	zhau2	0%
-搊	zhau2	0%
-𧌗	zhau2	0%
-𥣙	chau5	0%
-𩋄	chau2	0%
-𩌄	chau2	0%
-秠	fau2	0%
+酒	ziau2	
+溲	shiau2	0%
+帚	zjiau2	
+箒	zjiau2	0%
+鯞	zjiau2	0%
+晭	zjiau2	0%
+𧳜	zjiau2	0%
+㤱	fiau2	0%
+紑	fiau2	0%
+𩂆	fiau2	0%
+掫	zhiau2	0%
+搊	zhiau2	0%
+𧌗	zhiau2	0%
+𥣙	chiau5	0%
+𩋄	chiau2	0%
+𩌄	chiau2	0%
+秠	fiau2	0%
 厚	hau5	
 垕	hau5	0%
 後	hau5	0%
@@ -13926,7 +13926,7 @@ sort: by_weight
 某	mau5	
 拇	mau5	
 胟	mau5	0%
-畝	mau5	
+畝	mau5	0%
 畮	mau5	
 畞	mau5	0%
 莽	mau5	0%
@@ -14060,11 +14060,11 @@ sort: by_weight
 泑	jau2	0%
 眑	jau2	0%
 𣢜	jau2	0%
-糾	gau2	
-赳	gau2	
-朻	gau2	0%
-鬮	gau2	0%
-蟉	kau5	0%
+糾	giau2	
+赳	giau2	
+朻	giau2	0%
+鬮	giau2	0%
+蟉	kiau5	0%
 寑	cam2	0%
 𡪢	cam2	0%
 寢	cam2	
@@ -18716,9 +18716,9 @@ sort: by_weight
 蜡	zhaa6	0%
 齰	zhaa6	0%
 𧧻	zhaa6	0%
-謝	ziaa6	
-榭	ziaa6	
-㴬	ziaa6	0%
+謝	zia6	
+榭	zia6	
+㴬	zia6	0%
 髂	kaa3	0%
 𩩱	kaa3	0%
 疴	kaa3	0%
@@ -18729,38 +18729,38 @@ sort: by_weight
 夏	haa6	
 下	haa6	
 芐	haa6	0%
-褯	ziaa6	0%
-藉	ziaa6	0%
-躤	ziaa6	0%
-䤳	ziaa6	0%
-䣠	ziaa6	0%
+褯	zia6	0%
+藉	zia6	0%
+躤	zia6	0%
+䤳	zia6	0%
+䣠	zia6	0%
 夜	jaa6	
 射	jaa6	0%
 鵺	jaa6	0%
-䞣	cjiaa3	0%
-斥	cjiaa3	0%
-蝑	siaa3	0%
-卸	siaa3	
-瀉	siaa3	
-䉣	siaa3	0%
-柘	zjiaa3	0%
-樜	zjiaa3	0%
-鷓	zjiaa3	
-䗪	zjiaa3	0%
-嗻	zjiaa3	0%
-炙	zjiaa3	0%
-蔗	zjiaa3	
-唶	ziaa3	0%
-借	ziaa3	
-舍	sjiaa3	
-赦	sjiaa3	
-騇	sjiaa3	0%
-涻	sjiaa3	0%
-厙	sjiaa3	0%
-射	sjiaa6	
-䠶	sjiaa6	0%
-麝	sjiaa6	
-貰	sjiaa6	0%
+䞣	cjia3	0%
+斥	cjia3	0%
+蝑	sia3	0%
+卸	sia3	
+瀉	sia3	
+䉣	sia3	0%
+柘	zjia3	0%
+樜	zjia3	0%
+鷓	zjia3	
+䗪	zjia3	0%
+嗻	zjia3	0%
+炙	zjia3	0%
+蔗	zjia3	
+唶	zia3	0%
+借	zia3	
+舍	sjia3	
+赦	sjia3	
+騇	sjia3	0%
+涻	sjia3	0%
+厙	sjia3	0%
+射	sjia6	
+䠶	sjia6	0%
+麝	sjia6	
+貰	sjia6	0%
 霸	baa3	
 𧟶	baa3	0%
 弝	baa3	0%
@@ -18796,8 +18796,8 @@ sort: by_weight
 𥝧	baa6	0%
 䏧	naa6	0%
 絮	naa6	0%
-笡	ciaa3	0%
-䞣	ciaa3	0%
+笡	cia3	0%
+䞣	cia3	0%
 嗄	shaa3	0%
 𦔯	shaa3	0%
 沙	shaa3	0%
@@ -18836,7 +18836,7 @@ sort: by_weight
 䀶	liong6	0%
 哴	liong6	0%
 涼	liong6	0%
-狀	zhong6	
+狀	zhoong6	
 讓	njong6	
 欀	njong6	0%
 攘	njong6	0%
@@ -18892,9 +18892,9 @@ sort: by_weight
 上	sjiong6	
 丄	sjiong6	0%
 償	sjiong6	0%
-壯	zhong3	
-裝	zhong3	0%
-𣴣	zhong3	0%
+壯	zhoong3	
+裝	zhoong3	0%
+𣴣	zhoong3	0%
 怏	jong3	0%
 䬬	jong3	0%
 詇	jong3	0%
@@ -18904,10 +18904,10 @@ sort: by_weight
 𪛋	cjiong3	0%
 廠	cjiong3	0%
 倡	cjiong3	0%
-刱	chong3	
-創	chong3	
-愴	chong3	
-凔	chong3	0%
+刱	choong3	
+創	choong3	
+愴	choong3	
+凔	choong3	0%
 醬	ziong3	
 𨡰	ziong3	0%
 𨟻	ziong3	0%
@@ -18949,81 +18949,81 @@ sort: by_weight
 狂	gwong6	0%
 誆	gwong6	0%
 防	fong6	0%
-宕	dong6	
-踼	dong6	0%
-碭	dong6	0%
-逿	dong6	0%
-𦿆	dong6	0%
-𡇈	dong6	0%
-嵣	dong6	0%
-浪	long6	
-閬	long6	0%
-埌	long6	0%
-䕞	long6	0%
-蒗	long6	0%
-吭	hong6	0%
-行	hong6	0%
-笐	hong6	0%
-盎	ong3	
-醠	ong3	0%
-枊	ngong6	0%
-䭹	ngong6	0%
-𡵙	ngong6	0%
-葬	zong3	
-傍	bong6	
-徬	bong6	0%
-藏	zong6	
-奘	zong6	0%
-𨌄	zong6	0%
-譡	dong3	0%
-儅	dong3	0%
-瓽	dong3	0%
-當	dong3	
-擋	dong3	0%
-闣	dong3	0%
-抗	kong3	
-閌	kong3	0%
-炕	kong3	
-犺	kong3	0%
-伉	kong3	
-亢	kong3	
-蚢	kong3	0%
-砊	kong3	0%
-邟	kong3	0%
-𪎵	kong3	0%
-阬	kong3	0%
-頏	kong3	0%
-螃	bong3	0%
-搒	bong3	0%
-舫	bong3	0%
-謗	bong3	
-儻	tong3	0%
-湯	tong3	0%
-蕩	tong3	0%
-盪	tong3	0%
-鐋	tong3	
+宕	doong6	
+踼	doong6	0%
+碭	doong6	0%
+逿	doong6	0%
+𦿆	doong6	0%
+𡇈	doong6	0%
+嵣	doong6	0%
+浪	loong6	
+閬	loong6	0%
+埌	loong6	0%
+䕞	loong6	0%
+蒗	loong6	0%
+吭	hoong6	0%
+行	hoong6	0%
+笐	hoong6	0%
+盎	oong3	
+醠	oong3	0%
+枊	ngoong6	0%
+䭹	ngoong6	0%
+𡵙	ngoong6	0%
+葬	zoong3	
+傍	boong6	
+徬	boong6	0%
+藏	zoong6	
+奘	zoong6	0%
+𨌄	zoong6	0%
+譡	doong3	0%
+儅	doong3	0%
+瓽	doong3	0%
+當	doong3	
+擋	doong3	0%
+闣	doong3	0%
+抗	koong3	
+閌	koong3	0%
+炕	koong3	
+犺	koong3	0%
+伉	koong3	
+亢	koong3	
+蚢	koong3	0%
+砊	koong3	0%
+邟	koong3	0%
+𪎵	koong3	0%
+阬	koong3	0%
+頏	koong3	0%
+螃	boong3	0%
+搒	boong3	0%
+舫	boong3	0%
+謗	boong3	
+儻	toong3	0%
+湯	toong3	0%
+蕩	toong3	0%
+盪	toong3	0%
+鐋	toong3	
 曠	kwong3	
 爌	kwong3	0%
 矌	kwong3	0%
 壙	kwong3	0%
 纊	kwong3	0%
-儾	nong6	0%
-灢	nong6	0%
-㚂	nong6	0%
-喪	song3	
-𠸶	song3	0%
+儾	noong6	0%
+灢	noong6	0%
+㚂	noong6	0%
+喪	soong3	
+𠸶	soong3	0%
 攩	wong6	0%
 擴	wong6	0%
 潢	wong6	0%
 暀	wong6	0%
 桄	gwong3	0%
 光	gwong3	0%
-鋼	gong3	
-掆	gong3	0%
+鋼	goong3	
+掆	goong3	0%
 荒	hwong3	0%
-漭	mong6	0%
-吂	mong6	0%
-㟐	mong6	0%
+漭	moong6	0%
+吂	moong6	0%
+㟐	moong6	0%
 汪	wong3	0%
 䤑	wong3	0%
 映	jing3	0%
@@ -19295,63 +19295,63 @@ sort: by_weight
 䞥	jau6	0%
 侑	jau6	0%
 𦳩	jau6	0%
-救	gau3	
-灸	gau3	
-廏	gau3	
-究	gau3	
-㝌	gau3	0%
-疚	gau3	
-𣪘	gau3	0%
-匓	gau3	0%
-𧧷	gau3	0%
-猶	gau3	0%
-𨖏	gau3	0%
-胄	zrau6	
-冑	zrau6	
-𩊄	zrau6	0%
-酎	zrau6	0%
-宙	zrau6	
-繇	zrau6	0%
-籀	zrau6	
-伷	zrau6	0%
-䛆	zrau6	0%
-疛	zrau6	0%
-㿒	zrau6	0%
-駎	zrau6	0%
-懤	zrau6	0%
-晝	zrau3	
-咮	zrau3	0%
-噣	zrau3	0%
-狩	sjau3	
-獸	sjau3	
-守	sjau3	0%
-首	sjau3	0%
-收	sjau3	0%
-臭	cjau3	
-殠	cjau3	0%
-岫	zau6	0%
-𥥉	zau6	0%
-袖	zau6	
-牰	zau6	0%
-齅	hau3	0%
-嘼	hau3	0%
-珛	hau3	0%
-呪	zjau3	0%
-䯾	zjau3	0%
-椆	zjau3	0%
-祝	zjau3	0%
-舊	gau6	
-柩	gau6	
-匶	gau6	0%
-𤸃	shau3	0%
-瘦	shau3	
-漱	shau3	
-鏉	shau3	0%
-皺	zhau3	
-㾭	zhau3	0%
-甃	zhau3	0%
-縐	zhau3	
-䐢	zhau3	0%
+救	giau3	
+灸	giau3	
+廏	giau3	
+究	giau3	
+㝌	giau3	0%
+疚	giau3	
+𣪘	giau3	0%
+匓	giau3	0%
+𧧷	giau3	0%
+猶	giau3	0%
+𨖏	giau3	0%
+胄	zriau6	
+冑	zriau6	
+𩊄	zriau6	0%
+酎	zriau6	0%
+宙	zriau6	
+繇	zriau6	0%
+籀	zriau6	
+伷	zriau6	0%
+䛆	zriau6	0%
+疛	zriau6	0%
+㿒	zriau6	0%
+駎	zriau6	0%
+懤	zriau6	0%
+晝	zriau3	
+咮	zriau3	0%
+噣	zriau3	0%
+狩	sjiau3	
+獸	sjiau3	
+守	sjiau3	0%
+首	sjiau3	0%
+收	sjiau3	0%
+臭	cjiau3	
+殠	cjiau3	0%
+岫	ziau6	0%
+𥥉	ziau6	0%
+袖	ziau6	
+牰	ziau6	0%
+齅	hjau3	0%
+嘼	hjau3	0%
+珛	hjau3	0%
+呪	zjiau3	0%
+䯾	zjiau3	0%
+椆	zjiau3	0%
+祝	zjiau3	0%
+舊	giau6	
+柩	giau6	
+匶	giau6	0%
+𤸃	shiau3	0%
+瘦	shiau3	
+漱	shiau3	
+鏉	shiau3	0%
+皺	zhiau3	
+㾭	zhiau3	0%
+甃	zhiau3	0%
+縐	zhiau3	
+䐢	zhiau3	0%
 副	fu3	
 仆	fu3	0%
 𩯅	fu3	0%
@@ -19359,62 +19359,62 @@ sort: by_weight
 𤸑	fu3	0%
 㤱	fu3	0%
 褔	fu3	0%
-簉	chau3	0%
-䔏	chau3	0%
-遚	chau3	0%
+簉	chiau3	0%
+䔏	chiau3	0%
+遚	chiau3	0%
 富	fu3	
 輻	fu3	0%
 鍑	fu3	0%
 䔰	fu3	0%
-畜	crau3	0%
-俞	crau3	0%
-溜	lau6	
-廖	lau6	0%
-霤	lau6	0%
-嬼	lau6	0%
-鷚	lau6	0%
-餾	lau6	
-瘤	lau6	0%
-窌	lau6	0%
-留	lau6	0%
-㙀	lau6	0%
-僇	lau6	0%
-廇	lau6	0%
-畂	lau6	0%
-𥛅	lau6	0%
-飂	lau6	0%
-勠	lau6	0%
-翏	lau6	0%
-塯	lau6	0%
-㽌	lau6	0%
-秀	sau3	
-繡	sau3	
-蜏	sau3	0%
-琇	sau3	0%
-宿	sau3	
-僦	zau3	0%
-䅢	zau3	0%
-媨	zau3	0%
-驟	zhau6	
-㑳	zhau6	0%
-僽	zhau6	0%
-就	zau6	
-鷲	zau6	0%
-殧	zau6	0%
-㠇	zau6	0%
+畜	criau3	0%
+俞	criau3	0%
+溜	liau6	
+廖	liau6	0%
+霤	liau6	0%
+嬼	liau6	0%
+鷚	liau6	0%
+餾	liau6	
+瘤	liau6	0%
+窌	liau6	0%
+留	liau6	0%
+㙀	liau6	0%
+僇	liau6	0%
+廇	liau6	0%
+畂	liau6	0%
+𥛅	liau6	0%
+飂	liau6	0%
+勠	liau6	0%
+翏	liau6	0%
+塯	liau6	0%
+㽌	liau6	0%
+秀	siau3	
+繡	siau3	
+蜏	siau3	0%
+琇	siau3	0%
+宿	siau3	
+僦	ziau3	0%
+䅢	ziau3	0%
+媨	ziau3	0%
+驟	zhiau6	
+㑳	zhiau6	0%
+僽	zhiau6	0%
+就	ziau6	
+鷲	ziau6	0%
+殧	ziau6	0%
+㠇	ziau6	0%
 糅	njau6	
 𩚖	njau6	0%
 腬	njau6	
 猱	njau6	
 狃	njau6	0%
-復	fau6	0%
-𢕒	fau6	0%
-𤸑	fau6	0%
-伏	fau6	0%
-椱	fau6	0%
-𨺅	fau6	0%
-覆	fau6	0%
-複	fau6	0%
+復	fiau6	0%
+𢕒	fiau6	0%
+𤸑	fiau6	0%
+伏	fiau6	0%
+椱	fiau6	0%
+𨺅	fiau6	0%
+覆	fiau6	0%
+複	fiau6	0%
 狖	jau6	0%
 貁	jau6	0%
 鼬	jau6	0%
@@ -19429,20 +19429,20 @@ sort: by_weight
 輶	jau6	0%
 牰	jau6	0%
 蜏	jau6	0%
-授	sjau6	
-詶	sjau6	0%
-㖟	sjau6	0%
-壽	sjau6	0%
-售	sjau6	
-綬	sjau6	0%
+授	sjiau6	
+詶	sjiau6	0%
+㖟	sjiau6	0%
+壽	sjiau6	0%
+售	sjiau6	
+綬	sjiau6	0%
 輮	njau6	0%
 蹂	njau6	0%
 煣	njau6	0%
 鞣	njau6	0%
-莓	mau6	0%
-鼼	ngau6	0%
-𪖛	kau3	0%
-䞭	cau3	0%
+莓	miau6	0%
+鼼	ngiau6	0%
+𪖛	kiau3	0%
+䞭	ciau3	0%
 候	hau6	
 鮜	hau6	0%
 鄇	hau6	0%
@@ -19594,10 +19594,10 @@ sort: by_weight
 楱	zau6	0%
 䠫	zau6	0%
 幼	jau3	
-謬	mau6	
-繆	mau6	
-䠗	kau3	0%
-𧾻	gau6	0%
+謬	miau6	
+繆	miau6	
+䠗	kiau3	0%
+𧾻	giau6	0%
 沁	sam3	
 𠖶	sam3	0%
 吣	sam3	0%
@@ -22858,7 +22858,7 @@ sort: by_weight
 辵	criok3	0%
 蠚	criok3	0%
 削	siok3	
-斮	zhok3	0%
+斮	zhook3	0%
 爵	ziok3	
 𩰥	ziok3	0%
 雀	ziok3	
@@ -22888,10 +22888,10 @@ sort: by_weight
 臄	kiok6	0%
 醵	kiok6	0%
 䐘	kiok6	0%
-嬳	jok3	0%
-𡤬	jok3	0%
-彠	jok3	0%
-臒	jok3	0%
+嬳	wok3	0%
+𡤬	wok3	0%
+彠	wok3	0%
+臒	wok3	0%
 縛	bok6	
 䂄	hwok3	0%
 矆	hwok3	0%
@@ -22932,235 +22932,235 @@ sort: by_weight
 𨵫	niok6	0%
 蹃	niok6	0%
 𩅿	fok3	0%
-謔	jok3	
-鐸	dok6	0%
-剫	dok6	0%
-度	dok6	
-𢜬	dok6	0%
-踱	dok6	
-凙	dok6	0%
-襗	dok6	0%
-𩑒	dok6	0%
-𧩧	dok6	0%
-𩍜	dok6	0%
-䐾	dok6	0%
-㤞	dok6	0%
-喥	dok6	0%
-仛	dok6	0%
-𨍏	dok6	0%
-莫	mok6	
-幕	mok6	
-鄚	mok6	0%
-膜	mok6	
-鏌	mok6	0%
-摸	mok6	0%
-漠	mok6	
-瘼	mok6	0%
-寞	mok6	
-瞙	mok6	0%
-嗼	mok6	0%
-塻	mok6	0%
-𣩎	mok6	0%
-𢊗	mok6	0%
-𡈗	mok6	0%
-𠢓	mok6	0%
-落	lok6	
-絡	lok6	
-烙	lok6	
-洛	lok6	
-珞	lok6	
-酪	lok6	
-樂	lok6	
-𩂣	lok6	0%
-轢	lok6	0%
-笿	lok6	0%
-硌	lok6	0%
-駱	lok6	
-𤽼	lok6	0%
-𩊚	lok6	0%
-㓢	lok6	0%
-鉻	lok6	0%
-馲	lok6	0%
-𩧐	lok6	0%
-鮥	lok6	0%
-䶅	lok6	0%
-雒	lok6	0%
-𣛗	lok6	0%
-𧭥	lok6	0%
-躒	lok6	0%
-鵅	lok6	0%
-𤻲	lok6	0%
-𣧳	lok6	0%
-𤽥	lok6	0%
-挌	lok6	0%
-𪇱	lok6	0%
-濼	lok6	0%
-袼	lok6	0%
-䀩	lok6	0%
-𨏒	lok6	0%
-託	tok3	
-袥	tok3	0%
-橐	tok3	
-魠	tok3	0%
-籜	tok3	0%
-柝	tok3	0%
-𣟄	tok3	0%
-拓	tok3	
-馲	tok3	0%
-𩧐	tok3	0%
-跅	tok3	0%
-蘀	tok3	0%
-𦚈	tok3	0%
-侂	tok3	0%
-飥	tok3	0%
-魄	tok3	0%
-沰	tok3	0%
-矺	tok3	0%
-作	zok3	
-迮	zok3	0%
-柞	zok3	0%
-糳	zok3	0%
-鑿	zok3	0%
-㘀	zok3	0%
-錯	cok3	0%
-厝	cok3	0%
-䱜	cok3	0%
-逪	cok3	0%
-剒	cok3	0%
-縒	cok3	0%
-莡	cok3	0%
-各	gok3	
-閣	gok3	
-格	gok3	0%
-胳	gok3	
-袼	gok3	0%
-恪	kok3	
-㤩	kok3	0%
-愙	kok3	0%
-咢	ngok6	0%
-愕	ngok6	
-鄂	ngok6	
-諤	ngok6	0%
-𠟎	ngok6	0%
-𧊜	ngok6	0%
-𧍞	ngok6	0%
-遌	ngok6	0%
-萼	ngok6	
-鍔	ngok6	0%
-𡅡	ngok6	0%
-崿	ngok6	0%
-鶚	ngok6	0%
-鰐	ngok6	
-噩	ngok6	
-㗁	ngok6	0%
-齶	ngok6	
-顎	ngok6	
-𡾙	ngok6	0%
-鑩	ngok6	0%
-偔	ngok6	0%
-堮	ngok6	0%
-𡓐	ngok6	0%
-㮙	ngok6	0%
-湂	ngok6	0%
-𩔈	pok3	0%
-奤	pok3	0%
-濼	pok3	0%
-䨰	pok3	0%
-粕	pok3	
-膊	pok3	0%
-𦢸	pok3	0%
-䪙	pok3	0%
-搏	pok3	
-胉	pok3	0%
-蒪	pok3	0%
-𥴮	pok3	0%
-𦿍	pok3	0%
-𦥭	pok3	0%
-𦐦	pok3	0%
-惡	ok3	
-𢙣	ok3	
-堊	ok3	
-蝁	ok3	0%
-泊	bok6	0%
-亳	bok6	0%
-箔	bok6	
-薄	bok6	
-礴	bok6	
-簿	bok6	0%
-𩍿	bok6	0%
-鑮	bok6	0%
-踄	bok6	0%
-𩽛	bok6	0%
-䭦	bok6	0%
-𦞦	kok3	0%
-鄗	kok3	0%
-壑	kok3	
-㕡	kok3	0%
-蠚	kok3	0%
-謞	kok3	0%
-郝	kok3	
-鰝	kok3	0%
-熇	kok3	0%
-嗃	kok3	0%
-矐	kok3	0%
-索	sok3	
-𢱢	sok3	0%
-溹	sok3	0%
-𩌈	sok3	0%
-𦵫	sok3	0%
-㮦	sok3	0%
-涸	hok6	0%
-鶴	hok6	
-貈	hok6	0%
-貉	hok6	0%
-狢	hok6	0%
-𠗂	hok6	0%
-佫	hok6	0%
-䮤	hok6	0%
-𥉑	hok6	0%
-䅂	hok6	0%
-䶅	hok6	0%
-昨	zok6	
-酢	zok6	0%
-莋	zok6	0%
-怍	zok6	
-𣫞	zok6	0%
-鑿	zok6	
-笮	zok6	0%
-筰	zok6	0%
-柞	zok6	0%
-㸲	zok6	0%
-岝	zok6	0%
-䎰	zok6	0%
-飵	zok6	0%
-𦁎	zok6	0%
-𢂃	zok6	0%
-䋏	zok6	0%
-秨	zok6	0%
-砟	zok6	0%
-葃	zok6	0%
-鈼	zok6	0%
-博	bok3	
-髆	bok3	0%
-搏	bok3	
-爆	bok3	0%
-鎛	bok3	0%
-㗘	bok3	0%
-𪙍	bok3	0%
-襮	bok3	0%
-鑮	bok3	0%
-簙	bok3	0%
-䗚	bok3	0%
-猼	bok3	0%
-䍸	bok3	0%
-欂	bok3	0%
-𩌏	bok3	0%
-溥	bok3	0%
-䶈	bok3	0%
-餺	bok3	0%
-䙏	bok3	0%
-𥴮	bok3	0%
-諾	nok6	
+謔	hjok3	
+鐸	dook6	0%
+剫	dook6	0%
+度	dook6	
+𢜬	dook6	0%
+踱	dook6	
+凙	dook6	0%
+襗	dook6	0%
+𩑒	dook6	0%
+𧩧	dook6	0%
+𩍜	dook6	0%
+䐾	dook6	0%
+㤞	dook6	0%
+喥	dook6	0%
+仛	dook6	0%
+𨍏	dook6	0%
+莫	mook6	
+幕	mook6	
+鄚	mook6	0%
+膜	mook6	
+鏌	mook6	0%
+摸	mook6	0%
+漠	mook6	
+瘼	mook6	0%
+寞	mook6	
+瞙	mook6	0%
+嗼	mook6	0%
+塻	mook6	0%
+𣩎	mook6	0%
+𢊗	mook6	0%
+𡈗	mook6	0%
+𠢓	mook6	0%
+落	look6	
+絡	look6	
+烙	look6	
+洛	look6	
+珞	look6	
+酪	look6	
+樂	look6	
+𩂣	look6	0%
+轢	look6	0%
+笿	look6	0%
+硌	look6	0%
+駱	look6	
+𤽼	look6	0%
+𩊚	look6	0%
+㓢	look6	0%
+鉻	look6	0%
+馲	look6	0%
+𩧐	look6	0%
+鮥	look6	0%
+䶅	look6	0%
+雒	look6	0%
+𣛗	look6	0%
+𧭥	look6	0%
+躒	look6	0%
+鵅	look6	0%
+𤻲	look6	0%
+𣧳	look6	0%
+𤽥	look6	0%
+挌	look6	0%
+𪇱	look6	0%
+濼	look6	0%
+袼	look6	0%
+䀩	look6	0%
+𨏒	look6	0%
+託	took3	
+袥	took3	0%
+橐	took3	
+魠	took3	0%
+籜	took3	0%
+柝	took3	0%
+𣟄	took3	0%
+拓	took3	
+馲	took3	0%
+𩧐	took3	0%
+跅	took3	0%
+蘀	took3	0%
+𦚈	took3	0%
+侂	took3	0%
+飥	took3	0%
+魄	took3	0%
+沰	took3	0%
+矺	took3	0%
+作	zook3	
+迮	zook3	0%
+柞	zook3	0%
+糳	zook3	0%
+鑿	zook3	0%
+㘀	zook3	0%
+錯	cook3	0%
+厝	cook3	0%
+䱜	cook3	0%
+逪	cook3	0%
+剒	cook3	0%
+縒	cook3	0%
+莡	cook3	0%
+各	gook3	
+閣	gook3	
+格	gook3	0%
+胳	gook3	
+袼	gook3	0%
+恪	kook3	
+㤩	kook3	0%
+愙	kook3	0%
+咢	ngook6	0%
+愕	ngook6	
+鄂	ngook6	
+諤	ngook6	0%
+𠟎	ngook6	0%
+𧊜	ngook6	0%
+𧍞	ngook6	0%
+遌	ngook6	0%
+萼	ngook6	
+鍔	ngook6	0%
+𡅡	ngook6	0%
+崿	ngook6	0%
+鶚	ngook6	0%
+鰐	ngook6	
+噩	ngook6	
+㗁	ngook6	0%
+齶	ngook6	
+顎	ngook6	
+𡾙	ngook6	0%
+鑩	ngook6	0%
+偔	ngook6	0%
+堮	ngook6	0%
+𡓐	ngook6	0%
+㮙	ngook6	0%
+湂	ngook6	0%
+𩔈	pook3	0%
+奤	pook3	0%
+濼	pook3	0%
+䨰	pook3	0%
+粕	pook3	
+膊	pook3	0%
+𦢸	pook3	0%
+䪙	pook3	0%
+搏	pook3	
+胉	pook3	0%
+蒪	pook3	0%
+𥴮	pook3	0%
+𦿍	pook3	0%
+𦥭	pook3	0%
+𦐦	pook3	0%
+惡	ook3	
+𢙣	ook3	
+堊	ook3	
+蝁	ook3	0%
+泊	book6	0%
+亳	book6	0%
+箔	book6	
+薄	book6	
+礴	book6	
+簿	book6	0%
+𩍿	book6	0%
+鑮	book6	0%
+踄	book6	0%
+𩽛	book6	0%
+䭦	book6	0%
+𦞦	kook3	0%
+鄗	kook3	0%
+壑	kook3	
+㕡	kook3	0%
+蠚	kook3	0%
+謞	kook3	0%
+郝	kook3	
+鰝	kook3	0%
+熇	kook3	0%
+嗃	kook3	0%
+矐	kook3	0%
+索	sook3	
+𢱢	sook3	0%
+溹	sook3	0%
+𩌈	sook3	0%
+𦵫	sook3	0%
+㮦	sook3	0%
+涸	hook6	0%
+鶴	hook6	
+貈	hook6	0%
+貉	hook6	0%
+狢	hook6	0%
+𠗂	hook6	0%
+佫	hook6	0%
+䮤	hook6	0%
+𥉑	hook6	0%
+䅂	hook6	0%
+䶅	hook6	0%
+昨	zook6	
+酢	zook6	0%
+莋	zook6	0%
+怍	zook6	
+𣫞	zook6	0%
+鑿	zook6	
+笮	zook6	0%
+筰	zook6	0%
+柞	zook6	0%
+㸲	zook6	0%
+岝	zook6	0%
+䎰	zook6	0%
+飵	zook6	0%
+𦁎	zook6	0%
+𢂃	zook6	0%
+䋏	zook6	0%
+秨	zook6	0%
+砟	zook6	0%
+葃	zook6	0%
+鈼	zook6	0%
+博	book3	
+髆	book3	0%
+搏	book3	
+爆	book3	0%
+鎛	book3	0%
+㗘	book3	0%
+𪙍	book3	0%
+襮	book3	0%
+鑮	book3	0%
+簙	book3	0%
+䗚	book3	0%
+猼	book3	0%
+䍸	book3	0%
+欂	book3	0%
+𩌏	book3	0%
+溥	book3	0%
+䶈	book3	0%
+餺	book3	0%
+䙏	book3	0%
+𥴮	book3	0%
+諾	nook6	
 霍	hwok3	
 靃	hwok3	0%
 霩	hwok3	0%
@@ -25338,7 +25338,7 @@ sort: by_weight
 鏙	cyi2	0%
 𦉭	sy3	0%
 𥌊	baen6	0%
-摥	tong3	0%
+摥	toong3	0%
 𪉿	gom3	0%
 𦖼	wat6	0%
 蚗	gyut3	0%

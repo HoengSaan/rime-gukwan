@@ -6,7 +6,7 @@
 
 ---
 name: gukwan.one
-version: "7.1b"
+version: "8.0b"
 sort: by_weight
 ...
 
@@ -292,8 +292,8 @@ sort: by_weight
 玻	bo1	
 窠	wo1	
 伽	gaa1	
-茄	kiaa2	
-奢	cjiaa1	
+茄	kia2	
+奢	cjia1	
 華	hwaa4	0%
 驊	hwaa4	0%
 鷨	hwaa4	0%
@@ -308,17 +308,17 @@ sort: by_weight
 媧	waa1	
 媧	wo1	
 譁	waa1	
-痂	giaa1	
+痂	gia1	
 蝦	haa1	
 巴	paa4	
 扒	paa4	
 咤	craak1	
 吒	craak1	
 吒	zraa1	
-爹	diaa1	
+爹	dia1	
 鯧	cjong1	
-芒	mong1	
-瓤	nong4	0%
+芒	moong1	
+瓤	noong4	0%
 匡	hwong1	0%
 邼	hwong1	0%
 筐	hwong1	0%
@@ -335,8 +335,8 @@ sort: by_weight
 𩢼	hwong1	
 強	kiong6	
 妨	fong4	
-檔	dong3	
-昂	ngong5	
+檔	doong3	
+昂	ngoong5	
 更	gaang1	
 平	peng4	
 驚	geng1	
@@ -394,18 +394,19 @@ sort: by_weight
 鵬	paang4	
 留	jau2	
 由	jau2	
-酬	cjau4	
-醻	cjau4	
-詶	cjau4	
-雔	cjau4	
-魗	cjau4	
-𨞪	cjau4	
-搜	shau2	
-蒐	shau2	
+酋	jau4	
+酬	cjiau4	
+醻	cjiau4	
+詶	cjiau4	
+雔	cjiau4	
+魗	cjiau4	
+𨞪	cjiau4	
+搜	shiau2	
+蒐	shiau2	
 搊	jau1	
 休	hau1	
-仇	sjau4	5%
-浮	pau4	
+仇	sjiau4	5%
+浮	pu4	
 矛	maau4	3%
 𢦧	maau4	
 蝥	maau4	
@@ -419,6 +420,7 @@ sort: by_weight
 篝	kau1	
 夠	gau3	
 呣	m2	
+彪	biu1	
 尋	kam6	
 㩒	gam6	
 菳	kam1	0%
@@ -565,7 +567,7 @@ sort: by_weight
 𠘱	cjan2	0%
 隼	zjeon2	
 晚	maan1	
-晚	waan5	
+挽	waen5	
 棍	gwan3	
 囤	tyun4	
 沌	deon6	
@@ -637,12 +639,12 @@ sort: by_weight
 也	jaa5	3%
 丅	haa6	
 廈	haa6	
-姐	ziaa1	
+姐	zia1	
 厏	zhaa6	
 傻	sho4	
 逛	gwaang6	
 㘢	gwaang6	
-髒	zong1	
+髒	zoong1	
 晃	hwong2	
 幌	hwong2	
 慌	hwong1	
@@ -680,7 +682,7 @@ sort: by_weight
 婦	fu5	
 婦	pu5	
 負	fu6	
-咎	gau3	
+咎	giau3	
 某	maau5	
 畝	maau5	
 垢	gau3	
@@ -689,7 +691,7 @@ sort: by_weight
 吽	ngau6	
 毆	au1	
 口	hau2	
-糾	dau2	
+糾	diau2	
 飪	njam6	
 餁	njam6	
 稔	nim1	
@@ -884,6 +886,7 @@ sort: by_weight
 輾	nin5	
 碾	nin5	
 囀	zryun2	
+掉	diu6	
 掉	deu6	
 竅	kiu2	
 料	liu2	
@@ -912,7 +915,7 @@ sort: by_weight
 俇	gwaang3	
 舫	fong2	
 誆	hong1	
-擋	dong2	
+擋	doong2	
 擴	kwong3	
 擴	kwok3	
 映	jing2	
@@ -920,7 +923,7 @@ sort: by_weight
 鏡	geng3	
 命	meng6	
 柄	beng3	
-趟	tong3	
+趟	toong3	
 勁	ging6	
 勁	gang3	
 劥	gang3	
@@ -934,10 +937,9 @@ sort: by_weight
 剩	zjing6	
 凭	bang6	
 亙	gang2	
-齅	cjau3	0%
+齅	cjiau3	0%
 驟	zhaau6	
 就	zou6	
-糅	njau6	
 姆	mau5	
 竇	dau3	
 遘	kau3	
@@ -1084,13 +1086,13 @@ sort: by_weight
 𪈴	hwok3	3%
 𨏹	hwok3	3%
 錯	co3	
-膊	bok3	
+膊	book3	
 泊	paak3	
-涸	kok3	
+涸	kook3	
 昨	coi6	
 廓	kwaak1	
 佰	baak3	
-舶	bok6	
+舶	book6	
 迫	bik1	
 柏	paak3	0%
 逆	ngaak6	

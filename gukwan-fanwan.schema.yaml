@@ -6,7 +6,7 @@ __include: gukwan.schema:/
 schema:
   schema_id: gukwan-fanwan
   name: 菊韻分韻音
-  version: "7.1b"
+  version: "8.0b"
   author:
     靈帝（Hoengsaan）
   
@@ -36,12 +36,13 @@ speller:
     #- derive/^([aeiou])/ng$1/              # 疑影不分(ng==0)
     
     #聲母——菊韻
-    - xform/^nr/n/                          #
+    - derive/^nr/n/                         #
+    - derive/^nr/nj/                        #
 
     #- derive/^n(?!g|j)/l/                  # 泥來合流(n->l)
     #- derive/^t/h/                         # 透曉合流(t->h) 小欖部份
 
-    #- derive/^w([aeiou])/v$1/              # 口音補充（考慮重碼率，不建議開啓）
+    #- derive/^w([aeiou])/v$1/              # 口音補充（建議維持用w）
 
     #- derive/^gwo/go/                      # 口音補充(gwo->go)：「過」讀作go
     #- derive/^(g|k)w/$1/                   # 口音補充(gk[!w])：完全不能分辨脣化聲母者
@@ -76,6 +77,8 @@ speller:
     #- derive/^nj/j/                        # 日以合流(nj->j)
     
     #韻母
+    - xform/iau(?=\d)/au/                   # 流攝三等(iau->au)
+
     - derive/eau(?=\d)/au/                  # 合音
     - derive/eau(?=\d)/ou/                  # 合音
     #- derive/ooi(?=\d)/ui/                 # (ooi->ui)
@@ -87,12 +90,14 @@ speller:
     #韻母——分韻（非現代音建議維持）
     - derive/yo(?=\d)/yu/                   # 遇開分韻(yo->yu)
     - xform/yi(?=\d)/ui/                    # 蟹合分韻(yi->ui)
-    - derive/ooi(?=\d)/eoy/                 # 其他分韻(ooi->eoy)：「脆」讀若ceoy
-    #- derive/ooi(?=\d)/oi/                 # 蟹合三止合銳(ooi->oi)「脆」讀若coi 文讀少見，一般白讀先有
     
     #韻母——現代
     #其他口音請自行調校 不建議關閉打字輔助
     
+    - derive/ooi(?=\d)/eoy/                 # 其他分韻(ooi->eoy)：「脆」讀若ceoy
+    #- derive/ooi(?=\d)/oi/                 # 蟹合三止合銳(ooi->oi)「脆」讀若coi 文讀少見，一般白讀先有
+    #- derive/ooi(?=\d)/ui/                 # 蟹合三止合銳(ooi->ui)「脆」讀若cui 
+
     #- derive/^(b|p|f)i(?=\d)/$1ei/         # 止攝裂化脣音(i->ei) ：「備」讀若bei
     #- derive/^(d|t|l|n)i(?=\d)/$1ei/       # 止攝裂化齒音(i->ei)：「地」讀若dei
     #- derive/^(g|k|h)i(?=\d)/$1ei/         # 止攝裂化牙音(i->ei)：「既」讀若gei
@@ -126,11 +131,12 @@ speller:
     #- derive/ou(?=\d)/o$1/                 # 效一元音融合(ou->o)：「高」讀若go
     #- derive/ou(?=\d)/au$1/                # 效一元音(ou->au)：「高」讀若gau
     
-    - xform/iaa(?=\d)/e$1/                  # 果假元音融合(iaa->e)：「車」讀若ce
+    - xform/ia(?=\d)/e$1/                   # 果假元音融合(ia->e)：「車」讀若ce
     - xform/jaa(?=\d)/je$1/                 # 果假元音融合(jaa->je)：「野」讀若je
     
-    - xform/io(ng|k)/oe$1/                  # 宕攝元音融合(io->oe) ：「量」讀若loeng
-    - xform/jo(ng|k)/joe$1/                 # 宕攝元音融合(jo->joe) ：「央」讀央joeng
+    - xform/oo(ng|k)/o$1/                   # 宕攝開口(oo->o)：「各」讀若gok
+    - xform/io(ng|k)/oe$1/                  # 宕攝江攝元音融合(io->oe) ：「量」讀若loeng
+    - xform/jo(ng|k)/joe$1/                 # 宕攝江攝元音融合(jo->joe) ：「央」讀央joeng
     
     - xform/ae(u|n|m|t|p)(?=\d)/aa$1/       # 山效咸文(ae->aa)：「關」讀若gwaan
     #- derive/ae(u|n|m|t|p)(?=\d)/e$1/      # 山效咸白(ae->e)：「關」讀若gwen 多只見於白讀音
@@ -201,10 +207,11 @@ speller:
     - derive/(g|k|h)u/$1wu/                 # 全拼(g|k|h[w]u)
     - derive/(g|k)y/$1wy/                   # 全拼(g|k|h[w]y)
     - derive/^ngy/ngjy/                     # 全拼(ng[j]y)
-    - derive/^jaa(?=\d)/jiaa$1/             # 全拼(j[i]aa)
+    - derive/^jaa(?=\d)/jia$1/              # 全拼(j[i]aa)
     - derive/^jo(ng|k)/jio$1/               # 全拼(j[i]o)
-    - derive/^njaa(?=\d)/njiaa$1/           # 全拼(j[i]aa)
+    - derive/^njaa(?=\d)/njia$1/            # 全拼(j[i]aa)
     - derive/^njo(ng|k)/njio$1/             # 全拼(j[i]o)
+    - derive/ia(?=\d)/iaa$1/                # 全拼(ia[a])
     
     #簡拼
     #- derive/^([aeiou])/q$1/               # 喉塞音(q~)
@@ -281,17 +288,20 @@ translator:
     - xform/^hu/fu/                         # 曉合輕脣(hu->fu)
     - xform/^kwing(?=\d)/king$1
     
+    - xform/iau(?=\d)/au/
+    
     - xform/yo(?=\d)/yu/                    # 遇開分韻(yo->yu)
     - xform/yi(?=\d)/ui/                    # 蟹合分韻(yi->ui)
     
     - xform/^ngu(?=\d)/ng/                  # 遇開一單獨成韻(ngu->ng)：「吳」讀若ng
     
-    - xform/iaa(?=\d)/e$1/                  # 果假元音融合(iaa->e)：「車」讀若ce
+    - xform/ia(?=\d)/e$1/                   # 果假元音融合(ia->e)：「車」讀若ce
     - xform/jaa(?=\d)/je$1/                 # 果假元音融合(jaa->je)：「野」讀若je
     
-    - xform/io(ng|k)/oe$1/                  # 宕攝元音融合(io->oe) ：「量」讀若loeng
-    - xform/jo(ng|k)/joe$1/                 # 宕攝元音融合(jo->joe) ：「央」讀央joeng
-    
+    - xform/oo(ng|k)/o$1/                   # 宕攝開口(oo->o)：「各」讀若gok
+    - xform/io(ng|k)/oe$1/                  # 宕攝江攝元音融合(io->oe) ：「量」讀若loeng
+    - xform/jo(ng|k)/joe$1/                 # 宕攝江攝元音融合(jo->joe) ：「央」讀央joeng
+
     - xform/ae(u|n|m|t|p)(?=\d)/aa$1/       # 山效咸文(ae->aa)：「關」讀若gwaan
     
     - xform/^(z|c|s)j/$1h/                  
