@@ -5,15 +5,16 @@
 
 ---
 name: gukwan
-version: "6.1b"
+version: "9.0b"
 sort: by_weight
 vocabulary: essay-cantonese
 import_tables:
-  - gukwan.basic
-  - gukwan.one
-  - gukwan.two
-  - gukwan.temp
+  - gukwan.chars
+  - gukwan.chars1
+  - gukwan.chars2
+  - gukwan.word
   - gukwan.lettered
+  - gukwan.kwongtung
   - jyut6ping3.maps
   - jyut6ping3.phrase
 ...

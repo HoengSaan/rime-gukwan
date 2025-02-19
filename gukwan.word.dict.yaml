@@ -6,7 +6,7 @@
 # Source: https://github.com/CanCLID/rime-cantonese-upstream
 
 ---
-name: gukwan.temp
+name: gukwan.word
 version: "temp"
 sort: by_weight
 ... 

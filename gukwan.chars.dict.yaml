@@ -5,8 +5,8 @@
 # 廣韻理論音對照（小韻例外）
 
 ---
-name: gukwan.basic
-version: "8.1b"
+name: gukwan.chars
+version: "9.0b"
 sort: by_weight
 ...
 
