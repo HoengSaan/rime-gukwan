@@ -3,13 +3,18 @@
 #
 # gukwan - 菊韻字庫——增廣一組
 # 廣韻異音訓讀增補
+#
+# 此爲菊韻粵語輸入法字庫詞庫文件
+# 詳細請至本方案github頁 https://github.com/HoengSaan/rime-gukwan
+#
+# This is a dictionary file for Gukwan Cantonese Input Method.
+# For details, please visit the github page of this project https://github.com/HoengSaan/rime-gukwan (Chinese)
 
 ---
 name: gukwan.chars1
-version: "9.0b"
+version: "9.2b"
 sort: by_weight
 ...
-
 僮	zhong6	
 筒	tung2	
 沖	crung1	
@@ -19,8 +24,11 @@ sort: by_weight
 訌	hung3	
 蓬	fung4	
 篷	fung4	
+韸	bung6	
+欸	e6	
 疼	tang4	
 涌	cjung1	
+壅	ung1	
 慵	jung4	
 扛	kong4	
 窗	chiong1	
@@ -29,6 +37,7 @@ sort: by_weight
 萎	wai2	
 痿	wai2	3%
 錘	crooi1	
+詖	be1	
 隨	coi4	
 奇	ke4	
 騎	ke4	
@@ -43,6 +52,7 @@ sort: by_weight
 危	ngaai4	
 砥	dai2	
 篩	shai1	
+𨈚	pe5	
 粢	cy1	
 餈	cy1	
 怩	nji1	5%
@@ -58,14 +68,17 @@ sort: by_weight
 㵟	mi1	
 鎚	crooi1	
 槌	crooi1	
+咦	ji2	
 孖	maa1	
 仔	zaai2	
 仔	zai2	5%
 微	mi1	
 韋	wai5	
 飛	fui1	
+飛	fei1	
 痱	fi1	
 畿	gi1	
+鐖	gai1	
 魚	ngyo1	
 渠	kyo5	
 渠	hyo5	
@@ -76,6 +89,7 @@ sort: by_weight
 儲	cryo5	
 儲	creau5	
 馳	cryo4	
+墟	hyu1	
 袪	kyo1	
 毋	m4	
 獳	nu1	
@@ -84,6 +98,7 @@ sort: by_weight
 銖	zjyu1	
 茱	zjyu1	
 扶	pau4	
+颫	fu6	
 孵	bu6	
 菢	bu6	
 諏	zau1	
@@ -93,12 +108,14 @@ sort: by_weight
 模	mo4	
 摸	mo1	
 乎	vu4	
+胍	gwaa1	
 箍	ku1	
 荼	to4	
 軲	gu1	
 都	do1	
 臍	ci4	
 莉	li4	
+銻	tai1	
 蓖	bi6	
 篦	bi6	
 稽	kai1	3%
@@ -113,6 +130,7 @@ sort: by_weight
 批	pei1	
 睽	kwai4	
 奎	hui1	
+啀	njaai3	
 娃	waa1	
 洼	waa1	
 哇	waa1	
@@ -125,6 +143,7 @@ sort: by_weight
 來	lai4	
 猜	caai1	
 孩	haai4	
+咳	kat1	
 皚	ngoi2	
 呻	sjan3	
 嗔	zjan1	
@@ -147,6 +166,7 @@ sort: by_weight
 媛	wun4	
 洹	hun4	3%
 𧻚	hun4	3%
+幡	faan1	
 鴛	jin1	3%
 㩮	hin1	0%
 掀	kin4	3%
@@ -179,9 +199,12 @@ sort: by_weight
 邨	cyun1	
 燉	deon6	0%
 燉	dan6	
+痕	han4	
 歺	caan1	
 𩛈	caan1	
+蘭	laan1	
 欄	laan1	
+躝	laan1	
 刊	hon2	5%
 完	jyun4	5%
 𩾞	jyun4	
@@ -227,6 +250,7 @@ sort: by_weight
 烟	en1	0%
 癲	den1	
 邊	ben1	
+甂	bin1	
 錢	cin1	
 纏	cim4	
 聮	lyun4	
@@ -247,6 +271,7 @@ sort: by_weight
 撩	liu1	
 撩	leu1	
 鷯	liu1	
+嫽	leu5	
 嶕	ziu1	0%
 焦	zeu1	
 昭	cjiu1	
@@ -262,9 +287,12 @@ sort: by_weight
 姣	haeu4	
 貓	maeu1	3%
 猫	maeu1	3%
+脬	paau1	
 泡	pou5	
 抓	zhaa1	
 摷 	chaeu3	
+㕭	njaeu1	
+㕭	aeu1	
 坳	aeu3	
 咬	ngaeu5	3%
 撈	lou1	
@@ -278,6 +306,7 @@ sort: by_weight
 柯	o1	
 搓	chaai1	
 多	duo1	
+挱	shaa3	
 嵯	co1	
 佗	taa1	
 他	taa1	
@@ -287,6 +316,7 @@ sort: by_weight
 莎	sraa1	5%
 摩	mo1	
 魔	mo1	
+劘	mai1	
 摞	lo3	
 螺	lo2	
 坡	bo1	
@@ -309,14 +339,22 @@ sort: by_weight
 媧	waa1	
 媧	wo1	
 譁	waa1	
+摣	zhaa6	
 痂	gia1	
 蝦	haa1	
+丫	ngaa1	
+椏	ngaa1	
 巴	paa4	
+呀	aa4	
+呀	aa6	
+哇	waa5	
 扒	paa4	
+苴	zhaa2	
 咤	craak1	
 吒	craak1	
 吒	zraa1	
 爹	dia1	
+揚	jong2	
 鯧	cjong1	
 芒	moong1	
 瓤	noong4	0%
@@ -335,8 +373,10 @@ sort: by_weight
 䒰	hwong1	0%
 𩢼	hwong1	
 強	kiong6	
+倀	craang4	
 妨	fong4	
 檔	doong3	
+磅	bong6	
 昂	ngoong5	
 更	gaang1	
 平	peng4	
@@ -350,6 +390,7 @@ sort: by_weight
 行	haang4	
 氓	mong4	
 浜	bong1	3%
+耾	wang1	
 莖	ging3	
 罃	ang1	
 鶯	ang1	
@@ -360,8 +401,8 @@ sort: by_weight
 鸎	jing1	
 崢	zhaang1	
 鬇	zhaang1	
-繃	maang1	
 揈	fing6	
+繃	maang1	
 拼	ping3	
 爭	zhaang1	
 精	zeng1	
@@ -379,10 +420,12 @@ sort: by_weight
 丁	deng1	
 釘	deng1	
 靪	deng1	
+叮	deng1	
 腥	seng1	
 靈	leng4	
 靈	ling1	
 拎	ling1	
+軨	ling1	
 零	leng4	
 寧	ning6	
 聽	teng1	
@@ -390,11 +433,14 @@ sort: by_weight
 町	ding1	
 憑	pang4	
 繩	sjing1	
+凝	king4	
 䒏	zang2	5%
 瞢	mang1	
 鵬	paang4	
 留	jau2	
 由	jau2	
+騮	lau1	
+抌	dam2	
 酋	jau4	
 酬	cjiau4	
 醻	cjiau4	
@@ -412,6 +458,7 @@ sort: by_weight
 𢦧	maau4	
 蝥	maau4	
 蟊	maau4	
+睺	hau1	
 摟	lau1	
 褸	lau1	
 頭	dau6	
@@ -420,17 +467,21 @@ sort: by_weight
 溝	kau1	
 篝	kau1	
 夠	gau3	
+抔	fat1	
 呣	m2	
 彪	biu1	
 尋	kam6	
 㩒	gam6	
 菳	kam1	0%
 衾	kam1	
+顉	ngap6	
+吟	ngam4	
 吟	ngam4	
 衿	kam1	
 襟	kam1	
 䘳	kam1	0%
 禁	kam1	
+𧽼	dom6	
 涵	haem4	
 探	taam3	
 舑	daam1	0%
@@ -448,10 +499,12 @@ sort: by_weight
 嫌	him4	
 稴	him4	
 拈	nim1	
+妗	kam5	
 杉	chaem3	
 鵮	daem1	
 岩	ngaem4	
 嵌	ham6	
+醃	jip3	
 懵	mung2	
 䁓	zong1	
 竉	lung1	3%
@@ -470,6 +523,8 @@ sort: by_weight
 是	sjy6	
 氏	sjy6	
 綺	ji2	
+邇	nji1	0%
+邇	ei1	
 渳	mi1	
 誃	cje2	
 弛	cji4	0%
@@ -486,6 +541,7 @@ sort: by_weight
 矢	cji2	
 雉	zy6	
 死	si2	
+孈	jai5	
 恃	cji5	
 祀	zy6	
 𥘰	zy6	0%
@@ -510,6 +566,7 @@ sort: by_weight
 柹	zhy2	0%
 齒	sji2	0%
 祉	cri2	
+聻	nji1	0%
 尾	mi1	
 禦	ngyo6	
 貯	cryo5	
@@ -536,6 +593,7 @@ sort: by_weight
 焸	hing2	
 簿	bu2	
 粗	cu1	
+戽	hu3	
 塢	wu1	
 譜	pu2	
 圃	pu2	
@@ -547,6 +605,7 @@ sort: by_weight
 軫	cjan2	0%
 縝	cjan2	0%
 胗	cjan2	0%
+胗	zjan1	
 疹	cjan2	
 畛	cjan2	0%
 賑	cjan2	0%
@@ -568,6 +627,7 @@ sort: by_weight
 稹	cjan2	0%
 𠘱	cjan2	0%
 隼	zjeon2	
+搵	wan2	
 晚	maan1	
 挽	waen5	
 棍	gwan3	
@@ -579,10 +639,13 @@ sort: by_weight
 遯	deon6	
 很	han2	
 䓳	han2	
+鏾	sin3	
 袒	taan2	
 誕	daan3	
 緩	wun4	
 浣	wun2	
+𢭃	dau6	
+板	zam3	
 疃	teon2	0%
 𤲫	teon2	0%
 瘓	teon2	0%
@@ -594,6 +657,7 @@ sort: by_weight
 𩏇	dyun6	0%
 緞	dyun6	
 繭	gaan2	
+撚	lan2	
 撚	nan2	
 撚	nang3	
 蹨	nim3	
@@ -602,6 +666,7 @@ sort: by_weight
 辮	bin1	
 齞	ngin1	
 餞	zin3	
+僆	leng1	
 篆	sjyun6	
 瑑	sjyun6	
 䧘	sjyun6	
@@ -616,9 +681,14 @@ sort: by_weight
 趙	zriu5	
 膘	biu1	
 巧	kiu2	
+撓	ngaeu1	
+拗	aeu2	
+拗	aeu3	
 鮑	baeu1	
 老	lau5	
 燥	cou3	
+掀	kin2	
+好	haau1	
 攞	lo2	
 那	naa5	
 朵	duo2	
@@ -626,6 +696,7 @@ sort: by_weight
 妥	to5	
 橢	to5	
 麼	mo1	
+𣋟	maa1	
 裸	lo2	
 躶	lo2	
 𧝹	lo2	
@@ -644,15 +715,19 @@ sort: by_weight
 姐	zia1	
 厏	zhaa6	
 傻	sho4	
+滰	king4	
 逛	gwaang6	
 㘢	gwaang6	
 髒	zoong1	
 晃	hwong2	
 幌	hwong2	
 慌	hwong1	
+梗	kwaang2	
 哽	ang2	
 哽	ngang2	
 哽	kang2	
+哽	ngang3	
+哽	ang3	
 鯁	kang2	
 憬	ging2	
 打	daa1	
@@ -665,6 +740,7 @@ sort: by_weight
 嶺	leng5	
 頸	geng2	
 餅	beng2	
+鉼	peng1	
 井	zeng2	
 請	ceng2	
 迥	gwing2	
@@ -685,6 +761,8 @@ sort: by_weight
 婦	pu5	
 負	fu6	
 咎	giau3	
+䊆	gau6	
+䊆	kau4	
 某	maau5	
 畝	maau5	
 垢	gau3	
@@ -694,12 +772,17 @@ sort: by_weight
 毆	au1	
 口	hau2	
 糾	diau2	
+罧	lam6	
 飪	njam6	
 餁	njam6	
 稔	nim1	
 恁	njam6	
 棯	nim1	
+諗	nam2	
 贛	gom3	
+㔶	kom2	
+髧	dam3	
+揇	naam3	
 糝	som2	
 坎	hom1	
 撼	hom6	
@@ -709,18 +792,23 @@ sort: by_weight
 丼	zing2	
 丼	zeng2	3%
 毯	taan2	
+𩛎	mom1	
 儉	gim6	
 芡	him3	
 掩	om2	
 玷	dim3	
 玷	dim1	
+扂	dim6	
 歉	hip3	
 湛	zraem3	
 鹼	gaen2	
+欦	kaem4	
 檻	laem6	
 檻	kaem5	
 艦	laem6	
 憁	zung2	3%
+㢥	dung6	
+棟	dung6	
 哄	hung3	
 哄	hung1	
 綜	zung1	
@@ -733,6 +821,7 @@ sort: by_weight
 跛	bai1	
 議	ngi5	
 漬	zik1	
+瀡	sio4	
 魅	mui6	
 祕	bai3	
 喟	wai2	
@@ -759,6 +848,7 @@ sort: by_weight
 伺	sy6	
 試	sjy3	
 餌	njooi6	
+眲	ngaak1	
 侍	sjy6	
 緯	wai5	
 彙	wui6	
@@ -767,7 +857,10 @@ sort: by_weight
 誹	fi2	
 費	fai3	
 諱	wai5	
+㵒	fe6	
 痱	fai6	
+既	ge3	
+既	ge2	
 鋸	gio3	
 署	cjyo5	
 藷	sjyo4	0%
@@ -808,6 +901,7 @@ sort: by_weight
 軎	wai6	
 轊	wai6	
 掣	zjai3	
+䎺	zjai3	
 迣	lai6	0%
 迣	lit6	0%
 迣	crai3	0%
@@ -820,6 +914,7 @@ sort: by_weight
 大	daai1	
 繪	kui2	
 繪	kui3	
+瀨	laai6	
 懈	haai6	
 邂	haai5	3%
 畫	waa2	
@@ -837,6 +932,8 @@ sort: by_weight
 酹	laai6	
 袋	doi2	
 慨	koi2	
+䟴	ngan3	
+轥	lin2	
 僅	gan2	
 瑾	gan2	
 饉	gan2	
@@ -901,12 +998,15 @@ sort: by_weight
 噪	cou3	
 靠	kaau3	
 耗	hou3	
+個	gaa3	
 那	naa6	
 拖	to1	0%
 唾	tuo3	
 剁	diok1	
 架	gaak3	
+架	gaa2	
 罅	laa3	
+咋	zhaa3	
 靶	baa2	
 餉	hiong2	
 訪	fong2	
@@ -926,6 +1026,7 @@ sort: by_weight
 命	meng6	
 柄	beng3	
 趟	toong3	
+䂻	zhaang6	
 勁	ging6	
 勁	gang3	
 劥	gang3	
@@ -933,8 +1034,11 @@ sort: by_weight
 鄭	zreng6	
 令	ding2	
 淨	zeng6	
+靚	leng3	
 晟	sjing4	
+掟	deng3	
 訂	deng3	
+掅	ching3	
 孕	jan6	
 剩	zjing6	
 凭	bang6	
@@ -952,10 +1056,12 @@ sort: by_weight
 佝	kwyu1	
 妊	jam4	
 蔭	jam1	
+啖	daam6	
 殮	lim5	
 墊	din3	
 墊	zin3	
 陷	ham6	
+湴	baan6	
 梵	faan4	
 速	cuk1	
 遬	cuk1	0%
@@ -977,17 +1083,21 @@ sort: by_weight
 涑	cuk1	0%
 睩	luk1	
 轆	luk1	
+碌	luk1	
 鏃	zuk6	
 濮	buk6	5%
 伏	buk6	
 馥	fuk1	
 毓	juk1	
 煜	juk1	
+逳	njuk1	
 畜	cruk1	
 蹙	cuk1	
+朒	nuk1	
 忸	njuk1	
 酷	huk6	
 嚳	gwuk1	
+硞	kak1	
 觸	zjuk1	
 觕	zjuk1	0%
 歜	zjuk1	0%
@@ -998,9 +1108,11 @@ sort: by_weight
 卓	criok3	
 桌	criok3	
 剝	mok1	
+㩧	bok1	
 搉	kok1	
 濁	zruk6	
 擢	crok3	
+擢	chok3	
 鐲	zruk6	
 搦	nik1	
 桎	zrat6	
@@ -1017,39 +1129,59 @@ sort: by_weight
 昵	nik1	
 溢	jik1	
 窒	zrat6	
+挃	zrat1	
 必	bit1	
+咇	bit1	
 率	leot6	
+䞘	gat6	
 橘	gat1	0%
 桔	gat1	
 律	lat1	
 寽	lyut6	
 黜	zryut3	
 怵	zreot1	
+絀	shot1	
 出	cjyut1	
 不	bat1	
+柫	fit1	
+爩	wat1	
 拂	pat1	0%
 拂	fak6	
 礊	fak6	
 迄	ngat6	
 訖	ngat6	
+乞	at1	
+𧽸	gat6	
 蠍	kit3	
+竭	git6	
+腯	dyut1	0%
+扤	at1	
+哱	bot1	
 曷	hot3	
 褐	hot3	
 鞨	hot3	
 炟	taat1	
 撻	taat1	
+躂	daat3	
 遏	at1	
 餲	et1	
 餲	et3	
 剌	laa2	
 剌	laat3	
 瘌	laat3	
+攋	laai6	
 捺	naat3	
 抹	mut3	
 抹	maat3	
 撥	but6	
 袚	fat1	
+坺	pet6	
+㓤	gat1	
+拮	gat1	
+滑	wet6	
+圿	kaai2	
 頡	git3	
+咇	bit1	
 刹	shaet3	
 瞎	hat6	
 𪗾	hat6	
@@ -1058,20 +1190,26 @@ sort: by_weight
 切	cit1	
 𢪃	cit1	
 桔	gat1	
+垤	dat6	
 跌	dit3	
 涅	nip6	
 捏	nit1	
 齧	ngaet6	
 噎	et1	
+㗧	dit1	
+迾	laat6	
 竭	kit3	
 碣	kit3	
 蝕	sjit6	
 折	sjit6	
 搣	mit1	
 搣	lit1	
+雪	syut1	
 噦	oet6	
+焫	naat3	
 啜	zryut1	
 吶	naap6	
+尐	dik1	
 掠	liok1	
 溺	nik1	
 鵲	ziok3	
@@ -1087,6 +1225,7 @@ sort: by_weight
 躩	hwok3	3%
 𪈴	hwok3	3%
 𨏹	hwok3	3%
+硌	kak6	
 錯	co3	
 膊	book3	
 泊	paak3	
@@ -1097,7 +1236,9 @@ sort: by_weight
 舶	book6	
 迫	bik1	
 柏	paak3	0%
+戟	kik1	
 逆	ngaak6	
+㿭	caak3	
 赫	haak1	
 硅	gwai1	
 獲	wok6	
@@ -1119,6 +1260,7 @@ sort: by_weight
 𧖻	gwok3	3%
 擘	maak3	
 嘖	zhek1	
+捇	chik1	
 核	wat6	
 摘	dik1	
 惜	sek3	
@@ -1141,6 +1283,7 @@ sort: by_weight
 席	zek6	
 蓆	zek6	
 瘠	zek3	
+碧	bi1	
 錫	sek6	
 劈	pek3	
 靂	lik1	
@@ -1149,11 +1292,13 @@ sort: by_weight
 瀝	lek6	
 鏑	dik6	3%
 滴	dik6	
+滴	dki1	
 檄	hat6	0%
 檄	gik1	
 笛	dek6	
 糴	dek6	
 趯	dek3	
+剔	tik1	
 踢	tek3	
 蓨	tiu4	5%
 蓨	tiu1	5%
@@ -1189,6 +1334,7 @@ sort: by_weight
 什	zaap6	
 輯	cap1	
 廿	njaa6	
+蓻	zap1	
 及	gap6	
 蟄	zrik1	
 立	laap6	
@@ -1201,14 +1347,20 @@ sort: by_weight
 澀	gip3	
 澁	gip3	3%
 吸	kap1	
+噏	ngap1	
 悒	ap1	
 熠	jap1	
+熠	saap3	
 合	gaap3	
 佮	gaap3	
 夾	gaap3	
 卅	saa1 aa6	
+㧺	dap6	
+䂿	dap6	
+錔	taap3	
 踏	daap6	
 拉	laai1	
+罯	ap1	
 擸	laap3	
 耷	dap1	
 搭	daap3	
@@ -1226,6 +1378,8 @@ sort: by_weight
 𤸱	op1	0%
 頁	jip6	
 睫	zit6	
+躐	laap3	
+䁽	laap3	
 䑜	dep1	
 俠	hap6	
 篋	gip1	
@@ -1234,164 +1388,25 @@ sort: by_weight
 捻	nim1	
 捻	nim2	
 𤗈	sep3	0%
+𤗈	sip3	
 洽	hap1	
 狹	gip6	
 陜	gip6	0%
 陿	gip6	0%
 恰	hap1	
+煠	shaep6	
 渫	dip6	
 眨	zhaem2	
+扱	kap1	
+𤜯	kap6	
 凹	nap1	
 壓	aat3	
 砝	faat3	
-躝	laan1	
-㕭	njaeu1	
-㕭	aeu1	
-軨	ling1	
-邇	nji1	0%
-邇	ei1	
-聻	nji1	0%
-諗	nam2	
-個	gaa3	
-𩛎	mom1	
-既	ge3	
-既	ge2	
-靚	leng3	
-掟	deng3	
-碌	luk1	
-逳	njuk1	
-尐	dik1	
-滴	dki1	
-戟	kik1	
-噏	ngap1	
-湴	baan6	
-攞	lo2	
-煠	shaep6	
-竭	git6	
-䂿	dap6	
-㧺	dap6	
-吟	ngam4	
-搵	wan2	
-撓	ngaeu1	
-劘	mai1	
-㔶	kom2	
-䊆	gau6	
-䊆	kau4	
-㢥	dung6	
-棟	dung6	
-瀨	laai6	
-抔	fat1	
-拗	aeu2	
-拗	aeu3	
-眲	ngaak1	
-扱	kap1	
-墟	hyu1	
-飛	fei1	
-㵒	fe6	
-啖	daam6	
-哱	bot1	
-㩧	bok1	
-𧽼	dom6	
-丫	ngaa1	
-椏	ngaa1	
-焫	naat3	
-嫽	leu5	
-騮	lau1	
-痕	han4	
-扂	dim6	
-腯	dyut1	0%
-滰	king4	
-硌	kak6	
-抌	dam2	
-㿭	caak3	
-甂	bin1	
-罯	ap1	
-䂻	zhaang6	
-爩	wat1	
-壅	ung1	
-錔	taap3	
-醃	jip3	
-睺	hau1	
-㓤	gat1	
-拮	gat1	
-㗧	dit1	
-咇	bit1	
-韸	bung6	
-磅	bong6	
-摣	zhaa6	
-瀡	sio4	
-揇	naam3	
-迾	laat6	
-咳	kat1	
-熠	saap3	
-架	gaa2	
-颫	fu6	
-䎺	zjai3	
-板	zam3	
-饟	njong6	
 跐	njaai2	
 踹	njaai2	
-啀	njaai3	
-撚	lan2	
-凝	king4	
-乞	at1	
-叮	deng1	
-𢭃	dau6	
-髧	dam3	
-剔	tik1	
-絀	shot1	
-蓻	zap1	
-顉	ngap6	
-𣋟	maa1	
-罧	lam6	
-耾	wang1	
-脬	paau1	
-䁽	laap3	
-胗	zjan1	
-硞	kak1	
-孈	jai5	
-梗	kwaang2	
-䞘	gat6	
-鐖	gai1	
-幡	faan1	
-柫	fit1	
-垤	dat6	
-躂	daat3	
-擢	chok3	
+饟	njong6	
 鑱	chaang4	
 劖	chaang4	
 𥊼	chaang4	
 捳	ngok6	
-倀	craang4	
-苴	zhaa2	
-鏾	sin3	
-哽	ngang3	
-哽	ang3	
-欦	kaem4	
-咦	ji2	
-胍	gwaa1	
-扤	at1	
-雪	syut1	
-𨈚	pe5	
-朒	nuk1	
-䟴	ngan3	
-詖	be1	
-哇	waa5	
-銻	tai1	
-攋	laai6	
-𧽸	gat6	
-戽	hu3	
-掅	ching3	
-捇	chik1	
-掀	kin2	
-呀	aa4	
-呀	aa6	
-挃	zrat1	
-咋	zhaa3	
-圿	kaai2	
-轥	lin2	
 䠄	lin2	
-鉼	peng1	
-僆	leng1	
-欸	e6	
-揚	jong2	
