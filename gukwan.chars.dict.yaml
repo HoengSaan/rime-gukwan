@@ -11,10 +11,9 @@
 # For details, please visit the github page of this project https://github.com/HoengSaan/rime-gukwan (Chinese)
 ---
 name: gukwan.chars
-version: "9.0b"
+version: "9.3b"
 sort: by_weight
 ...
-
 東	dung1	
 菄	dung1	0%
 鶇	dung1	0%
@@ -4295,22 +4294,22 @@ sort: by_weight
 獂	ngyun4	0%
 阮	ngyun4	0%
 蒝	ngyun4	0%
-袁	jyun4	
-爰	jyun4	0%
-垣	jyun4	0%
-𩫧	jyun4	0%
-園	jyun4	
-援	jyun4	0%
-榬	jyun4	0%
-轅	jyun4	
-鶢	jyun4	0%
-媛	jyun4	0%
-洹	jyun4	0%
-溒	jyun4	0%
-𧻚	jyun4	0%
-蝯	jyun4	0%
-猨	jyun4	0%
-猿	jyun4	
+袁	hjyun4	
+爰	hjyun4	0%
+垣	hjyun4	0%
+𩫧	hjyun4	0%
+園	hjyun4	
+援	hjyun4	0%
+榬	hjyun4	0%
+轅	hjyun4	
+鶢	hjyun4	0%
+媛	hjyun4	0%
+洹	hjyun4	0%
+溒	hjyun4	0%
+𧻚	hjyun4	0%
+蝯	hjyun4	0%
+猨	hjyun4	0%
+猿	hjyun4	
 煩	faan4	
 番	faan4	0%
 𨆌	faan4	0%
@@ -5604,9 +5603,9 @@ sort: by_weight
 蔫	jin1	
 嫣	jin1	
 鄢	jin1	0%
-漹	jin4	0%
-䗡	jin4	0%
-焉	jin4	
+漹	hjin4	0%
+䗡	hjin4	0%
+焉	hjin4	
 𡣬	jyun1	0%
 潫	jyun1	0%
 燀	cjin1	0%
@@ -5948,8 +5947,8 @@ sort: by_weight
 邀	jiu1	
 䳩	jiu1	0%
 蟯	jiu1	0%
-鴞	jiu4	0%
-𨚙	jiu4	0%
+鴞	hiu4	0%
+𨚙	hiu4	0%
 喬	kiu4	
 橋	kiu4	
 趫	kiu4	0%
@@ -7685,7 +7684,7 @@ sort: by_weight
 揘	wing4	0%
 嶸	wing4	
 兵	bing1	
-兄	hing1	
+兄	hwing1	
 卿	hing1	
 生	shang1	
 笙	shang1	
@@ -9025,8 +9024,8 @@ sort: by_weight
 稵	ziau1	0%
 犙	shiau1	0%
 聱	ngiau4	0%
-飍	hiau1	0%
-烋	hiau1	0%
+飍	hjau1	0%
+烋	hjau1	0%
 繆	miau4	0%
 鷚	miau4	0%
 䋷	miau4	0%
@@ -9529,7 +9528,7 @@ sort: by_weight
 黏	nim4	
 粘	nim4	
 䬯	nim4	0%
-炎	jim4	
+炎	hjim4	
 霑	zrim1	
 沾	zrim1	
 𪏉	zrim1	0%
@@ -10501,8 +10500,8 @@ sort: by_weight
 秄	zy2	0%
 梓	zy2	
 杍	zy2	0%
-矣	ji5	
-𦮸	ji5	0%
+矣	hji5	
+𦮸	hji5	0%
 擬	ngi5	
 儗	ngi5	0%
 薿	ngi5	0%
@@ -10761,21 +10760,21 @@ sort: by_weight
 麌	ngyu5	0%
 俁	ngyu5	0%
 噳	ngyu5	0%
-羽	jyu5	
-禹	jyu5	
-雨	jyu5	
-宇	jyu5	
-㝢	jyu5	0%
-瑀	jyu5	0%
-祤	jyu5	0%
-栩	jyu5	0%
-鄅	jyu5	0%
-頨	jyu5	0%
-楀	jyu5	0%
-萭	jyu5	0%
-䣁	jyu5	0%
-聥	jyu5	0%
-䨞	jyu5	0%
+羽	hjyu5	
+禹	hjyu5	
+雨	hjyu5	
+宇	hjyu5	
+㝢	hjyu5	0%
+瑀	hjyu5	0%
+祤	hjyu5	0%
+栩	hjyu5	0%
+鄅	hjyu5	0%
+頨	hjyu5	0%
+楀	hjyu5	0%
+萭	hjyu5	0%
+䣁	hjyu5	0%
+聥	hjyu5	0%
+䨞	hjyu5	0%
 聚	cyu5	0%
 鄹	cyu5	0%
 甫	fu2	
@@ -11670,8 +11669,8 @@ sort: by_weight
 阮	ngyun5	
 𡯱	ngyun5	0%
 邧	ngyun5	0%
-遠	jyun5	
-𩔃	jyun5	0%
+遠	hjyun5	
+𩔃	hjyun5	0%
 偃	jin2	
 㫃	jin2	0%
 䞁	jin2	0%
@@ -12138,19 +12137,19 @@ sort: by_weight
 𢺃	gin2	0%
 挸	gin2	0%
 𢹕	gin2	0%
-峴	jin5	0%
-臔	jin5	0%
-哯	jin5	0%
-晛	jin5	0%
-垷	jin5	0%
-蜆	jin5	0%
-俔	jin5	0%
-顈	jin5	0%
-䵤	jin5	0%
-睍	jin5	0%
-詪	jin5	0%
-㦓	jin5	0%
-嫢	jin5	0%
+峴	hin5	0%
+臔	hin5	0%
+哯	hin5	0%
+晛	hin5	0%
+垷	hin5	0%
+蜆	hin5	0%
+俔	hin5	0%
+顈	hin5	0%
+䵤	hin5	0%
+睍	hin5	0%
+詪	hin5	0%
+㦓	hin5	0%
+嫢	hin5	0%
 顯	hin2	
 韅	hin2	0%
 蜆	hin2	
@@ -12175,20 +12174,20 @@ sort: by_weight
 碥	bin2	0%
 扁	bin2	
 糄	bin2	0%
-泫	jyun5	0%
-鉉	jyun5	0%
-琄	jyun5	0%
-贙	jyun5	0%
-埍	jyun5	0%
-繯	jyun5	0%
-䀏	jyun5	0%
-𥌭	jyun5	0%
-鞙	jyun5	0%
-䩙	jyun5	0%
-䧎	jyun5	0%
-𨊼	jyun5	0%
-𩉥	jyun5	0%
-䭴	jyun5	0%
+泫	hjyun5	0%
+鉉	hjyun5	0%
+琄	hjyun5	0%
+贙	hjyun5	0%
+埍	hjyun5	0%
+繯	hjyun5	0%
+䀏	hjyun5	0%
+𥌭	hjyun5	0%
+鞙	hjyun5	0%
+䩙	hjyun5	0%
+䧎	hjyun5	0%
+𨊼	hjyun5	0%
+𩉥	hjyun5	0%
+䭴	hjyun5	0%
 𡿨	gyun2	0%
 畎	gyun2	0%
 𤰝	gyun2	0%
@@ -12558,11 +12557,11 @@ sort: by_weight
 㜵	niu5	
 䃵	niu5	0%
 𢸣	niu5	0%
-皛	jiu5	0%
-㵿	jiu5	0%
-芍	jiu5	0%
-𦯪	jiu5	0%
-𠄔	jiu5	0%
+皛	hiu5	0%
+㵿	hiu5	0%
+芍	hiu5	0%
+𦯪	hiu5	0%
+𠄔	hiu5	0%
 窕	tiu5	
 𤕷	tiu5	0%
 𤱩	tiu5	0%
@@ -13796,10 +13795,10 @@ sort: by_weight
 疛	zriau2	0%
 𤶡	zriau2	0%
 扭	zriau2	0%
-朽	hiau2	0%
-㱙	hiau2	0%
-㽲	hiau2	0%
-殠	hiau2	0%
+朽	hjau2	0%
+㱙	hjau2	0%
+㽲	hjau2	0%
+殠	hjau2	0%
 久	giau2	
 九	giau2	
 玖	giau2	
@@ -14161,7 +14160,7 @@ sort: by_weight
 品	ban2	
 𩖄	kam2	0%
 顉	kam2	0%
-廞	ham2	0%
+廞	hjam2	0%
 戡	zram2	0%
 㱽	zram2	0%
 潭	jam5	0%
@@ -14604,7 +14603,7 @@ sort: by_weight
 𤗇	hung3	0%
 糉	zung3	
 粽	zung3	
-0	zung3	0%
+䁓	zung3	0%
 傯	zung3	0%
 㚇	zung3	0%
 鯼	zung3	0%
@@ -15678,12 +15677,12 @@ sort: by_weight
 䈮	gyu3	0%
 邭	gyu3	0%
 䀠	gyu3	0%
-昫	hyu3	0%
-煦	hyu3	0%
-酗	hyu3	
-呴	hyu3	0%
-姁	hyu3	0%
-𧏺	hyu3	0%
+昫	hjyu3	0%
+煦	hjyu3	0%
+酗	hjyu3	
+呴	hjyu3	0%
+姁	hjyu3	0%
+𧏺	hjyu3	0%
 戍	sjyu3	
 腧	sjyu3	0%
 輸	sjyu3	0%
@@ -15734,11 +15733,11 @@ sort: by_weight
 具	gyu6	
 埧	gyu6	0%
 臞	gyu6	0%
-芋	jyu6	0%
-雨	jyu6	0%
-羽	jyu6	0%
-䨒	jyu6	0%
-吁	jyu6	0%
+芋	hjyu6	0%
+雨	hjyu6	0%
+羽	hjyu6	0%
+䨒	hjyu6	0%
+吁	hjyu6	0%
 埾	zyu6	0%
 聚	zyu6	
 捒	sho3	0%
@@ -17414,14 +17413,14 @@ sort: by_weight
 憲	hin3	
 𧾨	hin3	0%
 瀗	hin3	0%
-楥	hyun3	0%
-楦	hyun3	0%
-韗	hyun3	0%
-𩋢	hyun3	0%
+楥	hjyun3	0%
+楦	hjyun3	0%
+韗	hjyun3	0%
+𩋢	hjyun3	0%
 健	gin6	
 腱	gin6	0%
 𣀔	chyun3	0%
-遠	jyun6	0%
+遠	hjyun6	0%
 𤬝	ngin6	0%
 鬳	ngin6	0%
 圈	gyun6	0%
@@ -17933,10 +17932,10 @@ sort: by_weight
 涀	hin3	0%
 汧	hin3	0%
 䵖	hin3	0%
-見	jin6	0%
-現	jin6	
-涀	jin6	0%
-𨘇	jin6	0%
+見	hjin6	0%
+現	hjin6	
+涀	hjin6	0%
+𨘇	hjin6	0%
 硯	ngin6	
 研	ngin6	0%
 𨁍	ngin6	0%
@@ -19655,8 +19654,8 @@ sort: by_weight
 𠐼	lam6	0%
 甚	sjam6	0%
 侺	sjam6	0%
-䫴	jam6	0%
-𪔰	jam6	0%
+䫴	hjam6	0%
+𪔰	hjam6	0%
 深	sjam3	0%
 𢊖	sjam3	0%
 勘	hom3	
@@ -20355,16 +20354,16 @@ sort: by_weight
 尗	sjuk1	0%
 菽	sjuk1	0%
 㶖	sjuk1	0%
-蓄	huk1	0%
-稸	huk1	0%
-畜	huk1	0%
-𤲸	huk1	0%
-㜅	huk1	0%
-鄐	huk1	0%
-荲	huk1	0%
-蓫	huk1	0%
-慉	huk1	0%
-𥈆	huk1	0%
+蓄	hjuk1	0%
+稸	hjuk1	0%
+畜	hjuk1	0%
+𤲸	hjuk1	0%
+㜅	hjuk1	0%
+鄐	hjuk1	0%
+荲	hjuk1	0%
+蓫	hjuk1	0%
+慉	hjuk1	0%
+𥈆	hjuk1	0%
 竹	zruk1	
 竺	zruk1	
 筑	zruk1	0%
