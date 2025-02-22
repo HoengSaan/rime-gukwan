@@ -4,12 +4,13 @@
 schema:
   schema_id: gukwan
   name: 菊韻
-  version: "8.1b"
+  version: "9.3b"
   author:
     靈帝（Hoengsaan）
   
   description: |-
-    調試用
+    基底文件請勿更改
+    詳細請至本方案github頁。https://github.com/HoengSaan/rime-gukwan
 
   dependencies:
     - jyut6ping3
@@ -35,7 +36,7 @@ switches:
     states: [ 冇 Emoji, 有 Emoji ]
     
 menu:
-  page_size: 7
+  page_size: 6
 
 engine:
   processors:

@@ -18,7 +18,7 @@ import_tables:
   - gukwan.chars
   - gukwan.chars1
   - gukwan.chars2
-  - gukwan.word
+  - gukwan.words
   - gukwan.lettered
   - gukwan.kwongtung
   - jyut6ping3.maps

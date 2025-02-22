@@ -11,7 +11,7 @@ This work is licensed under a
 [cc-by-nc-sa-image]: https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png
 [cc-by-nc-sa-shield]: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg
 
-`gukwan.temp.dict.yaml`爲`jyut6ping3.words.dict.yaml`無輸入碼版本，`gukwan.lettered.dict.yaml`基於`jyut6ping3.lettered.dict.yaml`。作者爲「粵語計算語言學基礎建設組」([@CanCLID](https://github.com/CanCLID)) ，證書隨源文件爲[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)。
+部份文件使用其他證書，詳細請見[文件結構段](https://github.com/HoengSaan/rime-gukwan#%E6%96%87%E4%BB%B6%E7%B5%90%E6%A7%8B)。
 
 **測試階段：預計4月完成**
 
@@ -43,6 +43,10 @@ This work is licensed under a
 
 ## 文件結構
 
+`gukwan.words.dict.yaml`爲`jyut6ping3.words.dict.yaml`無輸入碼版本，`gukwan.lettered.dict.yaml`基於`jyut6ping3.lettered.dict.yaml`。
+
+`gukwan.kwongtung.dict.yaml`抽取自
+
 ### 方案
 
 - `gukwan.schema.yaml`：調試用・自用
@@ -64,15 +68,19 @@ This work is licensed under a
 
 ### 字詞
 
-`gukwan.dict.yaml`用於調用字庫詞庫，默認亦調用rime-cantonese部份詞庫。
+`gukwan.dict.yaml`用於調用字庫詞庫，默認亦調用rime-cantonese部份詞庫同粵語八股文。
 
 - 字庫
-  - `gukwan.basic.dict.yaml`：廣韻字庫
-  - `gukwan.one.dict.yaml`：增廣一組廣韻異音訓讀增補
-  - `gukwan.two.dict.yaml`：增廣二組今字異字異音訓讀增補
+  - `gukwan.chars.dict.yaml`：廣韻字庫
+  - `gukwan.chars1.dict.yaml`：增廣一組廣韻異音訓讀增補
+  - `gukwan.chars2.dict.yaml`：增廣二組今字異字異音訓讀增補
 - 詞庫
-  - `gukwan.temp.dict.yaml`：`jyut6ping3.words.dict.yaml`無輸入碼版本
+  - `gukwan.words.dict.yaml`：`jyut6ping3.words.dict.yaml`無輸入碼版本
+    - 作者爲「粵語計算語言學基礎建設組」([@CanCLID](https://github.com/CanCLID)) ，證書隨源文件爲[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)。
   - `gukwan.lettered.dict.yaml`：基於`jyut6ping3.lettered.dict.yaml`
+    - 作者爲「粵語計算語言學基礎建設組」([@CanCLID](https://github.com/CanCLID)) ，證書隨源文件爲[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)。
+  - `gukwan.kwongtung.dict.yaml`：廣東地名（村級）
+    - 來源爲[adyliu/china_area: 2024年中国全国5级行政区划（省、市、县、镇、村）](https://github.com/adyliu/china_area)，證書隨源文件爲[GPL 3.0](https://github.com/HoengSaan/rime-gukwan/blob/main/LICENSE-GPL)。已繁化。
 
 ## 安裝
 
@@ -136,6 +144,15 @@ Android亦可選擇小企鵝（fcitx5），但安裝對一般用家來講較爲�
 - 假名（[rime-kanas](https://github.com/HoengSaan/rime-kanas)），以細階輸入平假名，大階輸入片假名。鍵值爲`R`。
 
 **粵拼同假名須安裝方可使用反查**，安裝方法見上方安裝段。如需使用其他方案反查，請自行搜索竝改變方案。
+
+### 日期時間輸入
+
+- 農曆（nung4 lik6）：`nl`
+- 日期（njat6 ki4）：`rk`或`/date`
+- 時間（shi4 gaen3）：`sg`或`/time`
+- 星期（sing1 ki4）：`sk`或`/week`
+- ISO 8601/RFC 3339：`dt`或`/datetime`
+- Timestamp：`ts`或`/timestamp`
 
 ## 定製
 
