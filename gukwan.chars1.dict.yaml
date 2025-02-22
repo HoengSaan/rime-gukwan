@@ -12,9 +12,10 @@
 
 ---
 name: gukwan.chars1
-version: "9.3b"
+version: "9.4b"
 sort: by_weight
 ...
+
 僮	zhong6	
 筒	tung2	
 沖	crung1	
@@ -206,22 +207,22 @@ sort: by_weight
 欄	laan1	
 躝	laan1	
 刊	hon2	5%
-完	jyun4	5%
-𩾞	jyun4	
-丸	jyun4	
-丸	jyun1	
-紈	jyun4	0%
-汍	jyun4	
-芄	jyun4	0%
+完	hjyun4	5%
+𩾞	hjyun4	
+丸	hjyun4	
+丸	hjyun4	
+紈	hjyun4	0%
+汍	hjyun4	
+芄	hjyun4	0%
 豲	ngyun4	0%
 豲	wun4	
-綄	jyun4	0%
-㿪	jyun4	0%
-䎠	jyun4	0%
-垸	jyun4	0%
-寏	jyun4	0%
-院	jyun4	0%
-捖	jyun4	0%
+綄	hjyun4	0%
+㿪	hjyun4	0%
+䎠	hjyun4	0%
+垸	hjyun4	0%
+寏	hjyun4	0%
+院	hjyun4	0%
+捖	hjyun4	0%
 瘢	baan1	0%
 䊡	maan6	0%
 饅	maan6	5%
@@ -1420,7 +1421,3 @@ sort: by_weight
 𥊼	chaang4	
 捳	ngok6	
 䠄	lin2	
-		
-		
-		
-		
