@@ -91,6 +91,8 @@ This work is licensed under a
    2. [rime-kanas](https://github.com/HoengSaan/rime-kanas)（**可選**，用於輸入假名）
    3. [rime-cantonese-emoji](https://github.com/rime/rime-emoji-cantonese)（可選，用於輸入Emoji）
    4. **rime-gukwan**（**本方案**）
+   5. [rime-luna-pinyin](https://github.com/rime/rime-luna-pinyin)（若閣下已刪除則須重新安裝，否則無法使用官話反查）
+   6. [rime-cangjie](https://github.com/rime/rime-cangjie)（若閣下已刪除則須重新安裝，否則無法使用倉頡反查）
 
 用家可參攷以下文章：
 

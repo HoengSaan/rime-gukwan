@@ -4,8 +4,8 @@
 __include: gukwan.schema:/
 
 schema:
-  schema_id: gukwan-siulaam-town
-  name: 菊韻小欖鎮區音
+  schema_id: gukwan-siulaam
+  name: 菊韻小欖音
   version: "10.0b"
   author:
     靈帝（Hoengsaan）
@@ -267,7 +267,7 @@ speller:
 
 translator:
   dictionary: gukwan
-  prism: gukwan-siulaam-town
+  prism: gukwan-siulaam
   spelling_hints: 9
   preedit_format:
     - xform/([aeiouymngptk])vv/${1}4/
