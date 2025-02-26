@@ -6,7 +6,7 @@ __include: gukwan.schema:/
 schema:
   schema_id: gukwan-default
   name: 菊韻構擬音
-  version: "8.1b"
+  version: "9.6b"
   author:
     靈帝（Hoengsaan）
   
@@ -66,9 +66,10 @@ speller:
     #- derive/^ngy/njy/                     # 疑母齶化(ngy->njy)
     - derive/^ngw/w/                        # 疑合脫落(ngw->w)
     - derive/^ngun(?=\d)/wun$1/             # 疑合脫落(ngw->w)
-    - derive/^hw/f/                         # 曉合輕脣(hw->f)
-    - derive/^hu/fu/                        # 曉合輕脣(hu->fu)
     - derive/^kwing(?=\d)/king$1/
+    - derive/^hwing(?=\d)/hing$1/
+    - derive/^hw(?!ng|k)/f/                 # 曉合輕脣(hw->f)
+    - derive/^hu(?!ng|k)/fu/                # 曉合輕脣(hu->fu)
 
     #聲母——現代
     #- derive/^(z|c|s)h/$1/                 # 精照合流(zh->z)

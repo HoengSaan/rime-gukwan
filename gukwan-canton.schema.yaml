@@ -6,7 +6,7 @@ __include: gukwan.schema:/
 schema:
   schema_id: gukwan-canton
   name: 菊韻廣州音
-  version: "8.1b"
+  version: "9.6b"
   author:
     靈帝（Hoengsaan）
   
@@ -65,9 +65,10 @@ speller:
     - xform/^ngy/njy/                       # 疑母齶化(ngy->njy)
     - xform/^ngw/w/                         # 疑合脫落(ngw->w)
     - xform/^ngun(?=\d)/wun$1/              # 疑合脫落(ngw->w)
-    - xform/^hw/f/                          # 曉合輕脣(hw->f)
-    - xform/^hu/f/                           # 曉合輕脣(hu->fu)
     - xform/^kwing(?=\d)/king$1/
+    - xform/^hwing(?=\d)/hing$1/
+    - xform/^hw(?!ng|k)/f/                  # 曉合輕脣(hw->f)
+    - xform/^hu(?!ng|k)/fu/                 # 曉合輕脣(hu->fu)
 
     #聲母——現代(Use the one below instead)
     #- derive/^(z|c|s)h/$1/                 # 精照合流(zh->z)
@@ -293,9 +294,10 @@ translator:
     - xform/^ngy/njy/                       # 疑母齶化(ngy->njy)
     - xform/^ngw/w/                         # 疑合脫落(ngw->w)
     - xform/^ngun(?=\d)/wun$1/              # 疑合脫落(ngw->w)
-    - xform/^hw/f/                          # 曉合輕脣(hw->f)
-    - xform/^hu/f/                          # 曉合輕脣(hu->fu)
-    - xform/^kwing(?=\d)/king$1
+    - xform/^kwing(?=\d)/king$1/
+    - xform/^hwing(?=\d)/hing$1/
+    - xform/^hw(?!ng|k)/f/                  # 曉合輕脣(hw->f)
+    - xform/^hu(?!ng|k)/fu/                 # 曉合輕脣(hu->fu)
 
     - xform/iau(?=\d)/au/
 
@@ -304,7 +306,7 @@ translator:
     - xform/^(b|p|f)i(?=\d)/$1ei/           # 止攝裂化脣音(i->ei) ：「備」讀若bei
     - xform/^(d|t|l|n)i(?=\d)/$1ei/         # 止攝裂化齒音(i->ei)：「地」讀若dei
     - xform/^(g|k|h)i(?=\d)/$1ei/           # 止攝裂化牙音(i->ei)：「既」讀若gei
-    - derive/^(s)(?!j)i(?=\d)/$1ei/         # 止攝心母特音（現代音裂化專用） 
+    - xform/^(s)(?!j)i(?=\d)/$1ei/          # 止攝心母特音（現代音裂化專用） 
     
     - xform/y(?=\d)/i/                      # 止攝師韻展脣(y->i) ：「師」讀若si
     

@@ -12,7 +12,7 @@
 
 ---
 name: gukwan.chars2
-version: "9.5b"
+version: "9.6b"
 sort: by_weight
 ...
 
@@ -51,7 +51,7 @@ sort: by_weight
 㑂	fong2	0%
 㑄	mu5	0%
 㑅	zook3	0%
-㑆	hing1	0%
+㑆	hwing1	0%
 㑊	jik6	0%
 㑋	hung3	0%
 㑌	hong1	0%
@@ -469,7 +469,7 @@ sort: by_weight
 㚼	niau2	0%
 㚼	niau5	0%
 㚽	haeu2	0%
-㚾	hing1	0%
+㚾	hwing1	0%
 㚿	baeu1	0%
 㛃	git3	0%
 㛆	do3	0%
@@ -5321,7 +5321,7 @@ sort: by_weight
 夁	jat1	0%
 夈	zhaai1	0%
 変	bin3	0%
-夐	hing3	0%
+夐	hwing3	0%
 夐	hyun3	0%
 夑	sip3	0%
 夒	njau4	0%
@@ -11064,7 +11064,7 @@ sort: by_weight
 𡒶	jong5	0%
 𡓨	wan2	0%
 𡓽	hwan1	0%
-𡕷	hing3	0%
+𡕷	hwing3	0%
 𡖂	kwai4	0%
 𡖖	hing1	0%
 𡘊	fan5	0%
@@ -11360,7 +11360,7 @@ sort: by_weight
 𢻯	hok6	0%
 𢻻	kai2	0%
 𢽴	duk1	0%
-𢿌	hing3	0%
+𢿌	hwing3	0%
 𣁄	gyo2	0%
 𣁋	mi4	0%
 𣁦	pun4	0%
@@ -12521,7 +12521,7 @@ sort: by_weight
 𪋟	zjiong1	0%
 𪋿	buk1	0%
 𪎩	waa1	0%
-𪐀	naa1	
+𪐀	naa1	5%
 𪑛	mi4	0%
 𪗆	cai4	0%
 𪙛	nik1	0%

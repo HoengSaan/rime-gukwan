@@ -12,7 +12,7 @@
 
 ---
 name: gukwan.chars
-version: "9.5b"
+version: "9.6b"
 sort: by_weight
 ...
 
@@ -8004,7 +8004,7 @@ sort: by_weight
 𩷏	king4	0%
 葝	king4	0%
 𦳲	king4	0%
-𧵣	hing1	0%
+𧵣	hwing1	0%
 青	cing1	
 鶄	cing1	0%
 鯖	cing1	0%
@@ -13528,7 +13528,7 @@ sort: by_weight
 𨜜	shaang2	0%
 永	wing5	
 栐	wing5	0%
-𦬺	hing2	0%
+𦬺	hwing2	0%
 皿	ming5	
 𥥊	ming5	0%
 𥁰	ming5	0%
@@ -19127,10 +19127,10 @@ sort: by_weight
 聘	ping3	
 娉	ping3	
 俜	ping3	0%
-敻	hing3	0%
-詗	hing3	0%
-醟	hing3	0%
-矎	hing3	0%
+敻	hwing3	0%
+詗	hwing3	0%
+醟	hwing3	0%
+矎	hwing3	0%
 摒	bing3	
 併	bing3	
 并	bing3	
