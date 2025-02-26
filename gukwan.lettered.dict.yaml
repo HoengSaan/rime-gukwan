@@ -2,21 +2,21 @@
 # encoding: utf-8
 #
 # gukwan - 菊韻字母
-#
+
 # 此爲菊韻粵語輸入法字庫詞庫文件
-# 詳細請至本方案github頁 https://github.com/HoengSaan/rime-gukwan
-#
+# 詳細請至本方案github頁
+# https://github.com/HoengSaan/rime-gukwan
 # This is a dictionary file for Gukwan Cantonese Input Method.
-# For details, please visit the github page of this project https://github.com/HoengSaan/rime-gukwan (Chinese)
+# For details, please visit the github page of this project.
 
 ---
 name: gukwan.lettered
-version: "9.1b"
+version: "9.5b"
 sort: by_weight
 use_preset_vocabulary: true
 ...
 
-# Alphabet
+# English Alphabet
 A	ei1
 B	bi1
 C	si1
@@ -45,18 +45,6 @@ X	ek1 si6
 Y	waai1
 Z	ji6 set1
 
-# Numberals
-1   jat1
-2   nji6
-3   saam1
-4   si3
-5   ngu5
-6   luk6
-7   cat1
-8   baet3
-9   giau2
-10  sjap6
-
 # Based on jyut6ping3.lettered.dict.yaml
 # 詞條數據參考
 # LSHK Jyutping Word List https://corpus.eduhk.hk/JPwordlist/
@@ -82,8 +70,7 @@ ABC	ei1 bi1 si1
 AB制	ei1 bi1 zjai3
 AA膠	ei1 ei1 gaeu1
 AA制	ei1 ei1 zjai3
-A4紙	ei1 fo1 zji2
-A4紙	ei1 si3 zji2
+A4紙	ei1 fo1 zi2
 A貨	ei1 hwo3
 A咖	ei1 kaa1
 AK	ei1 kei1

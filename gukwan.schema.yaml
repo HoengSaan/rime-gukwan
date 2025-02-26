@@ -4,13 +4,12 @@
 schema:
   schema_id: gukwan
   name: 菊韻
-  version: "9.3b"
+  version: "9.5b"
   author:
     靈帝（Hoengsaan）
   
   description: |-
-    基底文件請勿更改
-    詳細請至本方案github頁。https://github.com/HoengSaan/rime-gukwan
+    調試用
 
   dependencies:
     - jyut6ping3
@@ -36,7 +35,7 @@ switches:
     states: [ 冇 Emoji, 有 Emoji ]
     
 menu:
-  page_size: 6
+  page_size: 7
 
 engine:
   processors:
@@ -115,8 +114,8 @@ speller:
     - derive/^ngy/njy/                      # 疑母齶化(ngy->njy)
     - derive/^ngw/w/                        # 疑合脫落(ngw->w)
     - derive/^ngun(?=\d)/wun$1/             # 疑合脫落(ngw->w)
-    - derive/^hw/f/                         # 曉合輕脣(hw->f)
-    - derive/^hu/fu/                        # 曉合輕脣(hu->fu)
+    - derive/^hw(?!ng|k)/f/                         # 曉合輕脣(hw->f)
+    - derive/^hu(?!ng|k)/fu/                        # 曉合輕脣(hu->fu)
     - derive/^kwing(?=\d)/king$1/
 
     #聲母——現代
@@ -258,8 +257,8 @@ speller:
     #- derive/y(?=\d)/ii/                   # 擴展粵拼(y->ii)
 
     #全拼
-    - derive/(g|k|h)u/$1wu/                 # 全拼(g|k|h[w]u)
-    - derive/(g|k)y/$1wy/                   # 全拼(g|k|h[w]y)
+    - derive/(g|k|h|ng)u/$1wu/              # 全拼(g|k|h[w]u)
+    - derive/(g|k|h|ng)y/$1wy/              # 全拼(g|k|h[w]y)
     - derive/^ngy/ngjy/                     # 全拼(ng[j]y)
     - derive/^jaa(?=\d)/jia$1/              # 全拼(j[i]aa)
     - derive/^jo(ng|k)/jio$1/               # 全拼(j[i]o)

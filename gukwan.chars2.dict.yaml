@@ -3,16 +3,16 @@
 #
 # gukwan - 菊韻字庫——增廣二組
 # 今字異字異音訓讀增補
-#
+
 # 此爲菊韻粵語輸入法字庫詞庫文件
-# 詳細請至本方案github頁 https://github.com/HoengSaan/rime-gukwan
-#
+# 詳細請至本方案github頁
+# https://github.com/HoengSaan/rime-gukwan
 # This is a dictionary file for Gukwan Cantonese Input Method.
-# For details, please visit the github page of this project https://github.com/HoengSaan/rime-gukwan (Chinese)
+# For details, please visit the github page of this project.
 
 ---
 name: gukwan.chars2
-version: "9.4b"
+version: "9.5b"
 sort: by_weight
 ...
 

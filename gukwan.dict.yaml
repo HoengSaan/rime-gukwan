@@ -2,16 +2,10 @@
 # encoding: utf-8
 #
 # gukwan - 菊韻
-#
-# 此爲菊韻粵語輸入法字庫詞庫文件
-# 詳細請至本方案github頁 https://github.com/HoengSaan/rime-gukwan
-#
-# This is a dictionary file for Gukwan Cantonese Input Method.
-# For details, please visit the github page of this project https://github.com/HoengSaan/rime-gukwan (Chinese)
 
 ---
-name: gboukwan
-version: "9.0b"
+name: gukwan
+version: "9.5b"
 sort: by_weight
 vocabulary: essay-cantonese
 import_tables:
@@ -19,8 +13,8 @@ import_tables:
   - gukwan.chars1
   - gukwan.chars2
   - gukwan.words
-  - gukwan.lettered
   - gukwan.kwongtung
+  - gukwan.lettered
   - jyut6ping3.maps
   - jyut6ping3.phrase
 ...

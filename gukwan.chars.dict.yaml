@@ -3,17 +3,19 @@
 #
 # gukwan - 菊韻字庫——基本
 # 廣韻理論音對照（小韻例外）
-#
+
 # 此爲菊韻粵語輸入法字庫詞庫文件
-# 詳細請至本方案github頁 https://github.com/HoengSaan/rime-gukwan
-#
+# 詳細請至本方案github頁
+# https://github.com/HoengSaan/rime-gukwan
 # This is a dictionary file for Gukwan Cantonese Input Method.
-# For details, please visit the github page of this project https://github.com/HoengSaan/rime-gukwan (Chinese)
+# For details, please visit the github page of this project.
+
 ---
 name: gukwan.chars
-version: "9.3b"
+version: "9.5b"
 sort: by_weight
 ...
+
 東	dung1	
 菄	dung1	0%
 鶇	dung1	0%
@@ -4719,9 +4721,9 @@ sort: by_weight
 完	hwun4	0%
 䴟	hwun4	0%
 𩾞	hwun4	0%
-丸	hwun4	
+丸	hwun4	0%
 瓛	hwun4	0%
-紈	hwun4	
+紈	hwun4	0%
 𦻃	hwun4	0%
 雈	hwun4	0%
 洹	hwun4	
