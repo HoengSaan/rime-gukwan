@@ -6,7 +6,7 @@ __include: gukwan.schema:/
 schema:
   schema_id: gukwan-default
   name: 菊韻構擬音
-  version: "9.6b"
+  version: "10.0b"
   author:
     靈帝（Hoengsaan）
   
@@ -38,16 +38,13 @@ speller:
     - derive/^nr/n/                         #
     - derive/^nr/nj/                        #
 
-    #- derive/^n(?!g|j)/l/                  # 泥來合流(n->l)
-    #- derive/^t/h/                         # 透曉合流(t->h) 小欖部份
-
     #- derive/^w([aeiou])/v$1/              # 口音補充（建議維持用w）
 
     #- derive/^gwo/go/                      # 口音補充(gwo->go)：「過」讀作go
     #- derive/^(g|k)w/$1/                   # 口音補充(gk[!w])：完全不能分辨脣化聲母者
 
-    - xform/^hj/j/                          # 口音補充(hj->j)：「賢」讀若jin者 多數方音
-    #- xform/^hj/h/                         # 口音補充(hj->h)：「賢」讀若hin者 順德石歧
+    - derive/^hj/j/                         # 口音補充(hj->j)：「賢」讀若jin者 多數方音
+    - derive/^hj/h/                         # 口音補充(hj->h)：「賢」讀若hin者 順德石歧
     
     - xform/^hwun(?=\d)/hun$1/              # 口音補充(hw->h)：「桓」讀若fun者
     #- xform/^hwun(?=\d)/wun$1/             # 口音補充(hw->w)：「桓」讀若wun者
@@ -70,7 +67,7 @@ speller:
     - derive/^hwing(?=\d)/hing$1/
     - derive/^hw(?!ng|k)/f/                 # 曉合輕脣(hw->f)
     - derive/^hu(?!ng|k)/fu/                # 曉合輕脣(hu->fu)
-
+    
     #聲母——現代
     #- derive/^(z|c|s)h/$1/                 # 精照合流(zh->z)
     #- derive/^(zj|cj|sj)yo(?=\d)/$1yu/     # 精照合流
@@ -109,10 +106,6 @@ speller:
     #- derive/^(g|k|h)i(?=\d)/$1ei/         # 止攝裂化牙音(i->ei)：「既」讀若gei
     #- derive/^(s)(?!j)i(?=\d)/$1ei/        # 止攝心母特音（現代音裂化專用） 
     
-    #- xform/y(?=\d)/i/                     # 止攝師韻展脣(y->i) ：「師」讀若si 現代音應開
-    #- xform/y(?=\d)/yu/                    # 止攝師韻圓脣(y->yu)：「仕」讀若syu 不建議開啓
-    #- derive/^(z|c|s)ji(?=\d)/$1ii/        # 止開照組異拼(ji->ii)
-    
     #- derive/^ngu(?=\d)/ng/                          # 遇開一單獨成韻(ngu->ng)：「吳」讀若ng
     #- derive/^(b|p|m|d|t|n|l|z|c|s|sh)u(?=\d)/$1au/  # 遇攝裂化(u->au)：「渡」讀若dau
     #- derive/^(b|p|m|d|t|n|l|z|c|s|sh)u(?=\d)/$1ou/  # 遇攝裂化(u->ou)：「渡」讀若dou
@@ -129,8 +122,14 @@ speller:
     #- derive/^(z|c)yi(?=\d)/$1eoy/         # 蟹合一(yi->eoy)：「最」讀若zeoy
     #- derive/^(s)yi(?=\d)/$1eoy/           # 蟹合一(yi->eoy)：「碎」讀若seoy
     #- derive/^(s)yi(?=\d)/$1yu/            # 蟹合一(yi->yu)：「碎」讀若syu
-    #- derive/^(d|t|n|l)yi(?=\d)/$yu/       # 蟹合一(yi->yu)：「對」讀若dyu
+    #- derive/^(d|t|n|l)yi(?=\d)/$1yu/      # 蟹合一(yi->yu)：「對」讀若dyu
     #- derive/yi(?=\d)/eoy/                 # 蟹合一(yi->eoy)：皆讀作eoy者可用，其他關閉
+
+    #- xform/yo(?=\d)/yu/                   # FIX（現代音用）
+    
+    #- xform/y(?=\d)/i/                     # 止攝師韻展脣(y->i) ：「師」讀若si
+    #- xform/y(?=\d)/yu/                    # 止攝師韻圓脣(y->yu)：「仕」讀若syu
+    #- derive/^(z|c|s)ji(?=\d)/$1ii/        # 止開照組異拼(ji->ii)
     
     #- derive/eo(n|t)(?=\d)/a$1/            # 臻攝混音(ea->a)：「順」讀若san 多只見於白讀音
     
@@ -148,6 +147,10 @@ speller:
     #- derive/ae(u|n|m|t|p)(?=\d)/e$1/      # 山效咸白(ae->e)：「關」讀若gwen 多只見於白讀音
     
     #- derive/o(m|p)(?=\d)/a$1/             # 咸攝音變(o->a)：「甘」讀若gam
+
+    #FIX
+    #- derive/^n(?!g|j)/l/                  # 泥來合流(n->l)
+    #- derive/^t/h/                         # 透曉合流(t->h) 小欖部份
 
     #韻母——長短音混
     #- derive/ap(?=\d)/aap$1/               # ap同aap混 
@@ -210,8 +213,8 @@ speller:
     #- derive/y(?=\d)/ii/                   # 擴展粵拼(y->ii)
 
     #全拼
-    - derive/(g|k|h)u/$1wu/                 # 全拼(g|k|h[w]u)
-    - derive/(g|k)y/$1wy/                   # 全拼(g|k|h[w]y)
+    - derive/(g|k|h|ng)u/$1wu/              # 全拼(g|k|h[w]u)
+    - derive/(g|k|h|ng)y/$1wy/              # 全拼(g|k|h[w]y)
     - derive/^ngy/ngjy/                     # 全拼(ng[j]y)
     - derive/^jaa(?=\d)/jia$1/              # 全拼(j[i]aa)
     - derive/^jo(ng|k)/jio$1/               # 全拼(j[i]o)
@@ -272,10 +275,9 @@ translator:
     - xform/([aeiouymngptk])q/${1}3/
 
   comment_format:
-    - xform/^hj/j/                          # 口音補充(hj->j)：「賢」讀若jin者 多數方音
-    - xform/^hwun(?=\d)/hun$1/              # 口音補充(hw->h)：「桓」讀若fun者
-    - xform/^xu(?=\d)/hu$1/                 # 遇攝合口(*u->hu)：「狐」讀作fu4
-    - xform/^vu(?=\d)/hu$1/                 # 遇攝合口(*u->hu)：「護」讀作fu6
+    - xform/hwun(?=\d)/hun$1/               # 口音補充(hw->h)：「桓」讀若fun者
+    - xform/xu(?=\d)/hu$1/                  # 遇攝合口(*u->hu)：「狐」讀作fu4
+    - xform/vu(?=\d)/hu$1/                  # 遇攝合口(*u->hu)：「護」讀作fu6
 
     - xform/^(z|c|s)jy(?=\d)/$1ji/          # 
 

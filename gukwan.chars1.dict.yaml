@@ -12,7 +12,7 @@
 
 ---
 name: gukwan.chars1
-version: "9.5b"
+version: "10.0b"
 sort: by_weight
 ...
 
@@ -454,7 +454,8 @@ sort: by_weight
 搜	shiau2	
 蒐	shiau2	
 搊	jau1	
-休	hau1	
+休	hau1	5%
+休	heu1	
 仇	sjiau4	5%
 浮	pu4	
 矛	maau4	3%
@@ -582,7 +583,8 @@ sort: by_weight
 緒	syo5	
 嶼	jyo5	
 墅	jaa5	
-墅	sjyo6	
+墅	syo5	0%
+墅	syo6	
 脯	pu2	
 莆	pu2	
 釜	fu2	
@@ -714,7 +716,7 @@ sort: by_weight
 禍	wo6	
 夥	hwo2	
 爸	baa1	
-也	jaa5	3%
+也	xaa5	3%
 丅	haa6	
 廈	haa6	
 姐	zia1	
@@ -1045,7 +1047,7 @@ sort: by_weight
 掟	deng3	
 訂	deng3	
 掅	ching3	
-孕	jan6	
+孕	jang6	
 剩	zjing6	
 凭	bang6	
 亙	gang2	
