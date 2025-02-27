@@ -12,7 +12,7 @@
 
 ---
 name: gukwan.chars2
-version: "9.6b"
+version: "10.1b"
 sort: by_weight
 ...
 
@@ -5187,12 +5187,12 @@ sort: by_weight
 埖	hwaa1	0%
 埗	bu2	
 埗	bu6	
-埗	fu6	0%
+埗	fiau6	0%
 埛	gwing1	0%
 埜	jaa5	0%
 埞	deng6	
 埠	bu6	
-埠	fu6	
+埠	fiau6	
 埡	aa3	0%
 埣	syi3	0%
 埣	seot1	0%
@@ -8743,7 +8743,7 @@ sort: by_weight
 膛	toong4	
 膣	zrat6	
 膤	syut3	0%
-膥	choen1	
+膥	cjeon1	
 膧	crong4	0%
 膧	tung4	0%
 膵	cooi3	0%

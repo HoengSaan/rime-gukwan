@@ -4,18 +4,20 @@
 schema:
   schema_id: gukwan
   name: 菊韻
-  version: "9.6b"
+  version: "10.1b"
   author:
     靈帝（Hoengsaan）
   
   description: |-
     調試用
+    基底文件切勿刪除
 
   dependencies:
     - jyut6ping3
     - luna_pinyin
     - cangjie5
     - kanas
+    - kunyomi
 
 switches:
   - name: ascii_mode
@@ -54,6 +56,7 @@ engine:
     - affix_segmentor@luna_pinyin
     - affix_segmentor@cangjie5
     - affix_segmentor@kanas
+    - affix_segmentor@kunyomi
     - abc_segmentor
     - punct_segmentor
     - fallback_segmentor
@@ -63,6 +66,7 @@ engine:
     - script_translator@jyut6ping3
     - script_translator@luna_pinyin
     - script_translator@kanas
+    - script_translator@kunyomi
     - table_translator@cangjie5
   filters:
     - simplifier@emoji_cantonese_suggestion
@@ -373,8 +377,16 @@ kanas:
   suffix: ";"
   tips: 〔假名〕
 
+kunyomi:
+  tag: kunyomi
+  dictionary: kunyomi
+  enable_user_dict: false
+  prefix: "K"
+  suffix: ";"
+  tips: 〔和訓〕
+
 reverse_lookup:
-  tags: [ jyut6ping3, luna_pinyin, cangjie5, kanas ]
+  tags: [ jyut6ping3, luna_pinyin, cangjie5, kanas, kunyomi ]
   overwrite_comment: false
   dictionary: gukwan
 
@@ -398,6 +410,7 @@ recognizer:
     luna_pinyin: "^X[a-z']*;?$"
     cangjie5: "^V[a-z]*;?$"
     kanas: "^R[a-zA-Z-]*;?$"
+    kunyomi: "^K[a-z']*;?$"
 
 style:
   #font_face: "Shanggu"

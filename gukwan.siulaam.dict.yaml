@@ -1,0 +1,445 @@
+# Rime dictionary
+# encoding: utf-8
+#
+# gukwan - 菊韻小欖詞庫
+# 本詞庫收錄部份小欖話特殊辭彙同小欖周邊地名
+# 本人所識，部分參攷《中山方言誌》，由於小欖早已城市化，本人並不認識部分詞（尤其農業相關）。
+
+# 此爲菊韻粵語輸入法字庫詞庫文件
+# 詳細請至本方案github頁
+# https://github.com/HoengSaan/rime-gukwan
+# This is a dictionary file for Gukwan Cantonese Input Method.
+# For details, please visit the github page of this project.
+
+---
+name: gukwan.siulaam
+version: "10.1b"
+sort: by_weight
+use_preset_vocabulary: true
+...
+
+小欖鎮	
+小欖	
+沙口	
+沙口海	
+新市	
+東區	
+績西	zek3 sai1
+績西村	zek3 sai1 cyun1
+北區	
+竹源	
+竹源村	
+績東一	zek3 dung1 jat1
+績東二	zek3 dung1 nji6
+績東村	zek3 dung1 cyun1
+盛豐	
+盛豐村	
+寶豐	
+寶豐村	
+九洲基	
+九洲基村	
+永寧	
+永寧村	
+西區	
+西區村	
+頃一	
+頃一村	
+埒西一	
+埒西一村	
+埒西二	
+埒西二村	
+埒西村	
+埒東村	
+埒東村	
+聯豐	
+聯豐村	
+一埒	
+二埒	
+三埒	
+四埒	
+五埒	
+祥豐	
+祥豐村	
+泰豐	
+泰豐村	
+小欖工業區	
+下基	
+基頭	
+東廟	
+石排	
+福興	
+石龍	
+西就	
+橫海	
+德勝	
+聯勝	
+廣成	
+螺沙	
+螺沙村	
+大欖崗	daai6 laam5 go1
+大欖崗	daai6 laam5 gong1
+半邊欖	
+圓欖山	
+圓欖	
+菊城大道	
+民安北路	
+民安中路	
+民安南路	
+民安路	
+新永路	
+下基路	
+富華路	
+廣源北路	
+廣源中路	
+廣源南路	
+廣源路	
+昇平東路	
+昇平中路	
+昇平西路	
+昇平路	
+龍山路	
+文田路	
+正義路	
+雲路	
+康公路	
+興寧路	
+新市路	
+文化路	
+紅山路	
+竹源路	
+長堤路	
+沙口西路	
+沙口東路	
+榮華北路	
+榮華中路	
+榮華南路	
+小欖大道北	
+小欖大道中	
+小欖大道南	
+小欖大道	
+廣成路	
+聯豐北路	
+聯豐中路	
+聯豐南路	
+小欖工業大道北	
+小欖工業大道中	
+小欖工業大道南	
+小欖工業大道	
+泰昌路	
+永寧工業大道	
+荼薇	to4 mi4
+荼薇花	to4 mi4 hwaa1
+荼薇酒	to4 mi4 ziau2
+荼薇花園	to4 mi4 hwaa1 hjyun4
+陽光美加花園	
+美加花園	
+美加	
+聯祥花園	
+菊中花園	
+慶豐花園	
+九洲花園	
+錦園花園	
+金菊花園	
+金菊	
+銀菊花園	
+銀菊	
+龍山華府	
+固力花園	
+維港灣	
+菊城建華花園	
+建華花園	
+東海灣	
+西區新邨	
+龍山公園	
+人民公園	
+鳳山公園	
+江濱公園	
+人民醫院	
+陳星海醫院	
+陳星海	
+東昇鎮	
+東昇	
+坦背鎮	
+坦背	
+古鎮鎮	
+古鎮	
+海洲	
+曹步	
+東鳳鎮	
+東鳳	
+黃圃鎮	
+黃圃	
+南頭鎮	
+南頭	
+阜沙鎮	
+阜沙	
+坦洲鎮	
+坦洲	
+沙蓢鎮	
+沙蓢	
+港口鎮	
+港口	
+民衆鎮	
+民衆	
+浪網鎮	
+浪網	
+三角鎮	
+三角	
+環城區	
+環城	
+板芙鎮	
+板芙	
+神灣鎮	
+神灣	
+三鄉鎮	
+三鄉	
+翠亨村	
+翠亨	
+橫門鎮	
+橫門	
+張家邊鎮	
+張家邊	
+沙溪鎮	
+沙溪	
+大涌鎮	
+大涌	
+隆都	
+橫欄鎮	
+橫欄	
+中山港	
+佛山市	
+佛山	
+順德市	
+順德	
+容桂鎮	
+容桂	
+容奇	
+桂洲	
+大良鎮	
+大良	daai6 liong4
+大良	daai6 liong1
+倫教鎮	
+倫教	
+勒流鎮	
+勒流	
+北滘鎮	
+北滘	
+樂從鎮	
+樂從	
+龍江鎮	
+龍江	
+杏壇鎮	
+杏壇	
+均安鎮	
+均安鎮	
+南海市	
+南海	
+三水市	
+三水	
+高明市	
+高明	
+唐家灣鎮	
+唐家	
+金鼎鎮	gam1 deng2 zran3
+金鼎	gam1 deng2
+斗門市	
+斗門	
+集側	zaap6 zhik1
+戙鍬	dung6 ciu1
+立鍬	laap6 ciu1
+掘泥	
+戙企風	
+蠔花	
+倔篤涌	
+花稔	
+桑稔	
+馬果	
+馬蹄	maa5 tai2
+馬蹄	maa5 tai1
+番瓜	
+矮瓜	
+稗草	bi4 cou2
+薯藤	
+黑心番薯	haak1 sam1 faan4 sjyo1
+番薯	faan1 sjyo1
+番薯	faan4 sjyo1
+樹蔃	
+芋乸	
+桑棗	
+冷蔥	
+㷫蔥	
+四季青	
+蔗棘	zjia3 kik1
+蘿蔔鼓	
+浮薸	fiau4 piu1
+蔗渣	
+旱水蕹	
+白蔴	
+蓢	
+蕉蕾	
+烏茭筍	wu1 gaeu1 seon2
+青𦬁	cing1 coi4
+擼蔴繩	lu2 maa4 sjing4 
+蘆橘	
+馬齒莧	maa5 sji2 haen6
+樹頭燈	
+𫒩	pung1
+嗲春	
+辣蟻	
+肥水	
+間鱔	
+臭𧌇䗁	cjiau3 pang4 ki4
+孵雞仔	bau6 gai1 zaai2
+打種	
+踏尾	
+烏屎趷	
+婆遠	
+金雞	
+草蝦公	
+噴屎鉗	
+蝻蛇	
+螞螂蜛	maa5 loong4 gyo4
+螞螂蚢	maa5 loong4 kong4
+大口鬼	
+鼻躝蟲	bi6 laan1 crung4
+沙䘆	shaa1 hen2
+茅寮	maeu4 liu1
+瓦鼓	
+下間	
+牀𩩍	choong4 peng4
+尿埕	niu6 cring4
+半唐番牀	
+花板	
+花鷯哥	
+蜎	gyun1
+蜎被竇	gyun1 pi2 dau6
+蜎被窿	gyun1 pi2 lung1
+藤篋	
+皮篋	
+入棉胎	
+揚棉胎	
+功夫凳	
+燒青面盆	
+搲爐灰	
+綫絡	
+大光燈	
+晾衫杈	
+頂指	
+拜竈	
+謝竈	
+木碎	
+木刨	muk6 paeu1
+亞大	aa3 daai1
+亞代	aa3 doi1
+亞一	
+喉膽	
+泥湴	
+孻雞	
+孻尾	laai1 mi1
+虹拱	
+田基	
+基面	
+基地	
+坑仔	
+壍仔	
+埠頭	
+山地	shaan1 di6
+山地	shen1 di2
+玩水	hwaan2 sjooi2
+圍水	
+圍基	
+基頭	
+海皮	
+海坦	
+海邊	
+昨日	coi6 njat6
+年卅晚	nin4 saa1 aa6 maan2
+晚晝	
+揚浮	jong2 fiau4
+粗砂	
+幼砂	
+紅毛泥	
+早造	
+晚造	
+駛牛	
+繭	gen4
+一眠蠶	jat1 men4 com1
+浸田	
+經絲	
+經繭	ging1 gen4
+𫒩田	pong1 hin4
+蠶蛾	com4 ngo1
+蠶屎	com4 sji2
+起瀝	
+泥塵	
+打磚	
+地堂	
+禾桶	
+禾笪	
+執禾	
+落菜種	
+攪穀櫃	gaeu2 guk1 gwai4
+蠶桑	com4 soong1
+擇桑	zraak6 soong1
+養蠶	jong6 com4
+喂蠶	wai6 com1
+蠶	com4
+出仔	cjot1 zaai2
+出仔	cjyut1 zaai2
+起枕	hi2 zjam2
+起繭	hi2 gen2
+繩仔	sjing1 zaai2
+幼繩	jau3 sjing1
+椰衣掃	
+打褦	daa2 nang1
+解褦	gaai2 nang1
+打𢲈	
+解繩	gaai2 sjing1
+𠯦嘢	
+𠯦蟲	
+𠯦藥	
+酹水	
+淋花水	
+酹花水	
+揸牛奶	
+掹菜	
+掹菜擇瓜	
+魚花	
+糯筸	no6 gon2
+挪罟	no4 gu1
+杜塘	
+杜蟲	
+杜魚蟲	
+𭡡塘	
+𭡡蟲	
+𭡡魚蟲	
+四沙妹	
+下沙佬	
+下沙婆	
+孤寒度	
+坡客	
+基面掃把	
+洗棘	sai2 kik1
+棘	kik1
+眼核	
+腳髀	
+腳髀囊	giok3 bi2 loong1
+鳩瘍	gau1 jong1
+鴨乸腳	
+膝頭公	
+觸麻	cjuk1 maa1
+拳肛頭	
+日咳夜咳	
+尿蝦布	
+抿屎紙	
+布笠	
+煨臭蚢	wui1 cjiau3 kang3
+打螺螺	daa2 lo6 lo2
+摸石螺	
+落蝦罾	
+蝦罾	
+高蹺	gou1 kiu2
+行高蹺	gou1 kiu2
+玩竹馬	hwaan2 zruk1 maa5
+耍公仔	shaa2 gung1 zaai2
+嗰	goi2

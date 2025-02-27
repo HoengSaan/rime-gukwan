@@ -61,7 +61,7 @@ This work is licensed under a
 
 #### 預設現代音方案
 
-- `gukwan-siulaam-town.schema.yaml`：小欖鎮區音
+- `gukwan-siulaam.schema.yaml`：小欖鎮區音
   - 本方案根據小欖鎮區音代表特徵製作，建議仔細閱讀方案竝根據自身口音調整，見[特徵段](https://github.com/HoengSaan/rime-gukwan#特徵)。
 
 - `gukwan-canton.schema.yaml`：廣州音
@@ -76,12 +76,15 @@ This work is licensed under a
   - `gukwan.chars1.dict.yaml`：增廣一組廣韻異音訓讀增補
   - `gukwan.chars2.dict.yaml`：增廣二組今字異字異音訓讀增補
 - 詞庫
+  - `gukwan.siulaam.dict.yaml`：小欖話特殊辭彙同小欖周邊地名，詳細見[小欖詞庫資料](https://github.com/HoengSaan/rime-gukwan/wiki/小欖詞庫資料)
   - `gukwan.words.dict.yaml`：`jyut6ping3.words.dict.yaml`無輸入碼版本
     - 作者爲「粵語計算語言學基礎建設組」([@CanCLID](https://github.com/CanCLID)) ，證書隨源文件爲[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)。
   - `gukwan.lettered.dict.yaml`：基於`jyut6ping3.lettered.dict.yaml`
     - 作者爲「粵語計算語言學基礎建設組」([@CanCLID](https://github.com/CanCLID)) ，證書隨源文件爲[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)。
   - `gukwan.kwongtung.dict.yaml`：廣東地名（村級）
     - 來源爲[adyliu/china_area: 2024年中国全国5级行政区划（省、市、县、镇、村）](https://github.com/adyliu/china_area)，證書隨源文件爲[GPL 3.0](https://github.com/HoengSaan/rime-gukwan/blob/main/LICENSE-GPL)。已繁化。
+  - [關於如何製作用戶詞庫](https://github.com/rime/home/wiki/UserGuide#%E7%94%A8%E6%88%B6%E8%A9%9E%E5%85%B8%E7%AE%A1%E7%90%86)
+  
 
 ## 安裝
 
