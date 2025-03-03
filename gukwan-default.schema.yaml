@@ -6,7 +6,7 @@ __include: gukwan.schema:/
 schema:
   schema_id: gukwan-default
   name: 菊韻構擬音
-  version: "10.0b"
+  version: "10.2b"
   author:
     靈帝（Hoengsaan）
   
@@ -84,7 +84,6 @@ speller:
 
     - derive/eau(?=\d)/au/                  # 合音
     - derive/eau(?=\d)/ou/                  # 合音
-    - derive/ooi(?=\d)/ui/                  # (ooi->ui)
     - xform/io(?=\d)/oe/                    # (io->oe)
     - xform/jo(?=\d)/joe/                   # (jo->oe)
     - xform/uo(?=\d)/oe/                    # (uo->oe)
@@ -113,7 +112,6 @@ speller:
     
     #- derive/^(z|c|s|n|l)yo(?=\d)/$1eoy/   # 遇開三(yo->eoy)：「旅」讀若leoy
     #- derive/^(g|k|h)yo(?=\d)/$1eoy/       # 遇開三(yo->eoy)：「去」讀若heoy
-    #- derive/^(g|k|h|j)yo(?=\d)/$1yu/      # 遇開三(yo->yu)：「去」讀若hyu
     
     #- derive/^(z|c|n|l)yu(?=\d)/$1eoy/     # 遇合三裂化(yu->eoy)：「聚」讀若zeoy
     #- derive/^(s)yu(?=\d)/$1eoy/           # 遇合三裂化(yu->eoy)：「須」讀若seoy
@@ -124,11 +122,12 @@ speller:
     #- derive/^(s)yi(?=\d)/$1yu/            # 蟹合一(yi->yu)：「碎」讀若syu
     #- derive/^(d|t|n|l)yi(?=\d)/$1yu/      # 蟹合一(yi->yu)：「對」讀若dyu
     #- derive/yi(?=\d)/eoy/                 # 蟹合一(yi->eoy)：皆讀作eoy者可用，其他關閉
+    #- derive/yi(?=\d)/yu/                  # 蟹合一(yi->yu)：皆讀作yu者可用，其他關閉
 
     #- xform/yo(?=\d)/yu/                   # FIX（現代音用）
     
     #- xform/y(?=\d)/i/                     # 止攝師韻展脣(y->i) ：「師」讀若si
-    #- xform/y(?=\d)/yu/                    # 止攝師韻圓脣(y->yu)：「仕」讀若syu
+    #- derive/y(?=\d)/yu/                   # 止攝師韻圓脣(y->yu)：「仕」讀若syu
     #- derive/^(z|c|s)ji(?=\d)/$1ii/        # 止開照組異拼(ji->ii)
     
     #- derive/eo(n|t)(?=\d)/a$1/            # 臻攝混音(ea->a)：「順」讀若san 多只見於白讀音
@@ -151,6 +150,7 @@ speller:
     #FIX
     #- derive/^n(?!g|j)/l/                  # 泥來合流(n->l)
     #- derive/^t/h/                         # 透曉合流(t->h) 小欖部份
+    - xform/^xaa(?=\d)/jaa$1/
 
     #韻母——長短音混
     #- derive/ap(?=\d)/aap$1/               # ap同aap混 
@@ -279,7 +279,25 @@ translator:
     - xform/xu(?=\d)/hu$1/                  # 遇攝合口(*u->hu)：「狐」讀作fu4
     - xform/vu(?=\d)/hu$1/                  # 遇攝合口(*u->hu)：「護」讀作fu6
 
-    - xform/^(z|c|s)jy(?=\d)/$1ji/          # 
+    - xform/(z|c|s)jy(?=\d)/$1ji/          # 
 
-    - xform/^(z|c|s)j/$1h/                  
-    - xform/^(z|c)r/$1h/                    
+    - xform/(z|c|s)j/$1h/                  
+    - xform/(z|c)r/$1h/     
+    
+    - xform/xaa(?=\d)/jaa$1/   
+
+reverse_lookup:
+  tags: [ jyut6ping3, luna_pinyin, cangjie5, kanas, kunyomi ]
+  overwrite_comment: false
+  dictionary: gukwan 
+  comment_format:
+    - xform/hwun(?=\d)/hun$1/               # 口音補充(hw->h)：「桓」讀若fun者
+    - xform/xu(?=\d)/hu$1/                  # 遇攝合口(*u->hu)：「狐」讀作fu4
+    - xform/vu(?=\d)/hu$1/                  # 遇攝合口(*u->hu)：「護」讀作fu6
+
+    - xform/(z|c|s)jy(?=\d)/$1ji/          # 
+
+    - xform/(z|c|s)j/$1h/                  
+    - xform/(z|c)r/$1h/       
+    
+    - xform/xaa(?=\d)/jaa$1/

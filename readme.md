@@ -17,7 +17,7 @@ This work is licensed under a
 
 ## 簡介
 
-此爲[RIME | 中州韻輸入法引擎](https://rime.im/)方案，用於輸入小欖話爲主既粵語方言（參攷市誌，以下將稱之爲沙田方言），拼音基於分韻廣韻以兼容各地方音(如師syu1 si1兩音)。爲兼容性同方便整理，輸入碼同實際拼音有所不同，但可直接以粵拼輸入。
+此爲[RIME | 中州韻輸入法引擎](https://rime.im/)方案，用於輸入小欖話爲主既粵語方言（參攷市誌，以下將稱之爲沙田方言），拼音基於分韻廣韻以兼容各地方音(如師syu1 si1兩音)。爲兼容性同方便整理，輸入碼同實際拼音有所不同（10.2更新：已修正），但可直接以粵拼輸入。
 
 現有字庫根據excel大批量轉換，有不少紕漏，敬請見諒。廣韻之外字庫未完成，目前缺少現代字同粵字，缺少部份白讀音。（7.0更新：多數現代字粵字已完成）
 
@@ -25,7 +25,7 @@ This work is licensed under a
 
 ### 方言
 
-雖然好多人講到中山話，多會諗到石歧話，之但是分佈最廣泛其實係所謂沙田方言，人口最爲之多，以中山北部爲主，方音近似順德（尤其北部），故出到去唔少人聞到都以爲係順德話。
+雖然講到中山話，多數人都會諗到石歧話，之但是分佈最廣泛、人口最爲之多既，其實係所謂沙田方言（《中山方言誌》則稱之爲「順德腔」），以中山北部爲主，方音近似順德（尤其北部），故出到去唔少人聞到都以爲係順德話。
 
 | <img src="pic/fongin.jpg" style="zoom:;" /> | <img src="pic/fongin2018.jpg" style="zoom: 75%;" /> |
 | ------------------------------------------- | --------------------------------------------------- |
@@ -33,9 +33,9 @@ This work is licensed under a
 
 圖一爲本人根據《[中山市誌（2005年版）](http://www.zsdag.cn/list?t_id=96)》所作之粗畧版方言地圖，粵語分爲五類：橙色爲沙田話（近順德話）、紅色爲三角話（近東莞話）、紫色爲古鎮話（近新會話）、紅色爲石歧話、金色則爲中山域外之順德話。綠色爲中山閩語，藍色爲客家話。顏色代表區域主要方言。（板芙鎮：粵語（沙田話）爲主，亦有少數客閩兩語分佈。南蓢鎮：閩語（南蓢話）爲主 ；三鄉鎮：閩語（三鄉話）爲主，亦有少數客粵兩語分佈；坦洲鎮：粵（沙田話）客兩語；神灣鎮：粵（沙田話）客兩語。張家邊鎮（東鄉）：即火炬區，除東莞話皆有。）
 
-加筆：所謂沙田話，多爲文件資料上既講法，實際上無幾個人眞係聽過呢個講法。不過沙田話亦都係貼切既，因爲渠分佈既地方以前基本上眞係田基，呢幾十年工業發展先填起來既，
+加筆：所謂沙田話，多爲文件資料上既講法，實際上無幾個人眞係聽過呢個講法。不過沙田話亦都係貼切既，因爲渠分佈既地方以前基本上眞係田基，呢幾十年工業發展先填起來既。
 
-圖二摘自高然於2019年出版《中山方言誌》，將粵語分爲六類，並無將小欖話（同其周邊方言）、蜑家話歸爲一類。資料較中山市誌詳細許多，但仍不足夠。
+圖二摘自高然於2019年出版《中山方言誌》，將粵語分爲六類，並無將小欖話（同其周邊方言）、蜑家話歸爲一類。資料較中山市誌詳細許多。
 
 加筆：三角鎮白色並非水域，而係三角話。
 
@@ -58,7 +58,10 @@ This work is licensed under a
 #### 預設現代音方案
 
 - `gukwan-siulaam.schema.yaml`：小欖鎮區音
-  - 本方案根據小欖鎮區音代表特徵製作，建議仔細閱讀方案竝根據自身口音調整，見[特徵段](https://github.com/HoengSaan/rime-gukwan#特徵)。
+  - 本方案根據小欖鎮區音代表特徵製作。下爲重要特徵：
+    - 小欖人多數人不分來孃（l/n）、透曉（t/h），故可以l音打n（如「農」`nung4`可打`lung4`），h音打t（如「偸」`tau1`可打`hau1`）。
+    - 小欖人多數人不分`ak`同`aak`，故可以aak音打ak（如「勒」`lak6`可打`laak6`）。
+  - 此方案不能代表所有情況，建議仔細閱讀方案竝根據自身口音調整，見[特徵段](https://github.com/HoengSaan/rime-gukwan#特徵)。（[如何定製方案](https://github.com/HoengSaan/rime-gukwan#定製)）
 
 - `gukwan-canton.schema.yaml`：廣州音
   - 準確來講此方案係廣州風，並不能準確反映所有廣州發音。若欲使用眞正廣州音打字，可參攷以下方案：[rime/rime-cantonese: Rime Cantonese input schema | 粵語拼音輸入方案](https://github.com/rime/rime-cantonese)
@@ -142,16 +145,21 @@ Android亦可選擇小企鵝（fcitx5），但安裝對一般用家來講較爲�
 
 調值僅供參攷，部份方言僅有9個或8個聲調（含特殊調）。2*並非廣州話「新入」只見於入聲字變調，如「子」白讀zaai2*就同本身陰上調值（24）不一。此調亦用作表達過去、完成之文法意味。
 
+詳細請參攷[小欖話・沙田方言特徵 · HoengSaan/rime-gukwan Wiki](https://github.com/HoengSaan/rime-gukwan/wiki/小欖話・沙田方言特徵)
+
 ### 反查
 
-目前方案預設四個反查：
+目前方案預設五個反查入口：
 
 - 粵拼（[rime-cantonese](https://github.com/rime/rime-cantonese)），粵語廣州話反查。鍵值爲<code>`</code>
-- 明月拼音（rime-luna_pinyin），北語普通話反查。鍵值爲`X`。
+- 明月拼音（rime-luna_pinyin），官語普通話反查。鍵值爲`X`。
 - 倉頡五代（rime-cangjie5），倉頡反查。鍵值爲`V`。
 - 假名（[rime-kanas](https://github.com/HoengSaan/rime-kanas)），以細階輸入平假名，大階輸入片假名。鍵值爲`R`。
+- 訓讀（[rime-kunyomi](https://github.com/sgalal/rime-kunyomi/blob/master/kunyomi.schema.yaml)），和語訓讀（現代音）反查。鍵值爲`K`。
 
-**粵拼同假名須安裝方可使用反查**，安裝方法見上方安裝段。如需使用其他方案反查，請自行搜索竝改變方案。
+**粵拼、假名、訓讀須安裝方可使用反查**，安裝方法見上方安裝段。如需使用其他方案反查，請自行搜索竝改變方案。
+
+由於粵語兩分以廣州話爲準，故不納入。
 
 ## 定製
 
@@ -161,22 +169,24 @@ Android亦可選擇小企鵝（fcitx5），但安裝對一般用家來講較爲�
 
 **※定製任何方案不應改變現有文件，尤其`gukwan.schema.yaml`※**
 
-定製請參攷[配置教程 | oh-my-rime输入法](https://www.mintimate.cc/zh/guide/)。
+定製可參攷[配置教程 | oh-my-rime输入法](https://www.mintimate.cc/zh/guide/)。
 
-方案無法兼顧所有粵語方言，亦竝非本方案之目的。定製本方案需要對音韻學同粵語音韻有基本理解方可進行。
+方案無法兼顧所有粵語方言，亦竝非本方案之目的。
 
-方案本身預設有約百條轉換規則，有簡介其轉換之音位。刪除行頭井號啓用轉換，行頭鍵入井號停止轉換。（即行頭有井號爲停止轉換，行頭無井號爲啓用轉換）若表內無適合規則請自行增添，方法請參攷[SpellingAlgebra · rime/home Wiki](https://github.com/rime/home/wiki/SpellingAlgebra)。
+### 定製方法摘要
 
-定製方案最好使用新文件，文件必須以`schema.yaml`結尾，如`gukwan-myaccent.schema.yaml`。
+**※注意schema_id必須同其他方案不同，否則無法使用。※**
 
-以`gukwan-fanwan.schema.yaml`作例，下列部分非常重要，不可或缺。
+**※translator下方必須使用prism同基底字庫詞庫進行隔離，否則無法正常打字。※**
+
+以`gukwan-siulaam.schema.yaml`作例，下列部分非常重要，不可或缺。
 
 ```yaml
 __include: gukwan.schema:/	# 用於調用基底文件
 
 schema:
-  schema_id: gukwan-fanwan	# 用於區別基底文件「gukwan」，只須同其他方案作出區別即可
-  name: 菊韻分韻音	# 用於區別基底文件「菊韻」，只須同其他方案作出區別即可
+  schema_id: gukwan-siulaam	# 用於區別基底文件「gukwan」，只須同其他方案作出區別即可
+  name: 菊韻小欖音	# 用於區別基底文件「菊韻」，只須同其他方案作出區別即可
 
 ###省畧###
 
@@ -188,35 +198,156 @@ speller:
 
 translator:
   dictionary: gukwan
-  prism: gukwan-fanwan	# 用於區別基底文件「gukwan」，只須同其他方案作出區別即可
+  prism: gukwan-siulaam	# 用於區別基底文件「gukwan」，只須同其他方案作出區別即可
   
 ###省畧###
 ```
 
-**※注意schema_id必須同其他方案不同，否則無法使用。※**
-
-**※translator下方必須使用prism同基底字庫詞庫進行隔離，否則無法正常打字。※**
-
-### 聲母定製
-
-本方案聲母極其簡單，同分韻竝無大區別，現代音請直接將此部份所有轉換式全數啓用。其他請根據自己口音調整。
+定製方案最好使用新文件，文件必須以`schema.yaml`結尾，如`gukwan-myaccent.schema.yaml`。可直接複製`gukwan-siulaam.schema.yaml`或其他文件然後改變以下提到關鍵部份，再進行定製，如下：
 
 ```yaml
+__include: gukwan.schema:/	# 用於調用基底文件
+
+schema:
+  schema_id: gukwan-myaccent	# 用於區別基底文件「gukwan」，只須同其他方案作出區別即可
+  name: 菊韻自用定製	# 用於區別基底文件「菊韻」，只須同其他方案作出區別即可
+
+###省畧###
+
+speller:
+  alphabet: zyxwvutsrqponmlkjihgfedcba
+  delimiter: " '"
+  algebra:
+  # 此部份用於定製，表內無敬請自行增添，部分字或要用個人字庫。
+
+translator:
+  dictionary: gukwan
+  prism: gukwan-myaccent	# 用於區別基底文件「gukwan」，只須同其他方案作出區別即可
+  
+###省畧###
+```
+
+方案本身預設有約百條轉換規則，有簡介其轉換之音位。刪除行頭井號啓用轉換，行頭鍵入井號停止轉換。（即行頭有井號爲停止轉換，行頭無井號爲啓用轉換）若表內無適合規則請自行增添，方法請參攷[SpellingAlgebra · rime/home Wiki](https://github.com/rime/home/wiki/SpellingAlgebra)。
+
+定製至重要爲發音音，而調教非常簡單，只須以下兩個最重要：`derive`同`xform`。
+
+```
+* 變形／Transformation : 若拼寫（或其子串）與<模式>匹配，則將所匹配的部份改寫爲<替換式>；否則拼寫保持不變。模式、替換式遵循Perl正則表達式語法。
+
+ 格式：xform/<模式>/<替換式>/
+ 實例：算式 xform/^([nl])ue$/$1ve/  運算元 nue  結果 nve
+ 效果：輸入nve(lve)可以獲得源碼表中與編碼nue(lue)對應的候選；輸入nue(lue)無候選
+
+* 派生／Derivation : 若對拼寫做正則模式匹配、替換而獲得了新的拼寫，則有效拼寫集合同時包含派生前後的拼寫；否則僅保留原拼寫。
+
+ 格式：derive/<模式>/<替換式>/
+ 實例一：算式 derive/^([nl])ue$/$1ve/  運算元 nue  結果 nve
+ 效果：輸入nve或nue(lve或lue)均可獲得源碼表中與編碼nue(lue)對應的候選
+
+ 實例二：算式 derive/^[nl](.*)$/l$1/  運算元 na  結果 la
+ 效果：輸入la可獲得源碼表中與編碼na、la對應的候選；輸入na，候選仍爲碼表中編碼爲na的候選
+```
+
+#### 聲母定製
+
+本方案聲母極其簡單，同分韻竝無大區別，現代音請直接將此部份所有轉換式全數啓用。其他請根據自己口音調整。以下爲較重要部份：
+
+```yaml
+	- xform/^hj/j/                          # 口音補充(hj->j)：「賢」讀若jin者
+    #- xform/^hj/h/                         # 口音補充(hj->h)：「賢」讀若hin者 順德石歧
+    
+    - xform/^hwun(?=\d)/hun$1/              # 口音補充(hw->h)：「桓」讀若fun者
+    #- xform/^hwun(?=\d)/wun$1/             # 口音補充(hw->w)：「桓」讀若wun者
+    
+    #- xform/^xu(?=\d)/hu$1/                # 遇攝合口(*u->hu)：「狐」讀作fu4
+    - xform/^xu(?=\d)/wu$1/                 # 遇攝合口(*u->wu)：「狐」讀作wu4 多數方音 
+    - xform/^vu(?=\d)/hu$1/                 # 遇攝合口(*u->hu)：「護」讀作fu6
+    #- xform/^vu(?=\d)/wu$1/                # 遇攝合口(*u->wu)：「護」讀作wu6 多數方音
+    
+    ###省畧###
+    
     #聲母——現代
     #- derive/^(z|c|s)h/$1/                 # 精照合流(zh->z)
     #- derive/^(zj|cj|sj)yo(?=\d)/$1yu/     # 精照合流
     #- derive/^(z|c|s)j(?!yo)/$1/           # 精照合流(ch->c)
     #- derive/^(z|c)r/$1/                   # 精照合流(sj->s)
     #- derive/^nj/j/                        # 日以合流(nj->j)
+    
+    #FIX
+    - derive/^n(?!g|j)/l/                   # 泥來合流(n->l)
+    - derive/^t/h/                          # 透曉合流(t->h) 小欖部份
+    - xform/^xaa(?=\d)/jaa$1/
 ```
 
-### 韻母定製
+例如閣下分辨透曉，則可於`- derive/^t/h/ `前面加上井號關閉轉換。
 
-7.1更新：最新版已有多數方音轉換式，識粵拼即可自行定製，毋須音韻學智識。建議參攷下特徵段。
+例如閣下將「桓」等字讀成`wun4`，則於`- xform/^hwun(?=\d)/hun$1/`前面加上井號關閉轉換，然後刪除`#- xform/^hwun(?=\d)/wun$1/`井號開啓轉換。
 
-### 聲調定製
+#### 韻母定製
 
-聲調多用來減少重碼率，無須自己無部分聲調而特登改變。
+內容過多不能詳述，詳細請參攷[特徵段](https://github.com/HoengSaan/rime-gukwan#特徵)。
+
+```yaml
+    #韻母——現代
+    #其他口音請自行調校 不建議關閉打字輔助
+
+    - xform/ooi(?=\d)/eoy/                  # 其他分韻(ooi->eoy)：「脆」讀若ceoy
+    #- xform/ooi(?=\d)/oi/                  # 蟹合三止合銳(ooi->oi)「脆」讀若coi 文讀少見，一般白讀先有
+    #- xform/ooi(?=\d)/ui/                  # 蟹合三止合銳(ooi->ui)「脆」讀若cui 
+    
+    - xform/^(b|p|f)i(?=\d)/$1ei/           # 止攝裂化脣音(i->ei) ：「備」讀若bei
+    - xform/^(d|t|l|n)i(?=\d)/$1ei/         # 止攝裂化齒音(i->ei)：「地」讀若dei
+    #- xform/^(g|k|h)i(?=\d)/$1ei/          # 止攝裂化牙音(i->ei)：「既」讀若gei
+    - derive/^(s)(?!j)i(?=\d)/$1ei/         # 止攝心母特音（現代音裂化專用） 
+    
+    - xform/^ngu(?=\d)/ng/                            # 遇開一單獨成韻(ngu->ng)：「吳」讀若ng
+    - xform/^(b|p|m|d|t|n|l|z|c|s|sh)u(?=\d)/$1au/    # 遇攝裂化(u->au)：「渡」讀若dau
+    #- xform/^(b|p|m|d|t|n|l|z|c|s|sh)u(?=\d)/$1ou/   # 遇攝裂化(u->ou)：「渡」讀若dou
+    #- xform/^(b|p|m|d|t|n|l|z|c|s|sh)u(?=\d)/$1o/    # 遇攝裂化(u->o)：「渡」讀若do
+    
+    - xform/^(z|c|s|n|l)yo(?=\d)/$1eoy/     # 遇開三(yo->eoy)：「旅」讀若leoy
+    #- xform/^(g|k|h)yo(?=\d)/$1eoy/        # 遇開三(yo->eoy)：「去」讀若heoy
+    
+    - xform/^(z|c|n|l)yu(?=\d)/$1eoy/       # 遇合三裂化(yu->eoy)：「聚」讀若zeoy
+    - xform/^(s)yu(?=\d)/$1eoy/             # 遇合三裂化(yu->eoy)：「須」讀若seoy
+    #- xform/^(g|k|h)yu(?=\d)/$1eoy/         # 遇合三裂化(yu->eoy)：「巨」讀若geoy
+    
+    - xform/^(z|c)yi(?=\d)/$1eoy/           # 蟹合一(yi->eoy)：「最」讀若zeoy
+    #- xform/^(s)yi(?=\d)/$1eoy/            # 蟹合一(yi->eoy)：「碎」讀若seoy
+    - xform/^(s)yi(?=\d)/$1yu/              # 蟹合一(yi->yu)：「碎」讀若syu
+    - xform/^(d|t|n|l)yi(?=\d)/$1yu/        # 蟹合一(yi->yu)：「對」讀若dyu
+    #- xform/yi(?=\d)/eoy/                  # 蟹合一(yi->eoy)：皆讀作eoy者可用，其他關閉 
+    #- xform/yi(?=\d)/yu/                   # 蟹合一(yi->yu)：皆讀作eoy者可用，其他關閉 
+    
+    - xform/yo(?=\d)/yu/                    # FIX
+    
+    #- xform/y(?=\d)/i/                     # 止攝師韻展脣(y->i) ：「師」讀若si
+    - derive/y(?=\d)/yu/                    # 止攝師韻圓脣(y->yu)：「仕」讀若syu
+    #- derive/^(z|c|s)ji(?=\d)/$1ii/        # 止開照組異拼(ji->ii)
+
+    #- derive/eo(n|t)(?=\d)/a$1/            # 臻攝混音(ea->a)：「順」讀若san 多只見於白讀音
+    
+    - xform/ou(?=\d)/o$1/                   # 效一元音融合(ou->o)：「高」讀若go
+    #- xform/ou(?=\d)/au$1/                 # 效一元音(ou->au)：「高」讀若gau
+    
+    - xform/ia(?=\d)/e$1/                   # 果假元音融合(ia->e)：「車」讀若ce
+    - xform/jaa(?=\d)/je$1/                 # 果假元音融合(jaa->je)：「野」讀若je
+    
+    - xform/oo(ng|k)/o$1/                   # 宕攝開口(oo->o)：「各」讀若gok
+    - xform/io(ng|k)/oe$1/                  # 宕攝江攝元音融合(io->oe) ：「量」讀若loeng
+    - xform/jo(ng|k)/joe$1/                 # 宕攝江攝元音融合(jo->joe) ：「央」讀央joeng
+    
+    - derive/ae(u|n|m|t|p)(?=\d)/aa$1/      # 山效咸文(ae->aa)：「關」讀若gwaan
+    - derive/ae(u|n|m|t|p)(?=\d)/e$1/       # 山效咸白(ae->e)：「關」讀若gwen 多只見於白讀音
+    
+    - derive/o(m|p)(?=\d)/a$1/              # 咸攝音變(o->a)：「甘」讀若gam
+```
+
+例如閣下將「翠」等字讀成`cooi3`並同`coi3`區分，即「翠」「賽」不同音，則於`- xform/ooi(?=\d)/eoy/`前面加上井號關閉轉換。若不區分`ooi`同`oi`，即「翠」「賽」同音，進行上述操作後刪除`#- xform/ooi(?=\d)/oi/`井號開啓轉換。
+
+#### 聲調定製
+
+聲調多用來減少重碼率，不建議改變聲調。
 
 ## 特徵
 

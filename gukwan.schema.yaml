@@ -11,6 +11,7 @@ schema:
   description: |-
     調試用
     基底文件切勿刪除
+    詳細請至本方案github頁。https://github.com/HoengSaan/rime-gukwan
 
   dependencies:
     - jyut6ping3
@@ -136,7 +137,6 @@ speller:
 
     - derive/eau(?=\d)/au/                  # 合音
     - derive/eau(?=\d)/ou/                  # 合音
-    - derive/ooi(?=\d)/ui/                  # (ooi->ui)
     - xform/io(?=\d)/oe/                    # (io->oe)
     - xform/jo(?=\d)/joe/                   # (jo->oe)
     - xform/uo(?=\d)/oe/                    # (uo->oe)
@@ -165,7 +165,6 @@ speller:
     
     - derive/^(z|c|s|n|l)yo(?=\d)/$1eoy/    # 遇開三(yo->eoy)：「旅」讀若leoy
     #- derive/^(g|k|h)yo(?=\d)/$1eoy/       # 遇開三(yo->eoy)：「去」讀若heoy
-    #- derive/^(g|k|h|j)yo(?=\d)/$1yu/      # 遇開三(yo->yu)：「去」讀若hyu
     
     - derive/^(z|c|n|l)yu(?=\d)/$1eoy/      # 遇合三裂化(yu->eoy)：「聚」讀若zeoy
     #- derive/^(s)yu(?=\d)/$1eoy/           # 遇合三裂化(yu->eoy)：「須」讀若seoy
@@ -176,6 +175,7 @@ speller:
     #- derive/^(s)yi(?=\d)/$1yu/            # 蟹合一(yi->yu)：「碎」讀若syu
     #- derive/^(d|t|n|l)yi(?=\d)/$1yu/      # 蟹合一(yi->yu)：「對」讀若dyu
     #- derive/yi(?=\d)/eoy/                 # 蟹合一(yi->eoy)：皆讀作eoy者可用，其他關閉
+    #- derive/yi(?=\d)/yu/                  # 蟹合一(yi->yu)：皆讀作yu者可用，其他關閉
     
     #- xform/yo(?=\d)/yu/                   # FIX（現代音用）
     

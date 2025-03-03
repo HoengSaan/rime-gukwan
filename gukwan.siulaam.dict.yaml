@@ -13,7 +13,7 @@
 
 ---
 name: gukwan.siulaam
-version: "10.1b"
+version: "10.2b"
 sort: by_weight
 use_preset_vocabulary: true
 ...
@@ -245,12 +245,15 @@ use_preset_vocabulary: true
 斗門市	
 斗門	
 集側	zaap6 zhik1
+側邊	zhik1 bin1
+側住	zhik1 zryu6
 戙鍬	dung6 ciu1
 立鍬	laap6 ciu1
 掘泥	
 戙企風	
 蠔花	
 倔篤涌	
+豬乸菜	
 花稔	
 桑稔	
 馬果	
@@ -269,6 +272,7 @@ use_preset_vocabulary: true
 冷蔥	
 㷫蔥	
 四季青	
+蕉芋	
 蔗棘	zjia3 kik1
 蘿蔔鼓	
 浮薸	fiau4 piu1
