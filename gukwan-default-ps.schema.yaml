@@ -1,0 +1,123 @@
+# Rime schema
+# encoding: utf-8
+
+__include: gukwan-default.schema:/
+
+schema:
+  schema_id: gukwan-default-ps
+  name: 菊韻構擬音（音標）
+  version: "10.3b"
+  author:
+    靈帝（Hoengsaan）
+  
+  description: |-
+    測試階段
+    本方案爲根據菊韻標準所構擬之古音
+    寬式音標版並不能完全對應實際發音
+    詳細請至本方案github頁。https://github.com/HoengSaan/rime-gukwan
+    反查:`粵拼(新) X普音 V倉頡 R假名。聲調可省：v爲平，x爲上，q爲去，單陰雙陽。
+
+  dependencies:
+    - jyut6ping3
+    - luna_pinyin
+    - cangjie5
+    - kanas
+    - kunyomi
+
+translator:
+  dictionary: gukwan
+  prism: gukwan-default-ps
+  spelling_hints: 9
+  preedit_format:
+    - xform/(z|c|s)j/$1h/                  
+    - xform/(z|c)r/$1h/       
+    - xform/ng/ŋ/ 
+    - xform/hj/ç/
+    - xform/hw/hʷ/
+    - xform/^| |'/,/
+
+    - xform/(,|h)(m|ŋ)(qq?|xx?|vv?)?(?=$|,)/$1$2̍$3/
+    - xform/m̍/m̩/
+
+    - xform/,y(ŋ|k)/,jʊ$1/
+    - xform/,y(n|t)/,jy$1/
+    - xform/,y/,j/
+    - xform/,i(ŋ|k)/,jʊ$1/ 
+    - xform/,iy(n|t)/,jy$1/
+    - xform/,i/,ji/
+  
+    - xform/,oet/oed/
+    - xform/eo|oe/œ/
+    - xform/ae/æ/
+    - xform/aa/r/
+    - xform/oo/ø/
+    - xform/yu/ɾɹ/
+    - xform/yo/ɾø/
+    - xform/yi/uɿ/
+    - xform/(z|c|s|zh|ch|sh)y(?![unt])/$1ʮ$2/
+    - xlit/aroe/ɐaɔɛ/
+
+    - xform/œ(n|t)/ə$1/
+    - xform/œ[iy]/oi/
+    - xform/ɛi/ei/
+    - xform/i(ŋ|k)/ɪ$1/
+    - xform/u(ŋ|k)/ʊ$1/
+
+    - xform/a|æ|ɔ|œ|ɛ|i|u|y|ʮ(?!̑)/$&ː/
+    - xform/([ːɐoeə][iu])ː/$1/
+    - xform/[ːɐoeə][ptdk]/$&̚/
+    
+    - xlit/øɾɿɹ/oyiu/
+
+    - xform/,([ptc]|kw?)/$&ʰ/
+    - xform/[kg]w/kʷ/
+    - xform/ch|zh/t͡ʃ/
+    - xform/c|z/t͡s/
+    - xform/sh(?!ɿ)/ʃ/
+    - xform/nj/ȵ/
+    - xform/,q/,kʷ/
+    - xform/,x/,gʷ/
+    - xlit/bdg/ptk/
+    - xform/w/β̞/
+
+    - xform/̚qq/˥/
+    - xform/̚x/˧˥/
+
+    - xform/qq/˨˩/
+    - xform/xx/˩˧/
+    - xform/vv/˦˨/
+    - xform/q/˧/
+    - xform/x/˨˦/
+    - xform/v/˥/
+
+    - xform/^,//
+    - xform/̑//
+    - xform/,/ /
+
+  comment_format:
+    - xform/hwun(?=\d)/hun$1/               # 口音補充(hw->h)：「桓」讀若fun者
+    - xform/xu(?=\d)/hu$1/                  # 遇攝合口(*u->hu)：「狐」讀作fu4
+    - xform/vu(?=\d)/hu$1/                  # 遇攝合口(*u->hu)：「護」讀作fu6
+
+    - xform/(z|c|s)jy(?=\d)/$1ji/          # 
+
+    - xform/(z|c|s)j/$1h/                  
+    - xform/(z|c)r/$1h/     
+    
+    - xform/xaa(?=\d)/jaa$1/   
+
+reverse_lookup:
+  tags: [ jyut6ping3, luna_pinyin, cangjie5, kanas, kunyomi ]
+  overwrite_comment: false
+  dictionary: gukwan 
+  comment_format:
+    - xform/hwun(?=\d)/hun$1/               # 口音補充(hw->h)：「桓」讀若fun者
+    - xform/xu(?=\d)/hu$1/                  # 遇攝合口(*u->hu)：「狐」讀作fu4
+    - xform/vu(?=\d)/hu$1/                  # 遇攝合口(*u->hu)：「護」讀作fu6
+
+    - xform/(z|c|s)jy(?=\d)/$1ji/          # 
+
+    - xform/(z|c|s)j/$1h/                  
+    - xform/(z|c)r/$1h/       
+    
+    - xform/xaa(?=\d)/jaa$1/

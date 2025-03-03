@@ -21,6 +21,7 @@ schema:
     - luna_pinyin
     - cangjie5
     - kanas
+    - kunyomi
 
 speller:
   alphabet: zyxwvutsrqponmlkjihgfedcba

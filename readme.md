@@ -43,6 +43,8 @@ This work is licensed under a
 
 ### 方案
 
+**※寬式音標竝不能完全代表實際發音※**
+
 - `gukwan.schema.yaml`：調試用・自用（**請勿刪除**）
 
 #### 預設古代音方案
@@ -50,9 +52,8 @@ This work is licensed under a
 - `gukwan-default.schema.yaml`：菊韻音（構擬音）
 
   - 根據菊韻標準所構擬之古音，較分韻複雜。
-
-  `gukwan-fanwan.schema.yaml`：分韻音
-
+- `gukwan-default-ps.schema.yaml`：寬式音標版
+- `gukwan-fanwan.schema.yaml`：分韻音
   - 準確來講此方案係分韻風，並不能準確反映所有分韻發音。若欲使用眞正分韻音打字，可參攷以下方案：[leimaau/old-Cantonese: Rime Old Cantonese Input Scheme | 《分韻撮要》音系及輸入方案](https://github.com/leimaau/old-Cantonese)
 
 #### 預設現代音方案
@@ -62,7 +63,8 @@ This work is licensed under a
     - 小欖人多數人不分來孃（l/n）、透曉（t/h），故可以l音打n（如「農」`nung4`可打`lung4`），h音打t（如「偸」`tau1`可打`hau1`）。
     - 小欖人多數人不分`ak`同`aak`，故可以aak音打ak（如「勒」`lak6`可打`laak6`）。
   - 此方案不能代表所有情況，建議仔細閱讀方案竝根據自身口音調整，見[特徵段](https://github.com/HoengSaan/rime-gukwan#特徵)。（[如何定製方案](https://github.com/HoengSaan/rime-gukwan#定製)）
-
+- `gukwan-siulaam-ps.schema.yaml`：寬式音標版
+  
 - `gukwan-canton.schema.yaml`：廣州音
   - 準確來講此方案係廣州風，並不能準確反映所有廣州發音。若欲使用眞正廣州音打字，可參攷以下方案：[rime/rime-cantonese: Rime Cantonese input schema | 粵語拼音輸入方案](https://github.com/rime/rime-cantonese)
 
@@ -194,7 +196,7 @@ speller:
   alphabet: zyxwvutsrqponmlkjihgfedcba
   delimiter: " '"
   algebra:
-  # 此部份用於定製，建議以gukwan.schema.yaml爲藍本參攷範例自行調整，表內無敬請自行增添，部分字或要用個人字庫。
+  # 此部份用於定製，表內無敬請自行增添，部分字或要用個人字庫。下略。
 
 translator:
   dictionary: gukwan
@@ -218,7 +220,7 @@ speller:
   alphabet: zyxwvutsrqponmlkjihgfedcba
   delimiter: " '"
   algebra:
-  # 此部份用於定製，表內無敬請自行增添，部分字或要用個人字庫。
+  # 此部份用於定製，表內無敬請自行增添，部分字或要用個人字庫。下略。
 
 translator:
   dictionary: gukwan
@@ -227,9 +229,9 @@ translator:
 ###省畧###
 ```
 
-方案本身預設有約百條轉換規則，有簡介其轉換之音位。刪除行頭井號啓用轉換，行頭鍵入井號停止轉換。（即行頭有井號爲停止轉換，行頭無井號爲啓用轉換）若表內無適合規則請自行增添，方法請參攷[SpellingAlgebra · rime/home Wiki](https://github.com/rime/home/wiki/SpellingAlgebra)。
+方案本身預設有約百條轉換規則，有簡介其轉換之音位。刪除行頭井號啓用轉換，行頭鍵入井號停止轉換。（即行頭有井號爲停止轉換，行頭無井號爲啓用轉換）若表內無適合規則請自行增添。
 
-定製至重要爲發音音，而調教非常簡單，只須以下兩個最重要：`derive`同`xform`。
+定製至重要爲發音音，而調教非常簡單，只須以下兩個最重要：`derive`同`xform`。下文摘取自[SpellingAlgebra · rime/home Wiki](https://github.com/rime/home/wiki/SpellingAlgebra)。
 
 ```
 * 變形／Transformation : 若拼寫（或其子串）與<模式>匹配，則將所匹配的部份改寫爲<替換式>；否則拼寫保持不變。模式、替換式遵循Perl正則表達式語法。
@@ -285,7 +287,7 @@ translator:
 
 #### 韻母定製
 
-內容過多不能詳述，詳細請參攷[特徵段](https://github.com/HoengSaan/rime-gukwan#特徵)。
+內容過多不能詳述，詳細請參攷[特徵段](https://github.com/HoengSaan/rime-gukwan#特徵)。以下爲較重要部份：
 
 ```yaml
     #韻母——現代
@@ -351,8 +353,6 @@ translator:
 
 ## 特徵
 
-一般用家請無視灰字。
+一般用家請無視灰字。恕此處不能盡述，詳細請參攷[小欖話・沙田方言特徵 · HoengSaan/rime-gukwan Wiki](https://github.com/HoengSaan/rime-gukwan/wiki/小欖話・沙田方言特徵)。
 
 <img src="pic\dakzhing.png"/>
-
-詳細請參攷[小欖話・沙田方言特徵 · HoengSaan/rime-gukwan Wiki](https://github.com/HoengSaan/rime-gukwan/wiki/小欖話・沙田方言特徵)
