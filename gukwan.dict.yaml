@@ -5,17 +5,17 @@
 
 ---
 name: gukwan
-version: "10.1b"
+version: "11.0b"
 sort: by_weight
 vocabulary: essay-cantonese
 import_tables:
-  - gukwan.chars
-  - gukwan.chars1
-  - gukwan.chars2
-  - gukwan.words
-  - gukwan.siulaam
-  - gukwan.kwongtung
-  - gukwan.lettered
-  - jyut6ping3.maps
-  - jyut6ping3.phrase
+  - gukwan.chars      # 菊韻字庫——基本 廣韻理論音對照（小韻例外）
+  - gukwan.chars1     # 菊韻字庫——增廣一組 廣韻異音訓讀增補
+  - gukwan.chars2     # 菊韻字庫——增廣二組 今字異字異音訓讀增補
+  - gukwan.words      # 菊韻詞庫——基本 基於粵拼詞庫
+  - gukwan.words1     # 菊韻詞庫——增廣一組 部份小欖話辭彙同小欖周邊地名
+  - gukwan.words2     # 菊韻詞庫——增廣二組 粵拼詞庫增補同外來語
+  - gukwan.kwongtung  # 菊韻詞庫——廣東地名
+  - jyut6ping3.maps   # 粵拼詞庫——地名街名
+  - jyut6ping3.phrase # 粵拼詞庫——短語短句
 ...

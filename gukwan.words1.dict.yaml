@@ -1,8 +1,8 @@
 # Rime dictionary
 # encoding: utf-8
 #
-# gukwan - 菊韻小欖詞庫
-# 本詞庫收錄部份小欖話特殊辭彙同小欖周邊地名
+# gukwan - 菊韻詞庫——增廣一組
+# 本詞庫收錄部份小欖話辭彙同小欖周邊地名
 # 本人所識，部分參攷《中山方言誌》，由於小欖早已城市化，本人並不認識部分詞（尤其農業相關）。
 
 # 此爲菊韻粵語輸入法字庫詞庫文件
@@ -12,8 +12,8 @@
 # For details, please visit the github page of this project.
 
 ---
-name: gukwan.siulaam
-version: "10.2b"
+name: gukwan.words1
+version: "11.0b"
 sort: by_weight
 use_preset_vocabulary: true
 ...

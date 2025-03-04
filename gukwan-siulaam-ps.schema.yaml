@@ -6,7 +6,7 @@ __include: gukwan-siulaam.schema:/
 schema:
   schema_id: gukwan-siulaam-ps
   name: 菊韻小欖音（音標）
-  version: "10.3b"
+  version: "11.0b"
   author:
     靈帝（Hoengsaan）
   
@@ -74,7 +74,7 @@ translator:
 
     - xform/qq/˨˩/
     - xform/xx/˩˧/
-    - xform/vv/˦˨/
+    - xform/vv/˧˨/
     - xform/q/˧/
     - xform/x/˨˦/
     - xform/v/˥/
@@ -94,6 +94,7 @@ translator:
     - xform/(z|c)r/$1h/     
     
     - xform/xaa(?=\d)/jaa$1/   
+    - xform/I(?=\d)/i$1/                    # 外來語
 
 reverse_lookup:
   tags: [ jyut6ping3, luna_pinyin, cangjie5, kanas, kunyomi ]
@@ -110,3 +111,4 @@ reverse_lookup:
     - xform/(z|c)r/$1h/       
     
     - xform/xaa(?=\d)/jaa$1/
+    - xform/I(?=\d)/i$1/                    # 外來語

@@ -17,27 +17,16 @@ This work is licensed under a
 
 ## 簡介
 
-此爲[RIME | 中州韻輸入法引擎](https://rime.im/)方案，用於輸入小欖話爲主既粵語方言（參攷市誌，以下將稱之爲沙田方言），拼音基於分韻廣韻以兼容各地方音(如師syu1 si1兩音)。爲兼容性同方便整理，輸入碼同實際拼音有所不同（10.2更新：已修正），但可直接以粵拼輸入。
+此爲[RIME | 中州韻輸入法引擎](https://rime.im/)方案，用於輸入小欖話爲主既粵語方言。
 
-現有字庫根據excel大批量轉換，有不少紕漏，敬請見諒。廣韻之外字庫未完成，目前缺少現代字同粵字，缺少部份白讀音。（7.0更新：多數現代字粵字已完成）
+現有字庫根據excel大批量轉換，有不少紕漏，敬請見諒。菊韻無法兼顧所有粵語方言，亦竝非本方案之目的。本方案並非廣州話方案，廣州話（穗港澳）請用[rime/rime-cantonese: Rime Cantonese input schema | 粵語拼音輸入方案](https://github.com/rime/rime-cantonese)
 
-菊韻無法兼顧所有粵語方言，亦竝非本方案之目的。本方案並非廣州話方案，廣州話（穗港澳）請用[rime/rime-cantonese: Rime Cantonese input schema | 粵語拼音輸入方案](https://github.com/rime/rime-cantonese)
+### 目前支持方言
 
-### 方言
-
-雖然講到中山話，多數人都會諗到石歧話，之但是分佈最廣泛、人口最爲之多既，其實係所謂沙田方言（《中山方言誌》則稱之爲「順德腔」），以中山北部爲主，方音近似順德（尤其北部），故出到去唔少人聞到都以爲係順德話。
-
-| <img src="pic/fongin.jpg" style="zoom:;" /> | <img src="pic/fongin2018.jpg" style="zoom: 75%;" /> |
-| ------------------------------------------- | --------------------------------------------------- |
-| 圖一：中山方言地圖                          | 圖二：中山方言分佈畧圖                              |
-
-圖一爲本人根據《[中山市誌（2005年版）](http://www.zsdag.cn/list?t_id=96)》所作之粗畧版方言地圖，粵語分爲五類：橙色爲沙田話（近順德話）、紅色爲三角話（近東莞話）、紫色爲古鎮話（近新會話）、紅色爲石歧話、金色則爲中山域外之順德話。綠色爲中山閩語，藍色爲客家話。顏色代表區域主要方言。（板芙鎮：粵語（沙田話）爲主，亦有少數客閩兩語分佈。南蓢鎮：閩語（南蓢話）爲主 ；三鄉鎮：閩語（三鄉話）爲主，亦有少數客粵兩語分佈；坦洲鎮：粵（沙田話）客兩語；神灣鎮：粵（沙田話）客兩語。張家邊鎮（東鄉）：即火炬區，除東莞話皆有。）
-
-加筆：所謂沙田話，多爲文件資料上既講法，實際上無幾個人眞係聽過呢個講法。不過沙田話亦都係貼切既，因爲渠分佈既地方以前基本上眞係田基，呢幾十年工業發展先填起來既。
-
-圖二摘自高然於2019年出版《中山方言誌》，將粵語分爲六類，並無將小欖話（同其周邊方言）、蜑家話歸爲一類。資料較中山市誌詳細許多。
-
-加筆：三角鎮白色並非水域，而係三角話。
+- 小欖話鎮區音
+- 廣州話（僅供參攷）
+- 分韻音（古代音，僅供參攷）
+- 菊韻音（古代音，僅供參攷）
 
 ## 文件結構
 
@@ -50,8 +39,7 @@ This work is licensed under a
 #### 預設古代音方案
 
 - `gukwan-default.schema.yaml`：菊韻音（構擬音）
-
-  - 根據菊韻標準所構擬之古音，較分韻複雜。
+- 根據菊韻標準所構擬之古音，較分韻複雜。
 - `gukwan-default-ps.schema.yaml`：寬式音標版
 - `gukwan-fanwan.schema.yaml`：分韻音
   - 準確來講此方案係分韻風，並不能準確反映所有分韻發音。若欲使用眞正分韻音打字，可參攷以下方案：[leimaau/old-Cantonese: Rime Old Cantonese Input Scheme | 《分韻撮要》音系及輸入方案](https://github.com/leimaau/old-Cantonese)
@@ -74,18 +62,57 @@ This work is licensed under a
 
 - 字庫
   - `gukwan.chars.dict.yaml`：廣韻字庫
-  - `gukwan.chars1.dict.yaml`：增廣一組廣韻異音訓讀增補
-  - `gukwan.chars2.dict.yaml`：增廣二組今字異字異音訓讀增補
+  - `gukwan.chars1.dict.yaml`：廣韻異音訓讀增補
+  - `gukwan.chars2.dict.yaml`：今字異字異音訓讀增補
+    - 粵字平翹、日以之分參攷梧州話
 - 詞庫
-  - `gukwan.siulaam.dict.yaml`：小欖話特殊辭彙同小欖周邊地名，詳細見[小欖詞庫資料](https://github.com/HoengSaan/rime-gukwan/wiki/小欖詞庫資料)
-  - `gukwan.words.dict.yaml`：`jyut6ping3.words.dict.yaml`無輸入碼版本
-    - 作者爲「粵語計算語言學基礎建設組」([@CanCLID](https://github.com/CanCLID)) ，證書隨源文件爲[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)。
-  - `gukwan.lettered.dict.yaml`：基於`jyut6ping3.lettered.dict.yaml`
-    - 作者爲「粵語計算語言學基礎建設組」([@CanCLID](https://github.com/CanCLID)) ，證書隨源文件爲[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)。
+  - `gukwan.words.dict.yaml`
+    - 基於`jyut6ping3.words.dict.yaml`，作者爲「粵語計算語言學基礎建設組」([@CanCLID](https://github.com/CanCLID)) ，證書隨源文件爲[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)。去除輸入碼竝改變部份字型
+  - `gukwan.words1.dict.yaml`：部份小欖話辭彙同小欖周邊地名
+    - 收錄部份小欖話特有辭彙，小欖周邊地名街名，詳細見[小欖詞庫資料](https://github.com/HoengSaan/rime-gukwan/wiki/小欖詞庫資料)
+  - `gukwan.words2.dict.yaml`：
+    - 收錄粵拼詞庫所無之特殊辭彙同外來語，部份內容基於`jyut6ping3.lettered.dict.yaml`，作者爲「粵語計算語言學基礎建設組」([@CanCLID](https://github.com/CanCLID)) ，證書隨源文件爲[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)。
   - `gukwan.kwongtung.dict.yaml`：廣東地名（村級）
     - 來源爲[adyliu/china_area: 2024年中国全国5级行政区划（省、市、县、镇、村）](https://github.com/adyliu/china_area)，證書隨源文件爲[GPL 3.0](https://github.com/HoengSaan/rime-gukwan/blob/main/LICENSE-GPL)。已繁化。
   - [關於如何製作用戶詞庫](https://github.com/rime/home/wiki/UserGuide#%E7%94%A8%E6%88%B6%E8%A9%9E%E5%85%B8%E7%AE%A1%E7%90%86)
-  
+
+
+## 輸入
+
+拼音方案基於[擴展粵拼](https://jyutjam.org/j++/)，現代音同[粵拼](https://jyutping.org/)無區別，直接使用即可。關於古代音請參攷[菊韻拼音表](https://github.com/HoengSaan/rime-gukwan/wiki/%E8%8F%8A%E9%9F%BB%E6%8B%BC%E9%9F%B3%E8%A1%A8)。
+
+<img src="pic\gamjam1.png" style="zoom:50%;" />
+
+<img src="pic\gamjam2.png"/>
+
+|      | 平        | 上     | 去     | 上入  | 下入     |
+| ---- | --------- | ------ | ------ | ----- | -------- |
+| 陰   | 1 (55/53) | 2 (24) | 3 (33) | 1 (5) | 3 (3)    |
+|      | 詩        | 屎     | 試     | 適    | 惜(白讀) |
+| 鍵位 | v         | x      | q      | v     | q        |
+| 陽   | 4 (32)    | 5 (13) | 6 (21) | 6 (2) | 2* (35)  |
+|      | 時        | 市     | 示     | 食    | 食(過去) |
+| 鍵位 | vv        | xx     | qq     | v     | q        |
+
+同今時大多數粵拼輸入法一樣，可以輸入聲調以加快蒐字速度。
+
+調值僅供參攷，部份方言僅有9個或8個聲調（含特殊調）。2*並非廣州話「新入」只見於入聲字變調，如「子」白讀zaai2*就同本身陰上調值（24）不一。此調亦用作表達過去、完成之文法意味。
+
+詳細請參攷[小欖話・沙田方言特徵 · HoengSaan/rime-gukwan Wiki](https://github.com/HoengSaan/rime-gukwan/wiki/小欖話・沙田方言特徵)
+
+### 反查
+
+目前方案預設五個反查入口：
+
+- 粵拼（[rime-cantonese](https://github.com/rime/rime-cantonese)），粵語廣州話反查。鍵值爲<code>`</code>
+- 明月拼音（rime-luna_pinyin），官語普通話反查。鍵值爲`X`。
+- 倉頡五代（rime-cangjie5），倉頡反查。鍵值爲`V`。
+- 假名（[rime-kanas](https://github.com/HoengSaan/rime-kanas)），以細階輸入平假名，大階輸入片假名。鍵值爲`R`。
+- 訓讀（[rime-kunyomi](https://github.com/sgalal/rime-kunyomi/blob/master/kunyomi.schema.yaml)），和語訓讀（現代音）反查。鍵值爲`K`。
+
+**粵拼、假名、訓讀須安裝方可使用反查**，安裝方法見上方安裝段。如需使用其他方案反查，請自行搜索竝改變方案。
+
+由於粵語兩分以廣州話爲準，故不納入。
 
 ## 安裝
 
@@ -115,53 +142,6 @@ Android亦可選擇小企鵝（fcitx5），但安裝對一般用家來講較爲�
    1. 普通用家須從Fcitx5進入。Fcitx5→Addons→Rime設定（齒輪符號）→User data dir→OK即可移動，左邊即有選單。將解壓後既文件全數Copy，然後送至上述地址（左邊選單→Fcitx5 for Android→rime）。
    1. Root用家直接連接電腦即可傳送文件，毋須經過以上麻煩步驟。
 7. 配置文件：開啓Fcitx5鍵盤竝切換至Rime輸入法，用左上角「>」符號開工具列，再撳「…」開輸入法設定，最後撳Reload Config等待輸入法配置完成。 
-
-## 輸入
-
-詳細請參攷[菊韻拼音表](https://github.com/HoengSaan/rime-gukwan/wiki/%E8%8F%8A%E9%9F%BB%E6%8B%BC%E9%9F%B3%E8%A1%A8)。
-
-### 鍵位
-
-<img src="pic\key.png"/>
-
-### 拼音
-
-拼音方案基於[擴展粵拼](https://jyutjam.org/j++/)，現代音同[粵拼](https://jyutping.org/)無區別，直接使用即可。
-
-師韻（現代無此音）菊韻標準爲y，擴展粵拼標準爲ii，須手動開啓轉換式。另有各種簡拼，異拼，詳細請閣下閱讀方案文件。
-
-同今時大多數粵拼輸入法一樣，可以輸入聲調以加快蒐字速度。
-
-<img src="pic\gamjam1.png" style="zoom:50%;" />
-
-<img src="pic\gamjam2.png"/>
-
-|      | 平         | 上     | 去     | 上入  | 下入     |
-| ---- | ---------- | ------ | ------ | ----- | -------- |
-| 陰   | 1 (55/53)  | 2 (24) | 3 (33) | 1 (5) | 3 (3)    |
-|      | 詩         | 矢     | 試     | 適    | 惜(白讀) |
-| 鍵位 | v          | x      | q      | v     | q        |
-| 陽   | 4 (42/55*) | 5 (13) | 6 (21) | 6 (2) | 2* (35)  |
-|      | 時         | 市     | 示     | 食    | 食(過去) |
-| 鍵位 | vv         | xx     | qq     | v     | q        |
-
-調值僅供參攷，部份方言僅有9個或8個聲調（含特殊調）。2*並非廣州話「新入」只見於入聲字變調，如「子」白讀zaai2*就同本身陰上調值（24）不一。此調亦用作表達過去、完成之文法意味。
-
-詳細請參攷[小欖話・沙田方言特徵 · HoengSaan/rime-gukwan Wiki](https://github.com/HoengSaan/rime-gukwan/wiki/小欖話・沙田方言特徵)
-
-### 反查
-
-目前方案預設五個反查入口：
-
-- 粵拼（[rime-cantonese](https://github.com/rime/rime-cantonese)），粵語廣州話反查。鍵值爲<code>`</code>
-- 明月拼音（rime-luna_pinyin），官語普通話反查。鍵值爲`X`。
-- 倉頡五代（rime-cangjie5），倉頡反查。鍵值爲`V`。
-- 假名（[rime-kanas](https://github.com/HoengSaan/rime-kanas)），以細階輸入平假名，大階輸入片假名。鍵值爲`R`。
-- 訓讀（[rime-kunyomi](https://github.com/sgalal/rime-kunyomi/blob/master/kunyomi.schema.yaml)），和語訓讀（現代音）反查。鍵值爲`K`。
-
-**粵拼、假名、訓讀須安裝方可使用反查**，安裝方法見上方安裝段。如需使用其他方案反查，請自行搜索竝改變方案。
-
-由於粵語兩分以廣州話爲準，故不納入。
 
 ## 定製
 

@@ -6,7 +6,7 @@ __include: gukwan.schema:/
 schema:
   schema_id: gukwan-canton
   name: 菊韻廣州音
-  version: "10.2b"
+  version: "11.0b"
   author:
     靈帝（Hoengsaan）
   
@@ -21,6 +21,7 @@ schema:
     - luna_pinyin
     - cangjie5
     - kanas
+    - kunyomi
 
 speller:
   alphabet: zyxwvutsrqponmlkjihgfedcba
@@ -153,6 +154,7 @@ speller:
     #- derive/^n(?!g|j)/l/                  # 泥來合流(n->l)
     #- derive/^t/h/                         # 透曉合流(t->h) 小欖部份
     - xform/^xaa(?=\d)/jaa$1/
+    - xform/I(?=\d)/i$1/                    # 外來語
 
     #韻母——長短音混
     #- derive/ap(?=\d)/aap$1/               # ap同aap混 
@@ -344,6 +346,7 @@ translator:
     - xform/nj/j/                          # 日以合流(nj->j)
 
     - xform/^xaa(?=\d)/jaa$1/
+    - xform/I(?=\d)/i$1/                    # 外來語
 
 reverse_lookup:
   tags: [ jyut6ping3, luna_pinyin, cangjie5, kanas, kunyomi ]
@@ -417,4 +420,5 @@ reverse_lookup:
     - xform/nj/j/                          # 日以合流(nj->j)
 
     - xform/xaa(?=\d)/jaa$1/
+    - xform/I(?=\d)/i$1/                    # 外來語
   

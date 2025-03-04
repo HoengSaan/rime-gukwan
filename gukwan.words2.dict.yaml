@@ -1,7 +1,8 @@
 # Rime dictionary
 # encoding: utf-8
 #
-# gukwan - 菊韻字母
+# gukwan - 菊韻詞庫——增廣二組
+# 本詞庫主要爲英文相關外來語同粵拼詞庫無收錄辭彙
 
 # 此爲菊韻粵語輸入法字庫詞庫文件
 # 詳細請至本方案github頁
@@ -10,17 +11,17 @@
 # For details, please visit the github page of this project.
 
 ---
-name: gukwan.lettered
-version: "9.5b"
+name: gukwan.words2
+version: "11.0b"
 sort: by_weight
 use_preset_vocabulary: true
 ...
 
 # English Alphabet
 A	ei1
-B	bi1
-C	si1
-D	di1
+B	bI1
+C	sI1
+D	dI1
 E	ji1
 F	e1 fu6
 G	zjyu1
@@ -33,17 +34,131 @@ L	e1 leau6
 M	em1
 N	en1
 O	eau1
-P	pi1
+P	pI1
 Q	kiu1
 R	aau1 leau6
-S	e1 si6
-T	ti1
+S	e1 sI6
+T	tI1
 U	ju1
 V	wi1
 W	dap1 bu6 liu6
-X	ek1 si6
+X	ek1 sI6
 Y	waai1
 Z	ji6 set1
+
+# 檯波術語
+# 見https://github.com/HoengSaan/rime-gukwan/wiki/檯波術語
+八波	
+九波	
+十波	
+白波	
+Cue Ball	kiu1 bo1
+黑波	
+黑柴	
+黑波點	
+黑柴點	
+Pink波	ping1 bo1
+粉波	
+Pink波點	
+粉波點	
+藍波	
+藍波點	
+草波	
+綠波	
+草波點	
+綠波點	
+啡波	
+啡波點	
+黃波	
+黃波點	
+紅波	
+橙波	
+色波	
+較波	
+Key	kI1
+Key	kei1
+Key Ball	kI1 bo1
+Foul波	fau1 bo1
+飛波	fei1 bo1
+Free Ball	fI1 bo1
+Set波	set1 bo1
+Set死	set1 si2
+Cut	kat1
+Cut Shot	kat1 sjot1
+Bank	beng1
+Bank Shot	beng1 sjot1
+Jump	zjam1
+Jump Shot	zjam1 sjot1
+跳波	
+Kiss	kis1
+Kiss Shot	kis1 sjot1
+Kick	kik1
+Kick Shot	kik1 sjot1
+直Shot	zrik6 sjot1
+定波	
+一鋪清檯	
+中袋	
+尾袋	
+Fluke	fu6 luk1
+豬波	
+大餐	daai6 chaan1
+有餐	
+黐箍	
+貼箍	
+箍邊	
+一箍	
+二箍	
+三箍	
+四箍	
+五箍	
+Chalk	chok1
+Chalk粉	chok1 fan2
+Cue	kiu1
+Cue棍	kiu1 gwan3
+公Cue	gung1 kiu1
+公柴	
+私家Cue	
+Cue頭	kiu1 tau4
+Tip	tip1
+換Tip	wun6 tip1
+𢴈Cue	daat3 kiu1
+高Cue	gou1 kiu1
+中Cue	zrung1 kiu1
+低Cue	dai1 kiu1
+跟波	
+抽波	
+出Cue	cjeot1 kiu1
+一板波	
+落西	
+左西	
+右西	
+戙Cue	dung6 kiu1
+戙西	
+Trick Shot	cjik1 sjot1
+高叉	
+低叉	
+擔叉	
+枕手	
+孭仔	
+重擺	
+開波	
+開波區	
+擺波紙	
+度數	
+遠檯	
+長檯	
+遠波	
+中檯	
+近檯	kan5 toi2
+近波	kan5 bo1
+遠袋	
+近袋	kan5 doi2
+𠺘嘴	
+Century	sen1 cjyu4
+147	jat1 si3 cat1
+波鐘	
+揼波鐘	
+Mark鐘	maak1 zjung1
 
 # Based on jyut6ping3.lettered.dict.yaml
 # 詞條數據參考
@@ -65,9 +180,9 @@ Z	ji6 set1
 
 %	pat6 sen1
 21點	jaa6 jat1 dim2
-AB膠	ei1 bi1 gaeu1
-ABC	ei1 bi1 si1
-AB制	ei1 bi1 zjai3
+AB膠	ei1 bI1 gaeu1
+ABC	ei1 bI1 sI1
+AB制	ei1 bI1 zjai3
 AA膠	ei1 ei1 gaeu1
 AA制	ei1 ei1 zjai3
 A4紙	ei1 fo1 zi2
@@ -78,43 +193,43 @@ AK47	ei1 kei1 si3 cat1
 A0	ei1 ling4
 AO	ei1 ou1
 A片	ei1 pin2
-ACE	ei1 si2
-ATM	ei1 ti1 em1
+ACE	ei1 sI2
+ATM	ei1 tI1 em1
 AV	ei1 wi1
 AV女優	ei1 wi1 nyo5 jau1
 AV女郎	ei1 wi1 nyo5 long4
 APP	ep1
-Apps	ep1 si2
+Apps	ep1 sI2
 Bra	bwaa1
 Bra	baa1
 Buy	baai1
 Bug	bak1
-Baby	bei1 bi4
+Baby	bei1 bI6
 Backup	bek1 ap1
 Ban	ben1
-Benz	ben1 si2
+Benz	ben1 sI2
 Band	ben1
-BB	bi1 bi1
-BB彈	bi1 bi1 daan2
-BBA	bi1 bi1 ei1
-BB機	bi1 bi1 gi1
-BBQ	bi1 bi1 kiu1
-B超	bi1 criu1
-B型超聲	bi1 jing4 criu1 sjing1
-BT	bi1 ti1
-B站	bi1 zraem6
-B仔	bi1 zaai2
-BB	bi4 bi1
-BB車	bi4 bi1 cjiaa1
-BB牀	bi4 bi1 chong4
-BB櫈	bi4 bi1 dang3
-BB骨	bi4 bi1 gwat1
-BB衫	bi4 bi1 shaem1
-BB話	bi4 bi1 waa2
-BB仔	bi4 bi1 zaai2
+BB	bI1 bI1
+BB彈	bI1 bI1 daan2
+BBA	bI1 bI1 ei1
+BB機	bI1 bI1 gi1
+BBQ	bI1 bI1 kiu1
+B超	bI1 criu1
+B型超聲	bI1 jing4 criu1 sjing1
+BT	bI1 ti1
+B站	bI1 zraem6
+B仔	bI1 zaai2
+BB	bI4 bI1
+BB車	bI4 bI1 cjiaa1
+BB牀	bI4 bI1 chong4
+BB櫈	bI4 bI1 dang3
+BB骨	bI4 bI1 gwat1
+BB衫	bI4 bI1 shaem1
+BB話	bI4 bI1 waa2
+BB仔	bI4 bI1 zaai2
 Bingo	bing1 geau4
 Ball	bo1
-BNO	bi1 en1 ou1
+BNO	bI1 en1 ou1
 Boy	boi1
 Buffet	peau6 fei1
 Book	buk1
@@ -140,7 +255,7 @@ Cut	kat1
 Cut線	kat1 sin3
 Cafe	kat6 fei1
 Café	kat6 fei1
-Close	kat6 leau4 si4
+Close	kat6 leau4 sI6
 Cult	kau1
 Care	ke1 aa4
 Casual	ke1 sjeau4
@@ -161,18 +276,16 @@ Cake	kik1
 Click	kik1
 Click入去	kik1 njap6 hyo3
 Cream	kwim1
-Cue	kiu1
-Cue頭	kiu1 tau4
 Cute	kiu1
 Cue卡	kiu1 kaat1
 Cue咭	kiu1 kaat1
 cute-cute	kiu1 kiu1
 Coupon	kiu1 pon4
-Cutie	kiu1 ti2
+Cutie	kiu1 tI2
 Call	ko1
 Call白車	ko1 baak6 cjiaa1
 Call機	ko1 gi1
-Course	ko1 si4
+Course	ko1 sI6
 Call台	ko1 toi4
 Call鐘	ko1 zjung1
 Con	kon1
@@ -181,10 +294,10 @@ Cool	ku1
 Cushion	ku1 sheon2
 Code	kuk1
 Cyber	saai1 baa4
-C眼	si1 ngaan5
-C盤	si1 pun4
-CCTV	si1 si1 ti1 wi1
-CV	si1 wi1
+C眼	sI1 ngaan5
+C盤	sI1 pun4
+CCTV	sI1 sI1 ti1 wi1
+CV	sI1 wi1
 Cert	soet1
 Darling	daa1 ling2
 Down	daan1
@@ -192,7 +305,7 @@ Down機	daan1 gi1
 Download	daan1 leau1
 Data	dei1 taa4
 Demo	dem1 mou2
-D場	di1 coeng4
+D場	dI1 coeng4
 Email	ji1 me1 leau4
 Email	ji1 meu1
 EVA膠	ji1 wi1 ei1 gaau1
@@ -200,21 +313,21 @@ E仔	ji1 zai2
 File	faai1 leau2
 Foul	fau1
 Foul出局	fau1 ceot1 guk6
-Face	fei1 si2
-FAX	fek1 si2
-FAX機	fek1 si2 gi1
+Face	fei1 sI2
+FAX	fek1 sI2
+FAX機	fek1 sI2 gi1
 Friend	fen1
 Friend過打band	fen1 gwo3 daa2 ben1
 Friend過夾band	fen1 gwo3 gaap3 ben1
-Fans	fen1 si2
+Fans	fen1 sI2
 Fail	feu1
 Figure	fik1 gaa4
 Fit	fit1
 Feel	fiu1
-Fuse	fiu1 si2
+Fuse	fiu1 sI2
 Follow	fo1 leau4
-GAs	ge1 si2
-Gas爐	ge1 si2 lu4
+Gas	ge1 sI2
+Gas爐	ge1 sI2 lu4
 Gag	gek1
 Game	gem1
 GYM	zjim1
@@ -224,11 +337,11 @@ Hi	haai1
 High	haai1
 High大咗	haai1 daai6 zo2
 Hi-fi	haai1 faai1
-High卡士	haai1 kaa1 si2
+High卡士	haai1 kaa1 sI2
 Highlight	haai1 lai1
 High-tech	haai1 tek1
 High-tea	haai1 ti1
-House	hau1 si2
+House	hau1 sI2
 Hack	hek1
 Hacker	hek1 kaa2
 Ham	hem1
@@ -258,12 +371,11 @@ M巾	em1 gan1
 M記	em1 gei3
 M字額	em1 zy6 ngaak3
 Mark	maak1
-Mark鐘	maak1 zjung1
 Mark低	maak1 dai1
 Mark實	maak1 sjat6
 Mark住	maak1 zryu6
-Mouse	mau1 si2
-Miss	mi1 si4
+Mouse	mau1 sI2
+Miss	mI1 sI6
 Model	mo1 deau4
 Mon	mon1
 Modem	mou1 dem4
@@ -274,22 +386,22 @@ Offer	o1 faa4
 Open	ou1 pan4
 O咀	ou1 zooi2
 O嘴	ou1 zooi2
-Physics	fi1 sik4
-Pass	paa1 si6
-Passport	paa1 si6 pot1
+Physics	fI1 sik4
+Pass	paa1 sI6
+Passport	paa1 sI6 pot1
 Parkour	paal6 ko1
 Part	paat1
 Partner	paat1 naa4
 Parttime	paat1 taai1
-Party	paat1 ti4
+Party	paat1 tI6
 Percent	pat6 sen1
 Pair	pe1
 Pack	pek1
 Pan	pen1
-Pizza	pi1 saa2
-P圖	pi1 tu4
-PG	pi1 zi1
-PG	pi1 zyu1
+Pizza	pI1 saa2
+P圖	pI1 tu4
+PG	pI1 zI1
+PG	pI1 zyu1
 Point	pon1
 QR-code	kiu1 aau1 kuk1
 Q版	kiu1 baan2
@@ -297,20 +409,20 @@ Round	waang1
 Router	waau1 taa2
 RAM	wem1
 Roll機	wou1 gei1
-SPA	si6 baa1
-Stupid	si6 diu1 bat6
+SPA	sI6 baa1
+Stupid	sI6 diu1 bat6
 Save	sei1 fu4
 Send	sen1
 Send咗	sen1 zo2
 Send份	sen1 fan6
 Send晒畀	sen1 saai3 bi2
 Send完	sen1 jyun4
-Sense	sen1 si2
+Sense	sen1 sI2
 Set	set1
 Set頭	set1 tau4
 Sell	seu1
-Sales	seu1 si2
-Snooker	si6 luk1 gaa2
+Sales	seu1 sI2
+Snooker	sI6 luk1 gaa2
 Sink盤	sing1 pun2
 Seed	sit1
 Show	sou1
@@ -329,7 +441,7 @@ Talk	tok1
 U型枕	ju1 jing4 zam2
 U形轉彎	ju1 jing4 zyun3 waan1
 U盤	ju1 pun2
-Vaseline	waa1 si6 lin1
+Vaseline	waa1 sI6 lin1
 VAN	wen1
 VAN仔	wen1 zai2
 V溝	wi1 kau1
@@ -337,11 +449,11 @@ V領	wi1 leng5
 Volt	wuk1
 Vodka	wuk1 kaa2
 Wi-Fi	waai1 faai1
-Wasabi	waat6 saa1 bi4
+Wasabi	waat6 saa1 bI6
 Wing	wing1
 Work	woek1
 Watt	wok1
-X光	ek1 si4 gwong1
+X光	ek1 sI6 gwong1
 XO醬	ek1 seau1 ziong3
 Young	jaang1
 Yeah	je1
@@ -353,12 +465,12 @@ YouTuber	ju1 tup1 baa4
 亞sir	aa3 soe4
 阿sir	aa3 soe4
 車Cam	cjiaa1 kem1
-鋤大D	cho4 daai6 di2
-鋤D	cho1 di2
+鋤大D	cho4 daai6 dI2
+鋤D	cho1 dI2
 唱卡啦OK	cjiong3 kaa1 laa1 ou1 kei1
 唱K	cjiong3 kei1
-低B	dai1 bi1
-低B仔	dai1 bi1 zai2
+低B	dai1 bI1
+低B仔	dai1 bI1 zaai2
 哆啦A夢	do1 laa1 ei1 mung6
 貨VAN	fo3 wen1
 攪gag	gaeu2 gek1
@@ -371,5 +483,5 @@ YouTuber	ju1 tup1 baa4
 爛gag	laan6 gek1
 自High	zy6 haai1
 煎Pan	zin1 pen1
-照X光	zjiu3 ek1 si6 gwong1
+照X光	zjiu3 ek1 sI6 gwong1
 做GYM	zu6 zjim1
