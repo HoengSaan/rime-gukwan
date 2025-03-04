@@ -4,14 +4,15 @@
 schema:
   schema_id: gukwan
   name: 菊韻
-  version: "11.0b"
+  version: "11.1b"
   author:
     靈帝（Hoengsaan）
   
   description: |-
     調試用
     基底文件切勿刪除
-    詳細請至本方案github頁。https://github.com/HoengSaan/rime-gukwan
+    詳細請至本方案github䈎。https://github.com/HoengSaan/rime-gukwan
+    如有問題或建議可於以上github䈎中開Issues反饋
 
   dependencies:
     - jyut6ping3
@@ -19,6 +20,7 @@ schema:
     - cangjie5
     - kanas
     - kunyomi
+    - kaomoji
 
 switches:
   - name: ascii_mode
@@ -35,7 +37,7 @@ switches:
     states: [ 。，, ．， ]
   - name: emoji_cantonese_suggestion
     reset: 0
-    states: [ 冇 Emoji, 有 Emoji ]
+    states: [ 無✖, 有🔴 ]
     
 menu:
   page_size: 7
@@ -58,6 +60,7 @@ engine:
     - affix_segmentor@cangjie5
     - affix_segmentor@kanas
     - affix_segmentor@kunyomi
+    - affix_segmentor@kaomoji
     - abc_segmentor
     - punct_segmentor
     - fallback_segmentor
@@ -66,14 +69,16 @@ engine:
     - script_translator
     - script_translator@jyut6ping3
     - script_translator@luna_pinyin
+    - table_translator@cangjie5
     - script_translator@kanas
     - script_translator@kunyomi
-    - table_translator@cangjie5
+    - script_translator@kaomoji
   filters:
     - simplifier@emoji_cantonese_suggestion
     - simplifier
     - uniquifier
     - reverse_lookup_filter@reverse_lookup
+    - reverse_lookup_filter@special_typing
 
 speller:
   alphabet: zyxwvutsrqponmlkjihgfedcba
@@ -300,11 +305,11 @@ speller:
     #首字母出字（現代音只需第一條）
 
     - abbrev/^([a-z]).+$/$1/
-    #- abbrev/^(n[ghjy]).+$/$1/
-    #- abbrev/^([gkh]w).+$/$1/
-    #- abbrev/^([zcsn][h]).+$/$1/
-    #- abbrev/^([zcsn][j]).+$/$1/
-    #- abbrev/^([zcn][r]).+$/$1/
+    - abbrev/^(n[ghjy]).+$/$1/
+    - abbrev/^([gkh]w).+$/$1/
+    - abbrev/^([zcsn][h]).+$/$1/
+    - abbrev/^([zcsn][j]).+$/$1/
+    - abbrev/^([zcn][r]).+$/$1/
 
     #聲調（勿動）
 
@@ -374,7 +379,7 @@ kanas:
   tag: kanas
   dictionary: kanas
   enable_user_dict: false
-  prefix: "R"
+  prefix: "J"
   suffix: ";"
   tips: 〔假名〕
 
@@ -386,10 +391,22 @@ kunyomi:
   suffix: ";"
   tips: 〔和訓〕
 
+kaomoji:
+  tag: kaomoji
+  dictionary: kaomoji
+  enable_user_dict: false
+  prefix: "L"
+  suffix: ";"
+  tips: 〔顔文字〕
+
 reverse_lookup:
-  tags: [ jyut6ping3, luna_pinyin, cangjie5, kanas, kunyomi ]
+  tags: [ jyut6ping3, luna_pinyin, cangjie5, kunyomi ]
   overwrite_comment: false
   dictionary: gukwan
+
+special_typing:
+  tags: [ kanas, kaomoji ]
+  overwrite_comment: false
 
 emoji_cantonese_suggestion:
   opencc_config: emoji_cantonese.json
@@ -410,8 +427,9 @@ recognizer:
     jyut6ping3: "`[a-z']*;?$"
     luna_pinyin: "^X[a-z']*;?$"
     cangjie5: "^V[a-z]*;?$"
-    kanas: "^R[a-zA-Z-]*;?$"
+    kanas: "^J[a-zA-Z-]*;?$"
     kunyomi: "^K[a-z']*;?$"
+    kaomoji: "^L[a-z-]*;?$"
 
 style:
   #font_face: "Shanggu"

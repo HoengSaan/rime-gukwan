@@ -12,7 +12,7 @@
 
 ---
 name: gukwan.chars1
-version: "11.0b"
+version: "11.1b"
 sort: by_weight
 ...
 
@@ -608,6 +608,8 @@ sort: by_weight
 眯	mei1	
 拐	gwaai2	
 傀	hwaai3	
+待	doi6	
+迨	doi6	
 啡	fe1	
 在	coi2	
 軫	cjan2	0%

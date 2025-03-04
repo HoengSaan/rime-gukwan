@@ -6,7 +6,7 @@ __include: gukwan.schema:/
 schema:
   schema_id: gukwan-default
   name: 菊韻構擬音
-  version: "11.0b"
+  version: "11.1b"
   author:
     靈帝（Hoengsaan）
   
@@ -22,6 +22,7 @@ schema:
     - cangjie5
     - kanas
     - kunyomi
+    - kaomoji
 
 speller:
   alphabet: zyxwvutsrqponmlkjihgfedcba
@@ -290,7 +291,7 @@ translator:
     - xform/I(?=\d)/i$1/                    # 外來語
 
 reverse_lookup:
-  tags: [ jyut6ping3, luna_pinyin, cangjie5, kanas, kunyomi ]
+  tags: [ jyut6ping3, luna_pinyin, cangjie5, kunyomi ]
   overwrite_comment: false
   dictionary: gukwan 
   comment_format:

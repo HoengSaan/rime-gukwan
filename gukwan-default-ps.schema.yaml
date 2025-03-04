@@ -6,7 +6,7 @@ __include: gukwan-default.schema:/
 schema:
   schema_id: gukwan-default-ps
   name: 菊韻構擬音（音標）
-  version: "11.0b"
+  version: "11.1b"
   author:
     靈帝（Hoengsaan）
   
@@ -23,6 +23,7 @@ schema:
     - cangjie5
     - kanas
     - kunyomi
+    - kaomoji
 
 translator:
   dictionary: gukwan
@@ -105,21 +106,4 @@ translator:
     - xform/(z|c)r/$1h/     
     
     - xform/xaa(?=\d)/jaa$1/   
-    - xform/I(?=\d)/i$1/                    # 外來語
-
-reverse_lookup:
-  tags: [ jyut6ping3, luna_pinyin, cangjie5, kanas, kunyomi ]
-  overwrite_comment: false
-  dictionary: gukwan 
-  comment_format:
-    - xform/hwun(?=\d)/hun$1/               # 口音補充(hw->h)：「桓」讀若fun者
-    - xform/xu(?=\d)/hu$1/                  # 遇攝合口(*u->hu)：「狐」讀作fu4
-    - xform/vu(?=\d)/hu$1/                  # 遇攝合口(*u->hu)：「護」讀作fu6
-
-    - xform/(z|c|s)jy(?=\d)/$1ji/          # 
-
-    - xform/(z|c|s)j/$1h/                  
-    - xform/(z|c)r/$1h/       
-    
-    - xform/xaa(?=\d)/jaa$1/
     - xform/I(?=\d)/i$1/                    # 外來語
