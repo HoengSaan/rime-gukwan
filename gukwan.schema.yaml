@@ -9,7 +9,6 @@ schema:
     靈帝（Hoengsaan）
   
   description: |-
-    調試用
     基底文件切勿刪除
     詳細請至本方案github䈎。https://github.com/HoengSaan/rime-gukwan
     如有問題或建議可於以上github䈎中開Issues反饋
@@ -326,7 +325,6 @@ speller:
 
 translator:
   dictionary: gukwan
-  initial_quality: 1.2
   spelling_hints: 9
   preedit_format:
     - xform/([aeiouymngptk])vv/${1}4/

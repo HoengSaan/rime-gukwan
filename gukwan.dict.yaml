@@ -5,7 +5,7 @@
 
 ---
 name: gukwan
-version: "12.0b"
+version: "11.4b"
 sort: by_weight
 vocabulary: essay-cantonese
 import_tables:
@@ -16,6 +16,47 @@ import_tables:
   - dicts/gukwan.words1     # 菊韻詞庫——增廣一組 部份小欖話辭彙同小欖周邊地名
   - dicts/gukwan.words2     # 菊韻詞庫——增廣二組 粵拼詞庫增補同外來語
   - dicts/gukwan.kwongtung  # 菊韻詞庫——廣東地名
-  - jyut6ping3.maps   # 粵拼詞庫——地名街名
-  - jyut6ping3.phrase # 粵拼詞庫——短語短句
+  - jyut6ping3.maps         # 粵拼詞庫——地名街名
+  - jyut6ping3.phrase       # 粵拼詞庫——短語短句
 ...
+
+# English Alphabet
+A	ei1
+B	bI1
+C	sI1
+D	dI1
+E	ji1
+F	e1 fu6
+G	zjyu1
+G	zji1
+H	ei1 cjyu6
+I	aai1
+J	zjei1
+K	kei1
+L	e1 leau6
+M	em1
+N	en1
+O	eau1
+P	pI1
+Q	kiu1
+R	aau1 leau6
+S	e1 sI6
+T	tI1
+U	ju1
+V	wi1
+W	dap1 bu6 liu6
+X	ek1 sI6
+Y	waai1
+Z	ji6 set1
+
+# Number
+0	ling4
+1	jat1
+2	nji6
+3	saam1
+4	si3
+5	ngu5
+6	luk6
+7	cat1
+8	baet3
+9	giau2

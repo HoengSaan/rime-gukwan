@@ -12,39 +12,10 @@
 
 ---
 name: gukwan.words2
-version: "11.0b"
+version: "11.4b"
 sort: by_weight
 use_preset_vocabulary: true
 ...
-
-# English Alphabet
-A	ei1
-B	bI1
-C	sI1
-D	dI1
-E	ji1
-F	e1 fu6
-G	zjyu1
-G	zji1
-H	ei1 cjyu6
-I	aai1
-J	zjei1
-K	kei1
-L	e1 leau6
-M	em1
-N	en1
-O	eau1
-P	pI1
-Q	kiu1
-R	aau1 leau6
-S	e1 sI6
-T	tI1
-U	ju1
-V	wi1
-W	dap1 bu6 liu6
-X	ek1 sI6
-Y	waai1
-Z	ji6 set1
 
 # 檯波術語
 # 見https://github.com/HoengSaan/rime-gukwan/wiki/檯波術語
