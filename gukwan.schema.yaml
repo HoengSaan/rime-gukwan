@@ -4,7 +4,7 @@
 schema:
   schema_id: gukwan
   name: 菊韻
-  version: "11.1b"
+  version: "11.3b"
   author:
     靈帝（Hoengsaan）
   
@@ -18,8 +18,9 @@ schema:
     - jyut6ping3
     - luna_pinyin
     - cangjie5
-    - kanas
     - kunyomi
+    - loengfan
+    - kanas
     - kaomoji
 
 switches:
@@ -58,8 +59,9 @@ engine:
     - affix_segmentor@jyut6ping3
     - affix_segmentor@luna_pinyin
     - affix_segmentor@cangjie5
-    - affix_segmentor@kanas
     - affix_segmentor@kunyomi
+    - affix_segmentor@loengfan
+    - affix_segmentor@kanas
     - affix_segmentor@kaomoji
     - abc_segmentor
     - punct_segmentor
@@ -70,8 +72,9 @@ engine:
     - script_translator@jyut6ping3
     - script_translator@luna_pinyin
     - table_translator@cangjie5
-    - script_translator@kanas
     - script_translator@kunyomi
+    - script_translator@loengfan
+    - script_translator@kanas
     - script_translator@kaomoji
   filters:
     - simplifier@emoji_cantonese_suggestion
@@ -323,6 +326,7 @@ speller:
 
 translator:
   dictionary: gukwan
+  initial_quality: 1.2
   spelling_hints: 9
   preedit_format:
     - xform/([aeiouymngptk])vv/${1}4/
@@ -375,6 +379,22 @@ cangjie5:
     - "^z.*$"
     - "^yyy.*$"
 
+kunyomi:
+  tag: kunyomi
+  dictionary: kunyomi
+  enable_user_dict: false
+  prefix: "R"
+  suffix: ";"
+  tips: 〔和訓〕
+
+loengfan:
+  tag: loengfan
+  dictionary: loengfan
+  enable_user_dict: false
+  prefix: "L"
+  suffix: ";"
+  tips: 〔兩分〕
+
 kanas:
   tag: kanas
   dictionary: kanas
@@ -383,24 +403,16 @@ kanas:
   suffix: ";"
   tips: 〔假名〕
 
-kunyomi:
-  tag: kunyomi
-  dictionary: kunyomi
-  enable_user_dict: false
-  prefix: "K"
-  suffix: ";"
-  tips: 〔和訓〕
-
 kaomoji:
   tag: kaomoji
   dictionary: kaomoji
   enable_user_dict: false
-  prefix: "L"
+  prefix: "K"
   suffix: ";"
   tips: 〔顔文字〕
 
 reverse_lookup:
-  tags: [ jyut6ping3, luna_pinyin, cangjie5, kunyomi ]
+  tags: [ jyut6ping3, luna_pinyin, cangjie5, kunyomi, loengfan ]
   overwrite_comment: false
   dictionary: gukwan
 
@@ -427,9 +439,10 @@ recognizer:
     jyut6ping3: "`[a-z']*;?$"
     luna_pinyin: "^X[a-z']*;?$"
     cangjie5: "^V[a-z]*;?$"
+    kunyomi: "^R[a-z']*;?$"
+    loengfan: "^L[a-z']*;?$"
     kanas: "^J[a-zA-Z-]*;?$"
-    kunyomi: "^K[a-z']*;?$"
-    kaomoji: "^L[a-z-]*;?$"
+    kaomoji: "^K[a-z-]*;?$"
 
 style:
   #font_face: "Shanggu"

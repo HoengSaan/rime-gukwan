@@ -6,7 +6,7 @@ __include: gukwan.schema:/
 schema:
   schema_id: gukwan-default
   name: 菊韻構擬音
-  version: "11.1b"
+  version: "11.3b"
   author:
     靈帝（Hoengsaan）
   
@@ -14,14 +14,16 @@ schema:
     測試階段
     本方案爲根據菊韻標準所構擬之古音
     詳細請至本方案github頁。https://github.com/HoengSaan/rime-gukwan
-    反查:`粵拼(新) X普音 V倉頡 R假名。聲調可省：v爲平，x爲上，q爲去，單陰雙陽。
+    如有問題或建議可於以上github䈎中開Issues反饋
+    `粵拼 X普音 V倉頡 L兩分 R和訓 J假名 K顏文字。聲調可省：v爲平，x爲上，q爲去，單陰雙陽。
 
   dependencies:
     - jyut6ping3
     - luna_pinyin
     - cangjie5
-    - kanas
     - kunyomi
+    - loengfan
+    - kanas
     - kaomoji
 
 speller:
@@ -291,7 +293,7 @@ translator:
     - xform/I(?=\d)/i$1/                    # 外來語
 
 reverse_lookup:
-  tags: [ jyut6ping3, luna_pinyin, cangjie5, kunyomi ]
+  tags: [ jyut6ping3, luna_pinyin, cangjie5, kunyomi, loengfan ]
   overwrite_comment: false
   dictionary: gukwan 
   comment_format:
