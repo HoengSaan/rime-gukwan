@@ -5,22 +5,19 @@
 schema:
   schema_id: kaomoji
   name: 顔文字
-  version: "0.1b"
+  version: "11.2b"
   author:
     靈帝（Hoengsaan）
 
   description: |
     以日文輸入顏文字，基於mtripg6666tdr/Kaomoji_proj
+    此方案可掛載於任何RIME方案之下 「t」可快速輸入促音
+    異點：減少無必要捨假名運用以便輸入，增添Microsoft IME自帶顏文字
     詳細請至本方案github䈎。https://github.com/HoengSaan/rime-gukwan
     如有問題或建議可於以上github䈎中開Issues反饋
 
-switches:
-  - name: ascii_mode
-    reset: 0
-    states: [ 顔文字, 英語 ]
-  - name: half_shape
-    states: [ 半角, 全角 ]
-    reset: 0
+menu:
+  page_size: 9
 
 engine:
   processors:
@@ -48,9 +45,10 @@ speller:
   alphabet: 'abcdefghijklmnopqrstuvwxyz-'
   delimiter: " '"
   algebra:
-    - derive/^([^&]+)&.+$/$1/ 
+    - derive/^([^&]+)&.+$/$1/
     - xform/&//
 
+    - xform/いぇ/ye/
     - xform/うぃ/wi/
     - xform/うぇ/we/
     - xform/ゔぁ/va/
@@ -157,7 +155,6 @@ speller:
     - xform/も/mo/
     - xform/や/ya/
     - xform/ゆ/yu/
-    - xform/いぇ/ye/
     - xform/よ/yo/
     - xform/ら/ra/
     - xform/り/ri/
