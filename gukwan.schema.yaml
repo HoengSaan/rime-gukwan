@@ -13,7 +13,7 @@
 schema:
   schema_id: gukwan
   name: 菊韻
-  version: "12.3b"
+  version: "12.4b"
   author:
     靈帝（Hoengsaan）
   
@@ -80,27 +80,28 @@ engine:
   translators:
     - punct_translator
     - script_translator
-    - script_translator@jyut6ping3
-    - script_translator@luna_pinyin
-    - table_translator@cangjie5
-    - script_translator@kunyomi
-    - script_translator@loengfan
-    - script_translator@kanas
-    - script_translator@kaomoji
-    - lua_translator@*unicode
-    - lua_translator@*calc_translator
-    - lua_translator@*number_gukwan
-    - lua_translator@*date_gukwan
-    - lua_translator@*lunar
+    - script_translator@jyut6ping3          # 廣州話粵拼反查
+    - script_translator@luna_pinyin         # 普通話拼音反查
+    - table_translator@cangjie5             # 倉頡五代反查
+    - script_translator@kunyomi             # 和語訓讀反查
+    - script_translator@loengfan            # 廣州話兩分反查
+    - script_translator@kanas               # 假名輸入
+    - script_translator@kaomoji             # 顏文字輸入
+    - lua_translator@*unicode               # Unicode
+    - lua_translator@*calc_translator       # 計數機
+    - lua_translator@*number_gukwan         # 數字數額金額蘇州碼
+    - lua_translator@*date_gukwan           # 日期時間
+    - lua_translator@*lunar                 # 農曆
   filters:
-    - simplifier@emoji_cantonese_suggestion
-    - simplifier
-    - uniquifier
-    - reverse_lookup_filter@reverse_lookup
-    - reverse_lookup_filter@special_typing
+    #- lua_filter@*is_in_user_dict          # 測試用
+    - reverse_lookup_filter@reverse_lookup  # 反查
+    - reverse_lookup_filter@special_typing  # 輸入
+    - simplifier@emoji_cantonese_suggestion # 繪文字（表情）
+    - simplifier                            # 簡化
+    - uniquifier                            # 去重
 
 speller:
-  alphabet: zyxwvutsrqponmlkjihgfedcba
+  alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA
   delimiter: " '"
   algebra:
     #範例
@@ -321,14 +322,14 @@ speller:
     - derive/eo/oe/                         # 模糊(eo/oe)
     - derive/oe/eo/                         # 模糊(eo/oe)
 
-    #首字母出字（現代音只需第一條）
+    #首字母出字（不考慮異拼，現代音只需第一條）
 
     - abbrev/^([a-z]).+$/$1/
-    - abbrev/^(n[ghjy]).+$/$1/
+    - abbrev/^(n[gj]).+$/$1/
     - abbrev/^([gkh]w).+$/$1/
-    - abbrev/^([zcsn][h]).+$/$1/
+    - abbrev/^([zcs][h]).+$/$1/
     - abbrev/^([zcsn][j]).+$/$1/
-    - abbrev/^([zcn][r]).+$/$1/
+    - abbrev/^([zc][r]).+$/$1/
 
     #聲調（勿動）
 
@@ -447,7 +448,7 @@ punctuator:
 key_binder:
   import_preset: default
 
-# 功能鍵值
+# 功能
 recognizer:
   import_preset: default
   patterns:
@@ -472,7 +473,11 @@ date_gukwan:
   datetime: dt   # ISO 8601： 2022-11-29T18:13:11+08:00
   timestamp: ts  # 時間戳： 1669716794
 
+## 農曆鍵值
 lunar: nl        # 農曆： 二〇二三年冬月二十 癸卯年（兔）冬月二十
+
+## 測試用
+is_in_user_dict: true
 
 # 風格（建議改Weasel/Squirrel）
 style:

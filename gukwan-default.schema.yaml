@@ -14,7 +14,7 @@ __include: gukwan.schema:/
 schema:
   schema_id: gukwan-default
   name: 菊韻構擬音
-  version: "11.3b"
+  version: "12.4b"
   author:
     靈帝（Hoengsaan）
   
@@ -255,14 +255,14 @@ speller:
     - derive/eo/oe/                         # 模糊(eo/oe)
     - derive/oe/eo/                         # 模糊(eo/oe)
 
-    #首字母出字（現代音只需第一條）
+    #首字母出字（不考慮異拼，現代音只需第一條）
 
     - abbrev/^([a-z]).+$/$1/
-    - abbrev/^(n[ghjy]).+$/$1/
+    - abbrev/^(n[gj]).+$/$1/
     - abbrev/^([gkh]w).+$/$1/
-    - abbrev/^([zcsn][h]).+$/$1/
+    - abbrev/^([zcs][h]).+$/$1/
     - abbrev/^([zcsn][j]).+$/$1/
-    - abbrev/^([zcn][r]).+$/$1/
+    - abbrev/^([zc][r]).+$/$1/
 
     #聲調（勿動）
 

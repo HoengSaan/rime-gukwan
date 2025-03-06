@@ -138,22 +138,22 @@ local function number_translatorFunc(num)
     if numberPart.dot ~= "" then
         table.insert(result,
             { number2zh(numberPart.int, 0) .. "點" .. number2zh(numberPart.dec, 0),
-                "〔轉換小寫〕"})
+                "〔數字小寫〕"})
         table.insert(result,
             { number2zh(numberPart.int, 1) .. "點" .. number2zh(numberPart.dec, 1),
-                "〔轉換大寫〕"})
+                "〔數字大寫〕"})
         table.insert(result,
             { number2cnChar(numberPart.int, 0, { "萬", "億" }, { "〇", "一", "十", "點" }) .. number2zh(numberPart.dec, 0),
-                "〔數字小寫〕" })
+                "〔數額小寫〕" })
         table.insert(result,
             { number2cnChar(numberPart.int, 1, { "萬", "億" }, { "〇", "一", "十", "點" }) .. number2zh(numberPart.dec, 1),
-                "〔數字大寫〕" })
+                "〔數額大寫〕" })
     else
-        table.insert(result, { number2zh(numberPart.int, 0), "〔轉換小寫〕"})
-        table.insert(result, { number2zh(numberPart.int, 1), "〔轉換大寫〕"})
+        table.insert(result, { number2zh(numberPart.int, 0), "〔數字小寫〕"})
+        table.insert(result, { number2zh(numberPart.int, 1), "〔數字大寫〕"})
         table.insert(result, { number2sz(numberPart.int), "〔蘇州碼子〕"})
-        table.insert(result, { number2cnChar(numberPart.int, 0, { "萬", "億" }, { "〇", "一", "十", "" }), "〔數字小寫〕" })
-        table.insert(result, { number2cnChar(numberPart.int, 1, { "萬", "億" }, { "零", "壹", "拾", "" }), "〔數字大寫〕" })
+        table.insert(result, { number2cnChar(numberPart.int, 0, { "萬", "億" }, { "〇", "一", "十", "" }), "〔數額小寫〕" })
+        table.insert(result, { number2cnChar(numberPart.int, 1, { "萬", "億" }, { "零", "壹", "拾", "" }), "〔數額大寫〕" })
     end
     table.insert(result,
         { number2cnChar(numberPart.int, 0) ..
