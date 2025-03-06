@@ -4,7 +4,7 @@
 schema:
   schema_id: gukwan
   name: 菊韻
-  version: "12.1b"
+  version: "12.2b"
   author:
     靈帝（Hoengsaan）
   
@@ -457,9 +457,9 @@ recognizer:
 
 ## 時間日期鍵值
 date_translator:
-  date: rk       # 日期： 2022-11-29 2022年11月29日 etc.
+  date: rk       # 日期： 2022-11-29 2022年11月29日 等各種格式 
   time: sg       # 時間： 10:31 10:31:04
-  week: sk       # 星期： 星期二 禮拜二 週二
+  week: sk       # 星期： 星期二 禮拜二 週二 火曜日
   datetime: dt   # ISO 8601： 2022-11-29T18:13:11+08:00
   timestamp: ts  # 時間戳： 1669716794
 

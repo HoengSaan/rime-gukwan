@@ -31,6 +31,12 @@ function M.func(input, seg, env)
         yield_cand(seg, os.date('%Y.%m.%d', current_time))
         yield_cand(seg, os.date('%Y%m%d', current_time))
         yield_cand(seg, os.date('%Y年%m月%d日', current_time):gsub('年0', '年'):gsub('月0','月'))
+        yield_cand(seg, os.date('%d-%m-%Y', current_time))
+        yield_cand(seg, os.date('%d/%m/%Y', current_time))
+        yield_cand(seg, os.date('%d.%m.%Y', current_time))
+        yield_cand(seg, os.date('%m-%d-%Y', current_time))
+        yield_cand(seg, os.date('%m/%d/%Y', current_time))
+        yield_cand(seg, os.date('%m.%d.%Y', current_time))
 
     -- 时间
     elseif (input == M.time) then
@@ -41,24 +47,32 @@ function M.func(input, seg, env)
     -- 星期
     elseif (input == M.week) then
         local current_time = os.time()
-        local week_tab = {'日', '一', '二', '三', '四', '五', '六'}
-        local text = week_tab[tonumber(os.date('%w', current_time) + 1)]
-        yield_cand(seg, '星期' .. text)
-        yield_cand(seg, '禮拜' .. text)
-        yield_cand(seg, '週' .. text)
+        local week_tab_new = {'日', '一', '二', '三', '四', '五', '六'}
+        local week_tab_old = {'日', '月', '火', '水', '木', '金', '土'}
+        local day_index = tonumber(os.date('%w', current_time)) + 1
+        
+        -- Weekday in Chinese format
+        local text_new = week_tab_new[day_index]
+        yield_cand(seg, '星期' .. text_new)
+        yield_cand(seg, '禮拜' .. text_new)
+        yield_cand(seg, '週' .. text_new)
+        
+        -- Weekday in Japanese format
+        local text_old = week_tab_old[day_index]
+        yield_cand(seg, text_old .. '曜日')
 
-    -- ISO 8601/RFC 3339 的时间格式 （固定东八区）（示例 2022-01-07T20:42:51+08:00）
-    elseif (input == M.datetime) then
-        local current_time = os.time()
-        yield_cand(seg, os.date('%Y-%m-%dT%H:%M:%S+08:00', current_time))
-        yield_cand(seg, os.date('%Y-%m-%d %H:%M:%S', current_time))
-        yield_cand(seg, os.date('%Y%m%d%H%M%S', current_time))
+        -- ISO 8601/RFC 3339 的时间格式 （固定东八区）（示例 2022-01-07T20:42:51+08:00）
+        elseif (input == M.datetime) then
+            local current_time = os.time()
+            yield_cand(seg, os.date('%Y-%m-%dT%H:%M:%S+08:00', current_time))
+            yield_cand(seg, os.date('%Y-%m-%d %H:%M:%S', current_time))
+            yield_cand(seg, os.date('%Y%m%d%H%M%S', current_time))
 
-    -- 时间戳（十位数，到秒，示例 1650861664）
-    elseif (input == M.timestamp) then
-        local current_time = os.time()
-        yield_cand(seg, string.format('%d', current_time))
-    end
+        -- 时间戳（十位数，到秒，示例 1650861664）
+        elseif (input == M.timestamp) then
+            local current_time = os.time()
+            yield_cand(seg, string.format('%d', current_time))
+        end
 
     -- -- 显示内存
     -- local cand = Candidate("date", seg.start, seg._end, ("%.f"):format(collectgarbage('count')), "")
