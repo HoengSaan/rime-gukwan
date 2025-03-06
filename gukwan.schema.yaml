@@ -4,7 +4,7 @@
 schema:
   schema_id: gukwan
   name: 菊韻
-  version: "12.0b"
+  version: "12.1b"
   author:
     靈帝（Hoengsaan）
   
@@ -13,6 +13,7 @@ schema:
     詳細請至本方案github䈎。https://github.com/HoengSaan/rime-gukwan
     如有問題或建議可於以上github䈎中開Issues反饋
 
+# 依賴 請確保閣下已安裝以下方案
   dependencies:
     - jyut6ping3
     - luna_pinyin
@@ -22,6 +23,7 @@ schema:
     - kanas
     - kaomoji
 
+# 開關 "reset: 0" 默認第一選項 "reset: 1" 默認第二選項
 switches:
   - name: ascii_mode
     reset: 0
@@ -79,6 +81,7 @@ engine:
     - lua_translator@*unicode
     - lua_translator@*number_translator
     - lua_translator@*calc_translator
+    - lua_translator@*date_translator
     - lua_translator@*lunar
   filters:
     - simplifier@emoji_cantonese_suggestion
@@ -398,6 +401,11 @@ loengfan:
   suffix: ";"
   tips: 〔兩分〕
 
+reverse_lookup:
+  tags: [ jyut6ping3, luna_pinyin, cangjie5, kunyomi, loengfan ]
+  overwrite_comment: false
+  dictionary: gukwan
+
 kanas:
   tag: kanas
   dictionary: kanas
@@ -413,11 +421,6 @@ kaomoji:
   prefix: "K"
   suffix: ";"
   tips: 〔顔文字〕
-
-reverse_lookup:
-  tags: [ jyut6ping3, luna_pinyin, cangjie5, kunyomi, loengfan ]
-  overwrite_comment: false
-  dictionary: gukwan
 
 special_typing:
   tags: [ kanas, kaomoji ]
@@ -435,6 +438,7 @@ punctuator:
 key_binder:
   import_preset: default
 
+# 功能鍵值
 recognizer:
   import_preset: default
   patterns:
@@ -451,8 +455,17 @@ recognizer:
     calculator: "^cC.+"
     gregorian_to_lunar: "^N[0-9]{1,8}"
 
-lunar: nl
+## 時間日期鍵值
+date_translator:
+  date: rk       # 日期： 2022-11-29 2022年11月29日 etc.
+  time: sg       # 時間： 10:31 10:31:04
+  week: sk       # 星期： 星期二 禮拜二 週二
+  datetime: dt   # ISO 8601： 2022-11-29T18:13:11+08:00
+  timestamp: ts  # 時間戳： 1669716794
 
+lunar: nl        # 農曆： 二〇二三年冬月二十 癸卯年（兔）冬月二十
+
+# 風格（建議改Weasel/Squirrel）
 style:
   #font_face: "Shanggu"
   font_point: 16

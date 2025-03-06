@@ -1,5 +1,8 @@
 -- Unicode
+-- 詳細請至本方案github頁。https://github.com/HoengSaan/rime-gukwan
+-- 如有問題或建議可於以上github䈎中開Issues反饋
 -- Source: https://github.com/iDvel/rime-ice 
+
 -- 复制自： https://github.com/shewer/librime-lua-script/blob/main/lua/component/unicode.lua
 -- 示例：输入 U62fc 得到「拼」
 -- 触发前缀默认为 recognizer/patterns/unicode 的第 2 个字符，即 U

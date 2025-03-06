@@ -51,8 +51,19 @@ This work is licensed under a
 
 **粵拼、訓讀、兩分須安裝方可使用**，安裝方法請參攷[如何安裝 · HoengSaan/rime-gukwan Wiki](https://github.com/HoengSaan/rime-gukwan/wiki/如何安裝)。如需使用其他方案反查，請自行定製方案。
 
+### 字符
 
-**粵拼、假名、訓讀須安裝方可使用反查**，安裝方法請參攷[如何安裝 · HoengSaan/rime-gukwan Wiki](https://github.com/HoengSaan/rime-gukwan/wiki/如何安裝)。如需使用其他方案反查，請自行定製方案。
+- 符號（symbols_cantonese），RIME自帶符號碼表粵語版。鍵值爲`/`。有可能會跟隨rime-ice改變。
+- 假名（[rime-kanas](https://github.com/HoengSaan/rime-kanas)），以細階輸入平假名，大階輸入片假名。鍵值爲`G `（gaaming）。
+- 顏文字（rime-kaomoji），以日文輸入顏文字。鍵值爲`K`（kaomoji）。
+- Unicode（unicode.lua），以Unicode編號直接輸入字符。鍵值爲`U`（unicode）。
+- 數字（number_translator.lua）：以阿拉伯數字輸入大小寫數字以及大小寫金額。鍵值爲`S`（sauzy）。
+
+**符號須安裝粵拼方可使用**，安裝方法請參攷[如何安裝 · HoengSaan/rime-gukwan Wiki](https://github.com/HoengSaan/rime-gukwan/wiki/如何安裝)。
+
+### 其他
+
+- 計數機（calculator.lua）：直接在RIME計數。鍵值爲`cC`。（calculator）
 - 農曆（lunar.lua）：直出是日農曆，鍵值爲`nl`。亦可以新曆轉舊歷，鍵值爲`N`（nunglik）。
 
 

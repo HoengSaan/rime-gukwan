@@ -1,3 +1,5 @@
+-- 詳細請至本方案github頁。https://github.com/HoengSaan/rime-gukwan
+-- 如有問題或建議可於以上github䈎中開Issues反饋
 -- Source: https://github.com/iDvel/rime-ice
 --[[
 	Lua 阿拉伯数字转中文实现 https://blog.csdn.net/lp12345678910/article/details/121396243
