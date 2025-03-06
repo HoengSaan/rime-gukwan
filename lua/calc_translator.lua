@@ -1,6 +1,11 @@
--- 詳細請至本方案github頁。https://github.com/HoengSaan/rime-gukwan
--- 如有問題或建議可於以上github䈎中開Issues反饋
--- Source: https://github.com/iDvel/rime-ice
+-- 計數機
+-- 此爲菊韻粵語輸入法腳本文件
+-- 瞭解如何使用菊韻請閱覽readme文件，詳細請至本方案github頁：
+-- https://github.com/HoengSaan/rime-gukwan
+-- This is a schema file for Gukwan Cantonese Input Method.
+-- Learn how to use Gukwan in the readme file, available on the project's github page.
+-- Source: https://github.com/iDvel/rime-ice 
+
 -- 计算器插件
 -- author: https://github.com/ChaosAlphard
 local calc = {}

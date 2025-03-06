@@ -5,11 +5,11 @@
 # 異點：無輸入碼，字體
 # Source: https://github.com/CanCLID/rime-cantonese-upstream
 
-# 此爲菊韻粵語輸入法字庫詞庫文件
-# 詳細請至本方案github頁
+# 此爲菊韻粵語輸入法字表詞庫文件
+# 瞭解如何使用菊韻請閱覽readme文件，詳細請至本方案github頁：
 # https://github.com/HoengSaan/rime-gukwan
 # This is a dictionary file for Gukwan Cantonese Input Method.
-# For details, please visit the github page of this project.
+# Learn how to use Gukwan in the readme file, available on the project's github page.
 
 ---
 name: gukwan.words
@@ -44926,7 +44926,7 @@ sort: by_weight
 自焚
 自肥
 自況
-字庫
+字表
 自負
 自悔
 伺服
@@ -100126,7 +100126,7 @@ sort: by_weight
 開弓沒有回頭箭
 開埋井畀人食水
 害人之心不可有
-漢語多功能字庫
+漢語多功能字表
 航空母艦戰鬥羣
 好嘅唔靈醜嘅靈
 好漢不喫眼前虧
@@ -100828,7 +100828,7 @@ sort: by_weight
 原發性進行性失語
 原覈細胞型微生物
 圓珠形離子交換劑
-粵語審音配詞字庫
+粵語審音配詞字表
 裘馨氏肌肉萎縮症
 癩蛤蟆想食天鵝肉
 癩蝦蟆想食天鵝肉

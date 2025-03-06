@@ -1,5 +1,13 @@
 # Rime schema
 # encoding: utf-8
+#
+# gukwan - 菊韻
+
+# 此爲菊韻粵語輸入法方案文件
+# 瞭解如何使用菊韻請閱覽readme文件，詳細請至本方案github頁：
+# https://github.com/HoengSaan/rime-gukwan
+# This is a schema file for Gukwan Cantonese Input Method.
+# Learn how to use Gukwan in the readme file, available on the project's github page.
 
 __include: gukwan-siulaam.schema:/
 
@@ -14,9 +22,8 @@ schema:
     測試階段
     寬式音標版並不能完全對應實際發音
     本方案根據小欖鎮區音代表特徵製作，建議仔細閱讀方案竝根據自身口音調整
-    詳細請至本方案github頁。https://github.com/HoengSaan/rime-gukwan
-    如有問題或建議可於以上github䈎中開Issues反饋
-    `粵拼 X普音 V倉頡 L兩分 R和訓 J假名 K顏文字。聲調可省：v爲平，x爲上，q爲去，單陰雙陽。
+    瞭解如何使用菊韻請閱覽readme文件，詳細請至本方案github頁：https://github.com/HoengSaan/rime-gukwan
+    如有問題或建議可於以上github頁中開Issues反饋
 
   dependencies:
     - jyut6ping3

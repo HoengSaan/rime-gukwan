@@ -5,11 +5,11 @@
 # 本詞庫收錄部份小欖話辭彙同小欖周邊地名
 # 本人所識，部分參攷《中山方言誌》，由於小欖早已城市化，本人並不認識部分詞（尤其農業相關）。
 
-# 此爲菊韻粵語輸入法字庫詞庫文件
-# 詳細請至本方案github頁
+# 此爲菊韻粵語輸入法字表詞庫文件
+# 瞭解如何使用菊韻請閱覽readme文件，詳細請至本方案github頁：
 # https://github.com/HoengSaan/rime-gukwan
 # This is a dictionary file for Gukwan Cantonese Input Method.
-# For details, please visit the github page of this project.
+# Learn how to use Gukwan in the readme file, available on the project's github page.
 
 ---
 name: gukwan.words1

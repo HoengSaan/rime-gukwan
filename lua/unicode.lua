@@ -1,6 +1,9 @@
--- Unicode
--- 詳細請至本方案github頁。https://github.com/HoengSaan/rime-gukwan
--- 如有問題或建議可於以上github䈎中開Issues反饋
+-- 以Unicode編號直接輸入字符，適合輸入組合字符，空白字符等難複製特殊字符，鍵值爲U（unicode）
+-- 此爲菊韻粵語輸入法腳本文件
+-- 瞭解如何使用菊韻請閱覽readme文件，詳細請至本方案github頁：
+-- https://github.com/HoengSaan/rime-gukwan
+-- This is a schema file for Gukwan Cantonese Input Method.
+-- Learn how to use Gukwan in the readme file, available on the project's github page.
 -- Source: https://github.com/iDvel/rime-ice 
 
 -- 复制自： https://github.com/shewer/librime-lua-script/blob/main/lua/component/unicode.lua

@@ -1,6 +1,11 @@
--- 詳細請至本方案github頁。https://github.com/HoengSaan/rime-gukwan
--- 如有問題或建議可於以上github䈎中開Issues反饋
--- Source: https://github.com/iDvel/rime-ice
+-- 輸入當下時間
+-- 此爲菊韻粵語輸入法腳本文件
+-- 瞭解如何使用菊韻請閱覽readme文件，詳細請至本方案github頁：
+-- https://github.com/HoengSaan/rime-gukwan
+-- This is a schema file for Gukwan Cantonese Input Method.
+-- Learn how to use Gukwan in the readme file, available on the project's github page.
+-- Source: https://github.com/iDvel/rime-ice 
+
 -- 日期时间，可在方案中配置触发关键字。
 
 -- 提高权重的原因：因为在方案中设置了大于 1 的 initial_quality，导致 rq sj xq dt ts 产出的候选项在所有词语的最后。
@@ -26,17 +31,17 @@ function M.func(input, seg, env)
     -- 日期
     if (input == M.date) then
         local current_time = os.time()
+        yield_cand(seg, os.date('%Y年%m月%d日', current_time):gsub('年0', '年'):gsub('月0','月'))
+        yield_cand(seg, os.date('%Y%m%d', current_time))
         yield_cand(seg, os.date('%Y-%m-%d', current_time))
         yield_cand(seg, os.date('%Y/%m/%d', current_time))
-        yield_cand(seg, os.date('%Y.%m.%d', current_time))
-        yield_cand(seg, os.date('%Y%m%d', current_time))
-        yield_cand(seg, os.date('%Y年%m月%d日', current_time):gsub('年0', '年'):gsub('月0','月'))
+        -- yield_cand(seg, os.date('%Y.%m.%d', current_time))
         yield_cand(seg, os.date('%d-%m-%Y', current_time))
         yield_cand(seg, os.date('%d/%m/%Y', current_time))
-        yield_cand(seg, os.date('%d.%m.%Y', current_time))
-        yield_cand(seg, os.date('%m-%d-%Y', current_time))
-        yield_cand(seg, os.date('%m/%d/%Y', current_time))
-        yield_cand(seg, os.date('%m.%d.%Y', current_time))
+        --yield_cand(seg, os.date('%d.%m.%Y', current_time))
+        --yield_cand(seg, os.date('%m-%d-%Y', current_time))
+        --yield_cand(seg, os.date('%m/%d/%Y', current_time))
+        --yield_cand(seg, os.date('%m.%d.%Y', current_time))
 
     -- 时间
     elseif (input == M.time) then

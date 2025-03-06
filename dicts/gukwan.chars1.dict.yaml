@@ -1,14 +1,14 @@
 # Rime dictionary
 # encoding: utf-8
 #
-# gukwan - 菊韻字庫——增廣一組
+# gukwan - 菊韻字表——增廣一組
 # 廣韻異音訓讀增補
 
-# 此爲菊韻粵語輸入法字庫詞庫文件
-# 詳細請至本方案github頁
+# 此爲菊韻粵語輸入法字表詞庫文件
+# 瞭解如何使用菊韻請閱覽readme文件，詳細請至本方案github頁：
 # https://github.com/HoengSaan/rime-gukwan
 # This is a dictionary file for Gukwan Cantonese Input Method.
-# For details, please visit the github page of this project.
+# Learn how to use Gukwan in the readme file, available on the project's github page.
 
 ---
 name: gukwan.chars1

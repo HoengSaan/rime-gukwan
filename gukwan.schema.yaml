@@ -1,5 +1,14 @@
 # Rime schema
 # encoding: utf-8
+#
+# gukwan - 菊韻
+
+# 此爲菊韻粵語輸入法方案文件
+# 瞭解如何使用菊韻請閱覽readme文件，詳細請至本方案github頁：
+# https://github.com/HoengSaan/rime-gukwan
+# This is a schema file for Gukwan Cantonese Input Method.
+# Learn how to use Gukwan in the readme file, available on the project's github page.
+# 基底文件 切勿直接改動或刪除
 
 schema:
   schema_id: gukwan
@@ -9,9 +18,9 @@ schema:
     靈帝（Hoengsaan）
   
   description: |-
-    基底文件切勿刪除
-    詳細請至本方案github䈎。https://github.com/HoengSaan/rime-gukwan
-    如有問題或建議可於以上github䈎中開Issues反饋
+    基底文件 切勿直接改動或刪除
+    瞭解如何使用菊韻請閱覽readme文件，詳細請至本方案github頁：https://github.com/HoengSaan/rime-gukwan
+    如有問題或建議可於以上github頁中開Issues反饋
 
 # 依賴 請確保閣下已安裝以下方案
   dependencies:
