@@ -116,10 +116,28 @@ local function number2zh(num, t)
     return result:gsub(wordFigure[1] .. wordFigure[1], wordFigure[1])
 end
 
+local function number2sz(num)
+    local result = ""
+    local wordFigure = { "〇", "〡", "〢", "〣", "〤", "〥", "〦", "〧", "〨", "〩" }
+    if tostring(num) == nil then return "" end
+    for pos = 1, string.len(num) do
+        result = result .. wordFigure[tonumber(string.sub(num, pos, pos) + 1)]
+    end
+    result = result:gsub(wordFigure[1] .. wordFigure[1], wordFigure[1])
+    return result:gsub(wordFigure[1] .. wordFigure[1], wordFigure[1])
+end
+
+
 local function number_translatorFunc(num)
     local numberPart = splitNumPart(num)
     local result = {}
     if numberPart.dot ~= "" then
+        table.insert(result,
+            { number2zh(numberPart.int, 0) .. "點" .. number2zh(numberPart.dec, 0),
+                "〔轉換小寫〕"})
+        table.insert(result,
+            { number2zh(numberPart.int, 1) .. "點" .. number2zh(numberPart.dec, 1),
+                "〔轉換大寫〕"})
         table.insert(result,
             { number2cnChar(numberPart.int, 0, { "萬", "億" }, { "〇", "一", "十", "點" }) .. number2zh(numberPart.dec, 0),
                 "〔數字小寫〕" })
@@ -127,6 +145,9 @@ local function number_translatorFunc(num)
             { number2cnChar(numberPart.int, 1, { "萬", "億" }, { "〇", "一", "十", "點" }) .. number2zh(numberPart.dec, 1),
                 "〔數字大寫〕" })
     else
+        table.insert(result, { number2zh(numberPart.int, 0), "〔轉換小寫〕"})
+        table.insert(result, { number2zh(numberPart.int, 1), "〔轉換大寫〕"})
+        table.insert(result, { number2sz(numberPart.int), "〔蘇州碼子〕"})
         table.insert(result, { number2cnChar(numberPart.int, 0, { "萬", "億" }, { "〇", "一", "十", "" }), "〔數字小寫〕" })
         table.insert(result, { number2cnChar(numberPart.int, 1, { "萬", "億" }, { "零", "壹", "拾", "" }), "〔數字大寫〕" })
     end
