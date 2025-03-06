@@ -4,7 +4,7 @@
 schema:
   schema_id: gukwan
   name: 菊韻
-  version: "11.3b"
+  version: "12.0b"
   author:
     靈帝（Hoengsaan）
   
@@ -32,6 +32,7 @@ switches:
   - name: simplification
     reset: 0
     states: [ 深筆, 簡筆 ] 
+    abbrev: [ 繁, 簡 ]
   - name: ascii_punct
     reset: 0
     states: [ 。，, ．， ]
@@ -75,6 +76,10 @@ engine:
     - script_translator@loengfan
     - script_translator@kanas
     - script_translator@kaomoji
+    - lua_translator@*unicode
+    - lua_translator@*number_translator
+    - lua_translator@*calc_translator
+    - lua_translator@*lunar
   filters:
     - simplifier@emoji_cantonese_suggestion
     - simplifier
@@ -338,7 +343,7 @@ jyut6ping3:
   tag: jyut6ping3
   dictionary: jyut6ping3
   enable_user_dict: false
-  prefix: "`"
+  prefix: "J"
   suffix: ";"
   tips: 〔粵拼〕
   preedit_format:
@@ -353,7 +358,7 @@ luna_pinyin:
   tag: luna_pinyin
   dictionary: luna_pinyin
   enable_user_dict: false
-  prefix: "X"
+  prefix: "P"
   suffix: ";"
   tips: 〔普拼〕
   preedit_format:
@@ -365,7 +370,7 @@ cangjie5:
   tag: cangjie5
   dictionary: cangjie5
   enable_user_dict: false
-  prefix: "V"
+  prefix: "C"
   suffix: ";"
   tips: 〔倉頡〕
   preedit_format:
@@ -381,7 +386,7 @@ kunyomi:
   tag: kunyomi
   dictionary: kunyomi
   enable_user_dict: false
-  prefix: "R"
+  prefix: "F"
   suffix: ";"
   tips: 〔和訓〕
 
@@ -397,7 +402,7 @@ kanas:
   tag: kanas
   dictionary: kanas
   enable_user_dict: false
-  prefix: "J"
+  prefix: "G"
   suffix: ";"
   tips: 〔假名〕
 
@@ -434,13 +439,19 @@ recognizer:
   import_preset: default
   patterns:
     punct: "^/([0-9]0?|[a-z]+)$"
-    jyut6ping3: "`[a-z']*;?$"
-    luna_pinyin: "^X[a-z']*;?$"
-    cangjie5: "^V[a-z]*;?$"
-    kunyomi: "^R[a-z']*;?$"
+    jyut6ping3: "^J[a-z']*;?$"
+    luna_pinyin: "^P[a-z']*;?$"
+    cangjie5: "^C[a-z]*;?$"
+    kunyomi: "^F[a-z']*;?$"
     loengfan: "^L[a-z']*;?$"
-    kanas: "^J[a-zA-Z-]*;?$"
+    kanas: "^G[a-zA-Z-]*;?$"
     kaomoji: "^K[a-z-]*;?$"
+    unicode: "^U[a-f0-9]+"
+    number: "^S[0-9]+[.]?[0-9]*"
+    calculator: "^cC.+"
+    gregorian_to_lunar: "^N[0-9]{1,8}"
+
+lunar: nl
 
 style:
   #font_face: "Shanggu"

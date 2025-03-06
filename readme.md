@@ -5,7 +5,7 @@ Shield: [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 This work is licensed under a
 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].
 
-本作品採用[創意共享 署名-非商業性-相同方式共享 4.0 國際版證書](cc-by-nc-sa)。
+本作品採用[創意共享 署名-非商業性-相同方式共享 4.0 國際版許可證](cc-by-nc-sa)。
 
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-image]][cc-by-nc-sa]
 
@@ -13,7 +13,7 @@ This work is licensed under a
 [cc-by-nc-sa-image]: https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png
 [cc-by-nc-sa-shield]: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg
 
-部份文件使用其他證書，詳細請見[文件結構](#文件結構)。
+部份文件使用其他許可，詳細請見[文件結構・許可](#文件結構・許可)。
 
 **測試階段：預計4月完成**
 
@@ -25,35 +25,40 @@ This work is licensed under a
 
 更多資訊請閱讀下文竝參攷[Wiki](https://github.com/HoengSaan/rime-gukwan/wiki)。[關於如何安裝](https://github.com/HoengSaan/rime-gukwan/wiki/%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%9D)。
 
-### 目前支持方言
+## 目前功能
 
-- 小欖話鎮區音
+字庫詞庫以深筆爲準，但可以轉換爲簡筆。可以粵語輸入繪文字（表情符號），但須手動開啓。
+
+爲適應流動電話鍵盤限制，以及各種新功能，鍵值已於12.0版本進行大規模調整。
+
+### 多方言適應
+
+菊韻設計可支持多地方言，但目前僅支持小欖話，其他方言須自行定製。
+
+- 小欖話
+  - 鎮區音
 - 廣州話（僅供參攷）
 - 分韻音（古代音，僅供參攷）
 - 菊韻音（古代音，僅供參攷）
 
-詳細可參攷[文件結構](#文件結構)。
+### 反查
 
-## 輸入
+- 粵拼（[rime-cantonese](https://github.com/rime/rime-cantonese)），粵語廣州話反查。鍵值爲`J`（jyutping）。
+- 明月拼音（rime-luna_pinyin），官語普通話反查。鍵值爲`P`（pauping）。
+- 倉頡五代（rime-cangjie5），倉頡反查。鍵值爲`C`（congkit）。
+- 訓讀（[rime-kunyomi](https://github.com/sgalal/rime-kunyomi)），和語訓讀（現代音）反查。鍵值爲`F`（fanduk）。
+- 兩分（[rime-loengfan]([CanCLID/rime-loengfan: Loengfan (粵語兩分) is the Cantonese version of the Liang Fen input method](https://github.com/CanCLID/rime-loengfan))），粵語廣州話兩分拆字反查。鍵值爲`L`(loengfan)。
 
-字庫詞庫以深筆爲準，但可以轉換爲簡筆。可以粵語輸入繪文字（表情符號），但須手動開啓。
+**粵拼、訓讀、兩分須安裝方可使用**，安裝方法請參攷[如何安裝 · HoengSaan/rime-gukwan Wiki](https://github.com/HoengSaan/rime-gukwan/wiki/如何安裝)。如需使用其他方案反查，請自行定製方案。
 
-- 反查
-  - 粵拼（[rime-cantonese](https://github.com/rime/rime-cantonese)），粵語廣州話反查。鍵值爲<code>`</code>
-  - 明月拼音（rime-luna_pinyin），官語普通話反查。鍵值爲`X`。
-  - 倉頡五代（rime-cangjie5），倉頡反查。鍵值爲`V`。
-  - 訓讀（[rime-kunyomi](https://github.com/sgalal/rime-kunyomi)），和語訓讀（現代音）反查。鍵值爲`R`。
-  - 兩分（[rime-loengfan]([CanCLID/rime-loengfan: Loengfan (粵語兩分) is the Cantonese version of the Liang Fen input method](https://github.com/CanCLID/rime-loengfan))），粵語廣州話兩分拆字反查。鍵值爲`L`。
-- 特殊（自用）
-  - 假名（[rime-kanas](https://github.com/HoengSaan/rime-kanas)），以細階輸入平假名，大階輸入片假名。鍵值爲`J`。
-  - 顏文字（rime-kaomoji），以日文輸入顏文字。鍵值爲`K`。
 
 **粵拼、假名、訓讀須安裝方可使用反查**，安裝方法請參攷[如何安裝 · HoengSaan/rime-gukwan Wiki](https://github.com/HoengSaan/rime-gukwan/wiki/如何安裝)。如需使用其他方案反查，請自行定製方案。
+- 農曆（lunar.lua）：直出是日農曆，鍵值爲`nl`。亦可以新曆轉舊歷，鍵值爲`N`（nunglik）。
 
 
 ## 拼音
 
-拼音方案基於[擴展粵拼](https://jyutjam.org/j++/)，現代音同[粵拼](https://jyutping.org/)無區別，直接使用即可。關於古代音請參攷[菊韻拼音表](https://github.com/HoengSaan/rime-gukwan/wiki/%E8%8F%8A%E9%9F%BB%E6%8B%BC%E9%9F%B3%E8%A1%A8)。da
+拼音方案基於[擴展粵拼](https://jyutjam.org/j++/)，現代音同[粵拼](https://jyutping.org/)無區別，直接使用即可。關於古代音請參攷[菊韻拼音表](https://github.com/HoengSaan/rime-gukwan/wiki/%E8%8F%8A%E9%9F%BB%E6%8B%BC%E9%9F%B3%E8%A1%A8)。
 
 <img src="pic\gamjam1.png" style="zoom:50%;" />
 
@@ -81,7 +86,7 @@ This work is licensed under a
 
 <img src="pic\dakzhing.png"/>
 
-## 文件結構
+## 文件結構・許可
 
 ### 方案
 
@@ -121,19 +126,28 @@ This work is licensed under a
     - 粵字平翹、日以之分參攷梧州話
 - 詞庫
   - `gukwan.words.dict.yaml`
-    - 基於`jyut6ping3.words.dict.yaml`，作者爲「粵語計算語言學基礎建設組」([@CanCLID](https://github.com/CanCLID)) ，證書隨源文件爲[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)。已去除輸入碼竝改變部份字型。
+    - 基於`jyut6ping3.words.dict.yaml`，作者爲「粵語計算語言學基礎建設組」([@CanCLID](https://github.com/CanCLID)) ，許可隨源文件爲[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)。已去除輸入碼竝改變部份字型。
   - `gukwan.words1.dict.yaml`：部份小欖話辭彙同小欖周邊地名
     - 收錄部份小欖話特有辭彙，小欖周邊地名街名，詳細見[小欖詞庫資料](https://github.com/HoengSaan/rime-gukwan/wiki/小欖詞庫資料)
   - `gukwan.words2.dict.yaml`：
-    - 收錄粵拼詞庫所無之特殊辭彙同外來語，部份內容基於`jyut6ping3.lettered.dict.yaml`，作者爲「粵語計算語言學基礎建設組」([@CanCLID](https://github.com/CanCLID)) ，證書隨源文件爲[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)。
+    - 收錄粵拼詞庫所無之特殊辭彙同外來語，部份內容基於`jyut6ping3.lettered.dict.yaml`，作者爲「粵語計算語言學基礎建設組」([@CanCLID](https://github.com/CanCLID)) ，許可隨源文件爲[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)。
   - `gukwan.kwongtung.dict.yaml`：廣東地名（村級）
-    - 來源爲[adyliu/china_area: 2024年中国全国5级行政区划（省、市、县、镇、村）](https://github.com/adyliu/china_area)，證書隨源文件爲[GPL 3.0](https://github.com/HoengSaan/rime-gukwan/blob/main/LICENSE-GPL)。已繁化。
+    - 來源爲[adyliu/china_area: 2024年中国全国5级行政区划（省、市、县、镇、村）](https://github.com/adyliu/china_area)，許可隨源文件爲[GPL 3.0](https://github.com/HoengSaan/rime-gukwan/blob/main/LICENSE-GPL)。已繁化。
 - [關於如何製作用戶詞庫](https://github.com/rime/home/wiki/UserGuide#%E7%94%A8%E6%88%B6%E8%A9%9E%E5%85%B8%E7%AE%A1%E7%90%86)
 
 ### 依賴
 
 以下爲本倉庫自帶，毋須額外下載。關於其他依賴文件請參攷[如何安裝 · HoengSaan/rime-gukwan Wiki](https://github.com/HoengSaan/rime-gukwan/wiki/如何安裝)。
 
-- [rime-kanas](https://github.com/HoengSaan/rime-kanas)：用於輸入假名，隨源文件以GPL-3.0證書發佈。
+- [rime-kanas](https://github.com/HoengSaan/rime-kanas)：用於輸入假名，隨源文件以GPL-3.0許可發佈。
 - [rime-cantonese-emoji](https://github.com/rime/rime-emoji-cantonese)：用於輸入繪文字
-- rime-kaomoji：用於輸入顏文字（需以日文輸入），係本人根據[mtripg6666tdr/Kaomoji_proj](https://github.com/mtripg6666tdr/Kaomoji_proj)字典文件製作，隨源文件以MIT證書發佈。
+- rime-kaomoji：用於輸入顏文字（需以日文輸入），係本人根據[mtripg6666tdr/Kaomoji_proj](https://github.com/mtripg6666tdr/Kaomoji_proj)字典文件製作，隨源文件以MIT許可發佈。
+
+### LUA功能
+
+本方案所有LUA功能均參攷借用[iDvel/rime-ice](https://github.com/iDvel/rime-ice)及相關文章，相關文件根據源文件以GPL3.0許可發佈。本人僅將其繁化，竝無修改其功能。
+
+- unicode.lua：UNICODE碼直接輸入字符，來自[shewer/librime-lua-script](https://github.com/shewer/librime-lua-script/tree/main)
+- lunar.lua：是日農曆，新曆轉舊歷，來自[boomker/rime-fast-xhup](https://github.com/boomker/rime-fast-xhup)
+- number_translator.lua：以阿拉伯數字輸入，來自[98五筆](https://github.com/yanhuacuo/98wubi-tables)
+- calculator.lua：計數機，來自[ChaosAlphard](https://github.com/ChaosAlphard)
