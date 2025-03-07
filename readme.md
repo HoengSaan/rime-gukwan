@@ -81,11 +81,19 @@ This work is licensed under a
 
 **粵拼、訓讀、兩分須安裝方可使用**，安裝方法請參攷[如何安裝 · HoengSaan/rime-gukwan Wiki](https://github.com/HoengSaan/rime-gukwan/wiki/如何安裝)。如需使用其他方案反查，請自行定製方案。
 
+### 輸入
+
+以下爲鍵盤表。
+
+<img src="pic\key.png" style="zoom:50%;" />
+
 ### 問題・未來方向
 
 - 漢字發音：本人無法亦無有可能佢保證所有漢字發音正確。尤其因爲菊韻詞庫多數無輸入碼，有多音字既單詞發音必然有誤。
 - 地名繁簡：數據來源係簡筆字，本人亦仔細審覈過，但都無法保證三萬幾條地名都係正確。
 - 詞庫細小：目前僅有導入[rime-cantonese](https://github.com/rime/rime-cantonese)詞庫，同部分自製詞庫。將會下次更新中引入其他詞庫。此外，漢英混合詞語只能使用其發音輸入。
+  - 擴展詞庫須手動獲取。
+
 - 漢英混打：由於不明原因gukwan不能使用混打，本人已嘗試多次。將解決詞庫問題後再行處理。
 - 可方言輸入過少：我諗呢個輸入法都係我自用爲主，之後再處理啦。
 
@@ -98,18 +106,9 @@ This work is licensed under a
 
 <img src="pic\gamjam2.png"/>
 
-|      | 平        | 上     | 去     | 上入  | 下入     |
-| ---- | --------- | ------ | ------ | ----- | -------- |
-| 陰   | 1 (55/53) | 2 (24) | 3 (33) | 1 (5) | 3 (3)    |
-|      | 詩        | 屎     | 試     | 適    | 惜(白讀) |
-| 鍵位 | v         | x      | q      | v     | q        |
-| 陽   | 4 (32)    | 5 (13) | 6 (21) | 6 (2) | 2* (35)  |
-|      | 時        | 市     | 示     | 食    | 食(過去) |
-| 鍵位 | vv        | xx     | qq     | v     | q        |
-
 同今時大多數粵拼輸入法一樣，可以輸入聲調以加快蒐字速度。
 
-調值僅供參攷，部份方言僅有9個或8個聲調（含特殊調）。2*並非廣州話「新入」只見於入聲字變調，如「子」白讀zaai2*就同本身陰上調值（24）不一。此調亦用作表達過去、完成之文法意味。
+調值僅供參攷，部份方言僅有9個或8個聲調（含特殊調）。2*並非廣州話「新入」只見於入聲字變調，如「子」白讀zaai2*就同本身陰上調值（24）不一。此調亦用作表達過去、完成之文法意味。超高陰平只出現於陰平連續變調。
 
 詳細請參攷[小欖話・沙田方言特徵 · HoengSaan/rime-gukwan Wiki](https://github.com/HoengSaan/rime-gukwan/wiki/小欖話・沙田方言特徵)
 
@@ -155,18 +154,22 @@ This work is licensed under a
 
 `gukwan.dict.yaml`用於調用字庫詞庫，默認亦調用rime-cantonese部份詞庫同粵語八股文。
 
+`gukwan-extended.dict.yaml`用於調用各種擴展詞庫，下載並放置於正確位置方可使用，不安裝直接調用將會導致輸入法不能正常使用。文件內有說明。
+
 - 字庫
   - `gukwan.chars.dict.yaml`：廣韻字庫
   - `gukwan.chars1.dict.yaml`：廣韻異音訓讀增補
   - `gukwan.chars2.dict.yaml`：今字異字異音訓讀增補
     - 粵字平翹、日以之分參攷梧州話
 - 詞庫
-  - `gukwan.words.dict.yaml`
+  - `gukwan.words.dict.yaml`：粵拼詞庫
     - 基於`jyut6ping3.words.dict.yaml`，作者爲「粵語計算語言學基礎建設組」([@CanCLID](https://github.com/CanCLID)) ，隨源文件以[CC BY 4.0許可](https://creativecommons.org/licenses/by/4.0/)發佈。已去除輸入碼竝改變部份字型。
   - `gukwan.words1.dict.yaml`：部份小欖話辭彙同小欖周邊地名
     - 收錄部份小欖話特有辭彙，小欖周邊地名街名，詳細見[小欖詞庫資料](https://github.com/HoengSaan/rime-gukwan/wiki/小欖詞庫資料)
-  - `gukwan.words2.dict.yaml`：
-    - 收錄粵拼詞庫所無之特殊辭彙同外來語，部份內容基於`jyut6ping3.lettered.dict.yaml`，作者爲「粵語計算語言學基礎建設組」([@CanCLID](https://github.com/CanCLID)) ，隨源文件以[CC BY 4.0許可](https://creativecommons.org/licenses/by/4.0/)發佈。
+  - `gukwan.words2.dict.yaml`：粵拼詞庫增補同外來語
+    - 收錄粵拼詞庫所無之特殊辭彙同外來語。
+  - `gukwan.lettered.dict.yaml`：粵拼詞庫
+    - 基於`jyut6ping3.lettered.dict.yaml`，作者爲「粵語計算語言學基礎建設組」([@CanCLID](https://github.com/CanCLID)) ，此部分則以[CC BY 4.0許可](https://creativecommons.org/licenses/by/4.0/)發佈。
   - `gukwan.kwongtung.dict.yaml`：廣東地名（村級）
     - 來源爲[adyliu/china_area: 2024年中国全国5级行政区划（省、市、县、镇、村）](https://github.com/adyliu/china_area)，隨源文件以[GPL 3.0許可](https://www.gnu.org/licenses/gpl-3.0.en.html)發佈。已繁化。
 - [關於如何製作用戶詞庫](https://github.com/rime/home/wiki/UserGuide#%E7%94%A8%E6%88%B6%E8%A9%9E%E5%85%B8%E7%AE%A1%E7%90%86)

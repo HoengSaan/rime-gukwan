@@ -14,7 +14,7 @@ __include: gukwan.schema:/
 schema:
   schema_id: gukwan-default
   name: 菊韻構擬音
-  version: "12.4b"
+  version: "13.1b"
   author:
     靈帝（Hoengsaan）
   
@@ -217,22 +217,20 @@ speller:
     #正常情況下毋須郁動，可根據自己喜好調校
     
     - derive/eoy(?=\d)/eoi/                 # 粵拼(eoy->eoi)
-    - derive/^j([aeiouy])/i$1/              # 澳門拼法
-    - derive/^ji/i/                         # 澳門拼法
     #- derive/^z/dz/                        # 教院拼音
     #- derive/^c/ts/                        # 教院拼音
     #- derive/y(?=\d)/z/                    # 英華拼法(y->z)
     #- derive/y(?=\d)/ii/                   # 擴展粵拼(y->ii)
 
     #全拼
-    - derive/(g|k|h|ng)u/$1wu/              # 全拼(g|k|h[w]u)
-    - derive/(g|k|h|ng)y/$1wy/              # 全拼(g|k|h[w]y)
-    - derive/^ngy/ngjy/                     # 全拼(ng[j]y)
+    #- derive/(g|k|h|ng)u/$1wu/             # 全拼(g|k|h[w]u)
+    #- derive/(g|k|h|ng)y/$1wy/             # 全拼(g|k|h[w]y)
+    #- derive/^ngy/ngjy/                    # 全拼(ng[j]y)
     - derive/^jaa(?=\d)/jia$1/              # 全拼(j[i]aa)
     - derive/^jo(ng|k)/jio$1/               # 全拼(j[i]o)
     - derive/^njaa(?=\d)/njia$1/            # 全拼(j[i]aa)
     - derive/^njo(ng|k)/njio$1/             # 全拼(j[i]o)
-    - derive/ia(?=\d)/iaa$1/                # 全拼(ia[a])
+    #- derive/ia(?=\d)/iaa$1/               # 全拼(ia[a])
     
     #簡拼
     #- derive/^([aeiou])/q$1/               # 喉塞音(q~)
@@ -247,6 +245,8 @@ speller:
 
     - derive/^wu/u/                         # 簡拼(wu->u)
 
+    - derive/^nji/nj/                       # 簡拼(ji->j)
+    - derive/^ji/j/                         # 簡拼(ji->j)
     - derive/^jy?([aeiou])/y$1/             # 簡拼(jy->y)
     - derive/yu(?!ng|k)/y/                  # 簡拼(yu->y)
     - derive/aa(?=\d)/a/                    # 簡拼(aa->a)
@@ -254,6 +254,8 @@ speller:
     #模糊
     - derive/eo/oe/                         # 模糊(eo/oe)
     - derive/oe/eo/                         # 模糊(eo/oe)
+    - derive/ae/ea/                         # 模糊(eo/oe)
+    - derive/ea/ae/                         # 模糊(eo/oe)
 
     #首字母出字（不考慮異拼，現代音只需第一條）
 

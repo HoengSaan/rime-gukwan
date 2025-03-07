@@ -12,7 +12,7 @@
 
 ---
 name: gukwan
-version: "13.0b"
+version: "13.1b"
 sort: by_weight
 vocabulary: essay-cantonese
 import_tables:
@@ -22,77 +22,8 @@ import_tables:
   - dicts/gukwan.words      # 菊韻詞庫——基本 基於粵拼詞庫
   - dicts/gukwan.words1     # 菊韻詞庫——增廣一組 部份小欖話辭彙同小欖周邊地名
   - dicts/gukwan.words2     # 菊韻詞庫——增廣二組 粵拼詞庫增補同外來語
+  - dicts/gukwan.lettered   # 菊韻詞庫——漢英 基於粵拼詞庫
   - dicts/gukwan.kwongtung  # 菊韻詞庫——廣東地名
   - jyut6ping3.maps         # 粵拼詞庫——地名街名
   - jyut6ping3.phrase       # 粵拼詞庫——短語短句
-  
-  #擴展詞庫須自行安裝
-  # http://forum.freemdict.com/t/topic/29581
-  - dicts/hanhuo                  # 古典詞庫——大漢和辭典
-  - dicts/hanngy                  # 古典詞庫——漢語大詞典
-  - dicts/hanshrsr                # 古典詞庫——詩歌
-  #- dicts/hanshrsr02             # 古典詞庫——詩歌（簡轉繁）
-  #- dicts/HBojhmun               # 古典詞庫——佩文韻府
-  #- dicts/hua.translation        # 古典詞庫——華譯
-  # https://github.com/rime-aca/dictionaries
-  - dicts/luna_pinyin.extended    # rime-aca擴展詞庫（須移除輸入碼） 
-  #- dicts/luna_pinyin.poetry     # rime-aca擴展詞庫——詩詞
-  #- dicts/luna_pinyin.hanyu      # rime-aca擴展詞庫——漢語大詞典
-  # https://github.com/Chernfalin/better-rime-dict
-  - dicts/luna_pinyin.sgmain      # BetterRime詞庫增強包——搜狗
-  - dicts/luna_pinyin.sgplus      # BetterRime詞庫增強包——搜狗
-  - dicts/luna_pinyin.sgplus2     # BetterRime詞庫增強包——搜狗
-  - dicts/luna_pinyin.net         # BetterRime詞庫增強包——網語
-  - dicts/luna_pinyin.website     # BetterRime詞庫增強包——網站
-  #- dicts/luna_pinyin.game        # BetterRime詞庫增強包——遊戲
-  #- dicts/luna_pinyin.anime       # BetterRime詞庫增強包——ACG
-  #- dicts/luna_pinyin.moba       # BetterRime詞庫增強包——MOBA
-  #- dicts/luna_pinyin.movie      # BetterRime詞庫增強包——電影
-  - dicts/luna_pinyin.music      # BetterRime詞庫增強包——音樂
-  #- dicts/luna_pinyin.computer   # BetterRime詞庫增強包——電腦
-  - dicts/luna_pinyin.history    # BetterRime詞庫增強包——歷史
-  #- luna_pinyin.shopping   # BetterRime詞庫增強包——網購
-
-
 ...
-
-# English Alphabet
-A	ei1
-B	bI1
-C	sI1
-D	dI1
-E	ji1
-F	e1 fu6
-G	zjyu1
-G	zji1
-H	ei1 cjyu6
-I	aai1
-J	zjei1
-K	kei1
-L	e1 leau6
-M	em1
-N	en1
-O	eau1
-P	pI1
-Q	kiu1
-R	aau1 leau6
-S	e1 sI6
-T	tI1
-U	ju1
-V	wi1
-W	dap1 bu6 liu6
-X	ek1 sI6
-Y	waai1
-Z	ji6 set1
-
-# Number
-0	ling4
-1	jat1
-2	nji6
-3	saam1
-4	si3
-5	ngu5
-6	luk6
-7	cat1
-8	baet3
-9	giau2
