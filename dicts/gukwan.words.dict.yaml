@@ -13,7 +13,7 @@
 
 ---
 name: gukwan.words
-version: "11.0"
+version: "13.0b"
 sort: by_weight
 ... 
 
@@ -1572,7 +1572,7 @@ sort: by_weight
 餅店
 餅電
 餅家
-餅乾
+餅乾  
 餅印
 餅卡
 餅咭
@@ -1755,7 +1755,7 @@ sort: by_weight
 藊豆
 扁豆
 貶居
-貶降
+貶降	bin2 gong3
 貶官
 貶義
 扁魚
@@ -3633,7 +3633,7 @@ sort: by_weight
 尋返
 尋訪
 尋歡
-沉降
+沉降	cram4 gong3
 沉痼
 尋香
 沉吟
@@ -7838,7 +7838,7 @@ sort: by_weight
 第九
 遞句
 遞件
-遞降
+遞降	dai6 gong3
 遞歸
 弟兄
 第一
@@ -15469,42 +15469,42 @@ sort: by_weight
 港紙
 講座
 港豬
-降班
+降班	gong3 baan1
 鋼筆
 鋼叉
 鋼材
 杠牀
 鋼柱
 鋼膽
-降低
-降調
+降低	gong3 dai1
+降調	gong3 diu6
 槓刀
 鋼花
 槓夫
 杠架
 槓架
-降格
+降格	gong3 gaak3
 鋼筋
 鋼鐱
 鋼骨
 鋼殼
 鋼琴
-降級
-降臨
+降級	gong3 kap1
+降臨	gong3 lam4
 鋼鍊
-降落
+降落	gong3 look6
 講乜
 鋼門
-降生
+降生	gong3 shang1
 鋼水
 槓頭
-降頭
+降頭	gong3 tau4
 鋼鐵
-降溫
-降序
-降罪
-降旨
-降職
+降溫	gong3 wan1
+降序	gong3 zyo6
+降罪	gong3 zyi6
+降旨	gong3 zji2
+降職	gong3 zjik1
 鋼箭
 割包
 割取
@@ -17179,7 +17179,7 @@ sort: by_weight
 下間
 下腳
 下崗
-下降
+下降	haa6 gong3
 夏季
 下跪
 下限
@@ -18038,7 +18038,7 @@ sort: by_weight
 乞嚏
 乞超
 乞伏
-乞降
+乞降	hat1 hong4
 乞人
 乞兒
 乞衣
@@ -19636,7 +19636,7 @@ sort: by_weight
 行檔
 航道
 航徽
-降服
+降服	hong4 fuk6
 行家
 航機
 航行
@@ -19646,7 +19646,7 @@ sort: by_weight
 航空
 航郵
 行業
-降妖
+降妖	hong4 jiu1
 行距
 行規
 行列
@@ -19898,7 +19898,7 @@ sort: by_weight
 空間
 胸肌
 空鏡
-空降
+空降	hung1 gong3
 空匱
 空軍
 空隙
@@ -27244,7 +27244,7 @@ sort: by_weight
 落更
 落機
 落腳
-落降
+落降	look6 gong3
 樂觀
 樂捐
 落客
@@ -30552,7 +30552,7 @@ sort: by_weight
 吶喊
 吶口
 納罕
-納降
+納降	naap6 gong3
 納鴻
 納入
 𣲷油
@@ -33940,7 +33940,7 @@ sort: by_weight
 散伙
 散風
 篡改
-傘降
+傘降	saan2 gong3
 篡軍
 散戲
 疝氣
@@ -34311,7 +34311,7 @@ sort: by_weight
 世交
 世紀
 細個
-勢降
+勢降	sjai3 gong3
 細姑
 世故
 世局
@@ -35500,7 +35500,7 @@ sort: by_weight
 售罄
 受享
 受害
-受降
+受降	sjiau6 hong3
 受控
 授任
 壽衣
@@ -37231,8 +37231,8 @@ sort: by_weight
 升幅
 聲價
 升格
-升降
-昇降
+升降	sjing1 gong3
+昇降	sjing1 gong3
 升高
 昇高
 升官
@@ -38075,7 +38075,7 @@ sort: by_weight
 傷健
 相干
 雙槓
-霜降
+霜降	shiong1 gong3
 商賈
 雙拐
 相關
@@ -39752,7 +39752,7 @@ sort: by_weight
 頭㷫
 頭殼
 投行
-投降
+投降	tau4 hong4
 頭號
 投入
 投緣
@@ -42827,7 +42827,7 @@ sort: by_weight
 玩忽
 玩具
 換崗
-緩降
+緩降	wun4 gong3
 換季
 玩狎
 喚起
@@ -42947,7 +42947,7 @@ sort: by_weight
 詐嬌
 炸糕
 炸開
-詐降
+詐降	zhaa3 hong4
 詐刑
 詐型
 炸藥
@@ -45976,7 +45976,7 @@ sort: by_weight
 招供
 招考
 朝氣
-招降
+招降	zjiu1 hong4
 招引
 焦油
 招誘
@@ -53086,7 +53086,7 @@ sort: by_weight
 反效果
 反黑組
 反氣旋
-反空降
+反空降	faan2 hung1 gong3
 反義詞
 反義字
 反映論
@@ -55557,11 +55557,11 @@ sort: by_weight
 講中文
 講中晒
 鋼筆水
-降結腸
+降結腸	gong3 git3 criong4
 鋼管舞
-降雨量
+降雨量	gong3 hjyu5 liong4
 鋼琴師
-降落傘
+降落傘	gong3 look6 saan2
 講乜啫
 鋼片琴
 鋼絲鋸
@@ -61283,7 +61283,7 @@ sort: by_weight
 落返嚟
 落狗屎
 落腳處
-落降頭
+落降頭	look6 gong3 tau4
 落鞋油
 落後緊
 樂呵呵
@@ -67204,7 +67204,8 @@ sort: by_weight
 勝不驕
 星架波
 星加坡
-升降機
+升降機	sjing1 gong3 gi1
+昇降機	sjing1 gong3 gi1
 星君仔
 升盒子
 升氣球
@@ -68448,7 +68449,7 @@ sort: by_weight
 投光燈
 頭向前
 頭殼頂
-投降書
+投降書	tau4 hong4 sjyo1
 頭號字
 投入感
 投影機
@@ -68467,7 +68468,7 @@ sort: by_weight
 頭腦線
 投票率
 頭碰頭
-投晒降
+投晒降	tau4 saai3 hong4
 投射幕
 投石機
 投訴率
@@ -69790,7 +69791,7 @@ sort: by_weight
 緩衝值
 換擋桿
 換港幣
-緩降器
+緩降器	wun4 gong3 hi3
 玩兒票
 換言之
 換熱器
@@ -74686,7 +74687,7 @@ sort: by_weight
 從頭說起
 從頭再嚟
 從頭做起
-從天而降
+從天而降	cung4 tin1 nji4 gong3
 重溫舊業
 重獲新生
 松贊干布
@@ -77026,7 +77027,7 @@ sort: by_weight
 防蚊紗窗
 防微杜漸
 房鋪租售
-防暑降溫
+防暑降溫	fong4 sjyo2 gong3 wan1
 房屋出租
 房屋租售
 房屋中介
@@ -78787,12 +78788,12 @@ sort: by_weight
 講真嗰句
 講就凶狠
 講就無謂
-降低利率
+降低利率	gong3 dai1 li6 leot6
 杠杆收購
 鋼骨水泥
-降下帷幕
-降血鈣素
-降落地點
+降下帷幕	gong3 haa5 wai4 mook6
+降血鈣素	gong3 hyut3 koi3 su3
+降落地點	gong3 look6 di6 dim2
 槓上開花
 鋼鐵工業
 鋼閘門窗
@@ -80141,7 +80142,7 @@ sort: by_weight
 喜出望外
 喜遷新居
 起重設備
-喜從天降
+喜從天降	hi2 cung4 tin1 gong3
 起重葫蘆
 喜大普奔
 起飛彈射
@@ -82084,7 +82085,7 @@ sort: by_weight
 猶太會堂
 由頭到尾
 油頭粉面
-由天而降
+由天而降	jau4 tin1 nji4 gong3
 遊魂野鬼
 油炸圈餅
 油浸唔肥
@@ -82407,7 +82408,7 @@ sort: by_weight
 夜以繼日
 夜闌人靜
 夜晚好靜
-夜幕降臨
+夜幕降臨	jaa6 mook6 gong3 lam4
 夜色蒼茫
 贏取民心
 贏到開巷
@@ -86114,7 +86115,7 @@ sort: by_weight
 明鏡高懸
 名繮利鎖
 明崗暗哨
-明降暗升
+明降暗升	ming4 gong3 om3 sjing1
 明棄暗取
 明日黃花
 明日之星
@@ -86154,7 +86155,7 @@ sort: by_weight
 明十三陵
 名實相符
 名垂青史
-明升暗降
+明升暗降	ming4 sjing1 om3 gong3
 名聲遠播
 名成利就
 明剃眼眉
@@ -88438,7 +88439,7 @@ sort: by_weight
 普渡慈航
 普度衆生
 普渡衆生
-普降大雨
+普降大雨	pu2 gong3 daai6 hjyu5
 普賢菩薩
 普及讀物
 普利策獎
@@ -89308,7 +89309,7 @@ sort: by_weight
 生物測定
 生物材料
 生物彈藥
-生物降解
+生物降解	shang1 mat6 gong3 gaai2
 生物氣體
 生物學系
 生物燃料
@@ -89642,7 +89643,7 @@ sort: by_weight
 受寵若驚
 受凍挨餓
 售後服務
-受降儀式
+受降儀式	sjiau6 hong4 ngi4 sjik1
 受人錢財
 授人以柄
 受益匪淺
@@ -90559,7 +90560,7 @@ sort: by_weight
 聖安德肋
 聖安德魯
 聖三一堂
-聖神降臨
+聖神降臨	sjing3 shan4 gong3 lam4
 聖十字架
 聖提摩太
 性質命題
@@ -91155,7 +91156,7 @@ sort: by_weight
 輸少當贏
 輸送媒介
 輸咗間廠
-紆尊降貴
+紆尊降貴	jyu1 zyun1 gong3 gwai3
 薯下薯下
 鼠疫桿菌
 鼠疫菌苗
@@ -92465,7 +92466,7 @@ sort: by_weight
 穩態理論
 穩扎穩打
 穩紮穩打
-穩中有降
+穩中有降	wan2 zrung1 jau5 gong3
 魂不附體
 勻速運動
 魂飛魄散
@@ -92596,7 +92597,7 @@ sort: by_weight
 和製漢語
 禍不單行
 禍從口出
-禍從天降
+禍從天降	wo5 cung4 tin1 gong3
 禍福吉凶
 禍福與共
 禍福無門
@@ -93759,7 +93760,7 @@ sort: by_weight
 稚氣未脫
 自學方法
 自學成才
-自由降落
+自由降落	zy6 jau2 gong3 look6
 自由古巴
 自由意志
 自由騎仕
@@ -94238,7 +94239,7 @@ sort: by_weight
 朝過夕改
 朝行晚拆
 朝桁晚拆
-招降納叛
+招降納叛	zjiu1 hong4 naap6 bun6
 招人喜歡
 招人仇口
 招賢納士
@@ -94800,7 +94801,7 @@ sort: by_weight
 總體上說
 總統套房
 種子發芽
-種子降落
+種子降落	zjung2 zy2 gong3 look6
 種子選手
 種子植物
 種族清除
@@ -95470,7 +95471,7 @@ sort: by_weight
 充橕下場面
 充足理由律
 寵物小精靈
-重陽兼霜降
+重陽兼霜降	crung4 jong4 gim1 shiong1 gong3
 重病特護區
 重水反應堆
 穿一條褲子
@@ -96038,7 +96039,7 @@ sort: by_weight
 講笑搵第樣
 港珠澳大橋
 鋼筋混凝土
-降腎上腺素
+降腎上腺素	gong3 sjan5 sjiong5 sin3 su3
 高壓清洗機
 高壓氧療法
 高壓氧治療
@@ -96514,7 +96515,7 @@ sort: by_weight
 又要馬兒跑
 又屎又巴閉
 耶利米哀歌
-耶穌降臨節
+耶穌降臨節	jaa4 su1 gong3 lam4 zit3
 耶穌龍門陣
 耶穌受難日
 耶穌受難節
@@ -97101,7 +97102,7 @@ sort: by_weight
 無線電通信
 無所施其技
 毛腿耳夜鷹
-無條件投降
+無條件投降	mu4 tiu4 gin6 tau4 hong4
 無往而不利
 毛澤東思想
 毛澤東主義
@@ -97749,7 +97750,7 @@ sort: by_weight
 聖勞倫斯河
 聖母瑪利亞
 聖母升天節
-聖神降臨週
+聖神降臨週	sjing3 shan4 gong3 lam4 zjiau1
 成骨不全症
 城市依賴症
 城市運動會
@@ -97914,7 +97915,7 @@ sort: by_weight
 藤條燜豬肉
 偷食唔抹嘴
 頭戴式耳機
-投降輸一半
+投降輸一半	tau4 hong4 sjyu1 jat1 bun3
 頭頭碰着黑
 投資報酬率
 投資回報率
@@ -98406,7 +98407,7 @@ sort: by_weight
 腫瘤切除術
 總死亡數字
 總會三明治
-種子從天降
+種子從天降	zjung2 zy2 cung4 tin1 gong3
 種族主義者
 誦讀困難症
 仲夏夜之夢
@@ -101483,7 +101484,7 @@ sort: by_weight
 前不見古人，後不見來者
 朝鮮民主主義人民共和國
 財到光棍手，一去冇回頭
-重陽兼霜降，有穀冇處裝
+重陽兼霜降，有穀冇處裝	crung4 jong4 gim1 shiong1 gong3 jau5 guk1 mu4 cjyo3 zhoong1
 打到走夾唔唞有氣冇碇唞
 打到走夾唔透有氣冇訂透
 打劫紅毛鬼，進貢法蘭西
