@@ -1,7 +1,7 @@
 ﻿# Rime schema
 # encoding: utf-8
-# kaomoji - 顏文字
 #
+# nippon - 菊韻日文
 
 # 此爲菊韻粵語輸入法文件
 # 瞭解如何使用菊韻請閱覽readme文件，詳細請至本方案github頁：
@@ -10,14 +10,13 @@
 # Learn how to use Gukwan in the readme file, available on the project's github page.
 
 schema:
-  schema_id: kaomoji
-  name: 顔文字
-  version: "11.2b"
+  schema_id: nippon
+  name: 日文
+  version: "13.2b"
   author:
     靈帝（Hoengsaan）
 
   description: |
-    以日文輸入顏文字，基於mtripg6666tdr/Kaomoji_proj
     此方案可掛載於任何RIME方案之下 「t」可快速輸入促音
     異點：減少無必要捨假名運用以便輸入，增添Microsoft IME自帶顏文字
     詳細請至本方案github䈎。https://github.com/HoengSaan/rime-gukwan
@@ -219,7 +218,7 @@ speller:
     - derive/^-$/_/
 
 translator:
-  dictionary: kaomoji
+  dictionary: nippon
   speeling_hints: 20
   enable_sentence: false
   enable_user_dict: false

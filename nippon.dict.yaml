@@ -1,0 +1,20 @@
+﻿# Rime dictionary
+# encoding: utf-8
+#
+# nippon - 菊韻日文
+
+# 此爲菊韻粵語輸入法文件
+# 瞭解如何使用菊韻請閱覽readme文件，詳細請至本方案github頁：
+# https://github.com/HoengSaan/rime-gukwan
+# This is a file for Gukwan Cantonese Input Method.
+# Learn how to use Gukwan in the readme file, available on the project's github page.
+
+---
+name: nippon
+version: "13.2b"
+sort: original
+use_preset_vocabulary: false
+import_tables:
+  - dicts/nippon.kaomoji
+  - dicts/nippon.maps
+...

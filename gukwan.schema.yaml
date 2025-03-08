@@ -13,7 +13,7 @@
 schema:
   schema_id: gukwan
   name: 菊韻
-  version: "13.1b"
+  version: "13.2b"
   author:
     靈帝（Hoengsaan）
   
@@ -30,7 +30,7 @@ schema:
     - kunyomi
     - loengfan
     - kanas
-    - kaomoji
+    - nippon
 
 # 開關 "reset: 0" 默認第一選項 "reset: 1" 默認第二選項
 switches:
@@ -73,7 +73,7 @@ engine:
     - affix_segmentor@kunyomi
     - affix_segmentor@loengfan
     - affix_segmentor@kanas
-    - affix_segmentor@kaomoji
+    - affix_segmentor@nippon
     - abc_segmentor
     - punct_segmentor
     - fallback_segmentor
@@ -86,7 +86,7 @@ engine:
     - script_translator@kunyomi             # 和語訓讀反查
     - script_translator@loengfan            # 廣州話兩分反查
     - script_translator@kanas               # 假名輸入
-    - script_translator@kaomoji             # 顏文字輸入
+    - script_translator@nippon             # 顏文字輸入
     - lua_translator@*unicode               # Unicode
     - lua_translator@*calc_translator       # 計數機
     - lua_translator@*number_gukwan         # 數字數額金額蘇州碼
@@ -424,16 +424,16 @@ kanas:
   suffix: ";"
   tips: 〔假名〕
 
-kaomoji:
-  tag: kaomoji
-  dictionary: kaomoji
+nippon:
+  tag: nippon
+  dictionary: nippon
   enable_user_dict: false
   prefix: "K"
   suffix: ";"
   tips: 〔顔文字〕
 
 special_typing:
-  tags: [ kanas, kaomoji ]
+  tags: [ kanas, nippon ]
   overwrite_comment: false
 
 emoji_cantonese_suggestion:
@@ -443,7 +443,7 @@ emoji_cantonese_suggestion:
   inherit_comment: true
 
 punctuator:
-  import_preset: symbols_cantonese
+  import_preset: symbols-gukwan
 
 key_binder:
   import_preset: default
@@ -459,7 +459,7 @@ recognizer:
     kunyomi: "^F[a-z']*;?$"
     loengfan: "^L[a-z']*;?$"
     kanas: "^G[a-zA-Z-]*;?$"
-    kaomoji: "^K[a-z-]*;?$"
+    nippon: "^K[a-z-]*;?$"
     unicode: "^U[a-f0-9]+"
     number: "^S[0-9]+[.]?[0-9]*"
     calculator: "^cC.+"
