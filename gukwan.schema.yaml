@@ -13,7 +13,7 @@
 schema:
   schema_id: gukwan
   name: 菊韻
-  version: "13.2b"
+  version: "13.3b"
   author:
     靈帝（Hoengsaan）
   
@@ -430,7 +430,7 @@ nippon:
   enable_user_dict: false
   prefix: "K"
   suffix: ";"
-  tips: 〔顔文字〕
+  tips: 〔日文〕
 
 special_typing:
   tags: [ kanas, nippon ]
