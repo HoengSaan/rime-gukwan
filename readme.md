@@ -152,9 +152,9 @@ This work is licensed under a
 
 ### 字詞
 
-`gukwan.dict.yaml`用於調用字庫詞庫，默認亦調用rime-cantonese部份詞庫同粵語八股文。
+`gukwan.dict.yaml`用於調用字庫詞庫，默認亦調用rime-cantonese部份詞庫同粵語八股文。位置爲`/gw_dicts`。
 
-`gukwan-extended.dict.yaml`用於調用各種擴展詞庫，下載並放置於正確位置方可使用，不安裝直接調用將會導致輸入法不能正常使用。文件內有說明。
+`gukwan-extended.dict.yaml`用於調用各種擴展詞庫，下載並放置於正確位置方可使用，不安裝直接調用將會導致輸入法不能正常使用。文件內有說明。位置爲`/ext_dicts`。
 
 - 字庫
   - `gukwan.chars.dict.yaml`：廣韻字庫
@@ -181,6 +181,7 @@ This work is licensed under a
 - [rime-kanas](https://github.com/HoengSaan/rime-kanas)：用於輸入假名，隨源文件以[GPL 3.0許可](https://www.gnu.org/licenses/gpl-3.0.en.html)發佈。
 - [rime-cantonese-emoji](https://github.com/rime/rime-emoji-cantonese)：用於輸入繪文字，隨源文件以[CC 0許可](https://creativecommons.org/public-domain/cc0/)發佈。
 - rime-kaomoji：用於輸入顏文字（需以日文輸入），係本人根據[mtripg6666tdr/Kaomoji_proj](https://github.com/mtripg6666tdr/Kaomoji_proj)字典文件製作，隨源文件以[MIT許可](https://mit-license.org/)發佈。
+- rime-kikwin：用於輸入日本地名，係本人根據[地名日本集](https://www.gsi.go.jp/kihonjohochousa/gazetteer.html)製作。未完成。
 
 ### LUA腳本
 

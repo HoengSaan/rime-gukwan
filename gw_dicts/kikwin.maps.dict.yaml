@@ -1,18 +1,18 @@
 ﻿# Rime dictionary
 # encoding: utf-8
 #
-# nippon.maps - 地名
+# kikwin.maps - 地名
 
-# 此爲菊韻粵語輸入法文件
+# 此爲菊韻和語輸入法字表詞庫文件
 # 瞭解如何使用菊韻請閱覽readme文件，詳細請至本方案github頁：
 # https://github.com/HoengSaan/rime-gukwan
-# This is a file for Gukwan Cantonese Input Method.
+# This is a dictionary file for Gukwan Japanese Input Method.
 # Learn how to use Gukwan in the readme file, available on the project's github page.
-# Source: https://github.com/mtripg6666tdr/Kaomoji_proj
+# Source: https://www.gsi.go.jp/kihonjohochousa/gazetteer.html
 
 ---
-name: nippon.maps
-version: "13.2b"
+name: kikwin.maps
+version: "13.3b"
 sort: original
 use_preset_vocabulary: false
 ...

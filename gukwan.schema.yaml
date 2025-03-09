@@ -30,7 +30,8 @@ schema:
     - kunyomi
     - loengfan
     - kanas
-    - nippon
+    - kaomoji
+    - kikwin
 
 # 開關 "reset: 0" 默認第一選項 "reset: 1" 默認第二選項
 switches:
@@ -73,7 +74,8 @@ engine:
     - affix_segmentor@kunyomi
     - affix_segmentor@loengfan
     - affix_segmentor@kanas
-    - affix_segmentor@nippon
+    - affix_segmentor@kaomoji
+    - affix_segmentor@kikwin
     - abc_segmentor
     - punct_segmentor
     - fallback_segmentor
@@ -86,7 +88,8 @@ engine:
     - script_translator@kunyomi             # 和語訓讀反查
     - script_translator@loengfan            # 廣州話兩分反查
     - script_translator@kanas               # 假名輸入
-    - script_translator@nippon             # 顏文字輸入
+    - script_translator@kaomoji             # 顏文字輸入
+    - script_translator@kikwin              # 和語輸入
     - lua_translator@*unicode               # Unicode
     - lua_translator@*calc_translator       # 計數機
     - lua_translator@*number_gukwan         # 數字數額金額蘇州碼
@@ -424,16 +427,24 @@ kanas:
   suffix: ";"
   tips: 〔假名〕
 
-nippon:
-  tag: nippon
-  dictionary: nippon
+kaomoji:
+  tag: kaomoji
+  dictionary: kaomoji
   enable_user_dict: false
   prefix: "K"
   suffix: ";"
-  tips: 〔日文〕
+  tips: 〔顔文字〕
+
+kikwin:
+  tag: kikwin
+  dictionary: kikwin
+  enable_user_dict: false
+  prefix: "R"
+  suffix: ";"
+  tips: 〔和文〕
 
 special_typing:
-  tags: [ kanas, nippon ]
+  tags: [ kanas, kaomoji, kikwin ]
   overwrite_comment: false
 
 emoji_cantonese_suggestion:
@@ -459,7 +470,8 @@ recognizer:
     kunyomi: "^F[a-z']*;?$"
     loengfan: "^L[a-z']*;?$"
     kanas: "^G[a-zA-Z-]*;?$"
-    nippon: "^K[a-z-]*;?$"
+    kaomoji: "^K[a-z-]*;?$"
+    kikwin: "^R[a-z-]*;?$"
     unicode: "^U[a-f0-9]+"
     number: "^S[0-9]+[.]?[0-9]*"
     calculator: "^cC.+"
