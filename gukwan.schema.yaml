@@ -489,20 +489,4 @@ date_gukwan:
 lunar: nl        # 農曆： 二〇二三年冬月二十 癸卯年（兔）冬月二十
 
 ## 測試用
-is_in_user_dict: true
-
-# 風格（建議改Weasel/Squirrel）
-style:
-  #font_face: "Shanggu"
-  font_point: 16
-  #horizontal: true
-  #inline_preedit: false
-  layout:
-    border_width: 3
-    candidate_spacing: 5
-    hilite_padding: 2
-    hilite_spacing: 4
-    margin_x: 12
-    margin_y: 12
-    round_corner: 4
-    spacing: 10
+is_in_user_dict: false

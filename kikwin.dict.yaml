@@ -17,4 +17,5 @@ sort: original
 use_preset_vocabulary: false
 import_tables:
   - gw_dicts/kikwin.maps
+  - gw_dicts/kikwin.reiseikoku
 ...
