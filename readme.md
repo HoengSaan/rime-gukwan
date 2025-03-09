@@ -15,6 +15,8 @@ This work is licensed under a
 
 部份文件使用其他許可，詳細請見[文件結構・許可](#文件結構・許可)。
 
+日文版菊韻（菊韻和語）：[HoengSaan/rime-kikwan: 日本語輸入方案菊韻 中州韻方案 Japanese IME (RIME Scheme)](https://github.com/HoengSaan/rime-kikwan)
+
 **測試階段：預計4月完成**
 
 ## 簡介
