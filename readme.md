@@ -178,10 +178,7 @@ This work is licensed under a
 
 以下爲本倉庫自帶，毋須額外下載。關於其他依賴文件請參攷[如何安裝 · HoengSaan/rime-gukwan Wiki](https://github.com/HoengSaan/rime-gukwan/wiki/如何安裝)。
 
-- [rime-kanas](https://github.com/HoengSaan/rime-kanas)：用於輸入假名，隨源文件以[GPL 3.0許可](https://www.gnu.org/licenses/gpl-3.0.en.html)發佈。
 - [rime-cantonese-emoji](https://github.com/rime/rime-emoji-cantonese)：用於輸入繪文字，隨源文件以[CC 0許可](https://creativecommons.org/public-domain/cc0/)發佈。
-- rime-kaomoji：用於輸入顏文字（需以日文輸入），係本人根據[mtripg6666tdr/Kaomoji_proj](https://github.com/mtripg6666tdr/Kaomoji_proj)字典文件製作，隨源文件以[MIT許可](https://mit-license.org/)發佈。
-- rime-kikwin：用於輸入日本地名，係本人根據[地名日本集](https://www.gsi.go.jp/kihonjohochousa/gazetteer.html)製作。未完成。
 
 ### LUA腳本
 

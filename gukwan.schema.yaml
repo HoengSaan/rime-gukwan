@@ -51,9 +51,6 @@ switches:
   - name: emoji_cantonese_suggestion
     reset: 0
     states: [ 無✖, 有🔴 ]
-    
-menu:
-  page_size: 7
 
 engine:
   processors:
