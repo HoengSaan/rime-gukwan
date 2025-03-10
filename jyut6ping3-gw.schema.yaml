@@ -13,7 +13,7 @@
 schema:
   schema_id: jyut6ping3-gw
   name: 粵語拼音 菊韻配置
-  version: "14.0b"
+  version: "14.1b"
   author:
     靈帝（Hoengsaan）
   
@@ -65,14 +65,14 @@ engine:
   segmentors:
     - ascii_segmentor
     - matcher
-    - affix_segmentor@jyut6ping3
-    - affix_segmentor@luna_pinyin
-    - affix_segmentor@cangjie5
-    - affix_segmentor@kunyomi
-    - affix_segmentor@loengfan
-    - affix_segmentor@kanas
-    - affix_segmentor@kaomoji
-    - affix_segmentor@kikwin
+    - affix_segmentor@jyut6ping3            # 廣州話粵拼反查
+    - affix_segmentor@luna_pinyin           # 普通話拼音反查
+    - affix_segmentor@cangjie5              # 倉頡五代反查
+    - affix_segmentor@kunyomi               # 和語訓讀反查
+    - affix_segmentor@loengfan              # 廣州話兩分反查
+    - affix_segmentor@kanas                 # 假名輸入
+    - affix_segmentor@kaomoji               # 顏文字輸入
+    #- affix_segmentor@kikwin                # 和語輸入
     - abc_segmentor
     - punct_segmentor
     - fallback_segmentor
@@ -86,7 +86,7 @@ engine:
     - script_translator@loengfan            # 廣州話兩分反查
     - script_translator@kanas               # 假名輸入
     - script_translator@kaomoji             # 顏文字輸入
-    - script_translator@kikwin              # 和語輸入
+    #- script_translator@kikwin              # 和語輸入
     - lua_translator@*unicode               # Unicode
     - lua_translator@*calc_translator       # 計數機
     - lua_translator@*number_gukwan         # 數字數額金額蘇州碼

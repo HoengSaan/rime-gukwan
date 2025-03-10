@@ -27,7 +27,7 @@ This work is licensed under a
 
 爲適應流動電話鍵盤限制，以及各種新功能，鍵值已於12.0版本進行大規模調整。
 
-更多資訊請閱讀下文竝參攷[Wiki](https://github.com/HoengSaan/rime-gukwan/wiki)。[關於如何安裝](https://github.com/HoengSaan/rime-gukwan/wiki/%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%9D)。
+更多資訊請閱讀下文竝參攷[Wiki](https://github.com/HoengSaan/rime-gukwan/wiki)。[關於如何安裝](#安裝)。
 
 ### 多方言適應
 
@@ -44,11 +44,17 @@ This work is licensed under a
 
 菊韻字庫詞庫以深筆爲準，但可以轉換爲簡筆。隨基本字庫詞庫之外，菊韻亦有小欖話特色詞庫以及廣東地名詞庫。目前準備增添更多詞庫以利打字。
 
+> [!NOTE]
+> 
+> 菊韻可調用擴展詞庫，但需要手動下載。[gukwan-extended.dict.yaml](https://github.com/HoengSaan/rime-gukwan/blob/main/gukwan-extended.dict.yaml)內有說明如何獲取。由於擴展詞庫過大，，移動設備或低性能電腦不建議使用，可能導致無法部署（即無法正常使用）
+
+
 ### 功能
 
 菊韻有各類功能以盡量貼近現代輸入法。
 
-- 符號：RIME特殊符號輸入（粵語版），鍵值爲`/`
+- 繪文字（表情）：可以粵語輸入繪文字，默認關閉。
+- 符號：RIME特殊符號輸入，鍵值爲`/`。
 - Unicode：以Unicode編號直接輸入字符，適合輸入組合字符，空白字符等難複製特殊字符，鍵值爲`U`（unicode）
 - 數字：以阿拉伯數字輸入大小寫數字以及大小寫金額，鍵值爲`S`（shuzy）；支持以下7種格式：
   - 二〇二五（數字小寫）
@@ -69,8 +75,12 @@ This work is licensed under a
 - 計數機：直接在RIME計數，鍵值爲`cC`（calculator）
 - 假名：以細階輸入平假名，大階輸入片假名，鍵值爲`G `（gaaming）
 - 顏文字：以日文輸入各種顏文字，鍵值爲`K`（kaomoji）
+- 和文：實現半混打日文，鍵值爲`R`（njatman）
 
-**符號須安裝粵拼方可使用**，安裝方法請參攷[如何安裝 · HoengSaan/rime-gukwan Wiki](https://github.com/HoengSaan/rime-gukwan/wiki/如何安裝)。
+> [!NOTE]
+> 
+> **符號須安裝粵拼方可使用**，安裝方法請參攷[如何安裝 · HoengSaan/rime-gukwan Wiki](https://github.com/HoengSaan/rime-gukwan/wiki/如何安裝)。
+> 由於和文功能所依賴方案詞庫過大，14.1b版本已將其關閉以防止部分設備無法正常使用中州韻。
 
 ### 反查
 
@@ -82,7 +92,9 @@ This work is licensed under a
 - 訓讀（[rime-kunyomi](https://github.com/sgalal/rime-kunyomi)），和語訓讀（現代音）反查。鍵值爲`F`（fanduk）。
 - 兩分（[rime-loengfan]([CanCLID/rime-loengfan: Loengfan (粵語兩分) is the Cantonese version of the Liang Fen input method](https://github.com/CanCLID/rime-loengfan))），粵語廣州話兩分拆字反查。鍵值爲`L`(loengfan)。
 
-**粵拼、訓讀、兩分須安裝方可使用**，安裝方法請參攷[如何安裝 · HoengSaan/rime-gukwan Wiki](https://github.com/HoengSaan/rime-gukwan/wiki/如何安裝)。如需使用其他方案反查，請自行定製方案。
+> [!NOTE]
+> 
+> **粵拼、訓讀、兩分須安裝方可使用**，安裝方法請參攷[如何安裝 · HoengSaan/rime-gukwan Wiki](https://github.com/HoengSaan/rime-gukwan/wiki/如何安裝)。如需使用其他方案反查，請自行定製方案。
 
 ### 輸入
 
@@ -94,12 +106,41 @@ This work is licensed under a
 
 - 漢字發音：本人無法亦無有可能佢保證所有漢字發音正確。尤其因爲菊韻詞庫多數無輸入碼，有多音字既單詞發音必然有誤。
 - 地名繁簡：數據來源係簡筆字，本人亦仔細審覈過，但都無法保證三萬幾條地名都係正確。
-- 詞庫細小：目前僅有導入[rime-cantonese](https://github.com/rime/rime-cantonese)詞庫，同部分自製詞庫。將會下次更新中引入其他詞庫。此外，漢英混合詞語只能使用其發音輸入。
-  - 擴展詞庫須手動獲取。
-
 - 漢英混打：由於不明原因gukwan不能使用混打，本人已嘗試多次。將解決詞庫問題後再行處理。
-- 可方言輸入過少：我諗呢個輸入法都係我自用爲主，之後再處理啦。
+- 可輸入方言過少：我諗呢個輸入法都係我自用爲主，之後再處理啦。
 
+## 安裝
+
+以下僅解說大致流程，具體請見[如何安裝 · HoengSaan/rime-gukwan Wiki](https://github.com/HoengSaan/rime-gukwan/wiki/如何安裝)
+
+1. 安裝RIME
+   1. WINDOWS：[Weasel 小狼毫](https://github.com/rime/weasel)
+   2. MacOS：[Squirrel 鼠鬚管](https://github.com/rime/squirrel)｜[fcitx5-macos](https://github.com/fcitx-contrib/fcitx5-macos)
+   3. Linux：[ibus](https://github.com/ibus/ibus)→[ibus-rime](https://github.com/rime/ibus-rime)｜[fcitx5](https://github.com/fcitx/fcitx5)→[fcitx5-Rime](https://github.com/fcitx/fcitx5-rime)
+   4. Android：[同文輸入法](https://github.com/osfans/trime)｜[fcitx5-Android](https://github.com/fcitx5-android/fcitx5-android)→[fcitx5-Android-Rime](https://github.com/fcitx5-android/fcitx5-android/blob/master/plugin/rime)
+
+> [!NOTE]
+>
+> Linux版本必須安裝librime-lua否則部分功能無法使用
+
+2. 安裝以下倉庫
+   1. **rime-gukwan**（**本方案**）
+   2. [rime-cantonese](https://github.com/rime/rime-cantonese)（**必選**，用於廣州話反查、八股文、部份詞庫）
+   3. [rime-kunyomi](https://github.com/sgalal/rime-kunyomi/)（**可選**，用於和語訓讀反查）
+   4. [rime-loengfan](https://github.com/CanCLID/rime-loengfan)（**可選**，用於廣州話拆字反查）
+   5. [rime-luna-pinyin](https://github.com/rime/rime-luna-pinyin)（**可選**，若閣下已刪除則須重新安裝，否則無法使用官話反查）
+   6. [rime-cangjie](https://github.com/rime/rime-cangjie)（**可選**，若閣下已刪除則須重新安裝，否則無法使用倉頡反查）
+   7. [rime-kikwin](https://github.com/Hoengsaan/rime-kikwin/)（**可選**，用於日文半混打）
+
+> [!WARNING]
+>
+> 由於`rime-kikwin`詞庫文件巨大，移動設備或低性能電腦不建議使用，可能導致無法部署（即無法正常使用）
+
+3. 設定方案，重新部署
+
+> [!TIP]
+>
+> 根據閣下設備性能，部署時間或長或短。部署時請勿強行關閉Rime。
 
 ## 拼音
 
@@ -124,7 +165,9 @@ This work is licensed under a
 
 ## 文件結構・許可
 
-部份文件竝非我所作，故許可授權不同，使用前請注意。若無備註則皆以[CC BY NC SA 4.0許可](cc-by-nc-sa)發佈。
+> [!IMPORTANT]
+>
+> 部份文件竝非我所作，故許可授權不同，使用前請注意。若無備註則皆以[CC BY NC SA 4.0許可](cc-by-nc-sa)發佈。
 
 ### 方案
 
@@ -154,11 +197,13 @@ This work is licensed under a
 - `gukwan-canton.schema.yaml`：廣州音
   - 準確來講此方案係廣州風，並不能準確反映所有廣州發音。若欲使用眞正廣州音打字，請使用`jyut6ping3-gw.scheme.yaml`
 
+> [!TIP]
+>
+> [關於如何定製方案](https://github.com/rime/home/wiki/CustomizationGuide)
+
 ### 字詞
 
 `gukwan.dict.yaml`用於調用字庫詞庫，默認亦調用rime-cantonese部份詞庫同粵語八股文。位置爲`/gw_dicts`。
-
-`gukwan-extended.dict.yaml`用於調用各種擴展詞庫，下載並放置於正確位置方可使用，不安裝直接調用將會導致輸入法不能正常使用。文件內有說明。位置爲`/ext_dicts`。
 
 - 字庫
   - `gukwan.chars.dict.yaml`：廣韻字庫
@@ -176,8 +221,16 @@ This work is licensed under a
     - 基於`jyut6ping3.lettered.dict.yaml`，作者爲「粵語計算語言學基礎建設組」([@CanCLID](https://github.com/CanCLID)) ，此部分則以[CC BY 4.0許可](https://creativecommons.org/licenses/by/4.0/)發佈。
   - `gukwan.kwongtung.dict.yaml`：廣東地名（村級）
     - 來源爲[adyliu/china_area: 2024年中国全国5级行政区划（省、市、县、镇、村）](https://github.com/adyliu/china_area)，隨源文件以[GPL 3.0許可](https://www.gnu.org/licenses/gpl-3.0.en.html)發佈。已繁化。
-- [關於如何製作用戶詞庫](https://github.com/rime/home/wiki/UserGuide#%E7%94%A8%E6%88%B6%E8%A9%9E%E5%85%B8%E7%AE%A1%E7%90%86)
 
+> [!NOTE]
+>
+> `gukwan-extended.dict.yaml`用於調用各種擴展詞庫，以增強輸入體驗。下載並放置於正確位置方可使用，不安裝直接調用將會導致輸入法不能正常使用。文件內有說明。位置爲`/ext_dicts`。
+>
+> 由於詞庫文件巨大，移動設備或低性能電腦不建議使用，可能導致輸入法無法使用。
+
+> [!TIP]
+>
+> [關於如何製作用戶詞庫](https://github.com/rime/home/wiki/UserGuide#%E7%94%A8%E6%88%B6%E8%A9%9E%E5%85%B8%E7%AE%A1%E7%90%86)
 ### 依賴
 
 以下爲本倉庫自帶，毋須額外下載。關於其他依賴文件請參攷[如何安裝 · HoengSaan/rime-gukwan Wiki](https://github.com/HoengSaan/rime-gukwan/wiki/如何安裝)。
@@ -193,3 +246,8 @@ This work is licensed under a
 - number_gukwan.lua：以阿拉伯數字輸入轉換漢語數字，來自[yanhuacuo/98wubi-tables](https://github.com/yanhuacuo/98wubi-tables)。增加轉換蘇州碼子功能。增加直接轉換功能。由於源文件採取[Unlicense許可](https://unlicense.org/)，本文件亦不設限。
 - date_gukwan.lua：以各種格式輸入是日日期時間，來自[iDvel/rime-ice](https://github.com/iDvel/rime-ice)。隨源文件以[GPL 3.0許可](https://www.gnu.org/licenses/gpl-3.0.en.html)發佈。
 - calc_translator.lua：計數機，來自[ChaosAlphard](https://github.com/ChaosAlphard)之PR。隨源文件以[GPL 3.0許可](https://www.gnu.org/licenses/gpl-3.0.en.html)發佈。
+
+### 其他
+
+- `symbols-gukwan.yaml`：標點符號同特殊符號輸入。
+

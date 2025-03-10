@@ -14,7 +14,7 @@ __include: gukwan.schema:/
 schema:
   schema_id: gukwan-canton
   name: 菊韻廣州音
-  version: "13.1b"
+  version: "14.1b"
   author:
     靈帝（Hoengsaan）
   
@@ -32,6 +32,55 @@ schema:
     - loengfan
     - kanas
     - kaomoji
+    - kikwin
+  
+engine:
+  processors:
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - affix_segmentor@jyut6ping3            # 廣州話粵拼反查
+    - affix_segmentor@luna_pinyin           # 普通話拼音反查
+    - affix_segmentor@cangjie5              # 倉頡五代反查
+    - affix_segmentor@kunyomi               # 和語訓讀反查
+    - affix_segmentor@loengfan              # 廣州話兩分反查
+    - affix_segmentor@kanas                 # 假名輸入
+    - affix_segmentor@kaomoji               # 顏文字輸入
+    #- affix_segmentor@kikwin                # 和語輸入
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - script_translator
+    - script_translator@jyut6ping3          # 廣州話粵拼反查
+    - script_translator@luna_pinyin         # 普通話拼音反查
+    - table_translator@cangjie5             # 倉頡五代反查
+    - script_translator@kunyomi             # 和語訓讀反查
+    - script_translator@loengfan            # 廣州話兩分反查
+    - script_translator@kanas               # 假名輸入
+    - script_translator@kaomoji             # 顏文字輸入
+    #- script_translator@kikwin              # 和語輸入
+    - lua_translator@*unicode               # Unicode
+    - lua_translator@*calc_translator       # 計數機
+    - lua_translator@*number_gukwan         # 數字數額金額蘇州碼
+    - lua_translator@*date_gukwan           # 日期時間
+    - lua_translator@*lunar                 # 農曆
+  filters:
+    #- lua_filter@*is_in_user_dict          # 測試用
+    - reverse_lookup_filter@reverse_lookup  # 反查
+    - reverse_lookup_filter@special_typing  # 輸入
+    - simplifier@emoji_cantonese_suggestion # 繪文字（表情）
+    - simplifier                            # 簡化
+    - uniquifier                            # 去重
 
 speller:
   alphabet: zyxwvutsrqponmlkjihgfedcba
