@@ -12,7 +12,7 @@
 
 ---
 name: gukwan.chars1
-version: "11.1b"
+version: "14.1b"
 sort: by_weight
 ...
 
@@ -254,7 +254,7 @@ sort: by_weight
 癲	den1	
 邊	ben1	
 甂	bin1	
-錢	cin1	
+錢	cin1	3%
 纏	cim4	
 聮	lyun4	
 𤣆	lyun4	3%
@@ -608,9 +608,6 @@ sort: by_weight
 眯	mei1	
 拐	gwaai2	
 傀	hwaai3	
-待	doi6	
-迨	doi6	
-啡	fe1	
 在	coi2	
 軫	cjan2	0%
 縝	cjan2	0%
@@ -732,7 +729,6 @@ sort: by_weight
 㘢	gwaang6	
 髒	zoong1	
 晃	hwong2	
-晃	hong2	
 幌	hwong2	
 慌	hwong1	
 梗	kwaang2	
@@ -1061,6 +1057,7 @@ sort: by_weight
 齅	cjiau3	0%
 驟	zhaau6	
 就	zou6	
+就	a6	
 姆	mau5	
 竇	dau3	
 遘	kau3	
@@ -1350,6 +1347,7 @@ sort: by_weight
 賊	caak2	
 塞	zak1	
 劾	hat6	
+十	a6	
 褶	zjip3	
 什	zaap6	
 輯	cap1	

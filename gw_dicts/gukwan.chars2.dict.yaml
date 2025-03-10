@@ -12,7 +12,7 @@
 
 ---
 name: gukwan.chars2
-version: "10.1b"
+version: "14.1b"
 sort: by_weight
 ...
 
@@ -4179,9 +4179,9 @@ sort: by_weight
 乇	took3	0%
 乇	zraak6	0%
 么	jiu1	
-乒	bing1	
+乒	bing1	5%
 乒	ping1	
-乓	bam1	
+乓	bom1	5%
 乓	bong1	
 乓	pong1	
 乕	hu2	0%
