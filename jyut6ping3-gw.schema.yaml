@@ -1,0 +1,319 @@
+# Rime schema
+# encoding: utf-8
+#
+# gukwan - 菊韻
+
+# 此爲菊韻粵語輸入法方案文件
+# 瞭解如何使用菊韻請閱覽readme文件，詳細請至本方案github頁：
+# https://github.com/HoengSaan/rime-gukwan
+# This is a schema file for Gukwan Cantonese Input Method.
+# Learn how to use Gukwan in the readme file, available on the project's github page.
+# 基底文件 切勿直接改動或刪除
+
+schema:
+  schema_id: jyut6ping3-gw
+  name: 粵語拼音 菊韻配置
+  version: "14.0b"
+  author:
+    靈帝（Hoengsaan）
+  
+  description: |-
+    RIME-CANTONESE CUSTOM
+    瞭解如何使用菊韻請閱覽readme文件，詳細請至本方案github頁：https://github.com/HoengSaan/rime-gukwan
+    如有問題或建議可於以上github頁中開Issues反饋
+
+# 依賴 請確保閣下已安裝以下方案
+  dependencies:
+    - jyut6ping3
+    - luna_pinyin
+    - cangjie5
+    - kunyomi
+    - loengfan
+    - kanas
+    - kaomoji
+    - kikwin
+
+# 開關 "reset: 0" 默認第一選項 "reset: 1" 默認第二選項
+switches:
+  - name: ascii_mode
+    reset: 0
+    states: [ 粵文, 英文 ]
+  - name: full_shape
+    reset: 0
+    states: [ 半角, 全角 ]
+  - name: simplification
+    reset: 0
+    states: [ 深筆, 簡筆 ] 
+    abbrev: [ 繁, 簡 ]
+  - name: ascii_punct
+    reset: 0
+    states: [ 。，, ．， ]
+  - name: emoji_cantonese_suggestion
+    reset: 0
+    states: [ 無✖, 有🔴 ]
+
+engine:
+  processors:
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - affix_segmentor@jyut6ping3
+    - affix_segmentor@luna_pinyin
+    - affix_segmentor@cangjie5
+    - affix_segmentor@kunyomi
+    - affix_segmentor@loengfan
+    - affix_segmentor@kanas
+    - affix_segmentor@kaomoji
+    - affix_segmentor@kikwin
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - script_translator
+    - script_translator@jyut6ping3          # 廣州話粵拼反查
+    - script_translator@luna_pinyin         # 普通話拼音反查
+    - table_translator@cangjie5             # 倉頡五代反查
+    - script_translator@kunyomi             # 和語訓讀反查
+    - script_translator@loengfan            # 廣州話兩分反查
+    - script_translator@kanas               # 假名輸入
+    - script_translator@kaomoji             # 顏文字輸入
+    - script_translator@kikwin              # 和語輸入
+    - lua_translator@*unicode               # Unicode
+    - lua_translator@*calc_translator       # 計數機
+    - lua_translator@*number_gukwan         # 數字數額金額蘇州碼
+    - lua_translator@*date_gukwan           # 日期時間
+    - lua_translator@*lunar                 # 農曆
+  filters:
+    #- lua_filter@*is_in_user_dict          # 測試用
+    - reverse_lookup_filter@reverse_lookup  # 反查
+    - reverse_lookup_filter@special_typing  # 輸入
+    - simplifier@emoji_cantonese_suggestion # 繪文字（表情）
+    - simplifier                            # 簡化
+    - uniquifier                            # 去重
+
+speller:
+  alphabet: zyxwvutsrqponmlkjihgfedcba
+  delimiter: " '"
+  algebra:
+    # 取消下兩行註釋（移除 # 號），支援疑影交替： ng- 通 Ø-，Ø- 通 ng-
+    #- derive/^ng([aeiou])/$1/
+    #- derive/^([aeiou])/ng$1/
+
+    # 取消下行註釋，支援泥來合流： n- 併入 l- ，如「你」讀若「理」
+    #- derive/^n(?!g)/l/
+
+    # 取消下行註釋，支援圓唇輔音合口韻缺位：韻母 o 之前 gw-, kw- 併入 g-, k- ，如「國」讀若「各」、「廓」讀若「確」
+    #- derive/^(g|k)wo/$1o/
+
+    # 取消下行註釋，支援獨立鼻音韻 ng 併入 m，如「吳」讀若「唔」
+    #- derive/^ng(?=\d)/m/
+
+    # 取消下兩行註釋，支援韻尾 -n、-ng 交替，如「恒生」讀若「痕身」
+    #- derive/n(?=\d)/ng/
+    #- derive/ng(?=\d)/n/
+
+    # 取消下兩行註釋，支援韻尾 –t、-k 交替，如「北」讀若「不」
+    #- derive/t(?=\d)/k/
+    #- derive/k(?=\d)/t/
+
+    # 取消下兩行註釋，支援韻尾 –m、-n 交替，如「點」讀 din2
+    #- derive/m(?=\d)/n/
+    #- derive/n(?=\d)/m/
+
+    # 取消下兩行註釋，支援韻尾 –p、-t 交替，如「碟」讀 dit2
+    #- derive/p(?=\d)/t/
+    #- derive/t(?=\d)/p/
+    
+    #簡拼
+    #- derive/^([aeiou])/q$1/               # 喉塞音(q~)
+    - derive/^kw/q/                         # 簡拼(kw->q)
+    #- derive/^gw/q/                        # 簡拼(gw->q)
+
+    #- derive/^kw/x/                        # 簡拼(kw->q)
+    - derive/^gw/x/                         # 簡拼(gw->q)
+
+    - derive/^nj/r/                         # 簡拼(nj->r)
+    - derive/aa(i|u|m|n|ng|p|t|k)/r$1/      # 簡拼(aa->r)
+
+    - derive/^wu/u/                         # 簡拼(wu->u)
+
+    - derive/^nji/nj/                       # 簡拼(ji->j)
+    - derive/^ji/j/                         # 簡拼(ji->j)
+    - derive/^jy?([aeiou])/y$1/             # 簡拼(jy->y)
+    - derive/yu(?!ng|k)/y/                  # 簡拼(yu->y)
+    - derive/aa(?=\d)/a/                    # 簡拼(aa->a)
+
+    #模糊
+    - derive/eo/oe/                         # 模糊(eo/oe)
+    - derive/oe/eo/                         # 模糊(eo/oe)
+
+    #首字母出字
+
+    - abbrev/^([a-z]).+$/$1/
+
+    #聲調（勿動）
+
+    - derive/\d//                           # 忽略聲調
+    - xform/1/v/                            # 陰平
+    - xform/4/vv/                           # 陽平
+    - xform/2/x/                            # 陰上
+    - xform/5/xx/                           # 陽上
+    - xform/3/q/                            # 陰去
+    - xform/6/qq/                           # 陽去
+
+translator:
+  dictionary: jyut6ping3
+  prism: jyut6ping3-gw
+  spelling_hints: 9
+  preedit_format:
+    - xform/([aeiouymngptk])vv/${1}4/
+    - xform/([aeiouymngptk])xx/${1}5/
+    - xform/([aeiouymngptk])qq/${1}6/
+    - xform/([aeiouymngptk])v/${1}1/
+    - xform/([aeiouymngptk])x/${1}2/
+    - xform/([aeiouymngptk])q/${1}3/
+
+jyut6ping3:
+  tag: jyut6ping3
+  dictionary: jyut6ping3
+  enable_user_dict: false
+  prefix: "J"
+  suffix: ";"
+  tips: 〔粵拼〕
+  preedit_format:
+    - xform/([aeiouymngptk])vv/${1}4/
+    - xform/([aeiouymngptk])xx/${1}5/
+    - xform/([aeiouymngptk])qq/${1}6/
+    - xform/([aeiouymngptk])v/${1}1/
+    - xform/([aeiouymngptk])x/${1}2/
+    - xform/([aeiouymngptk])q/${1}3/
+
+luna_pinyin:
+  tag: luna_pinyin
+  dictionary: luna_pinyin
+  enable_user_dict: false
+  prefix: "P"
+  suffix: ";"
+  tips: 〔普拼〕
+  preedit_format:
+    - xform/([nl])v/$1ü/
+    - xform/([nl])ue/$1üe/
+    - xform/([jqxy])v/$1u/
+
+cangjie5:
+  tag: cangjie5
+  dictionary: cangjie5
+  enable_user_dict: false
+  prefix: "C"
+  suffix: ";"
+  tips: 〔倉頡〕
+  preedit_format:
+    - 'xform/^([a-z]*)$/$1\t（\U$1\E）/'
+    - "xlit|ABCDEFGHIJKLMNOPQRSTUVWXYZ|日月金木水火土竹戈十大中一弓人心手口尸廿山女田難卜符|"
+  comment_format:
+    - "xlit|abcdefghijklmnopqrstuvwxyz~|日月金木水火土竹戈十大中一弓人心手口尸廿山女田難卜符～|"
+  disable_user_dict_for_patterns:
+    - "^z.*$"
+    - "^yyy.*$"
+
+kunyomi:
+  tag: kunyomi
+  dictionary: kunyomi
+  enable_user_dict: false
+  prefix: "F"
+  suffix: ";"
+  tips: 〔和訓〕
+
+loengfan:
+  tag: loengfan
+  dictionary: loengfan
+  enable_user_dict: false
+  prefix: "L"
+  suffix: ";"
+  tips: 〔兩分〕
+
+reverse_lookup:
+  tags: [ jyut6ping3, luna_pinyin, cangjie5, kunyomi, loengfan ]
+  overwrite_comment: false
+  dictionary: gukwan
+
+kanas:
+  tag: kanas
+  dictionary: kanas
+  enable_user_dict: false
+  prefix: "G"
+  suffix: ";"
+  tips: 〔假名〕
+
+kaomoji:
+  tag: kaomoji
+  dictionary: kaomoji
+  enable_user_dict: false
+  prefix: "K"
+  suffix: ";"
+  tips: 〔顔文字〕
+
+kikwin:
+  tag: kikwin
+  dictionary: kikwin
+  enable_user_dict: false
+  prefix: "R"
+  suffix: ";"
+  tips: 〔和文〕
+
+special_typing:
+  tags: [ kanas, kaomoji, kikwin ]
+  overwrite_comment: false
+
+emoji_cantonese_suggestion:
+  opencc_config: emoji_cantonese.json
+  option_name: emoji_cantonese_suggestion
+  tips: all
+  inherit_comment: true
+
+punctuator:
+  import_preset: symbols-gukwan
+
+key_binder:
+  import_preset: default
+
+# 功能
+recognizer:
+  import_preset: default
+  patterns:
+    punct: "^/([0-9]0?|[a-z]+)$"
+    jyut6ping3: "^J[a-z']*;?$"
+    luna_pinyin: "^P[a-z']*;?$"
+    cangjie5: "^C[a-z]*;?$"
+    kunyomi: "^F[a-z']*;?$"
+    loengfan: "^L[a-z']*;?$"
+    kanas: "^G[a-zA-Z-]*;?$"
+    kaomoji: "^K[a-z-]*;?$"
+    kikwin: "^R[a-z-]*;?$"
+    unicode: "^U[a-f0-9]+"
+    number: "^S[0-9]+[.]?[0-9]*"
+    calculator: "^cC.+"
+    gregorian_to_lunar: "^N[0-9]{1,8}"
+
+## 時間日期鍵值
+date_gukwan:
+  date: rk       # 日期： 2022-11-29 2022年11月29日 等各種格式 
+  time: sg       # 時間： 10:31 10:31:04
+  week: sk       # 星期： 星期二 禮拜二 週二 火曜日
+  datetime: dt   # ISO 8601： 2022-11-29T18:13:11+08:00
+  timestamp: ts  # 時間戳： 1669716794
+
+## 農曆鍵值
+lunar: nl        # 農曆： 二〇二三年冬月二十 癸卯年（兔）冬月二十
+
+## 測試用
+is_in_user_dict: false

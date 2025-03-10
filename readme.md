@@ -34,8 +34,9 @@ This work is licensed under a
 菊韻可支持多地方言，但目前僅支持小欖話。已爲各種方言口音預設大量轉換規則同模糊音，方便定製。
 
 - 小欖話
-  - 鎮區音
-- 廣州話（僅供參攷）
+  - `gukwan-siulaam`（鎮區音）
+- 廣州話
+  - `jyut6ping3-gw`：以菊韻配置調用`rime-cantonese`
 - 分韻音（古代音，僅供參攷）
 - 菊韻音（古代音，僅供參攷）
 
@@ -130,6 +131,7 @@ This work is licensed under a
 **※寬式音標竝不能完全代表實際發音※**
 
 - `gukwan.schema.yaml`：調試用・自用（**請勿刪除**）
+- `jyut6ping3-gw.schema.yaml`：以菊韻配置調用`rime-cantonese`
 
 #### 預設古代音方案
 
@@ -150,7 +152,7 @@ This work is licensed under a
   - `gukwan-siulaam-ps.schema.yaml`：寬式音標版
 
 - `gukwan-canton.schema.yaml`：廣州音
-  - 準確來講此方案係廣州風，並不能準確反映所有廣州發音。若欲使用眞正廣州音打字，可參攷以下方案：[rime/rime-cantonese: Rime Cantonese input schema | 粵語拼音輸入方案](https://github.com/rime/rime-cantonese)
+  - 準確來講此方案係廣州風，並不能準確反映所有廣州發音。若欲使用眞正廣州音打字，請使用`jyut6ping3-gw.scheme.yaml`
 
 ### 字詞
 
