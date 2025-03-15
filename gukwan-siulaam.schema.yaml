@@ -14,7 +14,7 @@ __include: gukwan.schema:/
 schema:
   schema_id: gukwan-siulaam
   name: 菊韻小欖音
-  version: "14.1b"
+  version: "14.2b"
   author:
     靈帝（Hoengsaan）
   
@@ -110,10 +110,10 @@ speller:
     - xform/^hwun(?=\d)/hun$1/              # 口音補充(hw->h)：「桓」讀若fun者
     #- xform/^hwun(?=\d)/wun$1/             # 口音補充(hw->w)：「桓」讀若wun者
     
-    #- xform/^xu(?=\d)/hu$1/                # 遇攝合口(*u->hu)：「狐」讀作fu4
-    - xform/^xu(?=\d)/wu$1/                 # 遇攝合口(*u->wu)：「狐」讀作wu4 多數方音 
-    - xform/^vu(?=\d)/hu$1/                 # 遇攝合口(*u->hu)：「護」讀作fu6
-    #- xform/^vu(?=\d)/wu$1/                # 遇攝合口(*u->wu)：「護」讀作wu6 多數方音
+    - derive/^xu(?=\d)/hu$1/                # 遇攝合口(*u->hu)：「狐」讀作fu4
+    - derive/^xu(?=\d)/wu$1/                # 遇攝合口(*u->wu)：「狐」讀作wu4 多數方音 
+    - derive/^vu(?=\d)/hu$1/                # 遇攝合口(*u->hu)：「護」讀作fu6
+    - derive/^vu(?=\d)/wu$1/                # 遇攝合口(*u->wu)：「護」讀作wu6 多數方音
     
     #聲母——分韻（現代音無用）
     - xform/^ngiuk/njuk/                    # 疑母齶化(ngiuk->njuk)
