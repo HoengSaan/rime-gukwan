@@ -12,7 +12,7 @@
 
 ---
 name: gukwan.words2
-version: "13.4b"
+version: "14.4b"
 sort: by_weight
 use_preset_vocabulary: true
 ...
@@ -21,6 +21,12 @@ use_preset_vocabulary: true
 菊韻輸入法
 菊韻粵語輸入法
 小欖話
+蘭豆	laan1 dau6
+南灣	naam4 waen4
+南灣湖	naam4 waen4 xu4
+西灣	sai1 waen4
+西灣	sai1 waen4 xu4
+劘書  mai1 sjyo1
 
 # English Alphabet
 A	ei1

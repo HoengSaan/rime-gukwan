@@ -12,7 +12,7 @@
 
 ---
 name: gukwan.chars
-version: "14.1b"
+version: "14.4b"
 sort: by_weight
 ...
 
@@ -648,7 +648,7 @@ sort: by_weight
 𢔋	sung1	0%
 樅	cung1	0%
 鏦	cung1	0%
-從	cung1	0%	
+從	cung1	0%
 暰	cung1	0%
 䗥	cung1	0%
 瑽	cung1	0%
@@ -12883,13 +12883,13 @@ sort: by_weight
 鬌	do6	0%
 䲊	do6	0%
 嶞	do6	0%
-妥	to2	
+妥	to2	0%
 嫷	to2	0%
 隋	to2	0%
 䲊	to2	0%
 㟎	to2	0%
 墮	to2	0%
-橢	to2	
+橢	to2	0%
 𨼰	to2	0%
 鵎	to2	0%
 麼	mo5	
@@ -16058,7 +16058,7 @@ sort: by_weight
 卂	zrooi3	0%
 輟	zrooi3	0%
 稅	sjooi3	
-說	sjooi3	
+說	sjooi3	0%
 裞	sjooi3	0%
 蛻	sjooi3	0%
 帨	sjooi3	0%
@@ -21265,9 +21265,9 @@ sort: by_weight
 發	faat3	
 颰	faat3	0%
 冹	faat3	0%
-韤	maat6	
-韈	maat6	
-襪	maat6	
+韤	maat6	0%
+韈	maat6	0%
+襪	maat6	0%
 𥄎	maat6	0%
 㒝	maat6	0%
 䬂	hyut3	0%

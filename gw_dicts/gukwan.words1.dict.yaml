@@ -13,15 +13,10 @@
 
 ---
 name: gukwan.words1
-version: "13.1b"
+version: "14.4b"
 sort: by_weight
 use_preset_vocabulary: true
 ...
-
-菊韻
-菊韻輸入法
-菊韻粵語輸入法
-小欖話
 
 小欖鎮	
 小欖	
@@ -452,3 +447,4 @@ use_preset_vocabulary: true
 玩竹馬	hwaan2 zruk1 maa5
 耍公仔	shaa2 gung1 zaai2
 嗰	goi2
+飯焦	faan6 zeu1

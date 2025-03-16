@@ -13,7 +13,7 @@
 
 ---
 name: gukwan.words
-version: "13.0b"
+version: "14.4b"
 sort: by_weight
 ... 
 
@@ -1572,7 +1572,7 @@ sort: by_weight
 餅店
 餅電
 餅家
-餅乾  
+餅乾
 餅印
 餅卡
 餅咭
@@ -2143,7 +2143,7 @@ sort: by_weight
 波蘭
 波鱲
 波樓
-玻璃
+玻璃	bo1 le1
 坡壘
 波力
 笸籮
@@ -2938,7 +2938,7 @@ sort: by_weight
 差額
 差訛
 差皮
-搓皮
+搓皮	chaai1 pi4
 差晒
 差失
 叉燒
@@ -3078,7 +3078,7 @@ sort: by_weight
 扠喎
 扠禍
 搋波
-搓波
+搓波	chaai1 njan4
 猜波
 猜測
 猜忌
@@ -5947,7 +5947,7 @@ sort: by_weight
 菜薳
 菜軟
 菜遠
-菜欄
+菜欄	coi3 laan1
 賽例
 蔡倫
 菜籮
@@ -7724,7 +7724,7 @@ sort: by_weight
 低丘
 低腰
 低級
-低欄
+低欄	dai1 laan1
 低利
 低廉
 低落
@@ -16806,7 +16806,7 @@ sort: by_weight
 果蠅
 果肉
 果園
-果欄
+果欄	gwo2 laan1
 果洛
 果皮
 果脯
@@ -17096,7 +17096,8 @@ sort: by_weight
 蝦人
 蝦仁
 蝦形
-蝦丸
+蝦丸	haa1 hjyun1
+蝦丸	haa1 hjyun4
 蝦球
 哈喇
 蝦瘌
@@ -18243,7 +18244,7 @@ sort: by_weight
 後勤
 後期
 候缺
-後欄
+後欄	hau6 laan1
 後嚟
 後涼
 後來
@@ -19008,7 +19009,7 @@ sort: by_weight
 荷葉
 何其
 河渠
-荷蘭
+荷蘭	ho4 laan1
 河流
 河狸
 何來
@@ -21158,8 +21159,8 @@ sort: by_weight
 油水
 游水
 揉碎
-游說
-遊說
+游說	jau4 sjooi3
+遊說	jau4 sjooi3
 柔順
 遊絲
 遊星
@@ -21338,10 +21339,10 @@ sort: by_weight
 鼬獾
 又噉
 又係
-右㕭
+右㕭	jau5 njaeu1
+右㕭	jau5 aeu1
 右優
 右囿
-右撓
 右翼
 右舷
 右玉
@@ -21534,7 +21535,6 @@ sort: by_weight
 依稀
 醫學
 依泣
-咿㕭
 咿呦
 伊人
 伊挹
@@ -22966,7 +22966,7 @@ sort: by_weight
 羊絨
 洋琴
 羊羣
-羊欄
+羊欄	jong4 laan1
 洋樓
 洋流
 楊柳
@@ -23133,7 +23133,10 @@ sort: by_weight
 浴鹽
 育嬰
 玉容
-肉丸
+肉丸	njuk6 hjyun1
+肉丸	njuk6 hjyun4
+肉圓	njuk6 hjyun1
+肉圓	njuk6 hjyun4
 浴球
 獄吏
 浴簾
@@ -23448,7 +23451,7 @@ sort: by_weight
 魚鰭
 襦裙
 餘缺
-魚欄
+魚欄	ngyo4 laan1
 漁撈
 魚柳
 愚陋
@@ -23738,7 +23741,8 @@ sort: by_weight
 院士
 婉惜
 惋惜
-丸仔
+丸仔	hjyun1 zaai2
+丸仔	hjyun4 zaai2
 婉謝
 丸子
 院子
@@ -24448,7 +24452,7 @@ sort: by_weight
 騎警
 騎劫
 騎樓
-奇離
+奇離	ke4 le4
 騎呢
 騎驢
 騎馬
@@ -25458,7 +25462,6 @@ sort: by_weight
 躝開
 躝屍
 躝癱
-欄藤
 躝籐
 懶得
 懶叻
@@ -25478,8 +25481,10 @@ sort: by_weight
 闌干
 欄圈
 讕係
-攔河
-欄河
+欄河	laan4 ho1
+攔河	laan4 ho1
+欄河	laan6 ho1
+攔河	laan6 ho1
 闌入
 讕言
 攔腰
@@ -26910,7 +26915,7 @@ sort: by_weight
 撂挑
 潦草
 料件
-繚繑
+繚繑	leu2 keu2
 料子
 聊且
 療程
@@ -28147,7 +28152,7 @@ sort: by_weight
 埋芡
 埋怨
 埋纜
-埋欄
+埋欄	maai4 laan1
 埋嚟
 埋籠
 埋碼
@@ -29023,7 +29028,7 @@ sort: by_weight
 靡爛
 瀰漫
 微米
-微微
+微微	mi1 mi1
 微妙
 微茫
 眉毛
@@ -31397,10 +31402,11 @@ sort: by_weight
 牛蠅
 牛肉
 牛乳
-牛丸
+牛丸	ngiau4 hjyun1
+牛丸	ngiau4 hjyun4
 牛蜞
 牛羣
-牛欄
+牛欄	ngiau4 laan1
 牛柳
 牛力
 牛郎
@@ -34226,7 +34232,7 @@ sort: by_weight
 篩選
 西天
 西鐵
-西灣
+西灣	sai1 waen4
 西環
 篩走
 西紙
@@ -35306,7 +35312,7 @@ sort: by_weight
 手稿
 手鞠
 手工
-手瓜
+手胍
 守寡
 搜刮
 手骨
@@ -36107,14 +36113,14 @@ sort: by_weight
 碎催
 碎錢
 稅單
-說服
+說服	sjooi3 fuk6
 稅款
 歲俸
 稅階
 稅基
 稅局
 稅官
-說客
+說客	sjooi3 haak3
 帥氣
 稅項
 歲月
@@ -37912,7 +37918,8 @@ sort: by_weight
 蔬果
 梳起
 疏開
-蓑衣
+蓑衣	so1 ji1
+蓑衣	suo1 ji1
 梭魚
 疏遠
 疏籬
@@ -39129,7 +39136,7 @@ sort: by_weight
 說法
 說謊
 雪紡
-雪茄
+雪茄	syut3 gaa1
 雪格
 雪鴿
 說教
@@ -40608,8 +40615,8 @@ sort: by_weight
 湯殼
 湯藥
 湯浴
-湯丸
-湯圓
+湯圓	tong1 hjyun1
+湯圓	tong1 hjyun4
 湯類
 湯麪
 劏舖
@@ -41548,7 +41555,9 @@ sort: by_weight
 頑民
 環面
 環幕
-頑皮
+頑皮	ngan6 pi4
+頑皮	ngwaen6 pi4
+頑皮	an6 pi4
 玩遍
 環抱
 玩耍
@@ -46085,10 +46094,10 @@ sort: by_weight
 左鍵
 阻腳
 阻嚇
-左㕭
+左㕭	zo2 njaeu1
+左㕭	zo2 aeu1
 左優
 左囿
-左撓
 左右
 左翼
 阻擾
@@ -47380,7 +47389,7 @@ sort: by_weight
 珠玉
 侏儒
 誅求
-豬欄
+豬欄	zryo1 laan1
 朱粒
 誅流
 朱鸝
@@ -48430,9 +48439,6 @@ sort: by_weight
 爆流量
 爆裂物
 爆馬檻
-爆馬欄
-爆馬欖
-爆馬纜
 爆破音
 爆破手
 爆晒表
@@ -48471,7 +48477,7 @@ sort: by_weight
 北姑雞
 北菇雞
 北果洲
-北荷蘭
+北荷蘭	bak1 ho4 laan1
 北海道
 北寒帶
 北鷹鵑
@@ -49025,17 +49031,17 @@ sort: by_weight
 波特率
 波夾棍
 波蘭語
-玻璃杯
-玻璃化
-玻璃膠
-玻璃鋼
-玻璃管
-玻璃瓦
-玻璃砂
-玻璃心
-玻璃水
-玻璃肚
-玻璃樽
+玻璃杯	bo1 le1 bui1
+玻璃化	bo1 le1 hwaa3
+玻璃膠	bo1 le1 gaeu1
+玻璃鋼	bo1 le1 goong3
+玻璃管	bo1 le1 gun2
+玻璃瓦	bo1 le1 ngaa5
+玻璃砂	bo1 le1 shaa1
+玻璃心	bo1 le1 sam1
+玻璃水	bo1 le1 sjooi2
+玻璃肚	bo1 le1 tu5
+玻璃樽	bo1 le1 zeon1
 菠蘿包
 菠蘿冰
 菠蘿彈
@@ -49489,7 +49495,7 @@ sort: by_weight
 猜情尋
 猜得透
 搋魚蛋
-搓魚蛋
+搓魚蛋	chaai1 ngyo4 daan2
 差旅費
 踩波車
 踩錯腳
@@ -50472,7 +50478,7 @@ sort: by_weight
 初級班
 初生蛋
 搓手液
-搓順咗
+搓順咗	chaai1 sjeon6 zho2
 初中生
 楚懷王
 錯別字
@@ -50562,7 +50568,7 @@ sort: by_weight
 長命斜
 長撓撓
 長蓬力
-長沙灣
+長沙灣	criong4 shaa1 waen4
 長生果
 牆身櫃
 長生店
@@ -52921,7 +52927,7 @@ sort: by_weight
 花崗石
 花鼓戲
 花骨朵
-花果欄
+花果欄	hwaa1 gwo2 laan1
 華嚴宗
 花旗國
 花旗參
@@ -53420,7 +53426,7 @@ sort: by_weight
 佛山人
 佛山了
 佛手柑
-佛手瓜
+佛手胍
 佛舍利
 佛跳牆
 否定詞
@@ -54013,7 +54019,7 @@ sort: by_weight
 加熱器
 加熱菸
 家用貨
-家欄雞
+家欄雞	gaa1 laan1 gai1
 加零一
 噶啷啷
 家麻雀
@@ -54125,7 +54131,8 @@ sort: by_weight
 鎅崩手
 鎅波袋
 𠝹波袋
-鎅玻璃
+鎅玻璃	gaai3 bo1 le1
+𠝹玻璃	gaai3 bo1 le1
 芥菜籽
 鎅豆腐
 𠝹豆腐
@@ -56072,7 +56079,7 @@ sort: by_weight
 貴姓名
 貴少少
 桂枝仔
-跪玻璃
+跪玻璃	gwai6 bo1 le1
 櫃員機
 跪榴蓮
 櫃桶仔
@@ -57015,7 +57022,7 @@ sort: by_weight
 稀冧冧
 稀淋淋
 希律王
-稀寥寥
+稀寥寥	hi1 leu1 leu1
 嬉皮仕
 嬉皮士
 犧牲品
@@ -57129,7 +57136,8 @@ sort: by_weight
 喫牢飯
 喫牛雜
 喫皇糧
-輕寥寥
+輕寥寥	heng1 liu1 liu1
+輕寥寥	heng1 leu1 leu1
 輕泡泡
 輕飄飄
 輕升升
@@ -57289,14 +57297,14 @@ sort: by_weight
 河東區
 荷花徑
 何君堯
-荷蘭豆
-荷蘭語
-荷蘭芹
-荷蘭牛
-荷蘭水
-荷蘭薯
-荷蘭撻
-荷蘭豬
+荷蘭豆	ho4 laan1 dau6
+荷蘭語	ho4 laan1 ngyo5
+荷蘭芹	ho4 laan1 kan4
+荷蘭牛	ho4 laan1	ngiau4
+荷蘭水	ho4 laan1 sjooi2
+荷蘭薯	ho4 laan1 sjyo4
+荷蘭撻	ho4 laan1	taat1
+荷蘭豬	ho4 laan1 zryo1
 荷李活
 荷里活
 河卵石
@@ -57845,7 +57853,7 @@ sort: by_weight
 空䆲䆲
 空框框
 空䆲䆡
-空寥寥
+空寥寥	hung1 leu1 leu1
 空落落
 胸膜炎
 匈牙利
@@ -59998,8 +60006,8 @@ sort: by_weight
 舅奶奶
 舅仔鞋
 求包養
-茄哩啡
-茄喱啡
+茄哩啡	ke1 le1 fe1
+茄喱啡	ke1 le1 fe1
 茄士咩
 茄汁豆
 騎兵隊
@@ -60010,12 +60018,8 @@ sort: by_weight
 騎騎聲
 騎樓底
 騎呢啡
-奇離怪
-奇離拐
-騎呢拐
-騎呢怪
-奇離位
-騎呢位
+奇離怪	ke4 le4 gwaai3
+奇離位	ke4 le4 wai6
 騎馬釘
 騎馬者
 騎田嶺
@@ -61143,6 +61147,7 @@ sort: by_weight
 螺絲帽
 螺絲母
 螺絲批
+螺絲錍
 螺絲頭
 鏍銯頭
 螺絲積
@@ -62328,7 +62333,8 @@ sort: by_weight
 墨丘利
 墨爾本
 墨魚骨
-墨魚丸
+墨魚丸	mak6 ngyo4 hjyun1
+墨魚丸	mak6 ngyo4 hjyun4
 墨魚頭
 墨魚站
 麥粒腫
@@ -62545,7 +62551,7 @@ sort: by_weight
 微擾論
 眉宇間
 微粒體
-微微雨
+微微雨	mei1 mei1 hjyu5
 眉毛鉗
 微山縣
 眉心闊
@@ -64108,7 +64114,7 @@ sort: by_weight
 咬木蝨
 咬我食
 咬心口
-拗手瓜
+拗手胍
 咬脣妝
 囈契弟
 𠼮契弟
@@ -66232,7 +66238,7 @@ sort: by_weight
 手工菜
 手工藝
 手工檯
-手瓜硬
+手胍硬
 手痕痕
 守行爲
 首日封
@@ -66605,7 +66611,7 @@ sort: by_weight
 衰衰地
 衰衰噉
 衰仔紙
-水玻璃
+水玻璃	sjooi2 bo1 le1
 水波爐
 水撥水
 水產田
@@ -66714,7 +66720,7 @@ sort: by_weight
 水族館
 碎冰船
 碎布條
-說服力
+說服力	sjooi3 fuk6 lik6
 碎吟吟
 碎淫淫
 稅務局
@@ -67583,7 +67589,7 @@ sort: by_weight
 笑撚咗
 笑埋右
 笑咪咪
-笑微微
+笑微微	siu3 mei1 mei1
 笑眯眯
 笑面虎
 少奶奶
@@ -68028,7 +68034,7 @@ sort: by_weight
 酸迷草
 酸味草
 酸味味
-酸微微
+酸微微	syun1 mi1 mi1
 酸微仔
 宣武門
 酸梅醬
@@ -71026,8 +71032,10 @@ sort: by_weight
 左下方
 左口魚
 左後方
-左㕭仔
-左撓仔
+左㕭仔	zo2 njaeu1 zaai2
+左㕭仔	zo2 aeu1 zaai2
+左㕭仔	zo2 njaeu1 zai2	3%
+左㕭仔	zo2 aeu1 zai2	3%
 左丘明
 左右啦
 左右手
@@ -72601,7 +72609,7 @@ sort: by_weight
 不修邊幅
 不守信用
 不死生物
-不碎玻璃
+不碎玻璃	bat1 syi3 bo1 le1
 不信任案
 不恤人言
 不思進取
@@ -73064,11 +73072,11 @@ sort: by_weight
 波光粼粼
 波瀾起伏
 波瀾壯闊
-玻璃纖維
-玻璃眼鏡
-玻璃生菜
-玻璃絲襪
-玻璃試管
+玻璃纖維	bo1 le1 cim1 wai4
+玻璃眼鏡	bo1 le1 ngaen5 geng3
+玻璃生菜	bo1 le1 shaang1 coi3
+玻璃絲襪	bo1 le1 sy1 mat6
+玻璃試管	bo1 le1 sji3 gun2
 玻利維亞
 波羅的海
 波平如鏡
@@ -74329,7 +74337,7 @@ sort: by_weight
 初歸新抱
 初歸心抱
 初歸新婦
-搓下波先
+搓下波先	chaai1 haa5 bo1 sin1
 初一流流
 搓圓㩒扁
 搓圓撳扁
@@ -76047,7 +76055,7 @@ sort: by_weight
 當之有愧
 當之無愧
 當住佢講
-擋風玻璃
+擋風玻璃	doong2 fung1 bo1 le1
 檔案建立
 檔案屬性
 檔案總管
@@ -76906,7 +76914,7 @@ sort: by_weight
 火山孝子
 火成碎屑
 火燒火燎
-火燒後欄
+火燒後欄	hwo2 sjiu1 hau6 laan1
 火燒眉毛
 火燒眼眉
 火燒豬頭
@@ -77292,7 +77300,7 @@ sort: by_weight
 風吹雨打
 風馳電掣
 封頂儀式
-風檔玻璃
+風擋玻璃	fung1 doong2 bo1 le1
 風度翩翩
 風花雪月
 風化作用
@@ -77703,7 +77711,7 @@ sort: by_weight
 攪邊科啊
 搞出人命
 搞錯咗嘞
-攪得埋欄
+攪得埋欄	gaeu2 dak1 maai4 laan1
 搞風搞雨
 攪風攪雨
 搞咁多小
@@ -77712,7 +77720,7 @@ sort: by_weight
 搞唔清楚
 攪唔惦咩
 絞唔埋纜
-攪唔埋欄
+攪唔埋欄	gaeu2 m4 maai4 laan1
 搞唔明白
 搞埋一齊
 搞乜春呀
@@ -78771,7 +78779,7 @@ sort: by_weight
 講嚟聽下
 講嚟話長
 講唔過佢
-講唔埋欄
+講唔埋欄	gong2 m4 maai4 laan1
 講乜春呀
 講乜嘢㗎
 講乜撚嘢
@@ -79462,7 +79470,7 @@ sort: by_weight
 光怪陸離
 光光滑滑
 光合作用
-光學玻璃
+光學玻璃	gwong1 hok6 bo1 le1
 光陰似箭
 光陰荏苒
 光二極管
@@ -80446,9 +80454,9 @@ sort: by_weight
 何以見得
 何以自處
 何奇不有
-荷蘭番茄
-荷蘭水蓋
-荷蘭宿舍
+荷蘭番茄	ho4 laan1 faan1 kia2
+荷蘭水蓋	ho4 laan1 sjooi2 goi3
+荷蘭宿舍	ho4 laan1 suk1 sjia2
 何年何月
 何西阿書
 何氏家祠
@@ -82136,7 +82144,7 @@ sort: by_weight
 有根有據
 有根有蔃
 有緊要事
-有機玻璃
+有機玻璃	jau5 gi1 bo1 le1
 有機結合
 有機可乘
 有機食物
@@ -83876,7 +83884,7 @@ sort: by_weight
 佢冇錯吖
 佢冇乜料
 佢呢種人
-佢手瓜硬
+佢手胍硬
 佢死佢賤
 佢食齋嘅
 佢想幫人
@@ -83911,7 +83919,7 @@ sort: by_weight
 傾鈴哐啷
 傾兩句偈
 傾唔落去
-傾唔埋欄
+傾唔埋欄	kwing1 m4 maai4 laan1
 傾盆大雨
 傾盤大雨
 傾心吐膽
@@ -84494,8 +84502,8 @@ sort: by_weight
 雷雨交加
 雷厲風行
 雷姆斯汀
-擂沙湯丸
-擂沙湯圓
+擂沙湯圓	lyi4 shaa1 tong1 hjyun1
+擂沙湯圓	lyi4 shaa1 tong1 hjyun4
 雷神之錘
 鐳射唱機
 鐳射唱片
@@ -87292,8 +87300,8 @@ sort: by_weight
 你住邊度
 女仔之家
 女繼承人
-女人湯丸
-女人湯圓
+女人湯圓	nyo5 njan4 toong1 hjyun1
+女人湯圓	nyo5 njan4 toong1 hjyun4
 女人之家
 女人不愛
 女流之輩
@@ -89566,8 +89574,8 @@ sort: by_weight
 手腳唔好
 手工勞動
 手工藝品
-手瓜起腱
-手瓜起𦟌
+手胍起腱
+手胍起𦟌
 手下敗將
 手下留情
 手痕腳痕
@@ -90357,7 +90365,7 @@ sort: by_weight
 食不果腹
 食不厭精
 食不知味
-食玻璃大
+食玻璃大	sjik6 bo1 le1 daai6
 食餐便飯
 食餐勁嘅
 食七咁食
@@ -95176,7 +95184,7 @@ sort: by_weight
 飽到上心口
 飽暖思淫慾
 飽暖思淫欲
-飽死荷蘭豆
+飽死荷蘭豆	baeu2 si2 ho4 laan1 dau6
 飽和脂肪酸
 北塞浦路斯
 北京青年報
@@ -98875,7 +98883,7 @@ sort: by_weight
 可望而不可及
 可望而不可即
 可轉換同位素
-荷蘭皇家航空
+荷蘭皇家航空	ho4 laan1 wong4 gaa1 hoong4 hung1
 河水不犯井水
 香港房屋協會
 香港減廢網站
@@ -101461,8 +101469,8 @@ sort: by_weight
 啞巴喫黃連，有苦說不出
 亞茂整餅，冇嗰樣整嗰樣
 亞洲太平洋經濟合作組織
-飽死荷蘭豆，餓死韭菜頭
-飽死荷蘭豆，餓死旱芹菜
+飽死荷蘭豆，餓死韭菜頭	baeu2 si2 ho4 laan1 dau6 ngo6 si2 giau2 coi3 tau4
+飽死荷蘭豆，餓死旱芹菜	baeu2 si2 ho4 laan1 dau6 ngo6 si2 hon5 kan4 coi3
 不怕不識貨，就怕貨比貨
 不怕不識貨，只怕貨比貨
 不做虧心事，不怕鬼敲門
