@@ -13,7 +13,7 @@
 
 ---
 name: gukwan.words
-version: "14.4b"
+version: "14.5b"
 sort: by_weight
 ... 
 
@@ -2527,7 +2527,7 @@ sort: by_weight
 報價
 報界
 報格
-報更
+報更	bou3 gaang1
 布巾
 佈景
 報警
@@ -3509,7 +3509,7 @@ sort: by_weight
 炒家
 吵架
 炒價
-炒更
+炒更	chaeu2 gaang1
 炒客
 炒起
 炒友
@@ -4451,7 +4451,7 @@ sort: by_weight
 旬課
 巡房
 馴虎
-巡更
+巡更	ceon4 gaang1
 秦艽
 巡警
 秦國
@@ -5660,7 +5660,8 @@ sort: by_weight
 槍決
 猖獗
 猖厲
-窗簾
+窗簾	chiong1 lim2
+窗簾	chiong1 lim1
 窗欞
 蹌踉
 猖亂
@@ -6944,7 +6945,7 @@ sort: by_weight
 打火
 打風
 打架
-打更
+打更	daa2 gaang1
 打交
 打跤
 打搞
@@ -8342,7 +8343,7 @@ sort: by_weight
 地租
 地主
 地磚
-趯更
+趯更	dek3 gaang1
 趯佬
 趯路
 趯走
@@ -8806,7 +8807,7 @@ sort: by_weight
 頂端
 頂峰
 頂格
-頂更
+頂更	ding2 gaang1
 頂頸
 頂角
 頂缸
@@ -9255,7 +9256,7 @@ sort: by_weight
 當家
 當駕
 當街
-當更
+當更	doong1 gaang1
 當今
 當局
 當歸
@@ -10043,7 +10044,6 @@ sort: by_weight
 化身
 化石
 化水
-化算
 化痰
 化爲
 化齋
@@ -12951,16 +12951,16 @@ sort: by_weight
 間接
 諫阻
 間中
-更次
+更次	gaang1 cy3
 耕地
-更夫
+更夫	gaang1 fu1
 耕犁
-更練
+更練	gaang1 lin6
 耕田
-更亭
+更亭	gaang1 ting2
 耕耘
 耕仔
-更卒
+更卒	gaang1 zeot1
 耕作
 耕種
 鴿派
@@ -13067,7 +13067,7 @@ sort: by_weight
 交火
 交鋒
 交界
-交更
+交更	gaeu1 gaang1
 交吉
 交媾
 轇轕
@@ -17144,7 +17144,7 @@ sort: by_weight
 下頷
 下晏
 下壓
-下巴
+下巴	haa6 paa4
 下把
 下靶
 下班
@@ -19494,7 +19494,7 @@ sort: by_weight
 看押
 刊登
 看待
-看更
+看更	hon1 gaang1
 看顧
 看管
 刊物
@@ -20891,7 +20891,8 @@ sort: by_weight
 逸蕩
 溢價
 日間
-日更
+日更	njat6 gaang1
+日更	njat6 gang1
 日記
 日光
 日校
@@ -20943,10 +20944,7 @@ sort: by_weight
 憂憤
 幽浮
 幽科
-抽褲
 拞褲
-揄褲
-摳褲
 休假
 幽居
 憂懼
@@ -21435,7 +21433,7 @@ sort: by_weight
 偌大
 夜店
 夜間
-夜更
+夜更	jaa6 gaang1
 夜機
 夜景
 夜鬼
@@ -21815,7 +21813,7 @@ sort: by_weight
 義父
 誼父
 二伏
-二更
+二更	nji6 gaang1
 義教
 二偈
 異己
@@ -26446,9 +26444,8 @@ sort: by_weight
 掄刀
 輪到
 磷火
-輪奸
 輪姦
-輪更
+輪更	leon4 gaang1
 鱗甲
 鄰近
 鄰居
@@ -27246,7 +27243,7 @@ sort: by_weight
 落格
 落膈
 落隔
-落更
+落更	look6 gaang1
 落機
 落腳
 落降	look6 gong3
@@ -30076,8 +30073,7 @@ sort: by_weight
 冒尖
 霧狀
 慕士
-妹丁
-妹釘
+妹丁	mui1 deng1
 妹仔
 妹豬
 霉病
@@ -30406,7 +30402,8 @@ sort: by_weight
 拿西
 拿手
 拿獲
-哪吒
+哪吒	naa4 zraa1
+那吒	naa4 zraa1
 哪個
 那個
 哪兒
@@ -30863,7 +30860,7 @@ sort: by_weight
 五福
 五服
 午間
-五更
+五更	ngu5 gaang1
 五金
 五覺
 五穀
@@ -33375,7 +33372,7 @@ sort: by_weight
 菩薩
 蒲扇
 葡撻
-浮頭
+浮頭	pu4 tau4
 蒲頭
 蒲臺
 葡糖
@@ -33903,7 +33900,7 @@ sort: by_weight
 散匪
 散貨
 散架
-散更
+散更	saan2 gaang1
 散件
 散叫
 散工
@@ -35787,7 +35784,7 @@ sort: by_weight
 四端
 四化
 四方
-四更
+四更	si3 gaang1
 四郊
 四九
 四舊
@@ -37977,7 +37974,7 @@ sort: by_weight
 所在
 傻屄
 傻蛋
-傻更
+傻更	sho4 gaang1
 傻嘅
 傻瓜
 傻下
@@ -39448,7 +39445,7 @@ sort: by_weight
 體罰
 睇火
 體格
-睇更
+睇更	tai2 gaang1
 睇偈
 體感
 睇緊
@@ -44091,10 +44088,11 @@ sort: by_weight
 這樣
 這裏
 這麼
-姐妹
+姐妹	zei2 mui6
+姐妹	zy2 mui6
 這些
 赭石
-姐姐
+姐姐	zia6 zia1 
 借詞
 藉詞
 借錢
@@ -44191,11 +44189,11 @@ sort: by_weight
 蓆飯
 蓆嗲
 蓆西
-精乖
-精叻
-精嚦
-精𥌮
-精仔
+精乖	zeng1 gwaai1
+精叻	zeng1 lek1
+精嚦	zeng1 lik1
+精仔	zeng1 zaai2
+精仔	zeng1 zai2	5%
 井號
 井鹽
 井然
@@ -44760,7 +44758,8 @@ sort: by_weight
 指望
 指摹
 指模
-姊妹
+姊妹	zei2 mui6
+姊妹	zy2 mui6
 紙媒
 酯酶
 指南
@@ -44810,7 +44809,7 @@ sort: by_weight
 子侄
 子姪
 只准
-姊姊
+姊姊	ze1 ze1
 子嗣
 紙字
 指尖
@@ -45807,7 +45806,7 @@ sort: by_weight
 摺刀
 接髮
 接近
-接更
+接更	zip3 gaang1
 接機
 接見
 接管
@@ -46717,7 +46716,7 @@ sort: by_weight
 祖墳
 早放
 祖父
-早更
+早更	zou2 gaang1
 組件
 組閣
 祖國
@@ -49018,8 +49017,10 @@ sort: by_weight
 表示層
 裱畫鋪
 表姪女
-表姐妹
-表姊妹
+表姐妹	biu2 zei2 mui6
+表姐妹	biu2 zia2 mui6
+表姊妹	biu2 zei2 mui6
+表姊妹	biu2 zy2 mui6
 波阿斯
 波斑鴇
 波板糖
@@ -49649,7 +49650,7 @@ sort: by_weight
 炒一丁
 炒魷魚
 炒冷飯
-炒孖更
+炒孖更	chaeu2 maa1 gaang1
 炒孖展
 炒米餅
 炒牛河
@@ -52364,8 +52365,8 @@ sort: by_weight
 叮噹貓
 叮噹聲
 叮翻熱
-丁咁大
-丁咁多
+丁咁大	deng1 gom3 daai1
+丁咁多	deng1 gom3 duo1
 汀九橋
 丁香油
 丁二烯
@@ -54382,7 +54383,7 @@ sort: by_weight
 教唆罪
 教書佬
 教書匠
-教精你
+教精你	gaeu3 zeng1 ni5
 教職工
 校正子
 覺覺豬
@@ -55093,7 +55094,10 @@ sort: by_weight
 幾條女
 幾回味
 幾仔乸
-幾姐妹
+幾姐妹	gi2 zia2 mui6
+幾姐妹	gi2 zei2 mui6
+幾姊妹	gi2 zy2 mui6
+幾姊妹	gi2 zei2 mui6
 幾張單
 紀傳體
 記錯咗
@@ -56398,7 +56402,7 @@ sort: by_weight
 下眼瞼
 下眼皮
 下齶骨
-下巴頦
+下巴頦	haa6 paa4 hoi4
 下死勁
 下水管
 夏時制
@@ -57052,7 +57056,7 @@ sort: by_weight
 起碼係
 起尾注
 起模範
-起五更
+起五更	hi2 ngu5 gaang1
 起跑點
 起跑線
 起撲桿
@@ -58188,7 +58192,7 @@ sort: by_weight
 人類學
 人力車
 人老啦
-人老精
+人老精	njan4 lou5 zeng1
 人唔出
 人唔笑
 人馬座
@@ -60091,7 +60095,9 @@ sort: by_weight
 佢點啦
 佢都係
 佢隔離
-佢咁精
+佢咁精	kyo5 gom3 zeng1
+佢咁精	hyo5 gom3 zeng1
+佢咁精	jyo5 gom3 zeng1
 佢個度
 佢講過
 佢過離
@@ -60654,7 +60660,7 @@ sort: by_weight
 立立重
 立時間
 甩包袱
-甩下巴
+甩下巴	lat1 haa6 paa4
 甩下扒
 甩下爬
 甩鞋帶
@@ -63250,7 +63256,8 @@ sort: by_weight
 墓誌銘
 墓葬區
 墓葬羣
-妹仔丁
+妹仔丁	mui1 zaai2 deng1
+妹仔丁	mui1 zai2 deng1	5%
 妹仔梯
 妹仔肚
 煤儲量
@@ -65502,7 +65509,7 @@ sort: by_weight
 散咗嘞
 散伙飯
 涮火鍋
-散更鑼
+散更鑼	saan2 gaang1 lo4
 散逸層
 傘形科
 散熱網
@@ -67638,7 +67645,7 @@ sort: by_weight
 傻大個
 傻的嗎
 傻乎乎
-傻更更
+傻更更	sho4 gaang1 gaang1
 傻庚庚
 傻羹羹
 傻瓜機
@@ -67678,7 +67685,7 @@ sort: by_weight
 雙肩包
 相見好
 雙關語
-雙下巴
+雙下巴	shiong1 haa6 paa4
 雙行線
 傷害力
 雙殼類
@@ -68557,7 +68564,7 @@ sort: by_weight
 甜在心
 天青石
 天穿日
-天地更
+天地更	tin1 di6 gaang1
 天地線
 天地堂
 天花板
@@ -68869,7 +68876,10 @@ sort: by_weight
 唐殤帝
 唐肅宗
 唐宣宗
-堂姊妹
+堂姐妹	toong4 zei2 mui6
+堂姐妹	toong4 zia2 mui6
+堂姊妹	toong4 zei2 mui6
+堂姊妹	toong4 zy2 mui6
 唐中宗
 絛蟲綱
 饕餮紋
@@ -70326,8 +70336,8 @@ sort: by_weight
 姐弟戀
 姐係點
 姐係噉
-姐妹花
-姐妹服
+姐妹花	zei2 mui6 hwaa1
+姐妹服	zia2 mui6 hwaa1
 這陣子
 借畀我
 借財仔
@@ -70358,12 +70368,12 @@ sort: by_weight
 脊柱裂
 隻飛機
 蓆攝底
-精出骨
-精到佢
-精甩辮
-精甩邊
-精甩尾
-精精地
+精出骨	zeng1 cjeot1 gwat1
+精到佢	zeng1 dou3 kyo5
+精甩辮	zeng1 lat1 bin1
+精甩邊	zeng1 lat1 bin1
+精甩尾	zeng1 lat1 mi5
+精精地	zeng1 zeng1 di2
 井田制
 正斗嘢
 正到痹
@@ -70586,10 +70596,18 @@ sort: by_weight
 子模型
 子母牀
 子母奶
-姊妹裙
-姐妹裙
-姊妹篇
-姊妹團
+姊妹裙	zy2 mui6 kwan4
+姊妹裙	zei2 mui6 kwan4
+姐妹裙	zei2 mui6 kwan4
+姐妹裙	zia2 mui6 kwan4
+姊妹篇	zy2 mui6 pin1
+姊妹篇	zei2 mui6 pin1
+姐妹篇	zia2 mui6 pin1
+姐妹篇	zei2 mui6 pin1
+姊妹團	zy2 mui6 tyun4
+姊妹團	zei2 mui6 tyun4
+姐妹團	zia2 mui6 tyun4
+姐妹團	zei2 mui6 tyun4
 子目錄
 指南鶴
 指南針
@@ -73276,7 +73294,7 @@ sort: by_weight
 半紅不黑
 半日工作
 半夜雞啼
-半夜三更
+半夜三更	bun2 jaa6 saam1 gaang1
 半企半挨
 半勞動力
 半老徐娘
@@ -75365,7 +75383,8 @@ sort: by_weight
 抵足而臥
 帝王企鵝
 第個禮拜
-弟兄姊妹
+弟兄姊妹	dai6 hwing1 zei2 mui6
+弟兄姊妹	dai6 hwing1 zy2 mui6
 第一夫人
 第一個包
 第一二個
@@ -77840,7 +77859,8 @@ sort: by_weight
 金元外交
 金眶鶲鶯
 金蘭之交
-金蘭姊妹
+金蘭姊妹	gam1 laan4 zei2 mui6
+金蘭姊妹	gam1 laan4 zy2 mui6
 甘露糖醇
 今晚返去
 今晚肥仔
@@ -79564,7 +79584,7 @@ sort: by_weight
 下流社會
 下落不明
 夏目漱石
-下巴輕輕
+下巴輕輕	haa6 paa4 heng1 heng1
 下扒輕輕
 下舖上居
 下世投胎
@@ -80341,7 +80361,10 @@ sort: by_weight
 輕重緩急
 輕重主次
 兄弟通訊
-兄弟姊妹
+兄弟姊妹	hwing1 dai6 zei2 mui6
+兄弟姊妹	hwing1 dai6 zy2 mui6
+兄弟姐妹	hwing1 dai6 zia2 mui6
+兄弟姐妹	hwing1 dai6 zei2 mui6
 兄弟子侄
 興奮高潮
 興風作浪
@@ -83840,7 +83863,12 @@ sort: by_weight
 佢坐十碌
 佢大過我
 佢大聲嗌
-佢哋好精
+佢哋好精	kyo5 di6 hou2 zeng1
+佢哋好精	hyo5 di6 hou2 zeng1
+佢哋好精	jyo5 di6 hou2 zeng1
+佢哋好精	kyo5 li6 hou2 zeng1
+佢哋好精	hyo5 li6 hou2 zeng1
+佢哋好精	jyo5 li6 hou2 zeng1
 佢哋雙方
 佢對大家
 佢瞓唔夠
@@ -85216,7 +85244,14 @@ sort: by_weight
 聯立方程
 攣埋身瞓
 鸞飄鳳泊
-孿生姐妹
+孿生姐妹	lyun4 shang1 zia2 mui6
+孿生姐妹	lyun4 shang1 zei2 mui6
+孿生姊妹	lyun4 shang1 zy2 mui6
+孿生姊妹	lyun4 shang1 zei2 mui6
+孖生姐妹	lyun4 shang1 zia2 mui6
+孖生姐妹	lyun4 shang1 zei2 mui6
+孖生姊妹	lyun4 shang1 zy2 mui6
+孖生姊妹	lyun4 shang1 zei2 mui6
 亂七八糟
 亂車亂詆
 亂打亂撞
@@ -87405,8 +87440,8 @@ sort: by_weight
 嗌乜春呀
 挨打受氣
 挨打受罵
-挨更抵夜
-捱更抵夜
+挨更抵夜	ngaai4 gaang1 dai2 jaa6
+捱更抵夜	ngaai4 gaang1 dai2 jaa6
 捱飢抵冷
 挨飢抵餓
 捱飢抵餓
@@ -87484,7 +87519,7 @@ sort: by_weight
 拗心白菜
 毆幾多棍
 毆幾多碌
-熬更守夜
+熬更守夜	ngaau4 gaang1 sjiau2 jaa6
 咬定牙根
 咬定牙關
 咬緊牙根
@@ -88594,7 +88629,7 @@ sort: by_weight
 三氟化硼
 衫褲鞋襪
 三緘其口
-三更半夜
+三更半夜	saam1 gaang1 bun3 jaa6
 三句不離
 三個骨褲
 三腳兩步
@@ -89020,7 +89055,7 @@ sort: by_weight
 深耕細作
 心甘情願
 心甘命抵
-深更半夜
+深更半夜	sjam1 gaang1 bun3 jaa6
 心急火燎
 心急如焚
 心肌梗塞
@@ -90816,7 +90851,8 @@ sort: by_weight
 疏疏列列
 疏疏朗朗
 疏堂老表
-疏堂姊妹
+疏堂姊妹	sho1 toong4 zei2 mui6
+疏堂姊妹	sho1 toong4 zy2 mui6
 所見所聞
 所向無敵
 所以話咯
@@ -90833,7 +90869,7 @@ sort: by_weight
 傻裏傻氣
 傻佬來嘅
 傻傻地嘅
-傻傻更更
+傻傻更更	sho4 sho4 gaang1 gaang1
 傻傻庚庚
 傻傻戇戇
 傻傻㰮㰮
@@ -93372,13 +93408,14 @@ sort: by_weight
 脊椎動物
 隻字不提
 隻字未提
-精都唔笨
-精到冇譜
+精都唔笨	zeng1 do1 m4 ban6
+精到冇譜	zeng1 dou3 meau5 pu2
 精乖伶俐
 精乖靈利
 精人出口
-精埋一便
-精精地就
+精埋一便	zeng1 maai jat bin1
+精精地就	zeng1 zeng1 di6 zou6
+精精地就	zeng1 zeng1 di6 zau6
 井底之蛙
 井然有序
 井蛙之見
@@ -93653,9 +93690,8 @@ sort: by_weight
 指天篤地
 指天劃地
 紙紮公仔
-紙扎下巴
-紙紮下巴
-紙扎老虎
+紙紮下巴	zji2 zhaet3 haa6 paa4
+紙紮老虎
 只爭旦夕
 只爭朝夕
 只知其一
@@ -96840,12 +96876,12 @@ sort: by_weight
 萊齊耶三世
 來說是非者
 來回來去地
-落筆打三更
+落筆打三更	look6 bat1 daa2 saam1 gaang1
 洛杉磯時報
 洛杉磯湖人
 落得一場空
 落地喊三聲
-落手打三更
+落手打三更	look6 sjiau2 daa2 saam1 gaang1
 樂在大自然
 勞動生產率
 勞動生產力
@@ -96947,7 +96983,7 @@ sort: by_weight
 馬紹爾群島
 埋街飲井水
 埋街食井水
-埋手打三更
+埋手打三更	maai4 sjiau2 daa2 saam1 gaang1
 買板唔知埞
 賣布唔帶尺
 賣花讚花香
@@ -98187,7 +98223,7 @@ sort: by_weight
 脊髓灰質炎
 脊索動物門
 脊椎動物門
-精過冇尾蛇
+精過冇尾蛇	zeng1 gwo3 meau5 mi5 sjia4
 追到天腳底
 最大公因數
 最大公因子
@@ -98934,7 +98970,7 @@ sort: by_weight
 人肉搜索引擎
 人類乳突病毒
 人類豬型流感
-人老精鬼老靈
+人老精鬼老靈	njan4 lou5 zeng1 gwai2 lou5 leng4
 人唔笑龜都跪
 人民基本權利
 人民民主專政
@@ -99382,7 +99418,7 @@ sort: by_weight
 三步擸埋兩步
 三寸不爛之舌
 三藩市交通局
-三更窮五更富
+三更窮五更富	saam1 gaang1 kung4 ngu5 gaang1 fu3
 三句不離本行
 三件套式西裝
 三月二十一號
@@ -99779,7 +99815,7 @@ sort: by_weight
 種族中心主義
 衆目睽睽之下
 重形式輕內容
-仲精過冇尾蛇
+仲精過冇尾蛇	zrung6 zeng1 gwo3 meau5 mi5 sjia4
 豬乸都會上樹
 煮到埋嚟先食
 煮到埋嚟就食
@@ -100163,7 +100199,7 @@ sort: by_weight
 人一世，物一世
 人又老，錢又冇
 人類基因組計劃
-人老精，鬼老靈
+人老精，鬼老靈	njan4 lou5 zeng1 gwai2 lou5 leng4
 人唔笑，狗都吠
 人民英雄紀念碑
 人怕出名豬怕肥

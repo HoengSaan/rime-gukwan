@@ -13,7 +13,7 @@
 
 ---
 name: gukwan.words1
-version: "14.4b"
+version: "14.5b"
 sort: by_weight
 use_preset_vocabulary: true
 ...
@@ -448,3 +448,55 @@ use_preset_vocabulary: true
 耍公仔	shaa2 gung1 zaai2
 嗰	goi2
 飯焦	faan6 zeu1
+𧽼𧽼廓	dom6 dom6 kwaak1
+扯歸	cje2 gwai1
+誃歸	cje2 gwai1
+邊處	bin1 sjyo3
+在邊處	coi5 bin1 sjyo3
+呢處	nei1 sjyo3
+呢處	nI1 sjyo3
+呢處	nji1 sjyo3
+呢處	ei1 sjyo3
+邇處	nei1 sjyo3
+邇處	nI1 sjyo3
+邇處	nji1 sjyo3
+邇處	ei1 sjyo3
+在呢處	coi5 nei1 sjyo3
+在呢處	coi5 nI1 sjyo3
+在呢處	coi5 nji1 sjyo3
+在呢處	coi5 ei1 sjyo3
+在邇處	coi5 nei1 sjyo3
+在邇處	coi5 nI1 sjyo3
+在邇處	coi5 nji1 sjyo3
+在邇處	coi5 ei1 sjyo3
+嗰處	go2 sjyo3
+嗰處	go1 sjyo3
+嗰處	goi2 sjyo3
+個處	go3 sjyo3
+個處	go1 sjyo3
+個處	goi3 sjyo3
+在嗰處	coi5 go2 sjyo3
+在嗰處	coi5 go1 sjyo3
+在嗰處	coi5 goi2 sjyo3
+在個處	coi5 go3 sjyo3
+在個處	coi5 go1 sjyo3
+在個處	coi5 goi3 sjyo3
+周處	zjiau1 sjyo3
+處處	sjyo3 sjyo3
+在處	coi5 sjyo3
+在邊	coi5 bin1
+在邊度	coi5 bin1 du6
+在呢度	coi5 nei1 du6
+在呢度	coi5 nI1 du6
+在呢度	coi5 nji1 du6
+在呢度	coi5 ei1 du6
+在邇度	coi5 nei1 du6
+在邇度	coi5 nI1 du6
+在邇度	coi5 nji1 du6
+在邇度	coi5 ei1 du6
+在嗰度	coi5 go2 du6
+在嗰度	coi5 go1 du6
+在嗰度	coi5 goi2 du6
+在個度	coi5 go3 du6
+在個度	coi5 go1 du6
+在個度	coi5 goi3 du6

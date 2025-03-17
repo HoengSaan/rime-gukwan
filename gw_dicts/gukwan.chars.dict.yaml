@@ -12,7 +12,7 @@
 
 ---
 name: gukwan.chars
-version: "14.4b"
+version: "14.5b"
 sort: by_weight
 ...
 
@@ -796,38 +796,38 @@ sort: by_weight
 眵	zji1	0%
 䡋	zji1	0%
 𩍲	zji1	0%
-移	ji4	
-䄬	ji4	0%
-迻	ji4	0%
-𠩗	ji4	0%
-杝	ji4	0%
-鉹	ji4	0%
-袲	ji4	0%
-箷	ji4	0%
-𥠥	ji4	0%
-㥴	ji4	0%
-詑	ji4	0%
-簃	ji4	0%
-䔟	ji4	0%
-熪	ji4	0%
-扅	ji4	0%
-衪	ji4	0%
-暆	ji4	0%
-迆	ji4	0%
-𤝻	ji4	0%
-栘	ji4	0%
-歋	ji4	0%
-酏	ji4	0%
-匜	ji4	0%
-拸	ji4	0%
-謻	ji4	0%
-𠗺	ji4	0%
-蛇	ji4	0%
-虵	ji4	0%
-螔	ji4	0%
-𠐀	ji4	0%
-𣣢	ji4	0%
-䬁	ji4	0%
+移	hji4	
+䄬	hji4	0%
+迻	hji4	0%
+𠩗	hji4	0%
+杝	hji4	0%
+鉹	hji4	0%
+袲	hji4	0%
+箷	hji4	0%
+𥠥	hji4	0%
+㥴	hji4	0%
+詑	hji4	0%
+簃	hji4	0%
+䔟	hji4	0%
+熪	hji4	0%
+扅	hji4	0%
+衪	hji4	0%
+暆	hji4	0%
+迆	hji4	0%
+𤝻	hji4	0%
+栘	hji4	0%
+歋	hji4	0%
+酏	hji4	0%
+匜	hji4	0%
+拸	hji4	0%
+謻	hji4	0%
+𠗺	hji4	0%
+蛇	hji4	0%
+虵	hji4	0%
+螔	hji4	0%
+𠐀	hji4	0%
+𣣢	hji4	0%
+䬁	hji4	0%
 爲	wai4	
 為	wai4	0%
 潙	wai4	0%
@@ -1272,32 +1272,32 @@ sort: by_weight
 㴯	zji1	0%
 䓜	zji1	0%
 𥁼	zji1	0%
-姨	ji4	
-彝	ji4	
-寅	ji4	0%
-夷	ji4	
-峓	ji4	0%
-恞	ji4	0%
-眱	ji4	0%
-㰘	ji4	0%
-珆	ji4	0%
-蔩	ji4	0%
-𡰥	ji4	0%
-痍	ji4	
-䧅	ji4	0%
-荑	ji4	0%
-桋	ji4	0%
-蛦	ji4	0%
-胰	ji4	
-鮧	ji4	0%
-羠	ji4	0%
-羨	ji4	0%
-鏔	ji4	0%
-𢓡	ji4	0%
-鴺	ji4	0%
-𡱐	ji4	0%
-跠	ji4	0%
-洟	ji4	0%
+姨	hji4	
+彝	hji4	
+寅	hji4	0%
+夷	hji4	
+峓	hji4	0%
+恞	hji4	0%
+眱	hji4	0%
+㰘	hji4	0%
+珆	hji4	0%
+蔩	hji4	0%
+𡰥	hji4	0%
+痍	hji4	
+䧅	hji4	0%
+荑	hji4	0%
+桋	hji4	0%
+蛦	hji4	0%
+胰	hji4	
+鮧	hji4	0%
+羠	hji4	0%
+羨	hji4	0%
+鏔	hji4	0%
+𢓡	hji4	0%
+鴺	hji4	0%
+𡱐	hji4	0%
+跠	hji4	0%
+洟	hji4	0%
 師	shy1	
 鰤	shy1	0%
 蒒	shy1	0%
@@ -1610,32 +1610,32 @@ sort: by_weight
 臸	zji1	0%
 芝	zji1	
 㞢	zji1	0%
-飴	ji4	0%
-𩛛	ji4	0%
-䬮	ji4	0%
-怡	ji4	
-弬	ji4	0%
-媐	ji4	0%
-异	ji4	0%
-㼢	ji4	0%
-𣐵	ji4	0%
-圯	ji4	0%
-貽	ji4	0%
-巸	ji4	0%
-洍	ji4	0%
-𦣞	ji4	0%
-𩠢	ji4	0%
-頤	ji4	
-詒	ji4	0%
-㺿	ji4	0%
-沶	ji4	0%
-宧	ji4	0%
-𦚟	ji4	0%
-䱌	ji4	0%
-姬	ji4	0%
-台	ji4	0%
-眙	ji4	0%
-瓵	ji4	0%
+飴	hji4	0%
+𩛛	hji4	0%
+䬮	hji4	0%
+怡	hji4	
+弬	hji4	0%
+媐	hji4	0%
+异	hji4	0%
+㼢	hji4	0%
+𣐵	hji4	0%
+圯	hji4	0%
+貽	hji4	0%
+巸	hji4	0%
+洍	hji4	0%
+𦣞	hji4	0%
+𩠢	hji4	0%
+頤	hji4	
+詒	hji4	0%
+㺿	hji4	0%
+沶	hji4	0%
+宧	hji4	0%
+𦚟	hji4	0%
+䱌	hji4	0%
+姬	hji4	0%
+台	hji4	0%
+眙	hji4	0%
+瓵	hji4	0%
 時	sji4	
 旹	sji4	0%
 塒	sji4	0%
@@ -6672,7 +6672,7 @@ sort: by_weight
 釫	waa4	0%
 樺	waa4	
 崋	waa4	
-划	waa4	
+划	waa4	0%
 瓜	gwaa1	
 騧	gwaa1	0%
 緺	gwaa1	0%
@@ -7370,7 +7370,7 @@ sort: by_weight
 霶	poong4	0%
 雱	poong4	0%
 䨦	poong4	0%
-磅	poong4	
+磅	poong4	0%
 𣂆	poong4	0%
 汪	wong1	
 尢	wong1	0%
@@ -9319,21 +9319,21 @@ sort: by_weight
 嬜	hom1	0%
 歛	hom1	0%
 憨	hom1	0%
-鹽	jim4	
-塩	jim4	0%
-𣡶	jim4	0%
-閻	jim4	
-壛	jim4	0%
-阽	jim4	0%
-檐	jim4	
-簷	jim4	
-櫩	jim4	0%
-𣡞	jim4	0%
-㶄	jim4	0%
-𪂈	jim4	0%
-䦲	jim4	0%
-㿕	jim4	0%
-𤅸	jim4	0%
+鹽	hjim4	
+塩	hjim4	0%
+𣡶	hjim4	0%
+閻	hjim4	
+壛	hjim4	0%
+阽	hjim4	0%
+檐	hjim4	
+簷	hjim4	
+櫩	hjim4	0%
+𣡞	hjim4	0%
+㶄	hjim4	0%
+𪂈	hjim4	0%
+䦲	hjim4	0%
+㿕	hjim4	0%
+𤅸	hjim4	0%
 廉	lim4	
 鐮	lim4	
 鎌	lim4	0%
@@ -10004,15 +10004,15 @@ sort: by_weight
 璽	saai2	
 𠈈	saai2	0%
 𢇌	saai2	0%
-酏	ji5	0%
-迆	ji5	0%
-匜	ji5	0%
-衪	ji5	0%
-肔	ji5	0%
-崺	ji5	0%
-扡	ji5	0%
-㥴	ji5	0%
-孈	ji5	0%
+酏	hji5	0%
+迆	hji5	0%
+匜	hji5	0%
+衪	hji5	0%
+肔	hji5	0%
+崺	hji5	0%
+扡	hji5	0%
+㥴	hji5	0%
+孈	hji5	0%
 邐	li5	
 峛	li5	0%
 㸚	li5	0%
@@ -10201,7 +10201,7 @@ sort: by_weight
 雉	zri6	
 滍	zri6	0%
 薙	zri6	0%
-死	si2	0%
+死	si2	
 牝	pi5	0%
 履	li5	
 水	sjooi2	
@@ -10286,13 +10286,13 @@ sort: by_weight
 己	gi2	
 妀	gi2	0%
 𠮯	gi2	0%
-以	ji5	
-㠯	ji5	0%
-已	ji5	
-苡	ji5	0%
-苢	ji5	0%
-佁	ji5	0%
-攺	ji5	0%
+以	hji5	
+㠯	hji5	0%
+已	hji5	
+苡	hji5	0%
+苢	hji5	0%
+佁	hji5	0%
+攺	hji5	0%
 似	cy5	
 佀	cy5	0%
 祀	cy5	0%
@@ -14178,17 +14178,17 @@ sort: by_weight
 揜	om2	0%
 𠪚	hom2	0%
 䖔	hom2	0%
-琰	jim5	0%
-剡	jim5	0%
-𨁹	jim5	0%
-棪	jim5	0%
-燄	jim5	0%
-淡	jim5	0%
-扊	jim5	0%
-淊	jim5	0%
-夵	jim5	0%
-䎦	jim5	0%
-䌪	jim5	0%
+琰	hjim5	0%
+剡	hjim5	0%
+𨁹	hjim5	0%
+棪	hjim5	0%
+燄	hjim5	0%
+淡	hjim5	0%
+扊	hjim5	0%
+淊	hjim5	0%
+夵	hjim5	0%
+䎦	hjim5	0%
+䌪	hjim5	0%
 斂	lim5	
 撿	lim5	0%
 薟	lim5	0%
@@ -14312,8 +14312,8 @@ sort: by_weight
 膁	him2	0%
 稴	lim5	0%
 𤬓	lim5	0%
-鼸	jim5	0%
-㺌	jim5	0%
+鼸	hjim5	0%
+㺌	hjim5	0%
 憯	cim2	0%
 孂	gim2	0%
 𡕢	min5	0%
@@ -14656,12 +14656,12 @@ sort: by_weight
 庛	cy3	0%
 蛓	cy3	0%
 䛋	cy3	0%
-易	ji6	
-㑥	ji6	0%
-貤	ji6	0%
-伿	ji6	0%
-㒾	ji6	0%
-敡	ji6	0%
+易	hji6	
+㑥	hji6	0%
+貤	hji6	0%
+伿	hji6	0%
+㒾	hji6	0%
+敡	hji6	0%
 議	ngi6	0%
 誼	ngi6	
 竩	ngi6	0%
@@ -15048,13 +15048,13 @@ sort: by_weight
 呬	hi3	0%
 𤡬	hi3	0%
 䨳	hi3	0%
-肄	ji6	
-殔	ji6	0%
-㡼	ji6	0%
-勩	ji6	0%
-隶	ji6	0%
-㣇	ji6	0%
-𥿫	ji6	0%
+肄	hji6	
+殔	hji6	0%
+㡼	hji6	0%
+勩	hji6	0%
+隶	hji6	0%
+㣇	hji6	0%
+𥿫	hji6	0%
 示	sji6	
 諡	sji6	0%
 謚	sji6	0%
@@ -15149,13 +15149,13 @@ sort: by_weight
 𨽄	shy3	0%
 𥥥	shy3	0%
 廁	chy3	
-異	ji6	
-异	ji6	0%
-潩	ji6	0%
-食	ji6	0%
-已	ji6	0%
-䔬	ji6	0%
-廙	ji6	0%
+異	hji6	
+异	hji6	0%
+潩	hji6	0%
+食	hji6	0%
+已	hji6	0%
+䔬	hji6	0%
+廙	hji6	0%
 置	zri3	
 𢐂	zri3	0%
 侍	sji6	
@@ -19540,15 +19540,15 @@ sort: by_weight
 擔	daam3	
 甔	daam3	0%
 三	saam3	0%
-豔	jim6	
-艷	jim6	
-爓	jim6	
-焰	jim6	
-焱	jim6	0%
-𢴵	jim6	0%
-鹽	jim6	0%
-𤅸	jim6	0%
-灩	jim6	0%
+豔	hjim6	
+艷	hjim6	
+爓	hjim6	
+焰	hjim6	
+焱	hjim6	0%
+𢴵	hjim6	0%
+鹽	hjim6	0%
+𤅸	hjim6	0%
+灩	hjim6	0%
 贍	sjim6	
 染	njim6	0%
 髯	njim6	0%
