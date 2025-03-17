@@ -27,7 +27,7 @@ This work is licensed under a
 
 爲適應流動電話鍵盤限制，以及各種新功能，鍵值已於12.0版本進行大規模調整。
 
-更多資訊請閱讀下文竝參攷[Wiki](https://github.com/HoengSaan/rime-gukwan/wiki)。[關於如何安裝](#安裝)。
+更多資訊請閱讀下文竝參攷[菊韻 – なかやま園](https://zonsan.fc2.page/?cat=123)。[關於如何安裝](#安裝)。
 
 ### 多方言適應
 
@@ -46,7 +46,7 @@ This work is licensed under a
 
 > [!NOTE]
 > 
-> 菊韻可調用擴展詞庫，但需要手動下載。[gukwan-extended.dict.yaml](https://github.com/HoengSaan/rime-gukwan/blob/main/gukwan-extended.dict.yaml)內有說明如何獲取。由於擴展詞庫過大，，移動設備或低性能電腦不建議使用，可能導致無法部署（即無法正常使用）
+> 菊韻可調用擴展詞庫，但需要手動下載。[gukwan-extended.dict.yaml](https://github.com/HoengSaan/rime-gukwan/blob/main/gukwan-extended.dict.yaml)內有說明如何獲取。由於擴展詞庫過大，移動設備或低性能電腦不建議使用，可能導致無法部署（即無法正常使用）
 
 
 ### 功能
@@ -79,7 +79,7 @@ This work is licensed under a
 
 > [!NOTE]
 > 
-> **符號須安裝粵拼方可使用**，安裝方法請參攷[如何安裝 · HoengSaan/rime-gukwan Wiki](https://github.com/HoengSaan/rime-gukwan/wiki/如何安裝)。
+> **符號須安裝粵拼方可使用**，安裝方法請參攷[如何在RIME輸入法安裝菊韻輸入法 – なかやま園](https://zonsan.fc2.page/?p=1563)。
 > 由於和文功能所依賴方案詞庫過大，14.1b版本已將其關閉以防止部分設備無法正常使用中州韻。
 
 ### 反查
@@ -94,7 +94,7 @@ This work is licensed under a
 
 > [!NOTE]
 > 
-> **粵拼、訓讀、兩分須安裝方可使用**，安裝方法請參攷[如何安裝 · HoengSaan/rime-gukwan Wiki](https://github.com/HoengSaan/rime-gukwan/wiki/如何安裝)。如需使用其他方案反查，請自行定製方案。
+> **粵拼、訓讀、兩分須安裝方可使用**，安裝方法請參攷[如何在RIME輸入法安裝菊韻輸入法 – なかやま園](https://zonsan.fc2.page/?p=1563)。如需使用其他方案反查，請自行定製方案。
 
 ### 輸入
 
@@ -111,7 +111,7 @@ This work is licensed under a
 
 ## 安裝
 
-以下僅解說大致流程，具體請見[如何安裝 · HoengSaan/rime-gukwan Wiki](https://github.com/HoengSaan/rime-gukwan/wiki/如何安裝)
+以下僅解說大致流程，具體請見[如何在RIME輸入法安裝菊韻輸入法 – なかやま園](https://zonsan.fc2.page/?p=1563)。
 
 1. 安裝RIME
    1. WINDOWS：[Weasel 小狼毫](https://github.com/rime/weasel)
@@ -142,9 +142,47 @@ This work is licensed under a
 >
 > 根據閣下設備性能，部署時間或長或短。部署時請勿強行關閉Rime。
 
+## 定製
+
+定製詳情請參攷[如何定製菊韻 – なかやま園](https://zonsan.fc2.page/?p=1569)。
+
+部份用家可能根據自身情況添加以下字音到用戶字庫。
+
+```
+虐	hiok6
+瘧	hiok6
+若	hiok6
+螢	hing4
+楹	hing4
+蠅	hing4
+葉	hip6
+業	hip6
+頁	hip6
+惹	hia5
+仰	hiong5
+儒	hyu4
+蠕	hyu4
+孺	hyu4
+濡	hyu4
+薷	hyu4
+夭	hiu1
+舀	hiu5
+窯	hiu4
+姚	hiu4
+謠	hiu4
+耀	hiu6
+遙	hiu4
+鷂	hiu6
+瑤	hiu4
+堯	hiu4
+翼	hik6
+亦	hek6
+贏	heng4
+```
+
 ## 拼音
 
-拼音方案基於[擴展粵拼](https://jyutjam.org/j++/)，現代音同[粵拼](https://jyutping.org/)無區別，直接使用即可。關於古代音請參攷[菊韻拼音表](https://github.com/HoengSaan/rime-gukwan/wiki/%E8%8F%8A%E9%9F%BB%E6%8B%BC%E9%9F%B3%E8%A1%A8)。
+拼音方案基於[擴展粵拼](https://jyutjam.org/j++/)，現代音同[粵拼](https://jyutping.org/)無區別，直接使用即可。關於古代音請參攷[菊韻拼音表 – なかやま園](https://zonsan.fc2.page/?p=1583)。
 
 <img src="pic\gamjam1.png" style="zoom:50%;" />
 
@@ -154,12 +192,12 @@ This work is licensed under a
 
 調值僅供參攷，部份方言僅有9個或8個聲調（含特殊調）。2*並非廣州話「新入」只見於入聲字變調，如「子」白讀zaai2*就同本身陰上調值（24）不一。此調亦用作表達過去、完成之文法意味。超高陰平只出現於陰平連續變調。
 
-詳細請參攷[小欖話・沙田方言特徵 · HoengSaan/rime-gukwan Wiki](https://github.com/HoengSaan/rime-gukwan/wiki/小欖話・沙田方言特徵)
+詳細請參攷[小欖話・沙田方言特徵 – なかやま園](https://zonsan.fc2.page/?p=1580)。
 
 
 ## 特徵
 
-一般用家請無視灰字。恕此處不能盡述，詳細請參攷[小欖話・沙田方言特徵 · HoengSaan/rime-gukwan Wiki](https://github.com/HoengSaan/rime-gukwan/wiki/小欖話・沙田方言特徵)。
+一般用家請無視灰字。恕此處不能盡述，詳細請參攷[小欖話・沙田方言特徵 – なかやま園](https://zonsan.fc2.page/?p=1580)。
 
 <img src="pic\dakzhing.png"/>
 
@@ -190,10 +228,9 @@ This work is licensed under a
   - 本方案根據小欖鎮區音代表特徵製作。下爲重要特徵：
     - 小欖人多數人不分來孃（l/n）、透曉（t/h），故可以l音打n（如「農」`nung4`可打`lung4`），h音打t（如「偸」`tau1`可打`hau1`）。
     - 小欖人多數人不分`ak`同`aak`，故可以aak音打ak（如「勒」`lak6`可打`laak6`）。
-  - 此方案不能代表所有情況，建議仔細閱讀方案竝根據自身口音調整，見[特徵段](https://github.com/HoengSaan/rime-gukwan#特徵)。
-  - [關於如何定製適合自己口音既方案](https://github.com/HoengSaan/rime-gukwan/wiki/如何定製)
+  - 此方案不能代表所有情況，建議仔細閱讀方案竝根據自身口音調整，見[小欖話・沙田方言特徵 – なかやま園](https://zonsan.fc2.page/?p=1580)。
   - `gukwan-siulaam-ps.schema.yaml`：寬式音標版
-
+  
 - `gukwan-canton.schema.yaml`：廣州音
   - 準確來講此方案係廣州風，並不能準確反映所有廣州發音。若欲使用眞正廣州音打字，請使用`jyut6ping3-gw.scheme.yaml`
 
@@ -233,7 +270,7 @@ This work is licensed under a
 > [關於如何製作用戶詞庫](https://github.com/rime/home/wiki/UserGuide#%E7%94%A8%E6%88%B6%E8%A9%9E%E5%85%B8%E7%AE%A1%E7%90%86)
 ### 依賴
 
-以下爲本倉庫自帶，毋須額外下載。關於其他依賴文件請參攷[如何安裝 · HoengSaan/rime-gukwan Wiki](https://github.com/HoengSaan/rime-gukwan/wiki/如何安裝)。
+以下爲本倉庫自帶，毋須額外下載。關於其他依賴文件請參攷[如何在RIME輸入法安裝菊韻輸入法 – なかやま園](https://zonsan.fc2.page/?p=1563)。
 
 - [rime-cantonese-emoji](https://github.com/rime/rime-emoji-cantonese)：用於輸入繪文字，隨源文件以[CC 0許可](https://creativecommons.org/public-domain/cc0/)發佈。
 

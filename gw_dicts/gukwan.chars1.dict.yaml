@@ -12,7 +12,7 @@
 
 ---
 name: gukwan.chars1
-version: "14.5b"
+version: "14.6b"
 sort: by_weight
 ...
 
@@ -414,7 +414,7 @@ sort: by_weight
 拼	ping3	
 爭	zhaang1	
 精	zeng1	3%
-贏	hjeng4	
+贏	hjeng4	5%
 偵	zring1	
 蟶	sjing3	
 成	sjeng4	
@@ -589,7 +589,7 @@ sort: by_weight
 擧	gyo2	
 緒	syo5	
 嶼	jyo5	
-墅	jaa5	
+墅	hjaa5	
 墅	syo5	0%
 墅	syo6	
 脯	pu2	
@@ -597,8 +597,8 @@ sort: by_weight
 釜	fu2	
 豎	sjyu6	
 竪	sjyu6	0%
-愈	jyu6	
-瘉	jyu6	0%
+愈	hjyu6	
+瘉	hjyu6	0%
 媽	maa1	
 𭡡	du6	
 肚	tu5	
@@ -1307,7 +1307,6 @@ sort: by_weight
 膉	ek1	
 膉	jet1	
 膉	et1	
-亦	hek6	
 尺	cjek3	
 赤	cjek3	
 擲	zraak6	
@@ -1449,4 +1448,4 @@ sort: by_weight
 劖	chaang4	
 𥊼	chaang4	
 捳	ngok6	
-䠄	lin2	
+䠄	lin2
