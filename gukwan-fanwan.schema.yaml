@@ -14,7 +14,7 @@ __include: gukwan.schema:/
 schema:
   schema_id: gukwan-fanwan
   name: 菊韻分韻音
-  version: "14.1b"
+  version: "14.8b"
   author:
     靈帝（Hoengsaan）
   
@@ -126,8 +126,8 @@ speller:
     - xform/^ngun(?=\d)/wun$1/              # 疑合脫落(ngw->w)
     - xform/^kwing(?=\d)/king$1/
     - xform/^hwing(?=\d)/hing$1/
-    - xform/^hw(?!ng|k)/f/                  # 曉合輕脣(hw->f)
-    - xform/^hu(?!ng|k)/fu/                 # 曉合輕脣(hu->fu)
+    - xform/^hw(?!ing)/f/                   # 曉合輕脣(hw->f)
+    - xform/^hu/fu/                         # 曉合輕脣(hw->f)
 
     #聲母——現代
     #- derive/^(z|c|s)h/$1/                 # 精照合流(zh->z)

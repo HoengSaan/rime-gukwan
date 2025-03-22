@@ -13,7 +13,7 @@
 
 ---
 name: gukwan.words
-version: "14.7b"
+version: "14.8b"
 sort: by_weight
 ... 
 
@@ -179,7 +179,7 @@ sort: by_weight
 握住
 晏班
 晏駕
-晏覺
+晏覺	aan3 gaeu3
 晏嬰
 晏晝
 晏子
@@ -4180,7 +4180,7 @@ sort: by_weight
 尺碼
 赤貧
 赤身
-赤痛
+赤痛	cek3 tung3
 尺子
 赤字
 青斑
@@ -4426,7 +4426,8 @@ sort: by_weight
 春宵
 春天
 春貼
-春核
+春核	cjeon1 wat6
+膥核	cjeon1 wat6
 春孳
 春節
 椿象
@@ -4748,7 +4749,8 @@ sort: by_weight
 次數
 次選
 刺探
-刺痛
+刺痛	cy3 tung3
+刺痛	cek3 tung3
 刺蝟
 次韻
 次序
@@ -4878,7 +4880,7 @@ sort: by_weight
 磁磚
 似的
 似乎
-似核
+似核	cy5 hat6
 似樣
 似佢
 似啦
@@ -9345,7 +9347,7 @@ sort: by_weight
 都叫
 都覺
 都係
-氘核
+氘核	dou1 hat6
 都好
 刀葉
 嘟咭
@@ -10832,7 +10834,7 @@ sort: by_weight
 瞓街
 訓戒
 睏覺	hwan3 gaeu3
-瞓覺
+瞓覺	hwan3 gaeu3
 訓詁
 睏下	hwan3 haa5
 瞓下	hwan3 haa5
@@ -12808,7 +12810,7 @@ sort: by_weight
 減俸
 減價
 減計
-減核
+減核	gaem2 hat6
 減輕
 減號
 減刑
@@ -13072,7 +13074,8 @@ sort: by_weight
 交點
 膠碟
 膠袋
-交代
+交代	gaeu1 doi6
+交代	gaeu1 daai6
 交待
 膠化
 交返
@@ -16746,8 +16749,8 @@ sort: by_weight
 骨痹
 骨痺
 骨病
-骨赤
-骨刺
+骨赤	gwat1 cek3
+骨刺	gwat1 cek3
 骨場
 骨蟲
 骨朵
@@ -18069,35 +18072,34 @@ sort: by_weight
 乞討
 瞎掰
 覈辦
-核爆
+核爆	hat6 baeu3
 瞎猜
 瞎吹
-核柱
-核彈
+核柱	hat6 cryu5
+核彈	hat6 daan6
 覈對
-核電
+核電	hat6 din6
 瞎搞
 覈計
 轄下
-核仁
+核仁	hat6 njan4
 覈驗
-核型
-核熱
-核球
+核型	hat6 jing4
+核熱	hat6 njit6
+核球	hat6 kiau4
 轄區
-核力
-核武
-核能
-核能
+核力	hat6 lik6
+核武	hat6 mu5
+核能	hat6 nang4
 瞎眼
 瞎拼
-核心
+核心	hat6 sam1
 覈實
-核試
+核試	hat6 sji3
 覈數
-核酸
-核糖
-核桃
+核酸	hat6 syun1
+核糖	hat6 toong4
+核桃	hat6 tou4
 轄制
 覈准
 瞎子
@@ -18199,7 +18201,7 @@ sort: by_weight
 喉實
 喉舌
 喉糖
-喉核
+喉核	hau4 wat6
 侯王
 喉嘴
 猴子
@@ -20300,7 +20302,7 @@ sort: by_weight
 音櫃
 音效
 陰狠
-陰核
+陰核	jam1 wat6
 陰虛
 陰險
 音響
@@ -22428,7 +22430,8 @@ sort: by_weight
 影星
 影相
 影壇
-認真
+認真  njing6 zjan1
+認真  njing2 zjan1
 影子
 影展
 映照
@@ -22493,7 +22496,7 @@ sort: by_weight
 螢光
 形骸
 迎合
-形核
+形核	jing4 hat6
 迎候
 盈喜
 型號
@@ -22671,7 +22674,7 @@ sort: by_weight
 熱感
 熱狗
 嚙合
-熱核
+熱核	njit6 wat6
 熱氣
 熱汽
 熱血
@@ -23120,8 +23123,8 @@ sort: by_weight
 肉搏
 玉杯
 玉釵
-肉刺
-肉赤
+肉刺	ngiuk6 cek3
+肉赤	ngiuk6 cek3
 肉燥
 肉彈
 玉帝
@@ -25410,7 +25413,7 @@ sort: by_weight
 杬豉
 杬鼓
 欖豉
-欖核
+欖核	laam5 wat6
 攬枕
 攬住
 籃板
@@ -31090,7 +31093,8 @@ sort: by_weight
 眼白
 眼柄
 眼饞
-眼赤
+眼赤	ngaen5 cek3
+眼刺	ngaen5 cek3
 眼眵
 眼淺
 眼前
@@ -31144,7 +31148,7 @@ sort: by_weight
 眼跳
 眼肚
 眼瞳
-眼核
+眼核	ngaen5 wat6
 眼罩
 眼仔
 眼睛
@@ -31169,7 +31173,7 @@ sort: by_weight
 硬灌
 硬櫃
 硬撼
-硬核
+硬核	ngaang6 hat6
 硬氣
 硬漢
 硬領
@@ -32211,7 +32215,8 @@ sort: by_weight
 愛昵
 愛心
 愛錫
-愛惜
+愛惜	oi3 sik1
+愛惜	oi3 sek1
 愛護
 愛憎
 愛州
@@ -36190,7 +36195,7 @@ sort: by_weight
 睡袋
 隧道
 睡房
-睡覺
+睡覺	sjooi6 gaeu3
 穗鵖
 瑞氣
 燧人
@@ -36387,7 +36392,7 @@ sort: by_weight
 率先
 摔壞
 率直
-術赤
+朮赤
 術科
 術語
 述語
@@ -39749,7 +39754,8 @@ sort: by_weight
 頭七
 頭抽
 頭車
-頭赤
+頭赤	tau4 cek3
+頭刺	tau4 cek3
 頭𣤩
 頭搥
 頭槌
@@ -40976,7 +40982,8 @@ sort: by_weight
 途中
 陶盅
 肚煲
-肚赤
+肚赤	tu5 cek3
+肚刺	tu5 cek3
 肚臍
 肚䏙
 肚耽
@@ -42251,8 +42258,7 @@ sort: by_weight
 屈指
 屈節
 屈尊
-核凸
-核突
+核突	wat6 dat6
 鶻突
 搲料
 搲銀
@@ -47786,7 +47792,7 @@ sort: by_weight
 輟業
 拙劣
 拙樸
-啜核
+啜核	zryut1 wat6
 輟止
 拙直
 拙作
@@ -49941,7 +49947,8 @@ sort: by_weight
 斜線號
 斜體字
 赤膀鴨
-赤赤痛
+赤赤痛	cek3 cek3 tung3
+刺刺痛	cek3 cek3 tung3
 赤道儀
 赤翡翠
 赤腹鷹
@@ -51318,7 +51325,7 @@ sort: by_weight
 大減價
 大交合
 大覺睏	daai6 gaeu3 hwan3
-大覺瞓
+大覺瞓	daai6 gaeu3 hwan3
 大根蘭
 大䊆衰
 大嚿衰
@@ -53319,7 +53326,7 @@ sort: by_weight
 狒狒地
 廢廢地
 費𨳊事
-肺結核
+肺結核	fai3 git3 hat6
 肺講嘢
 費口舌
 費用單
@@ -53396,29 +53403,29 @@ sort: by_weight
 粉砂石
 粉碎機
 睏晏覺	hwan3 aan3 gaeu3
-瞓晏覺
+瞓晏覺	hwan3 aan3 gaeu3
 睏晏咗	hwan3 aan3 zho2
 瞓晏咗
 睏地下	hwan3 di6 haa5
 瞓地下
 睏到覺	hwan3 dou3 gaeu3
-瞓到覺
+瞓到覺	hwan3 dou3 gaeu3
 訓導處
 睏返覺	hwan3 faan1 gaeu3
-瞓返覺
+瞓返覺	hwan3 faan1 gaeu3
 睏覺覺	hwan3 gaeu6 gaeu1 
 瞓覺覺	hwan3 gaeu6 gaeu1 
 睏覺喇	hwan3 gaeu3 laa2
-瞓覺喇
+瞓覺喇	hwan3 gaeu3 laa2
 睏覺衫	hwan3 gaeu3 shaem1
-瞓覺衫
+瞓覺衫	hwan3 gaeu3 shaem1
 糞金龜
 睏過籠	hwan3 gwo3 lung4
 瞓過籠
 睏一覺	hwan3 jat1 gaeu3
-瞓一覺
+瞓一覺	hwan3 jat1 gaeu3
 睏懶覺	hwan3 laan5 gaeu3
-瞓懶覺
+瞓懶覺	hwan3 laan5 gaeu3
 睏戾頸	hwan3 lai2 geng2
 瞓戾頸
 睏捩頸	hwan3 lai2 geng2
@@ -53435,8 +53442,8 @@ sort: by_weight
 睏耐啲	hwan3 noi6 di1
 睏耐啲	hwan3 noi6 dik1
 瞓耐啲
-睏陣覺	hwan3 zran gaeu3
-瞓陣覺
+睏陣覺	hwan3 zran6 gaeu3
+瞓陣覺	hwan3 zran6 gaeu3
 睏咗未	hwan2 zho2 mi6
 瞓咗未
 睏着未	hwan2 zriok6 mi6
@@ -53444,7 +53451,7 @@ sort: by_weight
 睏着眼	hwan3 zriok6 ngaen5
 瞓着眼
 睏住覺	hwan3 zryu6 gaeu3
-瞓住覺
+瞓住覺	hwan3 zryu6 gaeu3
 焚化墟
 焚化爐
 焚屍爐
@@ -53522,7 +53529,7 @@ sort: by_weight
 飛行棋
 飛行艇
 飛行者
-非核化
+非核化	fi1 hat6 hwaa3
 非人化
 飛翼船
 非盈利
@@ -54435,7 +54442,7 @@ sort: by_weight
 教精你	gaeu3 zeng1 ni5
 教職工
 校正子
-覺覺豬
+覺覺豬	gaeu3 gaeu1	zryo1
 雞包仔
 雞肶鎚
 雞髀鎚
@@ -55090,7 +55097,7 @@ sort: by_weight
 幾多對
 幾多點
 幾多下
-幾多核
+幾多核	gi2 do1 wat6
 幾多號
 幾多人
 幾多啦
@@ -56191,7 +56198,8 @@ sort: by_weight
 骨灰罈
 骨灰甕
 骨膠原
-骨罅赤
+骨罅赤	gwat1 laa3 cek3
+骨罅刺	gwat1 laa3 cek3
 屈擂槌
 骨碌碌
 骨膜炎
@@ -56862,7 +56870,7 @@ sort: by_weight
 杏仁糊
 幸運兒
 幸運骰
-瞌番覺
+瞌返覺	hop1 faan1 gaeu3
 恰恰舞
 瞌眼睏	hop1 ngaen5 hwan3
 瞌眼瞓
@@ -56912,51 +56920,51 @@ sort: by_weight
 乞唔倒
 乞米佬
 乞食科
-核爆炸
-核變形
-核大國
-核蛋白
-核地雷
-核對峙
-核冬天
-核發電
-核廢物
-核分裂
-核飛彈
-核防御
-核鹼基
-核結構
-核工程
-核軍備
-核均勢
-核轟炸
-核國家
-核合成
-核融合
-核裂變
-核物理
-核模型
+核爆炸	hat6 baeu3 zhaa3
+核變形	hat6 bin3 jing4
+核大國	hat6 daai6 gwok3
+核蛋白	hat6 daan2 baak6
+核地雷	hat6 di6 lyi4
+核對峙	hat6 dyi3 zri6
+核冬天	hat6 dung1 tin1
+核發電	hat6 faat3 din6
+核廢物	hat6 fai3 mat6
+核分裂	hat6 fan1 lit6
+核飛彈	hat6 fi1 daan6
+核防御	hat6 fong4 ngyo6
+核鹼基	hat6 gaen2 gi1
+核結構	hat6 git3 kau3
+核工程	hat6 gung1 cring4
+核軍備	hat6 gwan1 bi6
+核均勢	hat6 gwan1 sjai3
+核轟炸	hat6 gwang1 zhaa3
+核國家	hat6 gwok3 gaa1
+核合成	hat6 hop6 sjing4
+核融合	hat6 jung4 hop6
+核裂變	hat6 lit6 bin3
+核物理	hat6 mat6 li5
+核模型	hat6 mu4 jing4
 核門檻	hat6 mun4 kaem5
 核門檻	hat6 mun4 laem6
-核能源
-核屏蔽
-核試爆
-核事件
-核小體
-核數師
-核推進
-核陀螺
-核糖酶
-核桃仁
-核酮糖
-核黃素
-核聚變
+核能源	hat6 nang4 ngyun4
+核屏蔽	hat6 ping4 bai3
+核試爆	hat6 sji3 baeu3
+核事件	hat6 shy6 gin6
+核小體	hat6 siu2 tai2
+核數師	hat6 shu2 shy1
+核推進	hat6 tyi1 zeon3
+核陀螺	hat6 to4 lo2
+核糖酶	hat6 toong4 mui4
+核桃仁	hat6 tou4 njan4
+核酮糖	hat6 tung4 toong4
+核黃素	hat6 wong4 su3
+核聚變	hat6 zyu6 bin3
 瞎指揮
-核子能
-核自旋
-核戰爭
-核裝置
-核轉變
+核子能	hat6 zy2 nang4
+核自旋	hat6 zy6 syun4
+核戰爭	hat6 zjin3 zhang1
+核裝置	hat6 zhoong1 zri3
+核轉變	hat6 zryun2 bin3
 睺到正
 吼機會
 睺機會
@@ -59845,7 +59853,7 @@ sort: by_weight
 原子彈
 原子堆
 原子褲
-原子核
+原子核	ngyun4 zy2 wat6
 原子印
 原子論
 原子爐
@@ -60666,7 +60674,7 @@ sort: by_weight
 荔枝角
 荔枝乾
 荔枝熟
-荔枝核
+荔枝核	lai6 zji1 wat6
 荔枝汁
 勵志哥
 勒脖子
@@ -60964,7 +60972,7 @@ sort: by_weight
 類星體
 淚汪汪
 累咗你
-噒欖核
+噒欖核	leon1 laam5 wat6
 卵巢窩
 卵圓窗
 卵圓形
@@ -62641,7 +62649,7 @@ sort: by_weight
 美人魚
 美人尖
 美人蕉
-美容覺
+美容覺	mi5 jung4 gaeu3
 美容女
 美容師
 美如畫	mi5 njyo4 waa2
@@ -62958,7 +62966,7 @@ sort: by_weight
 無關事
 毛孩子
 無限小
-無核區
+無核區	mu4 wat6 kyu1
 無向圖
 無殼族
 毛血旺
@@ -63347,7 +63355,7 @@ sort: by_weight
 妹妹仔	mui6 mui2 zai2
 煤泥田
 梅氏腺
-梅核氣
+梅核氣	mui4 hat6 hi3
 煤焦油
 每部腦
 每個款
@@ -65125,7 +65133,7 @@ sort: by_weight
 平均值
 蘋果派
 蘋果樹
-蘋果核
+蘋果核	ping4 gwo2 wat6
 蘋果汁
 平光鏡
 平行力
@@ -65537,7 +65545,7 @@ sort: by_weight
 閂到實
 山道年
 山坑水
-山核桃
+山核桃	shaen1 hat6 tou4
 閂後門
 山河在
 閂好門
@@ -66832,7 +66840,7 @@ sort: by_weight
 垂直軸
 絮狀物
 睡火山
-睡覺覺
+睡覺覺	sjooi6 gaeu3 gaeu1
 燧人氏
 睡眠蟲
 睡眠者
@@ -68538,7 +68546,8 @@ sort: by_weight
 投幣口
 投保方
 頭半天
-頭赤赤
+頭赤赤	tau4 cek3 cek3
+頭刺刺	tau4 cek3 cek3
 投錢箱
 頭朝下
 頭重重
@@ -68785,7 +68794,7 @@ sort: by_weight
 挑大梁
 挑大樑
 挑口板
-挑欖核
+挑欖核	tiu1 laam5 wat6
 挑毛病
 挑那星
 挑那媽
@@ -69862,7 +69871,7 @@ sort: by_weight
 回力膠
 回力球
 回來中
-回籠覺
+回籠覺	wui4 lung4 gaeu3
 回馬槍
 回墨印
 回南天
@@ -69873,7 +69882,7 @@ sort: by_weight
 回旋曲
 回頭草
 回填率
-回魂覺
+回魂覺	wui4 wan4 gaeu3
 回鍋油
 回回青
 回族人
@@ -74433,7 +74442,7 @@ sort: by_weight
 潮語歌曲
 潮流焦點
 潮濕天氣
-朝鮮核談
+朝鮮核談	criu4 sin1 hat6 taam4
 朝鮮海峽
 朝鮮太宗
 朝鮮字母
@@ -74741,7 +74750,7 @@ sort: by_weight
 充要條件
 沖完涼嘞
 沖完涼喇
-沖涼睡覺
+沖涼睡覺	crung1 liong4 sjooi6 gaeu3
 沖落屎坑
 聰明過頭
 聰明一世
@@ -75378,7 +75387,7 @@ sort: by_weight
 單方製劑
 單機容量
 丹霞地貌
-單核細胞
+單核細胞	daan1 hat6 sai3 baeu1
 單口相聲
 單起隻眼
 單向電流
@@ -76824,11 +76833,12 @@ sort: by_weight
 訓導職務
 訓導主任
 睏覺啦你	hwan3 gaeu3 laa1 ni5
-瞓覺啦你
+瞓覺啦你	hwan3 gaeu3 laa1 ni5
 糞金龜子
 睏個靚覺	hwan3 go3 leng3 gaeu3
 睏個靚覺	hwan3 goi3 leng3 gaeu3
-瞓個靚覺
+瞓個靚覺	hwan3 go3 leng3 gaeu3
+瞓個靚覺	hwan3 goi3 leng3 gaeu3
 訓練保障
 訓練任務
 訓練有素
@@ -76837,7 +76847,8 @@ sort: by_weight
 睏來睏去	hwan3 lai4 hwan3 hyo3
 睏來睏去	hwan3 loi4 hwan3 hyo3
 瞓來瞓去
-瞓唔着覺
+睏唔着覺	hwan3 m4 zriok3 gaeu3
+瞓唔着覺	hwan3 m4 zriok3 gaeu3
 訓民正音
 睏咗喺牀	hwan2 zho2 hai2 choong4
 睏咗喺房	hwan2 zho2 hai2 fong4
@@ -76937,8 +76948,8 @@ sort: by_weight
 非黑即白
 飛行記錄
 飛行棺材
-非核地帶
-非核國家
+非核地帶	fi1 hat6 di6 daai3
+非核國家	fi1 hat6 gwok3 gaa1
 飛起來咬
 緋胸鸚鵡
 非異人任
@@ -78716,8 +78727,8 @@ waa2
 結結巴巴
 結合過程
 結合模型
-結核桿菌
-結核菌素
+結核桿菌	git3 hat6 gon1 kwan5
+結核菌素	git3 hat6 kwan2 su3
 結業典禮
 結業證書
 結構理論
@@ -78892,7 +78903,7 @@ waa2
 港大才女
 講得幾啱
 講得口響
-講得核突
+講得核突	gong2 dak1 wat6 dat1
 講定㗎喇
 講多錯多
 講多無謂
@@ -80150,19 +80161,19 @@ waa2
 乞哀告憐
 覈查小組
 覈對帳目
-核電荷數
-核工業部
-核轟炸機
+核電荷數	hat6 din6 ho4 shu2
+核工業部	hat6 gung1 ngip6 bu6
+核轟炸機	hat6 gwang1 zhaa3 gi1
 瞎編亂造
-核試驗堆
-核子潛艇
-核子彈頭
+核試驗堆	hat6 sji3 ngim6 dyi1
+核子潛艇	hat6 zy2 cim4 teng5
+核子彈頭	hat6 zy2 daan6 tau4
 瞎子摸象
-核子武器
-核子試爆
-核子戰爭
-核戰斗部
-核證模型
+核子武器	hat6 zy2 mu5 hi3
+核子試爆	hat6 zy2 sji3 baeu3
+核子戰爭	hat6 zy2 zjin3 zhaang1
+核戰斗部	hat6 zjin3 dau3 bu6
+核證模型	hat6 zjing3 mu4 jing4
 口不對心
 口不應心
 口不擇言
@@ -80430,7 +80441,7 @@ waa2
 去都唔去
 去到了嗎
 去街買餸
-去覺覺豬
+去覺覺豬	hyo3 gaeu3 gaeu1 zryo1
 去舊迎新
 去過兩勻
 去喝早茶
@@ -80501,7 +80512,7 @@ waa2
 氫氧離子
 輕於鴻毛
 輕如羽毛
-氫原子核
+氫原子核	hing1 ngyun4 zy2 wat6
 興利除弊
 輕浪浮薄
 興滅繼絕
@@ -80976,7 +80987,7 @@ waa2
 好頭好尾
 好肚餓啊
 好痛𠺢嘛
-好核突啊
+好核突啊	hou2 wat6 dat6 aa2
 好酒貪杯
 好自爲之
 好做唔做
@@ -82309,7 +82320,7 @@ waa2
 有效日期
 有效流量
 有效數字
-有核國家
+有核國家	jau5 hat6 gwok3 gaa1
 有口皆碑
 有口無心
 有口難言
@@ -83101,15 +83112,15 @@ waa2
 影音器材
 映射過程
 影射小說
-認真百厭
-認真大命
-認真抵買
-認真火滾
-認真夠運
-認真好嘢
-認真惡頂
-認真濕滯
-認真核突
+認真百厭	njing2 zjan1 baak3 jim3
+認真大命	njing2 zjan1 daai6 meng6
+認真抵買	njing2 zjan1 dai2 maai5
+認真火滾	njing2 zjan1 hwo2 gwan2
+認真夠運	njing2 zjan1 gau3 wan6
+認真好嘢	njing2 zjan1 hou2 njaa5
+認真惡頂	njing2 zjan1 ook3 ding2
+認真濕滯	njing2 zjan1 sjap1 zrai6
+認真核突	njing2 zjan1 wat6 dat6
 影像會議
 應答如流
 應對如流
@@ -83203,8 +83214,8 @@ waa2
 熱到跳舞
 熱動平衡
 熱巧克力
-熱核反應
-熱核武器
+熱核反應	njit6 hat6 faan2 jing3
+熱核武器	njit6 hat6 mu5 hi3
 熱血動物
 熱血沸騰
 熱血公民
@@ -83687,7 +83698,7 @@ waa2
 原格分離
 員工會議
 緣慳一面
-原核細胞
+原核細胞	ngyun4 hat6 sai3 baeu1
 元氣大傷
 沿海碼頭
 完好如初
@@ -84151,7 +84162,7 @@ waa2
 恪守不渝
 確鑿不移
 抗衡作用
-抗核加固
+抗核加固	koong3 hat6 sai3 baeu1
 抗日救國
 抗憂鬱藥
 抗凝血劑
@@ -87190,7 +87201,8 @@ waa2
 諗錯隔籬
 諗到去邊
 諗到冇計
-諗到頭赤
+諗到頭赤	nam2 dou3 tau4 cek3
+諗到頭刺	nam2 dou3 tau4 cek3
 諗翻轉頭
 諗返轉頭
 諗緊計啦
@@ -87862,7 +87874,7 @@ waa2
 我好乖巧
 我好夜瞓	ngo5 hou2 hjaa6 hwan3
 我好夜瞓	ngoi5 hou2 hjaa6 hwan3
-我好認真
+我好認真 
 我好無奈
 我好想嘔
 我好討厭
@@ -89550,7 +89562,7 @@ waa2
 濕到淰晒
 濕濕碎啦
 濕濕碎碎
-濕水欖核
+濕水欖核	sjap1 sjooi2 laam5 wat6
 濕水棉花
 濕水炮仗
 十八廿二
@@ -90179,7 +90191,7 @@ waa2
 垂頭喪氣
 垂直搜索
 絮絮叨叨
-睡了一覺
+睡了一覺	sjooi6 liu5 jat1 gok3
 睡眠療法
 睡眠失調
 睡眼惺忪
@@ -90187,7 +90199,7 @@ waa2
 瑞士法郎
 瑞士雞翼
 瑞士軍刀
-睡回籠覺
+睡回籠覺	sjooi6 wui4 lung4 gaeu3
 徇情枉法
 詢根問底
 徇私舞弊
@@ -90279,7 +90291,7 @@ waa2
 司法院長
 斯科普里
 私房牛肉
-思覺失調
+思覺失調	sy1 gok3 sjat1 tiu4
 絲光椋鳥
 私下交易
 詩興大發
@@ -91086,7 +91098,7 @@ waa2
 雙曲拱橋
 雙曲餘割
 雙曲螺線
-雙鏈核酸
+雙鏈核酸	shiong1 lin4 hat6 syun1
 雙氯醇胺
 雙龍出海
 雙孖鯉魚
@@ -92296,7 +92308,7 @@ waa2
 脫繮野馬
 脫繮之馬
 脫骨換胎
-脫氧核糖
+脫氧核糖	tyut3 hjong5 hat6 syun1
 脫離羣衆
 脫離實際
 脫貧致富
@@ -92728,7 +92740,7 @@ waa2
 鬱鬱而終
 屈屈質質
 屈尊俯就
-核核突突
+核核突突	wat6 wat6 dat6 dat6
 搲爛塊面
 喂哇鬼叫
 喴嘩鬼叫
@@ -95045,7 +95057,7 @@ waa2
 仲超額添
 仲等乜嘢
 仲睏緊覺	zrung6 hwan3 gan2 gaeu3
-仲瞓緊覺
+仲瞓緊覺	zrung6 hwan3 gan2 gaeu3
 仲敢駁嘴
 仲講乜吖
 仲掛住佢
@@ -95218,7 +95230,7 @@ waa2
 絕對領域
 拙於言詞
 掇臀捧屁
-啜核荔枝
+啜核荔枝	zryut1 wat6 lai6 zji1
 拙嘴笨舌
 絕塵而去
 絕處逢生
@@ -96803,8 +96815,8 @@ waa2
 業餘愛好者
 葉卡捷琳堡
 葉卡捷琳娜
-熱到流晒汗
-熱核反應堆
+熱到流晒 
+熱核反應堆	njit6 hat6 faan2 jing3 dyi1 
 熱力學溫標
 熱力學溫度
 要頸唔要命
@@ -96950,7 +96962,7 @@ waa2
 流行性感冒
 流量防火牆
 流氓無產者
-流體核試驗
+流體核試驗	lau4 tai2 hat6 sji3 ngim6
 柳條湖事件
 狸貓換太子
 離心分離機
@@ -97076,7 +97088,7 @@ waa2
 唔屌唔鬆化
 唔發火當流
 唔睏得落覺	m4 hwan3 dak1 look6 gaeu3
-唔瞓得落覺
+唔瞓得落覺	m4 hwan3 dak1 look6 gaeu3
 唔夠攝牙罅
 唔夠𤗈牙罅
 唔見一籮穀
@@ -97847,8 +97859,8 @@ waa2
 水底寫字板
 水火不相容
 水鬼升城隍
-水下核爆炸
-水下核試驗
+水下核爆炸	sjooi2 haa6 hat6 baeu3 zhaa3
+水下核試驗	sjooi2 haa6 hat6 sji3 ngim6
 水輪發電機
 水洗都唔清
 水蛇春咁長
@@ -97970,7 +97982,7 @@ waa2
 少一條頭髮
 小兒軟骨病
 小兒麻痹症
-小型核武器
+小型核武器	siu2 jing4 hat6 mu5 hi3
 小鱗胸鷦鶥
 小貓三兩隻
 小貓三四隻
@@ -98199,7 +98211,7 @@ waa2
 臀產式分娩
 臀位取胎術
 脫褲子放屁
-脫氧核苷酸
+脫氧核苷酸	tyut3 hjong5 hat6 gom1 syun1
 脫氧麻黃鹼
 華記正能量
 華爾街日報
@@ -98456,9 +98468,9 @@ waa2
 尖沙咀肥媽
 尖沙咀碼頭
 戰略轟炸機
-戰略核力量
-戰略核武器
-戰術核武器
+戰略核力量	zjin3 liok6 hat6 lik6 liong4
+戰略核武器	zjin3 liok6 hat6 mu5 hi3
+戰術核武器	zjin3 sjeot6 hat6 mu5 hi3
 戰爭與和平
 賤物鬥窮人
 蒸汽壓路機
@@ -99222,7 +99234,7 @@ waa2
 應用程式介面
 螢幕保護裝置
 業主立案法團
-熱核聚變反應
+熱核聚變反應	njit6 hat6 zyu6 bin3 faan2 jing3
 熱臉貼冷屁股
 熱鍋上的螞蟻
 腰椎間盤突出
@@ -99253,7 +99265,7 @@ waa2
 元語言學意識
 鉛活字印刷機
 原子爆破彈藥
-原子核反應堆
+原子核反應堆	ngyun4 zy2 hat6 faan2 jing3 dyi1
 遠親不如近鄰
 遠東經濟評論
 軟件開發人員
@@ -99678,7 +99690,7 @@ waa2
 睡眠呼吸暫停
 信報財經新聞
 迅雷不及掩耳
-信使核糖核酸
+信使核糖核酸	seon3 shy2 hat6 toong4 hat6 syun1
 信貸衍生產品
 信貸違約掉期
 施比受更有福
@@ -99711,7 +99723,7 @@ waa2
 食米唔知米貴
 食物加工過程
 食少啖多覺睏	sjik6 sjiu2 daam6 do1 gaeu3 hwan3
-食少啖多覺瞓
+食少啖多覺瞓	sjik6 sjiu2 daam6 do1 gaeu3 hwan3
 食碗底反碗面
 仙女座大星雲
 聖伯多祿大殿
@@ -99799,8 +99811,8 @@ waa2
 同性戀恐懼症
 童子軍跳彈牀
 團結就是力量
-脫氧核糖核酸
-脫氧脫糖核酸
+脫氧核糖核酸	tyut3 hjong5 hat6 toong4 hat6 syun1
+脫氧脫糖核酸	tyut3 hjong5 tyut3 toong4 hat6 syun1
 屋漏兼逢夜雨
 華南冠紋柳鶯
 華納音樂集團
@@ -100384,7 +100396,8 @@ waa2
 一個崩都冇少到
 一個鼻哥窿出氣
 一個蘿蔔一個坑
-一個酸梅兩個核
+一個酸梅兩個核	jat1 go3 syun1 mui4 liong5 go3 wat6
+一個酸梅兩個核	jat1 goi3 syun1 mui4 liong5 go3 wat6
 一哭二鬧三上吊
 一人做事一人當
 一日之計在於晨
@@ -101028,7 +101041,7 @@ waa2
 魚與熊掌不可兼得
 蔫豬頭有盲鼻菩薩
 原發性進行性失語
-原核細胞型微生物
+原核細胞型微生物	ngyun4 hat6 sai3 baeu1 jing4 mi4 shang1 mat6
 圓珠形離子交換劑
 粵語審音配詞字表
 裘馨氏肌肉萎縮症
@@ -101104,7 +101117,7 @@ waa2
 是可忍，孰不可忍
 食鹽仲多過你食米
 煽動顛覆國家政權
-腺嘌呤核苷三磷酸
+腺嘌呤核苷三磷酸	sin3 piu1 ling4 hat6 gom1 saam1 leon4 syun1
 星星之火可以燎原
 聖多美和普林西比
 乘興而往敗興而歸

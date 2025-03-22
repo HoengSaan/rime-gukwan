@@ -13,7 +13,7 @@
 schema:
   schema_id: gukwan
   name: 菊韻
-  version: "13.3b"
+  version: "14.8b"
   author:
     靈帝（Hoengsaan）
   
@@ -143,8 +143,8 @@ speller:
     - derive/^ngun(?=\d)/wun$1/             # 疑合脫落(ngw->w)
     - derive/^kwing(?=\d)/king$1/
     - derive/^hwing(?=\d)/hing$1/
-    - derive/^hw(?!ng|k)/f/                 # 曉合輕脣(hw->f)
-    - derive/^hu(?!ng|k)/fu/                # 曉合輕脣(hu->fu)
+    - derive/^hw(?!ing)/f/                  # 曉合輕脣(hw->f)
+    - derive/^hu/fu/                        # 曉合輕脣(hw->f)
 
     #聲母——現代
     #- derive/^(z|c|s)h/$1/                 # 精照合流(zh->z)

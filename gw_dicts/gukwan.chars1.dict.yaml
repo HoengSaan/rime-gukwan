@@ -12,7 +12,7 @@
 
 ---
 name: gukwan.chars1
-version: "14.7b"
+version: "14.8b"
 sort: by_weight
 ...
 
@@ -114,9 +114,9 @@ sort: by_weight
 乎	vu4	
 胍	gwaa1	3%
 箍	ku1	
-荼	to4	
+荼	to4	5%
 軲	gu1	
-都	do1	3%
+都	do1	5%
 臍	ci4	
 莉	li4	
 銻	tai1	
@@ -564,7 +564,7 @@ sort: by_weight
 巳	zy6	
 耜	zy6	0%
 𦓨	zy6	0%
-使	shai2	3%
+使	shai2	
 駛	shai2	
 裏	looi5	
 裏	lyi5	
@@ -606,7 +606,7 @@ sort: by_weight
 媽	maa1	
 𭡡	du6	
 肚	tu5	
-焸	hing2	
+焸	hing2	3%
 簿	bu2	
 粗	cu1	
 戽	hu3	5%
@@ -711,7 +711,7 @@ sort: by_weight
 拗	aeu2	
 拗	aeu3	
 鮑	baeu1	
-老	lau5	
+老	lau5	5%
 燥	cou3	
 掀	kin2	
 好	haau1	0%
@@ -1302,8 +1302,8 @@ sort: by_weight
 嘖	zhek1	
 捇	chik1	
 核	wat6	
-摘	dik1	
-惜	sek3	
+摘	dik1	0%
+惜	sek3	0%
 脊	zik3	
 脊	zek3	
 膉	jek1	
@@ -1319,7 +1319,7 @@ sort: by_weight
 蹢	zraak6	3%
 𧓸	zraak6	3%
 潪	zraak6	3%
-刺	cek3	
+刺	cek3	0%
 席	zek6	
 蓆	zek6	
 瘠	zek3	
