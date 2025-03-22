@@ -13,7 +13,7 @@
 
 ---
 name: gukwan.words1
-version: "14.5b"
+version: "14.7b"
 sort: by_weight
 use_preset_vocabulary: true
 ...
@@ -127,9 +127,6 @@ use_preset_vocabulary: true
 小欖工業大道	
 泰昌路	
 永寧工業大道	
-荼薇	to4 mi4
-荼薇花	to4 mi4 hwaa1
-荼薇酒	to4 mi4 ziau2
 荼薇花園	to4 mi4 hwaa1 hjyun4
 陽光美加花園	
 美加花園	
@@ -414,16 +411,20 @@ use_preset_vocabulary: true
 杜塘	
 杜蟲	
 杜魚蟲	
+杜死	
+杜死晒	
 𭡡塘	
 𭡡蟲	
 𭡡魚蟲	
+𭡡死	
+𭡡死晒	
 四沙妹	
 下沙佬	
 下沙婆	
 孤寒度	
 坡客	
 基面掃把	
-洗棘	sai2 kik1
+洗棘	saai2 kik1
 棘	kik1
 眼核	
 腳髀	
@@ -447,12 +448,19 @@ use_preset_vocabulary: true
 玩竹馬	hwaan2 zruk1 maa5
 耍公仔	shaa2 gung1 zaai2
 嗰	goi2
+嗰	go1
+我	ngoi5
+水東芥	
+飆䓴	
+菜䓴	
+倒樹	
 飯焦	faan6 zeu1
 𧽼𧽼廓	dom6 dom6 kwaak1
-扯歸	cje2 gwai1
+荼薇	to4 mi4
+荼薇花	to4 mi4 hwaa1
+荼薇酒	to4 mi4 ziau2
+扯歸 	cje2 gwai1
 誃歸	cje2 gwai1
-邊處	bin1 sjyo3
-在邊處	coi5 bin1 sjyo3
 呢處	nei1 sjyo3
 呢處	nI1 sjyo3
 呢處	nji1 sjyo3
@@ -461,6 +469,14 @@ use_preset_vocabulary: true
 邇處	nI1 sjyo3
 邇處	nji1 sjyo3
 邇處	ei1 sjyo3
+呢一處	nei1 jat1 sjyo3
+呢一處	nI1 jat1 sjyo3
+呢一處	nji1 jat1 sjyo3
+呢一處	ei1 jat1 sjyo3
+邇一處	nei1 jat1 sjyo3
+邇一處	nI1 jat1 sjyo3
+邇一處	nji1 jat1 sjyo3
+邇一處	ei1 jat1 sjyo3
 在呢處	coi5 nei1 sjyo3
 在呢處	coi5 nI1 sjyo3
 在呢處	coi5 nji1 sjyo3
@@ -469,23 +485,47 @@ use_preset_vocabulary: true
 在邇處	coi5 nI1 sjyo3
 在邇處	coi5 nji1 sjyo3
 在邇處	coi5 ei1 sjyo3
-嗰處	go2 sjyo3
-嗰處	go1 sjyo3
-嗰處	goi2 sjyo3
-個處	go3 sjyo3
-個處	go1 sjyo3
-個處	goi3 sjyo3
-在嗰處	coi5 go2 sjyo3
-在嗰處	coi5 go1 sjyo3
-在嗰處	coi5 goi2 sjyo3
-在個處	coi5 go3 sjyo3
-在個處	coi5 go1 sjyo3
-在個處	coi5 goi3 sjyo3
-周處	zjiau1 sjyo3
-處處	sjyo3 sjyo3
+在呢一處	coi5 nei1 jat1 sjyo3
+在呢一處	coi5 nI1 jat1 sjyo3
+在呢一處	coi5 nji1 jat1 sjyo3
+在呢一處	coi5 ei1 jat1 sjyo3
+在邇一處	coi5 nei1 jat1 sjyo3
+在邇一處	coi5 nI1 jat1 sjyo3
+在邇一處	coi5 nji1 jat1 sjyo3
+在邇一處	coi5 ei1 jat1 sjyo3
 在處	coi5 sjyo3
+嗰處	go2 sjyo3
+嗰處	goi2 sjyo3
+個處	go2 sjyo3
+個處	goi2 sjyo3
+嗰一處	go2 jat1 sjyo3
+嗰一處	goi2 jat1 sjyo3
+個一處	go2 jat1 sjyo3
+個一處	goi2 jat1 sjyo3
+嗰處	go1 sjyo3
+個處	go1 sjyo3
+嗰一處	go1 jat1 sjyo3
+個一處	go1 jat1 sjyo3
+在嗰處	coi5 go2 sjyo3
+在嗰處	coi5 goi2 sjyo3
+在個處	coi5 go2 sjyo3
+在個處	coi5 goi2 sjyo3
+在嗰一處	coi5 go2 jat1 sjyo3
+在嗰一處	coi5 goi2 jat1 sjyo3
+在個一處	coi5 go2 jat1 sjyo3
+在個一處	coi5 goi2 jat1 sjyo3
+在個處	coi5 go1 sjyo3
+在嗰處	coi5 go1 sjyo3
+在個一處	coi5 go1 jat1 sjyo3
+在嗰一處	coi5 go1 jat1 sjyo3
+邊處	bin1 sjyo3
+邊一處	bin1 jat sjyo3
 在邊	coi5 bin1
+在邊處	coi5 bin1 sjyo3
+在邊一處	coi5 bin1 jat sjyo3
 在邊度	coi5 bin1 du6
+在邊一度	coi5 bin1 jat1 du6
+嗰度	go1 du
 在呢度	coi5 nei1 du6
 在呢度	coi5 nI1 du6
 在呢度	coi5 nji1 du6
@@ -495,8 +535,72 @@ use_preset_vocabulary: true
 在邇度	coi5 nji1 du6
 在邇度	coi5 ei1 du6
 在嗰度	coi5 go2 du6
-在嗰度	coi5 go1 du6
 在嗰度	coi5 goi2 du6
-在個度	coi5 go3 du6
+在個度	coi5 go2 du6
+在個度	coi5 goi2 du6
+在嗰度	coi5 go1 du6
 在個度	coi5 go1 du6
-在個度	coi5 goi3 du6
+在呢一度	coi5 nei1 jat1 du6
+在呢一度	coi5 nI1 jat1 du6
+在呢一度	coi5 nji1 jat1 du6
+在呢一度	coi5 ei1 jat1 du6
+在邇一度	coi5 nei1 jat1 du6
+在邇一度	coi5 nI1 jat1 du6
+在邇一度	coi5 nji1 jat1 du6
+在邇一度	coi5 ei1 jat1 du6
+在嗰一度	coi5 go2 jat1 du6
+在嗰一度	coi5 goi2 jat1 du6
+在個一度	coi5 go2 jat1 du6
+在個一度	coi5 goi2 jat1 du6
+在嗰一度	coi5 go1 jat1 du6
+在個一度	coi5 go1 jat1 du6
+周處	zjiau1 sjyo3
+處處	sjyo3 sjyo3
+㨘砂紙	
+一板	jat1 zam3
+兩板	liong5 zam3
+三板	saam1 zam3
+四板	si3 zam3
+五板	ngu5 zam3
+六板	luk6 zam3
+七板	cat1 zam3
+八板	baet3 zam3
+九板	giau2 zam3
+十板	sjap6 zam3
+幾板	gi2 zam3
+幾板板	gi2 zam3 baan2
+幾板樓	gi2 zam3 lau4
+打喊咯	daa2 haem3 lo6
+幾時	gi2 sji1
+幾時	gi2 sji4
+角仔	gok2 zaai2
+角	gok2
+鬆糕夾角	sung1 gou1 gaep3 gok2
+貧婆子	pan3 po1 zy2
+水欖	
+菊花水欖	
+菊花肉	
+八寶糯米飯	
+小欖粉果	
+鯪魚	leng4 ngyo4
+鯪魚球	leng4 ngyo4 kiau4
+炸魚球	
+好嘢	haau1 njaa5
+頂帽	diong2 mou6
+一頂帽	jat1 diong2 mou6
+戾身	lai2 sjan1
+的咁大	dik1 gom3 daai1
+啲咁大	dik1 gom3 daai1
+咁大個	gom3 daai1 go3
+咁大個	gom3 daai1 goi3
+瀏𩬎	liau4 jam1
+酹水	
+瀨水	
+酹花水	
+瀨花水	
+瀨尿	laai4 niu6
+轥來轥去	
+順氣	sjan6 hi3
+凭埋	bang6 maai4
+凭埋牆	bang6 maai4 ciong4
+凭埋埄牆	bang6 maai4 bung6 ciong4

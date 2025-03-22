@@ -13,7 +13,7 @@
 
 ---
 name: gukwan.words
-version: "14.5b"
+version: "14.7b"
 sort: by_weight
 ... 
 
@@ -182,7 +182,6 @@ sort: by_weight
 晏覺
 晏嬰
 晏晝
-晏畫
 晏子
 罌粟
 鴨店
@@ -679,7 +678,7 @@ sort: by_weight
 白兔
 白陶
 白屋
-帛畫
+帛畫	baak6 waa2
 白話
 白滑
 白雲
@@ -777,7 +776,7 @@ sort: by_weight
 板書
 板頭
 版圖
-版畫
+版畫	baan2 waa3
 板胡
 板仔
 板滯
@@ -791,6 +790,7 @@ sort: by_weight
 辦報
 扮串
 辦法
+扮睏	baen3 hwan3
 扮瞓
 辦貨
 辦館
@@ -826,7 +826,7 @@ sort: by_weight
 八月
 八強
 八老
-八妹
+八妹	baet3 mui1
 八婆
 八仙
 八疸
@@ -868,7 +868,7 @@ sort: by_weight
 包茅
 苞米
 包尾
-胞妹
+胞妹	baeu1 mui6
 包皮
 包被
 包票
@@ -1034,7 +1034,7 @@ sort: by_weight
 北佬
 北美
 北面
-北妹
+北妹	bak1 mui1
 北愛
 北票
 北水
@@ -1059,7 +1059,7 @@ sort: by_weight
 賓佬
 奔馬
 奔忙
-賓妹
+賓妹	ban1 mui1
 奔跑
 賓婆
 檳城
@@ -1270,7 +1270,7 @@ sort: by_weight
 不毛
 不無
 不滿
-不朽
+不朽	bat1 nau1
 筆誤
 不雅
 不外
@@ -1314,7 +1314,7 @@ sort: by_weight
 筆筒
 不同
 筆劃
-筆畫
+筆畫	bat1 waak6
 不諱
 不韙
 不屈
@@ -1470,7 +1470,8 @@ sort: by_weight
 比試
 比數
 畀睇
-比畫
+比畫	bi2 waak6
+比劃
 畀位
 畀着
 祕本
@@ -1675,7 +1676,7 @@ sort: by_weight
 迫視
 逼視
 壁毯
-壁畫
+壁畫	bik1 waa2
 逼和
 逼債
 逼窄
@@ -2090,7 +2091,7 @@ sort: by_weight
 表露
 表面
 表明
-表妹
+表妹	biu2 mui2
 表皮
 表述
 表示
@@ -2155,7 +2156,7 @@ sort: by_weight
 波襪
 波面
 波帽
-坡妹
+坡妹	bo1 mui1
 波牛
 波昂
 波批
@@ -2933,7 +2934,7 @@ sort: by_weight
 衩裙
 差劣
 差謬
-差妹
+差妹	chaai1 mui1
 差誤
 差額
 差訛
@@ -3188,7 +3189,7 @@ sort: by_weight
 拆臺
 拆屋
 策劃
-策畫
+策畫	chaak3 waak6
 柵閘
 拆走
 冊子
@@ -3439,7 +3440,7 @@ sort: by_weight
 插蘇
 插頭
 插圖
-插畫
+插畫	chaep3 waa2
 插嘴
 插幀
 插座
@@ -3970,7 +3971,7 @@ sort: by_weight
 湊埋
 臭美
 臭味
-臭妹
+臭妹	cjiau3 mui1
 湊啱
 臭𪒬
 臭燶
@@ -4276,7 +4277,7 @@ sort: by_weight
 催咗
 吹漲
 吹脹
-娶親
+娶親	coi2 can1
 取材
 取締
 取得
@@ -4411,7 +4412,7 @@ sort: by_weight
 春日
 春藥
 鰆魚
-春困
+春困	cjeon1 kwan3
 春柳
 春令
 春聯
@@ -4425,7 +4426,7 @@ sort: by_weight
 春宵
 春天
 春貼
-春覈
+春核
 春孳
 春節
 椿象
@@ -4877,7 +4878,7 @@ sort: by_weight
 磁磚
 似的
 似乎
-似覈
+似核
 似樣
 似佢
 似啦
@@ -6072,7 +6073,7 @@ sort: by_weight
 闖開
 敞亮
 廠佬
-廠妹
+廠妹	cjoong2 mui1
 敞篷
 闖事
 廠商
@@ -6291,7 +6292,7 @@ sort: by_weight
 槽孔
 曹錕
 曹參
-嘈醒
+嘈醒	cou4 seng2
 槽頭
 嘈雜
 儲錢
@@ -8192,7 +8193,7 @@ sort: by_weight
 鬥拋
 鬥嘥
 鬥士
-鬥醒
+鬥醒	dau3 seng2
 鬥黃
 鬥爭
 鬥走
@@ -8498,7 +8499,7 @@ sort: by_weight
 頓時
 頓成
 鈍胎
-掉低
+掉低	deu6 dai1
 啲咑
 啲打
 啲啲
@@ -8589,7 +8590,7 @@ sort: by_weight
 點心
 點收
 點射
-點醒
+點醒	dim2 seng2
 點試
 點相
 點數
@@ -9081,7 +9082,7 @@ sort: by_weight
 掉粉
 調赴
 掉價
-掉向
+掉向	deu6 hiong3
 調號
 調任
 調休
@@ -9344,7 +9345,7 @@ sort: by_weight
 都叫
 都覺
 都係
-氘覈
+氘核
 都好
 刀葉
 嘟咭
@@ -9829,7 +9830,7 @@ sort: by_weight
 胴體
 動聽
 動土
-動畫
+動畫	dung6 waa2
 動嘴
 洞子
 動靜
@@ -10104,7 +10105,8 @@ sort: by_weight
 翻番
 翻發
 返發
-返瞓
+返睏
+返瞓	faan1 hwan3
 翻悔
 翻風
 返風
@@ -10186,7 +10188,6 @@ sort: by_weight
 反鬥
 反對
 反動
-反瞓
 反方
 反悔
 反復
@@ -10347,7 +10348,7 @@ sort: by_weight
 飯蕊
 飯衣
 犯規
-犯睏
+犯睏	faan6 kwan3
 範例
 泛民
 犯民
@@ -10421,7 +10422,6 @@ sort: by_weight
 發昏
 發粉
 發奮
-發棵
 發火
 發慌
 發放
@@ -10473,7 +10473,7 @@ sort: by_weight
 髮卡
 發球
 法規
-發睏
+發睏	faat3 kwan3
 發窘
 發狂
 發冷
@@ -10811,46 +10811,64 @@ sort: by_weight
 粉飾
 粉仔
 粉蕉
+睏啊	hwan3 aa2
 瞓啊
+睏飽	hwan3 baeu2
 瞓飽
 糞便
 糞除
 訓詞
 訓斥
 糞草
+睏低	hwan3 dai1
 瞓低
+睏得	hwan3 dak1
 瞓得
 訓迪
 訓導
 訓讀
 糞肥
+睏街	hwan3 gaai1
 瞓街
 訓戒
+睏覺	hwan3 gaeu3
 瞓覺
-訓夠
 訓詁
-瞓下
+睏下	hwan3 haa5
+瞓下	hwan3 haa5
+睏開	hwan3 hoi1
 瞓開
+睏好	hwan3 hou2
 瞓好
+睏喇	hwan3 laa2
 瞓喇
 訓練
 訓令
-瞓囉
+睏囉	hwan3 lo2
+瞓囉	hwan3 lo2
+睏未	hwan3 mi6
 瞓未
+睏懵	hwan3 mung5
 瞓懵
 糞耙
+睏衫	hwan3 shaem1
 瞓衫
+睏身	hwan3 sjan1
 瞓身
-瞓醒
+睏醒	hwan3 seng2
+瞓醒	hwan3 seng2
 訓示
 訓釋
-瞓先
+睏先	hwan2 sin1
+瞓先	hwan2 sin1
 糞凼
 訓條
 訓話
 糞蛆
-瞓咗
-瞓着
+睏咗	hwan2 zho2
+瞓咗	hwan2 zho2
+睏着	hwan2 zriok3
+瞓着	hwan2 zriok3
 墳場
 墳地
 焚化
@@ -11091,7 +11109,7 @@ sort: by_weight
 飛鼠
 飛艇
 飛腿
-扉畫
+扉畫	fi1 waa2
 飛蝗
 飛站
 飛仔
@@ -11131,7 +11149,7 @@ sort: by_weight
 肥料
 肥佬
 肥美
-肥妹
+肥妹 fi4 mui1
 肥滿
 肥𥹉
 肥膩
@@ -12527,17 +12545,11 @@ sort: by_weight
 嫁妝
 嫁裝
 㗎佬
-嘎佬
 㗎文
-㗎妹
-嘎妹
-架妹
+㗎妹	gaa6 mui1
 㗎頭
-嘎頭
 㗎話
 㗎仔
-嘎仔
-架仔
 街邊
 楷簿
 街簿
@@ -12621,7 +12633,7 @@ sort: by_weight
 解吸
 解構
 解釦
-解困
+解困	gaai2 kwan3
 解決
 解纜
 解理
@@ -12640,7 +12652,7 @@ sort: by_weight
 解說
 解體
 解脫
-解畫
+解畫	gaai3 waa6
 解圍
 解嘲
 解酒
@@ -12796,7 +12808,7 @@ sort: by_weight
 減俸
 減價
 減計
-減覈
+減核
 減輕
 減號
 減刑
@@ -13091,7 +13103,7 @@ sort: by_weight
 膠乳
 交契
 郊區
-交困
+交困	gaeu1 kwan3
 交流
 膠輪
 郊狼
@@ -13388,7 +13400,7 @@ sort: by_weight
 計數
 計算
 計劃
-計畫
+計畫	gai3 waak6
 繼位
 繼子
 繼嗣
@@ -13590,7 +13602,8 @@ sort: by_weight
 禁購
 贛劇
 禁區
-咁巧
+咁巧	gom3 kiu2
+咁巧	gom3 hiu2
 咁撈
 咁呢
 禁令
@@ -13951,6 +13964,7 @@ sort: by_weight
 夠膽
 救翻
 灸法
+夠睏	gau3 hwan3
 夠瞓
 救火
 救駕
@@ -15003,7 +15017,7 @@ sort: by_weight
 叫賣
 叫牌
 叫聲
-叫醒
+叫醒	giu3 seng2
 叫唆
 叫數
 叫餸
@@ -15598,7 +15612,7 @@ sort: by_weight
 高密
 高明
 高帽
-高妹
+高妹	gou1 mui1
 高難
 高雅
 高危
@@ -16364,7 +16378,7 @@ sort: by_weight
 掛鎖
 掛毯
 掛斷
-掛畫
+掛畫	gwaa3 waa2
 掛懷
 掛職
 掛軸
@@ -16553,7 +16567,7 @@ sort: by_weight
 鬼臉
 鬼佬
 鬼馬
-鬼妹
+鬼妹	gwai2 mui1
 鬼牌
 鬼片
 鬼婆
@@ -16757,7 +16771,7 @@ sort: by_weight
 骨佬
 骨碌
 橘錄
-骨妹
+骨妹	gwat1 mui1
 骨女
 骨牌
 骨片
@@ -16952,7 +16966,7 @@ sort: by_weight
 國鐵
 國帑
 國土
-國畫
+國畫	gwok3 waa2
 膕窩
 國王
 國皇
@@ -17555,7 +17569,9 @@ sort: by_weight
 考區
 考啦
 考慮
-巧妙
+巧妙	haeu2 miu6
+巧妙	kiu2 miu6
+巧妙	hiu2 miu6
 考牌
 考評
 考生
@@ -17766,7 +17782,7 @@ sort: by_weight
 黑糖
 黑桃
 刻劃
-刻畫
+刻畫	haak1 waak6
 黑鯇
 黑戶
 黑仔
@@ -18053,35 +18069,35 @@ sort: by_weight
 乞討
 瞎掰
 覈辦
-覈爆
+核爆
 瞎猜
 瞎吹
-覈柱
-覈彈
+核柱
+核彈
 覈對
-覈電
+核電
 瞎搞
 覈計
 轄下
-覈仁
+核仁
 覈驗
-覈型
-覈熱
-覈球
+核型
+核熱
+核球
 轄區
-覈力
-覈武
+核力
+核武
 核能
-覈能
+核能
 瞎眼
 瞎拼
-覈心
+核心
 覈實
-覈試
+核試
 覈數
-覈酸
-覈糖
-覈桃
+核酸
+核糖
+核桃
 轄制
 覈准
 瞎子
@@ -18183,7 +18199,7 @@ sort: by_weight
 喉實
 喉舌
 喉糖
-喉覈
+喉核
 侯王
 喉嘴
 猴子
@@ -19700,6 +19716,7 @@ sort: by_weight
 好多
 好翻
 好返
+好睏	hou2 hwan3
 好瞓
 好奸
 好感
@@ -20283,7 +20300,7 @@ sort: by_weight
 音櫃
 音效
 陰狠
-陰覈
+陰核
 陰虛
 陰險
 音響
@@ -20382,7 +20399,7 @@ sort: by_weight
 吟詩
 淫褻
 淫書
-淫畫
+淫畫	jam4 waa2
 吟詠
 紝織
 淫賤
@@ -21178,7 +21195,7 @@ sort: by_weight
 油塘
 油桃
 郵筒
-油畫
+油畫	jau4 waa2
 油猾
 尤爲
 遊魂
@@ -22254,7 +22271,7 @@ sort: by_weight
 延誤
 弦樂
 延聘
-芫茜
+芫茜	jim4 sai1
 延伸
 延髓
 賢士
@@ -22476,7 +22493,7 @@ sort: by_weight
 螢光
 形骸
 迎合
-形覈
+形核
 迎候
 盈喜
 型號
@@ -22654,7 +22671,7 @@ sort: by_weight
 熱感
 熱狗
 嚙合
-熱覈
+熱核
 熱氣
 熱汽
 熱血
@@ -22746,6 +22763,7 @@ sort: by_weight
 要點
 要端
 要犯
+要睏	jiu3 hwan3
 要瞓
 要份
 要緊
@@ -23885,7 +23903,7 @@ sort: by_weight
 元首
 緣首
 玄石
-芫荽
+芫荽	jim4 sai1
 鉛水
 元帥
 元氏
@@ -24640,7 +24658,8 @@ sort: by_weight
 區選
 祛痰
 軀體
-區畫
+區畫	kyu1 waak6
+區劃
 區域
 拘執
 駒子
@@ -24947,7 +24966,8 @@ sort: by_weight
 賄選
 潰逃
 繪圖
-繪畫
+繪畫	kui2 waa2
+繪畫	wui6 waa2
 繪製
 曲筆
 曲尺
@@ -24969,7 +24989,8 @@ sort: by_weight
 窮鬼
 窮匱
 穹丘
-窮困
+窮困	kung4 kwan3
+窮窘
 窮撚
 窮民
 窮餓
@@ -25049,7 +25070,7 @@ sort: by_weight
 虧損
 窺探
 規劃
-規畫
+規畫	kwai1 waak6
 規則
 窺知
 規整
@@ -25097,22 +25118,22 @@ sort: by_weight
 綑膜
 菌傘
 窘迫
-困乏
+困乏	kwan3 fat6
 窘況
-困苦
+困苦	kwan3 fu2
 窘急
-困境
-困局
-困倦
-睏倦
-困擾
-困窮
-窘困
-困難
-困身
-困守
-窘相
-困惑
+困境	kwan3 ging2
+困局	kwan3 guk6
+困倦	kwan3 gyun6
+睏倦	kwan3 gyun6
+困擾	kwan3 njiu5
+困窮	kwan3 kung4
+窘困	kwan3 kwan3
+困難	kwan3 naan4
+困身	kwan3 sjan1
+困守	kwan3 sjiau2
+窘相	kwan3 siong3
+困惑	kwan3 waak6
 羣毆
 群毆
 羣揪
@@ -25370,7 +25391,6 @@ sort: by_weight
 攋低
 賴婚
 瀨尿
-賴尿
 賴皮
 賴濕
 賴死
@@ -25390,7 +25410,7 @@ sort: by_weight
 杬豉
 杬鼓
 欖豉
-欖覈
+欖核
 攬枕
 攬住
 籃板
@@ -25515,7 +25535,7 @@ sort: by_weight
 爛賭
 爛花
 爛飯
-爛睏
+爛睏	laan6 hwan3
 爛瞓
 爛機
 爛鬼
@@ -25676,7 +25696,7 @@ sort: by_weight
 撈閪
 撈人
 撈佬
-撈妹
+撈妹	laau1 mui1
 撈婆
 撈鬆
 撈頭
@@ -25693,7 +25713,7 @@ sort: by_weight
 戾計
 戾偈
 嚟手
-戾手
+戾手	lai2 sjiau2
 捩手
 嚟真
 黎邊
@@ -25753,7 +25773,8 @@ sort: by_weight
 儷黑
 例行
 例戲
-厲害
+厲害	lai6 hoi6
+厲害	lei6 hoi6
 麗音
 例言
 儷影
@@ -25817,6 +25838,7 @@ sort: by_weight
 臨翔
 臨牀
 林冲
+臨睏	lam4 hwan3
 臨瞓
 臨近
 臨記
@@ -26289,16 +26311,12 @@ sort: by_weight
 叻咗
 叻豬
 舔嘴
-𡃁模
-僆妹
-𡃁妹
-𨈓妹
-僆女
-笭女
-僆仔
-笭仔
-𡃁仔
-𨈓仔
+僆妹	leng1 mui1
+𡃁妹	leng1 mui1
+僆仔	leng1 zaai2
+僆仔	leng1 zai2	5%
+𡃁仔	leng1 zaai2
+𡃁仔	leng1 zai2	5%
 靚抽
 靚溜
 靚佬
@@ -27297,7 +27315,7 @@ sort: by_weight
 落貼
 落臺
 落堂
-落畫
+落畫	look6	waa2
 落鑊
 落戶
 落棧
@@ -28230,7 +28248,6 @@ sort: by_weight
 擘髀
 擘開
 擘面
-擘畫
 麥豆
 扳雞
 掹雞
@@ -28316,7 +28333,7 @@ sort: by_weight
 慢性
 漫談
 漫天
-漫畫
+漫畫	maan6 waa2
 慢活
 慢走
 幔子
@@ -28350,7 +28367,7 @@ sort: by_weight
 盲鰻
 盲文
 盲毛
-盲妹
+盲妹	maang4 mui1
 盲目
 盲眼
 盲年
@@ -28377,7 +28394,7 @@ sort: by_weight
 猛毛
 猛片
 猛獸
-猛醒
+猛醒	maang5 seng2
 猛鑊
 猛乍
 猛隼
@@ -28598,6 +28615,7 @@ sort: by_weight
 蚊蟲
 蚊燈
 蚊飯
+蚊睏	man1 hwan3
 蚊瞓
 緡雞
 蚊雞
@@ -29132,6 +29150,7 @@ sort: by_weight
 味碟
 味道
 未婚
+未睏	mi6 hwan3
 未瞓
 未孵
 未㗎
@@ -29865,7 +29884,7 @@ sort: by_weight
 毛條
 無套
 毛肚
-摹畫
+摹畫	mu4 waa2
 無謂
 模糊
 模胡
@@ -30074,8 +30093,9 @@ sort: by_weight
 霧狀
 慕士
 妹丁	mui1 deng1
-妹仔
-妹豬
+妹仔	mui1 zaai2
+妹仔	mui1 zai2	5%
+妹豬	mui1 zryo1
 霉病
 煤層
 梅菜
@@ -30106,7 +30126,7 @@ sort: by_weight
 霉爛
 酶類
 煤爐
-妹妹
+妹妹	mui6 mui2
 媒婆
 媒屎
 煤屎
@@ -30130,7 +30150,7 @@ sort: by_weight
 每類
 每每
 昧旦
-妹夫
+妹夫	mui2 fu1
 昧心
 昧死
 木契
@@ -30227,7 +30247,8 @@ sort: by_weight
 門人
 門釦
 門框
-門檻
+門檻	mun4 kaem5
+門檻	mun4 laem6
 門帘
 門鈴
 門路
@@ -30658,14 +30679,13 @@ sort: by_weight
 腍柿
 腍佛
 腍厴
-淰善
 腍善
 腍甜
 稔熟
-淰瞓
+稔睏	nam4 hwan3
 稔瞓
 撚菜
-捻到
+諗到
 撚化
 撚頸
 撚人
@@ -30774,6 +30794,7 @@ sort: by_weight
 您坐
 您得
 你哋
+你睏	ni5 hwan3
 你瞓
 你副
 你敎
@@ -31027,11 +31048,8 @@ sort: by_weight
 啱音
 啱用
 啱傾
-啱巧
-啱竅
-啱蕎
-啱蹺
-啱喬
+啱巧	ngaam1 kiu2
+啱巧	ngaam1 hiu2
 啱嘞
 啱牙
 啱啱
@@ -31079,7 +31097,7 @@ sort: by_weight
 眼蟲
 眼袋
 眼花
-眼睏
+眼睏	ngaen5 hwan3
 眼瞓
 眼科
 眼福
@@ -31126,7 +31144,7 @@ sort: by_weight
 眼跳
 眼肚
 眼瞳
-眼覈
+眼核
 眼罩
 眼仔
 眼睛
@@ -31151,7 +31169,7 @@ sort: by_weight
 硬灌
 硬櫃
 硬撼
-硬覈
+硬核
 硬氣
 硬漢
 硬領
@@ -31371,7 +31389,8 @@ sort: by_weight
 勾線
 勾消
 勾銷
-勾畫
+勾畫	ngau1 waak6
+勾劃
 鉤針
 鉤住
 漚冬
@@ -31479,6 +31498,8 @@ sort: by_weight
 我必
 我哋
 我屌
+我睏	ngo5 hwan3
+我睏	ngoi5 hwan3
 我瞓
 我架
 我國
@@ -31620,6 +31641,7 @@ sort: by_weight
 外在
 外族
 惡霸
+惡睏	ook3 hwan3
 惡瞓
 惡鯁
 惡晒
@@ -31816,7 +31838,7 @@ sort: by_weight
 年宵
 年少
 年頭
-年畫
+年畫	nin4 waa2
 年華
 年資
 年長
@@ -32673,7 +32695,7 @@ sort: by_weight
 貧鈾
 頻仍
 貧窮
-貧困
+貧困	pan4 kwan3
 貧礦
 瀕臨
 頻侖
@@ -32798,7 +32820,7 @@ sort: by_weight
 疲軟
 陴縣
 皮球
-疲困
+疲困	pi4 kwan3
 疲累
 皮臉
 疲勞
@@ -34351,7 +34373,7 @@ sort: by_weight
 世面
 細摩
 世務
-細妹
+細妹	sai3 mui1
 細目
 世泥
 勢能
@@ -34699,8 +34721,7 @@ sort: by_weight
 身旁
 新葡
 心抱
-新婦
-新抱
+新婦	san1 pu5
 新山
 身世
 身心
@@ -35524,7 +35545,7 @@ sort: by_weight
 受溝
 受賄
 受窮
-受困
+受困	sjiau6 kwan3
 授權
 受理
 受累
@@ -35896,8 +35917,9 @@ sort: by_weight
 腥臊
 聲談
 腥膻
+醒睏	seng2 hwan3
 醒瞓
-醒嚟
+醒嚟	seng2 lei4
 成牀
 成日
 城闕
@@ -35928,7 +35950,7 @@ sort: by_weight
 衰微
 衰滅
 衰亡
-衰妹
+衰妹	shooi1 mui1
 衰朽
 須彌
 衰女
@@ -36503,7 +36525,7 @@ sort: by_weight
 絲母
 師母
 思慕
-師妹
+師妹	shy1 mui2
 私拿
 師奶
 思念
@@ -36627,7 +36649,7 @@ sort: by_weight
 試行
 試刊
 嗜好
-謚號
+諡號
 試音
 肆意
 試液
@@ -37320,7 +37342,6 @@ sort: by_weight
 昇值
 腥羶
 星座
-醒喔
 省察
 醒定
 醒覺
@@ -37804,7 +37825,7 @@ sort: by_weight
 小麥
 小物
 小蜜
-小妹
+小妹	siu2 mui2
 小滿
 小女
 小鳥
@@ -37982,7 +38003,7 @@ sort: by_weight
 傻人
 傻佬
 傻帽
-傻妹
+傻妹	sho4 mui1
 傻妞
 傻女
 傻婆
@@ -38333,7 +38354,7 @@ sort: by_weight
 上庭
 上臺
 上堂
-上畫
+上畫	sjiong5 waa2
 上位
 上會
 上陣
@@ -38845,7 +38866,7 @@ sort: by_weight
 書錐
 抒意
 書院
-紓困
+紓困	sjyo1 kwan3
 輸理
 書面
 輸面
@@ -38867,7 +38888,7 @@ sort: by_weight
 書題
 書亭
 書檯
-書畫
+書畫	sjyo1 waa2
 抒懷
 紓緩
 舒緩
@@ -39225,7 +39246,7 @@ sort: by_weight
 太嫲
 泰文
 太密
-太妹
+太妹	taai3 mui1
 泰匹
 太平
 太婆
@@ -39379,7 +39400,7 @@ sort: by_weight
 嘆賞
 炭酸
 碳酸
-炭畫
+炭畫	taan3 waa2
 碳紙
 炭精
 彈撥
@@ -39595,7 +39616,8 @@ sort: by_weight
 提神
 提手
 啼聲
-提醒
+提醒	tai4 sing2
+提醒	tai4 seng2
 提水
 提純
 提示
@@ -40547,7 +40569,7 @@ sort: by_weight
 擡轎
 擡橋
 臺盟
-臺妹
+臺妹	toi4 mui1
 臺媒
 臺南
 擡眼
@@ -40697,7 +40719,7 @@ sort: by_weight
 塘蝞
 塘𧋦
 螗蝞
-堂妹
+堂妹	toong4 mui2
 塘鵝
 糖尿
 唐山
@@ -40936,7 +40958,7 @@ sort: by_weight
 塗炭
 圖騰
 逃脫
-圖畫
+圖畫	tu4 waa2
 塗污
 屠戶
 逃債
@@ -41369,28 +41391,28 @@ sort: by_weight
 划艇
 娃娃
 蛙泳
-畫板
-畫筆
-畫屏
+畫板	waa2 baan2
+畫筆	waa2 bat1
+畫屏	waa2 bing2
 搲花
-畫風
-畫家
-畫功
+畫風	waa2 fung1
+畫家	waa2 gaa1
+畫功	waa2 gung1
 話劇
-畫廊
-畫面
+畫廊	waa2 loong4
+畫面	waa2 min2
 抓毛
 搲水
-畫師
+畫師	waa2 shy1
 搲損
-畫質
+畫質	waa2 zjat1
 抓子
 搲子
 𢱑子
-畫像
-畫匠
-畫作
-畫軸
+畫像	waa2 ziong6
+畫匠	waa2 ziong6
+畫作	waa2 zok3
+畫軸	waa2 zruk6
 華埠
 華府
 華界
@@ -41423,7 +41445,7 @@ sort: by_weight
 話落
 話癆
 話咩
-畫眉
+畫眉	waa2 mi4
 話名
 話明
 話梅
@@ -41476,22 +41498,25 @@ sort: by_weight
 壞種
 㗲㗲
 𠵾𠵾
-畫押
+畫押	waak6 aep3
+畫押	waa6 aep3
 劃切
 劃掉
 劃朵
-畫花
+畫花	waak6 hwaa1
 劃分
-畫龜
+畫龜	waak6 gwai1
 劃痕
 或許
 滑音
+畫一	waak6 jat1
 劃一
-畫圓
+畫圓	waak6 hjyun4
+劃圓
 劃輪
 惑色
 劃艇
-畫畫
+畫畫	waak6 waa2
 劃位
 或者
 彎速
@@ -41837,7 +41862,7 @@ sort: by_weight
 違抗
 違規
 圍裙
-圍困
+圍困	wai4 kwan3
 維權
 圍欄
 爲例
@@ -42226,8 +42251,8 @@ sort: by_weight
 屈指
 屈節
 屈尊
-覈凸
-覈突
+核凸
+核突
 鶻突
 搲料
 搲銀
@@ -42857,7 +42882,7 @@ sort: by_weight
 喚醒
 換算
 換帖
-換畫
+換畫	wun6 waa2
 玩話
 緩和
 渙渙
@@ -42946,6 +42971,7 @@ sort: by_weight
 乍得
 詐嗲
 乍到
+詐睏	zhaa3 hwan3
 詐瞓
 詐唬
 詐奸
@@ -44627,7 +44653,7 @@ sort: by_weight
 觜宿
 知死
 吱聲
-知醒
+知醒	zri1 seng2
 知衰
 諮詢
 資訊
@@ -45050,7 +45076,7 @@ sort: by_weight
 字頭
 字帖
 字條
-字畫
+字畫	zy6 waa2
 自慰
 嗣位
 自衛
@@ -46433,6 +46459,7 @@ sort: by_weight
 再次
 再度
 再婚
+再睏	zoi3 hwan3
 再瞓
 再見
 載客
@@ -46530,7 +46557,7 @@ sort: by_weight
 作息
 作數
 昨天
-作畫
+作畫	zook3 waa2
 作爲
 作者
 作準
@@ -46712,6 +46739,7 @@ sort: by_weight
 早稻
 早飯
 早婚
+早睏	zou2 hwan3
 早瞓
 祖墳
 早放
@@ -47758,7 +47786,7 @@ sort: by_weight
 輟業
 拙劣
 拙樸
-啜覈
+啜核
 輟止
 拙直
 拙作
@@ -48323,7 +48351,7 @@ sort: by_weight
 扮好人
 扮嘢呀
 扮英雄
-扮老醒
+扮老醒	baen3 lou5 seng2
 辦年貨
 扮晒串
 扮晒蟹
@@ -48355,7 +48383,7 @@ sort: by_weight
 八哥狗
 八卦公
 八卦拳
-八卦妹
+八卦妹	baet3 gwaa3 mui1
 八卦婆
 八卦陣
 八行書
@@ -48639,7 +48667,8 @@ sort: by_weight
 不吐氣
 不同點
 不斷線
-筆畫數
+筆畫數	bat1 waak6 shu2
+筆劃數
 不爲過
 不唯一
 不爲意
@@ -48653,7 +48682,7 @@ sort: by_weight
 不知醜
 不知幾
 不知名
-不知醒
+不知醒	bat1 zri1 seng2
 不至於
 不致於
 不自由
@@ -48677,7 +48706,7 @@ sort: by_weight
 啤咩啊
 啤咩呀
 啤我哋
-啤酒妹
+啤酒妹	be1 ziau2 mui1
 啤酒肚
 悲喜劇
 卑爾根
@@ -49015,7 +49044,7 @@ sort: by_weight
 表姑媽
 表面上
 表示層
-裱畫鋪
+裱畫舖	biu3 waa2 pu3
 表姪女
 表姐妹	biu2 zei2 mui6
 表姐妹	biu2 zia2 mui6
@@ -49810,7 +49839,7 @@ sort: by_weight
 抽嘴巴
 抽象詞
 抽象性
-抽象畫
+抽象畫	criau1 ziong6 waa2
 抽象域
 抽壯丁
 醜八怪
@@ -49994,8 +50023,7 @@ sort: by_weight
 取款機
 取景框
 娶老婆
-娶心抱
-娶新抱
+娶新婦	cu2 san1 pu5
 娶媳婦
 脆卜卜
 脆輯輯
@@ -50038,7 +50066,7 @@ sort: by_weight
 隨葬品
 春燈謎
 春分點
-春宮畫
+春宮畫	cjeon1 gung1 waa2
 春日鄉
 春心動
 蠢鈍鈍
@@ -50467,7 +50495,7 @@ sort: by_weight
 朝天椒
 潮州柑
 潮州佬
-潮州妹
+潮州妹	criu4 zriau1 mui1
 潮州話
 潮州粥
 潮汐能
@@ -50698,7 +50726,7 @@ sort: by_weight
 嘈返晒
 嘈喧天
 嘈兩嘈
-嘈唔醒
+嘈唔醒	cou4 m4 seng2
 嘈乜鬼
 嘈生晒
 嘈死人
@@ -50992,6 +51020,7 @@ sort: by_weight
 打對頭
 打對臺
 打對仗
+打掂睏	daa2 dim6 hwan3
 打掂瞓
 打掂放
 打掂寫
@@ -51051,8 +51080,6 @@ sort: by_weight
 打哈欠
 打下手
 打鞋碼
-打喊路
-打喊露
 打瞌睡
 打乞嗤
 打乞嚏
@@ -51079,7 +51106,7 @@ sort: by_weight
 打茄輪
 打棋子
 打躆跲
-打困籠
+打困籠	daa2 kwan3 lung4
 打羣架
 打纜地
 打冷震
@@ -51104,8 +51131,8 @@ sort: by_weight
 打牙骹
 打牙祭
 打勾勾
+打仰睏	daa2 ngoong4 hwan3	
 打仰瞓
-打昂瞓
 打尿震
 打撲克
 打晒色
@@ -51143,7 +51170,7 @@ sort: by_weight
 打通晒
 打同通
 打橫嚟
-打橫瞓
+打橫瞓	daa2 waang4 hwan3
 打橫放
 打橫行
 打橫炮
@@ -51218,7 +51245,7 @@ sort: by_weight
 大笨狗
 大笨象
 大不了
-大波妹
+大波妹	daai6 bo1 mui1
 大埔墟
 大埔仔
 大部份
@@ -51275,7 +51302,7 @@ sort: by_weight
 大法官
 大法院
 大發仔
-大肥妹
+大肥妹	daai6 fi4 mui1
 大肥婆
 大伙兒
 大夥兒
@@ -51290,6 +51317,7 @@ sort: by_weight
 大芥菜
 大減價
 大交合
+大覺睏	daai6 gaeu3 hwan3
 大覺瞓
 大根蘭
 大䊆衰
@@ -51419,7 +51447,7 @@ sort: by_weight
 大陸坡
 大陸法
 大陸喱
-大陸妹
+大陸妹	daai6 luk6 mui1
 大陸性
 大陸話
 大陸仔
@@ -51680,7 +51708,7 @@ sort: by_weight
 單身狗
 單純詞
 單純用
-單色畫
+單色畫	daan1 shik1 waa2
 單線程
 單相思
 丹田功
@@ -51966,7 +51994,7 @@ sort: by_weight
 耷尾狗
 耷頭雞
 𢱕金龜
-𢱕骨妹
+揼骨妹	dap6 gwat1 mui1
 𢱕一拳
 揼濕衫
 揼濕身
@@ -52461,7 +52489,6 @@ sort: by_weight
 屌乸聲
 屌那星
 丟那媽
-掉哪媽
 𨳒那星
 屌你吖
 屌你呀
@@ -52504,15 +52531,13 @@ sort: by_weight
 吊鐘花
 掉掉揈
 調錶器
-掉低晒
+掉低晒	deu6 dai1 saai3
 調返嚟
 調藥刀
 掉鏈子
 掉書袋
 調戶口
-掉轉嚟
 調轉嚟
-掉轉頭
 調轉頭
 多胞形
 多邊形
@@ -52990,6 +53015,8 @@ sort: by_weight
 快槍手
 快沖涼
 快遞櫃
+快啲睏	hwaai3 di1 hwan3
+快啲睏	hwaai3 dik1 hwan3
 快啲瞓
 快啲啦
 快快脆
@@ -53033,7 +53060,7 @@ sort: by_weight
 返公司
 番鬼婆
 番鬼佬
-番鬼妹
+番鬼妹	faan1 gwai2 mui1
 番鬼仔
 翻過來
 返廣西
@@ -53060,9 +53087,9 @@ sort: by_weight
 返生女
 番石榴
 返聖堂
-番書妹
+番書妹	 faan1 sjyo4 mui1
 番書仔
-番薯幹
+番薯乾
 番薯葉
 番薯苗
 番薯頭
@@ -53105,7 +53132,8 @@ sort: by_weight
 反粒子
 反文旁
 反問句
-反仰瞓
+反仰睏	faan2 ngoong4 hwan3
+反仰瞓	faan2 ngoong4 hwan3
 反仰掉
 反昂棹
 反昂櫂
@@ -53291,7 +53319,7 @@ sort: by_weight
 狒狒地
 廢廢地
 費𨳊事
-肺結覈
+肺結核
 肺講嘢
 費口舌
 費用單
@@ -53367,34 +53395,55 @@ sort: by_weight
 粉砂岩
 粉砂石
 粉碎機
+睏晏覺	hwan3 aan3 gaeu3
 瞓晏覺
+睏晏咗	hwan3 aan3 zho2
 瞓晏咗
+睏地下	hwan3 di6 haa5
 瞓地下
+睏到覺	hwan3 dou3 gaeu3
 瞓到覺
 訓導處
+睏返覺	hwan3 faan1 gaeu3
 瞓返覺
-瞓覺覺
+睏覺覺	hwan3 gaeu6 gaeu1 
+瞓覺覺	hwan3 gaeu6 gaeu1 
+睏覺喇	hwan3 gaeu3 laa2
 瞓覺喇
+睏覺衫	hwan3 gaeu3 shaem1
 瞓覺衫
 糞金龜
+睏過籠	hwan3 gwo3 lung4
 瞓過籠
-瞓過龍
+睏一覺	hwan3 jat1 gaeu3
 瞓一覺
+睏懶覺	hwan3 laan5 gaeu3
 瞓懶覺
-睏戾頸
-瞓厲頸
+睏戾頸	hwan3 lai2 geng2
 瞓戾頸
+睏捩頸	hwan3 lai2 geng2
 瞓捩頸
 訓練者
+睏唔夠	hwan3 m4 gau3
 瞓唔夠
+睏唔着	hwan3 m4 zriok3
 瞓唔着
+睏歪頸	hwan3 mia2 tau4
 瞓歪頸
+睏腍晒	hwan2 nam4 saai3
 瞓腍晒
+睏耐啲	hwan3 noi6 di1
+睏耐啲	hwan3 noi6 dik1
 瞓耐啲
+睏陣覺	hwan3 zran gaeu3
 瞓陣覺
+睏咗未	hwan2 zho2 mi6
 瞓咗未
+睏着未	hwan2 zriok6 mi6
 瞓着未
+睏着眼	hwan3 zriok6 ngaen5
 瞓着眼
+睏住覺	hwan3 zryu6 gaeu3
 瞓住覺
 焚化墟
 焚化爐
@@ -53473,7 +53522,7 @@ sort: by_weight
 飛行棋
 飛行艇
 飛行者
-非覈化
+非核化
 非人化
 飛翼船
 非盈利
@@ -53524,7 +53573,7 @@ sort: by_weight
 肥鄉縣
 肥人褲
 肥淋淋
-肥妹妹
+肥妹妹	fi4 mui6 mui2
 肥奶奶
 肥淰淰
 肥𦛚𦛚
@@ -53958,7 +54007,7 @@ sort: by_weight
 蜂王漿
 風之夢
 封裝塊
-諷刺畫
+諷刺畫	fung3 cy3 waa2
 馮德英
 縫合帶
 馮曦妤
@@ -54056,7 +54105,7 @@ sort: by_weight
 假高音
 假希望
 假人像
-假芫茜
+假芫茜	gaa2 jim4 sai
 假面具
 假冒品
 假難民
@@ -54077,7 +54126,7 @@ sort: by_weight
 咖啡機
 咖啡因
 咖啡佬
-咖啡妹
+咖啡妹	gaa3 fe1 mui1
 咖啡師
 咖啡色
 咖啡糖
@@ -54474,13 +54523,17 @@ sort: by_weight
 計數者
 計算尺
 計算機
+計畫表	gai3 waak6 biu2
 計劃表
-計畫外
-計畫內
+計畫外	gai3 waak6 ngoi6
+計劃外
+計畫內	gai3 waak6 noi6
+計劃內
 計盡數
 繼子女
 計咗下
-繼續瞓
+繼續睏	gai3 zuk6 hwan3
+繼續瞓	gai3 zuk6
 金霸王
 金斑鴴
 禁不起
@@ -54696,6 +54749,7 @@ sort: by_weight
 咁都話
 咁快脆
 咁快速
+咁睏啦	gom3 hwan3 laa1
 咁瞓啦
 咁複習
 禁忌語
@@ -54719,7 +54773,7 @@ sort: by_weight
 咁人齊
 咁嚴嘅
 咁勤奮
-咁巧呀
+咁巧呀	gom3 kiu2 aa6
 咁懶喎
 咁論盡
 咁零丁
@@ -54788,7 +54842,7 @@ sort: by_weight
 近光燈
 近日點
 近義詞
-近身妹
+近身妹	gan6 sjan1 mui1
 近體詩
 更衣室
 更年期
@@ -55036,7 +55090,7 @@ sort: by_weight
 幾多對
 幾多點
 幾多下
-幾多覈
+幾多核
 幾多號
 幾多人
 幾多啦
@@ -55798,7 +55852,7 @@ sort: by_weight
 罐頭魚
 冠天下
 灌湯餃
-工筆畫
+工筆畫	gung1 bat1 waa2
 工兵營
 工兵連
 工駁工
@@ -55807,7 +55861,7 @@ sort: by_weight
 工程師
 工程圖
 工廠區
-工廠妹
+工廠妹	gung1 cjoong2 mui1
 功底厚
 公德心
 公道杯
@@ -56042,7 +56096,8 @@ sort: by_weight
 鬼馬事
 鬼馬雜
 鬼面罩
-鬼妹仔
+鬼妹仔	gwai2 mui1 zaai2
+鬼妹仔	gwai2 mui1 zai2	5%
 鬼門關
 鬼死咁
 鬼食泥
@@ -56050,7 +56105,8 @@ sort: by_weight
 鬼剃頭
 鬼頭仔
 鬼天氣
-鬼畫符
+鬼畫符	gwai2 waak6 fu4
+鬼畫符	gwai2 waa2 fu4
 鬼魂失
 鬼仔戲
 鬼知你
@@ -56408,7 +56464,8 @@ sort: by_weight
 夏時制
 夏桑菊
 下臺階
-下畫線
+下畫線	haa6 waak6 sin3
+下劃線
 夏灣拿
 夏黃公
 下酒菜
@@ -56471,7 +56528,7 @@ sort: by_weight
 鹹濕鬼
 鹹濕嘢
 鹹濕佬
-鹹濕妹
+鹹濕妹	haem4 sjap1 mui1
 鹹濕片
 鹹濕相
 鹹濕仔
@@ -56807,7 +56864,7 @@ sort: by_weight
 幸運骰
 瞌番覺
 恰恰舞
-瞌眼睏
+瞌眼睏	hop1 ngaen5 hwan3
 瞌眼瞓
 瞌陣先
 合併症
@@ -56855,50 +56912,51 @@ sort: by_weight
 乞唔倒
 乞米佬
 乞食科
-覈爆炸
-覈變形
-覈大國
-覈蛋白
-覈地雷
-覈對峙
-覈冬天
-覈發電
-覈廢物
-覈分裂
-覈飛彈
-覈防御
-覈鹼基
-覈結構
-覈工程
-覈軍備
-覈均勢
-覈轟炸
-覈國家
-覈合成
-覈融合
-覈裂變
-覈物理
-覈模型
-覈門檻
-覈能源
-覈屏蔽
-覈試爆
-覈事件
-覈小體
-覈數師
-覈推進
-覈陀螺
-覈糖酶
-覈桃仁
-覈酮糖
-覈黃素
-覈聚變
+核爆炸
+核變形
+核大國
+核蛋白
+核地雷
+核對峙
+核冬天
+核發電
+核廢物
+核分裂
+核飛彈
+核防御
+核鹼基
+核結構
+核工程
+核軍備
+核均勢
+核轟炸
+核國家
+核合成
+核融合
+核裂變
+核物理
+核模型
+核門檻	hat6 mun4 kaem5
+核門檻	hat6 mun4 laem6
+核能源
+核屏蔽
+核試爆
+核事件
+核小體
+核數師
+核推進
+核陀螺
+核糖酶
+核桃仁
+核酮糖
+核黃素
+核聚變
 瞎指揮
-覈子能
-覈自旋
-覈戰爭
-覈裝置
-覈轉變
+核子能
+核自旋
+核戰爭
+核裝置
+核轉變
 睺到正
 吼機會
 睺機會
@@ -57345,10 +57403,11 @@ sort: by_weight
 香港話
 香港仔
 香瓜汁
-鄉下妹
-鄉下婆
-鄉下話
-鄉下仔
+鄉下妹	hiong1 haa2 mui1
+鄉下婆	hiong1 haa2 po4
+鄉下話	hiong1 haa2 waa2
+鄉下仔	hiong1 haa2 zaai2
+鄉下仔	hiong1 haa2 zai2	5%
 香口膠
 香溢軒
 鄉議局
@@ -57554,7 +57613,7 @@ sort: by_weight
 學生報
 學生機
 學生哥
-學生妹
+學生妹	hok6 shaang1 mui1
 學生會
 學師仔
 學是非
@@ -57591,7 +57650,7 @@ sort: by_weight
 邯鄲縣
 韓東子
 韓國語
-韓國妹
+韓國妹	hon4 gwok3 mui1
 韓國話
 韓國仔
 寒喧語
@@ -57682,6 +57741,7 @@ sort: by_weight
 好凍啊
 好快凍
 好快返
+好快睏	hou2 hwaai3 hwan3
 好快瞓
 好快㗎
 好快啦
@@ -57716,7 +57776,7 @@ sort: by_weight
 好欠打
 好牽強
 好好地
-好好瞓
+好好瞓	hou2 hou2 hwan3
 好好口
 好好飲
 好好眼
@@ -57879,7 +57939,7 @@ sort: by_weight
 恐龍蛋
 恐龍骨
 恐龍類
-恐龍妹
+恐龍妹	hung2 lung4 mui1
 孔明燈
 恐水病
 恐水症
@@ -58730,7 +58790,7 @@ sort: by_weight
 有腥氣
 有聲書
 有師弟
-有師妹
+有師妹	jau5 shy1 mui1
 有時候
 有性格
 有宵夜
@@ -58760,6 +58820,7 @@ sort: by_weight
 又點吖
 又點話
 又多人
+又睏着	jau6 hwan2 zriok6
 又瞓着
 又揀擇
 右鉤拳
@@ -59080,7 +59141,6 @@ sort: by_weight
 液晶片
 逆轉勝
 醃鹹魚
-揜骨妹
 掩口費
 掩樣法
 掩眼法
@@ -59095,7 +59155,7 @@ sort: by_weight
 嚴唔嚴
 嫌米貴
 嫌命長
-芫荽蔥
+芫荽蔥	jim4 sai1 cung1
 閻錫山
 鹽成土
 鹽酸鹽
@@ -59195,7 +59255,7 @@ sort: by_weight
 纓翅目
 櫻花草
 櫻花蝦
-櫻花妹
+櫻花妹	jing1 hwaa1 mui1
 應份咩
 英格蘭
 鸚哥鼻
@@ -59417,7 +59477,7 @@ sort: by_weight
 羊肉煲
 羊肉餡
 楊玉環
-洋芫荽
+洋芫荽	jong4 jim4 sai1
 陽離子
 陽曆年
 羊咩咩
@@ -59576,7 +59636,7 @@ sort: by_weight
 魚蛋粉
 魚蛋河
 魚蛋論
-魚蛋妹
+魚蛋妹	ngyo4 daan2 mui1
 魚蛋頭
 漁夫褸
 漁夫帽
@@ -59785,7 +59845,7 @@ sort: by_weight
 原子彈
 原子堆
 原子褲
-原子覈
+原子核
 原子印
 原子論
 原子爐
@@ -60150,8 +60210,8 @@ sort: by_weight
 歇後語
 揭尾故
 纈氨酸
-巧妙處
-蹺妙處
+巧妙處	kiu2 miu cjyo2
+巧妙處	hiu2 miu cjyo2
 翹翹板
 翹尾巴
 翹拇指
@@ -60222,7 +60282,7 @@ sort: by_weight
 窮到屈
 窮光蛋
 窮竭法
-窮困戶
+窮困戶	kung4 kwan3 vu6
 窮書生
 窮酸相
 豁出去
@@ -60250,7 +60310,7 @@ sort: by_weight
 崑士蘭
 菌膠團
 綑黑邊
-困獸鬥
+困獸鬥	kwan3 sjiau3 naeu6
 裙帶風
 羣島弧
 裙腳妹
@@ -60356,9 +60416,7 @@ sort: by_weight
 賴錯人
 賴地硬
 拉尿蝦
-攋尿蝦
 瀨尿蝦
-賴尿蝦
 賴晒佢
 瀨屎忽
 瀨屎褲
@@ -60430,6 +60488,7 @@ sort: by_weight
 懶辦法
 懶清高
 懶到死
+懶睏豬	laan5 hwan3 zryo1
 懶瞓豬
 懶風騷
 懶骨頭
@@ -60448,6 +60507,7 @@ sort: by_weight
 爛賭鬼
 爛賭二
 爛東西
+爛睏豬	laan6 hwan3 zryo1
 爛瞓豬
 爛鬼嘢
 爛喊貓
@@ -60606,7 +60666,7 @@ sort: by_weight
 荔枝角
 荔枝乾
 荔枝熟
-荔枝覈
+荔枝核
 荔枝汁
 勵志哥
 勒脖子
@@ -60668,7 +60728,7 @@ sort: by_weight
 甩晒色
 甩袖子
 甩咗線
-褸𩬎妹
+瀏𩬎妹	liau4 jam1 mui1
 樓換樓
 摟屌裙
 劉伯溫
@@ -60904,7 +60964,7 @@ sort: by_weight
 類星體
 淚汪汪
 累咗你
-噒欖覈
+噒欖核
 卵巢窩
 卵圓窗
 卵圓形
@@ -61451,7 +61511,7 @@ sort: by_weight
 老毛子
 老懵懂
 老懵董
-老泥妹
+老泥妹	lou5 nai4 mui1
 老吾老
 老奀茄
 老兀兀
@@ -61736,6 +61796,7 @@ sort: by_weight
 唔夠秤
 唔夠長
 唔夠飣
+唔夠睏	m4 gau3 hwan3
 唔夠瞓
 唔夠火
 唔夠腳
@@ -61855,8 +61916,8 @@ sort: by_weight
 唔諗住
 唔啱音
 唔啱傾
-唔啱巧
-唔啱蕎
+唔啱巧	m4 ngaam1 kiu2
+唔啱巧	m4 ngaam1 hiu2
 唔啱牙
 唔啱使
 唔啱食
@@ -61925,7 +61986,8 @@ sort: by_weight
 唔鬆口
 唔舒服
 唔選擇
-唔提醒
+唔提醒	m4 tai sing2
+唔提醒	m4 tai seng2
 唔聽笛
 唔通氣
 唔同㗎
@@ -61953,7 +62015,7 @@ sort: by_weight
 唔知你
 唔知哦
 唔知死
-唔知醒
+唔知醒	m4 zri1 seng2
 唔知衰
 唔知痛
 唔至於
@@ -62003,7 +62065,7 @@ sort: by_weight
 麻笠佬
 麻甩鬼
 麻甩佬
-麻甩妹
+麻甩妹	maa4 lat mui1
 麻甩女
 媽媽菜
 麻麻啫
@@ -62161,7 +62223,7 @@ sort: by_weight
 賣炭翁
 賣斷市
 賣字號
-賣字畫
+賣字畫	maai6 zy6 waa2
 賣剩鴨
 賣剩腳
 賣剩尾
@@ -62352,7 +62414,8 @@ sort: by_weight
 陌生人
 墨水筆
 默書簿
-蚊都瞓
+蚊都睏	man1 do1 hwan3
+蚊都瞓	man1 do1 hwan3
 炆腩尾
 蚊怕水
 蚊帳頂
@@ -62581,7 +62644,7 @@ sort: by_weight
 美容覺
 美容女
 美容師
-美如畫
+美如畫	mi5 njyo4 waa2
 美其名
 尾礦庫
 美蘭區
@@ -62895,7 +62958,7 @@ sort: by_weight
 無關事
 毛孩子
 無限小
-無覈區
+無核區
 無向圖
 無殼族
 毛血旺
@@ -62957,7 +63020,7 @@ sort: by_weight
 無線電
 無綫咪
 毛線針
-無醒起
+無醒起	mu4 seng2 hi2
 毛小孩
 無所謂
 無傻喇
@@ -63233,7 +63296,7 @@ sort: by_weight
 冇走盞
 冇走趲
 冇袖衫
-拇指妹
+拇指妹	mau5 zji2 mui1
 舞照跳
 冇咗電
 冇咗男
@@ -63258,8 +63321,10 @@ sort: by_weight
 墓葬羣
 妹仔丁	mui1 zaai2 deng1
 妹仔丁	mui1 zai2 deng1	5%
-妹仔梯
-妹仔肚
+妹仔梯	mui1 zaai2 tai1
+妹仔梯	mui1 zai2 tai1	5%
+妹仔肚	mui1 zaai2 tu5
+妹仔肚	mui1 zai2 tu5	5%
 煤儲量
 霉髧墮
 梅花錶
@@ -63277,11 +63342,12 @@ sort: by_weight
 媒人公
 媒人婆
 梅雨天
-妹妹頭
-妹妹仔
+妹妹頭	mui6 mui2 tau4
+妹妹仔	mui6 mui2 zaai2
+妹妹仔	mui6 mui2 zai2
 煤泥田
 梅氏腺
-梅覈氣
+梅核氣
 煤焦油
 每部腦
 每個款
@@ -63501,7 +63567,9 @@ sort: by_weight
 鬧矛盾
 鬧脾氣
 鬧新房
-鬧醒佢
+鬧醒佢	naeu6 seng2 kyo5
+鬧醒佢	naeu6 seng2 hyo5
+鬧醒佢	naeu6 seng2 jyo5
 鬧衰佢
 鬧事者
 鬧雙包
@@ -63582,6 +63650,7 @@ sort: by_weight
 扭紋柴
 扭扭粉
 扭扭樂
+扭眼睏	niau5 ngaen5 hwan3
 扭眼瞓
 紐西蘭
 扭手花
@@ -63662,7 +63731,11 @@ sort: by_weight
 你反正
 你發夢
 你發咗
+你睏先	ni5 hwan2 sin1
+你睏先	ni5 hwan3 sin1
 你瞓先
+你睏着	ni5 hwan2 zriok6
+你睏着	ni5 hwan3 zriok6
 你瞓着
 你家下
 你家婆
@@ -63761,9 +63834,9 @@ sort: by_weight
 你拍拖
 你收工
 你收皮
-你醒下
-你醒啦
-你醒喇
+你醒下	ni5 seng2 haa5
+你醒啦	ni5 seng2 laa1
+你醒喇	ni5 seng2 laa6
 你屎忽
 你試下
 你先係
@@ -63948,15 +64021,14 @@ sort: by_weight
 挨板子
 捱得苦
 捱飯盒
-挨夾棍
+捱夾棍
 捱穀種
 捱一世
 捱義氣
 捱騾仔
 捱驢仔
 捱麪包
-挨眼瞓
-挨世界
+捱眼瞓	aai1 ngaen5 hwan3
 捱世界
 捱時間
 捱肚餓
@@ -64242,7 +64314,7 @@ sort: by_weight
 牛頭角
 牛頭犬
 牛塘山
-牛王妹
+牛王妹	ngiau4 wong4 mui1
 牛磺酸
 牛王頭
 牛雜煲
@@ -64309,9 +64381,19 @@ sort: by_weight
 我返緊
 我發夢
 我費事
+我睏嘞	ngo5 hwan3 lea3
+我睏嘞	ngoi5 hwan3 lea3
 我瞓嘞
+我睏先	ngo5 hwan3 sin1
+我睏先	ngo5 hwan2 sin1
+我睏先	ngoi5 hwan3 sin1
+我睏先	ngoi5 hwan2 sin1
 我瞓先
-我瞓着
+我睏着	ngo5 hwan3 zriok6
+我睏着	ngo5 hwan2 zriok6
+我睏着	ngoi5 hwan3 zriok6
+我睏着	ngoi5 hwan2 zriok6
+我瞓着	
 我家下
 我家陣
 我架啦
@@ -64336,6 +64418,8 @@ sort: by_weight
 我嚇親
 我後日
 我喫緊
+我去睏	ngo5 hyo3 hwan3
+我去睏	ngoi5 hyo3 hwan3
 我去瞓
 我去咗
 我好悶
@@ -64351,6 +64435,7 @@ sort: by_weight
 我而家
 我以爲
 我要畀
+我要睏	ngo5 jiu3 hwan3
 我要瞓
 我樣衰
 我求先
@@ -64441,7 +64526,7 @@ sort: by_weight
 外拉鏈
 外來貨
 外來語
-外來妹
+外來妹	ngoi6 loi4 mui1
 外賣單
 外文版
 外文係
@@ -64908,7 +64993,7 @@ sort: by_weight
 跑山牌
 跑私鐘
 跑腿子
-跑鐘妹
+跑鐘妹	paeu4 zjung1 mui1
 炮兵營
 泡蘑菇
 炮臺裏
@@ -64950,7 +65035,7 @@ sort: by_weight
 噴絲頭
 噴嚏劑
 頻道表
-貧困率
+貧困率	pan4 kwan3 leot6
 朋友仔
 剖面圖
 啤啤俘
@@ -65040,7 +65125,7 @@ sort: by_weight
 平均值
 蘋果派
 蘋果樹
-蘋果覈
+蘋果核
 蘋果汁
 平光鏡
 平行力
@@ -65169,7 +65254,7 @@ sort: by_weight
 賠返嚟
 培訓過
 培訓室
-陪嫁妹
+陪嫁妹	pui4 gaa3 mui1
 陪下你
 陪下我
 培養液
@@ -65195,7 +65280,7 @@ sort: by_weight
 仆街仔
 仆開啦
 仆築路
-仆住瞓
+仆住瞓	puk1 zryu6 hwan3
 番禺人
 判別式
 判斷力
@@ -65431,7 +65516,7 @@ sort: by_weight
 三屜桌
 三套車
 三途川
-三畫王
+三畫王	saam1 waak6 wong4
 三劃王
 三和弦
 三黃雞
@@ -65452,7 +65537,7 @@ sort: by_weight
 閂到實
 山道年
 山坑水
-山覈桃
+山核桃
 閂後門
 山河在
 閂好門
@@ -65481,7 +65566,7 @@ sort: by_weight
 山西人
 山水情
 山水詩
-山水畫
+山水畫	shaen1 sjooi2 waa2
 山城區
 山亭區
 珊瑚蟲
@@ -65923,7 +66008,7 @@ sort: by_weight
 新農合
 新牌仔
 新蒲崗
-新婦茶
+新婦茶	san1 pu5 craa4
 新西蘭
 新世界
 伸手黨
@@ -66353,7 +66438,7 @@ sort: by_weight
 寫包單
 捨不得
 寫代碼
-寫意畫
+寫意畫	sia2 ji3 waa2
 寫落嚟
 寫唔切
 寫文件
@@ -66409,7 +66494,7 @@ sort: by_weight
 死對頭
 死都話
 死肥閪
-死肥妹
+死肥妹	si2 fi4 mui1
 死肥仔
 死肥豬
 死火燈
@@ -66454,7 +66539,7 @@ sort: by_weight
 死文字
 死命噉
 死亡證
-死妹釘
+死妹丁	si2 mui1 deng1
 死能瞪
 死女包
 死硬撐
@@ -66585,7 +66670,10 @@ sort: by_weight
 聲喉㿭
 聲喉沙
 腥鰮鰮
-醒瞓啲
+醒睏啲	seng2 hwan3 di1
+醒睏啲	seng2 hwan3 dik1
+醒瞓啲	seng2 hwan3 di1
+醒瞓啲	seng2 hwan3 dik1
 成村人
 成嚿飯
 成個買
@@ -66677,7 +66765,7 @@ sort: by_weight
 水老鴉
 水龍帶
 水龍頭
-水墨畫
+水墨畫	sjooi2 mak6 waa2
 水蜜桃
 水尾嘢
 水磨磚
@@ -66860,7 +66948,7 @@ sort: by_weight
 獅子座
 絲織物
 絲狀物
-私鐘妹
+私鐘妹	sy1 zjung1 mui1
 史前人
 史丹佛
 史蒂夫
@@ -67112,6 +67200,8 @@ sort: by_weight
 食懵咗
 食蟻獸
 食檸檬
+食屙睏	sjik6 o1 hwan3
+食痾瞓	sjik6 o1 hwan3
 食屙瞓
 食痾瞓
 食偏門
@@ -67244,12 +67334,12 @@ sort: by_weight
 星相術
 星象圖
 醒定定
-醒唔到
+醒唔到	seng2 m4 dou3
 醒目啲
 醒目點
 醒目仔
 醒你嘅
-醒晒神
+醒晒神	seng2 saai3 sjan4
 醒醒地
 醒少少
 性暗示
@@ -67466,7 +67556,7 @@ sort: by_weight
 小發財
 小粉紅
 少忽肉
-小肥妹
+小肥妹	siu2 fi4 mui1
 小伙子
 小家器
 小家種
@@ -68050,7 +68140,7 @@ sort: by_weight
 孫女兒
 孫悟空
 酸牛奶
-孫新婦
+孫新婦	syun1 san1 pu5
 孫媳夫
 酸式鹽
 孫叔敖
@@ -68440,7 +68530,7 @@ sort: by_weight
 透視鏡
 透視力
 透視圖
-透視畫
+透視畫	tau3 sji5 waa2
 透析法
 透析機
 透通性
@@ -68695,7 +68785,7 @@ sort: by_weight
 挑大梁
 挑大樑
 挑口板
-挑欖覈
+挑欖核
 挑毛病
 挑那星
 挑那媽
@@ -68865,7 +68955,7 @@ sort: by_weight
 糖尿病
 唐生菜
 堂細佬
-堂細妹
+堂細妹	toong4 sai3 mui2
 溏心蛋
 塘蝨魚
 糖水舖
@@ -68947,7 +69037,7 @@ sort: by_weight
 圖瓦盧
 圖案鎖
 屠殺者
-徒手畫
+徒手畫	tu4 sjiau2 waa2
 塗飾劑
 圖書角
 圖書館
@@ -68955,9 +69045,9 @@ sort: by_weight
 圖書證
 淘汰賽
 淘汰論
-圖畫冊
-圖畫書
-圖畫紙
+圖畫冊	tu4 waa2 chaak3
+圖畫書	tu4 waa2 sjyo1
+圖畫紙	tu4 waa2 zji2
 屠宰業
 陶宗儀
 途中跑
@@ -69103,9 +69193,9 @@ sort: by_weight
 娃娃生
 嘩嘩聲
 蛙蛙跳
-畫家帽
-畫外音
-畫評家
+畫家帽	waa2 gaa1 mou6
+畫外音	waa2 ngoi6 jam1
+畫評家	waa2 ping4 gaa1
 搲爛面
 華北龍
 划不來
@@ -69151,10 +69241,10 @@ sort: by_weight
 壞習慣
 壞主意
 劃等號
-畫等號
+畫等號	waak6 dang2 hou4
 劃鬼腳
-畫鬼腳
-畫唔到
+畫鬼腳	waak6 gwai2 giok3
+畫唔到	waak6 m4 dou2
 劃眼線
 劃十字
 劃時代
@@ -70218,7 +70308,7 @@ sort: by_weight
 姪女婿
 姪心抱
 姪新抱
-姪新婦
+姪新婦	zrat6 san1 pu5
 姪媳婦
 姪孫女
 窒窒下
@@ -70268,7 +70358,7 @@ sort: by_weight
 走後門
 走好運
 走入嚟
-走芫茜
+走芫茜	zau2 jim4 sai1
 走形式
 走雨罅
 走撚開
@@ -70298,6 +70388,8 @@ sort: by_weight
 走珠筆
 皺巴巴
 就快嘞
+就睏着	ziau6 hwan3 zriok6
+就睏着	zou6 hwan3 zriok6
 就瞓着
 就假嘅
 就噉嘅
@@ -71023,7 +71115,7 @@ sort: by_weight
 招聘制
 招聘者
 朝頭早
-招貼畫
+招貼畫	zjiu1 tip3 waa2
 招租處
 朝早飯
 照噉講
@@ -71249,8 +71341,9 @@ sort: by_weight
 早餐啦
 早餐會
 祖沖之
+早啲睏	zou2 di1 hwan3
+早啲睏	zou2 dit1 hwan3
 早啲瞓
-早點瞓
 早動手
 祖姑母
 早過你
@@ -71385,10 +71478,10 @@ sort: by_weight
 捉匿匿
 捉心理
 竹絲雞
-竹昇麪
-竹升妹
-竹升女
-竹升仔
+竹昇麵
+竹昇妹	zruk sjing1 mui1
+竹昇女
+竹昇仔
 竹塘鄉
 捉痛腳
 祝允明
@@ -71419,7 +71512,7 @@ sort: by_weight
 棕噪鶥
 中等艙
 鐘點工
-鐘點妹
+鐘點妹	zjung1 dim2 mui1
 終點線
 終點站
 鐘鼎文
@@ -71487,6 +71580,7 @@ sort: by_weight
 中南海
 終南山
 中午飯
+舂眼睏	zjung1 ngaen5 hwan3
 舂眼瞓
 中寧縣
 中胚層
@@ -71582,6 +71676,7 @@ sort: by_weight
 重要性
 仲量行
 仲唔得
+仲唔睏	zrung6 m4 hwan3
 仲唔瞓
 仲唔開
 仲唔喐
@@ -71726,7 +71821,7 @@ sort: by_weight
 住家婆
 住院部
 住唔落
-住年妹
+住年妹	zryu6 nin4 mui1
 磚紅土
 專而精
 專業戶
@@ -72675,7 +72770,7 @@ sort: by_weight
 不爲瓦全
 不違農時
 不爲所動
-不爲酒困
+不爲酒困	bat1 wai4 ziau2 kwan3
 不屈不撓
 不遑多讓
 不擇手段
@@ -72831,7 +72926,7 @@ sort: by_weight
 畀三盒飯
 比薩斜塔
 比手劃腳
-比手畫腳
+比手畫腳	bi2 sjiau2 waak6 giok3
 畀水沉親
 畀水沉死
 畀水濁親
@@ -73235,7 +73330,7 @@ sort: by_weight
 步態蹣跚
 暴殄天物
 暴跳如雷
-暴走漫畫
+暴走漫畫	bou6 zau2 maan6 waa2
 步進馬達
 杯清涼茶
 杯盤狼藉
@@ -73359,7 +73454,7 @@ sort: by_weight
 茶朋酒友
 搽脂蕩粉
 猜包剪揼
-猜猜畫畫
+猜猜畫畫	caai1 caai1 waak6 waa3
 差佬開槍
 搋在懷裏
 踩親條尾
@@ -73967,7 +74062,7 @@ sort: by_weight
 始終如一
 刺胞動物
 刺刺不休
-次次咁巧
+次次咁巧	cy3 cy3 gom3 kiu2
 次重量級
 次級能源
 次級貸款
@@ -74338,7 +74433,7 @@ sort: by_weight
 潮語歌曲
 潮流焦點
 潮濕天氣
-朝鮮覈談
+朝鮮核談
 朝鮮海峽
 朝鮮太宗
 朝鮮字母
@@ -74354,7 +74449,7 @@ sort: by_weight
 雛菊花環
 初歸新抱
 初歸心抱
-初歸新婦
+初歸新婦	cho1 gwai1 san pu5
 搓下波先	chaai1 haa5 bo1 sin1
 初一流流
 搓圓㩒扁
@@ -74657,7 +74752,7 @@ sort: by_weight
 塚中枯骨
 重播節目
 重出江湖
-從此被困
+從此被困	cung4 cy2 bi6 kwan3
 從此往後
 從長計議
 重操舊業
@@ -74879,6 +74974,7 @@ sort: by_weight
 打定輸數
 打定主意
 打倒掟放
+打到睏直	daa2 dou3 hwan3 zrik6
 打到瞓直
 打到開花
 打到撻皮
@@ -75282,7 +75378,7 @@ sort: by_weight
 單方製劑
 單機容量
 丹霞地貌
-單覈細胞
+單核細胞
 單口相聲
 單起隻眼
 單向電流
@@ -75898,7 +75994,10 @@ sort: by_weight
 刁僑扭擰
 刁喬扭擰
 刁橋扭擰
-雕梁畫棟
+雕樑畫棟	diu1 liong4 waa2 dung3
+雕樑畫棟	diu1 liong4 waak6 dung3
+雕樑畫棟	tiu1 liong4 waa2 dung3
+雕樑畫棟	tiu1 liong4 waak6 dung3
 雕龍雕鳳
 丟眉丟眼
 丟眉弄色
@@ -76180,7 +76279,7 @@ sort: by_weight
 導彈潛艇
 道德品質
 道德認識
-道德困境
+道德困境	dou6 dak1 kwan3 ging2
 道家思想
 道高一尺
 道高一丈
@@ -76337,7 +76436,7 @@ sort: by_weight
 動態圖形
 動態助詞
 洞庭春色
-動畫故事
+動畫故事	dung6 waa2 gu3 shy6
 動嘴皮子
 動輒得咎
 動作指導
@@ -76716,22 +76815,34 @@ sort: by_weight
 粉墨登場
 粉身碎骨
 粉飾太平
+睏得好淰	hwan3 dak1 hou2 nam4
+睏得唔淰	hwan3 dak1 m4 nam4
+睏到淰晒	hwan3 dak1 nam4 saai3
 瞓得好淰
 瞓得唔淰
 瞓到淰晒
 訓導職務
 訓導主任
+睏覺啦你	hwan3 gaeu3 laa1 ni5
 瞓覺啦你
-瞓覺喇你
 糞金龜子
+睏個靚覺	hwan3 go3 leng3 gaeu3
+睏個靚覺	hwan3 goi3 leng3 gaeu3
 瞓個靚覺
 訓練保障
 訓練任務
 訓練有素
 訓練制度
+睏來睏去	hwan3 lei4 hwan3 hyo3
+睏來睏去	hwan3 lai4 hwan3 hyo3
+睏來睏去	hwan3 loi4 hwan3 hyo3
 瞓來瞓去
 瞓唔着覺
 訓民正音
+睏咗喺牀	hwan2 zho2 hai2 choong4
+睏咗喺房	hwan2 zho2 hai2 fong4
+睏咗喺廳	hwan2 zho2 hai2 teng1
+睏咗喺廳	hwan2 zho2 hai2 ting1
 瞓咗喺牀
 瞓咗喺房
 瞓咗喺廳
@@ -76826,8 +76937,8 @@ sort: by_weight
 非黑即白
 飛行記錄
 飛行棺材
-非覈地帶
-非覈國家
+非核地帶
+非核國家
 飛起來咬
 緋胸鸚鵡
 非異人任
@@ -76887,7 +76998,8 @@ sort: by_weight
 肥婆肥佬
 肥屍大隻
 肥頭耷耳
-肥仔肥妹
+肥仔肥妹	fi4 zaai2 fi4 mui1
+肥仔肥妹	fi4 zai2 fi4 mui1	5%
 肥腫難分
 飛哩啡呢
 弗到漏油
@@ -76917,6 +77029,7 @@ sort: by_weight
 火雞大學
 火機老鋪
 火炬計劃
+火炬計畫	hwo2 gyo6 gai3 waak6
 火滾火燎
 火候未到
 火海刀山
@@ -77160,10 +77273,10 @@ sort: by_weight
 扶弱抑強
 芙蓉春色
 芙蓉出水
-扶困濟危
+扶困濟危	fu4 kwan3 zai2 ngai4
 扶老攜幼
-扶危濟困
-扶貧濟困
+扶危濟困	fu4 ngai4 zai2 kwan3
+扶貧濟困	fu4 pan4 zai2 kwan3
 扶手電梯
 婦道人家
 婦姑勃谿
@@ -77511,7 +77624,9 @@ sort: by_weight
 假冒僞劣
 假手於人
 假性近視
-架上繪畫
+架上繪畫	gaa2 sjiong5 kui2 waa2
+架上繪畫	gaa2 sjiong5 wui6
+waa2
 架車咁逼
 價低者得
 咖啡和茶
@@ -77945,6 +78060,8 @@ sort: by_weight
 噉你以前
 噉你應該
 噉我都要
+噉我睏啦	gom3 ngo5 hwan3 laa1
+噉我睏啦	gom3 ngoi5 hwan3 laa1
 噉我瞓啦
 噉我唔知
 噉我同你
@@ -78599,8 +78716,8 @@ sort: by_weight
 結結巴巴
 結合過程
 結合模型
-結覈桿菌
-結覈菌素
+結核桿菌
+結核菌素
 結業典禮
 結業證書
 結構理論
@@ -78632,7 +78749,7 @@ sort: by_weight
 叫苦不迭
 叫苦連天
 叫開叫埋
-叫醒服務
+叫醒服務	giu3 seng2 fuk6 mu6
 叫餸食飯
 哥打巴魯
 歌功頌德
@@ -78775,7 +78892,7 @@ sort: by_weight
 港大才女
 講得幾啱
 講得口響
-講得覈突
+講得核突
 講定㗎喇
 講多錯多
 講多無謂
@@ -79259,7 +79376,7 @@ sort: by_weight
 歸真返璞
 閨中密友
 鬼出電入
-鬼打咁醒
+鬼打咁醒	gwai2 daa2 gom3 seng2
 鬼火咁靚
 鬼斧神工
 詭計多端
@@ -79957,7 +80074,8 @@ sort: by_weight
 恆定狀態
 行動不便
 行動電話
-行動計畫
+行動計畫	hang4 dung6 gai3 waak6
+行動計劃
 行動主義
 行快步啦
 恆加速度
@@ -79984,7 +80102,7 @@ sort: by_weight
 行政監察
 行政救濟
 行政區劃
-行政區畫
+行政區畫	hang zjing3 kyu1 waak6
 行政會議
 行政責任
 行政長官
@@ -80032,19 +80150,19 @@ sort: by_weight
 乞哀告憐
 覈查小組
 覈對帳目
-覈電荷數
-覈工業部
-覈轟炸機
+核電荷數
+核工業部
+核轟炸機
 瞎編亂造
-覈試驗堆
-覈子潛艇
-覈子彈頭
+核試驗堆
+核子潛艇
+核子彈頭
 瞎子摸象
-覈子武器
-覈子試爆
-覈子戰爭
-覈戰斗部
-覈證模型
+核子武器
+核子試爆
+核子戰爭
+核戰斗部
+核證模型
 口不對心
 口不應心
 口不擇言
@@ -80383,7 +80501,7 @@ sort: by_weight
 氫氧離子
 輕於鴻毛
 輕如羽毛
-氫原子覈
+氫原子核
 興利除弊
 輕浪浮薄
 興滅繼絕
@@ -80858,7 +80976,7 @@ sort: by_weight
 好頭好尾
 好肚餓啊
 好痛𠺢嘛
-好覈突啊
+好核突啊
 好酒貪杯
 好自爲之
 好做唔做
@@ -81138,7 +81256,7 @@ sort: by_weight
 飲恨吞聲
 飲好食好
 飲窮我啦
-飲新婦酒
+飲新婦酒	jam2 san1 pu5 ziau2
 飲水思源
 飲醇自醉
 飲食療養
@@ -81341,7 +81459,7 @@ sort: by_weight
 人琴俱亡
 人強馬壯
 人窮志短
-人困馬乏
+人困馬乏	njan4 kwan3 maa5 fat6
 人權法案
 人嚟人去
 人流手術
@@ -81609,7 +81727,8 @@ sort: by_weight
 一家大細
 一家之主
 一介不取
-一覺瞓醒
+一覺睏醒	jat1 gaeu3 hwan3 seng2
+一覺瞓醒	jat1 gaeu3 hwan3 seng2
 一雞兩味
 一雞三味
 一㓤就穿
@@ -82190,7 +82309,7 @@ sort: by_weight
 有效日期
 有效流量
 有效數字
-有覈國家
+有核國家
 有口皆碑
 有口無心
 有口難言
@@ -82857,7 +82976,7 @@ sort: by_weight
 演繹論證
 偃旗息鼓
 躽身躽勢
-嚥下困難
+嚥下困難	jin3 haa6 kwan3 naan4
 燕爾新婚
 燕瘦環肥
 燕雀相賀
@@ -82958,6 +83077,7 @@ sort: by_weight
 鷹擊長空
 應該點搞
 應該點整
+應該未睏	jing1 goi1 mi6 hwan3
 應該未瞓
 英漢對譯
 英雄輩出
@@ -82989,7 +83109,7 @@ sort: by_weight
 認真好嘢
 認真惡頂
 認真濕滯
-認真覈突
+認真核突
 影像會議
 應答如流
 應對如流
@@ -83083,8 +83203,8 @@ sort: by_weight
 熱到跳舞
 熱動平衡
 熱巧克力
-熱覈反應
-熱覈武器
+熱核反應
+熱核武器
 熱血動物
 熱血沸騰
 熱血公民
@@ -83444,7 +83564,7 @@ sort: by_weight
 魚皮花生
 魚死網破
 魚水之歡
-如詩如畫
+如詩如畫	njyo4 sji1 njyo4 waa2
 如釋重負
 如喪考妣
 如數家珍
@@ -83567,7 +83687,7 @@ sort: by_weight
 原格分離
 員工會議
 緣慳一面
-原覈細胞
+原核細胞
 元氣大傷
 沿海碼頭
 完好如初
@@ -83711,7 +83831,7 @@ sort: by_weight
 啓動技術
 啓動作業
 啓蒙主義
-契妹契媽
+契妹契媽	kai3 mui1 kai3 maa1
 襟懷坦白
 搇冚個蓋
 搇一巴掌
@@ -83871,6 +83991,9 @@ sort: by_weight
 佢哋好精	jyo5 li6 hou2 zeng1
 佢哋雙方
 佢對大家
+佢睏唔夠	kyo5 hwan3 m4 gau3
+佢睏唔夠	hyo5 hwan3 m4 gau3
+佢睏唔夠	jyo5 hwan3 m4 gau3
 佢瞓唔夠
 佢份人點
 拒腐防變
@@ -83893,10 +84016,18 @@ sort: by_weight
 佢好認叻
 佢好傾得
 佢好爛食
-佢好厲害
+佢好厲害	kyo5 hou2 lai6 hoi6
+佢好厲害	hyo5 hou2 lai6 hoi6
+佢好厲害	jyo5 hou2 lai6 hoi6
+佢好厲害	kyo5 hou2 lei6 hoi6
+佢好厲害	hyo5 hou2 lei6 hoi6
+佢好厲害	jyo5 hou2 lei6 hoi6
 佢好叻噃
 佢好老實
 佢好硬頸
+佢好醒睏	kyo5 hou2 seng2 hwan3
+佢好醒睏	hyo5 hou2 seng2 hwan3
+佢好醒睏	jyo5 hou2 seng2 hwan3
 佢好醒瞓
 佢溝硬我
 佢決定去
@@ -84020,7 +84151,7 @@ sort: by_weight
 恪守不渝
 確鑿不移
 抗衡作用
-抗覈加固
+抗核加固
 抗日救國
 抗憂鬱藥
 抗凝血劑
@@ -84089,9 +84220,9 @@ sort: by_weight
 攜手共進
 揆時度勢
 葵盛泳池
-困獸猶鬥
-困獸之鬥
-困惑不解
+困獸猶鬥	kwan3 sjiau3 jau4 dau3
+困獸之鬥	kwan3 sjiau3 zji1	dau3
+困惑不解	kwan3 waak6 bat1 gaai2
 羣策羣力
 群策群力
 群情洶湧
@@ -84113,7 +84244,9 @@ sort: by_weight
 曠古未有
 曠古未聞
 曠古爍今
-擴軍計畫
+擴軍計畫	kwong3 gwan1 gai3 waak6
+擴軍計畫	kwok3 gwan1 gai3 waak6
+擴軍計劃
 曠日持久
 礦物燃料
 狂蜂浪蝶
@@ -84297,9 +84430,9 @@ sort: by_weight
 摎摎挍挍
 撈埋一碟
 撈埋撈埋
-戾埋片面
-捩手掉咗
-戾橫折曲
+戾埋片面	lai2 maai4 pin3 min2
+捩手掉咗	lai2 sjiau2 deu6 zho2
+戾橫折曲	lai2 waang4 zjit3 kuk1
 捩橫折曲
 嚟把屁咩
 嚟㗎嘞嘛
@@ -84324,7 +84457,6 @@ sort: by_weight
 厲行節約
 利利是是
 厲目而視
-厲手掉咗
 麗水地區
 利是逗來
 麗色噪鶥
@@ -84730,7 +84862,7 @@ sort: by_weight
 領導體系
 領銜主演
 嶺南大學
-嶺南畫派
+嶺南畫派	ling5 naam4 waa2 paai3
 領雀嘴鵯
 另請高明
 另當別論
@@ -85128,6 +85260,7 @@ sort: by_weight
 露天堆棧
 露天宿營
 碌大雙眼
+碌低就睏	luk1 dai1 ziau6 hwan3
 碌低就瞓
 碌下碌下
 碌人情卡
@@ -85242,6 +85375,7 @@ sort: by_weight
 聯合王國
 聯羣結隊
 聯立方程
+攣埋身睏	lyun4 maai4 sjan1 hwan3
 攣埋身瞓
 鸞飄鳳泊
 孿生姐妹	lyun4 shang1 zia2 mui6
@@ -85384,7 +85518,7 @@ sort: by_weight
 唔好老脾
 唔好老皮
 唔好亂龍
-唔好亂掉
+唔好亂掉	m4 hou2 lyun6 deu6
 唔好亂喐
 唔好亂逳
 唔好買啦
@@ -85645,7 +85779,7 @@ sort: by_weight
 漫天遍地
 漫天遍野
 慢條斯理
-漫畫世界
+漫畫世界	maan6 waa2 sjai3 gaai3
 萬紫千紅
 萬箭穿身
 萬象更新
@@ -85740,7 +85874,7 @@ sort: by_weight
 麥田怪圈
 默誦佛號
 蚊蟲叮咬
-蚊都瞓啦
+蚊都瞓啦	man1 do1 hwan3 laa1
 蚊雞豆皮
 蚊滋噉聲
 蚊螆噉聲
@@ -86113,7 +86247,7 @@ sort: by_weight
 面燃大士
 面如灰土
 面如土色
-面臨困難
+面臨困難	min2 lam kwan3 naan4
 面貌一新
 面面俱到
 面面俱圓
@@ -86607,6 +86741,7 @@ sort: by_weight
 無主孤魂
 無主失物
 冇挨冇憑
+冇辦法睏	meau5 baen6 faat3 hwan3
 冇辦法瞓
 冇畀面你
 冇病呀你
@@ -87273,7 +87408,7 @@ sort: by_weight
 你霎戇啦
 你身份證
 你死我活
-你醒下啦
+你醒下啦	ni5 seng2 haa6 laa1
 你成日來
 你食飯先
 你笑咩嘢
@@ -87456,7 +87591,8 @@ sort: by_weight
 額手稱慶
 額濟納河
 啱到廣州
-啱瞓醒覺
+啱睏醒覺	ngaam1 hwan3 seng2 gaeu3
+啱瞓醒覺	ngaam1 hwan3 seng2 gaeu3
 啱嘢晒啱
 啱唔啱使
 啱啱先至
@@ -87477,6 +87613,7 @@ sort: by_weight
 眼都光晒
 眼動記錄
 眼花繚亂
+眼睏沖涼	ngaen5 hwan3 crung1 liong4
 眼瞓沖涼
 眼火都爆
 眼闊頭窄
@@ -87690,6 +87827,8 @@ sort: by_weight
 我返去先
 我返嚟咯
 我費事畀
+我睏陣先	ngo5 hwan3 zran3 sin1
+我睏陣先	ngoi5 hwan3 zran3 sin1
 我瞓陣先
 我服咗佢
 我搞掂了
@@ -87721,7 +87860,8 @@ sort: by_weight
 我可以點
 我可以啦
 我好乖巧
-我好夜瞓
+我好夜瞓	ngo5 hou2 hjaa6 hwan3
+我好夜瞓	ngoi5 hou2 hjaa6 hwan3
 我好認真
 我好無奈
 我好想嘔
@@ -87743,8 +87883,8 @@ sort: by_weight
 我認定你
 我要扯嘞
 我要返工
-我要瞓嘞
-我要瞓啦
+我要睏喇	ngo5 jiu3 hwan3 laa3
+我要瞓喇
 我要手信
 我求下你
 我嚟遲咗
@@ -87916,7 +88056,7 @@ sort: by_weight
 拈拈苫苫
 粘皮帶骨
 粘皮着骨
-黏土動畫
+黏土動畫	nim4 tu2 dung6 waa2
 鮎魚效應
 念念不忘
 念茲在茲
@@ -87990,7 +88130,7 @@ sort: by_weight
 內嵌編碼
 內河運輸
 耐人尋味
-內憂外困
+內憂外困	noi6 jau1 ngoi6 kwan3
 內憂外患
 內有隱情
 內衣專賣
@@ -88557,7 +88697,7 @@ sort: by_weight
 捧到天上
 捧腹絕倒
 碰到和尚
-碰到困難
+碰到困難	pung3 dou3 kwan3 naan4
 蓬蓽生輝
 蓬蓽生光
 蓬萊仙境
@@ -89410,7 +89550,7 @@ sort: by_weight
 濕到淰晒
 濕濕碎啦
 濕濕碎碎
-濕水欖覈
+濕水欖核
 濕水棉花
 濕水炮仗
 十八廿二
@@ -89538,7 +89678,7 @@ sort: by_weight
 實話實說
 實穩冇錯
 實習公寓
-實際困難
+實際困難	sjat zai3 kwan3 naan4
 實際水準
 實質問題
 實至名歸
@@ -89558,7 +89698,8 @@ sort: by_weight
 收益分配
 收益帳戶
 羞於啓齒
-收購計畫
+收購計畫	sjiau1 kau3 gai3 waak6
+收購計劃
 收購洋酒
 收購五金
 羞愧難當
@@ -89869,7 +90010,7 @@ sort: by_weight
 四方鴨蛋
 四方八面
 四方辮頂
-四格漫畫
+四格漫畫	si3 gaak3 maan6 waa2
 四個全面
 四個方位
 四腳朝天
@@ -89895,7 +90036,7 @@ sort: by_weight
 四萬噉口
 四面八方
 四面楚歌
-四面受困
+四面受困	si3 min2 sjau6 kwan3
 四目交投
 四門轎車
 四眼田雞
@@ -90131,7 +90272,7 @@ sort: by_weight
 師出無名
 詩詞歌賦
 思前想後
-詩情畫意
+詩情畫意	sji1 cing4 waa2 ji3
 思潮起伏
 私定終身
 司法覆覈
@@ -90405,7 +90546,7 @@ sort: by_weight
 食餐勁嘅
 食七咁食
 食蟲植物
-食得睏得
+食得睏得	sjik6 dak1 hwan3 dak1
 食得瞓得
 食得冇嘥
 食得就食
@@ -90945,7 +91086,7 @@ sort: by_weight
 雙曲拱橋
 雙曲餘割
 雙曲螺線
-雙鏈覈酸
+雙鏈核酸
 雙氯醇胺
 雙龍出海
 雙孖鯉魚
@@ -91479,7 +91620,8 @@ sort: by_weight
 提拉米蘇
 提了個醒
 提心吊膽
-提醒你啊
+提醒你啊	tai4 sing2 ni5 aa2
+提醒你啊	tai4 seng2 ni5 aa2
 提水工程
 提線木偶
 啼笑皆非
@@ -91519,7 +91661,7 @@ sort: by_weight
 唞返下先
 唞順條氣
 透明程度
-透視畫法
+透視畫法	tau3 sji5 waa2 faat3
 頭崩額裂
 投筆從戎
 頭部受傷
@@ -91990,7 +92132,7 @@ sort: by_weight
 圖書出租
 圖書館員
 圖騰崇拜
-圖畫故事
+圖畫故事	tu4 waa2 gu3 shy6
 逃之夭夭
 塗脂抹粉
 徒子徒孫
@@ -92067,7 +92209,7 @@ sort: by_weight
 痛玩一番
 同阿媽講
 同胞兄弟
-同胞兄妹
+同胞兄妹	tung4 baeu1 hwing1 mui2
 同病相憐
 同煲同撈
 同儕壓力
@@ -92154,7 +92296,7 @@ sort: by_weight
 脫繮野馬
 脫繮之馬
 脫骨換胎
-脫氧覈糖
+脫氧核糖
 脫離羣衆
 脫離實際
 脫貧致富
@@ -92173,7 +92315,7 @@ sort: by_weight
 譁衆取寵
 搲開件衫
 搲損個面
-畫盡意在
+畫盡意在	waa2 zeon6 ji3 zoi6
 華北事變
 華而不實
 華洋轇轕
@@ -92217,21 +92359,21 @@ sort: by_weight
 懷石料理
 懷氏虎鶇
 壞過凱婷
-畫餅充飢
-畫插圖者
+畫餅充飢	waak6 beng2 cjung1 gi1
+畫插圖者	waak6 chaep3 tu4 zjia2
 劃清界線
-畫地爲獄
-畫地爲牢
-畫地自限
+畫地爲獄	waak6 di6 wai6 ngiuk6
+畫地爲牢	waak6 di6 wai6 lou4
+畫地自限	waak6 di6 zy6 haen5
 或多或少
 劃花口面
-畫花口面
-畫虎類犬
+畫花口面	waak6 hwaa1 hau2 min2
+畫虎類犬	waak6 hu2 looi6 hyun2
 劃一不二
-畫耳埋牆
-畫蛇添足
+畫耳埋牆	waak6 nji5 maai4 ciong4
+畫蛇添足	waak6 sjia4 tim1 zuk1
 劃線支票
-畫壞鍾馗
+畫壞鍾馗	waak6 waai6 zjung1 kwai4
 或者係啦
 彎腰駝背
 彎曲空間
@@ -92586,7 +92728,7 @@ sort: by_weight
 鬱鬱而終
 屈屈質質
 屈尊俯就
-覈覈突突
+核核突突
 搲爛塊面
 喂哇鬼叫
 喴嘩鬼叫
@@ -93086,9 +93228,9 @@ sort: by_weight
 製鞋工人
 濟弱扶傾
 製藥企業
-濟困扶危
+濟困扶危	zai2 kwan3 fu4 ngai4
 祭五臟廟
-濟危扶困
+濟危扶困	zai2 ngai4 fu4 kwan3
 濟寧地區
 祭司權術
 製陶工人
@@ -93273,7 +93415,7 @@ sort: by_weight
 舟火廾虫
 舟火収虫
 周街係人
-賙急扶困
+賙急扶困	zjiau1 gap1 fu4 kwan3
 舟車勞頓
 州官放火
 周口地區
@@ -94294,7 +94436,7 @@ sort: by_weight
 招郎入舍
 朝露溘至
 招牌燈箱
-招牌噴畫
+招牌噴畫	zjiu1 paai4 pan3 waa2
 招牌裝修
 招牌裝飾
 朝拍晚播
@@ -94407,7 +94549,7 @@ sort: by_weight
 着女仔衫
 雀屏中選
 着手成春
-着色噴畫
+着色噴畫	zriok3 shik1 pan3 waa2
 着着失敗
 張保仔洞
 將錯就錯
@@ -94902,6 +95044,7 @@ sort: by_weight
 重情重義
 仲超額添
 仲等乜嘢
+仲睏緊覺	zrung6 hwan3 gan2 gaeu3
 仲瞓緊覺
 仲敢駁嘴
 仲講乜吖
@@ -95075,7 +95218,7 @@ sort: by_weight
 絕對領域
 拙於言詞
 掇臀捧屁
-啜覈荔枝
+啜核荔枝
 拙嘴笨舌
 絕塵而去
 絕處逢生
@@ -95150,6 +95293,7 @@ sort: by_weight
 亞氏保加症
 亞太經合會
 阿駝賣蝦米
+阿駝睏棺材	aa3 to4 hwan3 gun1 coi4
 阿駝瞓棺材
 亞洲四小龍
 亞洲運動會
@@ -95821,8 +95965,11 @@ sort: by_weight
 分類和命名
 分散注意力
 分子化合物
+睏喺度都贏	hwan3 hai2 du6 do1 hjeng4
 瞓喺度都贏
+睏晒身落去	hwan3 saai3 sjan1 look6 hyo3
 瞓晒身落去
+睏咗喺梳化	hwan2 zho2 hai2 sho1 hwaa3
 瞓咗喺梳化
 墳場發電機
 弗吉尼亞州
@@ -95952,7 +96099,7 @@ sort: by_weight
 雞食放光蟲
 計算複雜性
 計算機比喻
-計算機動畫
+計算機動畫	gai3 syun2 gi1 pan3 waa2
 計算機斷層
 計算機工業
 計算機模擬
@@ -95963,7 +96110,7 @@ sort: by_weight
 金木水火土
 金銀銅鐵錫
 金瓶梅詞話
-今朝唔知醒
+今朝唔知醒	gam1 zriu1 m4 zri seng2
 噉都唔得咩
 噉又唔係噃
 感染性腹瀉
@@ -96092,7 +96239,7 @@ sort: by_weight
 高處不勝寒
 高登音樂臺
 高橋留美子
-高畫質電視
+高畫質電視	gou1 waa2 zjat1 din6 sji5
 告到佢甩褲
 告到你甩褲
 古巴共產黨
@@ -96568,7 +96715,7 @@ sort: by_weight
 嘢可以亂食
 伊波拉病毒
 醫學檢驗師
-依樣畫葫蘆
+依樣畫葫蘆	ji1 hjong6 waak6 hu4 lu4
 醫院管理局
 伊利諾伊州
 醫療輔助隊
@@ -96657,7 +96804,7 @@ sort: by_weight
 葉卡捷琳堡
 葉卡捷琳娜
 熱到流晒汗
-熱覈反應堆
+熱核反應堆
 熱力學溫標
 熱力學溫度
 要頸唔要命
@@ -96803,7 +96950,7 @@ sort: by_weight
 流行性感冒
 流量防火牆
 流氓無產者
-流體覈試驗
+流體核試驗
 柳條湖事件
 狸貓換太子
 離心分離機
@@ -96928,6 +97075,7 @@ sort: by_weight
 唔打唔相識
 唔屌唔鬆化
 唔發火當流
+唔睏得落覺	m4 hwan3 dak1 look6 gaeu3
 唔瞓得落覺
 唔夠攝牙罅
 唔夠𤗈牙罅
@@ -98214,7 +98362,7 @@ sort: by_weight
 走都走唔切
 酒後吐真言
 酒是故鄉醇
-酒醉三分醒
+酒醉三分醒	ziau2 zooi3 saam1 fan1 seng2
 走自己的路
 晝夜平分點
 就業安定費
@@ -98337,7 +98485,7 @@ sort: by_weight
 招聘協調人
 朝朝一碗粥
 沼澤大尾鶯
-照葫蘆畫瓢
+照葫蘆畫瓢	zjiu3 hu4 lu4 waak6 piu4
 照住鼻哥去
 召喚救護車
 左右做人難
@@ -98453,7 +98601,7 @@ sort: by_weight
 總會三明治
 種子從天降	zjung2 zy2 cung4 tin1 gong3
 種族主義者
-誦讀困難症
+誦讀困難症	zung6 duk6 kwan3 naan6 zjing3
 仲夏夜之夢
 朱背啄花鳥
 珠江三角洲
@@ -98683,7 +98831,6 @@ sort: by_weight
 電視直播衛星
 電子數據交換
 屌那媽頂硬上
-掉哪媽頂硬上
 屌你老母臭閪
 吊頸都要唞氣
 多邊貿易談判
@@ -98723,6 +98870,7 @@ sort: by_weight
 發射機應答器
 發作性嗜睡病
 婚前財產公證
+睏唔安食唔落	hwan3 m4 on1 sjik6 m4 look6
 瞓唔安食唔落
 浮力調整背心
 浮力調整裝置
@@ -98820,7 +98968,7 @@ sort: by_weight
 個肚有啲唔妥
 薑還是老的辣
 各打五十大板
-各有巧妙不同
+各有巧妙不同	gook3 jau5 kiu2 miu6 bat1 tung4
 角色扮演遊戲
 趕咁快去死咩
 趕住去投胎咩
@@ -98852,7 +99000,7 @@ sort: by_weight
 瓜田李下之嫌
 寡母婆咁多心
 掛羊頭賣狗肉
-鬼打都冇咁醒
+鬼打都冇咁醒	gwai2 daa2 do1 meau5 gom3 seng2
 過五關斬六將
 過氧化苯甲酰
 國家地理雜誌
@@ -99006,6 +99154,7 @@ sort: by_weight
 幼發拉底河谷
 猶太復國主義
 有賊心冇賊膽
+有得震冇得睏	jau5 dak1 zran3 meau5 dak1 hwan3
 有得震冇得瞓
 有今生冇來世
 有咁大搞咁大
@@ -99104,7 +99253,7 @@ sort: by_weight
 元語言學意識
 鉛活字印刷機
 原子爆破彈藥
-原子覈反應堆
+原子核反應堆
 遠親不如近鄰
 遠東經濟評論
 軟件開發人員
@@ -99243,7 +99392,7 @@ sort: by_weight
 民族社會主義
 民族雜居地區
 民族主義情緒
-乜東東芫茜蔥
+乜東東芫茜蔥	mat1 dung1 dung1 jim4 sai1 cung1
 密克羅尼西亞
 物質不滅定律
 貿易保護主義
@@ -99413,6 +99562,8 @@ sort: by_weight
 沙特阿拉伯人
 沙烏地阿拉伯
 嘥到一錢不值
+嘥心機捱眼瞓	chaai1 sam1 gi1 ngaai4 ngaen5 hwan3
+嘥心機捱眼瞓	shaai1 sam1 gi1 ngaai4 ngaen5 hwan3	5%
 嘥心機捱眼瞓
 三步不出閨門
 三步擸埋兩步
@@ -99488,7 +99639,8 @@ sort: by_weight
 十個煲九個蓋
 十年唔逢一潤
 十成着咗九成
-十畫未有一撇
+十畫未有一撇	sjap6 waak6 mi6 jau5 jat1 pit3
+十劃未有一撇
 膝頭哥撟眼淚
 膝頭哥撨眼淚
 膝頭哥矯眼淚
@@ -99526,7 +99678,7 @@ sort: by_weight
 睡眠呼吸暫停
 信報財經新聞
 迅雷不及掩耳
-信使核糖覈酸
+信使核糖核酸
 信貸衍生產品
 信貸違約掉期
 施比受更有福
@@ -99554,9 +99706,11 @@ sort: by_weight
 食幾多着幾多
 食嘢打背脊落
 食龍肉都無味
+食唔安睏唔落	sjik6 m4 on1 hwan3 m4 look6
 食唔安瞓唔落
 食米唔知米貴
 食物加工過程
+食少啖多覺睏	sjik6 sjiu2 daam6 do1 gaeu3 hwan3
 食少啖多覺瞓
 食碗底反碗面
 仙女座大星雲
@@ -99650,7 +99804,7 @@ sort: by_weight
 屋漏兼逢夜雨
 華南冠紋柳鶯
 華納音樂集團
-畫公仔畫出腸
+畫公仔畫出腸	waak6 gung1 zaai2 waak6 cjeot1 criong4
 玩到興高采烈
 環法自行車賽
 環境行動主義
@@ -100230,7 +100384,7 @@ sort: by_weight
 一個崩都冇少到
 一個鼻哥窿出氣
 一個蘿蔔一個坑
-一個酸梅兩個覈
+一個酸梅兩個核
 一哭二鬧三上吊
 一人做事一人當
 一日之計在於晨
@@ -100335,7 +100489,7 @@ sort: by_weight
 雷聲大，雨點小
 鐮形血球貧血症
 拎得起，放得低
-鈴鈴喳喳都掉埋
+鈴鈴喳喳都掉埋	ling4 ling4 zhaa1 zhaa1 do1 deu6 maai4
 陵水黎族自治縣
 羅密歐與朱麗葉
 梁山伯與祝英臺
@@ -100406,7 +100560,8 @@ sort: by_weight
 無線電視翡翠臺
 冇事出街少破財
 冒天下之大不韙
-妹仔大過主人婆
+妹仔大過主人婆	mui1 zaai2 daai6 gwo3 zjyu2 njan4 po4
+妹仔大過主人婆	mui1 zai2 daai6 gwo3 zjyu2 njan4 po4	5%
 媒體接口連接器
 每逢佳節倍思親
 滿城盡帶黃金甲
@@ -100469,7 +100624,9 @@ sort: by_weight
 葡萄球菌腸毒素
 賠了夫人又折兵
 沙蟬叫，荔枝熟
-嘥心機，挨眼瞓
+嘥心機，捱眼睏	chaai1 sam1 gi1 ngaai4 ngaen5 hwan3
+嘥心機，捱眼睏	shaai1 sam1 gi1 ngaai4 ngaen5 hwan3	5%
+嘥心機，捱眼瞓
 三步擸埋兩步走
 三分顏色上大紅
 三個女人一個墟
@@ -100505,8 +100662,8 @@ sort: by_weight
 生於斯，長於斯
 十個茶壺九個蓋
 十年人事幾番新
+十畫都未有一撇	sjap6 waak6 do1 mi6 jau5 jat1 pit3
 十劃都未有一撇
-十畫都未有一撇
 十隻手指有長短
 十指不沾陽春水
 失敗乃成功之母
@@ -100639,7 +100796,7 @@ sort: by_weight
 華南斑胸鉤嘴鶥
 話不投機半句多
 話到嘴邊留三分
-畫虎不成反類犬
+畫虎不成反類犬	waak6 hu2 bat1 sjing4 faan2 looi6 hyun2
 環太平洋地震帶
 環太平洋火山帶
 橫眉冷對千夫指
@@ -100871,7 +101028,7 @@ sort: by_weight
 魚與熊掌不可兼得
 蔫豬頭有盲鼻菩薩
 原發性進行性失語
-原覈細胞型微生物
+原核細胞型微生物
 圓珠形離子交換劑
 粵語審音配詞字表
 裘馨氏肌肉萎縮症
@@ -100880,7 +101037,10 @@ sort: by_weight
 爛船都仲有三斤釘
 撩極都撩唔返出嚟
 來得容易，去得快
-來得早不如來得巧
+來得早不如來得巧	lai4 dak1 zou2 bat1 njyo4 lai4 dak1 kiu2
+來得早不如來得巧	lai4 dak1 zou2 bat1 njyo4 lai4 dak1 hiu2
+來得早不如來得巧	lei4 dak1 zou2 bat1 njyo4 lei4 dak1 kiu2
+來得早不如來得巧	lei4 dak1 zou2 bat1 njyo4 lei4 dak1 hiu2
 老虎唔發威當病貓
 龍游淺水，遭蝦戲
 聯合國教科文組織
@@ -100944,7 +101104,7 @@ sort: by_weight
 是可忍，孰不可忍
 食鹽仲多過你食米
 煽動顛覆國家政權
-腺嘌呤覈苷三磷酸
+腺嘌呤核苷三磷酸
 星星之火可以燎原
 聖多美和普林西比
 乘興而往敗興而歸
@@ -100967,8 +101127,8 @@ sort: by_weight
 同一個鼻哥窿出氣
 童子軍跳彈牀是但
 話一就一話二就二
-畫公仔唔使畫出腸
-畫公仔唔駛畫出腸
+畫公仔唔使畫出腸	waak6 gung1 zaai2 m4 shai2 waak6 cjeot1 criong4
+畫公仔唔使畫出腸	waak6 gung1 zai2 m4 shai2 waak6 cjeot1 criong4	5%
 橫又係死掂又係死
 衛生署控菸辦公室
 和平共處五項原則
@@ -101051,9 +101211,7 @@ sort: by_weight
 前人種樹，後人乘涼
 前無古人，後無來者
 前事不忘，後事之師
-初歸新抱，落地孩兒
-初歸心抱，落地孩兒
-初歸新婦，落地孩兒
+初歸新婦，落地孩兒	cho1 gwai1 san pu5 look6 di6 haai4 nji4
 初嚟埗到，唔知鑊竈
 初嚟報到，唔知鑊竈
 初嚟甫到，唔知鑊竈
@@ -101223,7 +101381,7 @@ sort: by_weight
 又要威，又要戴頭盔
 贏咗粒糖，輸咗間廠
 衣食足，然後知榮辱
-意存筆先，畫盡意在
+意存筆先，畫盡意在	ji3 cyun4 bat1 sin1 waak6 zeon6 ji3 zoi6
 而做又是另外一回事
 以言代法，以權壓法
 以眼還眼，以牙還牙

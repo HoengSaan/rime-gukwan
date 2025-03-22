@@ -12,7 +12,7 @@
 
 ---
 name: gukwan.chars
-version: "14.6b"
+version: "14.7b"
 sort: by_weight
 ...
 
@@ -8163,7 +8163,7 @@ sort: by_weight
 菱	ling4	
 䔖	ling4	0%
 㥄	ling4	0%
-鯪	ling4	
+鯪	ling4	0%
 崚	ling4	
 㱥	ling4	0%
 𡕮	ling4	0%
@@ -11346,13 +11346,13 @@ sort: by_weight
 齗	ngan5	0%
 听	ngan5	0%
 笉	ceon2	0%
-窘	kwan5	
+窘	kwan5	0%
 僒	kwan5	0%
 莙	kwan5	0%
 㖥	kwan5	0%
 㻒	kwan5	0%
 箘	kwan5	0%
-菌	kwan5	
+菌	kwan5	0%
 䐃	kwan5	0%
 蔨	kwan5	0%
 蜠	kwan5	0%
@@ -16438,7 +16438,7 @@ sort: by_weight
 邂	haai6	0%
 解	haai6	0%
 賣	maai6	
-畫	waa6	
+畫	waa6	3%
 詿	waa6	0%
 罣	waa6	0%
 絓	waa6	0%
@@ -22358,13 +22358,13 @@ sort: by_weight
 㡜	syut3	0%
 㨹	syut3	0%
 𤿫	cryut3	0%
-悅	jyut6	
-說	jyut6	0%
-閱	jyut6	
-蛻	jyut6	0%
-娧	jyut6	0%
-𧀲	jyut6	0%
-䓲	jyut6	0%
+悅	hjyut6	
+說	hjyut6	0%
+閱	hjyut6	
+蛻	hjyut6	0%
+娧	hjyut6	0%
+𧀲	hjyut6	0%
+䓲	hjyut6	0%
 缺	kyut3	
 蒛	kyut3	0%
 爇	njyut6	0%
