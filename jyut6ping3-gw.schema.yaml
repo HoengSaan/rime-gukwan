@@ -13,7 +13,7 @@
 schema:
   schema_id: jyut6ping3-gw
   name: 粵語拼音 菊韻配置
-  version: "14.1b"
+  version: "15.0b"
   author:
     靈帝（Hoengsaan）
   
@@ -32,6 +32,7 @@ schema:
     - kanas
     - kaomoji
     - kikwin
+    - gukwan-melt-eng
 
 # 開關 "reset: 0" 默認第一選項 "reset: 1" 默認第二選項
 switches:
@@ -87,6 +88,7 @@ engine:
     - script_translator@kanas               # 假名輸入
     - script_translator@kaomoji             # 顏文字輸入
     #- script_translator@kikwin              # 和語輸入
+    - table_translator@gukwan-melt-eng      # 英語混打
     - lua_translator@*unicode               # Unicode
     - lua_translator@*calc_translator       # 計數機
     - lua_translator@*number_gukwan         # 數字數額金額蘇州碼
@@ -96,12 +98,13 @@ engine:
     #- lua_filter@*is_in_user_dict          # 測試用
     - reverse_lookup_filter@reverse_lookup  # 反查
     - reverse_lookup_filter@special_typing  # 輸入
-    - simplifier@emoji_cantonese_suggestion # 繪文字（表情）
+    - lua_filter@*autocap_filter            # 自動大階
+    - simplifier@emoji_cantonese_suggestion # 繪文字輸入
     - simplifier                            # 簡化
     - uniquifier                            # 去重
 
 speller:
-  alphabet: zyxwvutsrqponmlkjihgfedcba
+  alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA
   delimiter: " '"
   algebra:
     # 取消下兩行註釋（移除 # 號），支援疑影交替： ng- 通 Ø-，Ø- 通 ng-
@@ -174,6 +177,7 @@ translator:
   dictionary: jyut6ping3
   prism: jyut6ping3-gw
   spelling_hints: 9
+  initial_quality: 1.2
   preedit_format:
     - xform/([aeiouymngptk])vv/${1}4/
     - xform/([aeiouymngptk])xx/${1}5/

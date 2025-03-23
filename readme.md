@@ -17,15 +17,17 @@ This work is licensed under a
 
 日文版菊韻（菊韻和語）：[HoengSaan/rime-kikwan: 日本語輸入方案菊韻 中州韻方案 Japanese IME (RIME Scheme)](https://github.com/HoengSaan/rime-kikwan)
 
-**測試階段：預計4月完成**
+[TOC]
 
 ## 簡介
+
+This is a schema based on [Rime Input Method](https://rime.im/).
 
 此爲[RIME | 中州韻輸入法引擎](https://rime.im/)方案，用於輸入小欖話爲主既粵語方言。
 
 現有字庫根據excel大批量轉換，有不少紕漏，敬請見諒。菊韻無法兼顧所有粵語方言，亦竝非本方案之目的。本方案並非廣州話方案，廣州話（穗港澳）請用[rime/rime-cantonese: Rime Cantonese input schema | 粵語拼音輸入方案](https://github.com/rime/rime-cantonese)。
 
-爲適應流動電話鍵盤限制，以及各種新功能，鍵值已於12.0版本進行大規模調整。
+爲適應流動電話鍵盤限制，以及各種新功能，鍵值已於12.0b版本進行大規模調整。
 
 更多資訊請閱讀下文竝參攷[菊韻 – なかやま園](https://zonsan.fc2.page/?cat=123)。[關於如何安裝](#安裝)。
 
@@ -53,6 +55,7 @@ This work is licensed under a
 
 菊韻有各類功能以盡量貼近現代輸入法。
 
+- **漢英混打：允許漢字英文混打，基於melt-eng。待完善。**
 - 繪文字（表情）：可以粵語輸入繪文字，默認關閉。
 - 符號：RIME特殊符號輸入，鍵值爲`/`。
 - Unicode：以Unicode編號直接輸入字符，適合輸入組合字符，空白字符等難複製特殊字符，鍵值爲`U`（unicode）
@@ -104,10 +107,13 @@ This work is licensed under a
 
 ### 問題・未來方向
 
-- 漢字發音：本人無法亦無有可能佢保證所有漢字發音正確。尤其因爲菊韻詞庫多數無輸入碼，有多音字既單詞發音必然有誤。
-- 地名繁簡：數據來源係簡筆字，本人亦仔細審覈過，但都無法保證三萬幾條地名都係正確。
-- 漢英混打：由於不明原因gukwan不能使用混打，本人已嘗試多次。將解決詞庫問題後再行處理。
-- 可輸入方言過少：我諗呢個輸入法都係我自用爲主，之後再處理啦。
+- 字詞發音：
+  - 本人無法亦無有可能去保證所有漢字發音正確。尤其因爲菊韻詞庫多數無輸入碼，有多音字既單詞發音必然有誤。
+  - 雖然菊韻支持使用聲調輸入，但本人並不能確保所有字詞聲調正確。尤其考慮到以小欖話等方言變調遠比廣州話豐富，以我一人之力斷無可能完善。
+- 地名繁簡：數據來源係簡筆字，本人亦仔細審覈過，但都無法保證三萬幾條地名全數正確。
+- <del>漢英混打：由於不明原因gukwan不能使用混打，本人已嘗試多次。將解決詞庫問題後再行處理。</del>**【已解決】**
+- 漢英混打開關：待處理。
+- 可輸入方言過少：自用爲主，將於未來處理。
 
 ## 安裝
 
@@ -153,6 +159,7 @@ This work is licensed under a
 瘧	hiok6
 若	hiok6
 螢	hing4
+盈	hing4
 楹	hing4
 蠅	hing4
 葉	hip6
@@ -178,6 +185,15 @@ This work is licensed under a
 翼	hik6
 亦	hek6
 贏	heng4
+馭	hyo6
+禦	hyo6
+御	hyo6
+驗	him6
+芫	him4
+筵	hin4
+衍	hin5
+演	hin5
+延	hin4
 ```
 
 ## 拼音
@@ -197,7 +213,7 @@ This work is licensed under a
 
 ## 特徵
 
-一般用家請無視灰字。恕此處不能盡述，詳細請參攷[小欖話・沙田方言特徵 – なかやま園](https://zonsan.fc2.page/?p=1580)。
+一般用家請無視灰字。恕此處不能盡述，詳細請參攷[小欖話・沙田方言特徵 – なかやま園](https://zonsan.fc2.page/?p=1580)。（下表內容已過期，待更新）
 
 <img src="pic\dakzhing.png"/>
 
@@ -212,7 +228,7 @@ This work is licensed under a
 **※寬式音標竝不能完全代表實際發音※**
 
 - `gukwan.schema.yaml`：調試用・自用（**請勿刪除**）
-- `jyut6ping3-gw.schema.yaml`：以菊韻配置調用`rime-cantonese`
+- `jyut6ping3-gw.schema.yaml`：以菊韻配置調用`rime-cantonese`，支持菊韻所有功能（漢英混打未實裝）。
 
 #### 預設古代音方案
 
@@ -228,7 +244,7 @@ This work is licensed under a
   - 本方案根據小欖鎮區音代表特徵製作。下爲重要特徵：
     - 小欖人多數人不分來孃（l/n）、透曉（t/h），故可以l音打n（如「農」`nung4`可打`lung4`），h音打t（如「偸」`tau1`可打`hau1`）。
     - 小欖人多數人不分`ak`同`aak`，故可以aak音打ak（如「勒」`lak6`可打`laak6`）。
-  - 此方案不能代表所有情況，建議仔細閱讀方案竝根據自身口音調整，見[小欖話・沙田方言特徵 – なかやま園](https://zonsan.fc2.page/?p=1580)。
+  - 此方案不能代表所有情況，建議仔細閱讀方案竝根據自身口音調整，見[小欖話・沙田方言特徵 – なかやま園](https://zonsan.fc2.page/?p=1580)。（內容已過期，待更新）
   - `gukwan-siulaam-ps.schema.yaml`：寬式音標版
   
 - `gukwan-canton.schema.yaml`：廣州音
@@ -250,6 +266,7 @@ This work is licensed under a
 - 詞庫
   - `gukwan.words.dict.yaml`：粵拼詞庫
     - 基於`jyut6ping3.words.dict.yaml`，作者爲「粵語計算語言學基礎建設組」([@CanCLID](https://github.com/CanCLID)) ，隨源文件以[CC BY 4.0許可](https://creativecommons.org/licenses/by/4.0/)發佈。已去除輸入碼竝改變部份字型。
+    - 已開始爲部份詞標音。
   - `gukwan.words1.dict.yaml`：部份小欖話辭彙同小欖周邊地名
     - 收錄部份小欖話特有辭彙，小欖周邊地名街名，詳細見[小欖詞庫資料](https://github.com/HoengSaan/rime-gukwan/wiki/小欖詞庫資料)
   - `gukwan.words2.dict.yaml`：粵拼詞庫增補同外來語
@@ -261,13 +278,17 @@ This work is licensed under a
 
 > [!NOTE]
 >
-> `gukwan-extended.dict.yaml`用於調用各種擴展詞庫，以增強輸入體驗。下載並放置於正確位置方可使用，不安裝直接調用將會導致輸入法不能正常使用。文件內有說明。位置爲`/ext_dicts`。
->
-> 由於詞庫文件巨大，移動設備或低性能電腦不建議使用，可能導致輸入法無法使用。
+> `gukwan-extended.dict.yaml`用於調用各種擴展詞庫，以增強輸入體驗。下載並放置於正確位置方可使用，不安裝直接調用將會導致輸入法不能正常使用。故默認情況下將不調用。
 
 > [!TIP]
 >
 > [關於如何製作用戶詞庫](https://github.com/rime/home/wiki/UserGuide#%E7%94%A8%E6%88%B6%E8%A9%9E%E5%85%B8%E7%AE%A1%E7%90%86)
+>
+> [關於如何使用擴展詞庫](https://github.com/HoengSaan/rime-gukwan/wiki#%E9%97%9C%E6%96%BC%E6%93%B4%E5%B1%95%E8%A9%9E%E5%BA%AB)
+### 漢英混打
+
+漢英混打實現是參攷[优化 Rime 英文输入体验 - Dvel's Blog](https://dvel.me/posts/make-rime-en-better/)，基於[tumuyan/melt_eng](https://github.com/tumuyan/rime-melt)（[iDvel/rime-ice](https://github.com/iDvel/rime-ice)版）。隨源文件以[Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0.html)發佈。
+
 ### 依賴
 
 以下爲本倉庫自帶，毋須額外下載。關於其他依賴文件請參攷[如何在RIME輸入法安裝菊韻輸入法 – なかやま園](https://zonsan.fc2.page/?p=1563)。
@@ -276,15 +297,33 @@ This work is licensed under a
 
 ### LUA腳本
 
-本方案所有LUA腳本均有參攷[iDvel/rime-ice](https://github.com/iDvel/rime-ice)及相關文件，相關文件根據源文件許可發佈。本人僅將其繁化，竝增加小小功能。由於部份腳本源碼已改變，爲避免文件被覆蓋，故改名。
+本方案所有LUA腳本均有參攷[iDvel/rime-ice](https://github.com/iDvel/rime-ice)及相關文件，相關文件根據源文件許可發佈。
 
 - unicode.lua：UNICODE碼直接輸入字符，來自[shewer/librime-lua-script](https://github.com/shewer/librime-lua-script/tree/main)，隨源文件以[MIT許可](https://mit-license.org/)發佈。
 - lunar.lua：是日農曆，新曆轉舊歷，來自[boomker/rime-fast-xhup](https://github.com/boomker/rime-fast-xhup)，隨源文件以[LGPL 3.0許可](https://www.gnu.org/licenses/lgpl-3.0.en.html)發佈。
+- calc_translator.lua：計數機，來自[ChaosAlphard](https://github.com/ChaosAlphard)之PR。隨源文件以[GPL 3.0許可](https://www.gnu.org/licenses/gpl-3.0.en.html)發佈。
+- autocap_filter.lua：自動大寫英文詞彙，作者爲@abcdefg233同@Mirtle，來自[iDvel/rime-ice](https://github.com/iDvel/rime-ice)。隨源文件以[GPL 3.0許可](https://www.gnu.org/licenses/gpl-3.0.en.html)發佈。
+
+以下腳本繁化並增添小小功能。爲避免文件被覆蓋，故改名。
+
 - number_gukwan.lua：以阿拉伯數字輸入轉換漢語數字，來自[yanhuacuo/98wubi-tables](https://github.com/yanhuacuo/98wubi-tables)。增加轉換蘇州碼子功能。增加直接轉換功能。由於源文件採取[Unlicense許可](https://unlicense.org/)，本文件亦不設限。
 - date_gukwan.lua：以各種格式輸入是日日期時間，來自[iDvel/rime-ice](https://github.com/iDvel/rime-ice)。隨源文件以[GPL 3.0許可](https://www.gnu.org/licenses/gpl-3.0.en.html)發佈。
-- calc_translator.lua：計數機，來自[ChaosAlphard](https://github.com/ChaosAlphard)之PR。隨源文件以[GPL 3.0許可](https://www.gnu.org/licenses/gpl-3.0.en.html)發佈。
 
 ### 其他
 
-- `symbols-gukwan.yaml`：標點符號同特殊符號輸入。
+- `symbols-gukwan.yaml`：菊韻定製標點符號同特殊符號輸入。
+
+## 銘謝
+
+在此特別致謝於上文中所提及方案、字表、詞庫同腳本創作者，亦感謝以下書籍及網站的作者和編者。若無諸位努力，本人亦無法製作菊韻。
+
+- 高然《中山方言誌》
+- 何惠玲、馮國強《中山市沙田族羣的方音傳承及其民俗變遷》
+- 中山市地方誌編撰委員會《中山市志(1979-2005)》
+- 葉卉時《廣府方言順德話》
+- [poem《廣韻字音表》](https://zhuanlan.zhihu.com/p/20430939)
+- [嶺南粵音《泛粵大典》](https://jyutdict.org/)
+- [zi.tools 字統网](https://zi.tools/)
+
+
 

@@ -14,7 +14,7 @@ __include: gukwan.schema:/
 schema:
   schema_id: gukwan-default
   name: 菊韻構擬音
-  version: "14.1b"
+  version: "15.0b"
   author:
     靈帝（Hoengsaan）
   
@@ -33,6 +33,7 @@ schema:
     - kanas
     - kaomoji
     - kikwin
+    - gukwan-melt-eng
 
 engine:
   processors:
@@ -69,6 +70,7 @@ engine:
     - script_translator@kanas               # 假名輸入
     - script_translator@kaomoji             # 顏文字輸入
     #- script_translator@kikwin              # 和語輸入
+    - table_translator@gukwan-melt-eng      # 英語混打
     - lua_translator@*unicode               # Unicode
     - lua_translator@*calc_translator       # 計數機
     - lua_translator@*number_gukwan         # 數字數額金額蘇州碼
@@ -78,12 +80,13 @@ engine:
     #- lua_filter@*is_in_user_dict          # 測試用
     - reverse_lookup_filter@reverse_lookup  # 反查
     - reverse_lookup_filter@special_typing  # 輸入
-    - simplifier@emoji_cantonese_suggestion # 繪文字（表情）
+    - lua_filter@*autocap_filter            # 自動大階
+    - simplifier@emoji_cantonese_suggestion # 繪文字輸入
     - simplifier                            # 簡化
     - uniquifier                            # 去重
 
 speller:
-  alphabet: zyxwvutsrqponmlkjihgfedcba
+  alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA
   delimiter: " '"
   algebra:
     #範例
@@ -328,6 +331,7 @@ speller:
 translator:
   dictionary: gukwan
   prism: gukwan-default
+  initial_quality: 1.2
   spelling_hints: 9
   preedit_format:
     - xform/([aeiouymngptk])vv/${1}4/

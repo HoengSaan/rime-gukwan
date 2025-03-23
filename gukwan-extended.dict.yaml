@@ -12,7 +12,7 @@
 
 ---
 name: gukwan-extended
-version: "13.3b"
+version: "15.0b"
 sort: by_weight
 vocabulary: essay-cantonese
 import_tables:
@@ -30,19 +30,19 @@ import_tables:
   #擴展詞庫須自行安裝，不安裝直接調用將會導致輸入法不能正常使用
   # http://forum.freemdict.com/t/topic/29581
   - ext_dicts/hanhuo                  # 古典詞庫——大漢和辭典
-  - ext_dicts/hanngy                  # 古典詞庫——漢語大詞典
-  - ext_dicts/hanshrsr01              # 古典詞庫——詩歌
+  - ext_dicts/hanngy                  # 古典詞庫——漢語大詞典（與luna_pinyin.hanyu衝突）
+  - ext_dicts/hanshrsr01              # 古典詞庫——詩歌（基於luna_pinyin.poetry，擇一開啓）
   #- ext_dicts/hanshrsr02             # 古典詞庫——詩歌（簡轉繁，不建議）
-  #- ext_dicts/HBojhmun               # 古典詞庫——佩文韻府
-  #- ext_dicts/hua.translation        # 古典詞庫——華譯
+  #- ext_dicts/HBojhmun               # 古典詞庫——佩文韻府（少用，不建議）
+  #- ext_dicts/hua.translation        # 古典詞庫——華譯（近代詞，不建議）
   # https://github.com/rime-aca/dictionaries
-  - ext_dicts/luna_pinyin.extended    # rime-aca擴展詞庫（須移除輸入碼） 
-  #- ext_dicts/luna_pinyin.poetry     # rime-aca擴展詞庫——詩詞
-  #- ext_dicts/luna_pinyin.hanyu      # rime-aca擴展詞庫——漢語大詞典
+  - ext_dicts/luna_pinyin.extended    # rime-aca擴展詞庫（須手動移除輸入碼，否則無法使用） 
+  #- ext_dicts/luna_pinyin.poetry     # rime-aca擴展詞庫——詩詞（hanshrsr01底本，擇一開啓）
+  #- ext_dicts/luna_pinyin.hanyu      # rime-aca擴展詞庫——漢語大詞典（與hanngy衝突）
   # https://github.com/Chernfalin/better-rime-dict
-  - ext_dicts/luna_pinyin.sgmain      # BetterRime詞庫增強包——搜狗
-  - ext_dicts/luna_pinyin.sgplus      # BetterRime詞庫增強包——搜狗
-  - ext_dicts/luna_pinyin.sgplus2     # BetterRime詞庫增強包——搜狗
+  - ext_dicts/luna_pinyin.sgmain      # BetterRime詞庫增強包——搜狗（低性能設備建議關閉）
+  - ext_dicts/luna_pinyin.sgplus      # BetterRime詞庫增強包——搜狗（低性能設備建議關閉）
+  - ext_dicts/luna_pinyin.sgplus2     # BetterRime詞庫增強包——搜狗（低性能設備建議關閉）
   - ext_dicts/luna_pinyin.net         # BetterRime詞庫增強包——網語
   - ext_dicts/luna_pinyin.website     # BetterRime詞庫增強包——網站
   #- ext_dicts/luna_pinyin.game       # BetterRime詞庫增強包——遊戲

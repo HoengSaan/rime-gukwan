@@ -12,7 +12,7 @@
 
 ---
 name: gukwan.chars1
-version: "14.8b"
+version: "15.0b"
 sort: by_weight
 ...
 
@@ -535,6 +535,7 @@ sort: by_weight
 項	hong6	
 祇	zji2	
 是	sji6	
+是	sjy6	5%
 氏	sji6	
 綺	ji2	
 邇	nji1	0%
@@ -613,6 +614,7 @@ sort: by_weight
 塢	wu1	
 譜	pu2	
 圃	pu2	
+洗	saai2	
 米	mei1	
 眯	mei1	
 拐	gwaai2	
@@ -859,6 +861,7 @@ sort: by_weight
 喟	wai2	3%
 嗜	sji3	
 視	sji6	
+視	sjy6	5%
 緻	zri3	0%
 冀	ki3	
 兾	ki3	0%
@@ -872,9 +875,11 @@ sort: by_weight
 悸	gwai3	
 肆	sy3	
 畀	bi2	
+畀	bi1	
 示	sji6	
+示	sjy6	5%
 諡	sji3	
-謚	sji3	0%
+謚	sji3	3%
 懟	dyi6	
 值	zrik6	
 伺	sy6	
@@ -961,6 +966,7 @@ sort: by_weight
 妹	mui1	0%
 潰	kwui2	
 酹	laai6	0%
+代	daai6	0%
 袋	doi2	0%
 慨	koi2	
 䟴	ngan3	5%
