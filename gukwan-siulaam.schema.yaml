@@ -14,7 +14,7 @@ __include: gukwan.schema:/
 schema:
   schema_id: gukwan-siulaam
   name: 菊韻小欖音
-  version: "15.0b"
+  version: "15.1b"
   author:
     靈帝（Hoengsaan）
   
@@ -74,8 +74,7 @@ engine:
     - lua_translator@*unicode               # Unicode
     - lua_translator@*calc_translator       # 計數機
     - lua_translator@*number_gukwan         # 數字數額金額蘇州碼
-    - lua_translator@*date_gukwan           # 日期時間
-    - lua_translator@*lunar                 # 農曆
+    - lua_translator@*time_gukwan           # 日期時間
   filters:
     #- lua_filter@*is_in_user_dict          # 測試用
     - reverse_lookup_filter@reverse_lookup  # 反查

@@ -13,7 +13,7 @@
 schema:
   schema_id: jyut6ping3-gw
   name: 粵語拼音 菊韻配置
-  version: "15.0b"
+  version: "15.1b"
   author:
     靈帝（Hoengsaan）
   
@@ -92,8 +92,7 @@ engine:
     - lua_translator@*unicode               # Unicode
     - lua_translator@*calc_translator       # 計數機
     - lua_translator@*number_gukwan         # 數字數額金額蘇州碼
-    - lua_translator@*date_gukwan           # 日期時間
-    - lua_translator@*lunar                 # 農曆
+    - lua_translator@*time_gukwan           # 日期時間
   filters:
     #- lua_filter@*is_in_user_dict          # 測試用
     - reverse_lookup_filter@reverse_lookup  # 反查
@@ -190,7 +189,7 @@ jyut6ping3:
   tag: jyut6ping3
   dictionary: jyut6ping3
   enable_user_dict: false
-  prefix: "J"
+  prefix: "`"
   suffix: ";"
   tips: 〔粵拼〕
   preedit_format:
@@ -205,7 +204,7 @@ luna_pinyin:
   tag: luna_pinyin
   dictionary: luna_pinyin
   enable_user_dict: false
-  prefix: "P"
+  prefix: "`P"
   suffix: ";"
   tips: 〔普拼〕
   preedit_format:
@@ -217,7 +216,7 @@ cangjie5:
   tag: cangjie5
   dictionary: cangjie5
   enable_user_dict: false
-  prefix: "C"
+  prefix: "`C"
   suffix: ";"
   tips: 〔倉頡〕
   preedit_format:
@@ -233,7 +232,7 @@ kunyomi:
   tag: kunyomi
   dictionary: kunyomi
   enable_user_dict: false
-  prefix: "F"
+  prefix: "`F"
   suffix: ";"
   tips: 〔和訓〕
 
@@ -241,7 +240,7 @@ loengfan:
   tag: loengfan
   dictionary: loengfan
   enable_user_dict: false
-  prefix: "L"
+  prefix: "`L"
   suffix: ";"
   tips: 〔兩分〕
 
@@ -254,7 +253,7 @@ kanas:
   tag: kanas
   dictionary: kanas
   enable_user_dict: false
-  prefix: "G"
+  prefix: "`G"
   suffix: ";"
   tips: 〔假名〕
 
@@ -262,7 +261,7 @@ kaomoji:
   tag: kaomoji
   dictionary: kaomoji
   enable_user_dict: false
-  prefix: "K"
+  prefix: "`K"
   suffix: ";"
   tips: 〔顔文字〕
 
@@ -270,13 +269,21 @@ kikwin:
   tag: kikwin
   dictionary: kikwin
   enable_user_dict: false
-  prefix: "R"
+  prefix: "`R"
   suffix: ";"
   tips: 〔和文〕
 
 special_typing:
   tags: [ kanas, kaomoji, kikwin ]
   overwrite_comment: false
+
+gukwan-melt-eng:
+  dictionary: gukwan-melt-eng 
+  enable_sentence: false
+  enable_user_dict: false
+  initial_quality: 1.1
+  comment_format:
+    - xform/.*//
 
 emoji_cantonese_suggestion:
   opencc_config: emoji_cantonese.json
@@ -295,29 +302,18 @@ recognizer:
   import_preset: default
   patterns:
     punct: "^/([0-9]0?|[a-z]+)$"
-    jyut6ping3: "^J[a-z']*;?$"
-    luna_pinyin: "^P[a-z']*;?$"
-    cangjie5: "^C[a-z]*;?$"
-    kunyomi: "^F[a-z']*;?$"
-    loengfan: "^L[a-z']*;?$"
-    kanas: "^G[a-zA-Z-]*;?$"
-    kaomoji: "^K[a-z-]*;?$"
-    kikwin: "^R[a-z-]*;?$"
+    jyut6ping3: "^`[a-z']*;?$"
+    luna_pinyin: "^`P[a-z']*;?$"
+    cangjie5: "^`C[a-z]*;?$"
+    kunyomi: "^`F[a-z']*;?$"
+    loengfan: "^`L[a-z']*;?$"
+    kanas: "^`G[a-zA-Z-]*;?$"
+    kaomoji: "^`K[a-z-]*;?$"
+    kikwin: "^`R[a-z-]*;?$"
     unicode: "^U[a-f0-9]+"
     number: "^S[0-9]+[.]?[0-9]*"
     calculator: "^cC.+"
     gregorian_to_lunar: "^N[0-9]{1,8}"
-
-## 時間日期鍵值
-date_gukwan:
-  date: rk       # 日期： 2022-11-29 2022年11月29日 等各種格式 
-  time: sg       # 時間： 10:31 10:31:04
-  week: sk       # 星期： 星期二 禮拜二 週二 火曜日
-  datetime: dt   # ISO 8601： 2022-11-29T18:13:11+08:00
-  timestamp: ts  # 時間戳： 1669716794
-
-## 農曆鍵值
-lunar: nl        # 農曆： 二〇二三年冬月二十 癸卯年（兔）冬月二十
 
 ## 測試用
 is_in_user_dict: false
