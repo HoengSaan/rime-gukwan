@@ -224,7 +224,8 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 **※寬式音標竝不能完全代表實際發音※**
 
 - `gukwan.schema.yaml`：調試用・自用（**請勿刪除**）
-- `jyut6ping3-gw.schema.yaml`：以菊韻配置調用`rime-cantonese`，支持菊韻所有功能（漢英混打未實裝）。
+- `jyut6ping3-gw.schema.yaml`：以菊韻配置調用`rime-cantonese`，支持菊韻所有功能。
+  - `jyut6ping3-gw-ps.schema.yaml`：寬式音標版
 
 #### 預設古代音方案
 
@@ -252,10 +253,10 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 
 ### 字詞
 
-`gukwan.dict.yaml`用於調用字庫詞庫，默認亦調用rime-cantonese部份詞庫同粵語八股文。位置爲`/gw_dicts`。
+`gukwan.dict.yaml`用於調用字表詞庫，默認亦調用rime-cantonese部份詞庫同粵語八股文。位置爲`/gw_dicts`。
 
 - 字庫
-  - `gukwan.chars.dict.yaml`：廣韻字庫
+  - `gukwan.chars.dict.yaml`：廣韻字表
   - `gukwan.chars1.dict.yaml`：廣韻異音訓讀增補
   - `gukwan.chars2.dict.yaml`：今字異字異音訓讀增補
     - 粵字平翹、日以之分參攷梧州話
@@ -278,18 +279,15 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 
 > [!TIP]
 >
-> [關於如何製作用戶詞庫](https://github.com/rime/home/wiki/UserGuide#%E7%94%A8%E6%88%B6%E8%A9%9E%E5%85%B8%E7%AE%A1%E7%90%86)
->
-> [關於如何使用擴展詞庫](https://github.com/HoengSaan/rime-gukwan/wiki#%E9%97%9C%E6%96%BC%E6%93%B4%E5%B1%95%E8%A9%9E%E5%BA%AB)
+> [關於如何製作用戶詞庫](https://github.com/rime/home/wiki/UserGuide#%E7%94%A8%E6%88%B6%E8%A9%9E%E5%85%B8%E7%AE%A1%E7%90%86)｜[關於如何使用擴展詞庫](https://github.com/HoengSaan/rime-gukwan/wiki#%E9%97%9C%E6%96%BC%E6%93%B4%E5%B1%95%E8%A9%9E%E5%BA%AB)
 ### 漢英混打
 
 漢英混打實現是參攷[优化 Rime 英文输入体验 - Dvel's Blog](https://dvel.me/posts/make-rime-en-better/)，基於[tumuyan/melt_eng](https://github.com/tumuyan/rime-melt)（[iDvel/rime-ice](https://github.com/iDvel/rime-ice)版）。隨源文件以[Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0.html)發佈。
 
-### 依賴
-
-以下爲本倉庫自帶，毋須額外下載。關於其他依賴文件請參攷[如何在RIME輸入法安裝菊韻輸入法 – なかやま園](https://zonsan.fc2.page/?p=1563)。
-
-- [rime-cantonese-emoji](https://github.com/rime/rime-emoji-cantonese)：用於輸入繪文字，隨源文件以[CC 0許可](https://creativecommons.org/public-domain/cc0/)發佈。
+- `gukwan-melt-eng.schema.yaml`：混打方案
+- `gukwan-melt-eng.dict.yaml`：混打辭典
+  - `en_dicts/en.dict.yaml`
+  - `en_dicts/en_ext.dict.yaml`
 
 ### LUA腳本
 
@@ -307,7 +305,15 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 
 ### 其他
 
-- `symbols-gukwan.yaml`：菊韻定製標點符號同特殊符號輸入。
+以下爲本倉庫自帶，毋須額外下載。關於其他依賴文件請參攷[如何在RIME輸入法安裝菊韻輸入法 – なかやま園](https://zonsan.fc2.page/?p=1563)。
+
+- [rime-cantonese-emoji](https://github.com/rime/rime-emoji-cantonese)：用於輸入繪文字，隨源文件以[CC 0許可](https://creativecommons.org/public-domain/cc0/)發佈。
+- `symbols-gukwan.yaml`：菊韻定製標點符號（類似Microsoft 日本語 IME）同特殊符號輸入。
+- `菊韻.trime.yaml`：同文輸入法主題，基於[Wenti-D/Astralwelkin](https://github.com/Wenti-D/Astralwelkin)，隨源文件以[MIT許可](https://mit-license.org/)發佈。不同點如下：
+  - 鍵值更改，允許一鍵反查（q鍵、p鍵、a鍵）。
+  - 專用配色，參攷小欖特色菊花，但未夠膽用黃色驚太鮮豔，結果做變成屎黃色((o(；□；`)o))。如下：
+
+<img src="pic\gukwan_trime.jpg" alt="gukwan_trime" style="zoom:25%;" />
 
 ## 銘謝
 
