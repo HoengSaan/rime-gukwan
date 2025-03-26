@@ -74,14 +74,14 @@ This is a schema based on [Rime Input Method](https://rime.im/).
   - 日期信息整合，鍵值爲`vday`或`/day`
   - **鍵值已在腳本固定，如需修改須直接改變`date_gukwan.lua`**
 - 計數機：直接在RIME計數，鍵值爲`cC`（calculator）。[學習如何使用計數機](https://github.com/gaboolic/rime-shuangpin-fuzhuma/blob/main/md/calc.md)
-- 假名：以細階輸入平假名，大階輸入片假名，鍵值爲``G `（gaaming）。輸入方式同其他IME（如Microsoft IME、ATOK等）基本無區別
-- 顏文字：以日文輸入各種顏文字，鍵值爲``K`（kaomoji）
-- 和文：實現半混打日文，基於[rime-kunyomi](https://github.com/sgalal/rime-kunyomi)，鍵值爲``R`（n jatman）
+- 假名：以細階輸入平假名，大階輸入片假名，鍵值爲<code>`G</code> （gaaming）。輸入方式同其他IME（如Microsoft IME、ATOK等）基本無區別
+- 顏文字：以日文輸入各種顏文字，鍵值爲<code>`K</code>（kaomoji）
+- 和文：實現半混打日文，基於[rime-kunyomi](https://github.com/sgalal/rime-kunyomi)，鍵值爲<code>`R</code>（n jatman）
 
 > [!NOTE]
 >
 > **顏文字（表情）須安裝粵拼方可使用**，安裝方法請參攷[如何在RIME輸入法安裝菊韻輸入法 – なかやま園](https://zonsan.fc2.page/?p=1563)。
-> 由於和文功能所依賴方案詞庫過大，14.1b版本已將其關閉以防止部分設備無法正常使用中州韻。如需使用請自行安裝並手動啓用。
+> 由於和文功能所依賴方案詞庫過大，14.1b版本已將其關閉以防止部分設備無法正常部署。如需使用請自行安裝並手動啓用。
 
 ### 字詞
 
@@ -89,17 +89,17 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 
 > [!NOTE]
 >
-> 菊韻可調用擴展詞庫，但需要手動下載。[gukwan-extended.dict.yaml](https://github.com/HoengSaan/rime-gukwan/blob/main/gukwan-extended.dict.yaml)內有說明如何獲取。由於擴展詞庫過大，移動設備或低性能電腦不建議使用，可能導致無法部署（即無法正常使用）
+> 菊韻可調用擴展詞庫，但需要手動下載。[gukwan-extended.dict.yaml](https://github.com/HoengSaan/rime-gukwan/blob/main/gukwan-extended.dict.yaml)內有說明如何獲取。由於擴展詞庫過大，低性能設備不建議使用，可能導致部署失敗。
 
 ### 反查
 
 多數人士通曉廣州話、普通話卻未必熟識自己鄉下發音，故設各種反查。反查亦可用來打菊韻難以輸入或無收錄既非常用字。
 
-- 粵拼（[rime-cantonese](https://github.com/rime/rime-cantonese)），粵語廣州話反查。鍵值爲`` `。
-- 明月拼音（rime-luna_pinyin），官語普通話反查。鍵值爲``P`（puping）。
-- 倉頡五代（rime-cangjie5），倉頡反查。鍵值爲``C`（coongkit）。
-- 訓讀（[rime-kunyomi](https://github.com/sgalal/rime-kunyomi)），和語訓讀（現代音）反查。鍵值爲``F`（fanduk）。
-- 兩分（[rime-loengfan]([CanCLID/rime-loengfan: Loengfan (粵語兩分) is the Cantonese version of the Liang Fen input method](https://github.com/CanCLID/rime-loengfan))），粵語廣州話兩分拆字反查。鍵值爲``L`(loengfan)。
+- 粵拼（[rime-cantonese](https://github.com/rime/rime-cantonese)），粵語廣州話反查。鍵值爲<code>` </code>。
+- 明月拼音（rime-luna_pinyin），官語普通話反查。鍵值爲<code>`P</code>（pu ping）。
+- 倉頡五代（rime-cangjie5），倉頡反查。鍵值爲<code>`C</code>（coong kit）。
+- 訓讀（[rime-kunyomi](https://github.com/sgalal/rime-kunyomi)），和語訓讀（現代音）反查。鍵值爲<code>`F</code>（fan duk）。
+- 兩分（[rime-loengfan]([CanCLID/rime-loengfan: Loengfan (粵語兩分) is the Cantonese version of the Liang Fen input method](https://github.com/CanCLID/rime-loengfan))），粵語廣州話兩分拆字反查。鍵值爲<code>`L</code>（loeng fan)。
 
 > [!NOTE]
 > 

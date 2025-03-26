@@ -1,0 +1,106 @@
+# Rime schema
+# encoding: utf-8
+#
+# gukwan - 菊韻
+
+# 此爲菊韻粵語輸入法方案文件
+# 瞭解如何使用菊韻請閱覽readme文件，詳細請至本方案github頁：
+# https://github.com/HoengSaan/rime-gukwan
+# This is a schema file for Gukwan Cantonese Input Method.
+# Learn how to use Gukwan in the readme file, available on the project's github page.
+
+__include: jyut6ping3-gw.schema.yaml:/
+
+schema:
+  schema_id: jyut6ping3-gw-ps
+  name: 粵語拼音 菊韻版（音標）
+  version: "15.2b"
+  author:
+    - 靈帝（Hoengsaan）
+    - Ayaka Mikazuki <ayaka@mail.shn.hk>
+    - LeiMaau <leimaau@qq.com>
+    - chaaklau <chaakming@gmail.com>
+    - laubonghaudoi <laubonghaudoi@icloud.com>
+    - tanxpyox <tanxpyox@gmail.com>
+    - William915 <William915@gmail.com>
+    - szc126 (@szc126)
+    - Bing Jeung <bing@ososo.io>
+    - graphemecluster <graphemecluster@gmail.com>
+  
+  description: |-
+    寬式音標版並不能完全對應實際發音
+    本方案是將菊韻功能（漢英混打、各種反查、日期時間輸入）並入Rime粵拼
+    瞭解如何使用菊韻請閱覽readme文件，詳細請至本方案github頁：https://github.com/HoengSaan/rime-gukwan
+    如有問題或建議可於以上github頁中開Issues反饋
+
+# 依賴 請確保閣下已安裝以下方案
+  dependencies:
+    - jyut6ping3
+    - luna_pinyin
+    - cangjie5
+    - kunyomi
+    - loengfan
+    - kanas
+    - kaomoji
+    - kikwin
+    - gukwan-melt-eng
+
+translator:
+  dictionary: jyut6ping3
+  prism: jyut6ping3-gw-ps
+  spelling_hints: 9
+  initial_quality: 1.2
+  preedit_format:
+    - xform/ng/ŋ/
+    - xform/^| |'/,/
+
+    - xform/(,|h)(m|ŋ)(qq?|xx?|vv?)?(?=$|,)/$1$2̍$3/
+    - xform/m̍/m̩/
+
+    - xform/,[jy]u/,jy/
+    - xform/,y(ŋ|k)/,jʊ$1/
+    - xform/,y(n|t)/,jy$1/
+    - xform/,y/,j/
+    - xform/,i(ŋ|k)/,jʊ$1/
+    - xform/,iy(n|t)/,jy$1/
+    - xform/,i/,ji/
+  
+    - xform/,oet/$1d/
+    - xform/eo|oe/œ/
+    - xform/yu/y/
+    - xform/aa/r/
+    - xlit/aroe/ɐaɔɛ/
+
+    - xform/œ(n|t)/ə$1/
+    - xform/œ[iy]/oi/
+    - xform/ɛi/ei/
+    - xform/i(ŋ|k)/ɪ$1/
+    - xform/u(ŋ|k)/ʊ$1/
+
+    - xform/a|ɔ|œ|ɛ|i|u|y(?!̑)/$&ː/
+    - xform/([ːɐoeʊ][iu])ː/$1/
+    - xform/[ːɐoeʊ][ptdk]/$&̚/
+    
+    - xlit/øɾɿɹ/oyiu/
+
+    - xform/,([ptc]|kw?)/$&ʰ/
+    - xform/[kg]w/kʷ/
+    - xform/c|z/t͡s/
+    - xform/,q/,kʷ/
+    - xform/,x/,gʷ/
+    - xlit/bdg/ptk/
+    - xform/w/β̞/
+
+    - xform/̚qq/˥/
+    - xform/̚x/˧˥/
+
+    - xform/qq/˨˩/
+    - xform/xx/˩˧/
+    - xform/vv/˧˨/
+    - xform/q/˧/
+    - xform/x/˨˦/
+    - xform/v/˥/
+
+    - xform/^,//
+    - xform/̑//
+    - xform/,/ /

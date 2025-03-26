@@ -12,13 +12,23 @@
 
 schema:
   schema_id: jyut6ping3-gw
-  name: 粵語拼音 菊韻配置
-  version: "15.1b"
+  name: 粵語拼音 菊韻版
+  version: "15.2b"
   author:
-    靈帝（Hoengsaan）
+    - 靈帝（Hoengsaan）
+    - Ayaka Mikazuki <ayaka@mail.shn.hk>
+    - LeiMaau <leimaau@qq.com>
+    - chaaklau <chaakming@gmail.com>
+    - laubonghaudoi <laubonghaudoi@icloud.com>
+    - tanxpyox <tanxpyox@gmail.com>
+    - William915 <William915@gmail.com>
+    - szc126 (@szc126)
+    - Bing Jeung <bing@ososo.io>
+    - graphemecluster <graphemecluster@gmail.com>
   
   description: |-
-    RIME-CANTONESE CUSTOM
+    寬式音標版並不能完全對應實際發音
+    本方案是將菊韻功能（漢英混打、各種反查、日期時間輸入）並入Rime粵拼
     瞭解如何使用菊韻請閱覽readme文件，詳細請至本方案github頁：https://github.com/HoengSaan/rime-gukwan
     如有問題或建議可於以上github頁中開Issues反饋
 
@@ -134,6 +144,16 @@ speller:
     # 取消下兩行註釋，支援韻尾 –p、-t 交替，如「碟」讀 dit2
     #- derive/p(?=\d)/t/
     #- derive/t(?=\d)/p/
+
+    - derive/eoi(?=\d)/eoy/                 # 粵拼(eoy->eoi)
+    #- derive/^z/dz/                        # 教院拼音
+    #- derive/^c/ts/                        # 教院拼音
+    #- derive/y(?=\d)/z/                    # 英華拼法(y->z)
+    #- derive/y(?=\d)/ii/                   # 擴展粵拼(y->ii)
+
+    #全拼
+    #- derive/(g|k|h|ng)u/$1wu/             # 全拼(g|k|h[w]u)
+    #- derive/(g|k|h|ng)y/$1wy/             # 全拼(g|k|h[w]y)
     
     #簡拼
     #- derive/^([aeiou])/q$1/               # 喉塞音(q~)
@@ -143,12 +163,10 @@ speller:
     #- derive/^kw/x/                        # 簡拼(kw->q)
     - derive/^gw/x/                         # 簡拼(gw->q)
 
-    - derive/^nj/r/                         # 簡拼(nj->r)
     - derive/aa(i|u|m|n|ng|p|t|k)/r$1/      # 簡拼(aa->r)
 
     - derive/^wu/u/                         # 簡拼(wu->u)
 
-    - derive/^nji/nj/                       # 簡拼(ji->j)
     - derive/^ji/j/                         # 簡拼(ji->j)
     - derive/^jy?([aeiou])/y$1/             # 簡拼(jy->y)
     - derive/yu(?!ng|k)/y/                  # 簡拼(yu->y)
@@ -273,7 +291,7 @@ kikwin:
   suffix: ";"
   tips: 〔和文〕
 
-special_typing:
+special_typing: 
   tags: [ kanas, kaomoji, kikwin ]
   overwrite_comment: false
 

@@ -12,7 +12,7 @@
 
 ---
 name: gukwan.chars
-version: "15.0b"
+version: "15.2b"
 sort: by_weight
 ...
 
@@ -4359,7 +4359,7 @@ sort: by_weight
 𤄜	faan1	0%
 轓	faan1	0%
 繙	faan1	0%
-反	faan1	
+反	faan1	0%
 暄	hyun1	0%
 煖	hyun1	0%
 喛	hyun1	0%
@@ -18346,7 +18346,7 @@ sort: by_weight
 校	gaeu3	
 鉸	gaeu3	
 酵	gaeu3	
-覺	gaeu3	
+覺	gaeu3	0%
 膠	gaeu3	0%
 較	gaeu3	
 𡥈	gaeu3	0%
@@ -22247,7 +22247,7 @@ sort: by_weight
 切	cit3	
 㗫	cit3	0%
 𪙌	cit3	0%
-竊	cit3	
+竊	cit3	0%
 柣	cit3	0%
 沏	cit3	0%
 䟙	cit3	0%

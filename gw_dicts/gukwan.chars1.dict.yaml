@@ -12,7 +12,7 @@
 
 ---
 name: gukwan.chars1
-version: "15.0b"
+version: "15.2b"
 sort: by_weight
 ...
 
@@ -115,6 +115,7 @@ sort: by_weight
 胍	gwaa1	3%
 箍	ku1	
 荼	to4	5%
+爐	lu1	0%
 軲	gu1	
 都	do1	5%
 臍	ci4	
@@ -306,8 +307,9 @@ sort: by_weight
 撈	lou1	
 撈	laau4	
 撈	laau1	
-毛	mou1	
+毛	mou1	0%
 艘	sau2	
+桃	tau4	0%
 熬	ngaau4	
 尻	haau1	
 尻	gau1	0%
@@ -367,6 +369,7 @@ sort: by_weight
 爹	dia1	
 揚	jong2	
 鯧	cjong1	
+長	criong1	0%
 芒	moong1	
 瓤	noong4	0%
 匡	hwong1	0%
@@ -463,6 +466,7 @@ sort: by_weight
 搊	jau1	0%
 休	hau1	5%
 休	heu1	5%
+籌	criau1	0%
 仇	sjiau4	5%
 浮	pu4	3%
 矛	maau4	3%
@@ -1232,6 +1236,7 @@ sort: by_weight
 㔠	hat6	0%
 切	cit1	
 𢪃	cit1	
+竊	sit3	
 桔	gat1	
 穴	hyut6	
 垤	dat6	

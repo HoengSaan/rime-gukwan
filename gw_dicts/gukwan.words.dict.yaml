@@ -1194,7 +1194,7 @@ sort: by_weight
 筆架
 不繼
 不甘
-不禁
+不禁	
 不僅
 不久
 不苟
@@ -7052,7 +7052,7 @@ sort: by_weight
 打探
 打藤
 打剔
-打聽
+打聽	daa2 ting3
 打鐵
 打胎
 打通
@@ -9830,7 +9830,7 @@ sort: by_weight
 洞悉
 動態
 胴體
-動聽
+動聽	dung6 ting3
 動土
 動畫	dung6 waa2
 動嘴
@@ -10507,7 +10507,7 @@ sort: by_weight
 發明
 法網
 髮網
-發毛
+發毛	faat3 mou1
 發霉
 法門
 發懵
@@ -11960,7 +11960,7 @@ sort: by_weight
 複數
 蝠鼠
 福頭
-複聽
+複聽	fuk6 ting1
 輻條
 福桃
 腹痛
@@ -19779,7 +19779,7 @@ sort: by_weight
 好笑
 好削
 好睇
-好聽
+好聽	hou2 teng1
 好天
 好哇
 好話
@@ -20423,7 +20423,7 @@ sort: by_weight
 任內
 任食
 任性
-任聽
+任聽	njam6 teng1
 妊娠
 任職
 衽席
@@ -22430,8 +22430,8 @@ sort: by_weight
 影星
 影相
 影壇
-認真  njing6 zjan1
-認真  njing2 zjan1
+認真	njing6 zjan1
+認真	njing2 zjan1
 影子
 影展
 映照
@@ -24227,7 +24227,7 @@ sort: by_weight
 襟素
 禁睇
 襟睇
-襟聽
+禁聽	kam1 teng1
 襟懷
 襟章
 𢫏斗
@@ -24741,7 +24741,7 @@ sort: by_weight
 傾訴
 傾談
 傾頹
-傾聽
+傾聽	kwing1 ting3
 傾吐
 傾側
 傾陣
@@ -26803,7 +26803,7 @@ sort: by_weight
 靈塔
 靈體
 零頭
-聆聽
+聆聽	ling4 ting3
 靈堂
 靈通
 靈位
@@ -30564,7 +30564,8 @@ sort: by_weight
 難彈
 難睇
 難題
-難聽
+難聽	naan4 teng1
+難聽	naan4 ting3
 難爲
 難混
 難做
@@ -31062,7 +31063,7 @@ sort: by_weight
 啱先
 啱線
 啱數
-啱聽
+啱聽	ngaam1 teng1
 啱咗
 岩巉
 巖巉
@@ -33322,7 +33323,7 @@ sort: by_weight
 鰟鮍
 傍身
 旁述
-旁聽
+旁聽	poong4 ting3
 滂沱
 彷徨
 徬徨
@@ -35259,7 +35260,8 @@ sort: by_weight
 羞臊
 收縮
 收睇
-收聽
+收聽	sjiau1 teng1
+收聽	sjiau1 ting3
 收條
 收檯
 收穫
@@ -36842,7 +36844,7 @@ sort: by_weight
 事態
 士撻
 事頭
-視聽
+視聽	sji5 ting3
 仕途
 豉筒
 侍童
@@ -37628,8 +37630,7 @@ sort: by_weight
 泄怒
 竊笑
 舌頭
-竊聽
-竊听
+竊聽	sit3 teng1
 竊位
 燮和
 楔子
@@ -39066,7 +39067,7 @@ sort: by_weight
 損稅
 選士
 損傷
-選聽
+選聽	syun2 ting1
 損壞
 損毀
 選擇
@@ -39317,7 +39318,8 @@ sort: by_weight
 探悉
 探題
 探頭
-探聽
+探聽	taam3 teng1
+探聽	taam3 ting3
 探討
 探長
 潭底
@@ -39712,7 +39714,7 @@ sort: by_weight
 偷笑
 偷睇
 偷偷
-偷聽
+偷聽	tau1 teng1
 偷跳
 偷襲
 偷走
@@ -39855,27 +39857,28 @@ sort: by_weight
 踢契
 踢拖
 踢咗
-聽診
-聽取
-聽清
-聽從
-聽到
-聽𠿪
-聽㗎
-聽教
-聽見
-聽歌
-聽講
-聽過
-聽香
-聽開
-聽曲
-聽聞
-聽實
-聽書
+聽診	teng1 cjan2
+聽取	teng1 cyu2
+聽清	teng1 cing1
+聽從	teng1 cung4
+聽從	ting1 cung4
+聽到	teng1 dou2
+聽㗎	teng1 gaa3
+聽教	teng1 gaeu3
+聽見	teng1 gin3
+聽歌	teng1 go1
+聽講	teng1 gong2
+聽過	teng1 gwo3
+聽香	teng1 hiong1
+聽開	teng1 hoi1
+聽曲	teng1 kuk1
+聽聞	teng1 man4
+聽聞	ting3 man4
+聽實	teng1 sjat6
+聽書	teng1 sjyo1
 廳堂
-聽筒
-聽話
+聽筒	teng1 tung2
+聽話	teng1 waa6
 廳長
 艇家
 艇戶
@@ -40173,31 +40176,31 @@ sort: by_weight
 填字
 聽岔
 聽差
-聽隨
-聽窗
-聽暇
+聽隨	
+聽窗	ting1 chiong1
+聽暇	ting1 haa1
 聼日
-聽日
-聽晚
-聽寫
-聽閾
-聽朝
-聽早
-聽衆
+聽日	ting1 njat6
+聽晚	ting1 maan1
+聽寫	ting1 sia2
+聽閾	ting1 wik6
+聽朝	ting1 zriu1
+聽早	ting1 zou6
+聽衆	ting1 zjung3
 挺直
-聽覺
-聽力
-聽命
-聽鬧
-聽憑
-聽死
-聽衰
-聽信
-聽說
-聽頭
-聽會
-聽障
-聽訟
+聽覺	ting3 gok3
+聽力	ting3 lik6
+聽命	ting3 ming6
+聽鬧	ting3 naeu6
+聽憑	ting3 pang4
+聽死	ting3 si2
+聽衰	ting3 shooi1
+聽信	ting3 seon3
+聽說	ting3 sjyut3
+聽頭	ting3 tau4
+聽會	ting3 wui2
+聽障	ting3 zjiong3
+聽訟	ting3 zung6
 停筆
 停表
 停播
@@ -41638,7 +41641,7 @@ sort: by_weight
 繯首
 幻術
 幻想
-幻聽
+幻聽	waan6 ting3
 幻幻
 患者
 槵子
@@ -45585,7 +45588,7 @@ sort: by_weight
 精選
 偵探
 晶體
-偵聽
+偵聽	zring1 teng1
 征討
 精通
 精華
@@ -45876,7 +45879,7 @@ sort: by_weight
 接船
 接替
 接頭
-接聽
+接聽	zip3 teng1
 摺檯
 接通
 接獲
@@ -52692,7 +52695,7 @@ sort: by_weight
 都幾識
 都係啦
 都係嗟
-都好聽
+都好聽	do1 hou2 teng1
 都好喎
 都有癮
 都應當
@@ -54247,7 +54250,7 @@ sort: by_weight
 監督者
 監視孔
 監頭簿
-監聽器
+監聽器	gaem1 teng1 hi3
 監護人
 減壓病
 減壓表
@@ -54430,7 +54433,7 @@ sort: by_weight
 教員室
 教區長
 教唔掂
-教唔聽
+教唔聽	gaeu3 m4 teng1
 教務室
 校鬧鐘
 較水寮
@@ -55592,7 +55595,9 @@ sort: by_weight
 講嘢樣
 講嘢啦
 講嘢呢
-講佢聽
+講佢聽	gong2 kyo5 teng1
+講佢聽	gong2 hyo5 teng1
+講佢聽	gong2 jyo5 teng1
 講爛口
 講嚟都
 講禮貌
@@ -55940,7 +55945,7 @@ sort: by_weight
 工商業
 公訴人
 公孫起
-公聽會
+公聽會	gung1 ting3 wui2
 公債券
 公仔佬
 公仔箱
@@ -57888,7 +57893,7 @@ sort: by_weight
 好嗍氣
 好算啦
 好頭暈
-好聽點
+好聽點	hou2 teng1 dim2
 好話嘞
 好話爲
 好運符
@@ -60211,7 +60216,7 @@ sort: by_weight
 傾成咗
 傾銷法
 傾銷稅
-傾聽者
+傾聽者	kwing1 ting3 zjia2
 鯨魚座
 瓊州府
 揭揭聲
@@ -61105,7 +61110,7 @@ sort: by_weight
 零售業
 凌霄花
 淩霄閣
-聆聽會
+聆聽會	ling4 ting1 wui2
 領便當
 領導層
 領角鴞
@@ -61882,7 +61887,7 @@ sort: by_weight
 唔好食
 唔好笑
 唔好睇
-唔好聽
+唔好聽	m4 hou2 teng1
 唔好天
 唔好話
 唔好玩
@@ -61994,9 +61999,9 @@ sort: by_weight
 唔鬆口
 唔舒服
 唔選擇
-唔提醒	m4 tai sing2
-唔提醒	m4 tai seng2
-唔聽笛
+唔提醒	m4 tai4 sing2
+唔提醒	m4 tai4 seng2
+唔聽笛	m4 teng1 dek2
 唔通氣
 唔同㗎
 唔同嘢
@@ -63181,7 +63186,7 @@ sort: by_weight
 冇嘢做
 冇衣食
 冇耳性
-冇耳聽
+冇耳聽	meau5 nji5 teng1
 冇異常
 冇研究
 冇腰骨
@@ -63857,8 +63862,8 @@ sort: by_weight
 你睇你
 你睇睇
 你睇咗
-你聽住
-你聽日
+你聽住	ni5 teng1 zryu6
+你聽日	ni5 ting1 njat6
 你條嘢
 你條命
 你條毛
@@ -64484,7 +64489,8 @@ sort: by_weight
 我睇下
 我睇啱
 我睇咗
-我聽日
+我聽日	ngo5 ting1 njat6
+我聽日	ngoi5 ting1 njat6
 我條女
 我條仔
 我肚餓
@@ -67013,7 +67019,7 @@ sort: by_weight
 試水溫
 嗜睡症
 試算表
-試聽帶
+試聽帶	sji3 ting1 daai3
 試玩碟
 試運營
 時不時
@@ -68603,22 +68609,26 @@ sort: by_weight
 踢死兔
 踢着腳
 踢住腳
-聽把聲
-聽電話
-聽見晒
-聽講過
-聽講話
-聽人講
-聽入去
-聽佢指
-聽唔出
-聽唔清
-聽聞講
-聽晒笛
-聽聽歌
-聽話仔
-聽住嚟
-聽住先
+聽把聲	teng1 baa2 sjeng1
+聽電話	teng1 din6 waa2
+聽見晒	teng1 gin3 saai3
+聽講過	teng1 gong2 gwo3
+聽講話	teng1 gong2 waa2
+聽人講	teng1 njan4 gong2
+聽入去	teng1 njap6 hyo3
+聽佢指	teng1 kyo5 zji2
+聽佢指	teng1 hyo5 zji2
+聽佢指	teng1 jyo5 zji2
+聽唔出	teng1 m4 cjeot1
+聽唔出	teng1 m4 cjyut1
+聽唔清	teng1 m4 cing1
+聽聞講	teng1 man4 gong2
+聽聞講	ting1 man4 gong2
+聽晒笛	teng1 saai3 dek6
+聽聽歌	teng1 teng1 go1
+聽話仔	teng1 waa2 zaai2
+聽住嚟	teng1 zryu6 lai4
+聽住先	teng1 zryu6 sin1
 艇甲板
 艇仔邊
 艇仔粥
@@ -68740,18 +68750,19 @@ sort: by_weight
 田螺魔
 填塞物
 田土廳
-聽診器
-聽牆面
-聽骨鏈
-聽唔切
+聽診器	teng1 cjan2 hi3
+聽牆面	ting1 ciong4 min2
+聽骨鏈	ting1 gwat1 lin2
+聽唔切	teng1 m4 cit3
 聽膩了
-聽尼士
-聽小骨
-聽朝早
-聽捱打
-聽審會
-聽執笠
-聽證會
+聽尼士	ting1 ni4 shy5
+聽小骨	ting1 siu2 gwat1
+聽朝早	ting1 zriu1 zou2
+聽捱打	teng1 ngaai4 daa2
+聽審會	ting1 sjam2 wui2
+聽執笠	ting3 zjap1 lap1
+聽證會	ting1 zjing3 wui2
+聽證會	ting3 zjing3 wui2
 停車場
 停車燈
 停低腳
@@ -70977,9 +70988,9 @@ sort: by_weight
 精神性
 蒸鬆糕
 精算師
-偵聽器
-偵聽員
-偵聽臺
+偵聽器	zring1 teng1 hi3
+偵聽員	zring1 teng1 hjyun4
+偵聽臺	zring1 teng1 toi4
 精華版
 精華素
 整親人
@@ -71182,7 +71193,7 @@ sort: by_weight
 助熔劑
 座上客
 座談會
-助聽器
+助聽器	zho6 ting3 hi3
 啫啫煲
 嚼不爛
 着草鞋
@@ -72000,7 +72011,8 @@ sort: by_weight
 握手言和
 晏子春秋
 罌粟種子
-鴨仔聽雷
+鴨仔聽雷	aap3 zaai2 teng lyi4
+鴨仔聽雷	aap3 zai2 teng lyi4	5%
 壓倒多數
 壓而不服
 壓力強度
@@ -72403,7 +72415,7 @@ sort: by_weight
 閉月羞花
 閉路電視
 閉目養神
-閉目塞聽
+閉目塞聽	bai3 muk6 sak1 ting1
 閉門覓句
 閉門塞竇
 閉門思過
@@ -72763,7 +72775,7 @@ sort: by_weight
 不宣而戰
 不說不知
 不說自明
-不聽電話
+不聽電話	bat1 teng1 din6 waa2
 不吐不快
 不同部分
 不同凡響
@@ -72943,7 +72955,6 @@ sort: by_weight
 畀水濁死
 比氏鶲鶯
 比色分析
-畀說話聽
 畀晝作夜
 畀足面佢
 畀足面你
@@ -76089,7 +76100,8 @@ sort: by_weight
 多寡不拘
 多國部隊
 多喫多佔
-多看多聽
+多看多聽	do1 hon3 do1 ting1
+多看多聽	do1 hon3 do1 teng1
 多孔動物
 多音節詞
 多二錢重
@@ -78898,7 +78910,9 @@ waa2
 江湖藝人
 江湖騙子
 江孜地區
-講畀佢聽
+講畀佢聽	gong2 bi2 kyo5 teng1
+講畀佢聽	gong2 bi2 hyo5 teng1
+講畀佢聽	gong2 bi2 jyo5 teng1
 講打講殺
 港大才女
 講得幾啱
@@ -78924,7 +78938,8 @@ waa2
 講嘢有骨
 講完就去
 講完就落
-講嚟聽下
+講嚟聽下	gong2 lai4 teng1 haa2
+講嚟聽下	gong2 lei4 teng1 haa2
 講嚟話長
 講唔過佢
 講唔埋欄	gong2 m4 maai4 laan1
@@ -79728,7 +79743,7 @@ waa2
 嚡過沙紙
 鞋類銷售
 鞋仔屐仔
-駭人聽聞
+駭人聽聞	haai5 njan4 ting3 man4
 蟹狀星雲
 黑狗得食
 黑狗偷食
@@ -79891,8 +79906,7 @@ waa2
 係呀係呀
 係邊個呀
 係都唔定
-係都唔聽
-係噉嘎啦
+係都唔聽	hai6 do1 m4 teng1
 係噉㗎啦
 係噉㗎喇
 係人都唔
@@ -80401,7 +80415,7 @@ waa2
 虛不受補
 虛報冒領
 虛情假意
-虛己以聽
+虛己以聽	hyo1 gi2 hji5 ting1
 墟墟冚冚
 噓寒問暖
 虛有其表
@@ -80926,7 +80940,7 @@ waa2
 好好先生
 好好睇㗎
 好好睇睇
-好好聽㗎
+好好聽㗎	hou2 hou2 teng1 gaa3
 好好維護
 好人好夢
 好人好姐
@@ -82519,7 +82533,7 @@ waa2
 又靚又叻
 又唔出聲
 又唔陪你
-又唔聽話
+又唔聽話	jau6 m4 teng1 waa2
 又乜又物
 又嬲又醜
 又嬲又驚
@@ -82793,8 +82807,8 @@ waa2
 耳熟能詳
 以太網絡
 耳提面命
-耳聽八方
-耳聽爲虛
+耳聽八方	nji5 ting3 baet3 fong1
+耳聽爲虛	nji5 ting3 wai6 hyo1
 以湯沃沸
 以華制華
 以爲佢走
@@ -83300,7 +83314,7 @@ waa2
 約略估計
 約書亞記
 約會對象
-弱不禁風
+弱不禁風	njok6 bat1 gam1 fung1
 藥到病除
 弱音踏板
 若隱若現
@@ -84083,8 +84097,8 @@ waa2
 傾家蕩產
 傾國傾城
 傾下傾下
-傾耳而聽
-傾耳細聽
+傾耳而聽	kwing1 nji5 nji4 ting1
+傾耳細聽	kwing1 nji5 sai3 ting1
 傾傾先喇
 傾鈴哐啷
 傾兩句偈
@@ -84694,7 +84708,7 @@ waa2
 旅行結婚
 旅行支票
 旅行裝備
-屢勸不聽
+屢勸不聽	lyu5 hyun3 bat1 ting1
 旅遊巴士
 旅遊車隊
 旅遊團隊
@@ -84962,7 +84976,7 @@ waa2
 蘿蔔青菜
 邏輯演算
 鑼鼓喧天
-鑼鼓聽音
+鑼鼓聽音	lo4 gu2 ting1 jam1
 羅圈兒揖
 欏柚起枕
 羅爾定理
@@ -85607,7 +85621,7 @@ waa2
 唔想做嘢
 唔熟唔食
 唔算得乜
-唔聽電話
+唔聽電話	m4 teng1 din6 waa2
 唔湯唔水
 唔通係你
 唔同第個
@@ -86160,7 +86174,7 @@ waa2
 美輪美奐
 亹亹不倦
 娓娓道來
-娓娓動聽
+娓娓動聽	mi5 mi5 dung6 teng1
 娓娓而談
 美味小食
 美妙絕倫
@@ -86482,7 +86496,7 @@ waa2
 網開一面
 網開三面
 惘然若失
-妄言妄聽
+妄言妄聽	mong5 ngin4 mong5 ting3
 網頁地址
 網卡速度
 魍魎鬼怪
@@ -87178,7 +87192,7 @@ waa2
 難捨難分
 難捨難離
 難睇到死
-難聽到死
+難聽到死	naan4 teng1 dou3 si2
 難逃一劫
 納霍德卡
 納蘭性德
@@ -87436,7 +87450,8 @@ waa2
 你睇實佢
 你睇住嚟
 你睇住先
-你聽我講
+你聽我講	ni5 teng1 ngo5 gong2
+你聽我講	ni5 teng1 ngoi5 gong2
 你推我讓
 你條蛋散
 你條𨶙樣
@@ -87685,7 +87700,7 @@ waa2
 𠼮個契弟
 噅噅篩篩
 𠼮𠼮篩篩
-危辭聳聽
+危辭聳聽	ngai4 cy4 sung2 ting3
 危地馬拉
 危房改造
 危機四伏
@@ -87693,7 +87708,7 @@ waa2
 危害評價
 危而不持
 巍然屹立
-危言聳聽
+危言聳聽	ngai4 ngin4 sung2 ting3
 危如累卵
 危如朝露
 危在旦夕
@@ -88502,7 +88517,7 @@ waa2
 編碼方案
 編碼系統
 翩翩起舞
-偏聽偏信
+偏聽偏信	pin1 ting1 pin1 seon3
 偏置電阻
 遍地開花
 遍地黃金
@@ -89069,7 +89084,8 @@ waa2
 洗髮香波
 洗極唔清
 使鬼唔靈
-洗耳恭聽
+洗耳恭聽	sai2 nji5 gung1 ting3
+洗耳恭聽	saai2 nji5 gung1 ting3
 使用說明
 洗冤集錄
 使唔使啊
@@ -90493,7 +90509,7 @@ waa2
 事倍功半
 視神經盤
 視死如歸
-視聽材料
+視聽材料	sji5 ting1 coi4 liu2
 視同己出
 視同兒戲
 視同手足
@@ -91312,7 +91328,7 @@ waa2
 鬆散物料
 從從容容
 鬆鬆垮垮
-聳動視聽
+聳動視聽	sung2 dung6 sji5 ting1
 聳入雲霄
 宋代石刻
 送貨到家
@@ -91726,22 +91742,28 @@ waa2
 投資銀行
 投井自盡
 頭腫眼膇
-聽阿媽話
-聽取批評
-聽出耳油
-聽教聽話
-聽過隔籬
-聽過隔離
-聽下聽下
-聽人擺佈
-聽佢噉講
-聽落有骨
-聽唔清楚
-聽唔入耳
-聽唔聽到
-聽埋聽埋
-聽聽埋埋
-聽話啲啦
+聽阿媽話	teng1 aa3 maa1 waa2
+聽取批評	teng1 cyu2 pei1 ping4
+聽取批評	teng1 cyu2 pai1 ping4
+聽取批評	ting1 cyu2 pei1 ping4
+聽取批評	ting1 cyu2 pai1 ping4
+聽出耳油	teng1 cjeot1 nji5 jau4
+聽出耳油	teng1 cjyut1 nji5 jau4
+聽教聽話	teng1 gaeu3 teng1 waa2
+聽過隔籬	teng1 gwo3 gaak3 li4
+聽下聽下	teng1 haa2 teng1 haa2
+聽人擺佈	teng1 njan4 baai2 bu3
+聽佢噉講	teng1 kyo5 gom3 gong2
+聽佢噉講	teng1 hyo5 gom3 gong2
+聽佢噉講	teng1 jyo5 gom3 gong2
+聽落有骨	teng1 look6 jau5 gwat1
+聽唔清楚	teng1 m4 cing1 cho2
+聽唔入耳	teng1 m4 njap6 nji5
+聽唔聽到	teng1 m4 teng1 dou2
+聽埋聽埋	teng1 maai4 teng1 maai4
+聽聽埋埋	teng1 teng1 maai4 maai4
+聽話啲啦	teng1 waa2 di1 laa1
+聽話啲啦	teng1 waa2 dik1 laa1
 推波助瀾
 推杯換盞
 推本溯源
@@ -91909,21 +91931,23 @@ waa2
 田忌賽馬
 填空補缺
 填字遊戲
-聽不進去
+聽不進去	teng1 bat1 zeon3 hyo3
 烴化作用
-聽候處理
-聽日有咩
-聽力理解
-聽晚先喇
-聽晚先咯
-聽信謠言
-聽話聽聲
-聽者有意
-聽者有心
-聽者藐藐
-聽天由命
-聽天安命
-聽之任之
+聽候處理	ting1 hau6 cjyo3 li5
+聽日有咩	ting1 njat6 jau5 mia1
+聽力理解	ting3 lik6 li5 gaai2
+聽晚先喇	ting1 maan5 sin1 laa2
+聽晚先咯	ting1 maan5 sin1 lo3
+聽信謠言	ting1 seon3 jiu4 ngin4
+聽話聽聲	ting1 waa2 ting1 sjing1
+聽者有意	ting1 zjia2 jau5 ji3
+聽者有心	ting1 zjia2 jau5 sam1
+聽者有心	ting3 zjia2 jau5 sam1
+聽者藐藐	ting1 zjia2 miu5 miu5
+聽者藐藐	ting3 zjia2 miu5 miu5
+聽天由命	ting3 tin1 jau2 ming6
+聽天安命	ting3 tin1 on1 ming6
+聽之任之	ting3 zji1 njam6 zji1
 停板制度
 停車標誌
 停車位置
@@ -92348,7 +92372,7 @@ waa2
 話乜話物
 話冇咁快
 話冇咁易
-話你唔聽
+話你唔聽	waa2 ni5 m4 teng1
 話我好靚
 話晒你知
 話三話四
@@ -92710,7 +92734,8 @@ waa2
 混凝土車
 混氧燃料
 混淆黑白
-混淆視聽
+混淆視聽	wan5 ngaeu4 sji5 ting1
+混淆視聽	wan5 ngaeu4 sji5 ting3
 混世魔王
 渾身解數
 混水摸魚
@@ -93116,7 +93141,7 @@ waa2
 詐呆詐吽
 乍暖還寒
 詐傻扮懵
-乍聽之下
+乍聽之下	zhaa6 ting1 zji1 haa6
 炸土豆片
 炸土豆條
 詐詐諦諦
@@ -94107,7 +94132,7 @@ waa2
 直布羅陀
 直腸直肚
 值得品味
-值得聽下
+值得聽下	zrik6 dak1 teng1 haa2
 席地而坐
 直搗黃龍
 直呼其名
@@ -95316,7 +95341,8 @@ waa2
 埃菲爾鐵塔
 厄立特里亞
 鴨細膍胵大
-鴨仔聽雷公
+鴨仔聽雷公	aap3 zaai2 teng lyi4 gung1 
+鴨仔聽雷公	aap3 zai2 teng lyi4 gung1	5%	
 庵摩落迦果
 黯然銷魂飯
 歐盟委員會
@@ -95828,7 +95854,7 @@ waa2
 電視汁送飯
 電視接收機
 電視專題片
-電話冇人聽
+電話冇人聽	din6 waa2 meau5 njan4 teng1
 電子化營業
 電子計算機
 電子顯微鏡
@@ -96522,7 +96548,7 @@ waa2
 好事不出門
 好睇過睇戲
 好睇唔好食
-好話唔好聽
+好話唔好聽	hou2 waa2 m4 hou2 teng1
 好仔兩頭瞞
 好仔唔當差
 好學近乎知
@@ -98123,7 +98149,7 @@ waa2
 頭頭碰着黑
 投資報酬率
 投資回報率
-聽價唔聽斗
+聽價唔聽斗	teng1 gaa3 m4 teng1 dau2
 退而求其次
 退伍軍人病
 退伍軍人症
@@ -98147,7 +98173,7 @@ waa2
 天使報喜節
 天字第一號
 填鴨式教育
-聽君一席話
+聽君一席話	teng1 gwan1 jat1 zik6 waa2
 停車計時器
 貼錢買難受
 帖撒羅尼迦
@@ -98741,7 +98767,7 @@ waa2
 抽水抽着火水
 醜陋的中國人
 湊夠一個好字
-且聽下回分解
+且聽下回分解	cia2 ting1 haa6 wui4 fan1 gaai2
 吹得天花亂墜
 吹皺一池春水
 隨口噏當祕笈
@@ -99776,7 +99802,7 @@ waa2
 藤掕瓜瓜掕藤
 頭耷耷眼濕濕
 頭髮尾浸浸涼
-聽故唔好駁故
+聽故唔好駁故	teng1 gu2 m4 hou2 bok3 gu2
 退休金雙軌制
 天不怕地不怕
 天才出自勤奮
@@ -99789,7 +99815,8 @@ waa2
 天上有地下無
 天體物理學家
 天津會議專條
-聽見風就是雨
+聽見風就是雨	ting1 gin3 fung1 ziau6 sji6 hjyu5
+聽見風就是雨	ting1 gin3 fung1 zou6 sji6 hjyu5
 鐵拐李打足球
 橢圓形辦公室
 臺北金馬影展
@@ -99888,7 +99915,7 @@ waa2
 最高工資限額
 聚合資訊訂閱
 準穩旋渦結構
-盡人事聽天命
+盡人事聽天命	zeon2 njan4 shy6 ting1 tin1 meng6
 資本主義國家
 資本主義社會
 資產擔保證券
@@ -101085,7 +101112,7 @@ waa2
 能源審覈與碳審計
 瓦檐獅子，叻到舋
 瓦簷獅子，叻到舋
-眼觀六路耳聽八方
+眼觀六路耳聽八方	ngaen5 gun1 luk6 lu6 nji5 ting1 baet3 fong1
 眼色素層黑色素瘤
 臥龍大熊貓保護區
 餓死事小失節事大
@@ -101398,16 +101425,19 @@ waa2
 而做又是另外一回事
 以言代法，以權壓法
 以眼還眼，以牙還牙
-耳聽爲虛，眼見爲實
+耳聽爲虛，眼見爲實	nji5 ting3 wai4 hyo1 ngaen5 gin3 wai4 sjat6
 以子之矛，攻子之盾
 以直報怨，以德報德
 二十年目睹之怪現狀
 逆水行舟，不進則退
 閻王好見，小鬼難當
-言者無意，聽者有心
-言者無心，聽者有意
+言者無意，聽者有心	ngin4 zjia2 mu4 ji3 ting1 zjia2 jau5 sam1
+言者無意，聽者有心	ngin4 zjia2 mu4 ji3 ting3 zjia2 jau5 sam1
+言者無心，聽者有意	ngin4 zjia2 mu4 ji3 ting1 zjia2 jau5 ji3
+言者無心，聽者有意	ngin4 zjia2 mu4 ji3 ting3 zjia2 jau5 ji3
 言者無罪，聞者足戒
-言者諄諄，聽者藐藐
+言者諄諄，聽者藐藐	ngin4 zjia2 zjeon1 zjeon1 ting1 zjia2 miu5 miu5
+言者諄諄，聽者藐藐	ngin4 zjia2 zjeon1 zjeon1 ting3 zjia2 miu5 miu5
 認識均衡飲食金字塔
 熱烈地彈琴熱烈地唱
 要風得風，要雨得雨
@@ -101467,8 +101497,8 @@ waa2
 男人不壞，女人不愛
 你做初一，我做十五
 鷸蚌相爭，漁人得利
-眼觀四處，耳聽八方
-眼觀四面，耳聽八方
+眼觀四處，耳聽八方	ngaen5 gun1 si3 cjyo2 nji5 ting1 baet3 fong1
+眼觀四面，耳聽八方	ngaen5 gun1 si3 min2 nji5 ting1 baet3 fong1
 牛皮燈籠：點極唔明
 寧畀人知，莫畀人見
 寧爲玉碎，不爲瓦全
@@ -101548,7 +101578,7 @@ waa2
 天子犯法與庶民同罪
 田雞過河，各有各撐
 田雞過河，各有各𨅝
-聽話聽聲，鑼鼓聽音
+聽話聽聲，鑼鼓聽音	ting1 waa2 ting1 sjing1 lo4 gu2 ting1 jam1
 螳螂捕蟬，黃雀在後
 通用漢字標準交換碼
 同檯食飯，各自修行
@@ -101809,7 +101839,7 @@ waa2
 塔什庫爾干塔吉克自治縣
 天下本無事，庸人自擾之
 天下無難事，只怕有心人
-聽君一席話，勝讀十年書
+聽君一席話，勝讀十年書	ting1 gwan1 jat1 zik6 waa2 sjing3 duk6 sjap6 nin4 sjyo1
 條路自己揀，仆街唔好喊
 臺上一分鐘，臺下十年功
 臺上三分鐘，臺下十年功
