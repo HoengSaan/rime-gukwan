@@ -74,9 +74,9 @@ This is a schema based on [Rime Input Method](https://rime.im/).
   - 日期信息整合，鍵值爲`vday`或`/day`
   - **鍵值已在腳本固定，如需修改須直接改變`date_gukwan.lua`**
 - 計數機：直接在RIME計數，鍵值爲`cC`（calculator）。[學習如何使用計數機](https://github.com/gaboolic/rime-shuangpin-fuzhuma/blob/main/md/calc.md)
-- 假名：以細階輸入平假名，大階輸入片假名，鍵值爲<code>`G</code> （gaaming）。輸入方式同其他IME（如Microsoft IME、ATOK等）基本無區別
+- 假名：以細階輸入平假名，大階輸入片假名，鍵值爲<code>`G</code> （gaa ming）。輸入方式同其他IME（如Microsoft IME、ATOK等）基本無區別
 - 顏文字：以日文輸入各種顏文字，鍵值爲<code>`K</code>（kaomoji）
-- 和文：實現半混打日文，基於[rime-kunyomi](https://github.com/sgalal/rime-kunyomi)，鍵值爲<code>`R</code>（n jatman）
+- 和文：實現半混打日文，基於[rime-kikwin](https://github.com/HoengSaan/rime-kikwan)，鍵值爲<code>`R</code>（njat man）
 
 > [!NOTE]
 >
@@ -209,7 +209,9 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 
 ## 特徵
 
-一般用家請無視灰字。恕此處不能盡述，詳細請參攷[小欖話・沙田方言特徵 – なかやま園](https://zonsan.fc2.page/?p=1580)。（下表內容已過期，待更新）
+一般用家請無視灰字。恕此處不能盡述，詳細請參攷[小欖話・沙田方言特徵 – なかやま園](https://zonsan.fc2.page/?p=1580)。
+
+其他方言未完成，請稍等。[凡例](https://github.com/HoengSaan/rime-gukwan/blob/main/pic/faanlai.png)
 
 <img src="pic\dakzhing.png"/>
 
