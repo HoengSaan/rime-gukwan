@@ -9,11 +9,11 @@
 # This is a schema file for Gukwan Cantonese Input Method.
 # Learn how to use Gukwan in the readme file, available on the project's github page.
 
-__include: gukwan-siulaam.schema:/
+__include: gukwan.schema:/
 
 schema:
-  schema_id: gukwan-siulaam-ps
-  name: 菊韻小欖音（音標）
+  schema_id: gukwan-siulaam-bofung-ps
+  name: 菊韻小欖寶豐音（音標）
   version: "15.5b"
   author:
     靈帝（Hoengsaan）
@@ -21,7 +21,7 @@ schema:
   description: |-
     測試階段
     寬式音標版並不能完全對應實際發音
-    本方案根據小欖鎮區音代表特徵製作，建議仔細閱讀方案竝根據自身口音調整
+    本方案根據小欖鎮寶豐村音製作，建議仔細閱讀方案竝根據自身口音調整
     瞭解如何使用菊韻請閱覽readme文件，詳細請至本方案github頁：https://github.com/HoengSaan/rime-gukwan
     如有問題或建議可於以上github頁中開Issues反饋
 
@@ -38,7 +38,7 @@ schema:
 
 translator:
   dictionary: gukwan
-  prism: gukwan-siulaam-ps
+  prism: gukwan-siulaam-bofung-ps
   spelling_hints: 9
   preedit_format:
     - xform/ng/ŋ/
@@ -79,14 +79,14 @@ translator:
     - xform/,q/,kʷ/
     - xform/,x/,gʷ/
     - xlit/bdg/ptk/
-    - xform/w/β̞/
+    - xform/w/v/
 
     - xform/̚qq/˥/
     - xform/̚x/˧˥/
 
-    - xform/qq/˨˨˩/
+    - xform/qq/˨/
     - xform/xx/˩˧/
-    - xform/vv/˧˨/
+    - xform/vv/˦˨/
     - xform/q/˧/
     - xform/x/˨˦/
     - xform/v/˥/
@@ -157,11 +157,4 @@ translator:
     - xform/nj/j/                          # 日以合流(nj->j)
 
     - xform/xaa(?=\d)/jaa$1/
-    - xform/I(?=\d)/i$1/                    # 外來語
-
-
-    - xform/(z|c|s)j/$1h/                  
-    - xform/(z|c)r/$1h/     
-    
-    - xform/xaa(?=\d)/jaa$1/   
     - xform/I(?=\d)/i$1/                    # 外來語

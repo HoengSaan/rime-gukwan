@@ -14,7 +14,7 @@ __include: gukwan.schema:/
 schema:
   schema_id: gukwan-default
   name: 菊韻構擬音
-  version: "15.1b"
+  version: "15.5b"
   author:
     靈帝（Hoengsaan）
   
@@ -102,7 +102,7 @@ speller:
 
     #- derive/^w([aeiou])/v$1/              # 口音補充（建議維持用w）
 
-    #- derive/^gwo/go/                      # 口音補充(gwo->go)：「過」讀作go
+    #- derive/^(g|k)wo/$1o/                 # 口音補充(gwo->go)：「過」讀作go
     #- derive/^(g|k)w/$1/                   # 口音補充(gk[!w])：完全不能分辨脣化聲母者
 
     - derive/^hj/j/                         # 口音補充(hj->j)：「賢」讀若jin者 多數方音
@@ -224,10 +224,38 @@ speller:
     #- derive/ang(?=\d)/an$1/               # an同ang混 
     
     #韻母——增廣
-    #- derive/o(?=\d)/oe$1/                 # 示範：「螺」讀若loe
-    #- derive/o(ng|k)(?=\d)/oe$1/           # 示範：「江」讀若goeng
-    #- derive/y(?=\d)/i$1/                  # 示範：「雨」讀若ji
-    #- derive/yu(n|t)(?=\d)/i$1/            # 示範：「穴」讀若jit
+    #- derive/y(?=\d)/i$1/                  # 「雨」讀若ji
+    #- derive/yu(n|t)(?=\d)/i$1/            # 「穴」讀若jit
+    #- derive/eng(?=\d)/en$1/               # 「餅」讀若ben
+    #- derive/ek(?=\d)/et$1/                # 「劈」讀若pet
+    #- derive/o(ng|k)(?=\d)/oe$1/
+    #- derive/(?!w)o(ng|k)(?=\d)/oe$1/
+    #- derive/(?!w)o(ng|k)(?=\d)/yo$1/
+    #- derive/(?!w)o(ng|k)(?=\d)/yoe$1/
+    #- derive/(?!w)o(ng|k)(?=\d)/yioe$1/
+    #- derive/(?!w)o(ng|k)(?=\d)/wa$1/
+    #- derive/oo(ng|k)(?=\d)/yo$1/
+    #- derive/oo(ng|k)(?=\d)/ioe$1/
+    #- derive/oo(ng|k)(?=\d)/oe$1/
+    #- derive/oo(ng|k)(?=\d)/yoo$1/
+    #- derive/oo(ng|k)(?=\d)/yoe$1/
+    #- derive/oo(ng|k)(?=\d)/wo$1/
+    #- derive/oo(ng|k)(?=\d)/ioe$1/
+    #- derive/io(ng|k)(?=\d)/yo$1/
+    #- derive/io(ng|k)(?=\d)/wyo$1/
+    #- derive/io(ng|k)(?=\d)/yoe$1/
+    #- derive/io(ng|k)(?=\d)/ioe$1/
+    #- derive/wo(ng|k)(?=\d)/oe$1/
+    #- derive/wo(ng|k)(?=\d)/yo$1/
+    #- derive/wo(ng|k)(?=\d)/wyo$1/
+    #- derive/wo(ng|k)(?=\d)/woe$1/
+    #- derive/wo(ng|k)(?=\d)/wyoe$1/
+    #- derive/wong(?=\d)/woeng$1/
+    #- derive/wok(?=\d)/oek$1/
+    #- derive/wong(?=\d)/wyoeng$1/
+    #- derive/wok(?=\d)/oek$1/
+    #- derive/oi(?=\d)/uoi$1/
+    #- derive/oi(?=\d)/uai$1/
 
     #韻尾
     #根據自己口音偏好調校

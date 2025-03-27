@@ -21,11 +21,7 @@ This work is licensed under a
 
 This is a schema based on [Rime Input Method](https://rime.im/).
 
-此爲[RIME | 中州韻輸入法引擎](https://rime.im/)方案，用於輸入小欖話爲主既粵語方言。
-
-現有字庫根據excel大批量轉換，有不少紕漏，敬請見諒。菊韻無法兼顧所有粵語方言，亦竝非本方案之目的。本方案並非廣州話方案，廣州話（穗港澳）請用[rime/rime-cantonese: Rime Cantonese input schema | 粵語拼音輸入方案](https://github.com/rime/rime-cantonese)。
-
-爲適應流動電話鍵盤限制，以及各種新功能，鍵值已於12.0b版本進行大規模調整。
+此爲[RIME | 中州韻輸入法引擎](https://rime.im/)方案，是爲改善粵語輸入體驗，支持漢英混打（中英混打），輸入日期・時間・節日・節氣等各種功能。菊韻亦可以用於輸入小欖話爲主既粵語方言。
 
 更多資訊請閱讀下文竝參攷[菊韻 – なかやま園](https://zonsan.fc2.page/?cat=123)。[關於如何安裝](#安裝)。
 
@@ -34,11 +30,14 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 菊韻可支持多地方言，但目前僅支持小欖話。已爲各種方言口音預設大量轉換規則同模糊音，方便定製。
 
 - 小欖話
-  - `gukwan-siulaam`（鎮區音）
+  - `gukwan-siulaam`（鎮區音）：以小欖比較有代表性特徵製作，適合大多數小欖人。
+  - `gukwan-siulaam-bofung`（寶豐音）：基於《沙田方言》《中山方言誌》製作。
 - 廣州話
-  - `jyut6ping3-gw`：以菊韻配置調用`rime-cantonese`
-- 分韻音（古代音，僅供參攷）
-- 菊韻音（古代音，僅供參攷）
+  - `jyut6ping3-gw`：`rime-cantonese`菊韻版，增添菊韻所有功能以改善打字體驗
+  - `gukwan-canton`：不建議使用
+- 古代音
+  - `gukwan-default`：構擬音，僅供參攷。
+  - `gukwan-fanwan`：不完全正確，僅供參攷。
 
 
 ### 功能
