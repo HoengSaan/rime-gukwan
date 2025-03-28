@@ -1,0 +1,37 @@
+# Rime dictionary
+# encoding: utf-8
+#
+# gukwan - 菊韻
+# 本文件負責調用字表詞庫
+
+# 此爲菊韻粵語輸入法方案文件
+# 瞭解如何使用菊韻請閱覽readme文件，詳細請至本方案github頁：
+# https://github.com/HoengSaan/rime-gukwan
+# This is a schema file for Gukwan Cantonese Input Method.
+# Learn how to use Gukwan in the readme file, available on the project's github page.
+
+---
+name: gukwan-siulaam-bofung
+version: "15.6b"
+sort: by_weight
+vocabulary: essay-cantonese
+import_tables:
+  - gw_dicts/gukwan.chars      # 菊韻字表——基本 廣韻理論音對照（小韻例外）
+  - gw_dicts/gukwan.chars1     # 菊韻字表——增廣一組 廣韻異音訓讀增補
+  - gw_dicts/gukwan.chars2     # 菊韻字表——增廣二組 今字異字異音訓讀增補
+  - gw_dicts/gukwan.words      # 菊韻詞庫——基本 基於粵拼詞庫
+  - gw_dicts/gukwan.words1     # 菊韻詞庫——增廣一組 部份小欖話辭彙同小欖周邊地名
+  - gw_dicts/gukwan.words2     # 菊韻詞庫——增廣二組 粵拼詞庫增補同外來語
+  - gw_dicts/gukwan.lettered   # 菊韻詞庫——漢英 基於粵拼詞庫
+  - gw_dicts/gukwan.kwongtung  # 菊韻詞庫——廣東地名
+  - jyut6ping3.maps         # 粵拼詞庫——地名街名
+  - jyut6ping3.phrase       # 粵拼詞庫——短語短句
+...
+
+隊	doe6
+雷	loe4
+鐳	loe4
+蕾	loe5
+擂	loe4
+含	hem4
+蛤	gep3

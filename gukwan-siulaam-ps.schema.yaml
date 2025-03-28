@@ -14,7 +14,7 @@ __include: gukwan-siulaam.schema:/
 schema:
   schema_id: gukwan-siulaam-ps
   name: 菊韻小欖音（音標）
-  version: "15.5b"
+  version: "15.6b"
   author:
     靈帝（Hoengsaan）
   

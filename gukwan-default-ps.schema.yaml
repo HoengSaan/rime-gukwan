@@ -16,7 +16,7 @@ schema:
   name: 菊韻構擬音（音標）
   version: "11.3b"
   author:
-    靈帝（Hoengsaan）
+    - 靈帝（Hoengsaan）
   
   description: |-
     測試階段
@@ -33,6 +33,8 @@ schema:
     - loengfan
     - kanas
     - kaomoji
+    - kikwin
+    - gukwan-melt-eng
 
 translator:
   dictionary: gukwan

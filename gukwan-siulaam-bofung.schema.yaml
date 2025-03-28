@@ -14,9 +14,9 @@ __include: gukwan.schema:/
 schema:
   schema_id: gukwan-siulaam-bofung
   name: 菊韻小欖寶豐音
-  version: "15.5b"
+  version: "15.6b"
   author:
-    靈帝（Hoengsaan）
+    - 靈帝（Hoengsaan）
   
   description: |-
     測試階段
@@ -70,11 +70,11 @@ engine:
     - script_translator@kanas               # 假名輸入
     - script_translator@kaomoji             # 顏文字輸入
     #- script_translator@kikwin              # 和語輸入
-    - table_translator@gukwan-melt-eng      # 英語混打
+    - table_translator@gukwan-melt-eng      # 英語混打 
     - lua_translator@*unicode               # Unicode
     - lua_translator@*calc_translator       # 計數機
     - lua_translator@*number_gukwan         # 數字數額金額蘇州碼
-    - lua_translator@*time_gukwan           # 日期時間
+    - lua_translator@*time_gukwan_modern    # 日期時間
   filters:
     #- lua_filter@*is_in_user_dict          # 測試用
     - reverse_lookup_filter@reverse_lookup  # 反查
@@ -82,6 +82,7 @@ engine:
     - lua_filter@*autocap_filter            # 自動大階
     - simplifier@emoji_cantonese_suggestion # 繪文字輸入
     - simplifier                            # 簡化
+    - lua_filter@*en_spacer                  # 英語自動空格
     - uniquifier                            # 去重
 
 speller:
@@ -174,19 +175,17 @@ speller:
     - xform/^(s)yu(?=\d)/$1eoy/             # 遇合三裂化(yu->eoy)：「須」讀若seoy
     #- xform/^(g|k|h)yu(?=\d)/$1eoy/         # 遇合三裂化(yu->eoy)：「巨」讀若geoy
     
-    - xform/^(z|c)yi(?=\d)/$1eoy/           # 蟹合一(yi->eoy)：「最」讀若zeoy
-    - xform/^(s)yi(?=\d)/$1eoy/            # 蟹合一(yi->eoy)：「碎」讀若seoy
+    #- xform/^(z|c)yi(?=\d)/$1eoy/           # 蟹合一(yi->eoy)：「最」讀若zeoy
+    #- xform/^(s)yi(?=\d)/$1eoy/            # 蟹合一(yi->eoy)：「碎」讀若seoy
     #- xform/^(s)yi(?=\d)/$1yu/              # 蟹合一(yi->yu)：「碎」讀若syu
     #- xform/^(d|t|n|l)yi(?=\d)/$1yu/        # 蟹合一(yi->yu)：「對」讀若dyu
-    - derive/^(d|t|n|l)yi(?=\d)/$1oe/       # 寶豐村用
-    - derive/^(d|t|n|l)yi(?=\d)/$1eoy/      # 寶豐村用
-    #- xform/yi(?=\d)/eoy/                  # 蟹合一(yi->eoy)：皆讀作eoy者可用，其他關閉
+    - xform/yi(?=\d)/eoy/                  # 蟹合一(yi->eoy)：皆讀作eoy者可用，其他關閉
     #- xform/yi(?=\d)/yu/                   # 蟹合一(yi->yu)：皆讀作yu者可用，其他關閉
     
     - xform/yo(?=\d)/yu/                    # FIX
     
-    - xform/y(?=\d)/i/                     # 止攝師韻展脣(y->i) ：「師」讀若si
-    #- derive/y(?=\d)/yu/                    # 止攝師韻圓脣(y->yu)：「仕」讀若syu
+    - xform/^(z|c|s|zh|ch|sh)y(?=\d)/i/     # 止攝師韻展脣(y->i) ：「師」讀若si
+    #- derive/^(z|c|s|zh|ch|sh)y(?=\d)/yu/  # 止攝師韻圓脣(y->yu)：「仕」讀若syu 
     #- derive/^(z|c|s)ji(?=\d)/$1ii/        # 止開照組異拼(ji->ii)
 
     #- derive/eo(n|t)(?=\d)/a$1/            # 臻攝混音(ea->a)：「順」讀若san 多只見於白讀音
@@ -358,8 +357,7 @@ speller:
     - xform/6/qq/                           # 陽去
 
 translator:
-  dictionary: gukwan
-  prism: gukwan-siulaam-bofung
+  dictionary: gukwan-siulaam-bofung
   initial_quality: 1.2
   spelling_hints: 9
   preedit_format:
@@ -371,24 +369,24 @@ translator:
     - xform/([aeiouymngptk])q/${1}3/
   
   comment_format:
-    - xform/^hj/j/                          # 口音補充(hj->j)：「賢」讀若jin者
+    - xform/hj/j/                          # 口音補充(hj->j)：「賢」讀若jin者
     
-    - xform/^hwun(?=\d)/hun$1/              # 口音補充(hw->h)：「桓」讀若fun者
+    - xform/hwun(?=\d)/hun$1/              # 口音補充(hw->h)：「桓」讀若fun者
     
-    - xform/^xu(?=\d)/hu$1/                # 遇攝合口(*u->hu)：「狐」讀作fu4
-    - xform/^vu(?=\d)/hu$1/                # 遇攝合口(*u->hu)：「護」讀作fu6
+    - xform/xu(?=\d)/hu$1/                # 遇攝合口(*u->hu)：「狐」讀作fu4
+    - xform/vu(?=\d)/hu$1/                # 遇攝合口(*u->hu)：「護」讀作fu6
     
     #聲母——分韻（現代音無用）
-    - xform/^ngiuk/njuk/                    # 疑母齶化(ngiuk->njuk)
-    - xform/^ngiong/njong/                  # 疑母齶化(ngiong->njong)
-    - xform/^ngi/nji/                       # 疑母齶化(ngi->nji)
-    - xform/^ngy/njy/                       # 疑母齶化(ngy->njy)
-    - xform/^ngw/w/                         # 疑合脫落(ngw->w)
-    - xform/^ngun(?=\d)/wun$1/              # 疑合脫落(ngw->w)
-    - xform/^kwing(?=\d)/king$1/
-    - xform/^hwing(?=\d)/hing$1/
-    - xform/^hw(?!ing)/f/                  # 曉合輕脣(hw->f)
-    - xform/^hu/fu/                        # 曉合輕脣(hw->f)
+    - xform/ngiuk/njuk/                    # 疑母齶化(ngiuk->njuk)
+    - xform/ngiong/njong/                  # 疑母齶化(ngiong->njong)
+    - xform/ngi/nji/                       # 疑母齶化(ngi->nji)
+    - xform/ngy/njy/                       # 疑母齶化(ngy->njy)
+    - xform/ngw/w/                         # 疑合脫落(ngw->w)
+    - xform/ngun(?=\d)/wun$1/              # 疑合脫落(ngw->w)
+    - xform/kwing(?=\d)/king$1/
+    - xform/hwing(?=\d)/hing$1/
+    - xform/hw(?!ing)/f/                  # 曉合輕脣(hw->f)
+    - xform/hu/fu/                        # 曉合輕脣(hw->f)
     
     - xform/iau(?=\d)/au/                   # 流攝三等(iau->au) 粵語基本無方言保留
 
@@ -398,23 +396,23 @@ translator:
     - xform/uo(n|t)(?=\d)/oe$1/             # (uo->oe)
 
     - xform/ooi(?=\d)/eoy/                  # 其他分韻(ooi->eoy)：「脆」讀若ceoy
-    - xform/^(b|p|f)i(?=\d)/$1ei/           # 止攝裂化脣音(i->ei) ：「備」讀若bei
-    - xform/^(d|t|l|n)i(?=\d)/$1ei/         # 止攝裂化齒音(i->ei)：「地」讀若dei
-    - derive/^(s)(?!j)i(?=\d)/$1ei/         # 止攝心母特音（現代音裂化專用） 
+    - xform/(b|p|f)i(?=\d)/$1ei/           # 止攝裂化脣音(i->ei) ：「備」讀若bei
+    - xform/(d|t|l|n)i(?=\d)/$1ei/         # 止攝裂化齒音(i->ei)：「地」讀若dei
+    - derive/(s)(?!j)i(?=\d)/$1ei/         # 止攝心母特音（現代音裂化專用） 
     
-    - xform/^ngu(?=\d)/ng/                            # 遇開一單獨成韻(ngu->ng)：「吳」讀若ng
-    - xform/^(b|p|m|d|t|n|l|z|c|s|sh)u(?=\d)/$1au/    # 遇攝裂化(u->au)：「渡」讀若dau
+    - xform/ngu(?=\d)/ng/                            # 遇開一單獨成韻(ngu->ng)：「吳」讀若ng
+    - xform/(b|p|m|d|t|n|l|z|c|s|sh)u(?=\d)/$1au/    # 遇攝裂化(u->au)：「渡」讀若dau
     
-    - xform/^(z|c|s|n|l)yo(?=\d)/$1eoy/     # 遇開三(yo->eoy)：「旅」讀若leoy
+    - xform/(z|c|s|n|l)yo(?=\d)/$1eoy/     # 遇開三(yo->eoy)：「旅」讀若leoy
     
-    - xform/^(z|c|n|l)yu(?=\d)/$1eoy/       # 遇合三裂化(yu->eoy)：「聚」讀若zeoy
-    - xform/^(s)yu(?=\d)/$1eoy/             # 遇合三裂化(yu->eoy)：「須」讀若seoy
+    - xform/(z|c|n|l)yu(?=\d)/$1eoy/       # 遇合三裂化(yu->eoy)：「聚」讀若zeoy
+    - xform/(s)yu(?=\d)/$1eoy/             # 遇合三裂化(yu->eoy)：「須」讀若seoy
     
     - xform/yi(?=\d)/eoy/                  # 蟹合一(yi->eoy)：皆讀作eoy者可用，其他關閉
     
     - xform/yo(?=\d)/yu/                    # FIX
     
-    - xform/y(?=\d)/i/                     # 止攝師韻展脣(y->i) ：「師」讀若si
+    - xform/(z|c|s|zh|ch|sh)y(?=\d)/i/     # 止攝師韻展脣(y->i) ：「師」讀若si
 
     - xform/ou(?=\d)/o$1/                   # 效一元音融合(ou->o)：「高」讀若go
     
@@ -426,38 +424,38 @@ translator:
     - xform/jo(ng|k)/joe$1/                 # 宕攝江攝元音融合(jo->joe) ：「央」讀央joeng
     
     #聲母——現代(Special)
-    - xform/^(z|c|s)h/$1/                   # 精照合流(zh->z)
-    - xform/^(zj|cj|sj)yo(?=\d)/$1yu/       # 精照合流
-    - xform/^(z|c|s)j(?!yo)/$1/             # 精照合流(ch->c)
-    - xform/^(z|c)r/$1/                     # 精照合流(sj->s)
-    - xform/^nj/j/                          # 日以合流(nj->j)
+    - xform/(z|c|s)h/$1/                   # 精照合流(zh->z)
+    - xform/(zj|cj|sj)yo(?=\d)/$1yu/       # 精照合流
+    - xform/(z|c|s)j(?!yo)/$1/             # 精照合流(ch->c)
+    - xform/(z|c)r/$1/                     # 精照合流(sj->s)
+    - xform/nj/j/                          # 日以合流(nj->j)
     
-    - xform/^xaa(?=\d)/jaa$1/
+    - xform/xaa(?=\d)/jaa$1/
     - xform/I(?=\d)/i$1/                    # 外來語
 
 reverse_lookup:
   tags: [ jyut6ping3, luna_pinyin, cangjie5, kunyomi, loengfan ]
   overwrite_comment: false
-  dictionary: gukwan
+  dictionary: gukwan-siulaam-bofung
   comment_format:
-    - xform/^hj/j/                          # 口音補充(hj->j)：「賢」讀若jin者
+    - xform/hj/j/                          # 口音補充(hj->j)：「賢」讀若jin者
     
-    - xform/^hwun(?=\d)/hun$1/              # 口音補充(hw->h)：「桓」讀若fun者
+    - xform/hwun(?=\d)/hun$1/              # 口音補充(hw->h)：「桓」讀若fun者
     
-    - xform/^xu(?=\d)/hu$1/                # 遇攝合口(*u->hu)：「狐」讀作fu4
-    - xform/^vu(?=\d)/hu$1/                # 遇攝合口(*u->hu)：「護」讀作fu6
+    - xform/xu(?=\d)/hu$1/                # 遇攝合口(*u->hu)：「狐」讀作fu4
+    - xform/vu(?=\d)/hu$1/                # 遇攝合口(*u->hu)：「護」讀作fu6
     
     #聲母——分韻（現代音無用）
-    - xform/^ngiuk/njuk/                    # 疑母齶化(ngiuk->njuk)
-    - xform/^ngiong/njong/                  # 疑母齶化(ngiong->njong)
-    - xform/^ngi/nji/                       # 疑母齶化(ngi->nji)
-    - xform/^ngy/njy/                       # 疑母齶化(ngy->njy)
-    - xform/^ngw/w/                         # 疑合脫落(ngw->w)
-    - xform/^ngun(?=\d)/wun$1/              # 疑合脫落(ngw->w)
-    - xform/^kwing(?=\d)/king$1/
-    - xform/^hwing(?=\d)/hing$1/
-    - xform/^hw(?!ing)/f/                  # 曉合輕脣(hw->f)
-    - xform/^hu/fu/                        # 曉合輕脣(hw->f)
+    - xform/ngiuk/njuk/                    # 疑母齶化(ngiuk->njuk)
+    - xform/ngiong/njong/                  # 疑母齶化(ngiong->njong)
+    - xform/ngi/nji/                       # 疑母齶化(ngi->nji)
+    - xform/ngy/njy/                       # 疑母齶化(ngy->njy)
+    - xform/ngw/w/                         # 疑合脫落(ngw->w)
+    - xform/ngun(?=\d)/wun$1/              # 疑合脫落(ngw->w)
+    - xform/kwing(?=\d)/king$1/
+    - xform/hwing(?=\d)/hing$1/
+    - xform/hw(?!ing)/f/                  # 曉合輕脣(hw->f)
+    - xform/hu/fu/                        # 曉合輕脣(hw->f)
     
     - xform/iau(?=\d)/au/                   # 流攝三等(iau->au) 粵語基本無方言保留
 
@@ -467,23 +465,23 @@ reverse_lookup:
     - xform/uo(n|t)(?=\d)/oe$1/             # (uo->oe)
 
     - xform/ooi(?=\d)/eoy/                  # 其他分韻(ooi->eoy)：「脆」讀若ceoy
-    - xform/^(b|p|f)i(?=\d)/$1ei/           # 止攝裂化脣音(i->ei) ：「備」讀若bei
-    - xform/^(d|t|l|n)i(?=\d)/$1ei/         # 止攝裂化齒音(i->ei)：「地」讀若dei
-    - derive/^(s)(?!j)i(?=\d)/$1ei/         # 止攝心母特音（現代音裂化專用） 
+    - xform/(b|p|f)i(?=\d)/$1ei/           # 止攝裂化脣音(i->ei) ：「備」讀若bei
+    - xform/(d|t|l|n)i(?=\d)/$1ei/         # 止攝裂化齒音(i->ei)：「地」讀若dei
+    - xform/(s)(?!j)i(?=\d)/$1ei/         # 止攝心母特音（現代音裂化專用） 
     
-    - xform/^ngu(?=\d)/ng/                            # 遇開一單獨成韻(ngu->ng)：「吳」讀若ng
-    - xform/^(b|p|m|d|t|n|l|z|c|s|sh)u(?=\d)/$1au/    # 遇攝裂化(u->au)：「渡」讀若dau
+    - xform/ngu(?=\d)/ng/                            # 遇開一單獨成韻(ngu->ng)：「吳」讀若ng
+    - xform/(b|p|m|d|t|n|l|z|c|s|sh)u(?=\d)/$1au/    # 遇攝裂化(u->au)：「渡」讀若dau
     
-    - xform/^(z|c|s|n|l)yo(?=\d)/$1eoy/     # 遇開三(yo->eoy)：「旅」讀若leoy
+    - xform/(z|c|s|n|l)yo(?=\d)/$1eoy/     # 遇開三(yo->eoy)：「旅」讀若leoy
     
-    - xform/^(z|c|n|l)yu(?=\d)/$1eoy/       # 遇合三裂化(yu->eoy)：「聚」讀若zeoy
-    - xform/^(s)yu(?=\d)/$1eoy/             # 遇合三裂化(yu->eoy)：「須」讀若seoy
+    - xform/(z|c|n|l)yu(?=\d)/$1eoy/       # 遇合三裂化(yu->eoy)：「聚」讀若zeoy
+    - xform/(s)yu(?=\d)/$1eoy/             # 遇合三裂化(yu->eoy)：「須」讀若seoy
     
     - xform/yi(?=\d)/eoy/                  # 蟹合一(yi->eoy)：皆讀作eoy者可用，其他關閉
     
     - xform/yo(?=\d)/yu/                    # FIX
     
-    - xform/y(?=\d)/i/                     # 止攝師韻展脣(y->i) ：「師」讀若si
+    - xform/(z|c|s|zh|ch|sh)y(?=\d)/i/     # 止攝師韻展脣(y->i) ：「師」讀若si
 
     - xform/ou(?=\d)/o$1/                   # 效一元音融合(ou->o)：「高」讀若go
     
@@ -495,11 +493,11 @@ reverse_lookup:
     - xform/jo(ng|k)/joe$1/                 # 宕攝江攝元音融合(jo->joe) ：「央」讀央joeng
     
     #聲母——現代(Special)
-    - xform/^(z|c|s)h/$1/                   # 精照合流(zh->z)
-    - xform/^(zj|cj|sj)yo(?=\d)/$1yu/       # 精照合流
-    - xform/^(z|c|s)j(?!yo)/$1/             # 精照合流(ch->c)
-    - xform/^(z|c)r/$1/                     # 精照合流(sj->s)
-    - xform/^nj/j/                          # 日以合流(nj->j)
+    - xform/(z|c|s)h/$1/                   # 精照合流(zh->z)
+    - xform/(zj|cj|sj)yo(?=\d)/$1yu/       # 精照合流
+    - xform/(z|c|s)j(?!yo)/$1/             # 精照合流(ch->c)
+    - xform/(z|c)r/$1/                     # 精照合流(sj->s)
+    - xform/nj/j/                          # 日以合流(nj->j)
     
-    - xform/^xaa(?=\d)/jaa$1/
+    - xform/xaa(?=\d)/jaa$1/
     - xform/I(?=\d)/i$1/                    # 外來語

@@ -13,7 +13,7 @@
 schema:
   schema_id: gukwan
   name: 菊韻
-  version: "15.1b"
+  version: "15.6b"
   author:
     靈帝（Hoengsaan）
   
@@ -106,6 +106,7 @@ engine:
     - lua_filter@*autocap_filter            # 自動大階
     - simplifier@emoji_cantonese_suggestion # 繪文字輸入
     - simplifier                            # 簡化
+    - lua_filter@*en_spacer                  # 英語自動空格
     - uniquifier                            # 去重
 
 speller:
@@ -212,8 +213,8 @@ speller:
     
     #- xform/yo(?=\d)/yu/                   # FIX（現代音用）
     
-    #- xform/y(?=\d)/i/                     # 止攝師韻展脣(y->i) ：「師」讀若si
-    #- xform/y(?=\d)/yu/                    # 止攝師韻圓脣(y->yu)：「仕」讀若syu 
+    #- xform/^(z|c|s|zh|ch|sh)y(?=\d)/i/    # 止攝師韻展脣(y->i) ：「師」讀若si
+    #- derive/^(z|c|s|zh|ch|sh)y(?=\d)/yu/  # 止攝師韻圓脣(y->yu)：「仕」讀若syu 
     #- derive/^(z|c|s)ji(?=\d)/$1ii/        # 止開照組異拼(ji->ii)
     
     #- derive/eo(n|t)(?=\d)/a$1/            # 臻攝混音(ea->a)：「順」讀若san 多只見於白讀音

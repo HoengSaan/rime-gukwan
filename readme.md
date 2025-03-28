@@ -50,7 +50,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 - 繪文字（表情）：可以粵語輸入繪文字，默認關閉
 - 符號：特殊符號輸入，鍵值爲`/`。[學習如何使用符號](https://github.com/HoengSaan/rime-gukwan/blob/main/symbols-gukwan.yaml)
 - Unicode：以Unicode編號直接輸入字符，適合輸入組合字符，空白字符等難複製特殊字符，鍵值爲`U`（unicode）
-- 數字：以阿拉伯數字輸入大小寫數字以及大小寫金額，鍵值爲`S`（shuzy）；支持以下7種格式：
+- 數字：以阿拉伯數字輸入大小寫數字以及大小寫金額，鍵值爲`S`（SHuZy/SauZy）；支持以下7種格式：
   - 二〇二五（數字小寫）
   - 貳零貳伍（數字大寫）
   - 〢〇〢〥（蘇州碼子）
@@ -60,22 +60,22 @@ This is a schema based on [Rime Input Method](https://rime.im/).
   - 二千〇二十五圓整（金額小寫）
   - 貳仟零貳拾伍圓整（金額大寫）
 - 日期・時間・節日・節氣：
-  - 日期（njat ki）：鍵值爲`vrk`或`/rk`或`/date`；有多種格式，部份默認禁用
-  - 時間（shi gaen）：鍵值爲`vsg `或`/sg`或`/time`
-  - 星期（sing ki）：鍵值爲`vsk`或`/sk`或`/week`
-  - 日時（njat shi）：鍵值爲`vrs`或`/rs`或`/datetime`；ISO 8601/RFC 3339格式日期時間，以東八區（UTC+8）爲準
-  - 週數（week number）：鍵值爲`vwn`或`/wn`或`/weeknumber`；今年第幾周
-  - 時間戳（time stamp），鍵值爲`vts`或`/ts` 或`/timestamp`
-  - 農曆（nung lik），鍵值爲`vnl`或`/nl`或`/lunar`
-  - 節氣（zit hi）：鍵值爲`vzh`或`/zh`或`/zithi`；廿四節氣同日期
-  - 節日（zit njat）：鍵值爲`vzr`或`/zr`或`/festival`；新舊曆節日同日期
+  - 【`/date`】日期（NJatKi/JatKi）：現代鍵值爲`vjk`｜`/jk`；古代鍵值爲`vrk`｜`/rk`；有多種格式，部份默認禁用
+  - 【`/time`】時間（SHiGaen/SiGaan）：鍵值爲`vsg`｜`/sg`
+  - 【`/week`】星期（SingKi）：鍵值爲`vsk`｜`/sk`
+  - 【`/datetime`】日時（NJatSHi/JatSi）：現代鍵值爲`vjs`｜`/js`｜；古代鍵值爲`vrs`｜`/rs`；ISO 8601/RFC 3339格式日期時間，以東八區（UTC+8）爲準
+  - 【`/weeknumber`】週數（Week Number）：鍵值爲`vwn`｜`/wn`；今年第幾周
+  - 【`/timestamp`】時間戳（Time Stamp），鍵值爲`vts`｜`/ts`
+  - 【`/lunar`】農曆（NungLik），鍵值爲`vnl`｜`/nl`
+  - 【`/zithi`】節氣（ZitHi）：鍵值爲`vzh`｜`/zh`｜；廿四節氣同日期
+  - 【`/festival`】節日（ZitNJat/ZitJat）：現代鍵值爲`vzj`｜`/zj`；古代鍵值爲`vzr`｜`/zr`；新舊曆節日同日期
+  - 【`/info`】日期信息整合，鍵值爲`vday`｜`/day`（電話版中州韻多數不能正常顯示）
   - 直出，鍵值爲`N`+「`YYYYMMDD`」；有四種模式：「新曆」「新曆轉舊曆」「舊曆轉新曆」「新曆轉干支」
-  - 日期信息整合，鍵值爲`vday`或`/day`
-  - **鍵值已在腳本固定，如需修改須直接改變`date_gukwan.lua`**
-- 計數機：直接在RIME計數，鍵值爲`cC`（calculator）。[學習如何使用計數機](https://github.com/gaboolic/rime-shuangpin-fuzhuma/blob/main/md/calc.md)
+  - **鍵值已在腳本固定，如需修改須直接改變`time_gukwan.lua`或`time_gukwan_modern.lua`**
+- 計數機：直接在RIME計數，鍵值爲`cC`（Calculator）。[學習如何使用計數機](https://github.com/gaboolic/rime-shuangpin-fuzhuma/blob/main/md/calc.md)
 - 假名：以細階輸入平假名，大階輸入片假名，鍵值爲<code>`G</code> （gaa ming）。輸入方式同其他IME（如Microsoft IME、ATOK等）基本無區別
 - 顏文字：以日文輸入各種顏文字，鍵值爲<code>`K</code>（kaomoji）
-- 和文：實現半混打日文，基於[rime-kikwin](https://github.com/HoengSaan/rime-kikwan)，鍵值爲<code>`R</code>（njat man）
+- 和文：實現半混打日文，基於[rime-kikwin](https://github.com/HoengSaan/rime-kikwan)，鍵值爲<code>`R</code>（romaji）
 
 > [!NOTE]
 >
@@ -95,10 +95,10 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 多數人士通曉廣州話、普通話卻未必熟識自己鄉下發音，故設各種反查。反查亦可用來打菊韻難以輸入或無收錄既非常用字。
 
 - 粵拼（[rime-cantonese](https://github.com/rime/rime-cantonese)），粵語廣州話反查。鍵值爲<code>` </code>。
-- 明月拼音（rime-luna_pinyin），官語普通話反查。鍵值爲<code>`P</code>（pu ping）。
-- 倉頡五代（rime-cangjie5），倉頡反查。鍵值爲<code>`C</code>（coong kit）。
-- 訓讀（[rime-kunyomi](https://github.com/sgalal/rime-kunyomi)），和語訓讀（現代音）反查。鍵值爲<code>`F</code>（fan duk）。
-- 兩分（[rime-loengfan]([CanCLID/rime-loengfan: Loengfan (粵語兩分) is the Cantonese version of the Liang Fen input method](https://github.com/CanCLID/rime-loengfan))），粵語廣州話兩分拆字反查。鍵值爲<code>`L</code>（loeng fan)。
+- 明月拼音（rime-luna_pinyin），官語普通話反查。鍵值爲<code>`P</code>（PuPing/PouPing）。
+- 倉頡五代（rime-cangjie5），倉頡反查。鍵值爲<code>`C</code>（CoongKit/CongKit ）。
+- 訓讀（[rime-kunyomi](https://github.com/sgalal/rime-kunyomi)），和語訓讀（現代音）反查。鍵值爲<code>`F</code>（FanDuk）。
+- 兩分（[rime-loengfan](https://github.com/CanCLID/rime-loengfan)），粵語廣州話兩分拆字反查。鍵值爲<code>`L</code>（LoengFan）。
 
 > [!NOTE]
 > 
@@ -222,29 +222,31 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 
 ### 方案
 
-**※寬式音標竝不能完全代表實際發音※**
+> [!NOTE]
+>
+> `xxx.xxx-ps.scheme.yaml`爲寬式音標版，寬式音標並不能完全代表實際發音
 
 - `gukwan.schema.yaml`：調試用・自用（**請勿刪除**）
 - `jyut6ping3-gw.schema.yaml`：以菊韻配置調用`rime-cantonese`，支持菊韻所有功能。
-  - `jyut6ping3-gw-ps.schema.yaml`：寬式音標版
 
 #### 預設古代音方案
 
-- `gukwan-default.schema.yaml`：菊韻音（構擬音）
-  - 根據菊韻標準所構擬之古音，較分韻複雜。
-  - `gukwan-default-ps.schema.yaml`：寬式音標版
+- `gukwan-default.schema.yaml`：菊韻音（構擬音）根據菊韻標準所構擬之古音，較分韻複雜。
 - `gukwan-fanwan.schema.yaml`：分韻音
   - 準確來講此方案係分韻風，並不能準確反映所有分韻發音。若欲使用眞正分韻音打字，可參攷以下方案：[leimaau/old-Cantonese: Rime Old Cantonese Input Scheme | 《分韻撮要》音系及輸入方案](https://github.com/leimaau/old-Cantonese)
 
 #### 預設現代音方案
 
-- `gukwan-siulaam.schema.yaml`：小欖鎮區音
-  - 本方案根據小欖鎮區音代表特徵製作。下爲重要特徵：
+- `gukwan-siulaam.schema.yaml`：小欖音
+  - 本方案根據小欖鎮代表特徵製作。下爲重要特徵：
     - 小欖人多數人不分來孃（l/n）、透曉（t/h），故可以l音打n（如「農」`nung4`可打`lung4`），h音打t（如「偸」`tau1`可打`hau1`）。
     - 小欖人多數人不分`ak`同`aak`，故可以aak音打ak（如「勒」`lak6`可打`laak6`）。
   - 此方案不能代表所有情況，建議仔細閱讀方案竝根據自身口音調整，見[小欖話・沙田方言特徵 – なかやま園](https://zonsan.fc2.page/?p=1580)。（內容已過期，待更新）
-  - `gukwan-siulaam-ps.schema.yaml`：寬式音標版
-  
+- `gukwan-siulaam-bofung.schema.yaml`：小欖寶豐音
+  - 本方案根據《沙田方言》《中山方言誌》製作。下爲同鎮區音主要區別：
+    - 分辨透曉
+    - 不分ong/oeng；ok/oek；eng/en；ek/et
+    - 白讀音（可於`gukwan-siulaam-bofung.dict.yaml`調整）
 - `gukwan-canton.schema.yaml`：廣州音
   - 準確來講此方案係廣州風，並不能準確反映所有廣州發音。若欲使用眞正廣州音打字，請使用`jyut6ping3-gw.scheme.yaml`
 
