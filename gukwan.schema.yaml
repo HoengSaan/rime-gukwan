@@ -13,7 +13,7 @@
 schema:
   schema_id: gukwan
   name: 菊韻
-  version: "15.6b"
+  version: "15.7b"
   author:
     靈帝（Hoengsaan）
   
@@ -127,9 +127,6 @@ speller:
 
     #- derive/^w([aeiou])/v$1/              # 口音補充（建議維持用w）
 
-    #- derive/^(g|k)wo/$1o/                 # 口音補充(gwo->go)：「過」讀作go
-    #- derive/^(g|k)w/$1/                   # 口音補充(gk[!w])：完全不能分辨脣化聲母者
-
     - xform/^hj/j/                          # 口音補充(hj->j)：「賢」讀若jin者 多數方音
     #- xform/^hj/h/                         # 口音補充(hj->h)：「賢」讀若hin者 順德石歧
     
@@ -239,6 +236,9 @@ speller:
     #- derive/^t/h/                         # 透曉合流(t->h) 小欖部份
     - xform/^xaa(?=\d)/jaa$1/
     - xform/I(?=\d)/i$1/                    # 外來語
+    #- derive/^(g|k)wo/$1o/                 # 口音補充(gwo->go)：遇o不分
+    #- derive/^(g|k)wo(?=\d)/$1o/           # 口音補充(gwo->go)：遇單o不分
+    #- derive/^(g|k)w/$1/                   # 口音補充(gk[!w])：完全不能分辨脣化聲母者
 
     #韻母——長短音混
     #- derive/ap(?=\d)/aap$1/               # ap同aap混 
@@ -282,6 +282,9 @@ speller:
     #- derive/oi(?=\d)/uoi$1/
     #- derive/oi(?=\d)/uai$1/
 
+    #- derive/u(n|t)(?=\d)/o$1/
+    #- derive/u(n|t)(?=\d)/i$1/
+
     #韻尾
     #根據自己口音偏好調校
 
@@ -295,6 +298,22 @@ speller:
     #- derive/p([?=\d])$/h$1/               # 入聲弱化(p->h)
     #- derive/k([?=\d])$/h$1/               # 入聲弱化(k->h)
     #- derive/t([?=\d])$/h$1/               # 入聲弱化(t->h)
+    
+    #古全濁聲母不送氣
+    #- xform/^p([a-z]+)(4|5)/b$1$2/         # 脣音
+    #- xform/^t([a-z]+)(4|5)/d$1$2/         # 齒音
+    #- xform/^k([a-z]+)(4|5)/g$1$2/         # 牙音
+    #- derive/^p([a-z]+)(4|5)/b$1$2/        # 脣音
+    #- derive/^t([a-z]+)(4|5)/d$1$2/        # 齒音
+    #- derive/^k([a-z]+)(4|5)/g$1$2/        # 牙音
+
+    #減低打字速度，忠實實際發音但不推薦
+    #- xform/^m/bb/                         # 鼻音塞化
+    #- xform/^n(?!g|j)/dd/                  # 鼻音塞化
+    #- xform/^ng/gg/                        # 鼻音塞化
+    #- xform/^m/mb/                         # 鼻音鼻塞化
+    #- xform/^n(?!g|j)/nd/                   # 鼻音鼻塞化
+    #- xform/^ng/ngg/                       # 鼻音鼻塞化
 
     #打字輔助
     #正常情況下毋須郁動，可根據自己喜好調校。

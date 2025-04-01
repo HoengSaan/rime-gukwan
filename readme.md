@@ -27,11 +27,15 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 
 ### 多方言適應
 
-菊韻可支持多地方言，但目前僅支持小欖話。已爲各種方言口音預設大量轉換規則同模糊音，方便定製。
+菊韻可支持多地方言。已爲各種方言口音預設大量轉換規則同模糊音，方便定製。[具體異同](https://github.com/HoengSaan/rime-gukwan#%E6%96%B9%E6%A1%88)。
 
-- 小欖話
-  - `gukwan-siulaam`（鎮區音）：以小欖比較有代表性特徵製作，適合大多數小欖人。
-  - `gukwan-siulaam-bofung`（寶豐音）：基於《沙田方言》《中山方言誌》製作。
+- 順德系
+  - 小欖
+    - `gukwan-siulaam`（小欖音）：以小欖比較有代表性特徵製作，適合大多數小欖人。
+    - `gukwan-siulaam-bofung`（寶豐音）：小欖鎮寶豐村，基於《沙田方言》《中山方言誌》製作。
+  - 南頭
+    - `gukwan-naamtau-naamsing`（南城音）：南頭鎮南城村，基於《沙田方言》製作。
+- 蜑家話
 - 廣州話
   - `jyut6ping3-gw`：`rime-cantonese`菊韻版，增添菊韻所有功能以改善打字體驗
   - `gukwan-canton`：不建議使用
@@ -214,13 +218,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 
 <img src="pic\dakzhing.png"/>
 
-## 文件結構・許可
-
-> [!IMPORTANT]
->
-> 部份文件竝非我所作，故許可授權不同，使用前請注意。若無備註則皆以[CC BY NC SA 4.0許可](cc-by-nc-sa)發佈。
-
-### 方案
+## 方案
 
 > [!NOTE]
 >
@@ -229,30 +227,64 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 - `gukwan.schema.yaml`：調試用・自用（**請勿刪除**）
 - `jyut6ping3-gw.schema.yaml`：以菊韻配置調用`rime-cantonese`，支持菊韻所有功能。
 
-#### 預設古代音方案
+### 順德系方案
+
+#### 順德系方言共通特徵
+
+詳細可見[小欖話・沙田方言特徵 – なかやま園](https://zonsan.fc2.page/?p=1580)。（內容已過期，待更新）
+
+- 多數不分來孃，即「南」`naam4`讀作「藍」`laam4`、「農」`nung4`讀作「龍」`lung4`。
+- 遇合開一匣母（即「胡」「戶」「護」三小韻）多讀作fu。
+- 見組止攝開口三等字未裂化讀作`i`而非`ei`，如「其」`ki4`「起」`hi2`「機」`gi1`「紀」`gi3`等。
+- 見系遇攝三等字未裂化讀作`yu`而非`eoy`，如「區」`ky1`「去」`hy3`「車」`gy1`「巨」`gy6`等。
+- 遇攝合口一等字除見系之外裂化爲`au`而非`ou`，如「度」`dau6`「無」`mau4`「做（作）」`zau6`「粗」`cau1`等。
+- 效攝一等字發生元音融合，讀`o`，如「高」`go1`「刀」`do1`「毛」`mo4`「草」`co2`。
+- 咸攝見系字依舊讀`om`，如「鴿」`gop3`「合」`hop6`「敢」`gom2`「柑」`gom1`等。
+  - 但實際情況連中年人亦不分`om/op`同`am/ap`，同方言記錄有差別。故菊韻允許以`am/ap`音輸入`om/op`字。
+- 白讀音豐富。
+- 變調豐富，有一定規律但其豐富性導致方案無法完全還原其實態。尤其陽平字特殊變調之多，本人已放棄收錄。
+
+以上特徵如無重申即無異。
+
+### 小欖
+
+- `gukwan-siulaam.schema.yaml`：小欖音
+  - 本方案根據小欖鎮代表特徵製作。下爲重要特徵：
+    - 小欖人多數人不分透曉（t/h），故可以h音打t（如「偸」`tau1`可打`hau1`）。
+    - 小欖人多數人不分`ak`同`aak`，故可以aak音打ak（如「勒」`lak6`可打`laak6`）。
+    - 蟹攝合口一等字，廣州話讀`eoy`者，小欖話多讀作`yu`：
+      - 端組同心母讀作`yu`，如「對」`dy3`「腿」`ty2`「堆」`dy1`「碎」`sy3`等。
+      - 精組（除心母）多數人已裂化讀`eoy`，如「最」`zeoy3`「罪」`zeoy6`「催」`ceoy1`等，故不納入。
+- `gukwan-siulaam-bofung.schema.yaml`：小欖寶豐音
+  - 本方案根據《沙田方言》《中山方言誌》製作。下爲同小欖音主要區別：
+    - 分辨透曉，ong/ok同oeng/oek可不分；eng/ek同en/et可不分。
+    - 蟹攝合口一等字變化同廣州話一樣，但有部分讀`oe`（見`gukwan-siulaam-bofung.dict.yaml`）
+
+### 南頭
+
+- `gukwan-naamtau-naamsing.schema.yaml`：南頭南城音
+  - 本方案根據《沙田方言》製作。下爲重要特徵：
+    - ong/ok歸oeng/oek，而兩個脣化聲母遇oeng/oek即展脣化，故「光」「江」「薑」不分，皆讀`goeng1`（「黃」則讀`woeng4`，不讀作`oeng4`）
+    - 蟹攝合口一等字除心母讀`eoy`之外同小欖一樣。
+    - 遇攝合口一等字裂化同廣州一樣爲`ou`：「度」`dou6`「無」`mou4`「做（作）」`zou6`「粗」`cou1`等。
+
+### 參攷用方案
 
 - `gukwan-default.schema.yaml`：菊韻音（構擬音）根據菊韻標準所構擬之古音，較分韻複雜。
 - `gukwan-fanwan.schema.yaml`：分韻音
   - 準確來講此方案係分韻風，並不能準確反映所有分韻發音。若欲使用眞正分韻音打字，可參攷以下方案：[leimaau/old-Cantonese: Rime Old Cantonese Input Scheme | 《分韻撮要》音系及輸入方案](https://github.com/leimaau/old-Cantonese)
-
-#### 預設現代音方案
-
-- `gukwan-siulaam.schema.yaml`：小欖音
-  - 本方案根據小欖鎮代表特徵製作。下爲重要特徵：
-    - 小欖人多數人不分來孃（l/n）、透曉（t/h），故可以l音打n（如「農」`nung4`可打`lung4`），h音打t（如「偸」`tau1`可打`hau1`）。
-    - 小欖人多數人不分`ak`同`aak`，故可以aak音打ak（如「勒」`lak6`可打`laak6`）。
-  - 此方案不能代表所有情況，建議仔細閱讀方案竝根據自身口音調整，見[小欖話・沙田方言特徵 – なかやま園](https://zonsan.fc2.page/?p=1580)。（內容已過期，待更新）
-- `gukwan-siulaam-bofung.schema.yaml`：小欖寶豐音
-  - 本方案根據《沙田方言》《中山方言誌》製作。下爲同鎮區音主要區別：
-    - 分辨透曉
-    - 不分ong/oeng；ok/oek；eng/en；ek/et
-    - 白讀音（可於`gukwan-siulaam-bofung.dict.yaml`調整）
 - `gukwan-canton.schema.yaml`：廣州音
   - 準確來講此方案係廣州風，並不能準確反映所有廣州發音。若欲使用眞正廣州音打字，請使用`jyut6ping3-gw.scheme.yaml`
 
 > [!TIP]
 >
 > [關於如何定製方案](https://github.com/rime/home/wiki/CustomizationGuide)
+
+## 文件結構・許可
+
+> [!IMPORTANT]
+>
+> 部份文件竝非我所作，故許可授權不同，使用前請注意。若無備註則皆以[CC BY NC SA 4.0許可](cc-by-nc-sa)發佈。下列擧除方案文件外其他重要文件。
 
 ### 字詞
 
