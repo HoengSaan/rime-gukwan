@@ -13,8 +13,8 @@ __include: jyut6ping3-gw.schema.yaml:/
 
 schema:
   schema_id: jyut6ping3-gw-ps
-  name: 粵語拼音 菊韻版（音標）
-  version: "15.2b"
+  name: 菊韻粵語三拼（音標）
+  version: "16.0b"
   author:
     - 靈帝（Hoengsaan）
     - Ayaka Mikazuki <ayaka@mail.shn.hk>
@@ -29,7 +29,7 @@ schema:
   
   description: |-
     寬式音標版並不能完全對應實際發音
-    本方案是將菊韻功能（漢英混打、各種反查、日期時間輸入）並入Rime粵拼
+    本方案是將菊韻功能（漢英混打、各種反查、日期時間輸入）並入Rime粵拼（jyut6ping3｜廣州話）
     瞭解如何使用菊韻請閱覽readme文件，詳細請至本方案github頁：https://github.com/HoengSaan/rime-gukwan
     如有問題或建議可於以上github頁中開Issues反饋
 
@@ -86,8 +86,8 @@ translator:
     - xform/,([ptc]|kw?)/$&ʰ/
     - xform/[kg]w/kʷ/
     - xform/c|z/t͡s/
-    - xform/,q/,kʷ/
-    - xform/,x/,gʷ/
+    - xform/,q/,kʷʰ/
+    - xform/,x/,kʷ/
     - xlit/bdg/ptk/
     - xform/w/β̞/
 

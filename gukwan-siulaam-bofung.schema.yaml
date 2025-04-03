@@ -14,7 +14,7 @@ __include: gukwan.schema:/
 schema:
   schema_id: gukwan-siulaam-bofung
   name: 菊韻小欖寶豐音
-  version: "15.6b"
+  version: "16.0b"
   author:
     - 靈帝（Hoengsaan）
   
@@ -95,7 +95,7 @@ speller:
     #刪除行頭井號啓用轉換，行頭鍵入井號停止轉換。
     
     #聲母（根據自己口音偏好調校即可）
-    #- derive/^ng([aeiou])/$1/              # 疑母脫落(ng->0)
+    #- derive/^ng([aeiouy])/$1/              # 疑母脫落(ng->0)
     #- derive/^([aeiou])/ng$1/              # 疑影不分(ng==0)
     
     #聲母——菊韻
@@ -151,9 +151,15 @@ speller:
     #韻母——現代
     #其他口音請自行調校 不建議關閉打字輔助
 
-    - xform/ooi(?=\d)/eoy/                  # 其他分韻(ooi->eoy)：「脆」讀若ceoy
-    #- xform/ooi(?=\d)/oi/                  # 蟹合三止合銳(ooi->oi)「脆」讀若coi 文讀少見，一般白讀先有
-    #- xform/ooi(?=\d)/ui/                  # 蟹合三止合銳(ooi->ui)「脆」讀若cui 
+    #- xform/ooy(?=\d)/ooi/                 # 蟹合三(ooy->ooi)：FIX
+    - xform/ooy(?=\d)/eoy/                  # 蟹合三(ooy->eoy)：「脆」讀若ceoy
+    #- xform/ooy(?=\d)/oi/                  # 蟹合三(ooy->oi)：「脆」讀若coi 文讀少見，一般白讀先有
+    #- xform/ooy(?=\d)/ui/                  # 蟹合三(ooy->ui)：「脆」讀若cui 
+
+    #- xform/ooi(?=\d)/ooy/                 # 止合銳(ooi->ooy)：FIX
+    - xform/ooi(?=\d)/eoy/                  # 止合銳(ooi->eoy)：「雖」讀若seoy
+    #- xform/ooi(?=\d)/oi/                  # 止合銳(ooi->oi)：「雖」讀若soi 文讀少見，一般白讀先有
+    #- xform/ooi(?=\d)/ui/                  # 止合銳(ooi->ui)：「雖」讀若sui 
     
     - xform/^(b|p|f)i(?=\d)/$1ei/           # 止攝裂化脣音(i->ei) ：「備」讀若bei
     - xform/^(d|t|l|n)i(?=\d)/$1ei/         # 止攝裂化齒音(i->ei)：「地」讀若dei
@@ -232,6 +238,7 @@ speller:
     - derive/eng(?=\d)/en$1/               # 「餅」讀若ben
     - derive/ek(?=\d)/et$1/                # 「劈」讀若pet
     #- derive/o(ng|k)(?=\d)/oe$1/
+    - derive/oe(ng|k)(?=\d)/o$1/
     - derive/(?!w)o(ng|k)(?=\d)/oe$1/
     #- derive/(?!w)o(ng|k)(?=\d)/yo$1/
     #- derive/(?!w)o(ng|k)(?=\d)/yoe$1/
@@ -333,24 +340,26 @@ speller:
     - derive/^njo(ng|k)/njio$1/             # 全拼(j[i]o)
     #- derive/ia(?=\d)/iaa$1/               # 全拼(ia[a])
     
-    #簡拼
-    #- derive/^([aeiou])/q$1/               # 喉塞音(q~)
+    #簡拼（三拼）
     - derive/^kw/q/                         # 簡拼(kw->q)
     #- derive/^gw/q/                        # 簡拼(gw->q)
-
     #- derive/^kw/x/                        # 簡拼(kw->q)
     - derive/^gw/x/                         # 簡拼(gw->q)
+    #- derive/^nj/r/                         # 簡拼(nj->r)
+    - derive/^ng([aeiouy])/r$1/             # 簡拼(ng->r)
+    - derive/([aeiouy])ng/$1r/              # 簡拼(ng->r)
 
-    - derive/^nj/r/                         # 簡拼(nj->r)
-    - derive/aa(i|u|m|n|ng|p|t|k)/r$1/      # 簡拼(aa->r)
-
-    - derive/^wu/u/                         # 簡拼(wu->u)
-
-    #- derive/^nji/nj/                      # 簡拼(ji->j)
-    #- derive/^ji/j/                        # 簡拼(ji->j)
+    - derive/aa(?=\d)/a/                    # 簡拼(aa->a)
+    - derive/aa(i|u|m|n|ng|p|t|k|r)/r$1/    # 簡拼(aa->r)
     - derive/^jy?([aeiou])/y$1/             # 簡拼(jy->y)
     - derive/yu(?!ng|k)/y/                  # 簡拼(yu->y)
-    - derive/aa(?=\d)/a/                    # 簡拼(aa->a)
+    - derive/oe(ng|k|r)/e$1/                # 簡拼(oe->e)
+    - derive/eo(n|t)/u$1/                   # 簡拼(eo->u)
+
+    #簡拼
+    #- derive/^wu/u/                         # 簡拼(wu->u)
+    #- derive/^nji/nj/                       # 簡拼(ji->j)
+    #- derive/^ji/j/                         # 簡拼(ji->j)
 
     #模糊
     - derive/eo/oe/                         # 模糊(eo/oe)
@@ -404,8 +413,8 @@ translator:
     - xform/ngun(?=\d)/wun$1/              # 疑合脫落(ngw->w)
     - xform/kwing(?=\d)/king$1/
     - xform/hwing(?=\d)/hing$1/
-    - xform/hw(?!ing)/f/                  # 曉合輕脣(hw->f)
-    - xform/hu/fu/                        # 曉合輕脣(hw->f)
+    - xform/hw(?!ing)/f/                   # 曉合輕脣(hw->f)
+    - xform/(?!s)hu(?!ng|k)/fu/            # 曉合輕脣(hw->f)
     
     - xform/iau(?=\d)/au/                   # 流攝三等(iau->au) 粵語基本無方言保留
 
@@ -414,7 +423,9 @@ translator:
     - xform/uo(?=\d)/oe/                    # (uo->oe)
     - xform/uo(n|t)(?=\d)/oe$1/             # (uo->oe)
 
-    - xform/ooi(?=\d)/eoy/                  # 其他分韻(ooi->eoy)：「脆」讀若ceoy
+    - xform/ooy(?=\d)/eoy/
+    - xform/ooi(?=\d)/eoy/
+
     - xform/(b|p|f)i(?=\d)/$1ei/           # 止攝裂化脣音(i->ei) ：「備」讀若bei
     - xform/(d|t|l|n)i(?=\d)/$1ei/         # 止攝裂化齒音(i->ei)：「地」讀若dei
     - derive/(s)(?!j)i(?=\d)/$1ei/         # 止攝心母特音（現代音裂化專用） 
@@ -473,8 +484,8 @@ reverse_lookup:
     - xform/ngun(?=\d)/wun$1/              # 疑合脫落(ngw->w)
     - xform/kwing(?=\d)/king$1/
     - xform/hwing(?=\d)/hing$1/
-    - xform/hw(?!ing)/f/                  # 曉合輕脣(hw->f)
-    - xform/hu/fu/                        # 曉合輕脣(hw->f)
+    - xform/hw(?!ing)/f/                   # 曉合輕脣(hw->f)
+    - xform/(?!s)hu(?!ng|k)/fu/            # 曉合輕脣(hw->f)
     
     - xform/iau(?=\d)/au/                   # 流攝三等(iau->au) 粵語基本無方言保留
 
@@ -483,7 +494,9 @@ reverse_lookup:
     - xform/uo(?=\d)/oe/                    # (uo->oe)
     - xform/uo(n|t)(?=\d)/oe$1/             # (uo->oe)
 
-    - xform/ooi(?=\d)/eoy/                  # 其他分韻(ooi->eoy)：「脆」讀若ceoy
+    - xform/ooy(?=\d)/eoy/
+    - xform/ooi(?=\d)/eoy/
+
     - xform/(b|p|f)i(?=\d)/$1ei/           # 止攝裂化脣音(i->ei) ：「備」讀若bei
     - xform/(d|t|l|n)i(?=\d)/$1ei/         # 止攝裂化齒音(i->ei)：「地」讀若dei
     - xform/(s)(?!j)i(?=\d)/$1ei/         # 止攝心母特音（現代音裂化專用） 
