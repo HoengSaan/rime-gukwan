@@ -128,13 +128,6 @@ speller:
     - xform/^hwing(?=\d)/hing$1/
     - xform/^hw(?!ing)/f/                   # 曉合輕脣(hw->f)
     - xform/^hu/fu/                         # 曉合輕脣(hw->f)
-
-    #聲母——現代
-    #- derive/^(z|c|s)h/$1/                 # 精照合流(zh->z)
-    #- derive/^(zj|cj|sj)yo(?=\d)/$1yu/     # 精照合流
-    #- derive/^(z|c|s)j(?!yo)/$1/           # 精照合流(ch->c)
-    #- derive/^(z|c)r/$1/                   # 精照合流(sj->s)
-    #- derive/^nj/j/                        # 日以合流(nj->j)
     
     #韻母
     - xform/iau(?=\d)/au/                   # 流攝三等(iau->au)
@@ -209,6 +202,13 @@ speller:
     #- derive/ae(u|n|m|t|p)(?=\d)/e$1/      # 山效咸白(ae->e)：「關」讀若gwen 多只見於白讀音
     
     #- derive/o(m|p)(?=\d)/a$1/             # 咸攝音變(o->a)：「甘」讀若gam
+
+    #聲母——現代
+    #- derive/^(z|c|s)h/$1/                 # 精照合流(zh->z)
+    #- derive/^(zj|cj|sj)yo(?=\d)/$1yu/     # 精照合流
+    #- derive/^(z|c|s)j(?!yo)/$1/           # 精照合流(ch->c)
+    #- derive/^(z|c)r/$1/                   # 精照合流(sj->s)
+    #- derive/^nj/j/                        # 日以合流(nj->j)
 
     #FIX
     #- derive/^n(?!g|j)/l/                  # 泥來合流(n->l)

@@ -129,13 +129,6 @@ speller:
     - xform/^hw(?!ing)/f/                  # 曉合輕脣(hw->f)
     - xform/^hu/fu/                        # 曉合輕脣(hw->f)
     
-    #聲母——現代(Use the one below instead)
-    #- derive/^(z|c|s)h/$1/                 # 精照合流(zh->z)
-    #- derive/^(zj|cj|sj)yo(?=\d)/$1yu/     # 精照合流
-    #- derive/^(z|c|s)j(?!yo)/$1/           # 精照合流(ch->c)
-    #- derive/^(z|c)r/$1/                   # 精照合流(sj->s)
-    #- derive/^nj/j/                        # 日以合流(nj->j)
-    
     #韻母
     - xform/iau(?=\d)/au/                   # 流攝三等(iau->au) 粵語基本無方言保留
 
@@ -212,7 +205,7 @@ speller:
     
     - derive/o(m|p)(?=\d)/a$1/              # 咸攝音變(o->a)：「甘」讀若gam
 
-    #聲母——現代(Special)
+    #聲母——現代
     - xform/^(z|c|s)h/$1/                   # 精照合流(zh->z)
     - xform/^(zj|cj|sj)yo(?=\d)/$1yu/       # 精照合流
     - xform/^(z|c|s)j(?!yo)/$1/             # 精照合流(ch->c)
@@ -459,7 +452,7 @@ translator:
     - xform/io(ng|k)/oe$1/                  # 宕攝江攝元音融合(io->oe) ：「量」讀若loeng
     - xform/jo(ng|k)/joe$1/                 # 宕攝江攝元音融合(jo->joe) ：「央」讀央joeng
     
-    #聲母——現代(Special)
+    #聲母——現代
     - xform/(z|c|s)h/$1/                   # 精照合流(zh->z)
     - xform/(zj|cj|sj)yo(?=\d)/$1yu/       # 精照合流
     - xform/(z|c|s)j(?!yo)/$1/             # 精照合流(ch->c)
@@ -531,7 +524,7 @@ reverse_lookup:
     - xform/io(ng|k)/oe$1/                  # 宕攝江攝元音融合(io->oe) ：「量」讀若loeng
     - xform/jo(ng|k)/joe$1/                 # 宕攝江攝元音融合(jo->joe) ：「央」讀央joeng
     
-    #聲母——現代(Special)
+    #聲母——現代
     - xform/(z|c|s)h/$1/                   # 精照合流(zh->z)
     - xform/(zj|cj|sj)yo(?=\d)/$1yu/       # 精照合流
     - xform/(z|c|s)j(?!yo)/$1/             # 精照合流(ch->c)
