@@ -57,7 +57,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 
 寬式音標版：由於菊韻同時支持三拼同全拼，爲避免輸入全拼時發生轉換錯誤，故輸入三拼時不能顯示正確音標。
 
-![key](pic\key.png)
+<img src="pic\key.png"/>
 
 #### 子音
 
@@ -96,11 +96,13 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 - `nji`簡拼`nj`：如「仍」`njing`則爲`njr`（`rir`｜`njir`）
 - `wu`簡拼`u`：如「換」`wun`則爲`un`
 
+<img src="pic\srmpir.png"/>
+
 ### 特殊輸入
 
 支持漢英混打，各種特殊符號輸入，日期時間輸入等。
 
-![key](pic\showcase.png)
+<img src="pic\showcase.png"/>
 
 - **漢英混打：允許漢字英文混打，基於melt-eng。待完善**
 - 繪文字（表情）：可以粵語輸入繪文字，默認關閉
