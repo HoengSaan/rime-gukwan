@@ -12,7 +12,7 @@
 
 ---
 name: gukwan.chars
-version: "16.0b"
+version: "16.1b"
 sort: by_weight
 ...
 
@@ -2618,36 +2618,36 @@ sort: by_weight
 蒲	pu4	
 蒱	pu4	0%
 䈻	pu4	0%
-胡	xu4	
-𩑶	xu4	0%
-𠴱	xu4	0%
-壺	xu4	
-狐	xu4	
-瓳	xu4	0%
-餬	xu4	
-瑚	xu4	
-湖	xu4	
-鶘	xu4	
-猢	xu4	
-醐	xu4	
-𪏻	xu4	0%
-䊀	xu4	0%
-𪍒	xu4	
-糊	xu4	
-弧	xu4	
-乎	xu4	0%
-𠂞	xu4	0%
-𪕱	xu4	0%
-瓠	xu4	0%
-葫	xu4	
-㾰	xu4	0%
-魱	xu4	0%
-箶	xu4	0%
-䉉	xu4	0%
-𥶜	xu4	0%
-𧛞	xu4	0%
-㯛	xu4	0%
-虖	xu4	0%
+胡	hu4	
+𩑶	hu4	0%
+𠴱	hu4	0%
+壺	hu4	
+狐	hu4	
+瓳	hu4	0%
+餬	hu4	
+瑚	hu4	
+湖	hu4	
+鶘	hu4	
+猢	hu4	
+醐	hu4	
+𪏻	hu4	0%
+䊀	hu4	0%
+𪍒	hu4	
+糊	hu4	
+弧	hu4	
+乎	hu4	0%
+𠂞	hu4	0%
+𪕱	hu4	0%
+瓠	hu4	0%
+葫	hu4	
+㾰	hu4	0%
+魱	hu4	0%
+箶	hu4	0%
+䉉	hu4	0%
+𥶜	hu4	0%
+𧛞	hu4	0%
+㯛	hu4	0%
+虖	hu4	0%
 孤	gu1	
 苽	gu1	0%
 菰	gu1	0%
@@ -5226,19 +5226,19 @@ sort: by_weight
 𥳚	njin4	0%
 䕼	njin4	0%
 𤓉	njin4	0%
-延	jin4	
-埏	jin4	0%
-筵	jin4	
-狿	jin4	0%
-郔	jin4	0%
-綖	jin4	0%
-蜒	jin4	0%
-䘰	jin4	0%
-鋋	jin4	0%
-䀽	jin4	0%
-𢌨	jin4	0%
-䢭	jin4	0%
-莚	jin4	0%
+延	hjin4	
+埏	hjin4	0%
+筵	hjin4	
+狿	hjin4	0%
+郔	hjin4	0%
+綖	hjin4	0%
+蜒	hjin4	0%
+䘰	hjin4	0%
+鋋	hjin4	0%
+䀽	hjin4	0%
+𢌨	hjin4	0%
+䢭	hjin4	0%
+莚	hjin4	0%
 𩜾	zjin1	0%
 饘	zjin1	0%
 旃	zjin1	
@@ -10907,29 +10907,29 @@ sort: by_weight
 砮	nu5	0%
 努	nu5	
 𧉭	nu5	0%
-戶	vu6	
-楛	vu6	0%
-扈	vu6	
-怙	vu6	
-鄠	vu6	0%
-帍	vu6	0%
-祜	vu6	0%
-昈	vu6	0%
-𡻮	vu6	0%
-岵	vu6	0%
-芐	vu6	0%
-雇	vu6	0%
-𩿇	vu6	0%
-𪄮	vu6	0%
-𨛸	vu6	0%
-婟	vu6	0%
-戽	vu6	0%
-㕆	vu6	0%
-洿	vu6	0%
-𡜂	vu6	0%
-酤	vu6	0%
-滬	vu6	
-簄	vu6	0%
+戶	hu6	
+楛	hu6	0%
+扈	hu6	
+怙	hu6	
+鄠	hu6	0%
+帍	hu6	0%
+祜	hu6	0%
+昈	hu6	0%
+𡻮	hu6	0%
+岵	hu6	0%
+芐	hu6	0%
+雇	hu6	0%
+𩿇	hu6	0%
+𪄮	hu6	0%
+𨛸	hu6	0%
+婟	hu6	0%
+戽	hu6	0%
+㕆	hu6	0%
+洿	hu6	0%
+𡜂	hu6	0%
+酤	hu6	0%
+滬	hu6	
+簄	hu6	0%
 普	pu2	
 溥	pu2	
 誧	pu2	0%
@@ -12076,14 +12076,14 @@ sort: by_weight
 廯	sin2	0%
 𧕇	sin2	0%
 蘚	sin2	
-演	jin5	
-衍	jin5	
-縯	jin5	0%
-蔩	jin5	0%
-𠻤	jin5	0%
-戭	jin5	0%
-𧍢	jin5	0%
-𧊔	jin5	0%
+演	hjin5	
+衍	hjin5	
+縯	hjin5	0%
+蔩	hjin5	0%
+𠻤	hjin5	0%
+戭	hjin5	0%
+𧍢	hjin5	0%
+𧊔	hjin5	0%
 踐	cin5	
 諓	cin5	0%
 餞	cin5	0%
@@ -15662,22 +15662,22 @@ sort: by_weight
 捂	ngu6	0%
 娛	ngu6	0%
 䎸	ngu6	0%
-護	vu6	
-瓠	vu6	0%
-嫭	vu6	0%
-頀	vu6	0%
-互	vu6	
-濩	vu6	0%
-䇘	vu6	0%
-冱	vu6	0%
-枑	vu6	0%
-䨼	vu6	0%
-韄	vu6	0%
-𧥮	vu6	0%
-鱯	vu6	0%
-擭	vu6	0%
-𦊂	vu6	0%
-𦬚	vu6	0%
+護	hu6	
+瓠	hu6	0%
+嫭	hu6	0%
+頀	hu6	0%
+互	hu6	
+濩	hu6	0%
+䇘	hu6	0%
+冱	hu6	0%
+枑	hu6	0%
+䨼	hu6	0%
+韄	hu6	0%
+𧥮	hu6	0%
+鱯	hu6	0%
+擭	hu6	0%
+𦊂	hu6	0%
+𦬚	hu6	0%
 訴	su3	
 愬	su3	0%
 𧪜	su3	0%
@@ -16992,9 +16992,9 @@ sort: by_weight
 瑨	zeon3	0%
 璡	zeon3	0%
 𦎷	zeon3	0%
-衅	hjan3	
-釁	hjan3	
-舋	hjan3	0%
+衅	jan3	0%
+釁	jan3	0%
+舋	jan3	0%
 鎮	zran3	
 瑱	zran3	0%
 填	zran3	0%
@@ -24535,16 +24535,16 @@ sort: by_weight
 砝	gop3	0%
 𪁍	gop3	0%
 譫	zjip3	0%
-葉	jip6	
-楪	jip6	0%
-揲	jip6	0%
-鍱	jip6	0%
-偞	jip6	0%
-枼	jip6	0%
-㯿	jip6	0%
-煠	jip6	0%
-䈎	jip6	
-殜	jip6	0%
+葉	hjip6	
+楪	hjip6	0%
+揲	hjip6	0%
+鍱	hjip6	0%
+偞	hjip6	0%
+枼	hjip6	0%
+㯿	hjip6	0%
+煠	hjip6	0%
+䈎	hjip6	
+殜	hjip6	0%
 接	zip3	
 椄	zip3	0%
 睫	zip3	0%
@@ -25002,6 +25002,7 @@ sort: by_weight
 𦤡	jip3	0%
 餣	jip3	0%
 䁆	jip3	0%
+殜	jip6	0%
 𩐱	jip6	0%
 跲	gip6	0%
 昅	gip6	0%

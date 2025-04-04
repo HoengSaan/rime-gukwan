@@ -12,7 +12,7 @@
 
 ---
 name: gukwan.chars2
-version: "16.0b"
+version: "16.1b"
 sort: by_weight
 ...
 
@@ -574,7 +574,7 @@ sort: by_weight
 㝘	ngiung4	0%
 㝘	ngan4	0%
 㝙	jan4	0%
-㝚	jin4	0%
+㝚	hjin4	0%
 㝛	suk1	0%
 㝜	sik1	0%
 𡩤	sik1	0%
@@ -840,7 +840,7 @@ sort: by_weight
 㣔	ding1	0%
 㣕	daai6	0%
 㣖	taai3	0%
-㣗	vu6	0%
+㣗	hu6	0%
 㣘	kyu1	0%
 㣚	tung2	0%
 㣛	taap3	0%
@@ -1064,7 +1064,7 @@ sort: by_weight
 㨪	hwong2	0%
 㨬	hjyun4	0%
 㨬	hun4	0%
-㨭	vu6	0%
+㨭	hu6	0%
 㨮	dau1	
 㨯	kwok3	0%
 㨰	gwan3	0%
@@ -1779,7 +1779,7 @@ sort: by_weight
 㸟	zy1	0%
 㸠	tiu5	0%
 㸥	zhaem6	0%
-㸦	vu6	0%
+㸦	hu6	0%
 㸧	ngan4	0%
 㸨	giau1	0%
 㸩	ngon4	0%
@@ -2435,7 +2435,7 @@ sort: by_weight
 䉜	zri6	0%
 䉝	ngai5	0%
 䉟	wok6	0%
-䉟	vu6	0%
+䉟	hu6	0%
 䉡	taan4	0%
 䉩	au1	0%
 䉪	lyi6	0%
@@ -2446,7 +2446,7 @@ sort: by_weight
 䉸	bin6	0%
 䉸	bin2	0%
 䉼	liu6	0%
-䉿	xu4	0%
+䉿	hu4	0%
 䊁	shan1	0%
 䊂	chaak3	0%
 䊂	shaak3	0%
@@ -2485,7 +2485,7 @@ sort: by_weight
 䊶	cran5	0%
 䊸	jyu1	0%
 䊹	hin1	0%
-䊺	vu6	0%
+䊺	hu6	0%
 䊻	gom1	0%
 䊽	gwaai3	0%
 䊽	hjyut6	0%
@@ -2600,7 +2600,7 @@ sort: by_weight
 䍹	haen1	0%
 䍹	sjin1	0%
 䍾	ngin5	0%
-䎁	xu4	0%
+䎁	hu4	0%
 䎅	pook3	0%
 䎆	liu6	0%
 䎇	zjiau1	0%
@@ -2912,7 +2912,7 @@ sort: by_weight
 䕳	mi4	0%
 䕴	zhuk1	0%
 䕵	kit3	0%
-䕶	vu6	0%
+䕶	hu6	0%
 䕷	mi4	0%
 䕽	zruk6	0%
 䕾	ngiam4	0%
@@ -3322,7 +3322,7 @@ sort: by_weight
 䠌	daap6	0%
 䠎	aak1	0%
 䠏	gwai6	0%
-䠒	xu4	0%
+䠒	hu4	0%
 䠓	cjau1	0%
 䠓	cuk1	0%
 䠔	sooi3	0%
@@ -3400,7 +3400,7 @@ sort: by_weight
 䢢	coong3	0%
 䢣	jiu4	0%
 䢤	sjeot6	0%
-䢥	jin4	0%
+䢥	hjin4	0%
 䢥	cyun3	0%
 䢧	liu6	0%
 䢨	cung1	0%
@@ -3691,7 +3691,7 @@ sort: by_weight
 䩮	luk6	0%
 䩰	hjyun5	0%
 䩰	zap1	
-䩴	xu4	0%
+䩴	hu4	0%
 䩷	boong1	0%
 䩻	baa3	0%
 䩾	zjia3	0%
@@ -3791,13 +3791,13 @@ sort: by_weight
 䬻	zin3	0%
 䭀	seon3	0%
 䭄	shy6	0%
-䭅	xu4	0%
+䭅	hu4	0%
 䭅	gu3	
 䭇	jit3	0%
 䭊	jing2	0%
 䭋	baeu2	0%
-䭌	xu4	0%
-䭍	xu4	0%
+䭌	hu4	0%
+䭍	hu4	0%
 䭎	jip6	0%
 䭏	bin2	0%
 䭗	jing2	0%
@@ -4469,7 +4469,7 @@ sort: by_weight
 冮	gong1	0%
 冲	crung1	
 决	kyut3	
-冴	vu6	0%
+冴	hu6	0%
 冺	man5	0%
 冼	sin2	0%
 冾	hap1	0%
@@ -4883,7 +4883,7 @@ sort: by_weight
 喐	njuk1	
 喒	zaa1	0%
 喕	min5	0%
-喖	xu4	0%
+喖	hu4	0%
 喞	zek1	
 喞	zik1	
 喞	zit1	
@@ -5316,7 +5316,7 @@ sort: by_weight
 壪	waen1	0%
 壳	hok3	0%
 壵	zhoong3	0%
-壷	xu4	0%
+壷	hu4	0%
 夀	sjiau6	0%
 夁	jat1	0%
 夈	zhaai1	0%
@@ -5413,7 +5413,7 @@ sort: by_weight
 娢	hom4	0%
 娤	zhoong1	0%
 娦	pan4	0%
-娫	jin4	0%
+娫	hjin4	0%
 娮	ngin4	0%
 娯	ngyu4	0%
 娰	cy5	0%
@@ -5478,7 +5478,7 @@ sort: by_weight
 媝	cjau1	0%
 媡	lin6	0%
 媤	sy1	0%
-媩	xu4	0%
+媩	hu4	0%
 媪	ou2	0%
 媫	zip3	0%
 媬	bou2	0%
@@ -5517,7 +5517,7 @@ sort: by_weight
 嫨	hon1	0%
 嫨	njin5	0%
 嫬	zia1	0%
-嫮	vu6	0%
+嫮	hu6	0%
 嫰	nyun6	0%
 嫲	maa4	
 嫶	ciu4	0%
@@ -5913,7 +5913,7 @@ sort: by_weight
 弉	zoong6	0%
 弐	nji6	0%
 弒	sji3	0%
-弖	vu6	0%
+弖	hu6	0%
 弙	wu1	0%
 弚	dai6	0%
 弡	gwat6	0%
@@ -6137,7 +6137,7 @@ sort: by_weight
 戳	ciok3	
 戳	cok3	
 戳	ziok3	
-戸	vu6	0%
+戸	hu6	0%
 扄	shiong2	0%
 扌	sjiau2	0%
 払	faan2	0%
@@ -6313,7 +6313,7 @@ sort: by_weight
 搻	nik1	0%
 搻	nok6	0%
 搼	kyun4	0%
-搽	chaa4	
+搽	craa4	
 搾	zhaa3	0%
 搿	gaep3	
 摀	ngu6	
@@ -6326,7 +6326,7 @@ sort: by_weight
 摔	sheot1	0%
 摚	craang1	
 摚	toong3	0%
-摢	vu6	0%
+摢	hu6	0%
 摨	naai4	0%
 摪	ziong1	0%
 摰	ngit6	0%
@@ -6743,7 +6743,7 @@ sort: by_weight
 楍	bun2	0%
 楐	gaai3	0%
 楕	to5	0%
-楜	xu4	0%
+楜	hu4	0%
 楡	hjyu4	0%
 楤	cung1	0%
 楳	mui4	0%
@@ -6800,7 +6800,7 @@ sort: by_weight
 槫	sjyun5	0%
 槬	waa6	0%
 槰	bung6	0%
-槴	vu6	0%
+槴	hu6	0%
 槶	kui3	0%
 槹	gou1	0%
 槼	kwai1	0%
@@ -7048,7 +7048,7 @@ sort: by_weight
 汿	zyo6	0%
 沀	zyo6	0%
 沊	dam2	0%
-沍	vu6	0%
+沍	hu6	0%
 沎	hwo3	0%
 沗	tim1	0%
 沠	paai3	0%
@@ -7170,7 +7170,7 @@ sort: by_weight
 湷	crooi4	0%
 湸	liong6	0%
 湹	crin4	0%
-湺	jin4	0%
+湺	hjin4	0%
 湻	seon4	0%
 湼	nip6	0%
 湽	zhy1	0%
@@ -7465,7 +7465,7 @@ sort: by_weight
 煰	cou3	0%
 煱	wo1	0%
 煲	bou1	
-煳	xu4	0%
+煳	hu4	0%
 煴	wan1	0%
 煴	wan6	0%
 煵	naam4	0%
@@ -7499,7 +7499,7 @@ sort: by_weight
 熤	jik6	0%
 熥	tung1	0%
 熦	ziok3	0%
-熩	vu6	0%
+熩	hu6	0%
 熫	zjek3	0%
 熰	au1	0%
 熰	au3	
@@ -8416,7 +8416,7 @@ sort: by_weight
 粍	hou4 mai5	0%
 粎	cjek3 mai5	0%
 粏	taai3	0%
-粐	vu6	0%
+粐	hu6	0%
 粑	baa1	5%
 粓	gom1	0%
 粙	zriau6	0%
@@ -8506,7 +8506,7 @@ sort: by_weight
 綋	wang4	0%
 綑	kwan2	5%
 綒	fu1	0%
-綔	vu6	0%
+綔	hu6	0%
 綕	zjik1	0%
 綗	gwing2	0%
 綘	fung4	0%
@@ -8992,7 +8992,7 @@ sort: by_weight
 蔙	syun4	0%
 蔙	syun6	0%
 蔯	cran4	0%
-蔰	vu6	0%
+蔰	hu6	0%
 蔲	kau3	0%
 蔳	sin3	0%
 蔴	maa4	
@@ -9140,7 +9140,7 @@ sort: by_weight
 蝢	kit3	0%
 蝧	jing1	0%
 蝫	zjyo1	0%
-蝴	xu4	
+蝴	hu4	
 蝵	ciau1	0%
 蝷	lik6	0%
 蝷	sik1	0%
@@ -9220,7 +9220,7 @@ sort: by_weight
 衐	gyu6	0%
 衑	ling4	0%
 衘	haem4	0%
-衚	xu4	5%
+衚	hu4	5%
 衜	dou6	0%
 衞	wai6	0%
 衠	zjeon1	0%
@@ -9393,7 +9393,7 @@ sort: by_weight
 誯	cjiong3	0%
 誳	wat1	0%
 誵	haeu4	0%
-誸	jin4	0%
+誸	hjin4	0%
 諁	zryut3	0%
 諃	cram1	0%
 諌	dung2	0%
@@ -9412,7 +9412,7 @@ sort: by_weight
 謊	hwong2	
 謒	ciong1	0%
 謡	jiu4	0%
-謢	vu6	0%
+謢	hu6	0%
 謤	biu1	0%
 謤	piu1	0%
 謩	mu4	0%
@@ -9968,7 +9968,7 @@ sort: by_weight
 鍳	gaem3	0%
 鍶	sy1	5%
 鍷	kwai1	0%
-鍸	xu4	0%
+鍸	hu4	0%
 鍹	syun1	0%
 鍽	bin1	0%
 鍿	zhy1	0%
@@ -10428,7 +10428,7 @@ sort: by_weight
 鬁	li1	0%
 鬁	li6	0%
 鬂	ban3	0%
-鬍	xu4	
+鬍	hu4	
 鬎	laat6	0%
 鬏	ciau1	0%
 鬔	pung4	0%
@@ -10524,7 +10524,7 @@ sort: by_weight
 鰔	gom2	0%
 鰔	zam1	0%
 鰖	to2	0%
-鰗	xu4	0%
+鰗	hu4	0%
 鰘	sjat1	0%
 鰙	njok6	0%
 鰚	syun1	0%
@@ -10573,7 +10573,7 @@ sort: by_weight
 鳯	fung6	0%
 鳰	njap6	0%
 鳵	bou2	0%
-鳸	vu6	0%
+鳸	hu6	0%
 鳾	sji1	0%
 鴁	jiu1	0%
 鴁	ou2	0%
@@ -10630,7 +10630,7 @@ sort: by_weight
 鶗	tai4	0%
 鶣	bin1	0%
 鶣	pin1	0%
-鶦	xu4	0%
+鶦	hu4	0%
 鶫	gaan2	0%
 鶮	hook6	0%
 鶰	hjyun4	0%
@@ -11196,7 +11196,7 @@ sort: by_weight
 𡲢	ke1	
 𡲥	shang1	0%
 𡳞	lan2	
-𡵆	vu6	0%
+𡵆	hu6	0%
 𡵓	wang4	0%
 𡵞	fung1	0%
 𡶐	kia4	0%
@@ -11495,10 +11495,10 @@ sort: by_weight
 𣵛	siau3	0%
 𣵾	waa1	0%
 𣶃	criu4	0%
-𣶙	jin4	0%
-𣶚	jin4	0%
-𣶛	jin4	0%
-𣶜	jin4	0%
+𣶙	hjin4	0%
+𣶚	hjin4	0%
+𣶛	hjin4	0%
+𣶜	hjin4	0%
 𣶶	coi2	0%
 𣶷	daam6	0%
 𣶸	bing2	0%
@@ -11685,7 +11685,7 @@ sort: by_weight
 𤥴	zji3	0%
 𤥵	gaep3	0%
 𤥶	naa5	0%
-𤥻	jin4	0%
+𤥻	hjin4	0%
 𤥿	jik6	0%
 𤦂	gwok3	0%
 𤦈	fan1	0%
@@ -12263,7 +12263,7 @@ sort: by_weight
 𨑨	zrat1	0%
 𨑬	zjai3	0%
 𨑳	ting4	0%
-𨒂	jin4	0%
+𨒂	hjin4	0%
 𨓈	kut3	0%
 𨔁	jau4	0%
 𨔼	jau4	0%

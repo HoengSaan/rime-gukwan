@@ -14,7 +14,7 @@ __include: gukwan.schema:/
 schema:
   schema_id: gukwan-siulaam-bofung
   name: 菊韻小欖寶豐音
-  version: "16.0b"
+  version: "16.1b"
   author:
     - 靈帝（Hoengsaan）
   
@@ -107,13 +107,14 @@ speller:
     - xform/^hj/j/                          # 口音補充(hj->j)：「賢」讀若jin者
     #- xform/^hj/h/                         # 口音補充(hj->h)：「賢」讀若hin者 順德石歧
     
-    - xform/^hwun(?=\d)/hun$1/              # 口音補充(hw->h)：「桓」讀若fun者
-    #- xform/^hwun(?=\d)/wun$1/             # 口音補充(hw->w)：「桓」讀若wun者
+    #- xform/^wu(i|n|t)(?=\d)/hu$1/         # 古匣母一類(h)
+    #- xform/^wo(m|ng|k)(?=\d)/hwo$1/       # 古匣母一類(h)
     
-    - xform/^xu(?=\d)/hu$1/                # 遇攝合口(*u->hu)：「狐」讀作fu4
-    #- derive/^xu(?=\d)/wu$1/                # 遇攝合口(*u->wu)：「狐」讀作wu4 多數方音 
-    - xform/^vu(?=\d)/hu$1/                # 遇攝合口(*u->hu)：「護」讀作fu6
-    #- derive/^vu(?=\d)/wu$1/                # 遇攝合口(*u->wu)：「護」讀作wu6 多數方音
+    - xform/^hwun(?=\d)/hun$1/              # 古匣母二類(h)：「桓」讀若fun者
+    #- xform/^hwun(?=\d)/wun$1/             # 古匣母二類(w)：「桓」讀若wun者
+
+    #- derive/^hu4/wu4/                       # 古匣母三類(w)：「狐」讀作wu4
+    #- derive/^hu6/wu6/                      # 古匣母三類(w)：「護」讀作wu6
     
     #聲母——分韻（現代音無用）
     - xform/^ngiuk/njuk/                    # 疑母齶化(ngiuk->njuk)
@@ -392,10 +393,7 @@ translator:
   comment_format:
     - xform/hj/j/                          # 口音補充(hj->j)：「賢」讀若jin者
     
-    - xform/hwun(?=\d)/hun$1/              # 口音補充(hw->h)：「桓」讀若fun者
-    
-    - xform/xu(?=\d)/hu$1/                # 遇攝合口(*u->hu)：「狐」讀作fu4
-    - xform/vu(?=\d)/hu$1/                # 遇攝合口(*u->hu)：「護」讀作fu6
+    - xform/^hwun(?=\d)/hun$1/              # 古匣母二類(h)：「桓」讀若fun者
     
     #聲母——分韻（現代音無用）
     - xform/ngiuk/njuk/                    # 疑母齶化(ngiuk->njuk)
@@ -463,10 +461,7 @@ reverse_lookup:
   comment_format:
     - xform/hj/j/                          # 口音補充(hj->j)：「賢」讀若jin者
     
-    - xform/hwun(?=\d)/hun$1/              # 口音補充(hw->h)：「桓」讀若fun者
-    
-    - xform/xu(?=\d)/hu$1/                # 遇攝合口(*u->hu)：「狐」讀作fu4
-    - xform/vu(?=\d)/hu$1/                # 遇攝合口(*u->hu)：「護」讀作fu6
+    - xform/hwun(?=\d)/hun$1/              # 古匣母二類(h)：「桓」讀若fun者
     
     #聲母——分韻（現代音無用）
     - xform/ngiuk/njuk/                    # 疑母齶化(ngiuk->njuk)

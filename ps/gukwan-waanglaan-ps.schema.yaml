@@ -14,7 +14,7 @@ __include: gukwan-waanglaan.schema:/
 schema:
   schema_id: gukwan-waanglaan-ps
   name: 菊韻橫欄音（音標）
-  version: "16.0b"
+  version: "16.1b"
   author:
     靈帝（Hoengsaan）
   
@@ -37,7 +37,7 @@ schema:
     - gukwan-melt-eng
 
 translator:
-  dictionary: gukwan
+  dictionary: gukwan-alt
   prism: gukwan-waanglaan-ps
   spelling_hints: 9
   preedit_format:
@@ -95,10 +95,11 @@ translator:
 
   comment_format:
     - xform/hj/h/                          # 口音補充(hj->j)：「賢」讀若jin者
-    - xform/hwun(?=\d)/wun$1/              # 口音補充(hw->w)：「桓」讀若wun者
     
-    - xform/xu(?=\d)/hu$1/                 # 遇攝合口(*u->wu)：「狐」讀作wu4 多數方音 
-    - xform/vu(?=\d)/hu$1/                 # 遇攝合口(*u->hu)：「護」讀作fu6
+    - xform/wu(i|n|t)(?=\d)/hu$1/         # 古匣母一類(h)
+    - xform/wo(m|ng|k)(?=\d)/hwo$1/       # 古匣母一類(h)
+    
+    - xform/hwun(?=\d)/hun$1/              # 古匣母二類(h)：「桓」讀若fun者
     
     - xform/ngiuk/njuk/                    # 疑母齶化(ngiuk->njuk)
     - xform/ngiong/njong/                  # 疑母齶化(ngiong->njong)
@@ -148,7 +149,7 @@ translator:
     - xform/io(ng|k)/oe$1/                  # 宕攝江攝元音融合(io->oe) ：「量」讀若loeng
     - xform/jo(ng|k)/joe$1/                 # 宕攝江攝元音融合(jo->joe) ：「央」讀央joeng
     
-    #聲母——現代(Special)
+    #聲母——現代
     - xform/(z|c|s)h/$1/                   # 精照合流(zh->z)
     - xform/(zj|cj|sj)yo(?=\d)/$1yu/       # 精照合流
     - xform/(z|c|s)j(?!yo)/$1/             # 精照合流(ch->c)

@@ -21,7 +21,7 @@ This work is licensed under a
 
 This is a schema based on [Rime Input Method](https://rime.im/).
 
-此爲[RIME | 中州韻輸入法引擎](https://rime.im/)方案，是爲改善粵語輸入體驗，支持漢英混打（中英混打），輸入日期・時間・節日・節氣等各種功能。菊韻亦可以用於輸入小欖話爲主既粵語方言。
+此爲[RIME | 中州韻輸入法引擎](https://rime.im/)方案，是爲改善粵語輸入體驗，支持漢英混打（中英混打），輸入日期・時間・節日・節氣等各種功能。菊韻亦可以用於輸入小欖話（含中山其他順德系方言）・順德話・蜑家話。
 
 更多資訊請閱讀下文竝參攷[菊韻 – なかやま園](https://zonsan.fc2.page/?cat=123)。[關於如何安裝](#安裝)。
 
@@ -31,25 +31,44 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 
 菊韻可支持多地方言。已爲各種方言口音預設大量轉換規則同模糊音，方便定製。[具體異同](https://github.com/HoengSaan/rime-gukwan#%E6%96%B9%E6%A1%88)。
 
-- 順德系
-
-  - `gukwan-siulaam`（小欖音）：以小欖鎮比較有代表性特徵製作，適合大多數小欖人。
-    - `gukwan-siulaam-bofung`（小欖寶豐音）：小欖鎮寶豐村
-  - `gukwan-waanglaan`（橫欄音）：以橫欄鎮比較有代表性特徵製作，適合大多數橫欄人。
-
-  - `gukwan-naamtau-naamsing`（南頭南城音）：南頭鎮南城村
-
+- 順德系（中山）
+  - `gukwan-siulaam`（<ruby>小<rp>(</rp><rt>siu2</rt><rp>)</rp></ruby><ruby>欖<rp>(</rp><rt>laam5</rt><rp>)</rp></ruby>音）：以小欖話比較有代表性特徵製作，兼容新派發音，適合大多數小欖人。
+    - `gukwan-siulaam-bofung`（<ruby>小<rp>(</rp><rt>siu2</rt><rp>)</rp></ruby><ruby>欖<rp>(</rp><rt>laam5</rt><rp>)</rp></ruby><ruby>寶<rp>(</rp><rt>bo2</rt><rp>)</rp></ruby><ruby>豐<rp>(</rp><rt>fung1</rt><rp>)</rp></ruby>音）：小欖鎮寶豐村，兼容新派發音。
+  - `gukwan-waanglaan`（<ruby>橫<rp>(</rp><rt>waang4</rt><rp>)</rp></ruby><ruby>欄<rp>(</rp><rt>laan4</rt><rp>)</rp></ruby>音）：以橫欄鎮比較有代表性特徵製作，適合大多數橫欄人。
+  - `gukwan-naamtau-naamsing`（<ruby>南<rp>(</rp><rt>naam4</rt><rp>)</rp></ruby><ruby>頭<rp>(</rp><rt>tau4</rt><rp>)</rp></ruby><ruby>南<rp>(</rp><rt>naam4</rt><rp>)</rp></ruby><ruby>城<rp>(</rp><rt>sing4</rt><rp>)</rp></ruby>音）：南頭鎮南城村
+- 順德系（順德）
+  - `gukwan-daailoeng`（<ruby>大<rp>(</rp><rt>daai6</rt><rp>)</rp></ruby><ruby>良<rp>(</rp><rt>loeng1</rt><rp>)</rp></ruby>音）：以大良話比較有代表性特徵製作。
 - 蜑家話
-
 - 廣州話
-
   - `jyut6ping3-gw`：`rime-cantonese`菊韻版，增添菊韻所有功能以改善打字體驗
   - `gukwan-canton`：不建議使用
-
 - 古代音
-
   - `gukwan-default`：構擬音，僅供參攷。
   - `gukwan-fanwan`：不完全正確，僅供參攷。
+
+> [!NOTE]
+>
+> 除小欖音以外均以老派音製作，可能已不貼合實際情況，故：
+>
+> - 曉匣喻母細音字部份字跟廣州讀`j`，但未變齊。
+>   - 如「爺」讀`he4`，但係「園」讀`jyun4`（本應讀`hyun4`）
+>   - 由於個個方言都變化程度唔同，我一個人絕無辦法去執晒，只能設定兩種音都出到字。
+>   - 如小欖話只有極少數作爲白讀音殘留，例如「穴」`hyut6`，「嫌」`him4`。則可以特例處理。
+> - 師韻讀`y`定讀`i`？
+>   - 其實理論上全部應該讀`y`，但係不能避免的人遇到隻唔識既字，就直情跟廣州音。此處不作改變，如不能辨別者，請手動更改方案。
+> - 見系咸攝字`om`同`am`不分。
+>   - 由於個個方言都變化程度唔同，我一個人絕無辦法去執晒，只能設定兩種音都出到字。
+> - 各種白讀字
+>   - 「螺」「朵」「蓑」「坐」等字讀`-oe`
+>   - 「山」「斬」「減」「咸」等字讀`-e`
+>   - 「應」讀`ing`
+>   - 以上字對輸入影響不大，全部收錄在主字庫，不再另立。
+>   - 「花」「輝」「快」「筷」等字讀`w-`
+>   - 「蠅」「業」「惹」「仰」等字讀`h-`
+>   - 「船」「射」「繩」「蛇」等擦音塞化讀`c-`或者`z-`（「剩」`zing6`「嘥」`caai1`「贖」`zuk6`「煠」`zep6`已收錄在主字庫）
+>   - 「婆」「茶」「糖」「田」等送氣字無氣化（「柿」`zy2`「淡」`daam6`已收錄在主字庫）
+>   - 「件」「解」「揀」「掛」等無氣字送氣化（「舊」`kau6`已收錄在主字庫）
+>   - 以上收錄在`gukwan-alt.dict.yaml`。
 
 ### 三拼輸入
 
@@ -207,48 +226,6 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 
 部份用家可根據自身情況添加以下字音到用戶字庫。
 
-```
-虐	hiok6
-瘧	hiok6
-若	hiok6
-螢	hing4
-盈	hing4
-楹	hing4
-蠅	hing4
-葉	hip6
-業	hip6
-頁	hip6
-惹	hia5
-仰	hiong5
-儒	hyu4
-蠕	hyu4
-孺	hyu4
-濡	hyu4
-薷	hyu4
-夭	hiu1
-舀	hiu5
-窯	hiu4
-姚	hiu4
-謠	hiu4
-耀	hiu6
-遙	hiu4
-鷂	hiu6
-瑤	hiu4
-堯	hiu4
-翼	hik6
-亦	hek6
-贏	heng4
-馭	hyo6
-禦	hyo6
-御	hyo6
-驗	him6
-芫	him4
-筵	hin4
-衍	hin5
-演	hin5
-延	hin4
-```
-
 ## 拼音
 
 拼音方案基於[擴展粵拼](https://jyutjam.org/j++/)，現代音同[粵拼](https://jyutping.org/)無區別，直接使用即可。關於古代音請參攷[菊韻拼音表 – なかやま園](https://zonsan.fc2.page/?p=1583)。
@@ -313,6 +290,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
     - 蟹攝合口一等字，廣州話讀`eoy`者，小欖話多讀作`yu`：
       - 端組、來母同心母讀作`yu`，如「對」`dy3`「腿」`ty2`「堆」`dy1`「碎」`sy3`等。
       - 精組（除心母）多數人已裂化讀`eoy`，如「最」`zeoy3`「罪」`zeoy6`「催」`ceoy1`等，故不納入。
+      - 此類字讀`ui`爲棺材音，故方案不採用。
 - `gukwan-siulaam-bofung.schema.yaml`：小欖寶豐音
   - 本方案根據《沙田方言》《中山方言誌》製作。下爲同小欖音主要區別：
     - 分辨透曉，ong/ok同oeng/oek可不分；eng/ek同en/et可不分。實際打字兩者皆可。
@@ -336,7 +314,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 
 ### 南頭
 
-- `gukwan-naamtau-naamsing.schema.yaml`：南頭南城音（或將刪除同其他南頭音
+- `gukwan-naamtau-naamsing.schema.yaml`：南頭南城音（或將刪除同其他南頭音合併）
   - 本方案根據《沙田方言》製作。下爲重要特徵：
     - ong/ok歸oeng/oek，而兩個脣化聲母遇oeng/oek即展脣化，故「光」「江」「薑」不分，皆讀`goeng1`（「黃」則讀`woeng4`，不讀作`oeng4`）。實際打字兩者皆可。
     - 蟹攝合口一等字，廣州話讀`eoy`者，南城音有部份讀作作`yu`：
@@ -364,7 +342,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 
 ### 字詞
 
-`gukwan.dict.yaml`用於調用字表詞庫，默認亦調用rime-cantonese部份詞庫同粵語八股文。位置爲`/gw_dicts`。
+`gukwan.dict.yaml`用於調用字表詞庫，默認亦調用rime-cantonese部份詞庫同粵語八股文。位置爲`/gw_dicts`。`gukwan-alt.dict.yaml`特供部份方言使用。
 
 - 字庫
   - `gukwan.chars.dict.yaml`：廣韻字表
