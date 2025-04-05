@@ -37,7 +37,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
   - `gukwan-waanglaan`（<ruby>橫<rp>(</rp><rt>waang4</rt><rp>)</rp></ruby><ruby>欄<rp>(</rp><rt>laan4</rt><rp>)</rp></ruby>音）：以橫欄鎮比較有代表性特徵製作，適合大多數橫欄人。
   - `gukwan-naamtau-naamsing`（<ruby>南<rp>(</rp><rt>naam4</rt><rp>)</rp></ruby><ruby>頭<rp>(</rp><rt>tau4</rt><rp>)</rp></ruby><ruby>南<rp>(</rp><rt>naam4</rt><rp>)</rp></ruby><ruby>城<rp>(</rp><rt>sing4</rt><rp>)</rp></ruby>音）：南頭鎮南城村
 - 順德系（順德）
-  - `gukwan-daailoeng`（<ruby>大<rp>(</rp><rt>daai6</rt><rp>)</rp></ruby><ruby>良<rp>(</rp><rt>loeng1</rt><rp>)</rp></ruby>音）：以大良話比較有代表性特徵製作。
+  - `gukwan-daailoeng`（<ruby>大<rp>(</rp><rt>daai6</rt><rp>)</rp></ruby><ruby>良<rp>(</rp><rt>loeng1</rt><rp>)</rp></ruby>音）：以大良比較有代表性特徵製作。
 - 蜑家話
 - 廣州話
   - `jyut6ping3-gw`：`rime-cantonese`菊韻版，增添菊韻所有功能以改善打字體驗
@@ -296,6 +296,19 @@ This is a schema based on [Rime Input Method](https://rime.im/).
     - 分辨透曉，ong/ok同oeng/oek可不分；eng/ek同en/et可不分。實際打字兩者皆可。
     - 蟹攝合口一等字變化同廣州話一樣，但有部分讀`oe`（見`gukwan-siulaam-bofung.dict.yaml`）
 
+### 大良
+
+- `gukwan-daailoeng.schema.yaml`：大良音
+  - 本方案根據大良音代表特徵製作。下爲重要特徵：
+    - 不分來孃之外不分疑影，故疑母字可作零聲母（如「我」`ngo5`可打`o5`）。
+    - 不分`ak`同`aak`，故可以aak音打ak（如「勒」`lak6`可打`laak6`）。
+    - 不分`ing/ik`同`in/it`，故可以ing/it音打in/it（如「迫」`bik1`可打`bit1`）。
+    - `yun/yt`老派讀`un/ut`，但因同`eon/eot`簡拼衝突故不採用。
+    - 蟹攝合口一等字，廣州話讀`eoy`者，大良老派音讀`ui`，新派音讀`yu`：
+      - 端組、來母、清母、心母讀作`ui`（新派讀`yu`），如「對」`dui3`「腿」`tui2`「催」`cui1`「碎」`sui3`等。
+      - 精組（除清母、心母）多數人已裂化讀`eoy`，如「最」`zeoy3`「罪」`zeoy6`等，故不納入。
+    - 遇攝合口一等字裂化同廣州一樣爲`ou`：「度」`dou6`「無」`mou4`「做（作）」`zou6`「粗」`cou1`等。
+
 ### 橫欄
 
 - `gukwan-waanglaan.schema.yaml`：橫欄音
@@ -305,10 +318,10 @@ This is a schema based on [Rime Input Method](https://rime.im/).
       - /oe/實際發音爲[yø]，如有需要可自行將方案調整爲yo或yoe以貼合實際發音。
     - 蟹攝合口一等字同廣州一樣爲`eoy`，並不讀作`yu`。
     - 遇攝合口一等字裂化同廣州一樣爲`ou`：「度」`dou6`「無」`mou4`「做（作）」`zou6`「粗」`cou1`等。
-    - 《沙田方言》中，效攝一等記作`o`，但《中山方言誌》全部紀錄點都爲`ou`。此處採用《中山方言誌》記錄，請根據實際情況自行調整。（如需改請刪除144行、423行、497行井號）
+    - 《沙田方言》中，效攝一等記作`o`，但《中山方言誌》全部紀錄點都爲`ou`。此處採用《中山方言誌》記錄，請根據實際情況自行調整。（如需改請刪除146行、427行、503行井號）
     - 「ooi音」，來自於蟹攝三等合口字同止攝合口銳音，橫欄仍保持其對`eoy`同`oi`對立。其中以六沙最爲完整。即「趣」`ceoy3`「菜」`coi3`「脆」`cooi3`不同音。
-      - 其他方言點之中，蟹攝三等合口字讀`eoy`而非`ooi`。（如需改請在150行、425行、499行添加井號，竝刪除151行、426行、500行井號）
-      - /ooi/實際發音爲[oø]，如有需要可自行將方案調整爲ooy以貼合實際發音。
+      - 其他方言點之中，蟹攝三等合口字讀`eoy`而非`ooi`。（如需改請在152行、429行、505行添加井號，竝刪除153行、430行、506行井號）
+      - /ooi/實際發音爲[oø]，如有需要可自行將方案調整爲`ooy`以貼合實際發音。
       - /eoy/實際發音爲[øy]。
       - 《沙田方言》並無記載此對立。
 

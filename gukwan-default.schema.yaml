@@ -14,7 +14,7 @@ __include: gukwan.schema:/
 schema:
   schema_id: gukwan-default
   name: 菊韻構擬音
-  version: "16.2b"
+  version: "16.3b"
   author:
     - 靈帝（Hoengsaan）
   
@@ -103,8 +103,10 @@ speller:
 
     #- derive/^w([aeiou])/v$1/              # 口音補充（建議維持用w）
 
-    #- xform/^hj/j/                         # 口音補充(hj->j)：「賢」讀若jin者 多數方音
-    - xform/^hj/h/                         # 口音補充(hj->h)：「賢」讀若hin者 順德石歧
+    #- xform/^hj/j/                          # 曉匣喻細音(hj->j)：「賢」讀若jin
+    - xform/^hjo/hio/                      # 曉匣喻細音(hj->h)：「樣」讀若hoeng
+    - xform/^hjaa/hia/                     # 曉匣喻細音(hj->h)：「爺」讀若he
+    - xform/^hj/h/                         # 曉匣喻細音(hj->h)：「賢」讀若hin
     
     - xform/^wu(i|n|t)(?=\d)/hu$1/         # 古匣母一類(h)
     - xform/^wo(m|ng|k)(?=\d)/hwo$1/       # 古匣母一類(h)
@@ -146,6 +148,8 @@ speller:
     #韻母——分韻（非現代音建議維持）
     - derive/yo(?=\d)/yu/                   # 遇開分韻(yo->yu)
     - derive/yi(?=\d)/ui/                   # 蟹合分韻(yi->ui)
+    #- xform/ou(?=\d)/o$1/                  # FIX
+    #- xform/ou(?=\d)/au$1/                 # FIX
     
     #韻母——現代
     #其他口音請自行調校 不建議關閉打字輔助
@@ -400,7 +404,9 @@ translator:
     - xform/([aeiouymngptk])q/${1}3/
 
   comment_format:
-    - xform/hj/h/                         # 口音補充(hj->h)：「賢」讀若hin者 順德石歧
+    - xform/hjo/hio/                      # 曉匣喻細音(hj->h)：「樣」讀若hoeng
+    - xform/hjaa/hia/                     # 曉匣喻細音(hj->h)：「爺」讀若he
+    - xform/hj/h/                         # 曉匣喻細音(hj->h)：「賢」讀若hin
     
     - xform/wu(i|n|t)(?=\d)/hu$1/         # 古匣母一類(h)
     - xform/wo(m|ng|k)(?=\d)/hwo$1/       # 古匣母一類(h)
@@ -422,7 +428,9 @@ reverse_lookup:
   overwrite_comment: false
   dictionary: gukwan 
   comment_format:
-    - xform/hj/h/                         # 口音補充(hj->h)：「賢」讀若hin者 順德石歧
+    - xform/hjo/hio/                      # 曉匣喻細音(hj->h)：「樣」讀若hoeng
+    - xform/hjaa/hia/                     # 曉匣喻細音(hj->h)：「爺」讀若he
+    - xform/hj/h/                         # 曉匣喻細音(hj->h)：「賢」讀若hin
     
     - xform/wu(i|n|t)(?=\d)/hu$1/         # 古匣母一類(h)
     - xform/wo(m|ng|k)(?=\d)/hwo$1/       # 古匣母一類(h)
