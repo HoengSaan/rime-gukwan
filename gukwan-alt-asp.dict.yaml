@@ -11,7 +11,7 @@
 # Learn how to use Gukwan in the readme file, available on the project's github page.
 
 ---
-name: gukwan-alt
+name: gukwan-alt-asp
 version: "16.4b"
 sort: by_weight
 vocabulary: essay-cantonese
@@ -20,6 +20,7 @@ import_tables:
   - gw_dicts/gukwan.chars1     # 菊韻字表——增廣一組 廣韻異音訓讀增補
   - gw_dicts/gukwan.chars2     # 菊韻字表——增廣二組 近代字異體字異音訓讀增補
   - gw_dicts/gukwan.chars3     # 菊韻字表——增廣三組 廣韻字近代字非通用增補
+  - gw_dicts/gukwan.chars4     # 菊韻字表——增廣四組 廣韻字近代字非通用增補
   - gw_dicts/gukwan.words      # 菊韻詞庫——基本 基於粵拼詞庫
   - gw_dicts/gukwan.words1     # 菊韻詞庫——增廣一組 部份小欖話辭彙同小欖周邊地名
   - gw_dicts/gukwan.words2     # 菊韻詞庫——增廣二組 粵拼詞庫增補同外來語

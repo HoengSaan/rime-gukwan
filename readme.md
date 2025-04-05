@@ -63,11 +63,11 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 >   - 「山」「斬」「減」「咸」等字讀`-e`
 >   - 「應」讀`ing`
 >   - 以上字對輸入影響不大，全部收錄在主字庫，不再另立。
->   - 「花」「輝」「快」「筷」等字讀`w-`
->   - 「蠅」「業」「惹」「仰」等字讀`h-`
->   - 「船」「射」「繩」「蛇」等擦音塞化讀`c-`或者`z-`（「剩」`zing6`「嘥」`caai1`「贖」`zuk6`「煠」`zep6`已收錄在主字庫）
->   - 「婆」「茶」「糖」「田」等送氣字無氣化（「柿」`zy2`「淡」`daam6`已收錄在主字庫）
->   - 「件」「解」「揀」「掛」等無氣字送氣化（「舊」`kau6`已收錄在主字庫）
+>   - 「花」「輝」「快」「筷」等少部分曉母合口字讀`w-`
+>   - 「蠅」「業」「惹」「仰」等少部分細音字讀`h-`
+>   - 「船」「射」「繩」「蛇」等少部分擦音字塞化讀`c-`或者`z-`（「剩」`zing6`「嘥」`caai1`「贖」`zuk6`「煠」`zep6`已收錄在主字庫）
+>   - 「婆」「茶」「糖」「田」等少部分送氣字無氣化（「柿」`zy2`「淡」`daam6`已收錄在主字庫）
+>   - 「件」「解」「揀」「掛」等少部分無氣字送氣化（「舊」`kau6`已收錄在主字庫）
 >   - 以上收錄在`gukwan-alt.dict.yaml`。
 
 ### 三拼輸入
@@ -300,7 +300,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 ### 大良
 
 - `gukwan-daailoeng.schema.yaml`：大良音
-  - 本方案根據大良音代表特徵製作。下爲重要特徵：
+  - 本方案根據陳村音代表特徵製作。下爲重要特徵：
     - 不分來孃之外不分疑影，故疑母字可作零聲母（如「我」`ngo5`可打`o5`）。
     - 不分`ak`同`aak`，故可以aak音打ak（如「勒」`lak6`可打`laak6`）。
     - 不分`ing/ik`同`in/it`，故可以ing/it音打in/it（如「迫」`bik1`可打`bit1`）。
@@ -310,6 +310,29 @@ This is a schema based on [Rime Input Method](https://rime.im/).
       - 精組（除清母、心母）多數人已裂化讀`eoy`，如「最」`zeoy3`「罪」`zeoy6`等，故不納入。
     - 遇攝合口一等字裂化同廣州一樣爲`ou`：「度」`dou6`「無」`mou4`「做（作）」`zou6`「粗」`cou1`等。
     - 廣州話聲母`w`同韻腹`u/o`結合者，大良聲母則爲`f`，如「黃」`foeng4`「換」`fun6`「會」`fui6`「活」`fut6`。
+    - 「花」「輝」「快」「筷」等少部分曉母合口字讀`w-`
+    - 「蠅」「業」「惹」「仰」等少部分細音字讀`h-`
+    - 「船」「射」「繩」「蛇」等少部分擦音字塞化讀`c-`或者`z-`
+    - 「婆」「茶」「糖」「田」等少部分送氣字無氣化
+    - 「件」「解」「揀」「掛」等少部分無氣字送氣化
+
+### 陳村
+
+- `gukwan-cancyn.schema.yaml`：陳村音
+  - 本方案根據陳村音代表特徵製作。下爲重要特徵：
+    - 不分來孃之外不分疑影，故疑母字可作零聲母（如「我」`ngo5`可打`o5`）。
+    - 不分`ak`同`aak`，故可以aak音打ak（如「勒」`lak6`可打`laak6`）。
+    - 陳村音止攝字無發生裂化，故廣州話讀`ei`者，陳村仍舊讀`i`，如「皮」`pi4`「鼻」`bi6`「地」`di6`「四」`si3`。
+    - 蟹攝合口一等字，廣州話讀`eoy`者，陳村老派音讀`ui`，新派音讀`yu`：
+      - 端組、來母、清母、心母讀作`ui`（新派讀`yu`），如「對」`dui3`「腿」`tui2`「催」`cui1`「碎」`sui3`等。
+      - 精組（除清母、心母）多數人已裂化讀`eoy`，如「最」`zeoy3`「罪」`zeoy6`等，故不納入。
+    - 遇攝合口一等字裂化同廣州一樣爲`ou`：「度」`dou6`「無」`mou4`「做（作）」`zou6`「粗」`cou1`等。
+    - 廣州話聲母`w`同韻腹`u/o`結合者，陳村聲母則爲`f`，如「黃」`foeng4`「換」`fun6`「會」`fui6`「活」`fut6`。
+    - 「花」「輝」「快」「筷」等少部分曉母合口字讀`w-`
+    - 「蠅」「業」「惹」「仰」等少部分細音字讀`h-`
+    - 「船」「射」「繩」「蛇」等少部分擦音字塞化讀`c-`或者`z-`
+    - 「婆」「茶」「糖」「田」等少部分送氣字無氣化
+    - 「件」「解」「揀」「掛」等少部分無氣字送氣化
 
 ### 橫欄
 
@@ -360,13 +383,15 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 
 ### 字詞
 
-`gukwan.dict.yaml`用於調用字表詞庫，默認亦調用rime-cantonese部份詞庫同粵語八股文。位置爲`/gw_dicts`。`gukwan-alt.dict.yaml`特供部份方言使用。
+`gukwan.dict.yaml`用於調用字表詞庫，默認亦調用rime-cantonese部份詞庫同粵語八股文。位置爲`/gw_dicts`。`gukwan-alt.dict.yaml`同`gukwan-alt-asp.dict.yaml`特供部份方言使用。
 
 - 字庫
   - `gukwan.chars.dict.yaml`：廣韻字表
   - `gukwan.chars1.dict.yaml`：廣韻異音訓讀增補
-  - `gukwan.chars2.dict.yaml`：今字異字異音訓讀增補
+  - `gukwan.chars2.dict.yaml`：近代字異體字異音訓讀增補
     - 粵字平翹、日以之分參攷梧州話
+  - `gukwan.chars3.dict.yaml`：廣韻字近代字非通用增補（特供部份方言使用）
+  - `gukwan.chars4.dict.yaml` ：廣韻字近代字非通用增補（特供部份方言使用）
 - 詞庫
   - `gukwan.words.dict.yaml`：粵拼詞庫
     - 基於`jyut6ping3.words.dict.yaml`，作者爲「粵語計算語言學基礎建設組」([@CanCLID](https://github.com/CanCLID)) ，隨源文件以[CC BY 4.0許可](https://creativecommons.org/licenses/by/4.0/)發佈。已去除輸入碼竝改變部份字型。

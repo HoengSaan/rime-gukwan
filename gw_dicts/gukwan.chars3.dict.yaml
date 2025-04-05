@@ -1,0 +1,51 @@
+# Rime dictionary
+# encoding: utf-8
+#
+# gukwan - 菊韻字表——增廣三組
+# 廣韻字近代字非通用增補
+
+# 此爲菊韻粵語輸入法字表詞庫文件
+# 瞭解如何使用菊韻請閱覽readme文件，詳細請至本方案github頁：
+# https://github.com/HoengSaan/rime-gukwan
+# This is a dictionary file for Gukwan Cantonese Input Method.
+# Learn how to use Gukwan in the readme file, available on the project's github page.
+
+---
+name: gukwan.chars3
+version: "16.4b"
+sort: by_weight
+...
+
+虐	hiok6
+瘧	hiok6
+若	hiok6
+螢	hing4
+盈	hing4
+楹	hing4
+蠅	hing4
+業	hip6
+惹	hia5
+仰	hiong5
+儒	hyu4
+蠕	hyu4
+孺	hyu4
+濡	hyu4
+薷	hyu4
+夭	hiu1
+舀	hiu5
+窯	hiu4
+姚	hiu4 
+謠	hiu4
+耀	hiu6
+遙	hiu4
+鷂	hiu6
+瑤	hiu4
+堯	hiu4
+翼	hik6
+亦	hek6
+贏	heng4
+馭	hyo6
+禦	hyo6
+御	hyo6
+驗	him6
+芫	him4

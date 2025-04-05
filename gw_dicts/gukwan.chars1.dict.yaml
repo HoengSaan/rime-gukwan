@@ -12,7 +12,7 @@
 
 ---
 name: gukwan.chars1
-version: "16.1b"
+version: "16.4b"
 sort: by_weight
 ...
 
@@ -319,6 +319,7 @@ sort: by_weight
 多	duo1	
 挱	shaa3	
 嵯	co1	
+哦	o6	
 佗	taa1	0%
 他	taa1	
 它	taa1	
@@ -1422,6 +1423,7 @@ sort: by_weight
 踏	daap6	
 拉	laai1	
 罯	ap1	
+哈	haa1	
 擸	laap3	
 耷	dap1	
 搭	daap3	

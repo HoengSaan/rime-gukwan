@@ -1,0 +1,127 @@
+# Rime dictionary
+# encoding: utf-8
+#
+# gukwan - 菊韻字表——增廣四組
+# 廣韻字近代字非通用增補
+
+# 此爲菊韻粵語輸入法字表詞庫文件
+# 瞭解如何使用菊韻請閱覽readme文件，詳細請至本方案github頁：
+# https://github.com/HoengSaan/rime-gukwan
+# This is a dictionary file for Gukwan Cantonese Input Method.
+# Learn how to use Gukwan in the readme file, available on the project's github page.
+
+---
+name: gukwan.chars4
+version: "16.4b"
+sort: by_weight
+...
+
+扒	baa4
+牌	baai4
+排	baai4
+刨	baeu4
+貧	ban4
+頻	ban4
+棚	baang4
+皮	bi4
+菩	bu4
+蒲	bu4
+賠	bui4
+盆	bun4
+盤	bun4
+篷	bung4
+蓬	bung4
+婆	bo4
+旁	boong4
+
+頭	dau4
+藤	dang4
+條	diu4
+甜	dim4
+田	din4
+填	din4
+肚	du5
+同	dung4
+銅	dung4
+筒	dung4
+茼	dung4
+桐	dung4
+擡	doi4
+檯	doi2
+糖	doong4
+塘	doong4
+
+佢	gyo5
+渠	gyo5	0%
+鉗	gim4
+巋	gwai1
+凝	ging4
+滰	ging4
+概	goi3
+
+茶	zraa4
+搽	zraa4
+柴	zhaai4
+蠶	zaam4
+寢	zam2
+曾	zang4
+前	zin4
+程	zring4
+埕	zring4
+匙	zhy4
+似	zy5
+纏	zim4
+錢	zin4
+前	zin4
+蟲	zrung4
+鋤	zho4
+裁	zoi4
+噪	zou3
+牀	zhoong4
+床	zhoong4
+牆	ziong4
+腸	zriong4
+長	zriong4
+
+成	cjing4
+折	cjit6
+蝕	cjit6
+崇	chung4
+
+船	zjyun4
+蛇	zjia4
+射	zjia6
+繩	zjing1
+繩	zjing4
+脣	zjeon6
+
+變	pin3
+擯	pan3
+點	tim2
+等	tang2
+解	kaai2
+揀	kaen2
+掛	kwaa3
+褂	kwaa3
+件	kin6
+傑	kit6
+
+花	waa1
+化	waa3
+麾	wai1
+輝	wai1
+揮	wai1
+暉	wai1
+徽	wai1
+筷	waai3
+快	waai3
+塊	waai3
+傀	waai3
+勳	wan1
+葷	wan1
+薰	wan1
+婚	wan1
+涽	wan1
+訓	wan3
+忽	wat1
+礊	waak3

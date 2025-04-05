@@ -2,7 +2,7 @@
 # encoding: utf-8
 #
 # gukwan - 菊韻字表——增廣二組
-# 今字異字異音訓讀增補
+# 近代字異體字異音訓讀增補
 
 # 此爲菊韻粵語輸入法字表詞庫文件
 # 瞭解如何使用菊韻請閱覽readme文件，詳細請至本方案github頁：
@@ -12,7 +12,7 @@
 
 ---
 name: gukwan.chars2
-version: "16.1b"
+version: "16.4b"
 sort: by_weight
 ...
 
@@ -4954,7 +4954,7 @@ sort: by_weight
 嘜	maak1	
 嘜	mak1	
 嘝	huk6	0%
-嘞	lea3	
+嘞	la3	
 嘞	laak3	0%
 嘞	lak3	0%
 嘟	dyut1	
@@ -5026,7 +5026,7 @@ sort: by_weight
 嚒	mo1	0%
 嚓	chaat2	
 嚔	dai3	0%
-嚕	lea1	
+嚕	la1	
 嚕	lu3	
 嚙	ngaeu5	0%
 嚟	lai4	

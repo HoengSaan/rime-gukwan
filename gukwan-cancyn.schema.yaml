@@ -12,15 +12,15 @@
 __include: gukwan.schema:/
 
 schema:
-  schema_id: gukwan-daailoeng
-  name: 菊韻大良音
-  version: "16.3b"
+  schema_id: gukwan-cancyn
+  name: 菊韻陳村音
+  version: "16.4b"
   author:
     - 靈帝（Hoengsaan）
   
   description: |-
     測試階段
-    本方案根據大良音代表特徵製作，建議仔細閱讀方案竝根據自身口音調整
+    本方案根據陳村音代表特徵製作，建議仔細閱讀方案竝根據自身口音調整
     瞭解如何使用菊韻請閱覽readme文件，詳細請至本方案github頁：https://github.com/HoengSaan/rime-gukwan
     如有問題或建議可於以上github頁中開Issues反饋
 
@@ -159,10 +159,10 @@ speller:
     #- xform/ooi(?=\d)/oi/                  # 止合銳(ooi->oi)：「雖」讀若soi 文讀少見，一般白讀先有
     #- xform/ooi(?=\d)/ui/                  # 止合銳(ooi->ui)：「雖」讀若sui 
     
-    - xform/^(b|p|f)i(?=\d)/$1ei/           # 止攝裂化脣音(i->ei) ：「備」讀若bei
-    - xform/^(d|t|l|n)i(?=\d)/$1ei/         # 止攝裂化齒音(i->ei)：「地」讀若dei
+    #- xform/^(b|p|f)i(?=\d)/$1ei/           # 止攝裂化脣音(i->ei) ：「備」讀若bei
+    #- xform/^(d|t|l|n)i(?=\d)/$1ei/         # 止攝裂化齒音(i->ei)：「地」讀若dei
     #- xform/^(g|k|h)i(?=\d)/$1ei/          # 止攝裂化牙音(i->ei)：「既」讀若gei
-    - derive/^(s)(?!j)i(?=\d)/$1ei/         # 止攝心母特音（現代音裂化專用） 
+    #- derive/^(s)(?!j)i(?=\d)/$1ei/         # 止攝心母特音（現代音裂化專用） 
     
     - xform/^ngu(?=\d)/ng/                            # 遇開一單獨成韻(ngu->ng)：「吳」讀若ng
     #- xform/^(b|p|m|d|t|n|l|z|c|s|sh)u(?=\d)/$1au/    # 遇攝裂化(u->au)：「渡」讀若dau
@@ -385,7 +385,7 @@ speller:
 
 translator:
   dictionary: gukwan-alt-asp
-  prism: gukwan-daailoeng
+  prism: gukwan-cancyn
   initial_quality: 1.2
   spelling_hints: 9
   preedit_format:
@@ -429,9 +429,6 @@ translator:
 
     - xform/ooy(?=\d)/ooi/
     #- xform/ooy(?=\d)/eoy/
-
-    - xform/(b|p|f)i(?=\d)/$1ei/           # 止攝裂化脣音(i->ei) ：「備」讀若bei
-    - xform/(d|t|l|n)i(?=\d)/$1ei/         # 止攝裂化齒音(i->ei)：「地」讀若dei
     
     - xform/ngu(?=\d)/ng/                            # 遇開一單獨成韻(ngu->ng)：「吳」讀若ng
     - xform/(b|p|m|d|t|n|l|z|c|s|sh)u(?=\d)/$1ou/    # 遇攝裂化(u->au)：「渡」讀若dau
@@ -500,9 +497,6 @@ reverse_lookup:
     - xform/ooy(?=\d)/ooi/
     #- xform/ooy(?=\d)/eoy/
 
-    - xform/(b|p|f)i(?=\d)/$1ei/           # 止攝裂化脣音(i->ei) ：「備」讀若bei
-    - xform/(d|t|l|n)i(?=\d)/$1ei/         # 止攝裂化齒音(i->ei)：「地」讀若dei
-    
     - xform/ngu(?=\d)/ng/                            # 遇開一單獨成韻(ngu->ng)：「吳」讀若ng
     - xform/(b|p|m|d|t|n|l|z|c|s|sh)u(?=\d)/$1ou/    # 遇攝裂化(u->au)：「渡」讀若dau
     
