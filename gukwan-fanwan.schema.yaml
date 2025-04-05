@@ -130,7 +130,7 @@ speller:
     - xform/^kwing(?=\d)/king$1/
     - xform/^hwing(?=\d)/hing$1/
     - xform/^hw(?!ing)/f/                   # 曉合輕脣(hw->f)
-    - xform/^hu/fu/                         # 曉合輕脣(hw->f)
+    - xform/^hu(?!ng|k)/fu/                 # 曉合輕脣(hw->f)
     
     #韻母
     - xform/iau(?=\d)/au/                   # 流攝三等(iau->au)

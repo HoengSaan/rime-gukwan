@@ -129,7 +129,7 @@ speller:
     - derive/^kwing(?=\d)/king$1/
     - derive/^hwing(?=\d)/hing$1/
     - derive/^hw(?!ing)/f/                  # 曉合輕脣(hw->f)
-    - derive/^hu/fu/                        # 曉合輕脣(hw->f)
+    - derive/^hu(?!ng|k)/fu/                # 曉合輕脣(hw->f)
 
     #聲母——增廣
     #- derive/^hw/w/                        # 示範：「花」讀作waa
