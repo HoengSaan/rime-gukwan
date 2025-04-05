@@ -14,7 +14,7 @@ __include: gukwan.schema:/
 schema:
   schema_id: gukwan-waanglaan
   name: 菊韻橫欄音
-  version: "16.1b"
+  version: "16.2b"
   author:
     - 靈帝（Hoengsaan）
   
@@ -350,7 +350,8 @@ speller:
     - derive/^jy?([aeiou])/y$1/             # 簡拼(jy->y)
     - derive/yu(?!ng|k)/y/                  # 簡拼(yu->y)
     - derive/oe(ng|k|r)/e$1/                # 簡拼(oe->e)
-    - derive/eo(n|t)/u$1/                   # 簡拼(eo->u)
+    - derive/eo(n|t|i|y)/u$1/               # 簡拼(eo->u)
+    - derive/oo(i|y)/u$1/                   # 簡拼(oo->u)
 
     #簡拼
     #- derive/^wu/u/                         # 簡拼(wu->u)
