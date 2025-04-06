@@ -2377,7 +2377,7 @@ local function translator(input, seg, env)
             string.format("◈ %s 重有 [ %d ]日", upcoming_jqs[2], jieqi_days[2])
         -- 使用 generate_candidates 函数生成候选项
         local candidates = {
-            {summary}
+            {summary, ""}
         }
         -- 调用 generate_candidates 来提交候选项
         generate_candidates("day_summary", seg, candidates)

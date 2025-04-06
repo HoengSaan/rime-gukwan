@@ -186,14 +186,16 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 - 字詞發音：
   - 本人無法亦無有可能去保證所有漢字發音正確。尤其因爲菊韻詞庫多數無輸入碼，有多音字既單詞發音必然有誤。
   - 雖然菊韻支持使用聲調輸入，但本人並不能確保所有字詞聲調正確。尤其考慮到以小欖話等方言變調遠比廣州話豐富，以我一人之力斷無可能完善。
-- 地名繁簡：數據來源係簡筆字，本人亦仔細審覈過，但都無法保證三萬幾條地名全數正確。
+- 簡轉繁問題：
+  - `gukwan.kwongtung.dict.yaml`數據來源係簡筆字，本人亦仔細審覈過，但都無法保證三萬幾條地名全數正確。
+  - jyut6ping3部份詞庫（例如`jyut6ping3.phrase.dict.yaml`）有明顯簡轉繁痕跡，已超出本人處理範圍。
 - <del>漢英混打：由於不明原因gukwan不能使用混打，本人已嘗試多次。將解決詞庫問題後再行處理。</del>**【已解決】**
 - 漢英混打開關：待處理。
 - 可輸入方言過少：自用爲主，將於未來處理。【正在處理】
 
 ## 安裝
 
-以下僅解說大致流程，具體請見[如何在RIME輸入法安裝菊韻輸入法 – なかやま園](https://zonsan.fc2.page/?p=1563)。
+以下僅解說大致流程，具體請見[如何在RIME輸入法安裝菊韻輸入法 – なかやま園](https://zonsan.fc2.page/?p=1563)。d
 
 1. 安裝RIME
    1. WINDOWS：[Weasel 小狼毫](https://github.com/rime/weasel)
@@ -282,7 +284,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 
 以上特徵如無重申即無異。
 
-### 小欖
+#### 小欖
 
 - `gukwan-siulaam.schema.yaml`：小欖音
   - 本方案根據小欖鎮代表特徵製作。下爲重要特徵：
@@ -297,7 +299,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
     - 分辨透曉，ong/ok同oeng/oek可不分；eng/ek同en/et可不分。實際打字兩者皆可。
     - 蟹攝合口一等字變化同廣州話一樣，但有部分讀`oe`（見`gukwan-siulaam-bofung.dict.yaml`）
 
-### 大良
+#### 大良
 
 - `gukwan-daailoeng.schema.yaml`：大良音
   - 本方案根據陳村音代表特徵製作。下爲重要特徵：
@@ -316,7 +318,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
     - 「婆」「茶」「糖」「田」等少部分送氣字無氣化
     - 「件」「解」「揀」「掛」等少部分無氣字送氣化
 
-### 陳村
+#### 陳村
 
 - `gukwan-cancyn.schema.yaml`：陳村音
   - 本方案根據陳村音代表特徵製作。下爲重要特徵：
@@ -334,7 +336,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
     - 「婆」「茶」「糖」「田」等少部分送氣字無氣化
     - 「件」「解」「揀」「掛」等少部分無氣字送氣化
 
-### 橫欄
+#### 橫欄
 
 - `gukwan-waanglaan.schema.yaml`：橫欄音
   - 本方案綜合橫欄各地鄉音——四沙（兩書合作人皆爲貼邊人）・六沙・橫東。
@@ -353,7 +355,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
       - 此類字往往越接近現代，就會有越多字跟廣州一樣讀`j`。例如小欖就基本剩低極少數白讀字。如已不能分辨者，請將107行井號刪除，竝將107~110行裏邊個`xform`改成`derive`。
     - 廣州話聲母`w`同韻腹`u/o`結合者，橫欄聲母則爲`f`，如「黃」`foeng4`「換」`fun6`「會」`fui6`「活」`fut6`。
 
-### 南頭
+#### 南頭
 
 - `gukwan-naamtau-naamsing.schema.yaml`：南頭南城音（或將刪除同其他南頭音合併）
   - 本方案根據《沙田方言》製作。下爲重要特徵：
@@ -362,14 +364,6 @@ This is a schema based on [Rime Input Method](https://rime.im/).
       - 端組同來母讀`yu`，如「對」`dy3`「腿」`ty2`「堆」`dy1`「雷」`sy3`等。
       - 精組多數人則裂化讀`eoy`，如「最」`zeoy3`「罪」`zeoy6`「催」`ceoy1`等。
     - 遇攝合口一等字裂化同廣州一樣爲`ou`：「度」`dou6`「無」`mou4`「做（作）」`zou6`「粗」`cou1`等。
-
-### 參攷用方案
-
-- `gukwan-default.schema.yaml`：菊韻音（構擬音）根據菊韻標準所構擬之古音，較分韻複雜。
-- `gukwan-fanwan.schema.yaml`：分韻音
-  - 準確來講此方案係分韻風，並不能準確反映所有分韻發音。若欲使用眞正分韻音打字，可參攷以下方案：[leimaau/old-Cantonese: Rime Old Cantonese Input Scheme | 《分韻撮要》音系及輸入方案](https://github.com/leimaau/old-Cantonese)
-- `gukwan-canton.schema.yaml`：廣州音
-  - 準確來講此方案係廣州風，並不能準確反映所有廣州發音。若欲使用眞正廣州音打字，請使用`jyut6ping3-gw.scheme.yaml`
 
 > [!TIP]
 >
@@ -404,6 +398,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
     - 基於`jyut6ping3.lettered.dict.yaml`，作者爲「粵語計算語言學基礎建設組」([@CanCLID](https://github.com/CanCLID)) ，此部分則以[CC BY 4.0許可](https://creativecommons.org/licenses/by/4.0/)發佈。
   - `gukwan.kwongtung.dict.yaml`：廣東地名（村級）
     - 來源爲[adyliu/china_area: 2024年中国全国5级行政区划（省、市、县、镇、村）](https://github.com/adyliu/china_area)，隨源文件以[GPL 3.0許可](https://www.gnu.org/licenses/gpl-3.0.en.html)發佈。已繁化。
+  - `gukwan.macau.dict.yaml`：澳門地名
 
 > [!NOTE]
 >
