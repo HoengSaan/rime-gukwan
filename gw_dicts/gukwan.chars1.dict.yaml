@@ -12,7 +12,7 @@
 
 ---
 name: gukwan.chars1
-version: "16.4b"
+version: "16.6b"
 sort: by_weight
 ...
 
@@ -102,7 +102,7 @@ sort: by_weight
 鬚	su1	
 銖	zjyu1	
 茱	zjyu1	
-扶	pau4	3%
+扶	pu4	3%
 颫	fu6	3%
 孵	bu6	3%
 菢	bu6	3%
@@ -254,9 +254,11 @@ sort: by_weight
 閒	haen4	
 先	hin1	
 煙	en1	3%
-烟	en1	0%
 煙	jen1	3%
+煙	in1	3%
+烟	en1	0%
 烟	jen1	0%
+烟	in1	0%
 癲	den1	3%
 牽	hen1	3%
 邊	ben1	5%
@@ -686,6 +688,7 @@ sort: by_weight
 斷	dyun6	
 𩏇	dyun6	0%
 緞	dyun6	5%
+鏟	choen2	
 躽	jen2	0%
 躽	en2	0%
 繭	gaan2	
@@ -729,6 +732,7 @@ sort: by_weight
 那	naa5	
 朵	duo2	5%
 朶	duo2	5%
+墮	duo6	
 妥	to5	
 妥	tuo5	3%
 橢	to5	5%
@@ -1018,6 +1022,7 @@ sort: by_weight
 現	ngin6	
 咽	jin1	
 片	pen3	3%
+這	zjia2	
 譴	hin2	
 面	min2	
 戀	lyun2	
@@ -1465,6 +1470,7 @@ sort: by_weight
 𤜯	kap6	
 凹	nap1	
 壓	aat3	
+閘	zhaep6	
 砝	faat3	
 跐	njaai2	
 踹	njaai2	

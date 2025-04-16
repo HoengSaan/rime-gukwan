@@ -14,7 +14,7 @@ __include: gukwan.schema:/
 schema:
   schema_id: gukwan-canton
   name: 菊韻廣州音
-  version: "16.3b"
+  version: "16.6b"
   author:
     - 靈帝（Hoengsaan）
   
@@ -102,33 +102,33 @@ speller:
     - derive/^nr/n/                         #
     - derive/^nr/nj/                        #
 
-    #- derive/^w([aeiou])/v$1/              # 口音補充（建議維持用w）
-
     - xform/^hj/j/                          # 曉匣喻細音(hj->j)：「賢」讀若jin
     #- xform/^hjo/hio/                      # 曉匣喻細音(hj->h)：「樣」讀若hoeng
     #- xform/^hjaa/hia/                     # 曉匣喻細音(hj->h)：「爺」讀若he
     #- xform/^hj/h/                         # 曉匣喻細音(hj->h)：「賢」讀若hin
 
     #- xform/^wu(i|n|t)(?=\d)/hu$1/         # 古匣母一類(h)
-    #- xform/^wo(m|ng|k)(?=\d)/hwo$1/       # 古匣母一類(h)
-    
+    #- xform/^wo(ng|k)(?=\d)/hwo$1/       # 古匣母一類(h)
     #- xform/^hwun(?=\d)/hun$1/              # 古匣母二類(h)：「桓」讀若fun者
     - xform/^hwun(?=\d)/wun$1/             # 古匣母二類(w)：「桓」讀若wun者
-
     - xform/^hu4/wu4/                       # 古匣母三類(w)：「狐」讀作wu4
     - xform/^hu6/wu6/                      # 古匣母三類(w)：「護」讀作wu6
+    #- xform/^fu(?=\d)/hu$1/                 # 古非敷奉香山：「夫」讀hu
+    #- xform/^fu(i|n|ng|k|t)(?=\d)/hu$1/     # 古非敷奉香山：「風」讀hui
+    #- xform/^fo(ng|k)(?=\d)/ho$1/          # 古非敷奉香山：「方」讀hong（舊）
     
-    #聲母——分韻（現代音勿動）
     - xform/^ngiuk/njuk/                    # 疑母齶化(ngiuk->njuk)
     - xform/^ngiong/njong/                  # 疑母齶化(ngiong->njong)
     - xform/^ngi/nji/                       # 疑母齶化(ngi->nji)
     - xform/^ngy/njy/                       # 疑母齶化(ngy->njy)
+    #- xform/^nj(i|y)/ng$1/                 # 日母香山
     - xform/^ngw/w/                         # 疑合脫落(ngw->w)
+    #- xform/^ngw/ng/                       # 疑合脫落(ngw->w)
     - xform/^ngun(?=\d)/wun$1/              # 疑合脫落(ngw->w)
     - xform/^kwing(?=\d)/king$1/
     - xform/^hwing(?=\d)/hing$1/
-    - xform/^hw(?!ing)/f/                   # 曉合輕脣(hw->f)
-    - xform/^hu(?!ng|k)/fu/                 # 曉合輕脣(hw->f)
+    - xform/^hw(?!ing)/f/                  # 曉合輕脣(hw->f)
+    - xform/^hu(?!ng|k)/fu/                # 曉合輕脣(hw->f)
     
     #韻母
     - xform/iau(?=\d)/au/                   # 流攝三等(iau->au) 粵語基本無方言保留
@@ -201,7 +201,7 @@ speller:
     - xform/io(ng|k)/oe$1/                  # 宕攝江攝元音融合(io->oe) ：「量」讀若loeng
     - xform/jo(ng|k)/joe$1/                 # 宕攝江攝元音融合(jo->joe) ：「央」讀央joeng
     
-    - derive/ae(u|n|m|t|p)(?=\d)/aa$1/      # 山效咸文(ae->aa)：「關」讀若gwaan
+    - xform/ae(u|n|m|t|p)(?=\d)/aa$1/       # 山效咸文(ae->aa)：「關」讀若gwaan
     #- derive/ae(u|n|m|t|p)(?=\d)/e$1/      # 山效咸白(ae->e)：「關」讀若gwen 多只見於白讀音
     
     - xform/o(m|p)(?=\d)/a$1/               # 咸攝音變(o->a)：「甘」讀若gam
@@ -213,7 +213,7 @@ speller:
     - xform/^(z|c)r/$1/                     # 精照合流(sj->s)
     - xform/^nj/j/                          # 日以合流(nj->j)
     
-    #FIX
+    #- derive/^ng(i|y)/j$1/                 # 疑母細音日母(ng->j)
     #- derive/^n(?!g|j)/l/                  # 泥來合流(n->l)
     #- derive/^t/h/                         # 透曉合流(t->h) 小欖部份
     - xform/^xaa(?=\d)/jaa$1/
@@ -229,10 +229,10 @@ speller:
     #- xform/ak(?=\d)/aak$1/                # ak同aak混 小欖老派
     #- derive/ai(?=\d)/aai$1/               # ai同aai混
     #- derive/ang(?=\d)/an$1/               # an同ang混 
-    
-    #韻母——增廣
-    #- derive/y(?=\d)/i$1/                  # 「雨」讀若ji
+    #- derive/yu(?=\d)/i$1/                 # 「雨」讀若ji
     #- derive/yu(n|t)(?=\d)/i$1/            # 「穴」讀若jit
+    #- derive/ing(?=\d)/in$1/               # 「並」讀若bin
+    #- derive/ik(?=\d)/it$1/                # 「辟」讀若pit
     #- derive/eng(?=\d)/en$1/               # 「餅」讀若ben
     #- derive/ek(?=\d)/et$1/                # 「劈」讀若pet
     #- derive/o(ng|k)(?=\d)/oe$1/

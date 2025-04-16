@@ -125,37 +125,35 @@ speller:
     - derive/^nr/n/                         #
     - derive/^nr/nj/                        #
 
-    #- derive/^w([aeiou])/v$1/              # 口音補充（建議維持用w）
-
-    - xform/^hj/j/                          # 口音補充(hj->j)：「賢」讀若jin者 多數方音
-    #- xform/^hj/h/                         # 口音補充(hj->h)：「賢」讀若hin者 順德石歧
+    - xform/^hj/j/                          # 曉匣喻細音(hj->j)：「賢」讀若jin
+    #- xform/^hjo/hio/                      # 曉匣喻細音(hj->h)：「樣」讀若hoeng
+    #- xform/^hjaa/hia/                     # 曉匣喻細音(hj->h)：「爺」讀若he
+    #- xform/^hj/h/                         # 曉匣喻細音(hj->h)：「賢」讀若hin
     
     #- xform/^wu(i|n|t)(?=\d)/hu$1/         # 古匣母一類(h)
-    #- xform/^wo(m|ng|k)(?=\d)/hwo$1/       # 古匣母一類(h)
-    
+    #- xform/^wo(ng|k)(?=\d)/hwo$1/       # 古匣母一類(h)
     - xform/^hwun(?=\d)/hun$1/              # 古匣母二類(h)：「桓」讀若fun者
     #- xform/^hwun(?=\d)/wun$1/             # 古匣母二類(w)：「桓」讀若wun者
-
     - xform/^hu4/wu4/                       # 古匣母三類(w)：「狐」讀作wu4
     #- xform/^hu6/wu6/                      # 古匣母三類(w)：「護」讀作wu6
-    
-    #聲母——分韻
+    #- xform/^fu(?=\d)/hu$1/                 # 古非敷奉香山：「夫」讀hu
+    #- xform/^fu(i|n|ng|k|t)(?=\d)/hu$1/     # 古非敷奉香山：「風」讀hui
+    #- xform/^fo(ng|k)(?=\d)/ho$1/          # 古非敷奉香山：「方」讀hong（舊）
+
     - derive/^(z|c|s)jy(?=\d)/$1y/          # 師韻不分精照
     - derive/^(z|c|s)hy(?=\d)/$1y/          # 師韻不分精照
     - derive/^ngiuk/njuk/                   # 疑母齶化(ngiuk->njuk)
     - derive/^ngiong/njong/                 # 疑母齶化(ngiong->njong)
     - derive/^ngi/nji/                      # 疑母齶化(ngi->nji)
+    #- derive/^nj(i|y)/ng$1/                # 日母香山
     - derive/^ngy/njy/                      # 疑母齶化(ngy->njy)
     - derive/^ngw/w/                        # 疑合脫落(ngw->w)
+    #- derive/^ngw/ng/                      # 疑合脫落(ngw->w)
     - derive/^ngun(?=\d)/wun$1/             # 疑合脫落(ngw->w)
     - derive/^kwing(?=\d)/king$1/
     - derive/^hwing(?=\d)/hing$1/
     - derive/^hw(?!ing)/f/                  # 曉合輕脣(hw->f)
     - derive/^hu(?!ng|k)/fu/                # 曉合輕脣(hw->f)
-
-    #聲母——增廣
-    #- derive/^hw/w/                        # 示範：「花」讀作waa
-    #- derive/^j(i|y)/h$1                   # 示範：「以」讀作hi
     
     #韻母
     - xform/iau(?=\d)/au/                   # 流攝三等(iau->au)
@@ -254,10 +252,10 @@ speller:
     #- xform/ak(?=\d)/aak$1/                # ak同aak混 小欖老派
     #- derive/ai(?=\d)/aai$1/               # ai同aai混
     #- derive/ang(?=\d)/an$1/               # an同ang混 
-    
-    #韻母——增廣
-    #- derive/y(?=\d)/i$1/                  # 「雨」讀若ji
+    #- derive/yu(?=\d)/i$1/                 # 「雨」讀若ji
     #- derive/yu(n|t)(?=\d)/i$1/            # 「穴」讀若jit
+    #- derive/ing(?=\d)/in$1/               # 「並」讀若bin
+    #- derive/ik(?=\d)/it$1/                # 「辟」讀若pit
     #- derive/eng(?=\d)/en$1/               # 「餅」讀若ben
     #- derive/ek(?=\d)/et$1/                # 「劈」讀若pet
     #- derive/o(ng|k)(?=\d)/oe$1/

@@ -14,7 +14,7 @@ __include: gukwan.schema:/
 schema:
   schema_id: gukwan-fanwan
   name: 菊韻分韻音
-  version: "16.3b"
+  version: "16.6b"
   author:
     - 靈帝（Hoengsaan）
   
@@ -102,30 +102,30 @@ speller:
     - derive/^nr/n/                         #
     - derive/^nr/nj/                        #
 
-    #- derive/^w([aeiou])/v$1/              # 口音補充（建議維持用w）
-
     - xform/^hj/j/                          # 曉匣喻細音(hj->j)：「賢」讀若jin
     #- xform/^hjo/hio/                      # 曉匣喻細音(hj->h)：「樣」讀若hoeng
     #- xform/^hjaa/hia/                     # 曉匣喻細音(hj->h)：「爺」讀若he
     #- xform/^hj/h/                         # 曉匣喻細音(hj->h)：「賢」讀若hin
     
     #- xform/^wu(i|n|t)(?=\d)/hu$1/         # 古匣母一類(h)
-    #- xform/^wo(m|ng|k)(?=\d)/hwo$1/       # 古匣母一類(h)
-    
+    #- xform/^wo(ng|k)(?=\d)/hwo$1/       # 古匣母一類(h)
     #- xform/^hwun(?=\d)/hun$1/              # 古匣母二類(h)：「桓」讀若fun者
     - xform/^hwun(?=\d)/wun$1/             # 古匣母二類(w)：「桓」讀若wun者
-
     - xform/^hu4/wu4/                       # 古匣母三類(w)：「狐」讀作wu4
     - xform/^hu6/wu6/                      # 古匣母三類(w)：「護」讀作wu6
+    #- xform/^fu(?=\d)/hu$1/                 # 古非敷奉香山：「夫」讀hu
+    #- xform/^fu(i|n|ng|k|t)(?=\d)/hu$1/     # 古非敷奉香山：「風」讀hui
+    #- xform/^fo(ng|k)(?=\d)/ho$1/          # 古非敷奉香山：「方」讀hong（舊）
     
-    #聲母——分韻（現代音無用）
     - xform/^(z|c|s)jy(?=\d)/$1y/           # 師韻不分精照
     - xform/^(z|c|s)hy(?=\d)/$1y/           # 師韻不分精照
     - xform/^ngiuk/njuk/                    # 疑母齶化(ngiuk->njuk)
     - xform/^ngiong/njong/                  # 疑母齶化(ngiong->njong)
     - xform/^ngi/nji/                       # 疑母齶化(ngi->nji)
+    #- derive/^nj(i|y)/ng$1/                # 日母香山
     - xform/^ngy/njy/                       # 疑母齶化(ngy->njy)
     - xform/^ngw/w/                         # 疑合脫落(ngw->w)
+    #- derive/^ngw/ng/                      # 疑合脫落(ngw->w)
     - xform/^ngun(?=\d)/wun$1/              # 疑合脫落(ngw->w)
     - xform/^kwing(?=\d)/king$1/
     - xform/^hwing(?=\d)/hing$1/
@@ -178,9 +178,10 @@ speller:
     #- derive/^(s)yu(?=\d)/$1eoy/           # 遇合三裂化(yu->eoy)：「須」讀若seoy
     #- derive/^(g|k|h)yu(?=\d)/$1eoy/       # 遇合三裂化(yu->eoy)：「巨」讀若geoy
     
-    #- derive/^(z|c)yi(?=\d)/$1eoy/         # 蟹合一(yi->eoy)：「最」讀若zeoy
-    #- derive/^(s)yi(?=\d)/$1eoy/           # 蟹合一(yi->eoy)：「碎」讀若seoy
-    #- derive/^(s)yi(?=\d)/$1yu/            # 蟹合一(yi->yu)：「碎」讀若syu
+    #- derive/^zyi(?=\d)/zeoy/                # 蟹合一(yi->eoy)：「最」讀若zeoy
+    #- derive/^cyi(?=\d)/ceoy/                # 蟹合一(yi->eoy)：「催」讀若zeoy
+    #- derive/^syi(?=\d)/seoy/               # 蟹合一(yi->eoy)：「碎」讀若seoy
+    #- ^syi(?=\d)/syu/                 # 蟹合一(yi->yu)：「碎」讀若syu
     #- derive/^(d|t|n|l)yi(?=\d)/$1yu/      # 蟹合一(yi->yu)：「對」讀若dyu
     #- derive/yi(?=\d)/eoy/                 # 蟹合一(yi->eoy)：皆讀作eoy者可用，其他關閉
     #- derive/yi(?=\d)/yu/                  # 蟹合一(yi->yu)：皆讀作yu者可用，其他關閉
@@ -215,7 +216,7 @@ speller:
     #- derive/^(z|c)r/$1/                   # 精照合流(sj->s)
     #- derive/^nj/j/                        # 日以合流(nj->j)
 
-    #FIX
+    #- derive/^ng(i|y)/j$1/                 # 疑母細音日母(ng->j)
     #- derive/^n(?!g|j)/l/                  # 泥來合流(n->l)
     #- derive/^t/h/                         # 透曉合流(t->h) 小欖部份
     - xform/^xaa(?=\d)/jaa$1/
@@ -231,10 +232,10 @@ speller:
     #- xform/ak(?=\d)/aak$1/                # ak同aak混 小欖老派
     #- derive/ai(?=\d)/aai$1/               # ai同aai混
     #- derive/ang(?=\d)/an$1/               # an同ang混 
-    
-    #韻母——增廣
-    #- derive/y(?=\d)/i$1/                  # 「雨」讀若ji
+    #- derive/yu(?=\d)/i$1/                 # 「雨」讀若ji
     #- derive/yu(n|t)(?=\d)/i$1/            # 「穴」讀若jit
+    #- derive/ing(?=\d)/in$1/               # 「並」讀若bin
+    #- derive/ik(?=\d)/it$1/                # 「辟」讀若pit
     #- derive/eng(?=\d)/en$1/               # 「餅」讀若ben
     #- derive/ek(?=\d)/et$1/                # 「劈」讀若pet
     #- derive/o(ng|k)(?=\d)/oe$1/
