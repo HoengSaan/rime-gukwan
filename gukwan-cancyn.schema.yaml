@@ -459,6 +459,7 @@ translator:
 
     - xform/xaa(?=\d)/jaa$1/
     - xform/I(?=\d)/i$1/                    # 外來語
+    
 reverse_lookup:
   tags: [ jyut6ping3, luna_pinyin, cangjie5, kunyomi, loengfan ]
   overwrite_comment: false

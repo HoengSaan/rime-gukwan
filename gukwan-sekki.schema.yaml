@@ -14,13 +14,13 @@ __include: gukwan.schema:/
 schema:
   schema_id: gukwan-sekki
   name: 菊韻石歧音
-  version: "16.6b"
+  version: "16.7b"
   author:
     - 靈帝（Hoengsaan）
   
   description: |-
     測試階段
-    本方案根據石歧話新派特徵製作，建議仔細閱讀方案竝根據自身口音調整
+    本方案根據石歧話新派特徵製作，建議仔細閱讀方案竝根據自身口音調整（備註：基本無法調整爲老派，調整爲老派音要作出大量調整）
     瞭解如何使用菊韻請閱覽readme文件，詳細請至本方案github頁：https://github.com/HoengSaan/rime-gukwan
     如有問題或建議可於以上github頁中開Issues反饋
 
@@ -378,9 +378,9 @@ speller:
     - xform/1/v/                            # 陰平
     - xform/4/vv/                           # 陽平
     - xform/2/x/                            # 陰上
-    - xform/5/xx/                           # 陽上
+    - xform/5/x/                            # 陽上
     - xform/3/q/                            # 陰去
-    - xform/6/qq/                           # 陽去
+    - xform/6/q/                            # 陽去
 
 translator:
   dictionary: gukwan
@@ -447,6 +447,9 @@ translator:
     - xform/xaa(?=\d)/jaa$1/
     - xform/I(?=\d)/i$1/                    # 外來語
 
+    - xform/5\b/2/
+    - xform/6\b/3/
+
 reverse_lookup:
   tags: [ jyut6ping3, luna_pinyin, cangjie5, kunyomi, loengfan ]
   overwrite_comment: false
@@ -499,3 +502,6 @@ reverse_lookup:
     - xform/(g|k)wo/$1o/                 # 口音補充(gwo->go)：遇o不分
     - xform/xaa(?=\d)/jaa$1/
     - xform/I(?=\d)/i$1/                    # 外來語
+    
+    - xform/5\b/2/
+    - xform/6\b/3/
