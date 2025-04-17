@@ -455,7 +455,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 
 由於本人非石歧話母語者，或闕不少字音。**警告：請勿以本輸入法作爲石歧話標準參攷。**
 
-- `gukwan-sekki.schema.yaml`：由於石歧話老派變化並不均等，菊韻難以處理。故採用新派音，標準如下：
+- `gukwan-sekki.schema.yaml`：由於石歧話老派變化並不均等，菊韻難以處理。故採用廣州化程度更深之新派音，標準如下：
   - 允許疑日母細音以`j`輸入。
   - 曉匣喻細音全面廣州化，讀`j`，即「爺」不讀`he4`讀`je4`「賢」不讀`hin4`讀`jin4`「樣」不讀`hiong3`讀`joeng3`。
   - 谿母字全面廣州化，讀`f`或者`h`，即「可」不讀`ko2`讀`ho2` 「庫」不讀`ku3`讀`hu3`「筷」不讀`kwaai3`讀`faai3`「枯」不讀`ku1`讀`hu1`。

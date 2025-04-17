@@ -12,7 +12,7 @@
 
 ---
 name: gukwan.words2
-version: "14.5b"
+version: "16.8b"
 sort: by_weight
 use_preset_vocabulary: true
 ...
@@ -72,6 +72,33 @@ W	dap1 bu6 liu6
 X	ek1 sI6
 Y	waai1
 Z	ji6 set1
+
+A	A
+B	B
+C	C
+D	D
+E	E
+F	F
+G	G
+H	H
+I	I
+J	J
+K	K
+L	L
+M	M
+N	N
+O	O
+P	P
+Q	Q
+R	R
+S	S
+T	T
+U	U
+V	V
+W	W
+X	X
+Y	Y
+Z	Z
 
 # Number
 0	ling4
