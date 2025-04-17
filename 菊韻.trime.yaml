@@ -10,7 +10,7 @@
 # Learn how to use Gukwan in the readme file, available on the project's github page.
 # Source: https://github.com/Wenti-D/Astralwelkin
 
-config_version: '20250417@3.3.3'          #日期@Trime版本
+config_version: '16.9b'
 name: 菊韻                                #方案名稱
 author: 'Windy_D <windy0deng@gmail.com>, Hoengsaan'  #作者信息
 
@@ -488,14 +488,14 @@ preset_keys:
   JapaneseDefault: {label: 'あいう', send: Eisu_toggle, select: japanese_12_key}
   #自定義鍵盤
   Nothing: {label: '擺爛', send: ''}  #當還沒想好放什麼的時候就放這個吧
-  Pigeon: {label: '123', send: Eisu_toggle, select: number}
-  Keyboard_basic_symbol: {label: '+★✓', send: Eisu_toggle, select: basic_symbol}
+  Keyboard_number: {label: '123', send: Eisu_toggle, select: number}
+  Keyboard_basic_symbol: {label: '符號', send: Eisu_toggle, select: basic_symbol}
   Extra_keyboard: {label: 'αбʃ', send: Eisu_toggle, select: Greek}
-  Keyboard_math_symbol: {label: 'Σ∫∂', send: Eisu_toggle, select: math_symbol}
+  Keyboard_math_symbol: {label: '符號', send: Eisu_toggle, select: math_symbol}
   Keyboard_Greek: {label: 'αβγ', send: Eisu_toggle, select: Greek}
-  Keyboard_Greek_symbol: {label: '+★✓', send: Eisu_toggle, select: Greek_symbol}
+  Keyboard_Greek_symbol: {label: '符號', send: Eisu_toggle, select: Greek_symbol}
   Keyboard_Cyrillic: {label: 'абг', send: Eisu_toggle, select: Cyrillic}
-  Keyboard_Cyrillic_symbol: {label: '+★✓', send: Eisu_toggle, select: Cyrillic_symbol}
+  Keyboard_Cyrillic_symbol: {label: '符號', send: Eisu_toggle, select: Cyrillic_symbol}
   Keyboard_IPA: {label: 'ɑɔə', send: Eisu_toggle, select: IPA1}
   Keyboard_Greek_Selected: {label: 'αβγ', send: '', functional: false}
   Keyboard_Cyrillic_Selected: {label: 'абг', send: '', functional: false}
@@ -558,7 +558,7 @@ preset_keys:
   IPA_tie_bar_above: {label: '◌͡◌', text: '͡', functional: false}
   IPA_tie_bar_below: {label: '◌͜◌', text: '͜', functional: false}
   Keyboard_clipboard: {label: 剪貼板, send: function, command: liquid_keyboard, option: "剪貼板"}
-  Keyboard_emoji: {label: '🙂', send: function, command: liquid_keyboard, option: ' 😀 '}
+  Keyboard_emoji: {label: 繪文字, send: function, command: liquid_keyboard, option: '繪文字'}
   Liquid_fixed_exit: {label: ' ↶ ', send: function, command: liquid_keyboard, option: "-1"}
   Liquid_fixed_backspace: {label: ' ⇦ ', repeatable: true, send: BackSpace}
   Liquid_fixed_space: {label: '  ⎵ ', repeatable: true, functional: false, send: space}
@@ -2721,7 +2721,7 @@ preset_keyboards:
     - {label: 'ㄈ', click: 'z', long_click: undo}
     - {label: 'ㄌ', click: 'x', long_click: '^_^'}
     - {label: 'ㄏ', click: 'c', long_click: cut}
-    - {label: 'ㄒ', click: 'v', long_click: copy, swipe_down: Keyboard_emoji, hint: 😀}
+    - {label: 'ㄒ', click: 'v', long_click: copy, swipe_down: Keyboard_emoji, hint: '繪文字'}
     - {label: 'ㄖ', click: 'b', long_click: paste, swipe_down: Keyboard_clipboard, hint: '剪貼板'}
     - {label: 'ㄙ', click: 'n', long_click: '&', swipe_left: "'", swipe_right: '"', hint: "'   \""}
     - {label: 'ㄩ', click: 'm', long_click: '%', swipe_left: ';', swipe_right: ':', hint: ';   :'}
@@ -2765,7 +2765,7 @@ preset_keyboards:
       - {click: 'ha', label: は, swipe_left: hi, swipe_up: hu, swipe_right: he, swipe_down: ho}
       - {click: '', label: '^_^'}
       #第三行
-      - {click: Pigeon, long_click: Theme_settings}
+      - {click: Keyboard_number, long_click: Theme_settings}
       - {click: 'ma', label: ま, swipe_left: mi, swipe_up: mu, swipe_right: me, swipe_down: mo}
       - {click: 'ya', label: や, swipe_left: 「, swipe_up: yu, swipe_right: 」, swipe_down: yo}
       - {click: 'ra', label: ら, swipe_left: ri, swipe_up: ru, swipe_right: re, swipe_down: ro}
@@ -2801,13 +2801,13 @@ preset_keyboards:
       - {click: '6', swipe_left: '<', swipe_up: '=', swipe_right: '>', hint: '< = >'}
       - {click: '', label: '^_^'}
       #第三行
-      - {click: Pigeon}
+      - {click: Keyboard_number}
       - {click: '7', swipe_left: 「, swipe_up: 」, swipe_right: ':', hint: '「 」:'}
       - {click: '8', swipe_left: 〒, swipe_up: 々, swipe_right: 〆, hint: '〒々〆'}
       - {click: '9', swipe_left: '^', swipe_up: '|', swipe_right: '\', hint: '^  |  \'}
       - {click: space}
       #第四行
-      - {click: Pigeon, long_click: Theme_settings}
+      - {click: Keyboard_number, long_click: Theme_settings}
       - {click: JapaneseNumBracket, swipe_left: ')', swipe_up: '[', swipe_right: ']'}
       - {click: '0', swipe_left: 〜, swipe_up: …, hint: '〜…'}
       - {click: JapaneseNumComma, swipe_left: '.', swipe_up: '-', swipe_right: '/'}
@@ -2824,7 +2824,7 @@ preset_keyboards:
     key_symbol_offset_y: -1.6 #按鍵上方註釋偏移（下正上負）
     keys:
       #第一行
-      - {click: '=', swipe_up: '+', swipe_down: '-', swipe_left: '*', swipe_right: '/'}
+      - {click: '=', swipe_up: '+', swipe_down: '-', swipe_left: '*', swipe_right: '/', hint: '四則'}
       - {click: '1'}
       - {click: '2'}
       - {click: '3'}
@@ -2893,10 +2893,11 @@ preset_keyboards:
       - {click: BackSpace, width: 16, key_text_offset_y: 0}
       #第四行
       - {click: Keyboard_default, width: 12.5, key_text_offset_y: 0}
-      - {click: Pigeon, width: 12.5, key_text_offset_y: 0}
+      - {click: Keyboard_number, width: 12.5, key_text_offset_y: 0}
       - {click: '‹', long_click: '«'}
-      - {click: space, width: 39, swipe_left: Left, swipe_right: Right}
+      - {click: space, width: 27, swipe_left: Left, swipe_right: Right}
       - {click: '›', long_click: '»'}
+      - {click: '.', long_click: '…'}
       - {click: Return, width: 16, key_text_size: 24, key_text_offset_y: -2, key_back_color: enter_bg_color, key_text_color: enter_text_color, hilited_key_back_color: enter_pressed_bg_color, hilited_key_text_color: enter_pressed_text_color}
 
   math_symbol:
@@ -2944,10 +2945,11 @@ preset_keyboards:
       - {click: BackSpace, width: 16, key_text_offset_y: 0}
       #第四行
       - {click: Keyboard_default, width: 12.5, key_text_offset_y: 0}
-      - {click: Pigeon, width: 12.5, key_text_offset_y: 0}
+      - {click: Keyboard_number, width: 12.5, key_text_offset_y: 0}
       - {click: '≪', key_text_size: 16}
-      - {click: space, width: 39, swipe_left: Left, swipe_right: Right}
+      - {click: space, width: 27, swipe_left: Left, swipe_right: Right}
       - {click: '≫', key_text_size: 16}
+      - {click: '.', long_click: '…'}
       - {click: Return, width: 16, key_text_size: 24, key_text_offset_y: -2, key_back_color: enter_bg_color, key_text_color: enter_text_color, hilited_key_back_color: enter_pressed_bg_color, hilited_key_text_color: enter_pressed_text_color}
 
   Greek:
@@ -3198,8 +3200,8 @@ preset_keyboards:
       - {click: 'b', long_click: 'b̪v'}
       - {click: 't', long_click: 'tɹ̝̊', swipe_down: 't̠ɹ̠̊˔', hint: 't̠ɹ̠̊˔'}
       - {click: 'd', long_click: 'dɹ̝', swipe_down: 'd̠ɹ̠˔', hint: 'd̠ɹ̠˔'}
-      - {click: 'ʈ'}
-      - {click: 'ɖ'}
+      - {click: 'ʈ', swipe_down: 'ȶ', hint: 'ȶ'}
+      - {click: 'ɖ', swipe_down: 'ȡ', hint: 'ȡ'}
       - {click: 'c', long_click: 'cç'}
       - {click: 'ɟ', long_click: 'ɟʝ'}
       - {click: 'k', long_click: 'kʟ̝̊'}
@@ -3211,10 +3213,10 @@ preset_keyboards:
       - {click: 'ɱ'}
       - {click: 'ʙ'}
       - {click: 'n'}
-      - {click: 'r', long_click: 'ɾ ', swipe_down: 'ɿ', hint: 'ɿ'}
-      - {click: 'ɳ'}
+      - {click: 'r', long_click: 'ɾ'}
+      - {click: 'ɳ', swipe_down: 'ȵ', hint: 'ȵ'}
       - {click: 'ɽ'}
-      - {click: 'ɲ', long_click: 'ȵ'}
+      - {click: 'ɲ'}
       - {click: 'ŋ'}
       - {click: 'ɴ'}
       - {click: 'ʀ'}
@@ -3225,9 +3227,9 @@ preset_keyboards:
       - {click: 'θ', long_click: 't̪θ'}
       - {click: 'ɬ', long_click: 'tɬ'}
       - {click: 's', long_click: 'ts'}
-      - {click: 'ʃ', long_click: 'tʃ', swipe_left: 'ʅ', swipe_right: 'ʆ', hint: 'ʅ   ʆ'}
-      - {click: 'ʂ', long_click: 'ʈʂ'}
-      - {click: 'ç', long_click: 'ɕ', swipe_down: 'tɕ', hint: 'tɕ'}
+      - {click: 'ʃ', long_click: 'tʃ'}
+      - {click: 'ʂ', long_click: 'ʈʂ', swipe_down: 'ɕ', hint: 'ɕ'}
+      - {click: 'ç', long_click: 'tɕ'}
       - {click: 'x', long_click: 'kx'}
       - {click: 'χ'}
       - {click: 'ħ', long_click: 'ʜ'}
@@ -3238,9 +3240,9 @@ preset_keyboards:
       - {click: 'ð', long_click: 'd̪ð'}
       - {click: 'ɮ', long_click: 'dɮ'}
       - {click: 'z', long_click: 'dz'}
-      - {click: 'ʒ', long_click: 'dʒ', swipe_left: 'ʓ', swipe_right: 'dʓ', hint: ' ʓ   dʓ'}
-      - {click: 'ʐ', long_click: 'ɖʐ'}
-      - {click: 'ʝ', long_click: 'ʑ', swipe_down: 'dʑ', hint: 'dʑ'}
+      - {click: 'ʒ', long_click: 'dʒ'}
+      - {click: 'ʐ', long_click: 'ɖʐ', swipe_down: 'ʑ', hint: 'ʑ'}
+      - {click: 'ʝ', swipe_down: 'dʑ', hint: 'dʑ'}
       - {click: 'ɣ', long_click: 'ɡɣ'}
       - {click: 'ʁ'}
       - {click: 'ʕ', long_click: 'ʢ'}
@@ -3252,7 +3254,7 @@ preset_keyboards:
       - {click: 'ɹ', long_click: 'ɺ'}
       - {click: 'l', long_click: 'ɫ'}
       - {click: 'ɻ'}
-      - {click: 'ɭ', long_click: 'ʈɭ̊˔'}
+      - {click: 'ɭ', long_click: 'ʈɭ̊˔', swipe_down: 'ȴ', hint: 'ȴ'}
       - {click: 'ɥ'}
       - {click: 'j'}
       - {click: 'ʎ', long_click: 'ȴ'}
@@ -3288,7 +3290,10 @@ preset_keyboards:
       #第一行
       - {click: 'i'}
       - {click: 'y'}
-      - {width: *ipa_3_key_width}
+      - {width: *hor_gap}
+      - {click: 'ɿ', long_click: 'ʅ'}
+      - {click: 'ʮ', long_click: 'ʯ'}
+      - {width: *hor_gap}
       - {click: 'ɨ'}
       - {click: 'ʉ'}
       - {width: *ipa_2_key_width}
@@ -3304,7 +3309,7 @@ preset_keyboards:
       - {click: 'ʊ̈'}
       - {width: *ipa_key_width}
       - {click: 'ɯ̽'}
-      - {click: 'ʊ'}
+      - {click: 'ʊ', long_click: 'ɷ'}
       - {width: *ipa_2_key_width}
       #第三行
       - {width: *ipa_key_width}
@@ -3321,7 +3326,7 @@ preset_keyboards:
       - {width: *ipa_key_width}
       #第四行
       - {width: *ipa_key_width}
-      - {click: 'ɛ'}
+      - {click: 'ɛ', long_click: 'ᴇ'}
       - {click: 'œ'}
       - {width: *ipa_key_width}
       - {click: 'ɜ', long_click: 'ɝ'}
@@ -3339,7 +3344,7 @@ preset_keyboards:
       - {click: 'a'}
       - {click: 'ɶ'}
       - {width: *ipa_key_width}
-      - {click: 'ä'}
+      - {click: 'ä', long_click: 'ᴀ'}
       - {click: 'ɒ̈'}
       - {width: *ipa_key_width}
       - {click: 'ɑ'}
