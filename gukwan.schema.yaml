@@ -57,7 +57,7 @@ switches:
     states: [ 。，, ．， ]
   - name: emoji_cantonese_suggestion
     reset: 1
-    states: [ 無✖, 有🔴 ]
+    states: [ 無繪, 有繪 ]
  
 engine:
   processors:
