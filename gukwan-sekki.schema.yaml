@@ -43,8 +43,6 @@ speller:
   alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA
   delimiter: " '"
   algebra:
-    #範例
-    
     #聲母
     #- derive/^ng([aeiouy])/$1/              # 疑母脫落(ng->0)
     #- derive/^([aeiou])/ng$1/              # 疑影不分(ng==0)

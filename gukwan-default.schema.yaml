@@ -39,10 +39,6 @@ speller:
   alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA
   delimiter: " '"
   algebra:
-    #範例
-    #建議參攷範例自行調整，表內無敬請自行增添，部分字或要用個人字庫。
-    #刪除行頭井號啓用轉換，行頭鍵入井號停止轉換。
-    
     #聲母
     #- derive/^ng([aeiouy])/$1/              # 疑母脫落(ng->0)
     #- derive/^([aeiou])/ng$1/              # 疑影不分(ng==0)
