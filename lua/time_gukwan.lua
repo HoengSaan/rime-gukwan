@@ -2100,7 +2100,7 @@ local function translator(input, seg, env)
     local context = engine.context
 
     -- **日期候选项**
-    if (input == "/rk" or input == "vrk" or input == "/date") then
+    if (input == "/rk" or input == "vrk" or input == "/jk" or input == "vjk" or input == "/date") then
         local num_year = os.date("%j/") .. IsLeap(os.date("%Y"))
         local date_variants = {
             {os.date("%Y年%m月%d日"), num_year},
@@ -2191,7 +2191,7 @@ local function translator(input, seg, env)
             end
         end
     -- **日期+时间**
-    elseif (input == "/rs" or input == "vrs" or input == "/datetime") then
+    elseif (input == "/rs" or input == "vrs" or input == "/js" or input == "vjs" or input == "/datetime") then
         local current_time = os.time()
         local time_variants = {
             {os.date('%Y-%m-%d %H:%M:%S', current_time), "〔日時〕"},
@@ -2200,7 +2200,7 @@ local function translator(input, seg, env)
         }
         generate_candidates("time", seg, time_variants)
     -- **节日查询**
-    elseif (input == "/zr" or input == "vzr" or input == "/festival") then
+    elseif (input == "/zr" or input == "vzr" or input == "/zj" or input == "vzj" or input == "/festival") then
         local upcoming_holidays = get_upcoming_holidays()  -- 获取所有即将到来的节日
         local candidates = {}
         -- 格式化输出节日信息

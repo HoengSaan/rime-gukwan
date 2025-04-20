@@ -14,7 +14,7 @@ __include: gukwan.schema:/
 schema:
   schema_id: gukwan-siulaam
   name: 菊韻小欖音
-  version: "17.0b"
+  version: "17.1b"
   author:
     - 靈帝（Hoengsaan）
   
@@ -34,10 +34,6 @@ schema:
     - kaomoji
     - kikwin
     - gukwan-melt-eng
-
-patch:
-  engine/translator/@15:
-    lua_translator@*time_gukwan_modern
 
 speller:
   alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA
