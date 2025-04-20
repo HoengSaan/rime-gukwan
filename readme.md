@@ -31,19 +31,18 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 
 菊韻可支持多地方言。已爲各種方言口音預設大量轉換規則同模糊音，方便定製。[具體異同](https://github.com/HoengSaan/rime-gukwan#%E6%96%B9%E6%A1%88)。
 
-- 順德系（中山）
-  - `gukwan-siulaam`（<ruby>小<rp>(</rp><rt>siu2</rt><rp>)</rp>欖<rp>(</rp><rt>laam5</rt><rp>)</rp></ruby>音）：以小欖話比較有代表性特徵製作，兼容新派發音，適合大多數小欖人。
-    - `gukwan-siulaam-bofung`（<ruby>小<rp>(</rp><rt>siu2</rt><rp>)</rp>欖<rp>(</rp><rt>laam5</rt><rp>)</rp>寶<rp>(</rp><rt>bo2</rt><rp>)</rp>豐<rp>(</rp><rt>fung1</rt><rp>)</rp></ruby>音）：小欖鎮寶豐村，兼容新派發音。
-  - `gukwan-waanglaan`（<ruby>橫<rp>(</rp><rt>waang4</rt><rp>)</rp>欄<rp>(</rp><rt>laan4</rt><rp>)</rp></ruby>音）：以橫欄鎮比較有代表性特徵製作。
-  - `gukwan-naamtau`【南頭鎮】：
-    - `gukwan-naamtau-naamsing`（<ruby>南<rp>(</rp><rt>naam4</rt><rp>)</rp></ruby><ruby>頭<rp>(</rp><rt>tau4</rt><rp>)</rp>南<rp>(</rp><rt>naam4</rt><rp>)</rp>城<rp>(</rp><rt>sing4</rt><rp>)</rp></ruby>音）：南頭鎮南城村
-    - `gukwan-naamtau-paaihom`（<ruby>南<rp>(</rp><rt>naam4</rt><rp>)</rp></ruby><ruby>頭<rp>(</rp><rt>tau4</rt><rp>)</rp>排<rp>(</rp><rt>naam4</rt><rp>)</rp>坎<rp>(</rp><rt>sing4</rt><rp>)</rp></ruby>音）：南頭鎮排坎村
-- 順德系（順德）
+- 順德系——中山市
+  - `gukwan-siulaam`【<ruby>小<rp>(</rp><rt>siu2</rt><rp>)</rp>欖<rp>(</rp><rt>laam5</rt><rp>)</rp></ruby>鎮】：以小欖話比較有代表性特徵製作，兼容新派發音，適合大多數小欖人。
+    - `gukwan-siulaam-bofung`（小欖<ruby>寶<rp>(</rp><rt>bo2</rt><rp>)</rp>豐<rp>(</rp><rt>fung1</rt><rp>)</rp></ruby>音）：小欖鎮寶豐村，兼容新派發音。
+  - `gukwan-waanglaan`【<ruby>橫<rp>(</rp><rt>waang4</rt><rp>)</rp>欄<rp>(</rp><rt>laan4</rt><rp>)</rp></ruby>鎮】：以橫欄鎮比較有代表性特徵製作。
+  - `gukwan-naamtau`【<ruby>南<rp>(</rp><rt>naam4</rt><rp>)</rp></ruby><ruby>頭<rp>(</rp><rt>tau4</rt><rp>)</rp></ruby>鎮】：
+    - `gukwan-naamtau-naamsing`（南頭<ruby>南<rp>(</rp><rt>naam4</rt><rp>)</rp>城<rp>(</rp><rt>sing4</rt><rp>)</rp></ruby>音）：南頭鎮南城村
+    - `gukwan-naamtau-paaihom`（南頭<ruby>排<rp>(</rp><rt>naam4</rt><rp>)</rp>坎<rp>(</rp><rt>sing4</rt><rp>)</rp></ruby>音）：南頭鎮排坎村
+- 順德系——順德市
   - `gukwan-daailoeng`（<ruby>大<rp>(</rp><rt>daai6</rt><rp>)</rp>良<rp>(</rp><rt>loeng1</rt><rp>)</rp></ruby>音）：以大良話比較有代表性特徵製作。
   - `gukwan-cancyn`（<ruby>陳<rp>(</rp><rt>can4</rt><rp>)</rp>村<rp>(</rp><rt>cyun1</rt><rp>)</rp></ruby>音）：以大良話比較有代表性特徵製作。
 - 香山系
   - `gukwan-sekki`（<ruby>石<rp>(</rp><rt>sek6</rt><rp>)</rp>歧<rp>(</rp><rt>ki4</rt><rp>)</rp></ruby>音）：以石歧話新派音製作。
-- 蜑家話
 - 廣州話
   - `jyut6ping3-gw`：完全使用`rime-cantonese`字表詞庫，增添菊韻所有功能以改善打字體驗
 
@@ -112,19 +111,17 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 
 ```yaml
     - derive/^kw/q/                         # 簡拼(kw->q)
-    #- derive/^gw/q/                        # 簡拼(gw->q)
-    #- derive/^kw/x/                        # 簡拼(kw->q)
     - derive/^gw/x/                         # 簡拼(gw->q)
     #- derive/^nj/r/                         # 簡拼(nj->r)
     - derive/^ng([aeiouy])/r$1/             # 簡拼(ng->r)
     - derive/([aeiouy])ng/$1r/              # 簡拼(ng->r)
 
     - derive/aa(?=\d)/a/                    # 簡拼(aa->a)【毋須關閉】
-    - derive/aa(i|u|m|n|ng|p|t|k|r)/r$1/    # 簡拼(aa->r)
+    - derive/aa([iumnptkr]|ng)/r$1/         # 簡拼(aa->r)
     - derive/^jy?([aeiou])/y$1/             # 簡拼(jy->y)【毋須關閉】
     - derive/yu(?!ng|k)/y/                  # 簡拼(yu->y)【毋須關閉】
     - derive/oe(ng|k|r)/e$1/                # 簡拼(oe->e)
-    - derive/eo(n|t|i|y)/u$1/               # 簡拼(eo->u)
+    - derive/eo([ntiy])/u$1/               # 簡拼(eo->u)
     - derive/oo(i|y)/u$1/                   # 簡拼(oo->u)
 ```
 
@@ -214,10 +211,6 @@ This is a schema based on [Rime Input Method](https://rime.im/).
    3. Linux：[ibus](https://github.com/ibus/ibus)→[ibus-rime](https://github.com/rime/ibus-rime)｜[fcitx5](https://github.com/fcitx/fcitx5)→[fcitx5-Rime](https://github.com/fcitx/fcitx5-rime)
    4. Android：[同文輸入法](https://github.com/osfans/trime)｜[fcitx5-Android](https://github.com/fcitx5-android/fcitx5-android)→[fcitx5-Android-Rime](https://github.com/fcitx5-android/fcitx5-android/blob/master/plugin/rime)
 
-> [!NOTE]
->
-> Linux版本必須安裝librime-lua否則部分功能無法使用
-
 2. 安裝以下倉庫
    1. **rime-gukwan**（**本方案**）
    2. [rime-cantonese](https://github.com/rime/rime-cantonese)（**必選**，用於廣州話反查、八股文、部份詞庫）
@@ -225,38 +218,46 @@ This is a schema based on [Rime Input Method](https://rime.im/).
    4. [rime-loengfan](https://github.com/CanCLID/rime-loengfan)（**可選**，用於廣州話拆字反查）
    5. [rime-luna-pinyin](https://github.com/rime/rime-luna-pinyin)（**可選**，若閣下已刪除則須重新安裝，否則無法使用官話反查）
    6. [rime-cangjie](https://github.com/rime/rime-cangjie)（**可選**，若閣下已刪除則須重新安裝，否則無法使用倉頡反查）
-   7. [rime-kikwin](https://github.com/Hoengsaan/rime-kikwin/)（**可選**，用於日文半混打）
-
-> [!WARNING]
->
-> 由於`rime-kikwin`詞庫文件巨大，移動設備或低性能電腦不建議使用，可能導致無法部署（即無法正常使用）
+   7. [rime-kikwin](https://github.com/Hoengsaan/rime-kikwin/)（**可選**，用於日文半混打，低性能設備建議關閉，只使用`rime-kanas`同`rime-kaomoji`）
 
 3. 設定方案，重新部署
 
 ## 定製
 
-定製詳情請參攷[如何定製菊韻 – なかやま園](https://zonsan.fc2.page/?p=1569)。
-
 部份用家可根據自身情況添加以下字音到用戶字庫。
 
-## 拼音
+### 必讀參攷文章
 
-拼音方案基於[擴展粵拼](https://jyutjam.org/j++/)，現代音同[粵拼](https://jyutping.org/)無區別，直接使用即可。關於古代音請參攷[菊韻拼音表 – なかやま園](https://zonsan.fc2.page/?p=1583)。
+定製可參攷[如何定製菊韻 – なかやま園](https://zonsan.fc2.page/?p=1569)，但當真要定製中州韻方案，<b style="color:red;">懇請閣下閱讀以下文章</b>：
+
+- [中州韻維基 - SpellingAlgebra](https://github.com/rime/home/wiki/SpellingAlgebra)
+- [amzxyz - Patch方法论](https://github.com/amzxyz/rime_wanxiang_pro/blob/main/custom/patch%E6%96%B9%E6%B3%95%E8%AE%BA.md)
+- [oh-my-rime - 配置教程](https://www.mintimate.cc/zh/guide/)
+
+## 拼音
 
 <img src="pic\gamjam1.png" style="zoom:50%;" />
 
 <img src="pic\gamjam2.png"/>
 
+菊韻拼音方案基於[擴展粵拼](https://jyutjam.org/j++/)，現代音可直接以[粵拼](https://jyutping.org/)輸入。（發音竝不等同於粵拼所表示發音，只是同音位，有部份方音有粵拼無法表達之音位，故需使用擴展粵拼）
+
 同今時大多數粵拼輸入法一樣，可以輸入聲調以加快蒐字速度。
 
-調值僅供參攷，部份方言僅有9個或8個聲調（含特殊調）。2*並非廣州話「新入」只見於入聲字變調，如「子」白讀zaai2*就同本身陰上調值（24）不一。此調亦用作表達過去、完成之文法意味。超高陰平只出現於陰平連續變調。
+調值僅供參攷，部份方言僅有9個或8個聲調（含特殊調），香山系方言只有6個甚至更少。
 
-詳細請參攷[小欖話・沙田方言特徵 – なかやま園](https://zonsan.fc2.page/?p=1580)。
+> [!NOTE]
+>
+> 【以下僅適用於部份中山市順德系方言】
+>
+> 2\*並不如廣州話「新入」，只見於入聲字變調，如「子」白讀`zaai2*`就同陰上調值（通常爲24，而特殊調多爲35）不一。此調亦用作表達過去、完成之文法意味。超高陰平只出現於陰平連續變調。
+
+古代音請參攷[菊韻拼音表 – なかやま園](https://zonsan.fc2.page/?p=1583)，其他可參攷[順德系方言特徵 – なかやま園](https://zonsan.fc2.page/?p=1580)。
 
 
 ## 特徵
 
-一般用家請無視灰字。恕此處不能盡述，詳細請參攷[小欖話・沙田方言特徵 – なかやま園](https://zonsan.fc2.page/?p=1580)。
+一般用家請無視灰字。恕此處不能盡述，詳細請參攷[順德系方言特徵 – なかやま園](https://zonsan.fc2.page/?p=1580)。
 
 其他方言未完成，請稍等。[凡例](https://github.com/HoengSaan/rime-gukwan/blob/main/pic/faanlai.png)
 
@@ -269,9 +270,12 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 > `xxx.xxx-ps.scheme.yaml`爲寬式音標版，寬式音標並不能完全代表實際發音。所有寬式音標版存儲在`/ps`。如需使用請自行將其移出。
 >
 > 以下方案並不能完全代表當地發音，請根據自身實際情況調整。
+>
+> **由於本人所寫轉換規則缺陷或導致拼音提示不準確，敬請見諒。**
 
-- `gukwan.schema.yaml`：調試用・自用（**請勿刪除，刪除後無法使用**）
-- `jyut6ping3-gw.schema.yaml`：以菊韻配置調用`rime-cantonese`字表詞庫，支持菊韻所有功能。默認開啓三拼。
+- `gukwan.schema.yaml`：基底文件（**請勿刪除，刪除後所有方案都無法使用**）
+- `jyut6ping3-gw.schema.yaml`：三拼版`rime-cantonese`（廣州話），支持菊韻所有功能。
+- `jyut6ping3-gw-cp.schema.yaml`：關閉三拼功能，支持菊韻除三拼以外一切功能。
 
 ### 白讀字
 
@@ -343,7 +347,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
       - 精組（除清母、心母）多數人已裂化讀`eoy`，如「最」`zeoy3`「罪」`zeoy6`等，故不納入。
     - 遇攝合口一等字裂化同廣州一樣爲`ou`：「度」`dou6`「無」`mou4`「做（作）」`zou6`「粗」`cou1`等。
     - 曉匣喻細音字讀`h`而非`j`，如「爺」`he4`「賢」`hin4`「雨」`hy5`「藥」`hoek6`。
-      - 此類字往往越接近現代，就會有越多字跟廣州一樣讀`j`。例如小欖就基本剩低極少數白讀字。如已不能分辨者，請將105行井號刪除，竝將105~108行裏邊個`xform`改成`derive`。
+      - 此類字往往越接近現代，就會有越多字跟廣州一樣讀`j`。例如小欖就基本剩低極少數白讀字。如已不能分辨者，請將55行井號刪除，竝將55~58行裏邊個`xform`改成`derive`。
     - 廣州話聲母`w`同韻腹`u/o`結合者，大良聲母則爲`f`，如「黃」`foeng4`「換」`fun6`「會」`fui6`「活」`fut6`。
     - 「花」「輝」「快」「筷」等少部分曉母合口字讀`w-`
     - 「蠅」「業」「惹」「仰」等少部分細音字讀`h-`
@@ -363,7 +367,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
       - 精組（除清母、心母）多數人已裂化讀`eoy`，如「最」`zeoy3`「罪」`zeoy6`等，故不納入。
     - 遇攝合口一等字裂化同廣州一樣爲`ou`：「度」`dou6`「無」`mou4`「做（作）」`zou6`「粗」`cou1`等。
     - 曉匣喻細音字讀`h`而非`j`，如「爺」`he4`「賢」`hin4`「雨」`hy5`「藥」`hoek6`。
-      - 此類字往往越接近現代，就會有越多字跟廣州一樣讀`j`。例如小欖就基本剩低極少數白讀字。如已不能分辨者，請將105行井號刪除，竝將105~108行裏邊個`xform`改成`derive`。
+      - 此類字往往越接近現代，就會有越多字跟廣州一樣讀`j`。例如小欖就基本剩低極少數白讀字。如已不能分辨者，請將55行井號刪除，竝將55~58行裏邊個`xform`改成`derive`。
     - 廣州話聲母`w`同韻腹`u/o`結合者，陳村聲母則爲`f`，如「黃」`foeng4`「換」`fun6`「會」`fui6`「活」`fut6`。
     - 「花」「輝」「快」「筷」等少部分曉母合口字讀`w-`
     - 「蠅」「業」「惹」「仰」等少部分細音字讀`h-`
@@ -378,23 +382,24 @@ This is a schema based on [Rime Input Method](https://rime.im/).
     - ong/ok歸oeng/oek，即「江」「薑」不分，皆讀`goeng1`。實際打字兩者皆可。
       - 橫東方面，兩個脣化聲母遇oeng/oek即展脣化。故「光」「江」「薑」不分，皆讀`goeng1`（「黃」則讀`woeng4`，不讀作`oeng4`）。
       - /oe/實際發音爲[yø]，如有需要可自行將方案調整爲yo或yoe以貼合實際發音。
+        - 如需修改鍵值，需同時修改三拼規矩。
     - 蟹攝合口一等字同廣州一樣爲`eoy`，並不讀作`yu`。
     - 遇攝合口一等字裂化同廣州一樣爲`ou`：「度」`dou6`「無」`mou4`「做（作）」`zou6`「粗」`cou1`等。
-    - 《沙田方言》中，效攝一等記作`o`，但《中山方言誌》全部紀錄點都爲`ou`。此處採用《中山方言誌》記錄，請根據實際情況自行調整。（如需改請刪除146行、427行、503行井號）
+    - 《沙田方言》中，效攝一等記作`o`，但《中山方言誌》全部紀錄點都爲`ou`。此處採用《中山方言誌》記錄，請根據實際情況自行調整。（如需改請刪除95行、359行井號）
     - 「ooi音」，來自於蟹攝三等合口字同止攝合口銳音，橫欄仍保持其對`eoy`同`oi`對立。其中以六沙最爲完整。即「趣」`ceoy3`「菜」`coi3`「脆」`cooi3`不同音。
-      - 其他方言點之中，蟹攝三等合口字讀`eoy`而非`ooi`。（如需改請在152行、429行、505行添加井號，竝刪除153行、430行、506行井號）
+      - 其他方言點之中，蟹攝三等合口字讀`eoy`而非`ooi`。（如需改請在99行、361行添加井號，竝刪除100行、362行井號）
       - /ooi/實際發音爲[oø]，如有需要可自行將方案調整爲`ooy`以貼合實際發音。
       - /eoy/實際發音爲[øy]。
       - 《沙田方言》並無記載此對立。
     - 曉匣喻細音字讀`h`而非`j`，如「爺」`he4`「賢」`hin4`「雨」`hy5`「藥」`hoek6`。
-      - 此類字往往越接近現代，就會有越多字跟廣州一樣讀`j`。例如小欖就基本剩低極少數白讀字。如已不能分辨者，請將105行井號刪除，竝將105~108行裏邊個`xform`改成`derive`。
+      - 此類字往往越接近現代，就會有越多字跟廣州一樣讀`j`。例如小欖就基本剩低極少數白讀字。如已不能分辨者，請將55行井號刪除，竝將55~58行裏邊個`xform`改成`derive`。
     - 廣州話聲母`w`同韻腹`u/o`結合者，橫欄聲母則爲`f`，如「黃」`foeng4`「換」`fun6`「會」`fui6`「活」`fut6`。
 
 #### 南頭
 
 - `gukwan-naamtau-naamsing.schema.yaml`：南頭南城音
   - 本方案根據《沙田方言》製作。下爲重要特徵：
-    - ong/ok歸oeng/oek，而兩個脣化聲母遇oeng/oek即展脣化，故「光」「江」「薑」不分，皆讀`goeng1`（「黃」則讀`woeng4`，不讀作`oeng4`）。實際打字兩者皆可。
+    - ong/ok歸oeng/oek，而兩個脣化聲母遇oeng/oek即展脣化，故「光」「江」「薑」不分，皆讀`goeng1`（注意：「黃」仍讀`woeng4`，不讀作`oeng4`）。實際打字兩者皆可。
     - 蟹攝合口一等字，廣州話讀`eoy`者，南城音有部份讀作作`yu`：
       - 端組同來母讀`yu`，如「對」`dy3`「腿」`ty2`「堆」`dy1`「雷」`sy3`等。
       - 精組多數人則裂化讀`eoy`，如「最」`zeoy3`「罪」`zeoy6`「催」`ceoy1`等。
@@ -409,11 +414,11 @@ This is a schema based on [Rime Input Method](https://rime.im/).
     - 少部分送氣字無氣化
   - 其他由於並無資料證明，僅爲猜測：
     - 曉匣喻細音字讀`h`而非`j`，如「爺」`he4`「賢」`hin4`「雨」`hy5`「藥」`hoek6`。
-      - 此類字往往越接近現代，就會有越多字跟廣州一樣讀`j`。例如小欖就基本剩低極少數白讀字。如已不能分辨者，請將105行井號刪除，竝將105~108行裏邊個`xform`改成`derive`。
+      - 此類字往往越接近現代，就會有越多字跟廣州一樣讀`j`。例如小欖就基本剩低極少數白讀字。如已不能分辨者，請將55行井號刪除，竝將55~58行裏邊個`xform`改成`derive`。
 
 ### 香山系方言
 
-香山系方言今時勢微，主要分佈在石岐鎮（今石歧街道）、南區（環城）、東區、張家邊（今中山港街道），石歧周邊地區亦有分佈，主要分佈在三鄉。中山以外，珠海部份地區，如唐家、金<ruby>鼎<rp>(</rp><rt>deng2</rt><rp>)</rp></ruby>、前山、南屏亦有分佈。澳門曾經亦是講香山系方言，但歷史因素，今時絕大多數人都操廣州話。
+香山系方言今時勢微，主要分佈在石岐鎮（今石歧街道）、南區（環城）、東區、張家邊（今中山港街道），石歧周邊地區亦有分佈。中山以外，珠海部份地區，如唐家、金<ruby>鼎<rp>(</rp><rt>deng2</rt><rp>)</rp></ruby>、前山、南屏亦有分佈。澳門曾經亦是講香山系方言，由於歷史因素，今時絕大多數人都操廣州話。
 
 高然將一部份方音（主要爲三鄉同珠海部份地區）再細分爲下方話。
 
@@ -467,7 +472,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 
 #### 石歧
 
-由於本人非石歧話母語者，或闕不少字音。**警告：請勿以本輸入法作爲石歧話標準參攷。**
+由於本人非石歧話母語者，或闕不少字音。<b style="color:red;">警告：請勿以本輸入法作爲石歧話標準參攷。</b>
 
 - `gukwan-sekki.schema.yaml`：由於石歧話老派變化並不均等，菊韻難以處理。故採用廣州化程度更深之新派音，標準如下：
   - 允許疑日母細音以`j`輸入。
@@ -497,7 +502,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 
 ### 字詞
 
-`gukwan.dict.yaml`用於調用字表詞庫，默認亦調用rime-cantonese部份詞庫同粵語八股文。位置爲`/gw_dicts`。`gukwan-alt.dict.yaml`同`gukwan-alt-asp.dict.yaml`特供部份方言使用。
+`gukwan.dict.yaml`用於調用字表詞庫，默認亦調用rime-cantonese部份詞庫同粵語八股文。位置爲`/gw_dicts`。`gukwan-alt.dict.yaml`・`gukwan-asp.dict.yaml`・`gukwan-alt-asp.dict.yaml`爲部份方言專用。
 
 - 字庫
   - `gukwan.chars.dict.yaml`：廣韻字表
@@ -519,10 +524,13 @@ This is a schema based on [Rime Input Method](https://rime.im/).
   - `gukwan.kwongtung.dict.yaml`：廣東地名（村級）
     - 來源爲[adyliu/china_area: 2024年中国全国5级行政区划（省、市、县、镇、村）](https://github.com/adyliu/china_area)，隨源文件以[GPL 3.0許可](https://www.gnu.org/licenses/gpl-3.0.en.html)發佈。已繁化。
   - `gukwan.macau.dict.yaml`：澳門地名
+    - 自製，澳門地名街名政府部門名，基於WIKIPEDIA。
 
 > [!NOTE]
 >
 > `gukwan-extended.dict.yaml`用於調用各種擴展詞庫，以增強輸入體驗。下載並放置於正確位置方可使用，不安裝直接調用將會導致輸入法不能正常使用。故默認情況下將不調用。
+>
+> 默認不調用方言字表（`char3.dict`・`char4.dict`），需手動設置。
 
 > [!TIP]
 >
@@ -540,15 +548,17 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 
 本方案所有LUA腳本均有參攷[iDvel/rime-ice](https://github.com/iDvel/rime-ice)及相關文件，相關文件根據源文件許可發佈。
 
-- unicode.lua：UNICODE碼直接輸入字符，來自[shewer/librime-lua-script](https://github.com/shewer/librime-lua-script/tree/main)，隨源文件以[MIT許可](https://mit-license.org/)發佈。
-- lunar.lua：是日農曆，新曆轉舊歷，來自[boomker/rime-fast-xhup](https://github.com/boomker/rime-fast-xhup)，隨源文件以[LGPL 3.0許可](https://www.gnu.org/licenses/lgpl-3.0.en.html)發佈。
-- calc_translator.lua：計數機，來自[ChaosAlphard](https://github.com/ChaosAlphard)之PR。隨源文件以[GPL 3.0許可](https://www.gnu.org/licenses/gpl-3.0.en.html)發佈。
-- autocap_filter.lua：自動大寫英文詞彙，作者爲@abcdefg233同@Mirtle，來自[iDvel/rime-ice](https://github.com/iDvel/rime-ice)。隨源文件以[GPL 3.0許可](https://www.gnu.org/licenses/gpl-3.0.en.html)發佈。
+- `unicode.lua`：UNICODE碼直接輸入字符，來自[shewer/librime-lua-script](https://github.com/shewer/librime-lua-script/tree/main)，隨源文件以[MIT許可](https://mit-license.org/)發佈。
+- `lunar.lua`：是日農曆，新曆轉舊歷，來自[boomker/rime-fast-xhup](https://github.com/boomker/rime-fast-xhup)，隨源文件以[LGPL 3.0許可](https://www.gnu.org/licenses/lgpl-3.0.en.html)發佈。
+- `calc_translator.lua`：計數機，來自[ChaosAlphard](https://github.com/ChaosAlphard)之PR。隨源文件以[GPL 3.0許可](https://www.gnu.org/licenses/gpl-3.0.en.html)發佈。
+- `autocap_filter.lua`：自動大寫英文詞彙，作者爲@abcdefg233同@Mirtle，來自[iDvel/rime-ice](https://github.com/iDvel/rime-ice)。隨源文件以[GPL 3.0許可](https://www.gnu.org/licenses/gpl-3.0.en.html)發佈。
+- `en_spacer.lua`：優化英文輸入體驗（自動空格），來自[iDvel/rime-ice](https://github.com/iDvel/rime-ice)。隨源文件以[GPL 3.0許可](https://www.gnu.org/licenses/gpl-3.0.en.html)發佈。
 
 以下腳本繁化並增添小小功能。爲避免文件被覆蓋，故改名。
 
 - number_gukwan.lua：以阿拉伯數字輸入轉換漢語數字，來自[yanhuacuo/98wubi-tables](https://github.com/yanhuacuo/98wubi-tables)。增加轉換蘇州碼子功能。增加直接轉換功能。由於源文件採取[Unlicense許可](https://unlicense.org/)，本文件亦不設限。
 - time_gukwan.lua：以各種格式輸入是日日期時間，來自[amzxyz/rime_wanxiang](amzxyz/rime_wanxiang)。隨源文件以[CC BY 4.0許可](https://creativecommons.org/licenses/by/4.0/)發佈。
+  - time_gukwan_modern.lua：現代版，將指令改爲現代發音。
 
 ### 其他
 

@@ -9,11 +9,11 @@
 # This is a schema file for Gukwan Cantonese Input Method.
 # Learn how to use Gukwan in the readme file, available on the project's github page.
 
-__include: gukwan.schema:/
+__include: jyut6ping3-gw.schema:/
 
 schema:
-  schema_id: jyut6ping3-gw
-  name: 菊韻廣州話三拼
+  schema_id: jyut6ping3-gw-cp
+  name: 菊韻廣州話全拼
   version: "17.0b"
   author:
     - 靈帝（Hoengsaan）
@@ -28,7 +28,7 @@ schema:
     - graphemecluster <graphemecluster@gmail.com>
   
   description: |-
-    本方案是將菊韻功能（漢英混打、各種反查、日期時間輸入）並入Rime粵拼（jyut6ping3｜廣州話）
+    本方案是將三拼以外一切菊韻功能（漢英混打、各種反查、日期時間輸入）並入Rime粵拼（jyut6ping3｜廣州話）
     瞭解如何使用菊韻請閱覽readme文件，詳細請至本方案github頁：https://github.com/HoengSaan/rime-gukwan
     如有問題或建議可於以上github頁中開Issues反饋
 
@@ -42,10 +42,6 @@ schema:
     - kaomoji
     - kikwin
     - gukwan-melt-eng
-
-patch:
-  engine/translator/@15:
-    lua_translator@*time_gukwan_modern
 
 speller:
   alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA
@@ -87,15 +83,9 @@ speller:
     #全拼
     #- derive/(g|k|h|ng)u/$1wu/             # 全拼(g|k|h[w]u)
     #- derive/(g|k|h|ng)y/$1wy/             # 全拼(g|k|h[w]y)
-    
-    #簡拼（三拼）
-    - derive/^kw/q/                         # 簡拼(kw->q)
-    - derive/^gw/x/                         # 簡拼(gw->q)
-    - derive/^ng([aeiouy])/r$1/             # 簡拼(ng->r)
-    - derive/([aeiouy])ng/$1r/              # 簡拼(ng->r)
 
+    #
     - derive/aa(?=\d)/a/                    # 簡拼(aa->a)
-    - derive/aa([iumnptkr]|ng)/r$1/         # 簡拼(aa->r)
     - derive/^jy?([aeiou])/y$1/             # 簡拼(jy->y)
     - derive/yu(?!ng|k)/y/                  # 簡拼(yu->y)
     - derive/oe(ng|k|r)/e$1/                # 簡拼(oe->e)
@@ -123,7 +113,7 @@ speller:
 
 translator:
   dictionary: jyut6ping3
-  prism: jyut6ping3-gw
+  prism: jyut6ping3-gw-cp
   spelling_hints: 9
   initial_quality: 1.2
   preedit_format:
@@ -133,8 +123,3 @@ translator:
     - xform/([aeiouymngptk])v/${1}1/
     - xform/([aeiouymngptk])x/${1}2/
     - xform/([aeiouymngptk])q/${1}3/
-
-reverse_lookup:
-  tags: [ luna_pinyin, cangjie5, kunyomi, loengfan ]
-  overwrite_comment: false
-  dictionary: jyut6ping3

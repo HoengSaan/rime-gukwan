@@ -105,7 +105,7 @@ translator:
     - xform/,/ /
 
   comment_format:
-    - xform/hwun(?=\d)/hun$1/               # 口音補充(hw->h)：「桓」讀若fun者
+    - xform/hwun(?=\d)/hun$1/               # 口音補充(hw->h)：「桓」讀fun者
     - xform/xu(?=\d)/hu$1/                  # 遇攝合口(*u->hu)：「狐」讀作fu4
     - xform/vu(?=\d)/hu$1/                  # 遇攝合口(*u->hu)：「護」讀作fu6
 
