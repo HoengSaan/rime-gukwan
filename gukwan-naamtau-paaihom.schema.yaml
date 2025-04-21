@@ -15,7 +15,7 @@ schema:
   __include: gukwan.schema:/schema
   schema_id: gukwan-naamtau-paaihom
   name: 菊韻南頭排坎音
-  version: "17.2b"  
+  version: "17.3b"  
   author:
     - 靈帝（Hoengsaan）
   description: |-
@@ -74,7 +74,7 @@ speller:
     #韻母——分韻（非現代音建議維持）
     #- derive/yo(?=\d)/yu/                  # 遇開分韻(yo->yu)
     #- derive/yi(?=\d)/ui/                  # 蟹合分韻(yi->ui)
-    - xform/ou(?=\d)/o$1/                  # FIX
+    #- xform/ou(?=\d)/o$1/                  # FIX
     #- xform/ou(?=\d)/au$1/                 # FIX
     
     #韻母——現代
@@ -338,8 +338,6 @@ set_hint:
     - xform/jo(?=\d)/joe/                   # (jo->oe)
     - xform/uo(?=\d)/oe/                    # (uo->oe)
     - xform/uo(n|t)(?=\d)/oe$1/             # (uo->oe)
-
-    - xform/ou(?=\d)/o$1/                   # FIX
 
     - xform/ooy(?=\d)/eoy/
     - xform/ooi(?=\d)/eoy/
