@@ -15,7 +15,7 @@ schema:
   name: 菊韻
   version: "17.0b"
   author:
-    靈帝（Hoengsaan）
+    - 靈帝（Hoengsaan）
   
   description: |-
     基底文件 切勿直接改動或刪除

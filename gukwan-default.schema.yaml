@@ -12,32 +12,20 @@
 __include: gukwan.schema:/
 
 schema:
+  __include: gukwan.schema:/schema
   schema_id: gukwan-default
   name: 菊韻構擬音
-  version: "17.0b"
+  version: "17.2b"
   author:
     - 靈帝（Hoengsaan）
-  
   description: |-
     測試階段
     本方案爲根據菊韻標準所構擬之古音
     瞭解如何使用菊韻請閱覽readme文件，詳細請至本方案github頁：https://github.com/HoengSaan/rime-gukwan
     如有問題或建議可於以上github頁中開Issues反饋
 
-  dependencies:
-    - jyut6ping3
-    - luna_pinyin
-    - cangjie5
-    - kunyomi
-    - loengfan
-    - kanas
-    - kaomoji
-    - kikwin
-    - gukwan-melt-eng
-
 speller:
-  alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA
-  delimiter: " '"
+  __include: gukwan.schema:/speller
   algebra:
     #聲母
     #- derive/^ng([aeiouy])/$1/              # 疑母脫落(ng->0)
@@ -345,27 +333,14 @@ set_hint:
     - xform/I(?=\d)/i$1/                    # 外來語
 
 translator:
-  dictionary: gukwan
+  __include: gukwan.schema:/translator
   prism: gukwan-default
-  initial_quality: 1.2
-  spelling_hints: 9
-  preedit_format:
-    - xform/([aeiouymngptk])vv/${1}4/
-    - xform/([aeiouymngptk])xx/${1}5/
-    - xform/([aeiouymngptk])qq/${1}6/
-    - xform/([aeiouymngptk])v/${1}1/
-    - xform/([aeiouymngptk])x/${1}2/
-    - xform/([aeiouymngptk])q/${1}3/
-
   comment_format:
-    __include:
+    __patch:
       - set_hint
 
-
 reverse_lookup:
-  tags: [ jyut6ping3, luna_pinyin, cangjie5, kunyomi, loengfan ]
-  overwrite_comment: false
-  dictionary: gukwan 
+  __include: gukwan.schema:/reverse_lookup
   comment_format:
-    __include:
+    __patch:
       - set_hint

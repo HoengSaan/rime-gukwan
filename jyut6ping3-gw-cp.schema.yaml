@@ -12,9 +12,10 @@
 __include: jyut6ping3-gw.schema:/
 
 schema:
+  __include: jyut6ping3-gw.schema:/schema
   schema_id: jyut6ping3-gw-cp
   name: 菊韻廣州話全拼
-  version: "17.0b"
+  version: "17.2b"
   author:
     - 靈帝（Hoengsaan）
     - Ayaka Mikazuki <ayaka@mail.shn.hk>
@@ -26,26 +27,13 @@ schema:
     - szc126 (@szc126)
     - Bing Jeung <bing@ososo.io>
     - graphemecluster <graphemecluster@gmail.com>
-  
   description: |-
     本方案是將三拼以外一切菊韻功能（漢英混打、各種反查、日期時間輸入）並入Rime粵拼（jyut6ping3｜廣州話）
     瞭解如何使用菊韻請閱覽readme文件，詳細請至本方案github頁：https://github.com/HoengSaan/rime-gukwan
     如有問題或建議可於以上github頁中開Issues反饋
 
-  dependencies:
-    - jyut6ping3
-    - luna_pinyin
-    - cangjie5
-    - kunyomi
-    - loengfan
-    - kanas
-    - kaomoji
-    - kikwin
-    - gukwan-melt-eng
-
 speller:
-  alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA
-  delimiter: " '"
+  __include: gukwan.schema:/speller
   algebra:
     # 取消下兩行註釋（移除 # 號），支援疑影交替： ng- 通 Ø-，Ø- 通 ng-
     #- derive/^ng([aeiou])/$1/
@@ -112,14 +100,5 @@ speller:
     - xform/6/qq/                           # 陽去
 
 translator:
-  dictionary: jyut6ping3
+  __include: jyut6ping3-gw.schema:/translator
   prism: jyut6ping3-gw-cp
-  spelling_hints: 9
-  initial_quality: 1.2
-  preedit_format:
-    - xform/([aeiouymngptk])vv/${1}4/
-    - xform/([aeiouymngptk])xx/${1}5/
-    - xform/([aeiouymngptk])qq/${1}6/
-    - xform/([aeiouymngptk])v/${1}1/
-    - xform/([aeiouymngptk])x/${1}2/
-    - xform/([aeiouymngptk])q/${1}3/
