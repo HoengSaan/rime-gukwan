@@ -15,7 +15,7 @@ schema:
   __include: gukwan.schema:/schema
   schema_id: gukwan-default
   name: 菊韻構擬音
-  version: "17.2b"
+  version: "17.4b"
   author:
     - 靈帝（Hoengsaan）
   description: |-
@@ -34,10 +34,10 @@ speller:
     - derive/^nr/n/                         #
     - derive/^nr/nj/                        #
 
-    #- xform/^hj/j/                          # 曉匣喻細音(hj->j)：「賢」讀jin
-    - xform/^hjo/hio/                      # 曉匣喻細音(hj->h)：「樣」讀hoeng
-    - xform/^hjaa/hia/                     # 曉匣喻細音(hj->h)：「爺」讀he
-    - xform/^hj/h/                         # 曉匣喻細音(hj->h)：「賢」讀hin
+    - derive/^hjo/hio/                      # 曉匣喻細音(hj->h)：「樣」讀hoeng
+    - derive/^hjaa/hia/                     # 曉匣喻細音(hj->h)：「爺」讀he
+    - derive/^hji/hi/                       # 構擬音專用
+    #- derive/^hj/h/                         # 曉匣喻細音(hj->h)：「賢」讀hin
     
     - xform/^wu(i|n|t)(?=\d)/hu$1/         # 古匣母一類(h)
     - xform/^wo(ng|k)(?=\d)/hwo$1/       # 古匣母一類(h)
@@ -75,7 +75,7 @@ speller:
 
     #韻母——分韻（非現代音建議維持）
     - derive/yo(?=\d)/yu/                   # 遇開分韻(yo->yu)
-    - derive/yi(?=\d)/ui/                   # 蟹合分韻(yi->ui)
+    - xform/yi(?=\d)/ui/                    # 蟹合分韻(yi->ui)
     #- xform/ou(?=\d)/o$1/                  # FIX
     #- xform/ou(?=\d)/au$1/                 # FIX
     
@@ -107,13 +107,13 @@ speller:
     #- derive/^(s)yu(?=\d)/$1eoy/           # 遇合三裂化(yu->eoy)：「須」讀seoy
     #- derive/^(g|k|h)yu(?=\d)/$1eoy/       # 遇合三裂化(yu->eoy)：「巨」讀geoy
     
-    #- derive/^zyi(?=\d)/zeoy/                # 蟹合一(yi->eoy)：「最」讀zeoy
-    #- derive/^cyi(?=\d)/ceoy/                # 蟹合一(yi->eoy)：「催」讀zeoy
-    #- derive/^syi(?=\d)/seoy/               # 蟹合一(yi->eoy)：「碎」讀seoy
-    #- derive/^syi(?=\d)/syu/                 # 蟹合一(yi->yu)：「碎」讀syu
-    #- derive/^([dtnl])yi(?=\d)/$1yu/      # 蟹合一(yi->yu)：「對」讀dyu
-    #- derive/yi(?=\d)/eoy/                 # 蟹合一(yi->eoy)：皆讀eoy者用竝關其他
-    #- derive/yi(?=\d)/yu/                  # 蟹合一(yi->yu)：皆讀yu者用竝關其他
+    #- derive/^zui(?=\d)/zeoy/                # 蟹合一(yi->eoy)：「最」讀zeoy
+    #- derive/^cui(?=\d)/ceoy/                # 蟹合一(yi->eoy)：「催」讀zeoy
+    #- derive/^sui(?=\d)/seoy/               # 蟹合一(yi->eoy)：「碎」讀seoy
+    #- derive/^sui(?=\d)/syu/                 # 蟹合一(yi->yu)：「碎」讀syu
+    #- derive/^([dtnl])ui(?=\d)/$1yu/      # 蟹合一(yi->yu)：「對」讀dyu
+    #- derive/ui(?=\d)/eoy/                 # 蟹合一(yi->eoy)：皆讀eoy者用竝關其他
+    #- derive/ui(?=\d)/yu/                  # 蟹合一(yi->yu)：皆讀yu者用竝關其他
 
     #- xform/yo(?=\d)/yu/                   # FIX（現代音用）
     
@@ -121,7 +121,7 @@ speller:
     #- derive/^(z|c|s|zh|ch|sh)y(?=\d)/yu/  # 止攝師韻圓脣(y->yu)：「仕」讀syu 
     #- derive/^(z|c|s)ji(?=\d)/$1ii/        # 止開照組異拼(ji->ii)
     
-    #- derive/eo(n|t)(?=\d)/a$1/            # 臻攝混音(ea->a)：「順」讀san 白讀/香山系用
+    - derive/eo(n|t)(?=\d)/a$1/            # 臻攝混音(ea->a)：「順」讀san 白讀/香山系用
     
     #- derive/ou(?=\d)/o$1/                 # 效一元音融合(ou->o)：「高」讀go
     #- derive/ou(?=\d)/au$1/                # 效一元音(ou->au)：「高」讀gau
@@ -133,10 +133,12 @@ speller:
     - derive/io(ng|k)/oe$1/                 # 宕江元音融合(io->oe) ：「量」讀loeng
     - derive/jo(ng|k)/joe$1/                # 宕江元音融合(jo->joe) ：「央」讀央joeng
     
-    #- derive/ae([unmtp])(?=\d)/aa$1/     # 山效咸文(ae->aa)：「關」讀gwaan
-    #- derive/ae([unmtp])(?=\d)/e$1/      # 山效咸白(ae->e)：「關」讀gwen 白讀音用
+    - derive/ae([unmtp])(?=\d)/aa$1/     # 山效咸文(ae->aa)：「關」讀gwaan
+    - derive/ae([unmtp])(?=\d)/e$1/      # 山效咸白(ae->e)：「關」讀gwen 白讀音用
     
     #- derive/o(m|p)(?=\d)/a$1/             # 咸攝音變(o->a)：「甘」讀gam
+    
+    - derive/e([umnptk]|ng)/ia$1/
 
     #聲母——現代
     #- derive/^(z|c|s)h/$1/                 # 精照合流(zh->z)
@@ -242,14 +244,6 @@ speller:
     #打字輔助——照組j拼法
     #- derive/^(z|c|s)h/$1j/                # 打字輔助B組(-h->-j) 廣韻莊組（j拼法）
     #- derive/^(z|c)r/$1j/                  # 打字輔助B組(-r->-j) 廣韻知組（j拼法）
-    
-    #打字輔助——增廣
-    #- derive/^dr/zr/                       # 打字輔助(dr->zr) 廣韻知組
-    #- derive/^tr/cr/                       # 打字輔助(tr->cr) 廣韻知組
-    #- derive/^dj/cr/                       # 打字輔助(dj->zr) 廣韻知組
-    #- derive/^tj/cr/                       # 打字輔助(tj->cr) 廣韻知組
-    #- derive/^s([aeiouy])/sl$1/            # 打字輔助(s->sl) 方言音 參攷
-    #- derive/^s(h|j)/s$1/                  # 打字輔助(sh->s) 方言音 參攷
 
     #異拼
     #正常情況下毋須郁動，可根據自己喜好調校
@@ -312,17 +306,20 @@ speller:
     - xform/6/qq/                           # 陽去
 
 set_hint:
-  __append:
-    - xform/hjo/hio/                      # 曉匣喻細音(hj->h)：「樣」讀hoeng
-    - xform/hjaa/hia/                     # 曉匣喻細音(hj->h)：「爺」讀he
-    - xform/hj/h/                         # 曉匣喻細音(hj->h)：「賢」讀hin
-    
+  __append:    
     - xform/wu(i|n|t)(?=\d)/hu$1/         # 古匣母一類(h)
     - xform/wo(ng|k)(?=\d)/hwo$1/       # 古匣母一類(h)
+    - xform/hhw/hw/
     
     - xform/hwun(?=\d)/hun$1/              # 古匣母二類(h)：「桓」讀fun者
 
+    - xform/yi(?=\d)/ui/                    # 蟹合分韻(yi->ui)
+
     - xform/ooy(?=\d)/ooi$1/
+
+    - xform/eo(n|t)(?=\d)/a$1/
+
+    - xform/e([umnptk]|ng)/ia$1/
 
     - xform/(z|c|s)jy(?=\d)/$1ji/          # 
 

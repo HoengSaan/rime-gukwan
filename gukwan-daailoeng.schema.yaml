@@ -137,6 +137,8 @@ speller:
     
     - derive/o(m|p)(?=\d)/a$1/              # 咸攝音變(o->a)：「甘」讀gam
 
+    #- derive/e([umnptk]|ng)/ia$1/
+
     #聲母——現代
     - xform/^(z|c|s)h/$1/                   # 精照合流(zh->z)
     - xform/^(zj|cj|sj)yo(?=\d)/$1yu/       # 精照合流
@@ -241,14 +243,6 @@ speller:
     #打字輔助——照組j拼法
     #- derive/^(z|c|s)h/$1j/                # 打字輔助B組(-h->-j) 廣韻莊組（j拼法）
     #- derive/^(z|c)r/$1j/                  # 打字輔助B組(-r->-j) 廣韻知組（j拼法）
-    
-    #打字輔助——增廣
-    #- derive/^dr/zr/                       # 打字輔助(dr->zr) 廣韻知組
-    #- derive/^tr/cr/                       # 打字輔助(tr->cr) 廣韻知組
-    #- derive/^dj/cr/                       # 打字輔助(dj->zr) 廣韻知組
-    #- derive/^tj/cr/                       # 打字輔助(tj->cr) 廣韻知組
-    #- derive/^s([aeiouy])/sl$1/            # 打字輔助(s->sl) 方言音 參攷
-    #- derive/^s(h|j)/s$1/                  # 打字輔助(sh->s) 方言音 參攷
 
     #異拼
     #正常情況下毋須郁動，可根據自己喜好調校
