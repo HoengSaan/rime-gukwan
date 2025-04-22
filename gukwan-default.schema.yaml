@@ -15,7 +15,7 @@ schema:
   __include: gukwan.schema:/schema
   schema_id: gukwan-default
   name: 菊韻構擬音
-  version: "17.4b"
+  version: "17.5b"
   author:
     - 靈帝（Hoengsaan）
   description: |-
@@ -30,14 +30,13 @@ speller:
     #聲母
     #- derive/^ng([aeiouy])/$1/              # 疑母脫落(ng->0)
     #- derive/^([aeiou])/ng$1/              # 疑影不分(ng==0)
-    
     - derive/^nr/n/                         #
     - derive/^nr/nj/                        #
-
-    - derive/^hjo/hio/                      # 曉匣喻細音(hj->h)：「樣」讀hoeng
-    - derive/^hjaa/hia/                     # 曉匣喻細音(hj->h)：「爺」讀he
-    - derive/^hji/hi/                       # 構擬音專用
-    #- derive/^hj/h/                         # 曉匣喻細音(hj->h)：「賢」讀hin
+    #- xform/HJ/j/                            #勿動
+    - xform/HJ/hj/                         #勿動
+    - xform/^hjo/hio/                      # 曉匣喻細音(hj->h)：「樣」讀hoeng
+    - xform/^hjaa/hia/                     # 曉匣喻細音(hj->h)：「爺」讀he
+    - xform/^hj(?!a)/h/                     # 曉匣喻細音(hj->h)：「賢」讀hin
     
     - xform/^wu(i|n|t)(?=\d)/hu$1/         # 古匣母一類(h)
     - xform/^wo(ng|k)(?=\d)/hwo$1/       # 古匣母一類(h)
@@ -306,7 +305,11 @@ speller:
     - xform/6/qq/                           # 陽去
 
 set_hint:
-  __append:    
+  __append:
+    - xform/HJ/hj/
+    - xform/hjo/hio/
+    - xform/hjaa/hia/
+    - xform/hj(?!a)/h/
     - xform/wu(i|n|t)(?=\d)/hu$1/         # 古匣母一類(h)
     - xform/wo(ng|k)(?=\d)/hwo$1/       # 古匣母一類(h)
     - xform/hhw/hw/

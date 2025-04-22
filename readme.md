@@ -295,11 +295,11 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 >
 > `xxx.xxx-ps.scheme.yaml`爲寬式音標版，寬式音標並不能完全代表實際發音。所有寬式音標版存儲在`/ps`。如需使用請自行將其移出。
 >
-> 以下方案並不能完全代表當地發音，請根據自身實際情況調整。
+> **以下方案並不能完全代表當地發音，請根據自身實際情況調整。**
 >
-> **由於本人所寫轉換規則缺陷或導致拼音提示不準確，敬請見諒。**
+> <b style="color:red;">由於本人所寫轉換規則有缺陷，導致拼音提示不準確，敬請見諒。</b>
 
-- `gukwan.schema.yaml`：基底文件（**請勿刪除，刪除後所有方案都無法使用**）
+- `gukwan.schema.yaml`：基底文件（<b style="color:red;">請勿刪除，刪除後所有方案都無法使用</b>）
 - `jyut6ping3-gw.schema.yaml`：三拼版`rime-cantonese`（廣州話），支持菊韻所有功能。
 - `jyut6ping3-gw-cp.schema.yaml`：關閉三拼功能，支持菊韻除三拼以外一切功能。
 
@@ -514,33 +514,36 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 ### 參攷用方案
 
 - `gukwan-default.schema.yaml`：菊韻音（構擬音）根據菊韻標準所構擬之古音，較分韻複雜。
-- `gukwan-fanwan.schema.yaml`：分韻音
+- `gukwan-fanwan.schema.yaml`：<del>分韻音</del>**【已移除】**
   - 準確來講此方案係分韻風，並不能準確反映所有分韻發音。若欲使用眞正分韻音打字，可參攷以下方案：[leimaau/old-Cantonese: Rime Old Cantonese Input Scheme | 《分韻撮要》音系及輸入方案](https://github.com/leimaau/old-Cantonese)
+- `gukwan-canton.schema.yaml`：<del>廣州音</del>**【已移除】**
+  - 並不能準確反映所有廣州發音，廣州話請用`jyut6ping3-gw`或`jyut6ping3-gw-cp`
 
 #### 構擬音特徵
 
-構擬音是本人基於順德系方言所構擬之古音。<b style="color:red;">警告：本構擬音僅供參攷。</b>
+構擬音是本人基於順德系方言所構擬之古音，主要指出其對分韻異同。<b style="color:red;">警告：本構擬音僅供參攷。</b>
 
 - 聲母
-  - 區分精照（照組默認爲`-h`：`zh/ch/sh`）
-  - 區分日以（日母默認爲`-j`：`nj`）
-  - 疑母細音未歸日母，如「堯」讀`ngiu4`「仰」讀`ngiong5`「原」讀`ngyun4`「凝」讀`nging4`
-  - 疑母合口字聲母未脫，即「玩」讀`ngun6`「頑」讀`ngwaen4`
-  - 曉匣谿母合口字未脣齒化，如「薰」讀`hwan1`「黃」讀`hwong3`「苦」讀`hu2`「戶」讀`hu6`
-  - 曉匣喻細音讀`hj`，如「欣」讀`hjan1`「欽」讀`hjam1`「賢」讀`hjin4`「樣」讀`hjiong6`
+  - 【同】區分精照（照組默認爲`-h`：`zh/ch/sh`）
+  - 【同】區分日以（日母默認爲`-j`：`nj`）
+  - 【異】疑母細音未歸日母，如「堯」讀`ngiu4`「仰」讀`ngiong5`「原」讀`ngyun4`「凝」讀`nging4`
+  - 【異】疑母合口字聲母未脫，即「玩」讀`ngun6`「頑」讀`ngwaen4`
+  - 【異】曉匣谿母合口字未脣齒化，如「薰」讀`hwan1`「黃」讀`hwong3`「苦」讀`hu2`「戶」讀`hu6`
+  - 【異】匣喻細音讀`h`，「賢」讀`hin4`「樣」讀`hiong6`「蠅」讀`hing4`「爺」讀`hia4`
+  - 【異】曉母接韻腹`a`讀`hj`，如「欣」讀`hjan1`「欽」讀`hjam1`「休」讀`hjau1`「釁」`hjan3`（未變調）
 - 韻母
-  - 江攝照系字・宕攝開口三等字（除莊組）讀`iong/iok`，如「薑」讀`giong1`「畧」讀`liok6`「張」讀`zhiong1`「上」讀`shiong5`
-  - 其他宕攝字讀`oong`，同`ong`對立。如「鋼」讀`goong1`「忙」讀`moong4`「藏」讀`zoong6`「牀」讀`choong4`
-  - 師韻分精照，讀舌尖前圓唇元音（`y`），如「字」讀`zy6`「此」讀`cy2`「師」讀`shy1`「廁」讀`chy3`
-  - 遇攝開口三等字讀`yo`，合口讀`yu`。
-  - 蟹攝合口三等字除疑母皆讀`ui`
-  - 止攝合口銳音・蟹攝合口三四等字讀`ooi`
-  - 臻攝竝無`eon/eot`同`an/at`之分，皆讀`an/at`
-  - 山開字・刪合字・效攝二等字・咸攝二等字讀`ae`
-  - 果攝開口三等字・假攝三等字讀`ia`
-  - 流攝三等字讀`iau`
-  - 咸攝見系字讀`om`
-  - `e`系白讀字除`ei`之外讀`ia`
+  - 【異】江攝照系字・宕攝開口三等字（除莊組）讀`iong/iok`，如「薑」讀`giong1`「畧」讀`liok6`「張」讀`zhiong1`「上」讀`shiong5`
+  - 【異】其他宕攝字讀`oong`，同`ong`對立。如「鋼」讀`goong1`「忙」讀`moong4`「藏」讀`zoong6`「牀」讀`choong4`
+  - 【異】師韻分精照，讀舌尖前圓唇元音（`y`），如「字」讀`zy6`「此」讀`cy2`「師」讀`shy1`「廁」讀`chy3`
+  - 【異】遇攝開口三等字讀`yo`，合口讀`yu`。
+  - 【異】蟹攝合口三等字除疑母皆讀`ui`。
+  - 【異】止攝合口銳音・蟹攝合口三四等字讀`ooi`
+  - 【異】臻攝竝無`eon/eot`同`an/at`之分，皆讀`an/at`
+  - 【異】山開字・刪合字・效攝二等字・咸攝二等字韻腹讀`ae`
+  - 【異】果攝開口三等字・假攝三等字讀`ia`
+  - 【異】流攝三等字讀`iau`
+  - 【同】咸攝見系字讀`om`
+  - 【異】`e`系白讀字除`ei`之外韻腹讀`ia`
 
 ## 文件結構・許可
 

@@ -15,7 +15,7 @@ schema:
   __include: gukwan.schema:/schema
   schema_id: gukwan-siulaam-bofung
   name: 菊韻小欖寶豐音
-  version: "17.2b"
+  version: "17.5b"
   author:
     - 靈帝（Hoengsaan）
   description: |-
@@ -30,10 +30,10 @@ speller:
     #聲母
     #- derive/^ng([aeiouy])/$1/              # 疑母脫落(ng->0)
     #- derive/^([aeiou])/ng$1/              # 疑影不分(ng==0)
-    
     - derive/^nr/n/                         #
     - derive/^nr/nj/                        #
-
+    - xform/HJ/j/                            #勿動
+    #- xform/HJ/h/                         #勿動
     - xform/^hj/j/                          # 曉匣喻細音(hj->j)：「賢」讀jin
     #- xform/^hjo/hio/                      # 曉匣喻細音(hj->h)：「樣」讀hoeng
     #- xform/^hjaa/hia/                     # 曉匣喻細音(hj->h)：「爺」讀he
