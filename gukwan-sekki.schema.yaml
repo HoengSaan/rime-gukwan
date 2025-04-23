@@ -136,7 +136,7 @@ speller:
     
     #- derive/o(m|p)(?=\d)/a$1/              # 咸攝音變(o->a)：「甘」讀gam
 
-    #- derive/e([umnptk]|ng)/ia$1/
+    #- derive/(?!a)e([umnptk]|ng)/ia$1/
 
     #聲母——現代
     - xform/^(z|c|s)h/$1/                   # 精照合流(zh->z)

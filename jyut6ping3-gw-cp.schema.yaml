@@ -76,8 +76,6 @@ speller:
     - derive/aa(?=\d)/a/                    # 簡拼(aa->a)
     - derive/^jy?([aeiou])/y$1/             # 簡拼(jy->y)
     - derive/yu(?!ng|k)/y/                  # 簡拼(yu->y)
-    - derive/oe(ng|k|r)/e$1/                # 簡拼(oe->e)
-    - derive/eo([ntiy])/u$1/                # 簡拼(eo->u)
 
     #簡拼
     #- derive/^wu/u/                         # 簡拼(wu->u)
