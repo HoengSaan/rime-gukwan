@@ -15,7 +15,7 @@ schema:
   __include: gukwan.schema:/schema
   schema_id: gukwan-siulaam-bofung
   name: 菊韻小欖寶豐音
-  version: "17.5b"
+  version: "17.6b"
   author:
     - 靈帝（Hoengsaan）
   description: |-
@@ -145,7 +145,7 @@ speller:
     - xform/^(z|c|s)j(?!yo)/$1/             # 精照合流(ch->c)
     - xform/^(z|c)r/$1/                     # 精照合流(sj->s)
     - xform/^nj/j/                          # 日以合流(nj->j)
-    
+    - xform/^NG/ng/    
     #FIX
     - derive/^n(?!g|j)/l/                   # 泥來合流(n->l)
     #- derive/^t/h/                         # 透曉合流(t->h)
@@ -154,7 +154,7 @@ speller:
     #- derive/^(g|k)wo/$1o/                 # 口音補充(gwo->go)：遇o不分
     #- derive/^(g|k)wo(?=\d)/$1o/           # 口音補充(gwo->go)：遇單o不分
     #- derive/^(g|k)w/$1/                   # 口音補充(gk[!w])：不能分脣化聲母者
-
+    - xform/^jiam/jam/                  #轉換錯誤修正
     #韻母——其他
     #- derive/ap(?=\d)/aap$1/               # ap同aap混 
     #- derive/at(?=\d)/aat$1/               # at同aat混
@@ -307,7 +307,7 @@ speller:
 set_hint:
   __append:
     - xform/hj/j/                          # 口音補充(hj->j)：「賢」讀jin者
-    
+    - xform/HJ/j/
     - xform/^hwun(?=\d)/hun$1/              # 古匣母二類(h)：「桓」讀fun者
     
     #聲母——分韻（現代音無用）
@@ -365,10 +365,11 @@ set_hint:
     - xform/(z|c|s)j(?!yo)/$1/             # 精照合流(ch->c)
     - xform/(z|c)r/$1/                     # 精照合流(sj->s)
     - xform/nj/j/                          # 日以合流(nj->j)
-    
+    - xform/NG/ng/    
     - xform/xaa(?=\d)/jaa$1/
     - xform/I(?=\d)/i$1/                    # 外來語
-
+    - xform/jiam/jam/                  #轉換錯誤修正
+    
 translator:
   __include: gukwan.schema:/translator
   dictionary: gukwan-siulaam-bofung  

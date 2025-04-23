@@ -310,7 +310,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
   - 「邊」「扁」「癲」「見」等字讀`-e`
   - 「山」「斬」「減」「咸」等字讀`-e`（統一爲ae再轉換，故拼音提示仍爲ae，此爲菊韻輸入法遺留問題）
   - 「應」「拎」「煙」等字讀零聲母（此字現代少見，而香山系方言老派無論文白皆讀零聲母）
-  - 不成規模：「現」讀`ngin6`「鏟」讀`coen2`「玩」讀`faan2`「閂」讀`soen1`等
+  - 不成規模：「現」讀`ngin6`「鏟」讀`coen2`「玩」讀`faan2`「閂」讀`soen1`「凝・迎」讀`nging4`「處」讀`syu3`等
 - 以下字收錄在`gukwan-alt.dict.yaml`同`gukwan-alt-asp.dict.yaml`
   - 「虐」「若」「業」「仰」等疑日母字讀`h`
   - 「亦」「姚」「盈」「芫」等字補全

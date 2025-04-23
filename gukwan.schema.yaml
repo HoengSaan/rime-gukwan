@@ -22,12 +22,6 @@ schema:
     瞭解如何使用菊韻請閱覽readme文件，詳細請至本方案github頁：https://github.com/HoengSaan/rime-gukwan
     如有問題或建議可於以上github頁中開Issues反饋
 
-menu:
-  page_size: 10  # 候選數量
-
-style:
-  style/font_point: 16     # 字號
-
 # 依賴 請確保閣下已安裝以下方案
   dependencies:
     - jyut6ping3
@@ -233,7 +227,7 @@ speller:
     - derive/^(z|c|s)j(?!yo)/$1/           # 精照合流(ch->c)
     - derive/^(z|c)r/$1/                   # 精照合流(sj->s)
     #- derive/^nj/j/                        # 日以合流(nj->j)
-
+    - xform/^NG/ng/
     #- derive/^ng(i|y)/j$1/                 # 疑日細音(ng->j)
     #- derive/^n(?!g|j)/l/                  # 泥來合流(n->l)
     #- derive/^t/h/                         # 透曉合流(t->h)
@@ -242,7 +236,7 @@ speller:
     #- derive/^(g|k)wo/$1o/                 # 口音補充(gwo->go)：遇o不分
     #- derive/^(g|k)wo(?=\d)/$1o/           # 口音補充(gwo->go)：遇單o不分
     #- derive/^(g|k)w/$1/                   # 口音補充(gk[!w])：不能分脣化聲母者
-
+    #- xform/^jiam/jam/                  #轉換錯誤修正
     #韻母——其他
     #- derive/ap(?=\d)/aap$1/               # ap同aap混 
     #- derive/at(?=\d)/aat$1/               # at同aat混

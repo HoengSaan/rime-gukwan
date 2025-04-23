@@ -15,7 +15,7 @@ schema:
   __include: gukwan.schema:/schema
   schema_id: gukwan-cancyn
   name: 菊韻陳村音
-  version: "17.5b"
+  version: "17.6b"
   author:
     - 靈帝（Hoengsaan）
   description: |-
@@ -145,7 +145,7 @@ speller:
     - xform/^(z|c|s)j(?!yo)/$1/             # 精照合流(ch->c)
     - xform/^(z|c)r/$1/                     # 精照合流(sj->s)
     - xform/^nj/j/                          # 日以合流(nj->j)
-    
+    - xform/^NG/ng/    
     #- derive/^ng(i|y)/j$1/                 # 疑日細音(ng->j)
     - derive/^n(?!g|j)/l/                   # 泥來合流(n->l)
     #- derive/^t/h/                          # 透曉合流(t->h)
@@ -154,7 +154,7 @@ speller:
     #- xform/^(g|k)wo/$1o/                 # 口音補充(gwo->go)：遇o不分
     #- derive/^(g|k)wo(?=\d)/$1o/           # 口音補充(gwo->go)：遇單o不分
     #- derive/^(g|k)w/$1/                   # 口音補充(gk[!w])：不能分脣化聲母者
-
+    - xform/^jiam/jam/                  #轉換錯誤修正
     #韻母——其他
     #- derive/ap(?=\d)/aap$1/               # ap同aap混 
     #- derive/at(?=\d)/aat$1/               # at同aat混
@@ -309,7 +309,7 @@ set_hint:
     - xform/hjo/hio/                      # 口音補充(hj->h)：「賢」讀hin者
     - xform/hjaa/hia/                     # 口音補充(hj->h)：「賢」讀hin者
     - xform/hj/h/                         # 口音補充(hj->h)：「賢」讀hin者
-    
+    - xform/HJ/h/
     - xform/(?!g|k|h)wu(i|n|t)(?=\d)/hu$1/         # 古匣母一類(h)
     - xform/(?!g|k|h)wo(ng|k)(?=\d)/hwo$1/       # 古匣母一類(h)
     - xform/hwun(?=\d)/hun$1/              # 古匣母二類(h)：「桓」讀fun者
@@ -366,10 +366,11 @@ set_hint:
     - xform/(z|c|s)j(?!yo)/$1/             # 精照合流(ch->c)
     - xform/(z|c)r/$1/                     # 精照合流(sj->s)
     - xform/nj/j/                          # 日以合流(nj->j)
-
+    - xform/NG/ng/
     - xform/xaa(?=\d)/jaa$1/
     - xform/I(?=\d)/i$1/                    # 外來語
-
+    - xform/jiam/jam/                  #轉換錯誤修正
+    
 translator:
   __include: gukwan.schema:/translator
   dictionary: gukwan-alt-asp
