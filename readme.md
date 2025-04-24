@@ -293,7 +293,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 
 > [!NOTE]
 >
-> `xxx.xxx-ps.scheme.yaml`爲寬式音標版，寬式音標並不能完全代表實際發音。所有寬式音標版存儲在`/ps`。如需使用請自行將其移出。
+> <del>`xxx.xxx-ps.scheme.yaml`爲寬式音標版，寬式音標並不能完全代表實際發音。所有寬式音標版存儲在`/ps`。如需使用請自行將其移出。</del>**音標版方案已被放棄，不再維護。**
 >
 > **以下方案並不能完全代表當地發音，請根據自身實際情況調整。**
 >
@@ -442,10 +442,6 @@ This is a schema based on [Rime Input Method](https://rime.im/).
   - 由於並無資料證明，僅爲猜測：
     - 曉匣喻細音字讀`h`而非`j`，如「爺」`he4`「賢」`hin4`「雨」`hy5`「藥」`hoek6`。
       - 此類字往往越接近現代，就會有越多字跟廣州一樣讀`j`。例如小欖就基本剩低極少數白讀字。如已不能分辨者，請將37行井號刪除，竝將37~40行`xform`改成`derive`。
-
-#### 
-
-- `gukwan-hoizau.schema.yaml
 
 ### 香山系方言
 

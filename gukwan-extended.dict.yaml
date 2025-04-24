@@ -12,7 +12,7 @@
 
 ---
 name: gukwan-extended
-version: "15.0b"
+version: "17.6.2b"
 sort: by_weight
 vocabulary: essay-cantonese
 import_tables:
@@ -24,6 +24,7 @@ import_tables:
   - gw_dicts/gukwan.words2     # 菊韻詞庫——增廣二組 粵拼詞庫增補同外來語
   - gw_dicts/gukwan.lettered   # 菊韻詞庫——漢英 基於粵拼詞庫
   - gw_dicts/gukwan.kwongtung  # 菊韻詞庫——廣東地名
+  - gw_dicts/gukwan.macau      # 菊韻詞庫——澳門地名
   - jyut6ping3.maps         # 粵拼詞庫——地名街名
   - jyut6ping3.phrase       # 粵拼詞庫——短語短句
 
