@@ -337,7 +337,6 @@ set_hint:
     - xform/([bpmtdnlzcs]|sh)u(?=\d)/$1au/    # 遇攝裂化(u->au)：「渡」讀dau
     
     - xform/([zcsnl])yo(?=\d)/$1eoy/     # 遇開三(yo->eoy)：「旅」讀leoy
-    - derive/(g|k|h|j)yo(?=\d)/$1yu/       # 遇開三(yo->yu)：「去」讀hyu
     
     - xform/([zcnl])yu(?=\d)/$1eoy/       # 遇合三裂化(yu->eoy)：「聚」讀zeoy
     - xform/(s)yu(?=\d)/$1eoy/             # 遇合三裂化(yu->eoy)：「須」讀seoy
