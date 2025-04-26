@@ -21,7 +21,11 @@ This work is licensed under a
 
 This is a schema based on [Rime Input Method](https://rime.im/).
 
-此爲[RIME | 中州韻輸入法引擎](https://rime.im/)方案，是爲改善粵語輸入體驗，支持漢英混打（中英混打），輸入日期・時間・節日・節氣等各種功能。菊韻亦可以用於輸入小欖話（含中山其他順德系方言）・順德話・蜑家話。
+此爲[RIME | 中州韻輸入法引擎](https://rime.im/)方案，是爲改善粵語輸入體驗，支持漢英混打（中英混打），輸入日期・時間・節日・節氣等各種功能。
+
+菊韻本身是爲輸入順德系方言設計，可用於輸入小欖話・順德話等順德系方言。
+
+菊韻自用爲主。
 
 更多資訊請閱讀下文竝參攷[菊韻 – なかやま園](https://zonsan.fc2.page/?cat=123)。[關於如何安裝](#安裝)。
 
@@ -29,19 +33,21 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 
 ### 多方言適應
 
-菊韻可支持多地方言。已爲各種方言口音預設大量轉換規則同模糊音，方便定製。[具體異同](https://github.com/HoengSaan/rime-gukwan#%E6%96%B9%E6%A1%88)。
+菊韻可支持多地方言。已爲各種方言口音預設大量轉換規則同模糊音，方便自行定製。（需對Regex同音韻學有基本瞭解）[具體異同](https://github.com/HoengSaan/rime-gukwan#%E6%96%B9%E6%A1%88)。
 
 - 順德系——中山市
-  - `gukwan-siulaam`【<ruby>小<rp>(</rp><rt>siu2</rt><rp>)</rp>欖<rp>(</rp><rt>laam5</rt><rp>)</rp></ruby>鎮】：以小欖話比較有代表性特徵製作，兼容新派發音，適合大多數小欖人。
+  - `gukwan-siulaam`【<ruby>小<rp>(</rp><rt>siu2</rt><rp>)</rp>欖<rp>(</rp><rt>laam5</rt><rp>)</rp></ruby>鎮】：以小欖話比較有代表性特徵製作，兼容新派發音。
     - `gukwan-siulaam-bofung`（小欖<ruby>寶<rp>(</rp><rt>bo2</rt><rp>)</rp>豐<rp>(</rp><rt>fung1</rt><rp>)</rp></ruby>音）：小欖鎮寶豐村，兼容新派發音。
+  - `gukwan-dungsing`：（東昇音）：舊東昇鎮
   - `gukwan-waanglaan`【<ruby>橫<rp>(</rp><rt>waang4</rt><rp>)</rp>欄<rp>(</rp><rt>laan4</rt><rp>)</rp></ruby>鎮】：以橫欄鎮比較有代表性特徵製作。
   - `gukwan-naamtau`【<ruby>南<rp>(</rp><rt>naam4</rt><rp>)</rp></ruby><ruby>頭<rp>(</rp><rt>tau4</rt><rp>)</rp></ruby>鎮】：
     - `gukwan-naamtau-naamsing`（南頭<ruby>南<rp>(</rp><rt>naam4</rt><rp>)</rp>城<rp>(</rp><rt>sing4</rt><rp>)</rp></ruby>音）：南頭鎮南城村
     - `gukwan-naamtau-paaihom`（南頭<ruby>排<rp>(</rp><rt>naam4</rt><rp>)</rp>坎<rp>(</rp><rt>sing4</rt><rp>)</rp></ruby>音）：南頭鎮排坎村
+  - `gukwan-guzan-hoizau`【古鎮海洲音】：古鎮海洲音
 - 順德系——順德市
   - `gukwan-daailoeng`（<ruby>大<rp>(</rp><rt>daai6</rt><rp>)</rp>良<rp>(</rp><rt>loeng1</rt><rp>)</rp></ruby>音）：以大良話比較有代表性特徵製作。
   - `gukwan-cancyn`（<ruby>陳<rp>(</rp><rt>can4</rt><rp>)</rp>村<rp>(</rp><rt>cyun1</rt><rp>)</rp></ruby>音）：以陳村話比較有代表性特徵製作。
-  - `gukwan-gwanon`（<ruby>均<rp>(</rp><rt>gwan1</rt><rp>)</rp>安<rp>(</rp><rt>on1</rt><rp>)</rp></ruby>音）：以均安話比較有代表性特徵製作。
+  - `gukwan-gwanon`（<ruby>均<rp>(</rp><rt>gwan1</rt><rp>)</rp>安<rp>(</rp><rt>on1</rt><rp>)</rp></ruby>音）【未製作】
 - 香山系
   - `gukwan-sekki`（<ruby>石<rp>(</rp><rt>sek6</rt><rp>)</rp>歧<rp>(</rp><rt>ki4</rt><rp>)</rp></ruby>音）：以石歧話新派音製作。（老派音建議自行製作字表）
 - 廣州話
@@ -61,9 +67,11 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 
 ### 三拼輸入
 
-菊韻支持竝默認開啓三拼，即所有漢字皆可以三鍵輸入（不含聲調），但用家仍然可以使用全拼（即輸入拼音完整形式——聲母+韻母+聲調）輸入。 學習成本較低。
+菊韻支持竝默認開啓三拼，即所有漢字皆可以三鍵輸入（不含聲調）。
 
-寬式音標版：由於菊韻同時支持三拼同全拼，爲避免輸入全拼時發生轉換錯誤，故輸入三拼時不能顯示正確音標。
+**三拼輸入不影響聲調輸入**，用家仍然可以使用傳統打法——即全拼，輸入拼音完整形式：聲母+韻母+聲調，聲調可以省畧。
+
+如不能接受三拼輸入，下文有解說如何關閉三拼。
 
 <img src="pic\key.png"/>
 
@@ -127,9 +135,11 @@ This is a schema based on [Rime Input Method](https://rime.im/).
     - derive/oo(i|y)/u$1/                   # 簡拼(oo->u)
 ```
 
+
+
 ### 特殊輸入
 
-支持漢英混打，各種特殊符號輸入，日期時間輸入等。
+**支持漢英混打**，各種特殊符號輸入，日期時間輸入等。
 
 <img src="pic\showcase.png"/>
 
@@ -169,23 +179,23 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 > **顏文字（表情）須安裝粵拼方可使用**，安裝方法請參攷[如何在RIME輸入法安裝菊韻輸入法 – なかやま園](https://zonsan.fc2.page/?p=1563)。
 > 由於和文功能所依賴方案詞庫過大，14.1b版本已將其關閉以防止部分設備無法正常部署。如需使用請自行安裝並手動啓用。
 
-### 字詞
+### 字表詞庫
 
-菊韻字庫詞庫以深筆爲準，但可以轉換爲簡筆。隨基本字庫詞庫之外，菊韻亦有小欖話特色詞庫以及廣東地名詞庫。
+菊韻字表詞庫以深筆爲準，但可以轉換爲簡筆。隨基本字表詞庫之外，菊韻亦有小欖話特色詞庫以及廣東地名詞庫。
 
 > [!NOTE]
 >
 > 菊韻可調用擴展詞庫，但需要手動下載。[gukwan-extended.dict.yaml](https://github.com/HoengSaan/rime-gukwan/blob/main/gukwan-extended.dict.yaml)內有說明如何獲取。由於擴展詞庫過大，低性能設備不建議使用，可能導致部署失敗。
 
-### 反查
+### 反查支持
 
 多數人士通曉廣州話、普通話卻未必熟識自己鄉下發音，故設各種反查。反查亦可用來打菊韻難以輸入或無收錄既非常用字。
 
 - 粵拼（[rime-cantonese](https://github.com/rime/rime-cantonese)），粵語廣州話反查。鍵值爲<code>` </code>。
-- 明月拼音（rime-luna_pinyin），官語普通話反查。鍵值爲<code>`P</code>（PuPing/PouPing）。
+- 明月拼音（rime-luna_pinyin），官語普通話反查 。鍵值爲<code>`P</code>（PuPing/PouPing）。
 - 倉頡五代（rime-cangjie5），倉頡反查。鍵值爲<code>`C</code>（CoongKit/CongKit ）。
 - 訓讀（[rime-kunyomi](https://github.com/sgalal/rime-kunyomi)），和語訓讀（現代音）反查。鍵值爲<code>`F</code>（FanDuk）。
-- 兩分（[rime-loengfan](https://github.com/CanCLID/rime-loengfan)），粵語廣州話兩分拆字反查。鍵值爲<code>`L</code>（LoengFan）。
+- 兩分（[rime-loengfan](https://github.com/CanCLID/rime-loengfan)），粵語廣州話兩分拆字反查。鍵值爲<code>`L</code>（LiongFan/LoengFan）。
 
 > [!NOTE]
 > 
@@ -359,24 +369,53 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 - `gukwan-siulaam.schema.yaml`：小欖音
   - 本方案根據小欖鎮代表特徵製作。下爲重要特徵：
     - 多數人不分透曉（t/h），故可以h音打t（如「偸」`tau1`可打`hau1`）。
+    - 「胡」「戶」「護」三小韻`wu/fu`混讀。
     - 不分`ak`同`aak`，故可以aak音打ak（如「勒」`lak6`可打`laak6`）。
       - 老派只有`aak`，無`ak`
     - 蟹攝合口一等字，廣州話讀`eoy`者，小欖話多讀作`yu`：
       - 端組、來母同心母讀作`yu`，如「對」`dy3`「腿」`ty2`「堆」`dy1`「碎」`sy3`等。
-      - 精組（除心母）多數人已裂化讀`eoy`，如「最」`zeoy3`「罪」`zeoy6`「催」`ceoy1`等。
+      - 精組（除心母）多數人讀`eoy`，如「最」`zeoy3`「罪」`zeoy6`「催」`ceoy1`等。
       - 此類字讀`ui`爲棺材音，故方案不採用。
 - `gukwan-siulaam-bofung.schema.yaml`：小欖寶豐音
   - 本方案根據《沙田方言》《中山方言誌》製作。下爲同小欖音主要區別：
-    - 分辨透曉，ong/ok同oeng/oek可不分；eng/ek同en/et可不分。實際打字兩者皆可。
+    - 分辨透曉，ong·ok同oeng·oek可不分；eng·ek同en·et可不分。實際打字兩者皆可。
+    - 「胡」「戶」「護」三小韻讀`fu`。
     - 蟹攝合口一等字變化同廣州話一樣，但有部分讀`oe`（見`gukwan-siulaam-bofung.dict.yaml`）
+
+##### 東昇
 
 東昇本屬小欖，86年被劃出，21年被劃返去小欖鎮。
 
-- `gukwan-dungsing.schema.yaml`【未製作】
+坦背本分屬欖鎮同隆鎮，新中國後分去沙蓢，84年設區，86年設鎮，99年併入東昇，21年跟東昇一同併入欖鎮。
 
-坦背本分屬欖鎮同隆鎮，新中國後分去沙蓢，84年設區，86年設鎮，99年併入東昇，21年跟東昇併入欖鎮。
+- `gukwan-dungsing.schema.yaml`：東昇音
 
-- `gukwan-taanbui.schema.yaml`【未製作】
+  - 本方案根據《沙田方言》《中山方言誌》製作。下爲同小欖話主要區別：
+    - 分辨透曉
+    - ong·ok同oeng·oek不分，全部讀`oe`。實際打字兩者皆可。
+    - 「胡」「戶」「護」三小韻讀`fu`，無混。
+    - 蟹攝合口一等字精組全面變化爲`eoy`。
+    - 遇攝合口一等字裂化同廣州一樣爲`ou`：「度」`dou6`「無」`mou4`「做（作）」`zou6`「粗」`cou1`等。
+    - 曉匣喻細音字讀`h`而非`j`，但已大幅廣州化。
+  - 根據《中山方言誌》高沙音同東昇音區別爲：
+    - 遇攝合口一等字裂化同小欖一樣爲`au`，而非`ou`。
+      - 請符合此項用家在98行添加井號，竝刪除97行井號。
+    - 分辨ong·ok同oeng·oek /yø/。
+      - 請符合此項用家在170行、171行、374行添加井號
+
+  - 根據《中山方言誌》太平音同東昇音主要區別：
+    - 廣州話聲母`w`同韻腹`u/o`結合者，太平聲母則爲`f`，如「黃」`foeng4`「換」`fun6`「會」`fui6`「活」`fut6`。
+      - 請符合此項用家刪除42行、43行、313行、314行井號
+      - 此類字往往越接近現代，就會有越多字跟廣州一樣讀`w`。如已不能分辨者，請將42~44行`xform`改成`derive`。
+    - 江攝除莊組外讀`ong /yong/`，江攝莊組同宕攝開口讀`oeng /yeong/`，宕攝合口讀`wong /wyong/`。
+      - 請符合此項用家先在130行、170行、171行、374行添加井號，竝刪除179行同375行井號。
+  - 根據《中山方言誌》坦背音同東昇音主要區別：
+    - 曉谿合口不讀脣齒，如「灰」讀`hui1`，「戶」讀`hu6`、不同「父」`fu6`混。
+      - 請符合此項用家在62行、63行、324行、325行添加井號。
+    - 部份古全濁字不送氣，即「盤」讀`bun4`等
+      - 請符合此項用家刪除221行井號。
+    - 江攝除莊組外讀`ong /yong/`，江攝莊組同宕攝開口讀`oeng /yeong/`，宕攝合口讀`wong /wyong/`。即「鋼」讀`goeng1`但「江」讀`gong1`，其他音位不變。
+      - 請符合此項用家先在130行、170行、171行、374行添加井號，竝刪除179行同375行井號。
 
 #### 橫欄
 
@@ -400,6 +439,34 @@ This is a schema based on [Rime Input Method](https://rime.im/).
       - 此類字往往越接近現代，就會有越多字跟廣州一樣讀`w`。如已不能分辨者，請將42~44行`xform`改成`derive`。
 
 參攷：《沙田方言》《中山方言誌》
+
+#### 古鎮
+
+古鎮亦被稱之爲燈都，顧名思義，其主要產業即爲燈。古鎮臨近江門，只有海洲係講順德系方言，曹步同古鎮則主要講四邑系方言。
+
+由於菊韻本意是爲順德系方言製作方案，故目前竝無考慮製作四邑系方言。
+
+- `gukwan-guzan-hoizau.schema.yaml`：海洲音
+  - 本方案根據海洲音代表特徵製作。下爲重要特徵：
+    - 區分來孃。
+    - 脣化聲母遇o消失，即「過」「個」不分，皆讀`go3`
+    - 見系遇攝三等字裂化，讀`eoy /øy/`，如「區」`keoy1`「去」`heoy3`「車」`geoy1`「巨」`geoy6`等。
+    - 「ooi音」，來自於蟹攝三等合口字同止攝合口銳音，海洲止攝同廣州一樣變`eoy`但蟹攝同`oi`合流。
+    - 效攝一等字讀`au`而非`ou`，如「高」`gau1`「刀」`dau1`「掃」`sau3`「毛」`mau4`
+  - 以下竝非出自《中山方言誌》，而爲本人所知：
+    - 遇攝合口一等字除見系之外裂化爲`ou`，但亦有讀`au`話者。
+      - 請讀`au`用家在98行添加井號，竝刪除97行井號。
+    - 見組止攝開口三等字已裂化讀`ei`，如「其」`kei4`「起」`hei2`「機」`gei1`「紀」`gei3`等。
+  - 以下並無資料證明，僅爲猜測：
+    - 其蟹攝合口一等字變化應同小欖。
+
+參攷：《中山方言誌》
+
+#### 東鳳
+
+#### 阜沙
+
+#### 三角
 
 #### 南頭
 
@@ -426,27 +493,13 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 
 參攷：《沙田方言》《中山方言誌》
 
-#### 古鎮
+#### 浪網
 
-古鎮亦被稱之爲燈都，顧名思義，其主要產業即爲燈。古鎮臨近江門，只有海洲係講順德系方言，曹步同古鎮則主要講四邑系方言。
+#### 黃圃
 
-由於菊韻本意是爲順德系方言製作方案，故目前竝無考慮製作四邑方案。
+#### 沙蓢
 
-- `gukwan-guzan-hoizau.schema.yaml`：海洲音
-  - 本方案根據海洲音代表特徵製作。下爲重要特徵：
-    - 區分來孃。
-    - 脣化聲母遇o消失，即「過」「個」不分，皆讀`go3`
-    - 見系遇攝三等字裂化，讀`eoy /øy/`，如「區」`keoy1`「去」`heoy3`「車」`geoy1`「巨」`geoy6`等。
-    - 「ooi音」，來自於蟹攝三等合口字同止攝合口銳音，海洲止攝同廣州一樣變`eoy`但蟹攝同`oi`合流。
-    - 效攝一等字讀`au`而非`ou`，如「高」`gau1`「刀」`dau1`「掃」`sau3`「毛」`mau4`
-  - 以下竝非出自《中山方言誌》，而爲本人所知：
-    - 遇攝合口一等字除見系之外裂化爲`ou`，但亦有讀`au`話者。
-      - 請讀`au`用家在98行添加井號，竝刪除97行井號。
-    - 見組止攝開口三等字已裂化讀`ei`，如「其」`kei4`「起」`hei2`「機」`gei1`「紀」`gei3`等。
-  - 以下並無資料證明，僅爲猜測：
-    - 其蟹攝合口一等字變化應同小欖。
-
-參攷：《中山方言誌》
+#### 港口
 
 ### 順德
 
