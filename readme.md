@@ -65,7 +65,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 >   - 由於個個方言都變化程度不一，以我
 > - 關於白讀字請見[方案](https://github.com/HoengSaan/rime-gukwan#方案)
 
-### 三拼輸入
+### 輸入方式
 
 菊韻支持竝默認開啓三拼，即所有漢字皆可以三鍵輸入（不含聲調）。
 
@@ -75,7 +75,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 
 <img src="pic\key.png"/>
 
-#### 子音
+#### 子音（聲母）
 
 - 不區分平翹日以之方言（多數方言）
   - 以`q`輸入`kw`：如「裙」`kwan`則爲`qan`
@@ -89,7 +89,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
   - 以`x`輸入`gw`
   - 以`r`輸入`ng`｜`ngi`｜`nj`：如「言」`ngin`則爲`rin`，如「仍」`njing`則爲`rir`
 
-#### 母音
+#### 母音（韻母）
 
 - 無韻尾情況（如`laa`，`loe`等）
   - 以`a`輸入`aa`：如「瓜」`gwaa`則爲`xa`
@@ -99,9 +99,10 @@ This is a schema based on [Rime Input Method](https://rime.im/).
   - 以`r`輸入`aa`：如「逛」`gwaang`則爲`xrr`
   - 以`y`輸入`yu`（`jyu`）:如「血」`hyut`則爲`hyt`
   - 以`u`輸入`eo`：如「論」`leon`則爲`lun`
+- 以下三拼僅部分方案適用
   - 以`r/e`輸入`ae`：如「斬」`zhaem`則爲`z(h)aam`｜`z(h)rm`｜`z(h)em`（僅`gukwan-default`）
-  - 以`u`輸入`oo`【僅限`ooi`】：如「淚」`looi`則爲`lui`（部份方言）
-  - 以`o`輸入`oo`【僅限`oong/ook`】：如「朗」`loong`則爲`lor`（部份方言）
+  - 以`u`輸入`oo`【僅限`ooi`】：如「淚」`looi`則爲`lui`（部份方案）
+  - 以`o`輸入`oo`【僅限`oong/ook`】：如「朗」`loong`則爲`lor`（部份方案）
 
 以`e`輸入`oe`是考慮`e`系韻母本身以白讀音爲主，較少使用。而`u`同`eo/oo`；`o`同`oo`在多數方言下都爲互補，不影響輸入。
 
@@ -143,40 +144,45 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 
 <img src="pic\showcase.png"/>
 
-- **漢英混打：允許漢字英文混打，基於melt-eng。待完善**
-- 繪文字（表情）：可以粵語輸入繪文字，默認關閉
-- 符號：特殊符號輸入，鍵值爲`/`。[學習如何使用符號](https://github.com/HoengSaan/rime-gukwan/blob/main/symbols-gukwan.yaml)
-- Unicode：以Unicode編號直接輸入字符，適合輸入組合字符，空白字符等難複製特殊字符，鍵值爲`U`（unicode）
-- 數字：以阿拉伯數字輸入大小寫數字以及大小寫金額，鍵值爲`S`（SHuZy/SauZy）；支持以下7種格式：
-  - 二〇二五（數字小寫）
-  - 貳零貳伍（數字大寫）
-  - 〢〇〢〥（蘇州碼子）
+- 以下功能出廠自帶：
+  - **漢英混打：允許漢字英文混打，基於melt-eng。待完善**
+  - 繪文字（表情）：可以粵語輸入繪文字，默認關閉
+  - 符號：特殊符號輸入，鍵值爲`/`。[學習如何使用符號](https://github.com/HoengSaan/rime-gukwan/blob/main/symbols-gukwan.yaml)
+  - Unicode：以Unicode編號直接輸入字符，適合輸入組合字符，空白字符等難複製特殊字符，鍵值爲`U`（unicode）
+  - 數字大小寫：以阿拉伯數字輸入大小寫數字以及大小寫金額，鍵值爲`S`（SHuZy/SauZy）；支持以下7種格式：
+    - 二〇二五（數字小寫）
+    - 貳零貳伍（數字大寫）
+    - 〢〇〢〥（蘇州碼子）
     - 即花碼，由於本身特性不支持亦不需要小數點。[瞭解更多](https://zh.wikipedia.org/zh-tw/%E8%8B%8F%E5%B7%9E%E7%A0%81%E5%AD%90)
-  - 二千〇二十五（數額小寫）
-  - 貳仟零貳拾伍（數額大寫）
-  - 二千〇二十五圓整（金額小寫）
-  - 貳仟零貳拾伍圓整（金額大寫）
-- 日期・時間・節日・節氣：
-  - 【`/date`】日期（NJatKi/JatKi）：現代鍵值爲`vjk`｜`/jk`；古代鍵值爲`vrk`｜`/rk`；有多種格式，部份默認禁用
-  - 【`/time`】時間（SHiGaen/SiGaan）：鍵值爲`vsg`｜`/sg`
-  - 【`/week`】星期（SingKi）：鍵值爲`vsk`｜`/sk`
-  - 【`/datetime`】日時（NJatSHi/JatSi）：現代鍵值爲`vjs`｜`/js`｜；古代鍵值爲`vrs`｜`/rs`；ISO 8601/RFC 3339格式日期時間，以東八區（UTC+8）爲準
-  - 【`/weeknumber`】週數（Week Number）：鍵值爲`vwn`｜`/wn`；今年第幾周
-  - 【`/timestamp`】時間戳（Time Stamp），鍵值爲`vts`｜`/ts`
-  - 【`/lunar`】農曆（NungLik），鍵值爲`vnl`｜`/nl`
-  - 【`/zithi`】節氣（ZitHi）：鍵值爲`vzh`｜`/zh`｜；廿四節氣同日期
-  - 【`/festival`】節日（ZitNJat/ZitJat）：現代鍵值爲`vzj`｜`/zj`；古代鍵值爲`vzr`｜`/zr`；新舊曆節日同日期
-  - 【`/info`】日期信息整合，鍵值爲`vday`｜`/day`（電話版中州韻多數不能正常顯示）
-  - 直出，鍵值爲`N`+「`YYYYMMDD`」；有四種模式：「新曆」「新曆轉舊曆」「舊曆轉新曆」「新曆轉干支」
-  - **鍵值已在腳本固定，如需修改須直接改變`time_gukwan.lua`或`time_gukwan_modern.lua`**
-- 計數機：直接在RIME計數，鍵值爲`cC`（Calculator）。[學習如何使用計數機](https://github.com/gaboolic/rime-shuangpin-fuzhuma/blob/main/md/calc.md)
-- 假名：以細階輸入平假名，大階輸入片假名，鍵值爲<code>`G</code> （gaa ming）。輸入方式同其他IME（如Microsoft IME、ATOK等）基本無區別
-- 顏文字：以日文輸入各種顏文字，鍵值爲<code>`K</code>（kaomoji）
-- 和文：實現半混打日文，基於[rime-kikwin](https://github.com/HoengSaan/rime-kikwan)，鍵值爲<code>`R</code>（romaji）
+    - 二千〇二十五（數額小寫）
+    - 貳仟零貳拾伍（數額大寫）
+    - 二千〇二十五圓整（金額小寫）
+    - 貳仟零貳拾伍圓整（金額大寫）
+
+  - 日期・時間・節日・節氣輸入：
+    - 【`/date`】日期（NJatKi/JatKi）：現代鍵值爲`vjk`｜`/jk`；古代鍵值爲`vrk`｜`/rk`；有多種格式，部份默認禁用
+    - 【`/time`】時間（SHiGaen/SiGaan）：鍵值爲`vsg`｜`/sg`
+    - 【`/week`】星期（SingKi）：鍵值爲`vsk`｜`/sk`
+    - 【`/datetime`】日時（NJatSHi/JatSi）：現代鍵值爲`vjs`｜`/js`｜；古代鍵值爲`vrs`｜`/rs`；ISO 8601/RFC 3339格式日期時間，以東八區（UTC+8）爲準
+    - 【`/weeknumber`】週數（Week Number）：鍵值爲`vwn`｜`/wn`；今年第幾周
+    - 【`/timestamp`】時間戳（Time Stamp），鍵值爲`vts`｜`/ts`
+    - 【`/lunar`】農曆（NungLik），鍵值爲`vnl`｜`/nl`
+    - 【`/zithi`】節氣（ZitHi）：鍵值爲`vzh`｜`/zh`｜；廿四節氣同日期
+    - 【`/festival`】節日（ZitNJat/ZitJat）：現代鍵值爲`vzj`｜`/zj`；古代鍵值爲`vzr`｜`/zr`；新舊曆節日同日期
+    - 【`/info`】日期信息整合，鍵值爲`vday`｜`/day`（電話版中州韻多數不能正常顯示）
+    - 直出，鍵值爲`N`+「`YYYYMMDD`」；有四種模式：「新曆」「新曆轉舊曆」「舊曆轉新曆」「新曆轉干支」
+    - **鍵值已在腳本固定，如需修改須直接改變`time_gukwan.lua`或`time_gukwan_modern.lua`**
+
+  - 計數機：直接在RIME計數，鍵值爲`cC`（Calculator）。[學習如何使用計數機](https://github.com/gaboolic/rime-shuangpin-fuzhuma/blob/main/md/calc.md)
+
+- 以下功能須安裝`rime-kikwin`
+  - 假名：以細階輸入平假名，大階輸入片假名，鍵值爲<code>`G</code> （gaa ming）。輸入方式同其他IME（如Microsoft IME、ATOK等）基本無區別
+  - 顏文字：以日文輸入各種顏文字，鍵值爲<code>`K</code>（kaomoji）
+  - 和文：允許半混打日文，鍵值爲<code>`R</code>（romaji）
+
 
 > [!NOTE]
 >
-> **顏文字（表情）須安裝粵拼方可使用**，安裝方法請參攷[如何在RIME輸入法安裝菊韻輸入法 – なかやま園](https://zonsan.fc2.page/?p=1563)。
 > 由於和文功能所依賴方案詞庫過大，14.1b版本已將其關閉以防止部分設備無法正常部署。如需使用請自行安裝並手動啓用。
 
 ### 字表詞庫
@@ -393,29 +399,27 @@ This is a schema based on [Rime Input Method](https://rime.im/).
   - 本方案根據《沙田方言》《中山方言誌》製作。下爲同小欖話主要區別：
     - 分辨透曉
     - ong·ok同oeng·oek不分，全部讀`oe`。實際打字兩者皆可。
+      - 【高沙】分辨ong·ok同oeng·oek /yø/。
+        - 請符合此項用家在170行、171行、374行添加井號
+      - 【太平】【坦背】江攝除莊組外讀`ong /yong/`，江攝莊組同宕攝開口讀`oeng /yeong/`，宕攝合口讀`wong /wyong/`。
+        - 請符合此項用家先在130行、170行、171行、374行添加井號，竝刪除179行同375行井號。
     - 「胡」「戶」「護」三小韻讀`fu`，無混。
     - 蟹攝合口一等字精組全面變化爲`eoy`。
     - 遇攝合口一等字裂化同廣州一樣爲`ou`：「度」`dou6`「無」`mou4`「做（作）」`zou6`「粗」`cou1`等。
+      - 【高沙】遇攝合口一等字裂化同小欖一樣爲`au`，而非`ou`。
+        - 請符合此項用家在98行添加井號，竝刪除97行井號。
     - 曉匣喻細音字讀`h`而非`j`，但已大幅廣州化。
-  - 根據《中山方言誌》高沙音同東昇音區別爲：
-    - 遇攝合口一等字裂化同小欖一樣爲`au`，而非`ou`。
-      - 請符合此項用家在98行添加井號，竝刪除97行井號。
-    - 分辨ong·ok同oeng·oek /yø/。
-      - 請符合此項用家在170行、171行、374行添加井號
-
-  - 根據《中山方言誌》太平音同東昇音主要區別：
-    - 廣州話聲母`w`同韻腹`u/o`結合者，太平聲母則爲`f`，如「黃」`foeng4`「換」`fun6`「會」`fui6`「活」`fut6`。
+  
+  - 補充：
+  
+    - 【太平】廣州話聲母`w`同韻腹`u/o`結合者，太平聲母則爲`f`，如「黃」`foeng4`「換」`fun6`「會」`fui6`「活」`fut6`。
       - 請符合此項用家刪除42行、43行、313行、314行井號
       - 此類字往往越接近現代，就會有越多字跟廣州一樣讀`w`。如已不能分辨者，請將42~44行`xform`改成`derive`。
-    - 江攝除莊組外讀`ong /yong/`，江攝莊組同宕攝開口讀`oeng /yeong/`，宕攝合口讀`wong /wyong/`。
-      - 請符合此項用家先在130行、170行、171行、374行添加井號，竝刪除179行同375行井號。
-  - 根據《中山方言誌》坦背音同東昇音主要區別：
-    - 曉谿合口不讀脣齒，如「灰」讀`hui1`，「戶」讀`hu6`、不同「父」`fu6`混。
+    - 【坦背】曉谿合口不讀脣齒，如「灰」讀`hui1`，「戶」讀`hu6`、不同「父」`fu6`混。
       - 請符合此項用家在62行、63行、324行、325行添加井號。
-    - 部份古全濁字不送氣，即「盤」讀`bun4`等
+  
+    - 【坦背】並母字有不送氣現象，即「盤」讀`bun4`等
       - 請符合此項用家刪除221行井號。
-    - 江攝除莊組外讀`ong /yong/`，江攝莊組同宕攝開口讀`oeng /yeong/`，宕攝合口讀`wong /wyong/`。即「鋼」讀`goeng1`但「江」讀`gong1`，其他音位不變。
-      - 請符合此項用家先在130行、170行、171行、374行添加井號，竝刪除179行同375行井號。
 
 #### 橫欄
 
