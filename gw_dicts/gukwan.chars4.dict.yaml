@@ -12,7 +12,7 @@
 
 ---
 name: gukwan.chars4
-version: "17.8.1b"
+version: "17.8.2b"
 sort: by_weight
 ...
 
@@ -29,7 +29,7 @@ sort: by_weight
 頻	ban4
 棚	baang4
 皮	bi4
-浦bu2
+浦	bu2
 菩	bu4
 蒲	bu4
 賠	bui4
@@ -72,7 +72,7 @@ sort: by_weight
 寢	zam2
 曾	zang4
 前	zin4
-錢zin4
+錢	zin4
 程	zring4
 埕	zring4
 匙	zhy4
@@ -109,7 +109,7 @@ sort: by_weight
 等	tang2
 解	kaai2
 揀	kaen2
-挂kwaa3
+挂	kwaa3
 掛	kwaa3
 褂	kwaa3
 郭	kwok3
