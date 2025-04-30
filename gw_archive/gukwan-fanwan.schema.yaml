@@ -1,0 +1,372 @@
+# Rime schema
+# encoding: utf-8
+#
+# gukwan - 菊韻
+
+# 此爲菊韻粵語輸入法方案文件
+# 瞭解如何使用菊韻請閱覽readme文件，詳細請至本方案github頁：
+# https://github.com/HoengSaan/rime-gukwan
+# This is a schema file for Gukwan Cantonese Input Method.
+# Learn how to use Gukwan in the readme file, available on the project's github page.
+
+__include: gukwan.schema:/
+
+schema:
+  __include: gukwan.schema:/schema
+  schema_id: gukwan-fanwan
+  name: 菊韻分韻音
+  version: "17.2b"
+  author:
+    - 靈帝（Hoengsaan）
+  description: |-
+    測試階段
+    本方案準確來講爲分韻風竝非眞正分韻音，用於示範如何自製方案
+    瞭解如何使用菊韻請閱覽readme文件，詳細請至本方案github頁：https://github.com/HoengSaan/rime-gukwan
+    如有問題或建議可於以上github頁中開Issues反饋
+
+speller:
+  __include: gukwan.schema:/speller
+  algebra:
+    #聲母
+    #- derive/^ng([aeiouy])/$1/              # 疑母脫落(ng->0)
+    #- derive/^([aeiou])/ng$1/              # 疑影不分(ng==0)
+    
+    - derive/^nr/n/                         #
+    - derive/^nr/nj/                        #
+
+    - xform/^hj/j/                          # 曉匣喻細音(hj->j)：「賢」讀jin
+    #- xform/^hjo/hio/                      # 曉匣喻細音(hj->h)：「樣」讀hoeng
+    #- xform/^hjaa/hia/                     # 曉匣喻細音(hj->h)：「爺」讀he
+    #- xform/^hj/h/                         # 曉匣喻細音(hj->h)：「賢」讀hin
+    
+    #- xform/^wu(i|n|t)(?=\d)/hu$1/         # 古匣母一類(h)
+    #- xform/^wo(ng|k)(?=\d)/hwo$1/       # 古匣母一類(h)
+    #- xform/^hwun(?=\d)/hun$1/              # 古匣母二類(h)：「桓」讀fun者
+    - xform/^hwun(?=\d)/wun$1/             # 古匣母二類(w)：「桓」讀wun者
+    - xform/^hu4/wu4/                       # 古匣母三類(w)：「狐」讀作wu4
+    - xform/^hu6/wu6/                      # 古匣母三類(w)：「護」讀作wu6
+    #- xform/^fu(?=\d)/hu$1/                 # 古非敷奉香山：「夫」讀hu
+    #- xform/^fu(i|n|ng|k|t)(?=\d)/hu$1/     # 古非敷奉香山：「風」讀hui
+    #- xform/^fo(ng|k)(?=\d)/ho$1/          # 古非敷奉香山：「方」讀hong（舊）
+    
+    - xform/^(z|c|s)jy(?=\d)/$1ji/           # 師韻不分精照
+    - xform/^(z|c|s)hy(?=\d)/$1y/           # 師韻不分精照
+    - xform/^ngiuk/njuk/                    # 疑母齶化(ngiuk->njuk)
+    - xform/^ngiong/njong/                  # 疑母齶化(ngiong->njong)
+    - xform/^ngi/nji/                       # 疑母齶化(ngi->nji)
+    #- derive/^nj(i|y)/ng$1/                # 日母香山
+    - xform/^ngy/njy/                       # 疑母齶化(ngy->njy)
+    - xform/^ngw/w/                         # 疑合脫落(ngw->w)
+    #- derive/^ngw/ng/                      # 疑合脫落(ngw->w)
+    - xform/^ngun(?=\d)/wun$1/              # 疑合脫落(ngw->w)
+    - xform/^kwing(?=\d)/king$1/
+    - xform/^hwing(?=\d)/hing$1/
+    - xform/^hw(?!ing)/f/                   # 曉合輕脣(hw->f)
+    - xform/^hu(?!ng|k)/fu/                 # 曉合輕脣(hw->f)
+    
+    #韻母
+    - xform/iau(?=\d)/au/                   # 流攝三等(iau->au)
+
+    - derive/eau(?=\d)/au/                  # 合音
+    - derive/eau(?=\d)/ou/                  # 合音
+    - xform/io(?=\d)/oe/                    # (io->oe)
+    - xform/jo(?=\d)/joe/                   # (jo->oe)
+    - xform/uo(?=\d)/oe/                    # (uo->oe)
+    - xform/uo(n|t)(?=\d)/oe$1/             # (uo->oe)
+
+    #韻母——分韻（非現代音建議維持）
+    - derive/yo(?=\d)/yu/                   # 遇開分韻(yo->yu)
+    - xform/yi(?=\d)/ui/                    # 蟹合分韻(yi->ui)
+    #- xform/ou(?=\d)/o$1/                  # FIX
+    #- xform/ou(?=\d)/au$1/                 # FIX
+    
+    #韻母——現代    
+    - xform/ooy(?=\d)/ooi/                  # 蟹合三(ooy->ooi)：FIX
+    - derive/ooy(?=\d)/eoy/                 # 蟹合三(ooy->eoy)：「雖」讀ceoy
+    #- derive/ooy(?=\d)/oi/                 # 蟹合三(ooy->oi)：「雖」讀coi
+    #- derive/ooy(?=\d)/ui/                 # 蟹合三(ooy->ui)：「雖」讀cui 
+
+    #- derive/ooi(?=\d)/ooy/                # 止合銳(ooi->ooy)：FIX
+    - derive/ooi(?=\d)/eoy/                 # 止合銳(ooi->eoy)：「雖」讀ceoy
+    #- derive/ooi(?=\d)/oi/                 # 止合銳(ooi->oi)：「雖」讀coi
+    #- derive/ooi(?=\d)/ui/                 # 止合銳(ooi->ui)：「雖」讀cui 
+
+    #- derive/^(b|p|f)i(?=\d)/$1ei/         # 止攝裂化脣音(i->ei) ：「備」讀bei
+    #- derive/^([dtnl])i(?=\d)/$1ei/       # 止攝裂化齒音(i->ei)：「地」讀dei
+    #- derive/^(g|k|h)i(?=\d)/$1ei/         # 止攝裂化牙音(i->ei)：「既」讀gei
+    #- derive/^(s)(?!j)i(?=\d)/$1ei/        # 止攝心母例外音
+    
+    - xform/^ngu(?=\d)/ng/                            # 單獨成韻(ngu->ng)：「吳」讀ng
+    #- derive/^([bpmtdnlzcs]|sh)u(?=\d)/$1au/  # 遇攝裂化(u->au)：「渡」讀dau
+    #- derive/^([bpmtdnlzcs]|sh)u(?=\d)/$1ou/  # 遇攝裂化(u->ou)：「渡」讀dou 若果效攝讀o請提前轉換
+    #- derive/^([bpmtdnlzcs]|sh)u(?=\d)/$1o/   # 遇攝裂化(u->o)：「渡」讀do
+    
+    #- derive/^([zcsnl])yo(?=\d)/$1eoy/   # 遇開三(yo->eoy)：「旅」讀leoy
+    #- derive/^(g|k|h)yo(?=\d)/$1eoy/       # 遇開三(yo->eoy)：「去」讀heoy
+    
+    #- derive/^([zcnl])yu(?=\d)/$1eoy/     # 遇合三裂化(yu->eoy)：「聚」讀zeoy
+    #- derive/^(s)yu(?=\d)/$1eoy/           # 遇合三裂化(yu->eoy)：「須」讀seoy
+    #- derive/^(g|k|h)yu(?=\d)/$1eoy/       # 遇合三裂化(yu->eoy)：「巨」讀geoy
+    
+    #- derive/^zyi(?=\d)/zeoy/                # 蟹合一(yi->eoy)：「最」讀zeoy
+    #- derive/^cyi(?=\d)/ceoy/                # 蟹合一(yi->eoy)：「催」讀zeoy
+    #- derive/^syi(?=\d)/seoy/               # 蟹合一(yi->eoy)：「碎」讀seoy
+    #- ^syi(?=\d)/syu/                 # 蟹合一(yi->yu)：「碎」讀syu
+    #- derive/^([dtnl])yi(?=\d)/$1yu/      # 蟹合一(yi->yu)：「對」讀dyu
+    #- derive/yi(?=\d)/eoy/                 # 蟹合一(yi->eoy)：皆讀eoy者用竝關其他
+    #- derive/yi(?=\d)/yu/                  # 蟹合一(yi->yu)：皆讀yu者用竝關其他
+
+    #- xform/yo(?=\d)/yu/                   # FIX（現代音用）
+    
+    #- xform/^(z|c|s|zh|ch|sh)y(?=\d)/i/    # 止攝師韻展脣(y->i) ：「師」讀si
+    #- derive/^(z|c|s|zh|ch|sh)y(?=\d)/yu/  # 止攝師韻圓脣(y->yu)：「仕」讀syu 
+    #- derive/^(z|c|s)ji(?=\d)/$1ii/        # 止開照組異拼(ji->ii)
+    
+    #- derive/eo(n|t)(?=\d)/a$1/            # 臻攝混音(ea->a)：「順」讀san 白讀/香山系用
+    
+    #- derive/ou(?=\d)/o$1/                 # 效一元音融合(ou->o)：「高」讀go
+    #- derive/ou(?=\d)/au$1/                # 效一元音(ou->au)：「高」讀gau
+    
+    - xform/ia(?=\d)/e$1/                   # 果假元音融合(ia->e)：「車」讀ce
+    - xform/jaa(?=\d)/je$1/                 # 果假元音融合(jaa->je)：「野」讀je
+    
+    - xform/oo(ng|k)/o$1/                   # 宕攝開口(oo->o)：「各」讀gok
+    - xform/io(ng|k)/oe$1/                  # 宕江元音融合(io->oe) ：「量」讀loeng
+    - xform/jo(ng|k)/joe$1/                 # 宕江元音融合(jo->joe) ：「央」讀央joeng
+    
+    - xform/ae([unmtp])(?=\d)/aa$1/       # 山效咸文(ae->aa)：「關」讀gwaan
+    #- derive/ae([unmtp])(?=\d)/e$1/      # 山效咸白(ae->e)：「關」讀gwen 白讀音用
+    
+    #- derive/o(m|p)(?=\d)/a$1/             # 咸攝音變(o->a)：「甘」讀gam
+
+    #- derive/e([umnptk]|ng)/ia$1/
+
+    #聲母——現代
+    #- derive/^(z|c|s)h/$1/                 # 精照合流(zh->z)
+    #- derive/^(zj|cj|sj)yo(?=\d)/$1yu/     # 精照合流
+    #- derive/^(z|c|s)j(?!yo)/$1/           # 精照合流(ch->c)
+    #- derive/^(z|c)r/$1/                   # 精照合流(sj->s)
+    #- derive/^nj/j/                        # 日以合流(nj->j)
+
+    #- derive/^ng(i|y)/j$1/                 # 疑日細音(ng->j)
+    #- derive/^n(?!g|j)/l/                  # 泥來合流(n->l)
+    #- derive/^t/h/                         # 透曉合流(t->h)
+    - xform/^xaa(?=\d)/jaa$1/
+    - xform/I(?=\d)/i$1/                    # 外來語
+    #- derive/^(g|k)wo/$1o/                 # 口音補充(gwo->go)：遇o不分
+    #- derive/^(g|k)wo(?=\d)/$1o/           # 口音補充(gwo->go)：遇單o不分
+    #- derive/^(g|k)w/$1/                   # 口音補充(gk[!w])：不能分脣化聲母者
+
+    #韻母——其他
+    #- derive/ap(?=\d)/aap$1/               # ap同aap混 
+    #- derive/at(?=\d)/aat$1/               # at同aat混
+    #- derive/ak(?=\d)/aak$1/               # ak同aak混
+    #- xform/ak(?=\d)/aak$1/                # akd讀aak
+    #- derive/ai(?=\d)/aai$1/               # ai同aai混
+    #- derive/ang(?=\d)/an$1/               # an同ang混 
+    #- derive/yu(?=\d)/i$1/                 # 「雨」讀ji
+    #- derive/yu(n|t)(?=\d)/i$1/            # 「穴」讀jit
+    #- derive/ing(?=\d)/in$1/               # 「並」讀bin
+    #- derive/ik(?=\d)/it$1/                # 「辟」讀pit
+    #- derive/eng(?=\d)/en$1/               # 「餅」讀ben
+    #- derive/ek(?=\d)/et$1/                # 「劈」讀pet
+    #- derive/o(ng|k)(?=\d)/oe$1/
+    #- derive/oe(ng|k)(?=\d)/o$1/
+    #- derive/(?!w)o(ng|k)(?=\d)/oe$1/
+    #- derive/(?!w)o(ng|k)(?=\d)/yo$1/
+    #- derive/(?!w)o(ng|k)(?=\d)/yoe$1/
+    #- derive/(?!w)o(ng|k)(?=\d)/yioe$1/
+    #- derive/(?!w)o(ng|k)(?=\d)/wa$1/
+    #- derive/oo(ng|k)(?=\d)/yo$1/
+    #- derive/oo(ng|k)(?=\d)/ioe$1/
+    #- derive/oo(ng|k)(?=\d)/oe$1/
+    #- derive/oo(ng|k)(?=\d)/yoo$1/
+    #- derive/oo(ng|k)(?=\d)/yoe$1/
+    #- derive/oo(ng|k)(?=\d)/wo$1/
+    #- derive/oo(ng|k)(?=\d)/ioe$1/
+    #- derive/io(ng|k)(?=\d)/yo$1/
+    #- derive/io(ng|k)(?=\d)/wyo$1/
+    #- derive/io(ng|k)(?=\d)/yoe$1/
+    #- derive/io(ng|k)(?=\d)/ioe$1/
+    #- derive/wo(ng|k)(?=\d)/oe$1/
+    #- derive/wo(ng|k)(?=\d)/yo$1/
+    #- derive/wo(ng|k)(?=\d)/wyo$1/
+    #- derive/wo(ng|k)(?=\d)/woe$1/
+    #- derive/wo(ng|k)(?=\d)/wyoe$1/
+    #- derive/wong(?=\d)/woeng$1/
+    #- derive/wok(?=\d)/oek$1/
+    #- derive/wong(?=\d)/wyoeng$1/
+    #- derive/wok(?=\d)/oek$1/
+    #- derive/oi(?=\d)/uoi$1/
+    #- derive/oi(?=\d)/uai$1/
+    #- derive/u(n|t)(?=\d)/o$1/
+    #- derive/u(n|t)(?=\d)/i$1/
+    #- derive/u(n|t)(?=\d)/y$1/
+
+    #韻尾
+    #根據自己口音偏好調校
+
+    #- derive/^ng([?=\d])$/m$1/             # 鼻音節混(ng->m)：「唔」「吳」不分
+    #- derive/ng([?=\d])$/n$1/              # 韻尾簡化(ng->n)：「恆生」變「痕身」
+    #- derive/m([?=\d])$/n$1/               # 韻尾簡化(m->n)：「心」「新」不分
+    #- derive/p([?=\d])$/t$1/               # 入聲弱化(p->t)：「入」「日」不分
+    #- derive/k([?=\d])$/t$1/               # 入聲弱化(k->t)：「即」讀/tsɪt/
+
+    #韻尾——增廣
+    #- derive/p([?=\d])$/h$1/               # 入聲弱化(p->h)
+    #- derive/k([?=\d])$/h$1/               # 入聲弱化(k->h)
+    #- derive/t([?=\d])$/h$1/               # 入聲弱化(t->h)
+    
+    #古全濁聲母不送氣
+    #- xform/^p([a-z]+)(4|5)/b$1$2/         # 脣音
+    #- xform/^t([a-z]+)(4|5)/d$1$2/         # 齒音
+    #- xform/^k([a-z]+)(4|5)/g$1$2/         # 牙音
+    #- derive/^p([a-z]+)(4|5)/b$1$2/        # 脣音
+    #- derive/^t([a-z]+)(4|5)/d$1$2/        # 齒音
+    #- derive/^k([a-z]+)(4|5)/g$1$2/        # 牙音
+
+    #減低打字速度，忠實實際發音但不推薦
+    #- xform/^m/bb/                         # 鼻音塞化
+    #- xform/^n(?!g|j)/dd/                  # 鼻音塞化
+    #- xform/^ng/gg/                        # 鼻音塞化
+    #- xform/^m/mb/                         # 鼻音鼻塞化
+    #- xform/^n(?!g|j)/nd/                   # 鼻音鼻塞化
+    #- xform/^ng/ngg/                       # 鼻音鼻塞化
+
+    #打字輔助
+    #正常情況下毋須郁動，可根據自己喜好調校。
+
+    #打字輔助——照組h拼法
+    - xform/^(z|c|s)j/$1h/                 # 打字輔助A組(-j->-h) 廣韻章組（h拼法）
+    - xform/^(z|c)r/$1h/                   # 打字輔助A組(-r->-h) 廣韻知組（h拼法）
+    #- derive/^(z|c|s)jiong/$1jong/          # 打字輔助A組 
+    #- derive/^(z|c|s)jiaa/$1jaa/            # 打字輔助A組
+
+    #打字輔助——照組j拼法
+    #- derive/^(z|c|s)h/$1j/                # 打字輔助B組(-h->-j) 廣韻莊組（j拼法）
+    #- derive/^(z|c)r/$1j/                  # 打字輔助B組(-r->-j) 廣韻知組（j拼法）
+
+    #異拼
+    #正常情況下毋須郁動，可根據自己喜好調校
+    
+    - derive/eoy(?=\d)/eoi/                 # 粵拼(eoy->eoi)
+    #- derive/^z/dz/                        # 教院拼音
+    #- derive/^c/ts/                        # 教院拼音
+    #- derive/y(?=\d)/z/                    # 英華拼法(y->z)
+    #- derive/y(?=\d)/ii/                   # 擴展粵拼(y->ii)
+
+    #全拼
+    #- derive/(g|k|h|ng)u/$1wu/             # 全拼(g|k|h[w]u)
+    #- derive/(g|k|h|ng)y/$1wy/             # 全拼(g|k|h[w]y)
+    #- derive/^ngy/ngjy/                    # 全拼(ng[j]y)
+    - derive/^jaa(?=\d)/jia$1/              # 全拼(j[i]aa)
+    - derive/^jo(ng|k)/jio$1/               # 全拼(j[i]o)
+    - derive/^njaa(?=\d)/njia$1/            # 全拼(j[i]aa)
+    - derive/^njo(ng|k)/njio$1/             # 全拼(j[i]o)
+    #- derive/ia(?=\d)/iaa$1/               # 全拼(ia[a])
+    
+    #簡拼（三拼）
+    - derive/^kw/q/                         # 簡拼(kw->q)
+    - derive/^gw/x/                         # 簡拼(gw->q)
+    - derive/^nj/r/                         # 簡拼(nj->r)
+    - derive/^ng([aeiouy])/r$1/             # 簡拼(ng->r)
+    - derive/([aeiouy])ng/$1r/              # 簡拼(ng->r)
+
+    - derive/aa(?=\d)/a/                    # 簡拼(aa->a)
+    - derive/aa([iumnptkr]|ng)/r$1/         # 簡拼(aa->r)
+    - derive/^jy?([aeiou])/y$1/             # 簡拼(jy->y)
+    - derive/yu(?!ng|k)/y/                  # 簡拼(yu->y)
+    - derive/oe(ng|k|r)/e$1/                # 簡拼(oe->e)
+    - derive/eo([ntiy])/u$1/               # 簡拼(eo->u)
+    - derive/oo(i|y)/u$1/                   # 簡拼(oo->u)
+
+    #簡拼
+    #- derive/^wu/u/                         # 簡拼(wu->u)
+    #- derive/^nji/nj/                       # 簡拼(ji->j)
+    #- derive/^ji/j/                         # 簡拼(ji->j)
+
+    #模糊
+    - derive/eo/oe/                         # 模糊(eo/oe)
+    - derive/oe/eo/                         # 模糊(eo/oe)
+
+    #首拼出字
+    - abbrev/^([a-z]).+$/$1/
+    - abbrev/^(n[gj]).+$/$1/
+    - abbrev/^([gkh]w).+$/$1/
+    - abbrev/^([zcs][h]).+$/$1/
+    - abbrev/^([zcsn][j]).+$/$1/
+    - abbrev/^([zc][r]).+$/$1/
+
+    #聲調（勿動）
+    - derive/\d//                           # 忽略聲調
+    - xform/1/v/                            # 陰平
+    - xform/4/vv/                           # 陽平
+    - xform/2/x/                            # 陰上
+    - xform/5/xx/                           # 陽上
+    - xform/3/q/                            # 陰去
+    - xform/6/qq/                           # 陽去
+
+set_hint:
+  __append:
+    - xform/hj/j/                          # 口音補充(hj->j)：「賢」讀jin者 多數方音
+
+    - xform/hwun(?=\d)/wun$1/             # 古匣母二類(w)：「桓」讀wun者
+
+    - xform/hu4/wu4/                       # 古匣母三類(w)：「狐」讀作wu4
+    - xform/hu6/wu6/                      # 古匣母三類(w)：「護」讀作wu6
+
+    - xform/io(?=\d)/oe/                    # (io->oe)
+    - xform/jo(?=\d)/joe/                   # (jo->oe)
+    - xform/uo(?=\d)/oe/                    # (uo->oe)
+    - xform/uo(n|t)(?=\d)/oe$1/             # (uo->oe)
+
+    - xform/ooy(?=\d)/ooi/
+
+    - xform/(z|c|s)jy(?=\d)/$1ji/          # 師韻不分精照
+    - xform/(z|c|s)hy(?=\d)/$1y/           # 師韻不分精照
+    - xform/ngiuk/njuk/                    # 疑母齶化(ngiuk->njuk)
+    - xform/ngiong/njong/                  # 疑母齶化(ngiong->njong)
+    - xform/ngi/nji/                       # 疑母齶化(ngi->nji)
+    - xform/ngy/njy/                       # 疑母齶化(ngy->njy)
+    - xform/ngw/w/                         # 疑合脫落(ngw->w)
+    - xform/ngun(?=\d)/wun$1/              # 疑合脫落(ngw->w)
+    - xform/kwing(?=\d)/king$1/
+    - xform/hwing(?=\d)/hing$1/
+    - xform/hw(?!ing)/f/                   # 曉合輕脣(hw->f)
+    - xform/(?!s)hu(?!ng|k)/fu/            # 曉合輕脣(hw->f)
+
+    - xform/iau(?=\d)/au/
+    
+    - xform/yo(?=\d)/yu/                    # 遇開分韻(yo->yu)
+    - xform/yi(?=\d)/ui/                    # 蟹合分韻(yi->ui)
+    
+    - xform/ngu(?=\d)/ng/                  # 單獨成韻(ngu->ng)：「吳」讀ng
+    
+    - xform/ia(?=\d)/e$1/                   # 果假元音融合(ia->e)：「車」讀ce
+    - xform/jaa(?=\d)/je$1/                 # 果假元音融合(jaa->je)：「野」讀je
+    
+    - xform/oo(ng|k)/o$1/                   # 宕攝開口(oo->o)：「各」讀gok
+    - xform/io(ng|k)/oe$1/                  # 宕江元音融合(io->oe) ：「量」讀loeng
+    - xform/jo(ng|k)/joe$1/                 # 宕江元音融合(jo->joe) ：「央」讀央joeng
+
+    - xform/ae([unmtp])(?=\d)/aa$1/       # 山效咸文(ae->aa)：「關」讀gwaan
+    
+    - xform/(z|c|s)j/$1h/                  
+    - xform/(z|c)r/$1h/      
+    
+    - xform/xaa(?=\d)/jaa$1/        
+    - xform/I(?=\d)/i$1/                    # 外來語
+
+translator:
+  __include: gukwan.schema:/translator
+  prism: gukwan-fanwan
+  comment_format:
+    __patch:
+      - set_hint
+
+reverse_lookup:
+  __include: gukwan.schema:/reverse_lookup
+  dictionary: gukwan
+  comment_format:
+    __patch:
+      - set_hint

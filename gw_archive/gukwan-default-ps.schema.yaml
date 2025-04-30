@@ -12,9 +12,10 @@
 __include: gukwan-default.schema:/
 
 schema:
+  __include: gukwan.schema:/schema
   schema_id: gukwan-default-ps
   name: 菊韻構擬音（音標）
-  version: "16.0b"
+  version: "17.7b"
   author:
     - 靈帝（Hoengsaan）
   
@@ -25,26 +26,14 @@ schema:
     瞭解如何使用菊韻請閱覽readme文件，詳細請至本方案github頁：https://github.com/HoengSaan/rime-gukwan
     如有問題或建議可於以上github頁中開Issues反饋
 
-  dependencies:
-    - jyut6ping3
-    - luna_pinyin
-    - cangjie5
-    - kunyomi
-    - loengfan
-    - kanas
-    - kaomoji
-    - kikwin
-    - gukwan-melt-eng
-
 translator:
-  dictionary: gukwan
+  __include: gukwan.schema:/translator
   prism: gukwan-default-ps
-  spelling_hints: 9
   preedit_format:
     - xform/(z|c|s)j/$1h/                  
     - xform/(z|c)r/$1h/       
     - xform/ng/ŋ/ 
-    - xform/hj/ɣ/
+    - xform/hj/hi/
     - xform/hw/hʷ/
     - xform/^| |'/,/
 
@@ -103,18 +92,3 @@ translator:
     - xform/^,//
     - xform/̑//
     - xform/,/ /
-
-  comment_format:
-    - xform/hwun(?=\d)/hun$1/               # 口音補充(hw->h)：「桓」讀fun者
-    - xform/xu(?=\d)/hu$1/                  # 遇攝合口(*u->hu)：「狐」讀作fu4
-    - xform/vu(?=\d)/hu$1/                  # 遇攝合口(*u->hu)：「護」讀作fu6
-
-    - xform/ooy(?=\d)/ooi$1/
-
-    - xform/(z|c|s)jy(?=\d)/$1ji/          # 
-
-    - xform/(z|c|s)j/$1h/                  
-    - xform/(z|c)r/$1h/     
-    
-    - xform/xaa(?=\d)/jaa$1/   
-    - xform/I(?=\d)/i$1/                    # 外來語

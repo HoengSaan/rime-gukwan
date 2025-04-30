@@ -9,7 +9,7 @@
 # This is a schema file for Gukwan Cantonese Input Method.
 # Learn how to use Gukwan in the readme file, available on the project's github page.
 
-__include: jyut6ping3-gw.schema.yaml:/
+__include: jyut6ping3-gw.schema:/
 
 schema:
   schema_id: jyut6ping3-gw-ps

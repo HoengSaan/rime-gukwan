@@ -25,17 +25,6 @@ schema:
     瞭解如何使用菊韻請閱覽readme文件，詳細請至本方案github頁：https://github.com/HoengSaan/rime-gukwan
     如有問題或建議可於以上github頁中開Issues反饋
 
-  dependencies:
-    - jyut6ping3
-    - luna_pinyin
-    - cangjie5
-    - kunyomi
-    - loengfan
-    - kanas
-    - kaomoji
-    - kikwin
-    - gukwan-melt-eng
-
 translator:
   dictionary: gukwan-alt
   prism: gukwan-waanglaan-ps
@@ -94,12 +83,12 @@ translator:
     - xform/,/ /
 
   comment_format:
-    - xform/hj/h/                          # 口音補充(hj->j)：「賢」讀若jin者
+    - xform/hj/h/                          # 口音補充(hj->j)：「賢」讀jin者
     
     - xform/wu(i|n|t)(?=\d)/hu$1/         # 古匣母一類(h)
     - xform/wo(m|ng|k)(?=\d)/hwo$1/       # 古匣母一類(h)
     
-    - xform/hwun(?=\d)/hun$1/              # 古匣母二類(h)：「桓」讀若fun者
+    - xform/hwun(?=\d)/hun$1/              # 古匣母二類(h)：「桓」讀fun者
     
     - xform/ngiuk/njuk/                    # 疑母齶化(ngiuk->njuk)
     - xform/ngiong/njong/                  # 疑母齶化(ngiong->njong)
@@ -112,7 +101,7 @@ translator:
     - xform/hw(?!ing)/f/                   # 曉合輕脣(hw->f)
     - xform/(?!s)hu(?!ng|k)/fu/            # 曉合輕脣(hw->f)
 
-    - xform/iau(?=\d)/au/                   # 流攝三等(iau->au) 粵語基本無方言保留
+    - xform/iau(?=\d)/au/                   # 流攝三等(iau->au)
 
     - xform/io(?=\d)/oe/                    # (io->oe)
     - xform/jo(?=\d)/joe/                   # (jo->oe)
@@ -124,30 +113,30 @@ translator:
     - xform/ooy(?=\d)/ooi/
     #- xform/ooy(?=\d)/eoy/
 
-    - xform/(b|p|f)i(?=\d)/$1ei/           # 止攝裂化脣音(i->ei) ：「備」讀若bei
-    - xform/(d|t|l|n)i(?=\d)/$1ei/         # 止攝裂化齒音(i->ei)：「地」讀若dei
+    - xform/(b|p|f)i(?=\d)/$1ei/           # 止攝裂化脣音(i->ei) ：「備」讀bei
+    - xform/([dtnl])i(?=\d)/$1ei/         # 止攝裂化齒音(i->ei)：「地」讀dei
     
-    - xform/ngu(?=\d)/ng/                            # 遇開一單獨成韻(ngu->ng)：「吳」讀若ng
-    - xform/(b|p|m|d|t|n|l|z|c|s|sh)u(?=\d)/$1ou/    # 遇攝裂化(u->au)：「渡」讀若dau
+    - xform/ngu(?=\d)/ng/                            # 單獨成韻(ngu->ng)：「吳」讀ng
+    - xform/([bpmtdnlzcs]|sh)u(?=\d)/$1ou/    # 遇攝裂化(u->au)：「渡」讀dau
     
-    - xform/(z|c|s|n|l)yo(?=\d)/$1eoy/     # 遇開三(yo->eoy)：「旅」讀若leoy
-    - derive/(g|k|h|j)yo(?=\d)/$1yu/       # 遇開三(yo->yu)：「去」讀若hyu
+    - xform/([zcsnl])yo(?=\d)/$1eoy/     # 遇開三(yo->eoy)：「旅」讀leoy
+    - derive/(g|k|h|j)yo(?=\d)/$1yu/       # 遇開三(yo->yu)：「去」讀hyu
     
-    - xform/(z|c|n|l)yu(?=\d)/$1eoy/       # 遇合三裂化(yu->eoy)：「聚」讀若zeoy
-    - xform/(s)yu(?=\d)/$1eoy/             # 遇合三裂化(yu->eoy)：「須」讀若seoy
+    - xform/([zcnl])yu(?=\d)/$1eoy/       # 遇合三裂化(yu->eoy)：「聚」讀zeoy
+    - xform/(s)yu(?=\d)/$1eoy/             # 遇合三裂化(yu->eoy)：「須」讀seoy
     
-    - xform/(z|c)yi(?=\d)/$1eoy/           # 蟹合一(yi->eoy)：「最」讀若zeoy
-    - xform/(s)yi(?=\d)/$1eoy/              # 蟹合一(yi->yu)：「碎」讀若syu
-    - xform/(d|t|n|l)yi(?=\d)/$1yu/        # 蟹合一(yi->yu)：「對」讀若dyu
+    - xform/(z|c)yi(?=\d)/$1eoy/           # 蟹合一(yi->eoy)：「最」讀zeoy
+    - xform/(s)yi(?=\d)/$1eoy/              # 蟹合一(yi->yu)：「碎」讀syu
+    - xform/([dtnl])yi(?=\d)/$1yu/        # 蟹合一(yi->yu)：「對」讀dyu
     
     - xform/yo(?=\d)/yu/                    # FIX
     
-    - xform/ia(?=\d)/e$1/                   # 果假元音融合(ia->e)：「車」讀若ce
-    - xform/jaa(?=\d)/je$1/                 # 果假元音融合(jaa->je)：「野」讀若je
+    - xform/ia(?=\d)/e$1/                   # 果假元音融合(ia->e)：「車」讀ce
+    - xform/jaa(?=\d)/je$1/                 # 果假元音融合(jaa->je)：「野」讀je
     
-    - xform/oo(ng|k)/o$1/                   # 宕攝開口(oo->o)：「各」讀若gok
-    - xform/io(ng|k)/oe$1/                  # 宕攝江攝元音融合(io->oe) ：「量」讀若loeng
-    - xform/jo(ng|k)/joe$1/                 # 宕攝江攝元音融合(jo->joe) ：「央」讀央joeng
+    - xform/oo(ng|k)/o$1/                   # 宕攝開口(oo->o)：「各」讀gok
+    - xform/io(ng|k)/oe$1/                  # 宕江元音融合(io->oe) ：「量」讀loeng
+    - xform/jo(ng|k)/joe$1/                 # 宕江元音融合(jo->joe) ：「央」讀央joeng
     
     #聲母——現代
     - xform/(z|c|s)h/$1/                   # 精照合流(zh->z)
@@ -155,7 +144,7 @@ translator:
     - xform/(z|c|s)j(?!yo)/$1/             # 精照合流(ch->c)
     - xform/(z|c)r/$1/                     # 精照合流(sj->s)
     - xform/nj/j/                          # 日以合流(nj->j)
-
+    - xform/^NG/ng/
     - xform/xaa(?=\d)/jaa$1/
     - xform/I(?=\d)/i$1/                    # 外來語
 
