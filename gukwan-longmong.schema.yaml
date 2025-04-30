@@ -128,8 +128,8 @@ speller:
     - xform/jaa(?=\d)/je$1/                 # 果假元音融合(jaa->je)：「野」讀je
     
     - xform/oo(ng|k)/o$1/                   # 宕攝開口(oo->o)：「各」讀gok
-    - xform/io(ng|k)/oe$1/                  # 宕江元音融合(io->oe) ：「量」讀loeng
-    - xform/jo(ng|k)/joe$1/                 # 宕江元音融合(jo->joe) ：「央」讀央joeng
+    - derive/io(ng|k)/oe$1/                  # 宕江元音融合(io->oe) ：「量」讀loeng
+    - derive/jo(ng|k)/joe$1/                 # 宕江元音融合(jo->joe) ：「央」讀央joeng
     
     - derive/ae([unmtp])(?=\d)/aa$1/      # 山效咸文(ae->aa)：「關」讀gwaan
     - derive/ae([unmtp])(?=\d)/e$1/       # 山效咸白(ae->e)：「關」讀gwen 白讀音用
@@ -310,6 +310,8 @@ set_hint:
     - xform/hj/h/                         # 口音補充(hj->h)：「賢」讀hin者
     - xform/HJ/h/
     - xform/hwun(?=\d)/hun$1/              # 古匣母二類(h)：「桓」讀fun者
+    #- xform/wu(i|n|t)(?=\d)/hu$1/         # 古匣母一類(h)
+    #- xform/wo(ng|k)(?=\d)/hwo$1/         # 古匣母一類(h)
     
     - xform/ngiuk/njuk/                    # 疑母齶化(ngiuk->njuk)
     - xform/ngiong/njong/                  # 疑母齶化(ngiong->njong)
@@ -356,8 +358,6 @@ set_hint:
     - xform/jaa(?=\d)/je$1/                 # 果假元音融合(jaa->je)：「野」讀je
     
     - xform/oo(ng|k)/o$1/                   # 宕攝開口(oo->o)：「各」讀gok
-    - xform/io(ng|k)/oe$1/                  # 宕江元音融合(io->oe) ：「量」讀loeng
-    - xform/jo(ng|k)/joe$1/                 # 宕江元音融合(jo->joe) ：「央」讀央joeng
     
     #聲母——現代
     - xform/(z|c|s)h/$1/                   # 精照合流(zh->z)

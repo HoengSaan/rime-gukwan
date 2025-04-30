@@ -35,6 +35,11 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 
 菊韻可支持多地方言。已爲各種方言口音預設大量轉換規則同模糊音，方便自行定製。（需對Regex同音韻學有基本瞭解）[具體異同](https://github.com/HoengSaan/rime-gukwan#%E6%96%B9%E6%A1%88)。
 
+<details>
+    <summary>測試</summary>
+    <span>測試</span>
+</details>
+
 - 順德系——中山市
   - `gukwan-siulaam`【<ruby>小<rp>(</rp><rt>siu2</rt><rp>)</rp>欖<rp>(</rp><rt>laam5</rt><rp>)</rp></ruby>鎮】：以小欖話比較有代表性特徵製作，兼容新派發音。
     - `gukwan-siulaam-bofung`（小欖<ruby>寶<rp>(</rp><rt>bo2</rt><rp>)</rp>豐<rp>(</rp><rt>fung1</rt><rp>)</rp></ruby>音）：小欖鎮寶豐村，兼容新派發音。
@@ -248,7 +253,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 
 ### 必讀參攷文章
 
-定製可參攷[如何定製菊韻 – なかやま園](https://zonsan.fc2.page/?p=1569)，但當真要定製中州韻方案，<b style="color:red;">懇請閣下閱讀以下文章</b>：
+定製可參攷[如何定製菊韻 – なかやま園](https://zonsan.fc2.page/?p=1569)，但當真要定製中州韻方案，**<u>懇請閣下閱讀以下文章</u>**：
 
 - [中州韻維基 - SpellingAlgebra](https://github.com/rime/home/wiki/SpellingAlgebra)
 - [amzxyz - Patch方法论](https://github.com/amzxyz/rime_wanxiang_pro/blob/main/custom/patch%E6%96%B9%E6%B3%95%E8%AE%BA.md)
@@ -305,9 +310,9 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 >
 > **以下方案並不能完全代表當地發音，請根據自身實際情況調整。**
 >
-> <b style="color:red;">由於本人所寫轉換規則有缺陷，導致拼音提示不準確，敬請見諒。</b>
+> **<u>由於本人所寫轉換規則有缺陷，導致拼音提示不準確，敬請見諒。</u>**
 
-- `gukwan.schema.yaml`：基底文件（<b style="color:red;">請勿刪除，刪除後所有方案都無法使用</b>）
+- `gukwan.schema.yaml`：基底文件（**<u>請勿刪除，刪除後所有方案都無法使用</u>**）
 - `jyut6ping3-gw.schema.yaml`：三拼版`rime-cantonese`（廣州話），支持菊韻所有功能。
 - `jyut6ping3-gw-cp.schema.yaml`：關閉三拼功能，支持菊韻除三拼以外一切功能。
 
@@ -490,13 +495,9 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 
 參攷：《沙田方言》《中山方言誌》
 
-#### 民衆
+#### 浪網
 
-由於民衆鎮其他音屬蜑家話，此處不收，只收浪網音。
-
-##### 浪網
-
-浪網鎮於2000年撤鎮，劃入民衆鎮。
+由於民衆鎮其他音屬蜑家話，此處不收，僅收浪網音。浪網鎮於2000年撤鎮，劃入民衆鎮。民衆鎮除舊浪網鎮轄地皆操蜑家話。
 
 - `gukwan-longmong.schema.yaml`：浪網音
 
@@ -509,10 +510,14 @@ This is a schema based on [Rime Input Method](https://rime.im/).
     - 「ooi音」，來自於蟹攝三等合口字同止攝合口銳音，浪網止攝同廣州一樣變`eoy`但蟹攝則同`oi`合流，如「脆」`coi3`「銳」`joi6`「稅」`soi3`「歲」`soi3`等 。
     - 遇攝合口一等字裂化同廣州一樣爲`ou`：「度」`dou6`「無」`mou4`「做（作）」`zou6`「粗」`cou1`等。
     - 效攝一等字發音同廣州一樣爲`ou`：「好」`hou2`「逃」`tou4`「早」`zou2`「掃」`sou3`等。但根據《沙田方言》，此類字讀`o`而非`ou`。菊韻採用《中山方言誌》記錄。
-    - 根據《中山方言誌》，其韻母`oe`仍帶有少許介音，讀`/ioe/`。
+    - 根據《中山方言誌》，其韻母`oe`仍帶有少許介音，讀`/ioe/`。群安則讀作`/io/`
 
     - 根據《沙田方言》，遇三所有無裂化字均讀作`i`，如「語」`ji5`「處」`ci3`「擧」`gi2`「書」`si1`等，此爲蜑家話特徵。但根據《中山方言誌》，此類字仍讀攝口（y）。菊韻採用《中山方言誌》記錄。
     - 並母字有不送氣現象，即「盤」讀`bun4`等
+
+    - 【群安】廣州話聲母`w`同韻腹`u/o`結合者，群安聲母則爲`f`，如「黃」`foeng4`「換」`fun6`「會」`fui6`「活」`fut6`。
+      - 請符合此項用家刪除42行、43行、313行、314行井號
+      - 此類字往往越接近現代，就會有越多字跟廣州一樣讀`w`。如已不能分辨者，請將42~44行`xform`改成`derive`。
 
 參攷：《沙田方言》《中山方言誌》
 
@@ -521,7 +526,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 #### 大良
 
 - `gukwan-daailoeng.schema.yaml`：大良音
-  - 本方案根據大良音代表特徵製作。下爲重要特徵：
+  - 本方案根據大良話代表特徵製作。下爲重要特徵：
     - 不分來孃且疑母脫落，故疑母字可作零聲母（如「我」`ngo5`可打`o5`）。
     - 不分`ak`同`aak`，故可以aak音打ak（如「勒」`lak6`可打`laak6`）。
       - 老派只有`aak`，無`ak`
@@ -544,7 +549,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 #### 陳村
 
 - `gukwan-cancyn.schema.yaml`：陳村音
-  - 本方案根據陳村音代表特徵製作。下爲重要特徵：
+  - 本方案根據陳村話代表特徵製作。下爲重要特徵：
     - 不分來孃且疑母脫落，故疑母字可作零聲母（如「我」`ngo5`可打`o5`）。
     - 不分`ak`同`aak`，故可以aak音打ak（如「勒」`lak6`可打`laak6`）。
       - 老派只有`aak`，無`ak`
@@ -649,7 +654,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 
 ### 石歧
 
-由於本人非香山系方言母語者，或闕不少字音。<b style="color:red;">警告：請勿以本輸入法作爲石歧話標準參攷。</b>
+由於本人非香山系方言母語者，或闕不少字音。**<u>警告：請勿以本輸入法作爲石歧話標準參攷。</u>**
 
 - `gukwan-sekki.schema.yaml`：由於石歧話老派變化並不均等，菊韻難以處理。故採用廣州化程度更深之新派音，標準如下：
   - 允許疑日母細音以`j`輸入。
@@ -671,7 +676,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 
 ### 構擬音特徵
 
-構擬音是本人基於順德系方言所構擬之古音，主要指出其對分韻異同。<b style="color:red;">警告：本構擬音僅供參攷。</b>
+構擬音是本人基於順德系方言所構擬之古音，主要指出其對分韻異同。**<u>警告：本構擬音僅供參攷。</u>**
 
 - 聲母
   - 【同】區分精照（照組默認爲`-h`：`zh/ch/sh`）
