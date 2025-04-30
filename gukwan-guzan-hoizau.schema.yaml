@@ -43,8 +43,8 @@ speller:
     #- xform/^wo(ng|k)(?=\d)/hwo$1/         # 古匣母一類(h)
     - xform/^hwun(?=\d)/hun$1/              # 古匣母二類(h)：「桓」讀fun者
     #- xform/^hwun(?=\d)/wun$1/             # 古匣母二類(w)：「桓」讀wun者
-    #- derive/^hu4/wu4/                     # 古匣母三類(w)：「狐」讀作wu4
-    #- derive/^hu6/wu6/                     # 古匣母三類(w)：「護」讀作wu6
+    - derive/^hu4/wu4/                     # 古匣母三類(w)：「狐」讀作wu4
+    - derive/^hu6/wu6/                     # 古匣母三類(w)：「護」讀作wu6
     #- xform/^fu(?=\d)/hu$1/                 # 古非敷奉香山：「夫」讀hu
     #- xform/^fu(i|n|ng|k|t)(?=\d)/hu$1/     # 古非敷奉香山：「風」讀hui
     #- xform/^fo(ng|k)(?=\d)/ho$1/          # 古非敷奉香山：「方」讀hong（舊）
