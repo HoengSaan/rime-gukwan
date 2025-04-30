@@ -185,8 +185,8 @@ speller:
 
     - xform/yo(?=\d)/yu/                    # FIX
     
-    - xform/^(z|c|s|zh|ch|sh)y(?=\d)/i/     # 止攝師韻展脣(y->i) ：「師」讀若si
-    #- derive/^(z|c|s|zh|ch|sh)y(?=\d)/yu/      # 止攝師韻圓脣(y->yu)：「仕」讀若syu 
+    - xform/^(z|c|s|zh|ch|sh)y(?=\d)/$1i/     # 止攝師韻展脣(y->i) ：「師」讀若si
+    #- derive/^(z|c|s|zh|ch|sh)y(?=\d)/$1yu/      # 止攝師韻圓脣(y->yu)：「仕」讀若syu 
     #- derive/^(z|c|s)ji(?=\d)/$1ii/        # 止開照組異拼(ji->ii)
     
     #- derive/eo(n|t)(?=\d)/a$1/            # 臻攝混音(ea->a)：「順」讀若san 多只見於白讀音
@@ -508,7 +508,7 @@ reverse_lookup:
     - xform/(g|k|h)i(?=\d)/$1ei/           # 止攝裂化牙音(i->ei)：「既」讀若gei
     - xform/(s)(?!j)i(?=\d)/$1ei/          # 止攝心母特音（現代音裂化專用） 
     
-    - xform/^(z|c|s|zh|ch|sh)y(?=\d)/i/        # 止攝師韻展脣(y->i) ：「師」讀若si 
+    - xform/^(z|c|s|zh|ch|sh)y(?=\d)/$1i/        # 止攝師韻展脣(y->i) ：「師」讀若si 
     
     - xform/ngu(?=\d)/ng/                            # 遇開一單獨成韻(ngu->ng)：「吳」讀若ng
     - xform/(b|p|m|d|t|n|l|z|c|s|sh)u(?=\d)/$1ou/   # 遇攝裂化(u->ou)：「都」讀若dou

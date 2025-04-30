@@ -115,8 +115,8 @@ speller:
     
     - xform/yo(?=\d)/yu/                    # FIX
     
-    #- xform/^(z|c|s|zh|ch|sh)y(?=\d)/i/    # 止攝師韻展脣(y->i) ：「師」讀si
-    #- derive/^(z|c|s|zh|ch|sh)y(?=\d)/yu/   # 止攝師韻圓脣(y->yu)：「仕」讀syu 
+    #- xform/^(z|c|s|zh|ch|sh)y(?=\d)/$1i/    # 止攝師韻展脣(y->i) ：「師」讀si
+    #- derive/^(z|c|s|zh|ch|sh)y(?=\d)/$1yu/   # 止攝師韻圓脣(y->yu)：「仕」讀syu 
     #- derive/^(z|c|s)ji(?=\d)/$1ii/        # 止開照組異拼(ji->ii)
 
     - derive/eo(n|t)(?=\d)/a$1/            # 臻攝混音(ea->a)：「順」讀san 白讀/香山系用
