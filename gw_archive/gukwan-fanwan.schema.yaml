@@ -199,9 +199,9 @@ speller:
     #- derive/wok(?=\d)/oek$1/
     #- derive/oi(?=\d)/uoi$1/
     #- derive/oi(?=\d)/uai$1/
-    #- derive/u(n|t)(?=\d)/o$1/
-    #- derive/u(n|t)(?=\d)/i$1/
-    #- derive/u(n|t)(?=\d)/y$1/
+    #- derive/^(b|p|m)u(n|t)(?=\d)/o$1/
+    #- derive/^(b|p|m)u(n|t)(?=\d)/i$1/
+    #- derive/^(b|p|m)u(n|t)(?=\d)/y$1/
 
     #韻尾
     #根據自己口音偏好調校

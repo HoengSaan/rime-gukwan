@@ -13,9 +13,9 @@ __include: gukwan.schema:/
 
 schema:
   __include: gukwan.schema:/schema
-  schema_id: gukwan-naamtau-paaihom
+  schema_id: gukwan-naamtau
   name: 菊韻南頭排坎音
-  version: "17.6b"  
+  version: "17.10.1b"  
   author:
     - 靈帝（Hoengsaan）
   description: |-
@@ -196,9 +196,9 @@ speller:
     #- derive/wok(?=\d)/oek$1/
     #- derive/oi(?=\d)/uoi$1/
     #- derive/oi(?=\d)/uai$1/
-    #- derive/u(n|t)(?=\d)/o$1/
-    #- derive/u(n|t)(?=\d)/i$1/
-    #- derive/u(n|t)(?=\d)/y$1/
+    #- derive/^(b|p|m)u(n|t)(?=\d)/o$1/
+    #- derive/^(b|p|m)u(n|t)(?=\d)/i$1/
+    #- derive/^(b|p|m)u(n|t)(?=\d)/y$1/
 
     #韻尾
     #根據自己口音偏好調校
@@ -334,6 +334,7 @@ set_hint:
     - xform/uo(n|t)(?=\d)/oe$1/             # (uo->oe)
 
     - xform/ooy(?=\d)/eoy/
+    #- xform/ooy(?=\d)/oi/                  # 蟹合三(ooy->oi)：「脆」讀coi
     - xform/ooi(?=\d)/eoy/
 
     - xform/(b|p|f)i(?=\d)/$1ei/           # 止攝裂化脣音(i->ei) ：「備」讀bei
@@ -360,7 +361,10 @@ set_hint:
     - xform/oo(ng|k)/yoo$1/                   # 宕攝開口(oo->o)：「各」讀gok
     - xform/io(ng|k)/yo$1/                  # 宕江元音融合(io->oe) ：「量」讀loeng
     - xform/jo(ng|k)/jyo$1/                 # 宕江元音融合(jo->joe) ：「央」讀央joeng
-    
+    #- xform/oo(ng|k)/o$1/                   # 宕攝開口(oo->o)：「各」讀gok
+    #- xform/io(ng|k)/oe$1/                  # 宕江元音融合(io->oe) ：「量」讀loeng
+    #- xform/oe(ng|k)(?=\d)/o$1/
+
     #聲母——現代
     - xform/(z|c|s)h/$1/                   # 精照合流(zh->z)
     - xform/(zj|cj|sj)yo(?=\d)/$1yu/       # 精照合流
@@ -371,10 +375,12 @@ set_hint:
     - xform/xaa(?=\d)/jaa$1/
     - xform/I(?=\d)/i$1/                    # 外來語
 
+    #- derive/^(b|p|m)u(n|t)(?=\d)/y$1/
+
 translator:
   __include: gukwan.schema:/translator
   dictionary: gukwan-alt-asp
-  prism: gukwan-naamtau-paaihom  
+  prism: gukwan-naamtau  
   comment_format:
     __patch:
       - set_hint
