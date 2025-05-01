@@ -29,6 +29,8 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 
 更多資訊請閱讀下文竝參攷[菊韻 – なかやま園](https://zonsan.fc2.page/?cat=123)。[關於如何安裝](#安裝)。
 
+<mark>Update：將方言點方案移至`gw_dialects`。</mark>
+
 ## 功能
 
 ### 多方言適應
@@ -697,6 +699,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
     </li>
   </ul>
 </details>
+
 #### 橫欄
 
 橫欄鎮位於中山市西部，毗鄰欖鎮、隆都。西邊即爲新會。
@@ -752,7 +755,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 <ul>
   <li>本方案根據《中山方言誌》製作。下爲重要特徵：
     <ul>
-      <li>本人所有資料中唯一江攝宕攝分四種：「江&lt;sup&gt;江攝&lt;/sup&gt;」讀<code>ong</code>「窗&lt;sup&gt;江攝莊組・宕攝開三&lt;/sup&gt;」讀<code>yong</code>（僅作顯示，默認不用<code>yong</code>，鍵值爲<code>iong/oeng</code>）「宕&lt;sup&gt;宕攝&lt;/sup&gt;」讀<code>yoong</code>（僅作顯示，默認不用，鍵值爲<code>oong</code>打）「廣&lt;sup&gt;宕攝合口&lt;/sup&gt;」讀<code>wong</code><ul>
+      <li>本人所有資料中唯一江攝宕攝分四種：「江<sup>江攝</sup>」讀<code>ong</code>「窗<sup>江攝莊組・宕攝開三</sup>」讀<code>yong</code>（僅作顯示，默認不用<code>yong</code>，鍵值爲<code>iong/oeng</code>）「宕<sup>宕攝</sup>」讀<code>yoong</code>（僅作顯示，默認不用，鍵值爲<code>oong</code>打）「廣sup>宕攝合口</sup>」讀<code>wong</code><ul>
           <li>如需修改鍵值，需同時修改三拼規矩。</li>
         </ul>
       </li>
@@ -814,19 +817,27 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 </ul>
 </details>
 
-#### 三角
+#### 三角【未製作】
 
-三角鎮位於中山市東部，同南沙對望。鎮區操三角話，是莞寶系方言。其他地方則講順德系方言。
+三角鎮位於中山市東部，同南沙對望。三角山四周操三角話，是莞寶系方言。其他地方則講順德系方言。
 
-#### 黃圃
+`gukwan-saamgok-punlung.schema.yaml`：三角蟠龍音
+
+- 本方案根據《中山方言誌》製作。下爲重要特徵：
+  - 區分來孃
+  - 遇攝合口一等字除見系之外低化爲`o`，如「度」`do6`「無」`mo4`「做（作）」`zo6`「粗」`co1`等。
+  - 「ooi音」，來自於蟹攝三等合口字同止攝合口銳音，止攝合口銳音歸`eoy`，但蟹攝三等合口字仍保持其同`eoy`、`oi`兩音之對立。即「趣」`ceoy3`「菜」`coi3`「脆」`cooi3 /ʦʰuoi`不同音。
+  - 其韻母`oe`仍帶有少許介音，讀`/iœ/`。
+
+#### 黃圃【未製作】
 
 黃圃鎮位於中山市東北部，同桂州對望，毗鄰三角鎮、南頭鎮。以臘味聞名。
 
-#### 西區（沙蓢）
+#### 西區（沙蓢）【未製作】
 
 沙蓢今屬西區（鄉級），是市區附近除港口少有講順德系方言地區。
 
-#### 港口
+#### 港口【未製作】
 
 港口鎮位於市區北邊。
 
@@ -865,6 +876,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 	</ul>
 	<p>參攷：《沙田方言》《中山方言誌》</p>
 </details>
+
 ### 順德
 
 #### 大良
