@@ -488,9 +488,13 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 
 ### 中山
 
-#### 小欖
+#### 小欖・東昇
 
 小欖鎮位於中山市北部，亦名菊城、欖鎮。同順德市均安鎮接壤，爲中山工業重鎮。小欖多數人講小欖話（順德系方言），僅沙口講蜑家話（受小欖話嚴影響）。
+
+東昇本屬小欖，86 年被劃出，21 年被劃回小欖鎮。
+
+坦背本分屬欖鎮同隆鎮，新中國後分去沙蓢，84 年設區，86 年設鎮，99 年併入東昇，21 年跟東昇一同併入欖鎮。
 
 <details>
 	<summary><code>gukwan-siulaam.schema.yaml</code>：小欖音</summary>
@@ -501,7 +505,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 				<li>「胡」「戶」「護」三小韻<code>wu/fu</code>混讀。</li>
 				<li>不分<code>ak</code>同<code>aak</code>，故<code>aak</code>音可通ak：如「勒」<code>lak6</code>可打<code>laak6</code>，「得」<code>dak1</code>可打<code>daak1</code>。
 					<ul>
-						<li>老派只有<code>aak</code>，無<code>ak</code>，</li>
+						<li>老派只有<code>aak</code>，無<code>ak</code>。</li>
 					</ul>
 				</li>
 				<li>蟹攝合口一等字，廣州話讀<code>eoy</code>者，小欖話多讀作<code>yu</code>：
@@ -521,19 +525,14 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 	<ul>
 		<li>本方案根據《沙田方言》《中山方言誌》製作。下爲同小欖音主要區別：
 			<ul>
-				<li>分辨透曉，ong·ok 同 oeng·oek 可不分；eng·ek 同 en·et 可不分。實際打字兩者皆可。</li>
+                <li>分辨透曉</li>
+                <li>ong·ok 同 oeng·oek 不分；eng·ek 同 en·et 不分。實際打字兩者皆可。</li>
 				<li>「胡」「戶」「護」三小韻讀<code>fu</code>，並無混讀。</li>
 				<li>蟹攝合口一等字變化同廣州話一樣，但有部分讀<code>oe</code>（見<code>gukwan-siulaam-bofung.dict.yaml</code>）</li>
 			</ul>
 		</li>
 	</ul>
 </details>
-
-##### 東昇
-
-東昇本屬小欖，86 年被劃出，21 年被劃回小欖鎮。
-
-坦背本分屬欖鎮同隆鎮，新中國後分去沙蓢，84 年設區，86 年設鎮，99 年併入東昇，21 年跟東昇一同併入欖鎮。
 
 <details>
 	<summary><code>gukwan-dungsing.schema.yaml</code>：東昇音</summary>
@@ -567,6 +566,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 					</ul>
 				</li>
 				<li>曉匣喻細音字讀<code>h</code>而非<code>j</code>，但已大幅廣州化。</li>
+                <li>分<code>ak</code>同<code>aak</code>。</li>
 			</ul>
 		</li>
 		<li>補充：
@@ -590,6 +590,102 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 			</ul>
 		</li>
 	</ul>
+</details>
+
+#### 古鎮（海洲）
+
+古鎮位於中山市北部、小欖西邊，臨近江門。古鎮亦被稱之爲燈都，顧名思義，其主要產業即爲燈。
+
+古鎮只有海洲操順德系方言，曹步同古鎮則主要講四邑系方言。由於菊韻本意是爲順德系方言製作方案，故目前竝無考慮製作四邑系方言。
+
+<details>
+	<summary><code>gukwan-guzan-hoizau.schema.yaml</code>：海洲音</summary>
+	<ul>
+		<li>本方案根據海洲音代表特徵製作。下爲同小欖音主要區別：
+			<ul>
+				<li>區分來孃・區分透曉</li>
+				<li>脣化聲母遇 o 消失，即「過」「個」不分，皆讀<code>go3</code></li>
+				<li>見系遇攝三等字裂化，讀<code>eoy /øy/</code>，如「區」<code>keoy1</code>「去」<code>heoy3</code>「車」<code>geoy1</code>「巨」<code>geoy6</code>等。</li>
+				<li>「ooi音」，來自於蟹攝三等合口字同止攝合口銳音，海洲止攝同廣州一樣變<code>eoy</code>但蟹攝則同<code>oi</code>合流，如「脆」<code>coi3</code>「銳」<code>joi6</code>「稅」<code>soi3</code>「歲」<code>soi3</code>等。</li>
+				<li>效攝一等字讀<code>au</code>而非<code>ou</code>，如「高」<code>gau1</code>「刀」<code>dau1</code>「掃」<code>sau3</code>「毛」<code>mau4</code></li>
+			</ul>
+		</li>
+		<li>以下竝非出自《中山方言誌》，而爲本人所知：
+			<ul>
+				<li>遇攝合口一等字除見系之外裂化爲<code>ou</code>，但亦有讀<code>au</code>話者。
+					<ul>
+						<li>請讀<code>au</code>用家在 98 行、339行添加井號，竝刪除 97 行、338行井號。</li>
+					</ul>
+				</li>
+				<li>見組止攝開口三等字已裂化讀<code>ei</code>，如「其」<code>kei4</code>「起」<code>hei2</code>「機」<code>gei1</code>「紀」<code>gei3</code>等。</li>
+			</ul>
+		</li>
+		<li>以下並無資料證明，僅爲猜測：
+			<ul>
+				<li>其蟹攝合口一等字變化應同小欖。</li>
+                <li>分<code>ak</code>同<code>aak</code>。</li>
+			</ul>
+		</li>
+	</ul>
+</details>
+
+#### 東鳳・阜沙
+
+東鳳鎮位於中山市北部、小欖東邊，上接容桂、下接阜沙。工業較爲發達，亦是中山北部物流中心。
+
+阜沙鎮位於中山市北部，上接東鳳，臨近欖鎮、黃圃、三角等地。
+
+<details>
+  <summary><code>gukwan-dungfau.schema.yaml</code>：東阜音</summary>
+  <ul>
+    <li>本方案根據《沙田方言》《中山方言誌》製作。下爲同小欖音主要區別：
+      <ul>
+        <li>區分透曉</li>
+        <li>「胡」「戶」「護」三小韻讀<code>fu</code>;，無混。</li>
+        <li>遇攝合口一等字除見系之外裂化爲<code>ou</code>>，【西罟埗】則同小欖一樣讀<code>au</code>。
+          <ul>
+            <li>請讀<code>au</code>;用家在 98 行添加井號，竝刪除 97 行井號。</li>
+          </ul>
+        </li>
+        <li>效攝一等字有人讀<code>ou</code>，亦有同小欖一樣讀<code>o</code>，根據《沙田方言》記載，【東罟埗】有混讀現象。東阜音方案默認作<code>ou</code>.
+          <ul>
+            <li>請讀<code>o</code>用家刪除 77 行、332 行井號。</li>
+            <li>請混讀用家刪除 77 行、332 行井號後，將 77行中<code>xform</code>改成<code>derive</code>。</li>
+          </ul>
+        </li>
+        <li>分<code>ak</code>同<code>aak</code>。</li>
+      </ul>
+    </li>
+    <li>補充：
+      <ul>
+        <li>【同安】【羅松】廣州話聲母<code>w</code>同韻腹<code>u/o</code>結合者，排坎聲母則爲<code>f</code>，如「黃」<code>foeng4</code>「換」<code>fun6</code>「會」<code>fui6</code>「活」<code>fut6</code>。
+          <ul>
+            <li>請符合此項用家刪除 42 行、43 行、311行、312行井號。</li>
+            <li>此類字往往越接近現代，就會有越多字跟廣州一樣讀<code>w</code>。如已不能分辨者，請將42~44 行<code>xform</code>改成<code>derive</code>。</li>
+          </ul>
+        </li>
+        <li>江宕兩攝讀法異同：
+          <ul>
+            <li>【東罟埗】根據《中山方言誌》記載，江宕兩攝除合口皆讀<code>oeng /yœŋ/</code>，合口讀<code>woeng /wyœŋ/</code>。但《沙田方言》記載，其讀音同小欖別無二致。</li>
+            <li>【大有圍】則將江宕兩攝除合口讀作<code>oeng /œŋ/</code>，合口讀<code>woeng /wœŋ/</code>。</li>
+            <li>【羅松】則將江宕兩攝除合口讀作<code>oeng /yoŋ/</code>，合口讀<code>woeng /wyoŋ/</code>。</li>
+            <li>以上情況有兩種方法：
+              <ul>
+                <li>刪除 170 行、171 行、372行井號開啓混打。</li>
+                <li>刪除 170 行、374 行井號，竝將170行<code>derive</code>改成<code>xform</code>，將所有<code>ong/ok</code>轉換爲<code>oeng/oek</code>。</li>
+              </ul>
+            </li>
+            <li>【西罟埗】【同安】讀音基本同小欖一樣，但讀<code>oeng</code>時有合口介音<code>/y/</code>。</li>
+          </ul>
+        </li>
+        <li>【同安】並母字有不送氣現象，即「盤」讀<code>bun4</code>等。
+          <ul>
+            <li>請符合此項用家將 dictionary 值改成<code>gukwan-asp</code>。</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
 </details>
 
 #### 橫欄
@@ -638,46 +734,6 @@ This is a schema based on [Rime Input Method](https://rime.im/).
   <p>參攷：《沙田方言》《中山方言誌》</p>
 </details>
 
-
-#### 古鎮
-
-古鎮亦被稱之爲燈都，顧名思義，其主要產業即爲燈。古鎮臨近江門，只有海洲操順德系方言，曹步同古鎮則主要講四邑系方言。
-
-由於菊韻本意是爲順德系方言製作方案，故目前竝無考慮製作四邑系方言。
-
-<details>
-	<summary><code>gukwan-guzan-hoizau.schema.yaml</code>：海洲音</summary>
-	<ul>
-		<li>本方案根據海洲音代表特徵製作。下爲重要特徵：
-			<ul>
-				<li>區分來孃。</li>
-        <li>「胡」「戶」「護」三小韻<code>wu/fu</code>混讀。</li>
-				<li>脣化聲母遇 o 消失，即「過」「個」不分，皆讀<code>go3</code></li>
-				<li>見系遇攝三等字裂化，讀<code>eoy /øy/</code>，如「區」<code>keoy1</code>「去」<code>heoy3</code>「車」<code>geoy1</code>「巨」<code>geoy6</code>等。</li>
-				<li>「ooi音」，來自於蟹攝三等合口字同止攝合口銳音，海洲止攝同廣州一樣變<code>eoy</code>但蟹攝則同<code>oi</code>合流，如「脆」<code>coi3</code>「銳」<code>joi6</code>「稅」<code>soi3</code>「歲」<code>soi3</code>等。</li>
-				<li>效攝一等字讀<code>au</code>而非<code>ou</code>，如「高」<code>gau1</code>「刀」<code>dau1</code>「掃」<code>sau3</code>「毛」<code>mau4</code></li>
-			</ul>
-		</li>
-		<li>以下竝非出自《中山方言誌》，而爲本人所知：
-			<ul>
-				<li>遇攝合口一等字除見系之外裂化爲<code>ou</code>，但亦有讀<code>au</code>話者。
-					<ul>
-						<li>請讀<code>au</code>用家在 98 行添加井號，竝刪除 97 行井號。</li>
-					</ul>
-				</li>
-				<li>見組止攝開口三等字已裂化讀<code>ei</code>，如「其」<code>kei4</code>「起」<code>hei2</code>「機」<code>gei1</code>「紀」<code>gei3</code>等。</li>
-			</ul>
-		</li>
-		<li>以下並無資料證明，僅爲猜測：
-			<ul>
-				<li>其蟹攝合口一等字變化應同小欖。</li>
-			</ul>
-		</li>
-	</ul>
-	<p>參攷：《中山方言誌》</p>
-</details>
-
-
 #### 南頭
 
 南頭鎮位於中山市北部，同桂州對望，毗鄰東鳳鎮、黃圃鎮。工業較爲發達。
@@ -708,7 +764,23 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 
 參攷：《沙田方言》《中山方言誌》
 
-#### 浪網
+#### 三角
+
+三角鎮位於中山市東部，同南沙對望。鎮區操三角話，是莞寶系方言。其他地方則講順德系方言。
+
+#### 黃圃
+
+黃圃鎮位於中山市東北部，同桂州對望，毗鄰三角鎮、南頭鎮。以臘味聞名。
+
+#### 西區（沙蓢）
+
+沙蓢今屬西區（鄉級），是市區附近除港口少有講順德系方言地區。
+
+#### 港口
+
+港口鎮位於市區北邊。
+
+#### 民衆（浪網）
 
 民眾鎮位於中山市東部，與南沙對望。
 
@@ -729,7 +801,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 				<li>「ooi音」，來自於蟹攝三等合口字同止攝合口銳音，浪網止攝同廣州一樣變<code>eoy</code>但蟹攝則同<code>oi</code>合流，如「脆」<code>coi3</code>「銳」<code>joi6</code>「稅」<code>soi3</code>「歲」<code>soi3</code>等。</li>
 				<li>遇攝合口一等字裂化同廣州一樣爲<code>ou</code>：「度」<code>dou6</code>「無」<code>mou4</code>「做（作）」<code>zou6</code>「粗」<code>cou1</code>等。</li>
 				<li>效攝一等字發音同廣州一樣爲<code>ou</code>：「好」<code>hou2</code>「逃」<code>tou4</code>「早」<code>zou2</code>「掃」<code>sou3</code>等。但根據《沙田方言》，此類字讀<code>o</code>而非<code>ou</code>。菊韻採用《中山方言誌》記錄。</li>
-				<li>根據《中山方言誌》，其韻母<code>oe</code>仍帶有少許介音，讀<code>/ioe/</code>。群安則讀作<code>/io/</code></li>
+				<li>根據《中山方言誌》，其韻母<code>oe</code>仍帶有少許介音，讀<code>oe /iœ/</code>。群安則讀作<code>io /io/</code>。默認設定上，僅韻腹可oe·io混打。</li>
 				<li>根據《沙田方言》，遇三所有無裂化字均讀作<code>i</code>，如「語」<code>ji5</code>「處」<code>ci3</code>「擧」<code>gi2</code>「書」<code>si1</code>等，此爲蜑家話特徵。但根據《中山方言誌》，此類字仍讀攝口（y）。菊韻採用《中山方言誌》記錄。</li>
 				<li>並母字有不送氣現象，即「盤」讀<code>bun4</code>等</li>
 				<li>【群安】廣州話聲母<code>w</code>同韻腹<code>u/o</code>結合者，群安聲母則爲<code>f</code>，如「黃」<code>foeng4</code>「換」<code>fun6</code>「會」<code>fui6</code>「活」<code>fut6</code>。
@@ -743,6 +815,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 	</ul>
 	<p>參攷：《沙田方言》《中山方言誌》</p>
 </details>
+
 
 ### 順德
 
