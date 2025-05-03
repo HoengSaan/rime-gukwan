@@ -440,7 +440,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 
 順德市方面主要可分爲四種：
 
-1. 以大良爲中心，同周邊容奇、桂州、倫敎、勒流爲一類；
+1. 以大良爲中心，同周邊容奇、桂州、倫敎、勒流、杏壇爲一類；
 2. 以陳村爲中心，同周邊北滘、樂從爲一類；
 3. 以龍江爲中心，同周邊龍山、里海爲一類；
 4. 以均安爲一類。
@@ -656,6 +656,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
             <li>請讀<code>au</code>用家在 98 行添加井號，竝刪除 97 行井號。</li>
           </ul>
         </li>
+        <li>蟹攝合口一等字精組全面變化爲<code>eoy</code>。</li>
         <li>效攝一等字有人讀<code>ou</code>，亦有同小欖一樣讀<code>o</code>，根據《沙田方言》記載，【東罟埗】有混讀現象。東阜音方案默認作<code>ou</code>.
           <ul>
             <li>請讀<code>o</code>用家刪除 77 行、332 行井號。</li>
@@ -826,7 +827,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 
 - 本人手上資料不足，不能製作方案，下爲三角蟠龍音特徵：區分來孃；遇攝合口一等字除見系之外低化爲`o`，如「度」`do6`「無」`mo4`「做（作）」`zo6`「粗」`co1`等；「ooi音」，來自於蟹攝三等合口字同止攝合口銳音，止攝合口銳音讀`eoy`，但蟹攝三等合口字讀`ooi`，同`eoy`、`oi`兩音對立。即「趣」`ceoy3`「菜」`coi3`「脆」`cooi3 /ʦʰuoi`不同音。
 
-#### 黃圃【未製作】
+#### 黃圃
 
 黃圃鎮位於中山市東北部，同桂州對望，毗鄰三角鎮、南頭鎮。以臘味聞名。
 
@@ -872,13 +873,17 @@ This is a schema based on [Rime Input Method](https://rime.im/).
   </summary>
 </details>
 
-#### 西區（沙蓢）【未製作】
+#### 西區（沙蓢）
 
 沙蓢今屬西區（鄉級），是市區附近除港口少有講順德系方言地區。
 
-#### 港口【未製作】
+根據現有資料，沙蓢（廣豐圍）同東昇音方案非常接近，如有出入可自行更改。
+
+#### 港口
 
 港口鎮位於市區北邊。
+
+根據現有資料，港口（石特）同東昇音方案非常接近，如有出入可自行更改。
 
 #### 民衆（浪網）
 
@@ -908,6 +913,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 						<li>此類字往往越接近現代，就會有越多字跟廣州一樣讀<code>w</code>。如已不能分辨者，請將 42~44 行<code>xform</code>改爲<code>derive</code>。</li>
 					</ul>
 				</li>
+				<li>「花」「輝」「快」「筷」等少部分曉母合口字讀<code>w-</code></li>
 			</ul>
 		</li>
 	</ul>
@@ -916,52 +922,100 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 
 ### 順德
 
+順德方面由於本人資料較少，只有代表音方案。
+
 #### 大良
 
-- `gukwan-daailoeng.schema.yaml`：大良音
-  - 本方案根據大良話代表特徵製作。下爲重要特徵：
-    - 不分來孃且疑母脫落，故疑母字可作零聲母（如「我」`ngo5`可打`o5`）。
-    - 不分`ak`同`aak`，故可以 aak 音打 ak（如「勒」`lak6`可打`laak6`）。
-      - 老派只有`aak`，無`ak`
-    - 不分`ing/ik`同`in/it`，故可以 in/it 音打 ing/ik（如「迫」`bik1`可打`bit1`）。
-    - `yun/yt`老派讀`un/ut`，但因同`eon/eot`簡拼衝突故不採用。
-    - 蟹攝合口一等字，廣州話讀`eoy`者，大良老派音讀`ui`，新派音讀`yu`：
-      - 端組、來母、清母、心母讀作`ui`（新派讀`yu`），如「對」`dui3`「腿」`tui2`「催」`cui1`「碎」`sui3`等。
-      - 精組（除清母、心母）多數人已讀作`eoy`，如「最」`zeoy3`「罪」`zeoy6`等，故不納入。
-    - 遇攝合口一等字裂化同廣州一樣爲`ou`：「度」`dou6`「無」`mou4`「做（作）」`zou6`「粗」`cou1`等。
-    - 曉匣喻細音字讀`h`而非`j`，如「爺」`he4`「賢」`hin4`「雨」`hy5`「藥」`hoek6`。
-      - 此類字往往越接近現代，就會有越多字跟廣州一樣讀`j`。例如小欖就基本剩低極少數白讀字。如已不能分辨者，請將 37 行井號刪除，竝將 37~40 行`xform`改爲`derive`。
-    - 廣州話聲母`w`同韻腹`u/o`結合者，大良聲母則爲`f`，如「黃」`foeng4`「換」`fun6`「會」`fui6`「活」`fut6`。
-      - 此類字往往越接近現代，就會有越多字跟廣州一樣讀`w`。如已不能分辨者，請將 42~44 行`xform`改爲`derive`。
-    - 「花」「輝」「快」「筷」等少部分曉母合口字讀`w-`
-    - 「蠅」「業」「惹」「仰」等少部分細音字讀`h-`
-    - 「船」「射」「繩」「蛇」等少部分擦音字塞化讀`c-`或者`z-`
-    - 「婆」「茶」「糖」「田」等少部分送氣字無氣化
-    - 「件」「解」「揀」「掛」等少部分無氣字送氣化
+大良鎮爲順德治所，位於順德西部，南邊即爲容奇同桂州。工商業發達。
 
+<details>
+  <summary><code>gukwan-daailoeng.schema.yaml</code>：大良音</summary>
+  <ul>
+    <li>本方案根據大良話代表特徵製作。下爲重要特徵：
+      <ul>
+        <li>不分來孃且疑母脫落，故零聲母可通疑母字：如「我」<code>ngo5</code>可打<code>o5</code>），「硬」<code>ngaang6</code>可打<code>aang</code>。</li>
+		<li>不分<code>ak</code>同<code>aak</code>，故<code>aak</code>音可通ak：如「勒」<code>lak6</code>可打<code>laak6</code>，「得」<code>dak1</code>可打<code>daak1</code>。
+			<ul>
+				<li>老派只有<code>aak</code>，無<code>ak</code>。</li>
+			</ul>
+		</li>
+		<li>不分<code>ing/ik</code>同<code>in/it</code>，實際打字兩者皆可。</li>
+        <li><code>yun/yt</code>老派讀<code>un/ut</code>，但因同<code>eon/eot</code>簡拼衝突故不採用。</li>
+        <li>蟹攝合口一等字，廣州話讀<code>eoy</code>者，大良老派音讀<code>ui</code>，新派音讀<code>yu</code>：
+          <ul>
+            <li>端組、來母、清母、心母讀作<code>ui</code>（新派讀<code>yu</code>），如「對」<code>dui3</code>「腿」<code>tui2</code>「催」<code>cui1</code>「碎」<code>sui3</code>等。</li>
+            <li>精組（除清母、心母）多數人已讀作<code>eoy</code>，如「最」<code>zeoy3</code>「罪」<code>zeoy6</code>等，故不納入。</li>
+          </ul>
+        </li>
+        <li>遇攝合口一等字裂化同廣州一樣爲<code>ou</code>：「度」<code>dou6</code>「無」<code>mou4</code>「做（作）」<code>zou6</code>「粗」<code>cou1</code>等。</li>
+        <li>曉匣喻細音字讀<code>h</code>而非<code>j</code>，如「爺」<code>he4</code>「賢」<code>hin4</code>「雨」<code>hy5</code>「藥」<code>hoek6</code>。
+          <ul>
+            <li>此類字往往越接近現代，就會有越多字跟廣州一樣讀<code>j</code>。例如小欖就基本剩低極少數白讀字。如已不能分辨者，請將 37 行井號刪除，竝將 37~40 行<code>xform</code>改爲<code>derive</code>。
+            </li>
+          </ul>
+        </li>
+        <li>廣州話聲母<code>w</code>同韻腹<code>u/o</code>結合者，大良聲母則爲<code>f</code>，如「黃」<code>foeng4</code>「換」<code>fun6</code>「會」<code>fui6</code>「活」<code>fut6</code>。
+          <ul>
+            <li>此類字往往越接近現代，就會有越多字跟廣州一樣讀<code>w</code>。如已不能分辨者，請將 42~44 行<code>xform</code>改爲<code>derive</code>。</li>
+          </ul>
+        </li>
+        <li>「花」「輝」「快」「筷」等少部分曉母合口字讀<code>w-</code></li>
+        <li>「蠅」「業」「惹」「仰」等少部分細音字讀<code>h-</code></li>
+        <li>「船」「射」「繩」「蛇」等少部分擦音字塞化讀<code>c-</code>或者<code>z-</code></li>
+        <li>「婆」「茶」「糖」「田」等少部分送氣字無氣化</li>
+        <li>「件」「解」「揀」「掛」等少部分無氣字送氣化</li>
+      </ul>
+    </li>
+  </ul>
+</details>
 #### 陳村
 
-- `gukwan-cancyn.schema.yaml`：陳村音
-  - 本方案根據陳村話代表特徵製作。下爲重要特徵：
-    - 不分來孃且疑母脫落，故疑母字可作零聲母（如「我」`ngo5`可打`o5`）。
-    - 不分`ak`同`aak`，故可以 aak 音打 ak（如「勒」`lak6`可打`laak6`）。
-      - 老派只有`aak`，無`ak`
-    - 陳村音止攝字無發生裂化，故廣州話讀`ei`者，陳村仍舊讀`i`，如「皮」`pi4`「鼻」`bi6`「地」`di6`「四」`si3`。
-    - 蟹攝合口一等字，廣州話讀`eoy`者，陳村老派音讀`ui`，新派音讀`yu`：
-      - 端組、來母、清母、心母讀作`ui`（新派讀`yu`），如「對」`dui3`「腿」`tui2`「催」`cui1`「碎」`sui3`等。
-      - 精組（除清母、心母）多數人已讀作`eoy`，如「最」`zeoy3`「罪」`zeoy6`等，故不納入。
-    - 遇攝合口一等字裂化同廣州一樣爲`ou`：「度」`dou6`「無」`mou4`「做（作）」`zou6`「粗」`cou1`等。
-    - 曉匣喻細音字讀`h`而非`j`，如「爺」`he4`「賢」`hin4`「雨」`hy5`「藥」`hoek6`。
-      - 此類字往往越接近現代，就會有越多字跟廣州一樣讀`j`。例如小欖就基本剩低極少數白讀字。如已不能分辨者，請將 37 行井號刪除，竝將 37~40 行`xform`改爲`derive`。
-    - 廣州話聲母`w`同韻腹`u/o`結合者，陳村聲母則爲`f`，如「黃」`foeng4`「換」`fun6`「會」`fui6`「活」`fut6`。
-      - 此類字往往越接近現代，就會有越多字跟廣州一樣讀`w`。如已不能分辨者，請將 42~44 行`xform`改爲`derive`。
-    - 「花」「輝」「快」「筷」等少部分曉母合口字讀`w-`
-    - 「蠅」「業」「惹」「仰」等少部分細音字讀`h-`
-    - 「船」「射」「繩」「蛇」等少部分擦音字塞化讀`c-`或者`z-`
-    - 「婆」「茶」「糖」「田」等少部分送氣字無氣化
-    - 「件」「解」「揀」「掛」等少部分無氣字送氣化
+陳村鎮位於順德市東北部，鄰近南站、禪城。
+
+<details>
+  <summary><code>gukwan-cancyn.schema.yaml</code>：陳村音</summary>
+  <ul>
+    <li>
+      本方案根據陳村話代表特徵製作。下爲重要特徵：
+      <ul>
+        <li>不分來孃且疑母脫落，故零聲母可通疑母字：如「我」<code>ngo5</code>可打<code>o5</code>），「硬」<code>ngaang6</code>可打<code>aang</code>。</li>
+		<li>不分<code>ak</code>同<code>aak</code>，故<code>aak</code>音可通ak：如「勒」<code>lak6</code>可打<code>laak6</code>，「得」<code>dak1</code>可打<code>daak1</code>。
+			<ul>
+				<li>老派只有<code>aak</code>，無<code>ak</code>。</li>
+			</ul>
+		</li>
+        <li>陳村音止攝字無發生裂化，故廣州話讀<code>ei</code>者，陳村仍舊讀<code>i</code>，如「皮」<code>pi4</code>「鼻」<code>bi6</code>「地」<code>di6</code>「四」<code>si3</code>。</li>
+        <li>蟹攝合口一等字，廣州話讀<code>eoy</code>者，陳村老派音讀<code>ui</code>，新派音讀<code>yu</code>：
+          <ul>
+            <li>端組、來母、清母、心母讀作<code>ui</code>（新派讀<code>yu</code>），如「對」<code>dui3</code>「腿」<code>tui2</code>「催」<code>cui1</code>「碎」<code>sui3</code>等。</li>
+            <li>精組（除清母、心母）多數人已讀作<code>eoy</code>，如「最」<code>zeoy3</code>「罪」<code>zeoy6</code>等，故不納入。</li>
+          </ul>
+        </li>
+        <li>遇攝合口一等字裂化同廣州一樣爲<code>ou</code>：「度」<code>dou6</code>「無」<code>mou4</code>「做（作）」<code>zou6</code>「粗」<code>cou1</code>等。</li>
+        <li>曉匣喻細音字讀<code>h</code>而非<code>j</code>，如「爺」<code>he4</code>「賢」<code>hin4</code>「雨」<code>hy5</code>「藥」<code>hoek6</code>。
+          <ul>
+            <li>此類字往往越接近現代，就會有越多字跟廣州一樣讀<code>j</code>。例如小欖就基本剩低極少數白讀字。如已不能分辨者，請將 37 行井號刪除，竝將 37~40 行<code>xform</code>改爲<code>derive</code>。
+            </li>
+          </ul>
+        </li>
+        <li>廣州話聲母<code>w</code>同韻腹<code>u/o</code>結合者，陳村聲母則爲<code>f</code>，如「黃」<code>foeng4</code>「換」<code>fun6</code>「會」<code>fui6</code>「活」<code>fut6</code>。
+          <ul>
+            <li>此類字往往越接近現代，就會有越多字跟廣州一樣讀<code>w</code>。如已不能分辨者，請將 42~44 行<code>xform</code>改爲<code>derive</code>。</li>
+          </ul>
+        </li>
+        <li>「花」「輝」「快」「筷」等少部分曉母合口字讀<code>w-</code></li>
+        <li>「蠅」「業」「惹」「仰」等少部分細音字讀<code>h-</code></li>
+        <li>「船」「射」「繩」「蛇」等少部分擦音字塞化讀<code>c-</code>或者<code>z-</code></li>
+        <li>「婆」「茶」「糖」「田」等少部分送氣字無氣化</li>
+        <li>「件」「解」「揀」「掛」等少部分無氣字送氣化</li>
+      </ul>
+    </li>
+  </ul>
+</details>
 
 #### 均安【未製作】
+
+均安鎮位於順德市南部，鄰近小欖、古鎮、江門。
 
 - `gukwan-gwanon.schema.yaml`：均安音
   - 下爲均安話重要特徵：
@@ -973,14 +1027,14 @@ This is a schema based on [Rime Input Method](https://rime.im/).
     - 蟹攝合口一等字，廣州話讀`eoy`者，均安話多讀作`yu`：
       - 端組、來母同心母讀作`yu`，如「對」`dy3`「腿」`ty2`「堆」`dy1`「碎」`sy3`等。
       - 精組（除心母）多數人則讀`ooi`（同`oi`無對立），如「最」`zoi3`「罪」`zoi6`「催」`coi1`等。
-    - 遇攝三等字裂化者同`ooi音`，即廣州話讀`eoy`者，均安話均讀作`ooi`（同`oi`無對立），如「女」`noi5`「旅」`loi5`「醉」`zoi3`「隨」`coi4`
+    - 遇攝三等字裂化同「ooi音」，即廣州話讀`eoy`者，均安話均讀作`ooi`（同`oi`無對立），如「女」`noi5`「旅」`loi5`「醉」`zoi3`「隨」`coi4`
     - 曉匣喻細音字讀`h`而非`j`，如「爺」`he4`「賢」`hin4`「雨」`hy5`「藥」`hoek6`。
       - 此類字往往越接近現代，就會有越多字跟廣州一樣讀`j`。例如小欖就基本剩低極少數白讀字。如已不能分辨者，請將 37 行井號刪除，竝將 37~40 行`xform`改爲`derive`。
     - 廣州話聲母`w`同韻腹`u/o`結合者，均安聲母則爲`f`，如「黃」`fong4`「換」`fun6`「會」`fui6`「活」`fut6`。
-      - 均安有部份讀`h`，如「慌」`hong1`。
+      - 均安有部份讀`h`，如「慌」`hong1`「往」`hong5`等
       - 此類字往往越接近現代，就會有越多字跟廣州一樣讀`w`。如已不能分辨者，請將 42~44 行`xform`改爲`derive`。
     - 「火」「過」讀`u`
-    - 「我」「個」等白讀讀`oi`，均安則讀`aai`。
+    - 「我」「個」等白讀，順德話一般讀`-oi`，均安則讀`-aai`。
     - 「花」「輝」「快」「筷」等少部分曉母合口字讀`w-`
     - 「蠅」「業」「惹」「仰」等少部分細音字讀`h-`
     - 「船」「射」「繩」「蛇」等少部分擦音字塞化讀`c-`或者`z-`
@@ -995,7 +1049,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 
 菊韻本意是爲順德系方言製作方案，對香山系方言部份音韻特徵水土不服。
 
-### 香山系方言共通特徵
+### 香山系方言共通特徵 
 
 <details>
 	<summary>主要指出同廣州話異同，以石歧鎮（岐江河內）爲準：</summary>
@@ -1082,8 +1136,9 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 	<p>但三個方音所有疑母細音字同日母字不約而同出現混亂（即部份讀<code>ng</code>，部份讀<code>j</code>，部份零聲母），前山音<code>ngj</code>音脫落最爲嚴重。曉母亦出現不同程度弱化，同時間非敷奉母開始脣齒化。基本上可以確定近四十年來各地廣州化明顯，但程度不等。
 	</p>
 </details>
-
 ### 石歧
+
+石歧鎮爲中山治所，位於中山市正中心。
 
 由於本人非香山系方言母語者，或闕不少字音。<mark>警告：請勿以本輸入法作爲石歧話標準參攷。</mark>
 

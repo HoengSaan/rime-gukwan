@@ -282,7 +282,8 @@ sort: by_weight
 梟	hiu1	
 寥	leu1	0%
 撩	liu1	
-撩	leu1	
+撩	leu1	5%
+撩	leu4	5%
 鷯	liu1	
 嫽	leu5	
 嶕	ziu1	0%
@@ -723,13 +724,14 @@ sort: by_weight
 嬲	nu1	
 趙	zriu5	
 膘	biu1	
+藐	meu2	
 巧	kiu2	0%
 巧	hiu2	0%
 撓	ngaeu1	0%
 拗	aeu2	
 拗	aeu3	
 鮑	baeu1	
-老	lau5
+老	lau5	5%
 燥	cou3	
 掀	kin2	
 好	haau1	0%
@@ -1045,7 +1047,9 @@ sort: by_weight
 𠨎	zhaen6	0%
 輾	nin5	
 碾	nin5	
+碾	nen5	5%
 囀	zryun2	5%
+叫	geu3	5%
 掉	diu6	5%
 掉	deu6	
 竅	kiu2	

@@ -107,8 +107,8 @@ speller:
     
     - xform/^zyi(?=\d)/zeoy/                # 蟹合一(yi->eoy)：「最」讀zeoy
     - xform/^cyi(?=\d)/ceoy/                # 蟹合一(yi->eoy)：「催」讀zeoy
-    #- xform/^syi(?=\d)/seoy/               # 蟹合一(yi->eoy)：「碎」讀seoy
-    - xform/^syi(?=\d)/syu/                 # 蟹合一(yi->yu)：「碎」讀syu
+    - xform/^syi(?=\d)/seoy/               # 蟹合一(yi->eoy)：「碎」讀seoy
+    #- xform/^syi(?=\d)/syu/                 # 蟹合一(yi->yu)：「碎」讀syu
     - xform/^([dtnl])yi(?=\d)/$1yu/        # 蟹合一(yi->yu)：「對」讀dyu
     #- xform/yi(?=\d)/eoy/                  # 蟹合一(yi->eoy)：皆讀eoy者用竝關其他
     #- xform/yi(?=\d)/yu/                   # 蟹合一(yi->yu)：皆讀yu者用竝關其他
@@ -346,7 +346,7 @@ set_hint:
     - xform/(s)yu(?=\d)/$1eoy/             # 遇合三裂化(yu->eoy)：「須」讀seoy
     
     - xform/(z|c)yi(?=\d)/$1eoy/           # 蟹合一(yi->eoy)：「最」讀zeoy
-    - xform/(s)yi(?=\d)/$1yu/              # 蟹合一(yi->yu)：「碎」讀syu
+    - xform/(s)yi(?=\d)/$1eoy/              # 蟹合一(yi->eoy)：「碎」讀seoy
     - xform/([dtnl])yi(?=\d)/$1yu/        # 蟹合一(yi->yu)：「對」讀dyu
     
     - xform/yo(?=\d)/yu/                    # FIX
