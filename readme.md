@@ -452,6 +452,8 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 
 南海，番禺方面目前無計劃。
 
+方案製作一般以市區・鎮區爲準。
+
 ### 順德系方言共通特徵
 
 <details>
@@ -471,12 +473,12 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 				<li>通常精母先變<code>eoy</code>，清母兩種情況都有，而其他則變<code>yu</code>。</li>
 			</ul>
 		</li>
-		<li>部份方言遇攝合口一等字除見系之外裂化爲<code>au</code>而非<code>ou</code>，如「度」<code>dau6</code>「無」<code>mau4</code>「做（作）」<code>zau6</code>「粗」<code>cau1</code>等。
+		<li>遇攝合口一等字除見系之外裂化爲<code>au</code>而非<code>ou</code>，如「度」<code>dau6</code>「無」<code>mau4</code>「做（作）」<code>zau6</code>「粗」<code>cau1</code>等。
 			<ul>
-				<li>亦有部份方言低化爲<code>o</code>。</li>
+				<li>亦有部份方言低化爲<code>o</code>或裂化爲<code>ou</code>。</li>
 			</ul>
 		</li>
-		<li>部份方言效攝一等字發生元音融合，讀<code>o</code>，如「高」<code>go1</code>「刀」<code>do1</code>「毛」<code>mo4</code>「草」<code>co2</code>。
+		<li>效攝一等字發生元音融合，讀<code>o</code>，如「高」<code>go1</code>「刀」<code>do1</code>「毛」<code>mo4</code>「草」<code>co2</code>。
 			<ul>
 				<li>亦有部份方言讀<code>au</code>，或同廣州發音一樣讀<code>ou</code>。有甚者讀<code>oo</code>，同<code>o</code>保持對立（需檢査）。均安則同官話一樣讀<code>aau</code>。</li>
 			</ul>
@@ -486,9 +488,10 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 				<li>但實際情況連多數中年人亦不分<code>om/op</code>同<code>am/ap</code>，同方言記錄有差別。故菊韻允許以<code>am/ap</code>音輸入<code>om/op</code>字。</li>
 			</ul>
 		</li>
-		<li>【老派】順德市大良、陳村、均安以及中山市小欖等無<code>ak</code>，皆讀<code>aak</code>。</li>
-		<li>白讀音豐富。</li>
+        <li>白讀音豐富。</li>
 		<li>變調豐富，有一定規律但其豐富性導致方案無法完全還原其實態。尤其陽平字特殊變調之多，本人已放棄收錄。</li>
+		<li>【補充】順德市大良、陳村、均安以及中山市小欖等無<code>ak</code>，皆讀<code>aak</code>。</li>
+        <li>【補充】部份方言曉匣喻細音字讀<code>h</code>而非<code>j</code>，如「爺」<code>he4</code>「賢」<code>hin4</code>「雨」<code>hy5</code>「藥」<code>hoek6</code>。</li>
 	</ul>
 	<p>以上特徵如無重申即無異。</p>
 </details>
@@ -497,16 +500,12 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 
 #### 小欖・東昇
 
-小欖鎮位於中山市北部，亦名菊城、欖鎮。同順德市均安鎮接壤，爲中山工業重鎮。小欖多數人講小欖話（順德系方言），僅沙口講蜑家話（受小欖話嚴影響）。
-
-東昇本屬小欖，86 年被劃出，21 年被劃回小欖鎮。
-
-坦背本分屬欖鎮同隆鎮，新中國後分去沙蓢，84 年設區，86 年設鎮，99 年併入東昇，21 年跟東昇一同併入欖鎮。
+小欖鎮位於中山市北部，亦名菊城、欖鎮。同順德市均安鎮接壤，爲中山工業重鎮。小欖多數人講小欖話（順德系方言），僅沙口講蜑家話（受小欖話嚴影響）。東昇本屬小欖，86 年被劃出，21 年被劃回小欖鎮。坦背本分屬欖鎮同隆鎮，新中國後分去沙蓢，84 年設區，86 年設鎮，99 年併入東昇，21 年跟東昇一同併入欖鎮。
 
 <details>
 	<summary><code>gukwan-siulaam.schema.yaml</code>：小欖音</summary>
 	<ul>
-		<li>本方案根據小欖鎮代表特徵製作。下爲重要特徵：
+		<li>本方案根據小欖話代表特徵製作。下爲重要特徵：
 			<ul>
 				<li>多數人不分透曉（t/h），故曉母（h）可通透母（t）：如「偸」<code>tau1</code>可打<code>hau1</code>，「聽」<code>ting1</code>可打<code>hing1</code>。</li>
 				<li>「胡」「戶」「護」三小韻<code>wu/fu</code>混讀。</li>
@@ -572,7 +571,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 						</li>
 					</ul>
 				</li>
-				<li>曉匣喻細音字讀<code>h</code>而非<code>j</code>，但已大幅廣州化。</li>
+				<li>曉匣喻細音字讀<code>h</code>而非<code>j</code>，但已大幅廣州化。兩者可互打：如「以」<code>hi5</code>可打<code>ji5</code>，「賢」<code>hin4</code>可打<code>jin4</code>。</li>
                 <li>分<code>ak</code>同<code>aak</code>。</li>
 			</ul>
 		</li>
@@ -614,6 +613,9 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 				<li>脣化聲母遇 o 消失，即「過」「個」不分，皆讀<code>go3</code></li>
 				<li>見系遇攝三等字裂化，讀<code>eoy /øy/</code>，如「區」<code>keoy1</code>「去」<code>heoy3</code>「車」<code>geoy1</code>「巨」<code>geoy6</code>等。</li>
 				<li>「ooi音」，來自於蟹攝三等合口字同止攝合口銳音，海洲止攝同廣州一樣變<code>eoy</code>但蟹攝則同<code>oi</code>合流，如「脆」<code>coi3</code>「銳」<code>joi6</code>「稅」<code>soi3</code>「歲」<code>soi3</code>等。</li>
+					<ul>
+						<li>此類字往往越接近現代，就會有越多字跟廣州一樣讀<code>eoy</code>。如已不能分辨者，請刪除 82 行井號，竝將 82~83 行<code>xform</code>改爲<code>derive</code>。</li>
+					</ui>
 				<li>效攝一等字讀<code>au</code>而非<code>ou</code>，如「高」<code>gau1</code>「刀」<code>dau1</code>「掃」<code>sau3</code>「毛」<code>mau4</code></li>
 			</ul>
 		</li>
@@ -648,10 +650,10 @@ This is a schema based on [Rime Input Method](https://rime.im/).
     <li>本方案根據《沙田方言》《中山方言誌》製作。下爲同小欖音主要區別：
       <ul>
         <li>區分透曉</li>
-        <li>「胡」「戶」「護」三小韻讀<code>fu</code>;，無混。</li>
+        <li>「胡」「戶」「護」三小韻讀<code>fu</code>，無混。</li>
         <li>遇攝合口一等字除見系之外裂化爲<code>ou</code>，【西罟埗】則同小欖一樣讀<code>au</code>。
           <ul>
-            <li>請讀<code>au</code>;用家在 98 行添加井號，竝刪除 97 行井號。</li>
+            <li>請讀<code>au</code>用家在 98 行添加井號，竝刪除 97 行井號。</li>
           </ul>
         </li>
         <li>效攝一等字有人讀<code>ou</code>，亦有同小欖一樣讀<code>o</code>，根據《沙田方言》記載，【東罟埗】有混讀現象。東阜音方案默認作<code>ou</code>.
@@ -722,12 +724,11 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 				<li>蟹攝合口一等字同廣州一樣爲<code>eoy</code>，並不讀作<code>yu</code>。</li>
 				<li>遇攝合口一等字裂化同廣州一樣爲<code>ou</code>：「度」<code>dou6</code>「無」<code>mou4</code>「做（作）」<code>zou6</code>「粗」<code>cou1</code>等。</li>
 				<li>《沙田方言》中，效攝一等記作<code>o</code>，但《中山方言誌》全部紀錄點都爲<code>ou</code>。此處採用《中山方言誌》記錄，請根據實際情況自行調整。（如需改請刪除 77 行、335 行井號）</li>
-				<li>「ooi音」，來自於蟹攝三等合口字同止攝合口銳音，橫欄仍保持其對<code>eoy</code>、<code>oi</code>、<code>ooi</code>之對立。其中以六沙最爲完整。即「趣」<code>ceoy3</code>「菜」<code>coi3</code>「脆」<code>cooi3</code>不同音。
+				<li>「ooi音」，來自於蟹攝三等合口字同止攝合口銳音，橫欄仍保持其對<code>eoy [øy]</code>、<code>oi</code>、<code>ooi [oø]</code>之對立。其中以六沙最爲完整。即「趣」<code>ceoy3</code>「菜」<code>coi3</code>「脆」<code>cooi3</code>不同音。
 					<ul>
 						<li>其他方言點之中，蟹攝三等合口字讀<code>eoy</code>而非<code>ooi</code>。（如需改請在 81 行、337 行添加井號，竝刪除 82 行、338 行井號）</li>
-						<li>/ooi/實際發音爲[oø]，如有需要可自行將方案調整爲<code>ooy</code>以貼合實際發音。</li>
-						<li>/eoy/實際發音爲[øy]。</li>
 						<li>《沙田方言》並無記載此對立。</li>
+						<li>此類字往往越接近現代，就會有越多字跟廣州一樣讀<code>eoy</code>。如已不能分辨者，請刪除 87 行井號，竝將 87 行<code>xform</code>改爲<code>derive</code>。
 					</ul>
 				</li>
 				<li>曉匣喻細音字讀<code>h</code>而非<code>j</code>，如「爺」<code>he4</code>「賢」<code>hin4</code>「雨」<code>hy5</code>「藥」<code>hoek6</code>。
@@ -753,7 +754,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 <details>
 <summary><code>gukwan-naamtau.schema.yaml</code>：南頭音</summary>
 <ul>
-  <li>本方案根據《中山方言誌》製作。下爲重要特徵：
+  <li>本方案根據排坎記音點製作。下爲重要特徵：
     <ul>
       <li>本人所有資料中唯一江攝宕攝分四種：「江<sup>江攝</sup>」讀<code>ong</code>「窗<sup>江攝莊組・宕攝開三</sup>」讀<code>yong</code>（僅作顯示，默認不用<code>yong</code>，鍵值爲<code>iong/oeng</code>）「宕<sup>宕攝</sup>」讀<code>yoong</code>（僅作顯示，默認不用，鍵值爲<code>oong</code>打）「廣sup>宕攝合口</sup>」讀<code>wong</code><ul>
           <li>如需修改鍵值，需同時修改三拼規矩。</li>
@@ -777,7 +778,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
       </li>
     </ul>
   </li>
-  <li>以上均以排坎音爲基準，以下爲地方音補充：
+  <li>以上均以排坎音爲基準，以下爲其他地方音補充：
     <ul>
       <li>【滘心】幫組接un·ut時讀yn·yt。
         <ul>
@@ -786,6 +787,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
       </li>
       <li>【滘心】「ooi音」，來自於蟹攝三等合口字同止攝合口銳音，滘心止攝同廣州一樣變<code>eoy</code>但蟹攝則同<code>oi</code>合流，如「脆」<code>coi3</code>「銳」<code>joi6</code>「稅」<code>soi3</code>「歲」<code>soi3</code>等。<ul>
           <li>請符合此項用家在 82 行、336 行添加井號，竝刪除 83 行、337 行井號</li>
+		  <li>此類字往往越接近現代，就會有越多字跟廣州一樣讀<code>eoy</code>。如已不能分辨者，請刪除 82 行井號，竝將 82~83 行<code>xform</code>改爲<code>derive</code>。</li>
         </ul>
       </li>
       <li>【滘心】【低沙】江宕兩攝除合口皆讀<code>ong /yoŋ/</code>，合口讀<code>wong /woŋ/</code>。
@@ -796,12 +798,13 @@ This is a schema based on [Rime Input Method](https://rime.im/).
     </ul>
   </li>
 </ul>
+<p>參攷：《沙田方言》《中山方言誌》</p>
 </details>
 
 <details>
 <summary><code>gukwan-naamtau-naamsing.schema.yaml</code>：南頭南城音</summary>
 <ul>
-  <li>本方案根據《沙田方言》製作。下爲重要特徵：
+  <li>本方案根據南城記音點製作。下爲重要特徵：
     <ul>
       <li>ong/ok 歸 oeng/oek，而兩個脣化聲母遇 oeng/oek 即展脣化，故「光」「江」「薑」不分，皆讀<code>goeng1</code>（注意：「黃」仍讀<code>woeng4</code>，不讀作<code>oeng4</code>）。實際打字兩者皆可。</li>
       <li>蟹攝合口一等字，廣州話讀<code>eoy</code>者，南城音有部份讀作作<code>yu</code>：
@@ -817,21 +820,57 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 </ul>
 </details>
 
-#### 三角【未製作】
+#### 三角【資料不足，不能製作】
 
-三角鎮位於中山市東部，同南沙對望。三角山四周操三角話，是莞寶系方言。其他地方則講順德系方言。
+三角鎮位於中山市東部，同南沙對望。三角山四周操三角話，是莞寶系方言。其他地方則講順德系、蜑家系。
 
-`gukwan-saamgok-punlung.schema.yaml`：三角蟠龍音
-
-- 本方案根據《中山方言誌》製作。下爲重要特徵：
-  - 區分來孃
-  - 遇攝合口一等字除見系之外低化爲`o`，如「度」`do6`「無」`mo4`「做（作）」`zo6`「粗」`co1`等。
-  - 「ooi音」，來自於蟹攝三等合口字同止攝合口銳音，止攝合口銳音歸`eoy`，但蟹攝三等合口字仍保持其同`eoy`、`oi`兩音之對立。即「趣」`ceoy3`「菜」`coi3`「脆」`cooi3 /ʦʰuoi`不同音。
-  - 其韻母`oe`仍帶有少許介音，讀`/iœ/`。
+- 本人手上資料不足，不能製作方案，下爲三角蟠龍音特徵：區分來孃；遇攝合口一等字除見系之外低化爲`o`，如「度」`do6`「無」`mo4`「做（作）」`zo6`「粗」`co1`等；「ooi音」，來自於蟹攝三等合口字同止攝合口銳音，止攝合口銳音讀`eoy`，但蟹攝三等合口字讀`ooi`，同`eoy`、`oi`兩音對立。即「趣」`ceoy3`「菜」`coi3`「脆」`cooi3 /ʦʰuoi`不同音。
 
 #### 黃圃【未製作】
 
 黃圃鎮位於中山市東北部，同桂州對望，毗鄰三角鎮、南頭鎮。以臘味聞名。
+
+黃圃音有兩個記音點，分別爲三社《沙田方言》同鎮二《中山方言誌》，兩村於2001年合併，同屬三社社區，是黃圃鎮區。由於三社記錄更爲詳細，故方案基底使用三社音。
+
+<details>
+  <summary><code>gukwan-wongpou.schema.yaml</code>：黃圃音</summary>
+    <ul>
+      <li>本方案基於三社記音點製作，下爲重要特徵：
+        <ul>
+          <li>遇攝合口一等字除見系之外裂化爲<code>ou</code>，如「度」<code>dou6</code>「無」<code>mou4</code>「做（作）」<code>zou6</code>「粗」<code>cou1</code>等。</li>
+          <li>效攝一等字同廣州一樣爲<code>ou</code>，如「高」<code>gou1</code>「刀」<code>dou1</code>「毛」<code>mou4</code>「草」<code>cou2</code>等。</li>
+        </ul>
+      </li>
+      <li>下爲鎮二同三社已知區別：
+        <ul>
+          <li>
+            遇攝三等字同廣州一樣裂化爲<code>eoy</code>，如「區」<code>keoy1</code>「去」<code>heoy3</code>「車」<code>geoy1</code>「巨」<code>geoy6</code>等。
+            <ul>
+              <li>請符合此項用家刪除 102 行、106行、342 行、346 行井號。</li>
+            </ul>
+          </li>
+          <li>「ooi音」，來自於蟹攝三等合口字同止攝合口銳音，鎮二止攝同廣州一樣變<code>eoy</code>但蟹攝則同<code>oi</code>合流，如「脆」<code>coi3</code>「銳」<code>joi6</code>「稅」<code>soi3</code>「歲」<code>soi3</code>等。
+            <ul>
+              <li>請符合此項用家在 82 行、331 行添加井號，竝刪除 83 行、332 行井號。</li>
+              <li>此類字往往越接近現代，就會有越多字跟廣州一樣讀<code>eoy</code>。如已不能分辨者，請刪除 82 行井號，竝將 82~83行<code>xform</code>改爲<code>derive</code>。</li>
+            </ul>
+          </li>
+          <li>廣州話聲母<code>w</code>同韻腹<code>u/o</code>結合者，陳村聲母則爲<code>f</code>，如「黃」<code>foeng4</code>「換」<code>fun6</code>「會」<code>fui6</code>「活」<code>fut6</code>。
+            <ul>
+              <li>請符合此項用家刪除 42 行、43 行、310 行、311 行井號。</li>
+              <li>此類字往往越接近現代，就會有越多字跟廣州一樣讀<code>w</code>。如已不能分辨者，請將 42~44 行<code>xform</code>改爲<code>derive</code>。</li>
+            </ul>
+          </li>
+          <li>不能區分疑影
+            <ul>
+              <li>請符合此項用家刪除 31 行、32 行井號。</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </summary>
+</details>
 
 #### 西區（沙蓢）【未製作】
 
@@ -843,9 +882,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 
 #### 民衆（浪網）
 
-民眾鎮位於中山市東部，與南沙對望。
-
-由於民衆鎮其他音屬蜑家話，此處不收，僅收浪網音。浪網鎮於 2000 年撤鎮，劃入民衆鎮。民衆鎮除舊浪網鎮轄地皆操蜑家話。
+民眾鎮位於中山市東部，與南沙對望。由於民衆鎮其他音屬蜑家話，此處不收，僅收浪網音。浪網鎮於 2000 年撤鎮，劃入民衆鎮。民衆鎮除舊浪網鎮轄地皆操蜑家話。
 
 <details>
 	<summary><code>gukwan-longmong.schema.yaml</code>：浪網音</summary>

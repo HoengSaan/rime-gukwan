@@ -13,14 +13,14 @@ __include: gukwan.schema:/
 
 schema:
   __include: gukwan.schema:/schema
-  schema_id: gukwan-dungsing
-  name: 菊韻東昇音
-  version: "17.8b"
+  schema_id: gukwan-wongpou
+  name: 菊韻黃圃音
+  version: "17.11b"
   author:
     - 靈帝（Hoengsaan）
   description: |-
     測試階段
-    本方案根據東昇音代表特徵製作，建議仔細閱讀方案竝根據自身口音調整
+    本方案根據黃圃音代表特徵製作，建議仔細閱讀方案竝根據自身口音調整
     瞭解如何使用菊韻請閱覽readme文件，詳細請至本方案github頁：https://github.com/HoengSaan/rime-gukwan
     如有問題或建議可於以上github頁中開Issues反饋
 
@@ -34,10 +34,10 @@ speller:
     - derive/^nr/nj/                        #
     - xform/HJ/j/                            #勿動
     #- xform/HJ/h/                         #勿動
-    - derive/^hj/j/                          # 曉匣喻細音(hj->j)：「賢」讀jin
-    - derive/^hjo/hio/                      # 曉匣喻細音(hj->h)：「樣」讀hoeng
-    - derive/^hjaa/hia/                     # 曉匣喻細音(hj->h)：「爺」讀he
-    - derive/^hj/h/                         # 曉匣喻細音(hj->h)：「賢」讀hin
+    - xform/^hj/j/                          # 曉匣喻細音(hj->j)：「賢」讀jin
+    #- xform/^hjo/hio/                      # 曉匣喻細音(hj->h)：「樣」讀hoeng
+    #- xform/^hjaa/hia/                     # 曉匣喻細音(hj->h)：「爺」讀he
+    #- xform/^hj/h/                         # 曉匣喻細音(hj->h)：「賢」讀hin
     
     #- xform/^wu(i|n|t)(?=\d)/hu$1/         # 古匣母一類(h)
     #- xform/^wo(ng|k)(?=\d)/hwo$1/         # 古匣母一類(h)
@@ -74,7 +74,7 @@ speller:
     #韻母——分韻（非現代音建議維持）
     #- derive/yo(?=\d)/yu/                  # 遇開分韻(yo->yu)
     #- derive/yi(?=\d)/ui/                  # 蟹合分韻(yi->ui)
-    - xform/ou(?=\d)/o$1/                  # FIX
+    #- xform/ou(?=\d)/o$1/                  # FIX
     #- xform/ou(?=\d)/au$1/                 # FIX
     
     #韻母——現代
@@ -305,9 +305,6 @@ speller:
 
 set_hint:
   __append:
-    - xform/hjo/hio/                      # 口音補充(hj->h)：「賢」讀hin者
-    - xform/hjaa/hia/                     # 口音補充(hj->h)：「賢」讀hin者
-    - xform/hj/h/                         # 口音補充(hj->h)：「賢」讀hin者
     - xform/HJ/j/
     - xform/hwun(?=\d)/hun$1/              # 古匣母二類(h)：「桓」讀fun者
     #- xform/wu(i|n|t)(?=\d)/hu$1/         # 古匣母一類(h)
@@ -331,9 +328,8 @@ set_hint:
     - xform/uo(?=\d)/oe/                    # (uo->oe)
     - xform/uo(n|t)(?=\d)/oe$1/             # (uo->oe)
 
-    - xform/ou(?=\d)/o$1/                  # FIX
-
     - xform/ooy(?=\d)/eoy/
+    #- xform/ooy(?=\d)/oi/
     - xform/ooi(?=\d)/eoy/
 
     - xform/(b|p|f)i(?=\d)/$1ei/           # 止攝裂化脣音(i->ei) ：「備」讀bei
@@ -343,9 +339,11 @@ set_hint:
     - xform/([bpmtdnlzcs]|sh)u(?=\d)/$1ou/    # 遇攝裂化(u->ou)：「渡」讀dou
     
     - xform/([zcsnl])yo(?=\d)/$1eoy/     # 遇開三(yo->eoy)：「旅」讀leoy
+    #- xform/^(g|k|h)yo(?=\d)/$1eoy/
     
     - xform/([zcnl])yu(?=\d)/$1eoy/       # 遇合三裂化(yu->eoy)：「聚」讀zeoy
     - xform/(s)yu(?=\d)/$1eoy/             # 遇合三裂化(yu->eoy)：「須」讀seoy
+    #- xform/^(g|k|h)yu(?=\d)/$1eoy/
     
     - xform/(z|c)yi(?=\d)/$1eoy/           # 蟹合一(yi->eoy)：「最」讀zeoy
     - xform/^syi(?=\d)/seoy/               # 蟹合一(yi->eoy)：「碎」讀seoy
@@ -377,7 +375,7 @@ set_hint:
 translator:
   __include: gukwan.schema:/translator
   dictionary: gukwan-alt
-  prism: gukwan-dungsing  
+  prism: gukwan-wongpou  
   comment_format:
     __patch:
       - set_hint
