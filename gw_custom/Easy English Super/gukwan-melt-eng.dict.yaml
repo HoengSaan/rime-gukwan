@@ -1,0 +1,26 @@
+# Rime dictionary
+# encoding: utf-8
+#
+# gukwan - 菊韻
+
+# 此爲菊韻粵語輸入法依賴文件
+# 瞭解如何使用菊韻請閱覽readme文件，詳細請至本方案github頁：
+# https://github.com/HoengSaan/rime-gukwan
+# This is a schema file for Gukwan Cantonese Input Method.
+# Learn how to use Gukwan in the readme file, available on the project's github page.
+# Source：https://github.com/iDvel/rime-ice
+
+---
+name: gukwan-melt-eng
+version: "18.0b"
+import_tables:
+  - en_dicts/en_ext # 補充詞庫
+  - en_dicts/en     # 主詞庫
+  - en_dicts/en_sup # 超級詞庫
+...
+
+rime-cantonese	rimecantonese
+rime-gukwan	rimegukwan
+Cantonese	cantonese
+Hokkien	hokkien
+Taishanese	taishanese

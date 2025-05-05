@@ -256,6 +256,12 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 	</li>
 </ul>
 
+#### 漢英混打大詞庫
+
+大詞庫增加40萬條詞條，將大大增加英文輸入體驗。多數情況下並不影響打字，但並非完全無影響，故默認只調用小詞庫。
+
+若想使用大詞庫，只需將`gw_custom/Easy English Super`內文件覆蓋默認方案即可，同正常安裝無誤。反之，若想用返小詞庫，則用`gw_custom/Easy English Nano`內文件覆蓋大詞庫方案即可。
+
 ### 字表詞庫
 
 菊韻字表詞庫以深筆爲準，但可以轉換爲簡筆。隨基本字表詞庫之外，菊韻亦有小欖話特色詞庫以及廣東地名詞庫。
@@ -968,6 +974,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
     </li>
   </ul>
 </details>
+
 #### 陳村
 
 陳村鎮位於順德市東北部，鄰近南站、禪城。
@@ -1251,11 +1258,13 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 ## 漢英混打
 
 漢英混打實現是參攷[优化 Rime 英文输入体验 - Dvel's Blog](https://dvel.me/posts/make-rime-en-better/)，基於[tumuyan/melt_eng](https://github.com/tumuyan/rime-melt)（[iDvel/rime-ice](https://github.com/iDvel/rime-ice)版）。隨源文件以[Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0.html)發佈。
+英文大詞庫基於[Easy English Super](https://github.com/oniondelta/Onion_Rime_Files/tree/main)（字典：[skywind3000/ECDICT](https://github.com/skywind3000/ECDICT)，隨源文件以[MIT License](https://mit-license.org/)發佈，並禁止商用。
 
 - `gukwan-melt-eng.schema.yaml`：混打方案
 - `gukwan-melt-eng.dict.yaml`：混打辭典
   - `en_dicts/en.dict.yaml`
   - `en_dicts/en_ext.dict.yaml`
+  - `en_dicts/en_sup.dict.yaml`：英文大詞庫
 
 ## LUA 腳本
 

@@ -12,13 +12,14 @@
 
 ---
 name: gukwan-melt-eng
-version: "16.11b"
+version: "18.0b"
 import_tables:
-  - en_dicts/en_ext # 补充（里面有些许带权重的，且和 en 重复，需要把 en_ext 放在上面）
-  - en_dicts/en     # 英文主词库
+  - en_dicts/en_ext # 補充詞庫
+  - en_dicts/en     # 主詞庫
 ...
 
 rime-cantonese	rimecantonese
 rime-gukwan	rimegukwan
-Cantonese	Cantonese
 Cantonese	cantonese
+Hokkien	hokkien
+Taishanese	taishanese

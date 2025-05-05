@@ -16,13 +16,13 @@
 
 schema:
   schema_id: gukwan-melt-eng
-  name: Easy English Nano for Gukwan
+  name: Easy English Nano（菊韻）
   version: "15.0b"
   author:
     - Patrick <ipatrickmac@gmail.com>
     - tumuyan <tumuyan@21cn.com>
   description: 
-    調整爲菊韻用
+    調整爲菊韻用，漢英混打專用
     瞭解如何使用菊韻請閱覽readme文件，詳細請至本方案github頁：https://github.com/HoengSaan/rime-gukwan
     如有問題或建議可於以上github頁中開Issues反饋
     Easy English Nano
