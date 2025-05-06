@@ -60,11 +60,14 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 						<li><code>gukwan-naamtau-naamsing</code>（南頭南城音）：南頭鎮南城村</li>
 					</ul>
 				</li>
+                <li><code>gukwan-wongpou</code>【黃圃鎮】：黃圃鎮各口音</li>
 				<li><em><code>gukwan-manzung</code></em>【民衆鎮】：
 					<ul>
 						<li><code>gukwan-longmong</code>（浪網音）：舊浪網鎮（今屬民衆）各口音。</li>
 					</ul>
 				</li>
+                <li><em><code>gukwan-saalong</code></em>【沙蓢鎮】：有出入請用東昇音改</li>
+                <li><em><code>gukwan-gonghau</code></em>【港口鎮】：有出入請用東昇音改</li>
 			</ul>
 		</li>
 		<li>順德系——順德市
@@ -97,15 +100,11 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 					<li>其實理論上全部應該讀<code>y</code>，但係不能避免的人遇到隻唔識既字，就直情跟廣州音。此處不作改變，如不能辨別者，請手動更改方案。</li>
 				</ul>
 			</li>
-			<li>見系咸攝字<code>om</code>同<code>am</code>不分。
-				<ul>
-					<li>由於個個方言都變化程度不一，以我</li>
-				</ul>
-			</li>
 			<li>關於白讀字請見<a href="https://github.com/HoengSaan/rime-gukwan#%E6%96%B9%E6%A1%88">方案</a></li>
 		</ul>
 	</blockquote>
 </details>
+
 <mark>部份地方音須根據說明自行修改方案。</mark>
 
 ### 輸入方式
@@ -193,7 +192,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 - derive/yu(?!ng|k)/y/ # 簡拼(yu->y)【毋須關閉】
 - derive/oe(ng|k|r)/e$1/ # 簡拼(oe->e)
 - derive/eo([ntiy])/u$1/ # 簡拼(eo->u)
-- derive/oo(i|y)/u$1/ # 簡拼(oo->u)
+#- derive/oo(i|y)/u$1/ # 簡拼(oo->u)
 ```
 
 ### 特殊輸入
@@ -266,9 +265,28 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 
 菊韻字表詞庫以深筆爲準，但可以轉換爲簡筆。隨基本字表詞庫之外，菊韻亦有小欖話特色詞庫以及廣東地名詞庫。
 
-> [!NOTE]
->
-> 菊韻可調用擴展詞庫，但需要手動下載。[gukwan-extended.dict.yaml](https://github.com/HoengSaan/rime-gukwan/blob/main/gukwan-extended.dict.yaml)內有說明如何獲取。由於擴展詞庫過大，低性能設備不建議使用，可能導致部署失敗。
+#### 添加新詞庫
+
+菊韻可調用擴展詞庫，但需要手動下載。[gukwan-extended.dict.yaml](https://github.com/HoengSaan/rime-gukwan/blob/main/gukwan-extended.dict.yaml)內有說明如何獲取。其他詞庫亦可用於菊韻，但菊韻添加新詞庫必須符合以下兩個要求：
+
+1. 無輸入碼，菊韻輸入碼無法同其他方案通用。
+2. 詞庫必須使用繁體（OpenCC 標準），否則無法打字。
+
+以下腳本可輔助閣下完成以上要求，自動修改詞庫文件，但須安裝Python。
+
+##### 去除輸入碼
+
+將需要去除輸入碼之詞庫，放在`Dict_Source`，然後使用`去除輸入碼.py`即可去除輸入碼。
+
+##### 簡繁轉換
+
+將需要繁化詞庫放在`Dict_Removed`，然後使用`繁簡轉換.cmd`，選擇`s2t.json`即可繁化。
+
+##### 詞庫調用
+
+若新詞庫已符合以上要求，可直接將詞庫放在`Dict_Converted`。並使用`詞庫調用.py`腳本。
+
+`詞庫調用.py`將自動尋找在`Dict_Removed`同`Dict_Converted`內所有詞庫文件，閣下可自行選擇要調用詞庫。選擇後將自動執行，用家只需將`data`內所有文件放置於中州韻程序文件夾即可。
 
 ### 反査支持
 
@@ -337,28 +355,6 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 		</li>
 	</ol>
 </details>
-### 添加新詞庫
-
-菊韻添加新詞庫必須符合以下兩個要求：
-
-1. 無輸入碼，菊韻輸入碼無法同其他方案通用。
-2. 詞庫必須使用繁體（OpenCC 標準），否則無法打字。
-
-以下腳本可輔助閣下完成以上要求，自動修改詞庫文件，但須安裝Python。
-
-#### 去除輸入碼
-
-將需要去除輸入碼之詞庫，放在`Dict_Source`，然後使用`去除輸入碼.py`即可去除輸入碼。
-
-#### 簡繁轉換
-
-將需要繁化詞庫放在`Dict_Removed`，然後使用`繁簡轉換.cmd`，選擇`s2t.json`即可繁化。
-
-#### 詞庫調用
-
-若新詞庫已符合以上要求，可直接將詞庫放在`Dict_Converted`。並使用`詞庫調用.py`腳本。
-
-`詞庫調用.py`將自動尋找在`Dict_Removed`同`Dict_Converted`內所有詞庫文件，閣下可自行選擇要調用詞庫。選擇後將自動執行，用家只需將`data`內所有文件放置於中州韻程序文件夾即可。
 
 ## 定製
 
@@ -1167,9 +1163,11 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 </details>
 ### 石歧
 
+<mark>警告：請勿以本輸入法作爲石歧話標準參攷。</mark>
+
 石歧鎮爲中山治所，位於中山市正中心。
 
-由於本人非香山系方言母語者，或闕不少字音。<mark>警告：請勿以本輸入法作爲石歧話標準參攷。</mark>
+由於本人非香山系方言母語者，或闕不少字音。
 
 <details>
 	<summary><code>gukwan-sekki.schema.yaml</code>：由於石歧話老派變化並不均等，菊韻難以處理。故採用廣州化程度更深之新派音，標準如下：</summary>
@@ -1291,7 +1289,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
   - `en_dicts/en_ext.dict.yaml`
   - `en_dicts/en_sup.dict.yaml`：英文大詞庫
 
-## LUA 腳本
+##  LUA 腳本
 
 本方案所有 LUA 腳本均有參攷[iDvel/rime-ice](https://github.com/iDvel/rime-ice)及相關文件，相關文件根據源文件許可發佈。
 

@@ -108,7 +108,6 @@ speller:
 translator:
   __include: gukwan.schema:/translator
   dictionary: jyut6ping3-gw
-  prism: jyut6ping3-gw
 
 reverse_lookup:
   tags: [ luna_pinyin, cangjie5, kunyomi, loengfan ]
