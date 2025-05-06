@@ -15,7 +15,7 @@ schema:
   __include: gukwan.schema:/schema
   schema_id: jyut6ping3-gw
   name: 菊韻廣州話三拼
-  version: "17.2b"
+  version: "18.1b"
   author:
     - 靈帝（Hoengsaan）
     - Ayaka Mikazuki <ayaka@mail.shn.hk>
@@ -107,10 +107,10 @@ speller:
 
 translator:
   __include: gukwan.schema:/translator
-  dictionary: jyut6ping3
+  dictionary: jyut6ping3-gw
   prism: jyut6ping3-gw
 
 reverse_lookup:
   tags: [ luna_pinyin, cangjie5, kunyomi, loengfan ]
   overwrite_comment: false
-  dictionary: jyut6ping3
+  dictionary: jyut6ping3-gw

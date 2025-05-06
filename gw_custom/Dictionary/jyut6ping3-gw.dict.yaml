@@ -1,0 +1,27 @@
+# Rime dictionary
+# encoding: utf-8
+#
+# jyut6ping3-gw - 菊韻詞庫
+#
+# 此爲菊韻粵語輸入法字表詞庫文件
+# 瞭解如何使用菊韻請閱覽readme文件，詳細請至本方案github頁：
+# https://github.com/HoengSaan/rime-gukwan
+# This is a dictionary file for Gukwan Cantonese Input Method.
+# Learn how to use Gukwan in the readme file, available on the project's github page.
+# Source: https://github.com/CanCLID/rime-cantonese-upstream
+
+---
+name: jyut6ping3-gw
+version: "18.1b"
+sort: by_weight
+vocabulary: essay-cantonese
+import_tables:
+  - jyut6ping3.chars
+  - jyut6ping3.words
+  - jyut6ping3.phrase
+  - jyut6ping3.lettered
+  - jyut6ping3.maps
+  - gw_dicts/gukwan.kwongtung
+  - gw_dicts/gukwan.macau
+  - gw_dicts/gukwan.wordsjp
+...

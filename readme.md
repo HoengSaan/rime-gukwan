@@ -337,6 +337,28 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 		</li>
 	</ol>
 </details>
+### 添加新詞庫
+
+菊韻添加新詞庫必須符合以下兩個要求：
+
+1. 無輸入碼，菊韻輸入碼無法同其他方案通用。
+2. 詞庫必須使用繁體（OpenCC 標準），否則無法打字。
+
+以下腳本可輔助閣下完成以上要求，自動修改詞庫文件，但須安裝Python。
+
+#### 去除輸入碼
+
+將需要去除輸入碼之詞庫，放在`Dict_Source`，然後使用`去除輸入碼.py`即可去除輸入碼。
+
+#### 簡繁轉換
+
+將需要繁化詞庫放在`Dict_Removed`，然後使用`繁簡轉換.cmd`，選擇`s2t.json`即可繁化。
+
+#### 詞庫調用
+
+若新詞庫已符合以上要求，可直接將詞庫放在`Dict_Converted`。並使用`詞庫調用.py`腳本。
+
+`詞庫調用.py`將自動尋找在`Dict_Removed`同`Dict_Converted`內所有詞庫文件，閣下可自行選擇要調用詞庫。選擇後將自動執行，用家只需將`data`內所有文件放置於中州韻程序文件夾即可。
 
 ## 定製
 
@@ -419,7 +441,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 				<li>「山」「斬」「減」「咸」等字讀<code>-e</code>（統一爲 ae 再轉換，故拼音提示仍爲 ae，此爲菊韻輸入法遺留問題）</li>
 				<li>「應」「拎」「煙」等字讀零聲母（此字現代少見，而香山系方言老派無論文白皆讀零聲母）</li>
 				<li>短<code>a</code>變長<code>a</code>（aa）：「第」<code>daai6</code>「仔」<code>zaai2</code>「洗」<code>saai2</code>；「某・畝」<code>maau5</code>「謀・繆・謬」<code>maau4</code>「貿・茂」<code>maau6</code>；「侄・姪」<code>zaat2</code>「甩」<code>laat1</code></li>
-				<li>不成規模：「現」<code>ngin6</code>「鏟」<code>coen2</code>「玩」<code>faan2</code>「閂」<code>soen1</code>「凝・迎」讀<code>nging4</code>「處」<code>syu3</code>「姊」<code>zei2</code>等，不勝枚擧。</li>
+				<li>不成規模：「現」<code>ngin6</code>「鏟」<code>coen2</code>「玩」<code>faan2</code>「閂」<code>soen1</code>「凝・迎」讀<code>nging4</code>「處」<code>syu3</code>「姊」<code>zei2</code>「就」<code>zou6</code>等，不勝枚擧。</li>
 			</ul>
 		</li>
 		<li>以下字收錄在<code>gukwan-alt.dict.yaml</code>同<code>gukwan-alt-asp.dict.yaml</code>
@@ -1227,6 +1249,8 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 
 `gukwan-alt.dict.yaml`・`gukwan-asp.dict.yaml`・`gukwan-alt-asp.dict.yaml`爲部份方言專用。
 
+`jyut6ping3-gw.dict.yaml`爲廣州話專用。
+
 `gukwan-extended.dict.yaml`用於調用各種擴展詞庫，以增強輸入體驗。下載並放置於正確位置方可使用，不安裝直接調用將會導致輸入法不能正常使用。故默情況下將不調用。默認不調用方言字表（`char3.dict`・`char4.dict`），需手動設置。
 
 - 字庫
@@ -1244,6 +1268,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
     - 收錄部份小欖話特有辭彙，小欖周邊地名街名，詳細見[小欖詞庫資料](https://github.com/HoengSaan/rime-gukwan/wiki/小欖詞庫資料)
   - `gukwan.words2.dict.yaml`：粵拼詞庫增補同外來語
     - 收錄粵拼詞庫所無之特殊辭彙同外來語。
+  - `gukwan.wordsjp.dict.yaml`：廣州話專用
   - `gukwan.lettered.dict.yaml`：粵拼詞庫
     - 基於`jyut6ping3.lettered.dict.yaml`，作者爲「粵語計算語言學基礎建設組」([@CanCLID](https://github.com/CanCLID)) ，此部分則以[CC BY 4.0 許可](https://creativecommons.org/licenses/by/4.0/)發佈。
   - `gukwan.kwongtung.dict.yaml`：廣東地名（村級）
@@ -1289,7 +1314,8 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 - `symbols-gukwan.yaml`：菊韻定製標點符號（類似 Microsoft 日本語 IME）同特殊符號輸入。
 - `菊韻.trime.yaml`：同文輸入法主題，基於[Wenti-D/Astralwelkin](https://github.com/Wenti-D/Astralwelkin)，隨源文件以[MIT 許可](https://mit-license.org/)發佈。不同點如下：
   - 鍵值更改，允許一鍵反査（q 鍵、p 鍵、a 鍵）。
-  - 專用配色，參攷小欖特色菊花，但未夠膽用黃色驚太鮮豔，結果做變成屎黃色((o(；□；`)o))。
+  - 專用配色，參攷小欖特色菊花，但未夠膽用黃色驚太鮮豔，結果就變成屎黃色((o(；□；`)o))。
+- `OpenCC 開放中文轉換`：開箱即用，用於繁簡轉換，隨源文件以[Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0.html)發佈。
 
 ## 銘謝
 
