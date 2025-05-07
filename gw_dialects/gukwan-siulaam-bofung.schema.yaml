@@ -15,7 +15,7 @@ schema:
   __include: gukwan.schema:/schema
   schema_id: gukwan-siulaam-bofung
   name: 菊韻小欖寶豐音
-  version: "17.6b"
+  version: "18.2b"
   author:
     - 靈帝（Hoengsaan）
   description: |-
@@ -372,14 +372,15 @@ set_hint:
     
 translator:
   __include: gukwan.schema:/translator
-  dictionary: gukwan-siulaam-bofung  
+  dictionary: gukwan
+  prism: gukwan-siulaam-bofung  
   comment_format:
     __patch:
       - set_hint
 
 reverse_lookup:
   __include: gukwan.schema:/reverse_lookup
-  dictionary: gukwan-siulaam-bofung
+  dictionary: gukwan
   comment_format:
     __patch:
       - set_hint

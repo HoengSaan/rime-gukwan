@@ -16,7 +16,7 @@ if not exist "%OUTPUT_FOLDER%" mkdir "%OUTPUT_FOLDER%"
 
 :: 檢查removed中是否有文件
 echo.
-echo 檢查『Dict_Removed』文件夾...
+echo 檢查 'Dict_Removed' 文件夾...
 set FILE_FOUND=
 for %%F in ("%INPUT_FOLDER%\*.yaml") do (
     echo - %%~nxF
@@ -24,8 +24,8 @@ for %%F in ("%INPUT_FOLDER%\*.yaml") do (
 )
 
 if not defined FILE_FOUND (
-    echo 未在『Dict_Removed』找到可處理詞庫！
-    echo 請將需要轉換詞庫文件放於『Dict_Removed』文件夾。
+    echo 未在 'Dict_Removed' 找到可處理詞庫！
+    echo 請將詞庫文件放於 'Dict_Removed' 文件夾。
     pause
     exit /b
 )
@@ -39,7 +39,7 @@ if /I "%choice%" NEQ "y" (
 )
 
 echo.
-echo 可用配置文件：
+echo 可用配置文件（簡轉繁建議使用t2s.json）：
 echo s2t.json - 簡體到繁體
 echo t2s.json - 繁體到簡體
 echo s2tw.json - 簡體到臺灣正體
@@ -79,5 +79,5 @@ for %%F in ("%INPUT_FOLDER%\*.yaml") do (
 )
 
 echo.
-echo ✅ 所有詞庫已轉換完成！請查看『Dict_Converted』文件夾。
+echo ✅ 所有詞庫已轉換完成！請查看 'Dict_Converted' 文件夾。
 pause

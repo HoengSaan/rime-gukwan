@@ -22,6 +22,8 @@ def check_required_dictionary_files():
             missing.append(path)
     if missing:
         print("錯誤：在 '{}' 下找不到以下文件：".format(dictionary_folder))
+        print("建議重新下載 rime-gukwan 並確保文件完整性\n")
+        input("按 Enter 鍵退出...")
         for f in missing:
             print("  - " + f)
         sys.exit(1)
@@ -38,6 +40,10 @@ def search_dict_yaml_files():
                 found_files.append((folder, f))
     if not found_files:
         print("錯誤：在 'Dict_Converted' 同 'Dict_Removed' 中找不到任何詞庫文件（以 'dict.yaml' 結尾）")
+        print("如果閣下所用詞庫文件不需要處理，請將其放在 'Dict_Converted'。")
+        print("有輸入碼詞庫請將詞庫文件放在 'Dict_Source'，使用 '去除輸入碼.py' 處理。")
+        print("簡體詞庫請將詞庫文件放在 'Dict_Removed'，使用 '繁簡轉換' 處理。\n")
+        input("按 Enter 鍵退出...")
         sys.exit(1)
     return found_files
 
@@ -135,7 +141,7 @@ def main():
     modify_templates(required_files, dictionary_folder, selected_files, data_folder)
     
     # 步驟 7：完成後通知使用者
-    print("\n✅ 詞庫已完成修改，請將data內所有文件放置於中州韻程序文件夾，竝重新部署，以調用新詞庫。")
+    print("\n✅ 詞庫已完成修改，請將data內所有文件複製並放置於中州韻程序文件夾，竝重新部署，以調用新詞庫。")
     input("按 Enter 鍵退出...")
 
 if __name__ == "__main__":

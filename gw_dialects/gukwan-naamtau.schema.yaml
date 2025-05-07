@@ -14,7 +14,7 @@ __include: gukwan.schema:/
 schema:
   __include: gukwan.schema:/schema
   schema_id: gukwan-naamtau
-  name: 菊韻南頭排坎音
+  name: 菊韻南頭音
   version: "17.10.1b"  
   author:
     - 靈帝（Hoengsaan）

@@ -21,11 +21,9 @@ This work is licensed under a
 
 This is a schema based on [Rime Input Method](https://rime.im/).
 
-此爲[RIME | 中州韻輸入法引擎](https://rime.im/)方案，是爲改善粵語輸入體驗，支持漢英混打（中英混打），輸入日期・時間・節日・節氣等各種功能。
+此爲[RIME | 中州韻輸入法引擎](https://rime.im/)方案，是爲改善粵語輸入體驗，支持三拼，漢英混打（中英混打），輸入日期・時間・節日・節氣等各種功能。
 
-菊韻本身是爲輸入順德系方言設計，可用於輸入小欖話・順德話等順德系方言。
-
-菊韻自用爲主。
+菊韻本身是爲輸入順德系方言設計，可用於輸入小欖話・順德話等順德系方言，亦支持輸入廣州話。
 
 更多資訊請閱讀下文竝參攷[菊韻 – なかやま園](https://zonsan.fc2.page/?cat=123)。[關於如何安裝](#安裝)。
 
@@ -272,7 +270,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 1. 無輸入碼，菊韻輸入碼無法同其他方案通用。
 2. 詞庫必須使用繁體（OpenCC 標準），否則無法打字。
 
-以下腳本可輔助閣下完成以上要求，自動修改詞庫文件，但須安裝Python。
+以下腳本可輔助閣下完成以上要求，自動修改詞庫文件，但<mark>須安裝Python</mark>。
 
 ##### 去除輸入碼
 
@@ -323,6 +321,12 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 - [Home · rime/rime-cantonese Wiki](https://github.com/rime/rime-cantonese/wiki)（多平臺，粵語）
 - [配置教程 | oh-my-rime输入法](https://www.mintimate.cc/zh/guide/)（多平臺，官話）
 - [Android 上的 RIME 输入法 trime 同文输入法使用 | Verne in GitHub](https://blog.einverne.info/post/2021/04/use-trime-input-method-rime-on-android.html#安装和基础使用)（Android同文，官話）
+
+解壓後使用「選擇方案.py」即可傻瓜式選擇需要使用方案，但<mark>須安裝Python</mark>。
+
+若無法使用Python，安裝後請自行從`gw_dialects`複製需要使用方案。
+
+默認只有廣州話同本人自用方案。
 
 **識者不難，難者不識。**
 
