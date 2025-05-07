@@ -27,7 +27,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 
 更多資訊請閱讀下文竝參攷[菊韻 – なかやま園](https://zonsan.fc2.page/?cat=123)。[關於如何安裝](#安裝)。
 
-<mark>Update：將方言點方案移至`gw_dialects`。</mark>
+<mark>若有不明，可問AI。</mark>
 
 ## 功能
 
@@ -102,7 +102,6 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 		</ul>
 	</blockquote>
 </details>
-
 <mark>部份地方音須根據說明自行修改方案。</mark>
 
 ### 輸入方式
@@ -190,7 +189,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 - derive/yu(?!ng|k)/y/ # 簡拼(yu->y)【毋須關閉】
 - derive/oe(ng|k|r)/e$1/ # 簡拼(oe->e)
 - derive/eo([ntiy])/u$1/ # 簡拼(eo->u)
-#- derive/oo(i|y)/u$1/ # 簡拼(oo->u)
+- derive/oo(i|y)/u$1/ # 簡拼(oo->u)
 ```
 
 ### 特殊輸入
@@ -252,40 +251,6 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 		</ul>
 	</li>
 </ul>
-
-#### 漢英混打大詞庫
-
-大詞庫增加40萬條詞條，將大大增加英文輸入體驗。多數情況下並不影響打字，但並非完全無影響，故默認只調用小詞庫。
-
-若想使用大詞庫，只需將`gw_custom/Easy English Super`內文件覆蓋默認方案即可，同正常安裝無誤。反之，若想用返小詞庫，則用`gw_custom/Easy English Nano`內文件覆蓋大詞庫方案即可。
-
-### 字表詞庫
-
-菊韻字表詞庫以深筆爲準，但可以轉換爲簡筆。隨基本字表詞庫之外，菊韻亦有小欖話特色詞庫以及廣東地名詞庫。
-
-#### 添加新詞庫
-
-菊韻可調用擴展詞庫，但需要手動下載。[gukwan-extended.dict.yaml](https://github.com/HoengSaan/rime-gukwan/blob/main/gukwan-extended.dict.yaml)內有說明如何獲取。其他詞庫亦可用於菊韻，但菊韻添加新詞庫必須符合以下兩個要求：
-
-1. 無輸入碼，菊韻輸入碼無法同其他方案通用。
-2. 詞庫必須使用繁體（OpenCC 標準），否則無法打字。
-
-以下腳本可輔助閣下完成以上要求，自動修改詞庫文件，但<mark>須安裝Python</mark>。
-
-##### 去除輸入碼
-
-將需要去除輸入碼之詞庫，放在`Dict_Source`，然後使用`去除輸入碼.py`即可去除輸入碼。
-
-##### 簡繁轉換
-
-將需要繁化詞庫放在`Dict_Removed`，然後使用`繁簡轉換.cmd`，選擇`s2t.json`即可繁化。
-
-##### 詞庫調用
-
-若新詞庫已符合以上要求，可直接將詞庫放在`Dict_Converted`。並使用`詞庫調用.py`腳本。
-
-`詞庫調用.py`將自動尋找在`Dict_Removed`同`Dict_Converted`內所有詞庫文件，閣下可自行選擇要調用詞庫。選擇後將自動執行，用家只需將`data`內所有文件放置於中州韻程序文件夾即可。
-
 ### 反査支持
 
 多數人士通曉廣州話、普通話卻未必熟識自己鄉下發音，故設各種反査。反査亦可用來各種疑難雜字。
@@ -322,11 +287,9 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 - [配置教程 | oh-my-rime输入法](https://www.mintimate.cc/zh/guide/)（多平臺，官話）
 - [Android 上的 RIME 输入法 trime 同文输入法使用 | Verne in GitHub](https://blog.einverne.info/post/2021/04/use-trime-input-method-rime-on-android.html#安装和基础使用)（Android同文，官話）
 
-解壓後使用「選擇方案.py」即可傻瓜式選擇需要使用方案，但<mark>須安裝Python</mark>。
+解壓後使用「選擇方案.py」即可傻瓜式選擇需要使用方案，並進行一定程度上定製。（<mark>須安裝Python</mark>）
 
-若無法使用Python，安裝後請自行從`gw_dialects`複製需要使用方案。
-
-默認只有廣州話同本人自用方案。
+若無法使用Python，安裝後請自行從`gw_dialects`複製需要使用方案。<mark>默認狀態下只有廣州話同基底方案可用。</mark>
 
 **識者不難，難者不識。**
 
@@ -371,6 +334,33 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 - [中州韻維基 - SpellingAlgebra](https://github.com/rime/home/wiki/SpellingAlgebra)
 - [amzxyz - Patch 方法论](https://github.com/amzxyz/rime_wanxiang_pro/blob/main/custom/patch%E6%96%B9%E6%B3%95%E8%AE%BA.md)
 - [oh-my-rime - 配置教程](https://www.mintimate.cc/zh/guide/)
+
+### 漢英混打大詞庫
+
+大詞庫增加40萬條詞條，將大大增加英文輸入體驗。多數情況下並不影響打字，但並非完全無影響，故默認只調用小詞庫。
+
+若想使用大詞庫，只需將`gw_custom/Easy English Super`內文件覆蓋默認方案即可，同正常安裝無誤。反之，若想用返小詞庫，則用`gw_custom/Easy English Nano`內文件覆蓋大詞庫方案即可。
+
+### 添加新詞庫
+
+隨基本字表詞庫之外，菊韻亦有特色詞庫以及廣東地名詞庫若嫌不足，菊韻有腳本（<mark>須安裝Python</mark>）輔助閣下，自動修改詞庫文件以適用菊韻。
+
+菊韻添加新詞庫必須符合以下兩個要求：
+
+1. 無輸入碼，菊韻輸入碼無法同其他方案通用。
+   - 將需要去除輸入碼之詞庫，放在`Dict_Source`，然後使用`去除輸入碼.py`即可去除輸入碼。
+   - 去除輸入碼版本默認輸出至`Dict_Removed`
+2. 詞庫必須使用繁體（OpenCC 標準），否則無法打字。
+   - 將需要繁化詞庫放在`Dict_Removed`，然後使用`繁簡轉換.cmd`，選擇`s2t.json`即可繁化。
+   - 轉換後默認輸出至`Dict_Removed`。
+
+若閣下詞庫已符合以上兩個要求，可直接將詞庫放在`Dict_Converted`。毋須使用以上兩個腳本。
+
+##### 詞庫調用
+
+`詞庫調用.py`將自動尋找在`Dict_Removed`同`Dict_Converted`內所有詞庫文件，閣下可自行選擇要調用詞庫。
+
+選擇後將自動執行，將已配置詞庫放於`data`。用家只需將`data`內所有文件放置於中州韻程序文件夾即可。（使用`選擇方案.py`亦可）
 
 ## 拼音
 
@@ -853,7 +843,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 
 三角鎮位於中山市東部，同南沙對望。三角山四周操三角話，是莞寶系方言。其他地方則講順德系、蜑家系。
 
-- 本人手上資料不足，不能製作方案，下爲三角蟠龍音特徵：區分來孃；遇攝合口一等字除見系之外低化爲`o`，如「度」`do6`「無」`mo4`「做（作）」`zo6`「粗」`co1`等；「ooi音」，來自於蟹攝三等合口字同止攝合口銳音，止攝合口銳音讀`eoy`，但蟹攝三等合口字讀`ooi`，同`eoy`、`oi`兩音對立。即「趣」`ceoy3`「菜」`coi3`「脆」`cooi3 /ʦʰuoi`不同音。
+本人手上資料不足，不能製作方案。下爲三角蟠龍音特徵：區分來孃；遇攝合口一等字除見系之外低化爲`o`，如「度」`do6`「無」`mo4`「做（作）」`zo6`「粗」`co1`等；「ooi音」，來自於蟹攝三等合口字同止攝合口銳音，止攝合口銳音讀`eoy`，但蟹攝三等合口字讀`ooi`，同`eoy`、`oi`兩音對立。即「趣」`ceoy3`「菜」`coi3`「脆」`cooi3 /ʦʰuoi`不同音。
 
 #### 黃圃
 
@@ -1293,7 +1283,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
   - `en_dicts/en_ext.dict.yaml`
   - `en_dicts/en_sup.dict.yaml`：英文大詞庫
 
-##  LUA 腳本
+##  腳本
 
 本方案所有 LUA 腳本均有參攷[iDvel/rime-ice](https://github.com/iDvel/rime-ice)及相關文件，相關文件根據源文件許可發佈。
 
@@ -1303,12 +1293,19 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 - `autocap_filter.lua`：自動大寫英文詞彙，作者爲@abcdefg233 同@Mirtle，來自[iDvel/rime-ice](https://github.com/iDvel/rime-ice)。隨源文件以[GPL 3.0 許可](https://www.gnu.org/licenses/gpl-3.0.en.html)發佈。
 - `en_spacer.lua`：優化英文輸入體驗（自動空格），來自[iDvel/rime-ice](https://github.com/iDvel/rime-ice)。隨源文件以[GPL 3.0 許可](https://www.gnu.org/licenses/gpl-3.0.en.html)發佈。
 
-以下腳本繁化並增添小小功能。爲避免文件被覆蓋，故改名。
+以下 LUA 腳本繁化並增添小小功能。爲避免文件被覆蓋，故改名。
 
 - `number_gukwan.lua`：以阿拉伯數字輸入轉換漢語數字，來自[yanhuacuo/98wubi-tables](https://github.com/yanhuacuo/98wubi-tables)。增加轉換蘇州碼子功能。增加直接轉換功能。由於源文件採取[Unlicense 許可](https://unlicense.org/)，本文件亦不設限。
 - `time_gukwan.lua`：以各種格式輸入是日日期時間，來自[amzxyz/rime_wanxiang](amzxyz/rime_wanxiang)。隨源文件以[CC BY 4.0 許可](https://creativecommons.org/licenses/by/4.0/)發佈。
 
-### 其他
+以下 Python 同 CMD 腳本，爲本人借助AI所作。
+
+- `選擇方案.py`：幫助用家選擇方案，並進行一定程度上客製化。
+- `去除輸入碼.py`：自動去除詞庫輸入碼。
+- `繁簡轉換.cmd`：使用 OpenCC 進行繁簡轉換。
+- `詞庫調用.py`：自動修改詞庫文件。
+
+## 其他
 
 以下爲本倉庫自帶，毋須額外下載。關於其他依賴文件請參攷[如何在 RIME 輸入法安裝菊韻輸入法 – なかやま園](https://zonsan.fc2.page/?p=1563)。
 
