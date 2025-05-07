@@ -277,9 +277,7 @@ def handle_switches(target_dir):
                     print("1. 默認開啓第一選項 (reset: 0)")
                     print("2. 默認開啓第二選項 (reset: 1)")
                     print("3. 保留上一次狀態 (#reset: 0)")
-                    print("不輸入則不改變任何選項")
-
-                    choice = input(f"請輸入選擇編號 [默認: {default_choice}]: ").strip()
+                    choice = input(f"請輸入選擇編號，不輸入則使用默認選項 [默認: {default_choice}]: ").strip()
 
                     if choice == "1":
                         selected_reset = "reset: 0"
@@ -463,19 +461,33 @@ def main():
         exit()
 
     os.makedirs(target_dir, exist_ok=True)
-    
+
+    only_standard_cantonese = input("\n是否只需要標準粵拼（rime-cantonese菊韻版｜廣州話）方案？(y/n): ").strip().lower() == 'y'
+
     check_folders(script_dir, target_dir)
     check_files(script_dir, target_dir)
     handle_trime(script_dir, target_dir)
-    handle_dialects(script_dir, target_dir)
+
+    if only_standard_cantonese:
+        print("\n=== 第三步：選擇方言點方案 ===")
+        print("由於閣下選擇只需要標準方案，故跳過此步。")
+    else:
+        handle_dialects(script_dir, target_dir)
+
     handle_custom(script_dir, target_dir)
     handle_easy_english(script_dir, target_dir)
     handle_switches(target_dir)
     handle_mixed_language(target_dir)
-    handle_three_spelling(target_dir)
 
-    print("\n=== ✅ 設定完成 ===\n")
+    if only_standard_cantonese:
+        print("\n=== 第八步：三拼設置 ===")
+        print("由於閣下選擇只需要標準方案，故跳過此步。")
+    else:
+        handle_three_spelling(target_dir)
+
+    print("\n=== ✅ 菊韻設定完成 ===\n")
     print("請將 gw_install 內所有文件複製至程序文件夾。然後進入輸入法選擇菊韻方案，竝重新部署。\n")
+    print("提示：請確保閣下已安裝 rime-cantonese，此爲菊韻必選前置方案。缺少 rime-cantonese 菊韻將無法使用。\n")
     input("按 Enter 鍵退出...")
 
 if __name__ == "__main__":
