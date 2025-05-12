@@ -287,7 +287,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 - [配置教程 | oh-my-rime输入法](https://www.mintimate.cc/zh/guide/)（多平臺，官話）
 - [Android 上的 RIME 输入法 trime 同文输入法使用 | Verne in GitHub](https://blog.einverne.info/post/2021/04/use-trime-input-method-rime-on-android.html#安装和基础使用)（Android同文，官話）
 
-解壓後使用「選擇方案.py」即可傻瓜式選擇需要使用方案，並進行一定程度上定製。（<mark>須安裝Python</mark>）
+解壓後使用`選擇方案.py`即可傻瓜式選擇需要使用方案，並進行一定程度上定製。（<mark>須安裝Python</mark>）
 
 若無法使用Python，安裝後請自行從`gw_dialects`複製需要使用方案。<mark>默認狀態下只有廣州話同基底方案可用。</mark>
 
@@ -341,6 +341,8 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 
 若想使用大詞庫，只需將`gw_custom/Easy English Super`內文件覆蓋默認方案即可，同正常安裝無誤。反之，若想用返小詞庫，則用`gw_custom/Easy English Nano`內文件覆蓋大詞庫方案即可。
 
+提示：可直接使用`選擇方案.py`更改，毋須手動更換。
+
 ### 添加新詞庫
 
 隨基本字表詞庫之外，菊韻亦有特色詞庫以及廣東地名詞庫若嫌不足，菊韻有腳本（<mark>須安裝Python</mark>）輔助閣下，自動修改詞庫文件以適用菊韻。
@@ -348,6 +350,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 菊韻添加新詞庫必須符合以下兩個要求：
 
 1. 無輸入碼，菊韻輸入碼無法同其他方案通用。
+   - 使用前請解壓`OpenCC.zip`至`gw_custom`，亦可自行編譯（[BYVoid/OpenCC](https://github.com/BYVoid/OpenCC)）。
    - 將需要去除輸入碼之詞庫，放在`Dict_Source`，然後使用`去除輸入碼.py`即可去除輸入碼。
    - 去除輸入碼版本默認輸出至`Dict_Removed`
 2. 詞庫必須使用繁體（OpenCC 標準），否則無法打字。
@@ -374,18 +377,26 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 
 古代音請參攷[菊韻拼音表 – なかやま園](https://zonsan.fc2.page/?p=1583)，其他可參攷[順德系方言特徵 – なかやま園](https://zonsan.fc2.page/?p=1580)。
 
+下文將說明菊韻如何處粵拼之外音位。
+
 ### 粵拼同擴展粵拼
 
-菊韻拼音方案基於[擴展粵拼](https://jyutjam.org/j++/)，現代音可直接以[粵拼](https://jyutping.org/)輸入。
+菊韻拼音方案基於[擴展粵拼](https://jyutjam.org/j++/)，現代音絕大多數情況下可直接以[粵拼](https://jyutping.org/)輸入。
 
-不少方音同一音位發音同廣州竝不盡同，但爲方便輸入，如果粵拼可以表達，則全部用粵拼表達。只有粵拼不可表達之音位，方用擴展粵拼。
+粵拼基於廣州話，竝不能表達廣州話所無音位。不少方音同一音位發音同廣州竝不盡同，若粵拼可以表達，則全部用粵拼表達，此乃所有羅馬字轉寫原則。只有粵拼不可表達之音位，方用擴展粵拼。
 
-以南頭排坎音爲例子，其江攝宕攝仍保留有介音：
+以南頭排坎音爲例子，其江攝宕攝仍保留有介音，竝有四組音：
 
 - 「江」韻母讀/ong/，對應廣州話 ong，故可直接用粵拼現有`ong`。
 - 「鋼」韻母讀/yoong/，廣州話無對應音位，故使用擴展粵拼`oong`。爲打字方便，`ong`亦可使用。
-- 「薑」韻母讀/yong/，對應廣州話 oong，故可直接用粵拼現有`oeng`。而擴展粵拼`iong`亦可使用。
+- 「薑」韻母讀/yong/，對應廣州話 oeng，故可直接用粵拼現有`oeng`。而擴展粵拼`iong`亦可使用。
 - 「廣」韻母讀/wong/，對應廣州話 wong，故可直接用粵拼現有`wong`。
+
+以橫欄六沙音爲例子，其「ooi音」（即古蟹攝三等合口字同止攝合口銳音）仍有保留：
+
+- 「趣」韻母裂化讀/eoy/ [øy]，對應廣州話 eoy，故可直接用粵拼現有`eoi`。
+- 「菜」韻母讀/oi/ [ʊi]，對應廣州話 oi，故可直接用粵拼現有`oi`。
+- 「脆」韻母讀/ooy/ [oø]，廣州話無對應音位，故使用擴展粵拼`ooi`，
 
 ### `gu/ku`同`gwu/kwu`
 
@@ -630,7 +641,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 				<li>區分來孃・區分透曉</li>
 				<li>脣化聲母遇 o 消失，即「過」「個」不分，皆讀<code>go3</code></li>
 				<li>見系遇攝三等字裂化，讀<code>eoy /øy/</code>，如「區」<code>keoy1</code>「去」<code>heoy3</code>「車」<code>geoy1</code>「巨」<code>geoy6</code>等。</li>
-				<li>「ooi音」，來自於蟹攝三等合口字同止攝合口銳音，海洲止攝同廣州一樣變<code>eoy</code>但蟹攝則同<code>oi</code>合流，如「脆」<code>coi3</code>「銳」<code>joi6</code>「稅」<code>soi3</code>「歲」<code>soi3</code>等。</li>
+				<li>「ooi音」，即古蟹攝三等合口字同止攝合口銳音，海洲止攝同廣州一樣變<code>eoy</code>但蟹攝則同<code>oi</code>合流，如「脆」<code>coi3</code>「銳」<code>joi6</code>「稅」<code>soi3</code>「歲」<code>soi3</code>等。</li>
 					<ul>
 						<li>此類字往往越接近現代，就會有越多字跟廣州一樣讀<code>eoy</code>。如已不能分辨者，請刪除 82 行井號，竝將 82~83 行<code>xform</code>改爲<code>derive</code>。</li>
 					</ui>
@@ -743,7 +754,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 				<li>蟹攝合口一等字同廣州一樣爲<code>eoy</code>，並不讀作<code>yu</code>。</li>
 				<li>遇攝合口一等字裂化同廣州一樣爲<code>ou</code>：「度」<code>dou6</code>「無」<code>mou4</code>「做（作）」<code>zou6</code>「粗」<code>cou1</code>等。</li>
 				<li>《沙田方言》中，效攝一等記作<code>o</code>，但《中山方言誌》全部紀錄點都爲<code>ou</code>。此處採用《中山方言誌》記錄，請根據實際情況自行調整。（如需改請刪除 77 行、335 行井號）</li>
-				<li>「ooi音」，來自於蟹攝三等合口字同止攝合口銳音，橫欄仍保持其對<code>eoy [øy]</code>、<code>oi</code>、<code>ooi [oø]</code>之對立。其中以六沙最爲完整。即「趣」<code>ceoy3</code>「菜」<code>coi3</code>「脆」<code>cooi3</code>不同音。
+				<li>「ooi音」，即古蟹攝三等合口字同止攝合口銳音，橫欄仍保持其對<code>eoy [øy]</code>、<code>oi</code>、<code>ooi [oø]</code>之對立。其中以六沙最爲完整。即「趣」<code>ceoy3</code>「菜」<code>coi3</code>「脆」<code>cooi3</code>不同音。
 					<ul>
 						<li>其他方言點之中，蟹攝三等合口字讀<code>eoy</code>而非<code>ooi</code>。（如需改請在 81 行、337 行添加井號，竝刪除 82 行、338 行井號）</li>
 						<li>《沙田方言》並無記載此對立。</li>
@@ -765,6 +776,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 	</ul>
   <p>參攷：《沙田方言》《中山方言誌》</p>
 </details>
+
 
 #### 南頭
 
@@ -804,7 +816,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
           <li>請符合此項用家刪除 201 行、378 行井號。</li>
         </ul>
       </li>
-      <li>【滘心】「ooi音」，來自於蟹攝三等合口字同止攝合口銳音，滘心止攝同廣州一樣變<code>eoy</code>但蟹攝則同<code>oi</code>合流，如「脆」<code>coi3</code>「銳」<code>joi6</code>「稅」<code>soi3</code>「歲」<code>soi3</code>等。<ul>
+      <li>【滘心】「ooi音」，即古蟹攝三等合口字同止攝合口銳音，滘心止攝同廣州一樣變<code>eoy</code>但蟹攝則同<code>oi</code>合流，如「脆」<code>coi3</code>「銳」<code>joi6</code>「稅」<code>soi3</code>「歲」<code>soi3</code>等。<ul>
           <li>請符合此項用家在 82 行、336 行添加井號，竝刪除 83 行、337 行井號</li>
 		  <li>此類字往往越接近現代，就會有越多字跟廣州一樣讀<code>eoy</code>。如已不能分辨者，請刪除 82 行井號，竝將 82~83 行<code>xform</code>改爲<code>derive</code>。</li>
         </ul>
@@ -843,7 +855,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 
 三角鎮位於中山市東部，同南沙對望。三角山四周操三角話，是莞寶系方言。其他地方則講順德系、蜑家系。
 
-本人手上資料不足，不能製作方案。下爲三角蟠龍音特徵：區分來孃；遇攝合口一等字除見系之外低化爲`o`，如「度」`do6`「無」`mo4`「做（作）」`zo6`「粗」`co1`等；「ooi音」，來自於蟹攝三等合口字同止攝合口銳音，止攝合口銳音讀`eoy`，但蟹攝三等合口字讀`ooi`，同`eoy`、`oi`兩音對立。即「趣」`ceoy3`「菜」`coi3`「脆」`cooi3 /ʦʰuoi`不同音。
+本人手上資料不足，不能製作方案。下爲三角蟠龍音特徵：區分來孃；遇攝合口一等字除見系之外低化爲`o`，如「度」`do6`「無」`mo4`「做（作）」`zo6`「粗」`co1`等；「ooi音」，即古蟹攝三等合口字同止攝合口銳音，止攝合口銳音讀`eoy`，但蟹攝三等合口字讀`ooi`，同`eoy`、`oi`兩音對立。即「趣」`ceoy3`「菜」`coi3`「脆」`cooi3 /ʦʰuoi`不同音。
 
 #### 黃圃
 
@@ -868,7 +880,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
               <li>請符合此項用家刪除 102 行、106行、342 行、346 行井號。</li>
             </ul>
           </li>
-          <li>「ooi音」，來自於蟹攝三等合口字同止攝合口銳音，鎮二止攝同廣州一樣變<code>eoy</code>但蟹攝則同<code>oi</code>合流，如「脆」<code>coi3</code>「銳」<code>joi6</code>「稅」<code>soi3</code>「歲」<code>soi3</code>等。
+          <li>「ooi音」，即古蟹攝三等合口字同止攝合口銳音，鎮二止攝同廣州一樣變<code>eoy</code>但蟹攝則同<code>oi</code>合流，如「脆」<code>coi3</code>「銳」<code>joi6</code>「稅」<code>soi3</code>「歲」<code>soi3</code>等。
             <ul>
               <li>請符合此項用家在 82 行、331 行添加井號，竝刪除 83 行、332 行井號。</li>
               <li>此類字往往越接近現代，就會有越多字跟廣州一樣讀<code>eoy</code>。如已不能分辨者，請刪除 82 行井號，竝將 82~83行<code>xform</code>改爲<code>derive</code>。</li>
@@ -919,7 +931,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 				</li>
 				<li>師韻字讀作<code>i</code>而非<code>y</code>，如「資」<code>zi1</code>「師」<code>si1</code>「字」<code>zi6</code>「此」<code>ci2</code>等。</li>
 				<li>蟹攝合口一等字，廣州話讀<code>eoy</code>者，浪網音全數讀<code>yu</code>，如「對」<code>dy3</code>「腿」<code>ty2</code>「催」<code>cui1</code>「最」<code>zy3</code>。</li>
-				<li>「ooi音」，來自於蟹攝三等合口字同止攝合口銳音，浪網止攝同廣州一樣變<code>eoy</code>但蟹攝則同<code>oi</code>合流，如「脆」<code>coi3</code>「銳」<code>joi6</code>「稅」<code>soi3</code>「歲」<code>soi3</code>等。</li>
+				<li>「ooi音」，即古蟹攝三等合口字同止攝合口銳音，浪網止攝同廣州一樣變<code>eoy</code>但蟹攝則同<code>oi</code>合流，如「脆」<code>coi3</code>「銳」<code>joi6</code>「稅」<code>soi3</code>「歲」<code>soi3</code>等。</li>
 				<li>遇攝合口一等字裂化同廣州一樣爲<code>ou</code>：「度」<code>dou6</code>「無」<code>mou4</code>「做（作）」<code>zou6</code>「粗」<code>cou1</code>等。</li>
 				<li>效攝一等字發音同廣州一樣爲<code>ou</code>：「好」<code>hou2</code>「逃」<code>tou4</code>「早」<code>zou2</code>「掃」<code>sou3</code>等。但根據《沙田方言》，此類字讀<code>o</code>而非<code>ou</code>。菊韻採用《中山方言誌》記錄。</li>
 				<li>根據《中山方言誌》，其韻母<code>oe</code>仍帶有少許介音，讀<code>oe /iœ/</code>。群安則讀作<code>io /io/</code>。默認設定上，僅韻腹可oe·io混打。</li>
