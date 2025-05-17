@@ -5,6 +5,7 @@
 # 廣東各行政區名
 # 地名抽取自 adyliu/china_area 2010年 已整理
 # Source：https://github.com/adyliu/china_area
+
 # 此爲菊韻粵語輸入法字表詞庫文件
 # 瞭解如何使用菊韻請閱覽readme文件，詳細請至本方案github頁：
 # https://github.com/HoengSaan/rime-gukwan
@@ -5648,7 +5649,6 @@ sort: by_weight
 同樂林場
 同樂社區
 同沙
-同沙生活
 同沙生活區
 同沙社區
 同濟
