@@ -12,7 +12,7 @@
 
 ---
 name: gukwan.chars1
-version: "17.6b"
+version: "18.5b"
 sort: by_weight
 ...
 
@@ -136,6 +136,7 @@ sort: by_weight
 批	pei1	
 睽	kwai4	
 奎	hui1	
+喎	wo3	
 啀	njaai3	
 娃	waa1	
 洼	waa1	
@@ -314,7 +315,7 @@ sort: by_weight
 撈	laau1	
 毛	mou1	0%
 艘	sau2	
-桃	tau4	0%
+桃	tau4	
 熬	ngaau4	
 尻	haau1	
 尻	gau1	0%
@@ -1091,7 +1092,9 @@ sort: by_weight
 竟	ging2	
 鏡	geng3	
 命	meng6	
+病	beng6	
 柄	beng3	
+棅	beng3	0%
 趟	toong3	
 䂻	zhaang6	
 勁	ging6	
@@ -1287,6 +1290,7 @@ sort: by_weight
 尐	dik1	
 掠	liok1	
 溺	nik1	
+嚼	ziu6	
 鵲	ziok3	
 噱	ciok3	
 玃	hwok3	3%

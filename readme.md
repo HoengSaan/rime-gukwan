@@ -251,6 +251,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 		</ul>
 	</li>
 </ul>
+
 ### 反査支持
 
 多數人士通曉廣州話、普通話卻未必熟識自己鄉下發音，故設各種反査。反査亦可用來各種疑難雜字。

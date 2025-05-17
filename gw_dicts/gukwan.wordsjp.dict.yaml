@@ -12,7 +12,7 @@
 
 ---
 name: gukwan.wordsjp
-version: "18.1b"
+version: "18.5b"
 sort: by_weight
 use_preset_vocabulary: true
 ...
@@ -25,12 +25,17 @@ use_preset_vocabulary: true
 東區	
 績西	zek3 sai1
 績西村	zek3 sai1 cyun1
+積西	zek3 sai1	5%
+積西村	zek3 sai1 cyun1	5%
 北區	
 竹源	
 竹源村	
 績東一	zek3 dung1 jat1
 績東二	zek3 dung1 ji6
 績東村	zek3 dung1 cyun1
+積東一	zek3 dung1 jat1	5%
+積東二	zek3 dung1 ji6	5%
+積東村	zek3 dung1 cyun1	5%
 盛豐	
 盛豐村	
 寶豐	
