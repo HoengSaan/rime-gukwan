@@ -13,7 +13,7 @@
 schema:
   schema_id: gukwan
   name: 菊韻
-  version: "18.0b"
+  version: "18.6b"
   author:
     - 靈帝（Hoengsaan）
   
@@ -34,18 +34,32 @@ schema:
     - kikwin
     - gukwan-melt-eng
 
-# 開關 "reset: 0" 默認第一選項 "reset: 1" 默認第二選項 無reset即保留之前狀態
+# 開關 "reset: 0" 默認第一選項 "reset: 1" 默認第二選項 如此類推 無reset則保留上次使用狀態
 switches:
   - name: ascii_mode
-    reset: 0
+  #  reset: 0
     states: [ 粵文, 英文 ]
   - name: full_shape
     reset: 0
     states: [ 半角, 全角 ]
+  # 繁簡字型切換——菊韻式（日本新字體默認關閉，如有需求請手動開啓）
   - name: simplification
     reset: 0
-    states: [ 深筆, 簡筆 ] 
-    abbrev: [ 繁, 簡 ]
+    states: [ 深筆, 简笔 ] 
+    abbrev: [ 繁, 简 ]
+  #- name: hans_jp
+  #  reset: 0
+  #  states: [ 舊字, 新字 ]
+  #  abbrev: [ 舊, 新 ]
+  - options: [ noop, hant_hk, hant_tw ]
+    reset: 0 
+    states: [ 默認, 香港, 臺灣 ]
+    abbrev: [ 默, 港, 臺 ]
+  # 繁簡字型切換——粵拼式
+  #- options: [ noop, hant_hk, hant_tw, hans_jp, simplification ]
+  #  reset: 0 
+  #  states: [ 默認, 香港, 臺灣, 日本, 大陆 ]
+  #  abbrev: [ 默, 港, 臺, 日, 陆 ]
   - name: ascii_punct
     reset: 0
     states: [ 。，, ．， ]
@@ -99,8 +113,11 @@ engine:
     - reverse_lookup_filter@special_typing  # 輸入
     - lua_filter@*autocap_filter            # 自動大階
     - simplifier@emoji_cantonese_suggestion # 繪文字輸入
-    - simplifier                            # 簡化
-    - lua_filter@*en_spacer                  # 英語自動空格
+    - simplifier@hant_hk                    # 香港繁體
+    - simplifier@hant_tw                    # 臺灣正體
+    - simplifier@hans_jp                    # 日本新字體
+    - simplifier                            # 大陸簡體
+    - lua_filter@*en_spacer                 # 英語自動空格
     - uniquifier                            # 去重
 
 speller:
@@ -504,6 +521,18 @@ emoji_cantonese_suggestion:
   tips: all
   inherit_comment: true
 
+hant_hk:
+  opencc_config: t2hkf.json
+  option_name: hant_hk
+
+hant_tw:
+  opencc_config: t2tw.json
+  option_name: hant_tw
+
+hans_jp:
+  opencc_config: t2jp.json
+  option_name: hans_jp
+
 punctuator:
   import_preset: symbols-gukwan
 
@@ -527,6 +556,6 @@ recognizer:
     number: "^S[0-9]+[.]?[0-9]*"
     calculator: "^cC.+"
     gregorian_to_lunar: "^N[0-9]{1,8}"
-
-## 測試用
-is_in_user_dict: false
+    
+# 測試用
+#is_in_user_dict: false

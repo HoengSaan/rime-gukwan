@@ -10,7 +10,7 @@
 # Learn how to use Gukwan in the readme file, available on the project's github page.
 # Source: https://github.com/Wenti-D/Astralwelkin
 
-config_version: '16.9b'
+config_version: '18.6b'
 name: 菊韻                                #方案名稱
 author: 'Windy_D <windy0deng@gmail.com>, Hoengsaan'  #作者信息
 
@@ -225,7 +225,7 @@ colors:
   - &gukwan_main_color 0xd14d00                    #作為按鍵背景的暗藍色
   - &gukwan_bg_color 0xa44700                      #背景的背景的暗灰色
   - &gukwan_border_color 0xf0c41a                  #作為邊框的稍亮一點點的藍色
-  - &gukwan_main_text_color 0xeefbde               #作為字符主要顏色的淺黃色
+  - &gukwan_main_text_color 0xD8BFD8               #作為字符主要顏色的淺黃色
   - &gukwan_sub_candidate_color 0xd2cbb2           #作為非高亮候選的闇淺黃色
   - &gukwan_code_text_color 0xfdf793               #已解析的編碼的黃色
   - &gukwan_code_unparsed_color 0xcf3a3c           #未解析編碼的紅色
@@ -242,7 +242,7 @@ colors:
   - &gukwan_enter_text_color 0x807e71             #回車鍵文字顏色
   - &gukwan_enter_pressed_bg_color 0x01316b       #回車鍵按下時顏色
   - &gukwan_enter_pressed_text_color 0x86a2b3     #回車鍵按下時文字顏色
-  - &gukwan_key_hint_color 0x005746               #按鍵小字顏色
+  - &gukwan_key_hint_color 0x006400               #按鍵小字顏色
 
 preset_color_schemes:
   default:
@@ -2516,7 +2516,7 @@ preset_keyboards:
       - {click: 'u', long_click: '+', swipe_left: '{', swipe_right: '}', hint: '{   }'}
       - {click: 'i', long_click: '×', swipe_left: '[', swipe_right: ']', hint: '[   ]'}
       - {click: 'o', long_click: '=', swipe_left: '(', swipe_right: ')', hint: '(   )'}
-      - {click: 'p', long_click: '・', swipe_left: '`P', swipe_right: '`L', hint: '普　兩'}
+      - {click: 'p', long_click: '・', swipe_left: '`', swipe_right: '`P', hint: '穗　普'}
       #第三行
       - {width: 5}
       - {click: 'a', long_click: 'select_all', swipe_left: '`C', swipe_right: '`K', hint: '倉　顏'}
@@ -2527,7 +2527,7 @@ preset_keyboards:
       - {click: 'h', long_click: '——', swipe_left: '『', swipe_right: '』', hint: '『   』'}
       - {click: 'j', long_click: '-', swipe_left: '《', swipe_right: '》', hint: '《   》'}
       - {click: 'k', long_click: '÷', swipe_left: '「', swipe_right: '」', hint: '「   」'}
-      - {click: 'l', long_click: '~', swipe_left: '（', swipe_right: '）', hint: '（   ）'}
+      - {click: 'l', long_click: '~', swipe_left: '`F', swipe_right: '`L', hint: '訓　兩'}
       - {width: 5}
       #第四行
       - {click: Shift_L, width: 14, key_text_offset_y: 0}
@@ -2642,7 +2642,7 @@ preset_keyboards:
       - {click: 'u', long_click: '+', swipe_left: '{', swipe_right: '}', hint: '{   }'}
       - {click: 'i', long_click: '×', swipe_left: '[', swipe_right: ']', hint: '[   ]'}
       - {click: 'o', long_click: '=', swipe_left: '(', swipe_right: ')', hint: '(   )'}
-      - {click: 'p', long_click: '・', swipe_left: '`P`', swipe_right: '`L', hint: '普　兩'}
+      - {click: 'p', long_click: '・', swipe_left: '`', swipe_right: '`P', hint: '穗　普'}
       #第三行
       - {width: 5}
       - {click: 'a', long_click: 'select_all', swipe_left: '`C', swipe_right: '`K', hint: '倉　顏'}
@@ -2653,11 +2653,11 @@ preset_keyboards:
       - {click: 'h', long_click: '——', swipe_left: '『', swipe_right: '』', hint: '『   』'}
       - {click: 'j', long_click: '-', swipe_left: '《', swipe_right: '》', hint: '《   》'}
       - {click: 'k', long_click: '÷', swipe_left: '「', swipe_right: '」', hint: '「   」'}
-      - {click: 'l', long_click: '~', swipe_left: '（', swipe_right: '）', hint: '（   ）'}
+      - {click: 'l', long_click: '~', swipe_left: '`F', swipe_right: '`L', hint: '訓　兩'}
       - {click: ';', long_click: ':'}
       #第四行
       - {click: Shift_L, width: 14, key_text_offset_y: 0}
-      - {click: 'z', long_click: 'undo'}
+      - {click: 'z', long_click: undo}
       - {click: 'x', long_click: cut}
       - {click: 'c', long_click: copy, swipe_down: Keyboard_emoji, hint: '繪文字'}
       - {click: 'v', long_click: paste, swipe_down: Keyboard_clipboard, hint: '剪貼板'}
