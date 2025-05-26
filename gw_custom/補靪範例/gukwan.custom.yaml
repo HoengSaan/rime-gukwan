@@ -4,10 +4,11 @@
 # 瞭解如何使用菊韻請閱覽readme文件，詳細請至本方案github頁：
 # https://github.com/HoengSaan/rime-gukwan
 # This is a patch template for Gukwan Cantonese Input Method.
-# Learn how to use Gukwan in the readme file, available on the project's github page.
+# Learn how to use Gukwan in the readme file, available on the project's github page. 
 
-
+# 方案
 patch:
+  # 更改開關
   switches:
     - name: ascii_mode
       states: [ 粵文, 英文 ]
@@ -22,14 +23,36 @@ patch:
       reset: 0
       states: [ 舊字, 新字 ]
       abbrev: [ 舊, 新 ]
-    - options: [ noop, hant_hk, hant_tw ]
-      reset: 0 
-      states: [ 默認, 香港, 臺灣 ]
-      abbrev: [ 默, 港, 臺 ]
     - name: ascii_punct
       reset: 0
       states: [ 。，, ．， ]
     - name: emoji_cantonese_suggestion
       reset: 0
       states: [ 無繪, 有繪 ]
+      abbrev: [ 🙁, 😄 ]
+    - name: prediction
+      reset: 0
+      states: [ 直出, 預測 ]
+      abbrev: [ 直, 測 ]
+
+  # 調用定製擴展詞庫
   translator/dictionary: gukwan-extended
+
+  # 預測（電腦不建議開啓）
+  # librime-predict 簡體可考慮用 wanxiang-lts-zh-predict.db
+  # https://github.com/rime/librime-predict
+  engine/processors/@before 0: predictor
+  engine/translators/@before 0: predict_translator
+  predictor:
+    db: predict.db
+    max_candidates: 10 # 最大預測候選數，如不想翻頁則請同 page_size 保持一致
+    max_iterations: 1 # 預測次數，0 即無限預測
+
+  # 語法模型
+  # rime-octagram 簡體可考慮用 RIME-LMDG 
+  # https://github.com/lotem/rime-octagram-data/tree/hant
+  grammar:
+    language: zh-hant-t-essay-bgw
+  translator/contextual_suggestions: true
+  translator/max_homophones: 7
+  translator/max_homographs: 7

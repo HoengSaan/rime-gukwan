@@ -317,6 +317,8 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 - [amzxyz - Patch 方法论](https://github.com/amzxyz/rime_wanxiang_pro/blob/main/custom/patch%E6%96%B9%E6%B3%95%E8%AE%BA.md)
 - [oh-my-rime - 配置教程](https://www.mintimate.cc/zh/guide/)
 
+定製方案不應修改方案本身，閣下應使用補靪或根據原方案自製方案文件。
+
 ### 漢英混打大詞庫
 
 大詞庫增加40萬條詞條，將大大增加英文輸入體驗。多數情況下並不影響打字，但並非完全無影響，故默認只調用小詞庫。
@@ -325,7 +327,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 
 ### 添加新詞庫
 
-隨基本字表詞庫之外，菊韻亦有特色詞庫以及廣東地名詞庫若嫌不足，菊韻有腳本（<mark>須安裝Python</mark>）輔助閣下，自動修改詞庫文件以適用菊韻。
+隨基本字表詞庫之外，菊韻亦有特色詞庫以及廣東地名詞庫若嫌不足，菊韻有腳本（<mark>須安裝Python</mark>）輔助閣下，自動修改詞庫文件以適用菊韻。**<mark>建議自行修改文件。</mark>**
 
 菊韻添加新詞庫必須符合以下兩個要求： 
 
@@ -345,15 +347,19 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 
 選擇後將自動執行，將已配置詞庫放於`data`。用家只需將`data`內所有文件放置於中州韻程序文件夾即可。
 
-**建議打補靪（`~custom.yaml`）或自行修改文件。**
-
 ### 補靪範例
 
+**<mark>請勿直接使用補靪範例，僅供參攷。</mark>**
+
 `gw_custom`內有本人使用補靪之範例，以供參攷。
+
+當中有示範如何調用定製詞庫，語法模型，打字預測等。
 
 ## 拼音
 
 打字方式仍遵從當年`rime-jyutping`基本原則。輸入廣州話時同`rime-cantonese`竝無分別，故此不贅述。
+
+多數方案使用粵拼，部份方言使用擴展粵拼，詳細請見`readme-dialect.md`（[Link](https://github.com/HoengSaan/rime-gukwan/blob/main/readme-dialect.md)）。
 
 # 方案
 
@@ -369,9 +375,9 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 - `jyut6ping3-gw.schema.yaml`：三拼版`rime-cantonese`（廣州話），支持菊韻所有功能。
 - `jyut6ping3-gw-cp.schema.yaml`：關閉三拼功能，支持菊韻除三拼以外一切功能。
 
-非廣州話方案以及參攷用方案請見`readme-dialect.md`（[Link](https://github.com/HoengSaan/rime-gukwan/blob/main/readme-dialect.md)）有詳細介紹
+關於非廣州話方案以及參攷用方案請見`readme-dialect.md`（[Link](https://github.com/HoengSaan/rime-gukwan/blob/main/readme-dialect.md)）。
 
-# 文件簡介 許可
+# 文件結構・許可
 
 > [!IMPORTANT]
 >
@@ -379,13 +385,11 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 
 ## 字詞
 
-`gukwan.dict.yaml`用於調用字表詞庫，默認亦調用 rime-cantonese 部份詞庫同粵語八股文。位置爲`/gw_dicts`。
+`gukwan.dict.yaml`用於調用字表詞庫，默認亦調用 rime-cantonese 部份詞庫同粵語八股文。**位置爲`/gw_dicts`。**
 
 `gukwan-alt.dict.yaml`・`gukwan-asp.dict.yaml`・`gukwan-alt-asp.dict.yaml`爲部份方言專用。
 
 `jyut6ping3-gw.dict.yaml`爲廣州話專用。
-
-`gukwan-extended.dict.yaml`用於調用各種擴展詞庫，以增強輸入體驗。下載並放置於正確位置方可使用，不安裝直接調用將會導致輸入法不能正常使用。故默情況下將不調用。默認不調用方言字表（`char3.dict`・`char4.dict`），需手動設置。
 
 - 字庫
   - `gukwan.chars.dict.yaml`：廣韻字表
@@ -427,7 +431,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 
 ##  腳本
 
-本方案多數 LUA 腳本均有參攷[iDvel/rime-ice](https://github.com/iDvel/rime-ice)及相關文件，相關文件根據源文件許可發佈。
+本方案多數 LUA 腳本均有參攷[iDvel/rime-ice](https://github.com/iDvel/rime-ice)及相關文件，相關文件根據源文件許可發佈。**位置爲`/lua`。**
 
 - `unicode.lua`：UNICODE 碼直接輸入字符，來自[shewer/librime-lua-script](https://github.com/shewer/librime-lua-script/tree/main)，隨源文件以[MIT 許可](https://mit-license.org/)發佈。
 - `lunar.lua`：是日農曆，新曆轉舊歷，來自[boomker/rime-fast-xhup](https://github.com/boomker/rime-fast-xhup)，隨源文件以[LGPL 3.0 許可](https://www.gnu.org/licenses/lgpl-3.0.en.html)發佈。
@@ -455,7 +459,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 - `菊韻.trime.yaml`：同文輸入法主題，基於[Wenti-D/Astralwelkin](https://github.com/Wenti-D/Astralwelkin)，隨源文件以[MIT 許可](https://mit-license.org/)發佈。不同點如下：
   - 鍵值更改，允許一鍵反査（q 鍵、p 鍵、a 鍵）。
   - 專用配色，參攷小欖特色菊花，但未夠膽用黃色驚太鮮豔，結果就變成屎黃色((o(；□；`)o))。
-- `OpenCC 開放中文轉換`：開箱即用，用於繁簡轉換，隨源文件以[Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0.html)發佈。
+- `OpenCC 開放中文轉換`：開箱即用，用於繁簡轉換，隨源文件以[Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0.html)發佈。**位置爲`/gw_custom`。**
 
 ## 銘謝
 

@@ -66,6 +66,7 @@ switches:
   - name: emoji_cantonese_suggestion
     reset: 1
     states: [ 無繪, 有繪 ]
+    abbrev: [ 🙁, 😄 ]
  
 engine:
   processors:
@@ -556,6 +557,6 @@ recognizer:
     number: "^S[0-9]+[.]?[0-9]*"
     calculator: "^cC.+"
     gregorian_to_lunar: "^N[0-9]{1,8}"
-    
+
 # 測試用
 #is_in_user_dict: false
