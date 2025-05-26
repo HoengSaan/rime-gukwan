@@ -12,7 +12,7 @@
 
 ---
 name: gukwan.chars1
-version: "18.5b"
+version: "18.7.2b"
 sort: by_weight
 ...
 
@@ -329,6 +329,7 @@ sort: by_weight
 他	taa1	
 它	taa1	
 那	naa4	
+那	nu6	
 阿	aa3	
 鍋	wo1	
 莎	sraa1	5%
@@ -427,6 +428,7 @@ sort: by_weight
 繃	maang1	
 拼	ping3	
 爭	zhaang1	
+爭	chaang1	
 精	zeng1	3%
 贏	hjeng4	5%
 偵	zring1	
@@ -1060,6 +1062,7 @@ sort: by_weight
 廟	miu2	3%
 豹	paeu3	
 稍	shaeu2	
+耖	chaeu1	
 潦	liu5	
 潦	liu2	
 噪	cou3	
@@ -1102,7 +1105,7 @@ sort: by_weight
 劥	gang3	
 正	zjeng3	
 鄭	zreng6	
-令	ding2	3%
+等	ding2	3%
 淨	zeng6	
 靚	leng3	
 晟	sjing4	
@@ -1364,7 +1367,7 @@ sort: by_weight
 席	zek6	
 蓆	zek6	
 瘠	zek3	
-碧	bi1	
+碧	bi1	0%
 錫	sek6	
 劈	pek3	
 靂	lik1	

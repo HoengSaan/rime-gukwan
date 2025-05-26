@@ -12,7 +12,7 @@
 
 ---
 name: gukwan.chars
-version: "17.5b"
+version: "18.7.2b"
 sort: by_weight
 ...
 
@@ -107,7 +107,7 @@ sort: by_weight
 忡	crung1	
 浺	crung1	0%
 盅	crung1	0%
-崇	shung4	0%
+崇	shung4	
 崈	shung4	0%
 㓽	shung4	0%
 𩞉	shung4	0%
@@ -187,7 +187,7 @@ sort: by_weight
 㳘	cjung1	0%
 隆	lung4	
 癃	lung4	0%
-𪔳	lung4	0%
+𪔳	lung4	3%
 窿	lung4	0%
 霳	lung4	0%
 㚅	lung4	0%
@@ -1860,7 +1860,7 @@ sort: by_weight
 㫎	hwai1	0%
 𤟤	hwai1	0%
 幃	wai4	
-韋	wai4	0%
+韋	wai4	
 闈	wai4	
 圍	wai4	
 䙟	wai4	0%
@@ -5143,7 +5143,7 @@ sort: by_weight
 淵	jyun1	
 𠝃	jyun1	0%
 囦	jyun1	0%
-㾓	jyun1	0%
+㾓	jyun1	3%
 弲	jyun1	0%
 剈	jyun1	0%
 鼘	jyun1	0%
@@ -9061,7 +9061,7 @@ sort: by_weight
 䅾	kam4	0%
 耹	kam4	0%
 靲	kam4	0%
-欽	hjam1	0%
+欽	hjam1	
 菳	hjam1	0%
 衾	hjam1	0%
 嶔	hjam1	0%
@@ -13980,7 +13980,7 @@ sort: by_weight
 𣞵	sjam6	0%
 甚	sjam6	
 訦	sjam6	0%
-瀋	sjam2	0%
+瀋	sjam2	3%
 墋	cham2	0%
 醦	cham2	0%
 磣	cham2	
@@ -15367,7 +15367,7 @@ sort: by_weight
 署	sjyo6	0%
 藷	sjyo6	0%
 薯	sjyo6	0%
-曙	sjyo6	0%
+曙	sjyo6	
 恕	sjyo3	
 庶	sjyo3	
 樜	sjyo3	0%
@@ -18208,7 +18208,7 @@ sort: by_weight
 抄	chaeu3	0%
 鈔	chaeu3	0%
 縐	chaeu3	0%
-耖	chaeu3	0%
+耖	chaeu3	
 仯	chaeu3	0%
 觘	chaeu3	0%
 𦨖	chaeu3	0%
@@ -21434,7 +21434,7 @@ sort: by_weight
 䯇	hwat1	0%
 𡼿	hwat1	0%
 𥌄	hwat1	0%
-胐	hwat1	0%
+胐	hwat1	3%
 訥	nat6	
 㕯	nat6	0%
 肭	nat6	0%
@@ -21781,7 +21781,7 @@ sort: by_weight
 拔	bat6	
 𥎱	bat6	0%
 𤫶	kaet3	0%
-擖	kaet3	0%
+擖	kaet3	3%
 劼	kaet3	0%
 鬜	kaet3	0%
 𩮁	kaet3	0%
@@ -22595,7 +22595,7 @@ sort: by_weight
 㩱	ziok3	0%
 䶂	ziok3	0%
 皭	ziok6	0%
-嚼	ziok6	
+嚼	ziok6	3%
 爝	ziok6	0%
 鵲	ciok3	0%
 舄	ciok3	0%
@@ -23200,7 +23200,7 @@ sort: by_weight
 繣	hwaak3	0%
 𦑌	hwaak3	0%
 㦎	hwaak3	0%
-劃	hwaak3	5%
+劃	hwaak3	3%
 捇	hwaak3	0%
 掝	hwaak3	0%
 㖪	hwaak3	0%
