@@ -404,7 +404,7 @@ speller:
     - xform/6/qq/                           # 陽去
 
 translator:
-  dictionary: gukwan-extended
+  dictionary: gukwan
   initial_quality: 1.2
   spelling_hints: 9
   preedit_format:
