@@ -13,14 +13,14 @@ __include: gukwan.schema:/
 
 schema:
   __include: gukwan.schema:/schema
-  schema_id: gukwan-naamtau
-  name: 菊韻南頭音
-  version: "17.10.1b"  
+  schema_id: gukwan-naamtau-daisaa
+  name: 菊韻南頭低沙音
+  version: "19.0b"  
   author:
     - 靈帝（Hoengsaan）
   description: |-
     測試階段
-    本方案根據南頭鎮排坎村音代表特徵製作，建議仔細閱讀方案竝根據自身口音調整
+    本方案根據南頭鎮低沙記音點製作，建議仔細閱讀方案竝根據自身口音調整
     瞭解如何使用菊韻請閱覽readme文件，詳細請至本方案github頁：https://github.com/HoengSaan/rime-gukwan
     如有問題或建議可於以上github頁中開Issues反饋
 
@@ -127,9 +127,9 @@ speller:
     - xform/ia(?=\d)/e$1/                   # 果假元音融合(ia->e)：「車」讀ce
     - xform/jaa(?=\d)/je$1/                 # 果假元音融合(jaa->je)：「野」讀je
     
-    - derive/oo(ng|k)/o$1/                   # 宕攝開口(oo->o)：「各」讀gok
-    - derive/io(ng|k)/oe$1/                  # 宕江元音融合(io->oe) ：「量」讀loeng
-    - derive/jo(ng|k)/joe$1/                 # 宕江元音融合(jo->joe) ：「央」讀央joeng
+    - xform/oo(ng|k)/o$1/                   # 宕攝開口(oo->o)：「各」讀gok
+    - xform/io(ng|k)/oe$1/                  # 宕江元音融合(io->oe) ：「量」讀loeng
+    #- derive/jo(ng|k)/joe$1/                 # 宕江元音融合(jo->joe) ：「央」讀央joeng
     
     - derive/ae([unmtp])(?=\d)/aa$1/      # 山效咸文(ae->aa)：「關」讀gwaan
     - derive/ae([unmtp])(?=\d)/e$1/       # 山效咸白(ae->e)：「關」讀gwen 白讀音用
@@ -168,7 +168,7 @@ speller:
     #- derive/eng(?=\d)/en$1/               # 「餅」讀ben
     #- derive/ek(?=\d)/et$1/                # 「劈」讀pet
     #- derive/o(ng|k)(?=\d)/oe$1/
-    #- derive/oe(ng|k)(?=\d)/o$1/
+    - xform/oe(ng|k)(?=\d)/o$1/
     #- derive/(?!w)o(ng|k)(?=\d)/oe$1/
     #- derive/(?!w)o(ng|k)(?=\d)/yo$1/
     #- derive/(?!w)o(ng|k)(?=\d)/yoe$1/
@@ -358,12 +358,12 @@ set_hint:
     - xform/ia(?=\d)/e$1/                   # 果假元音融合(ia->e)：「車」讀ce
     - xform/jaa(?=\d)/je$1/                 # 果假元音融合(jaa->je)：「野」讀je
     
-    - xform/oo(ng|k)/yoo$1/                   # 宕攝開口(oo->o)：「各」讀gok
-    - xform/io(ng|k)/yo$1/                  # 宕江元音融合(io->oe) ：「量」讀loeng
-    - xform/jo(ng|k)/jyo$1/                 # 宕江元音融合(jo->joe) ：「央」讀央joeng
-    #- xform/oo(ng|k)/o$1/                   # 宕攝開口(oo->o)：「各」讀gok
-    #- xform/io(ng|k)/oe$1/                  # 宕江元音融合(io->oe) ：「量」讀loeng
-    #- xform/oe(ng|k)(?=\d)/o$1/
+    #- xform/oo(ng|k)/yoo$1/                   # 宕攝開口(oo->o)：「各」讀gok
+    #- xform/io(ng|k)/yo$1/                  # 宕江元音融合(io->oe) ：「量」讀loeng
+    #- xform/jo(ng|k)/jyo$1/                 # 宕江元音融合(jo->joe) ：「央」讀央joeng
+    - xform/oo(ng|k)/o$1/                   # 宕攝開口(oo->o)：「各」讀gok
+    - xform/io(ng|k)/oe$1/                  # 宕江元音融合(io->oe) ：「量」讀loeng
+    - xform/oe(ng|k)(?=\d)/o$1/
 
     #聲母——現代
     - xform/(z|c|s)h/$1/                   # 精照合流(zh->z)
@@ -380,7 +380,7 @@ set_hint:
 translator:
   __include: gukwan.schema:/translator
   dictionary: gukwan-alt-asp
-  prism: gukwan-naamtau  
+  prism: gukwan-naamtau-daisaa
   comment_format:
     __patch:
       - set_hint

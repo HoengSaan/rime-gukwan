@@ -29,171 +29,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 
 ## 功能
 
-### 多方言適應
-
-菊韻可支持多地方言。已爲各種方言口音預設大量轉換規則同模糊音，方便自行定製。（需對 Regex 同音韻學有基本瞭解）[具體異同](https://github.com/HoengSaan/rime-gukwan#%E6%96%B9%E6%A1%88)。
-
-<details>
-	<summary>菊韻支持方言</summary>
-	<ul>
-		<li>順德系——中山市
-			<ul>
-				<li><code>gukwan-siulaam</code>【小欖鎮】：以小欖話比較有代表性特徵製作，兼容新派發音。
-					<ul>
-						<li><code>gukwan-siulaam-bofung</code>（小欖寶豐音）：小欖鎮寶豐村，兼容新派發音。</li>
-						<li><code>gukwan-dungsing</code>：（東昇音）：舊東昇鎮（今屬小欖）各口音</li>
-					</ul>
-				</li>
-				<li><em><code>gukwan-guzan</code></em>【古鎮鎮】：
-					<ul>
-						<li><code>gukwan-guzan-hoizau</code>（古鎮海洲音）：古鎮鎮海洲村</li>
-					</ul>
-				</li>
-                <li><code>gukwan-dungfau</code></li>【東鳳・阜沙鎮】：東阜兩鎮各口音
-				<li><code>gukwan-waanglaan</code>【橫欄鎮】：橫欄鎮各口音</li>
-				<li><code>gukwan-naamtau</code>【南頭鎮】：南頭鎮各口音
-					<ul>
-						<li><code>gukwan-naamtau-naamsing</code>（南頭南城音）：南頭鎮南城村</li>
-					</ul>
-				</li>
-                <li><code>gukwan-wongpou</code>【黃圃鎮】：黃圃鎮各口音</li>
-				<li><em><code>gukwan-manzung</code></em>【民衆鎮】：
-					<ul>
-						<li><code>gukwan-longmong</code>（浪網音）：舊浪網鎮（今屬民衆）各口音。</li>
-					</ul>
-				</li>
-                <li><em><code>gukwan-saalong</code></em>【沙蓢鎮】：有出入請用東昇音改</li>
-                <li><em><code>gukwan-gonghau</code></em>【港口鎮】：有出入請用東昇音改</li>
-			</ul>
-		</li>
-		<li>順德系——順德市
-			<ul>
-				<li><code>gukwan-daailoeng</code>【大良】：以大良話比較有代表性特徵製作。</li>
-				<li><code>gukwan-cancyn</code>【陳村】：以陳村話比較有代表性特徵製作。</li>
-				<li><code>gukwan-gwanon</code>【均安鎮】：【未製作】</li>
-			</ul>
-		</li>
-		<li>香山系
-			<ul>
-				<li><code>gukwan-sekki</code>【石岐鎮】：以石歧話新派音製作。（老派音需要自行製作字表，菊韻字表不能轉換）</li>
-			</ul>
-		</li>
-		<li>廣州話
-			<ul>
-				<li><code>jyut6ping3-gw</code>【穗港澳】：完全使用<code>rime-cantonese</code>字表詞庫，增添菊韻所有功能以改善打字體驗。適合穗港澳。</li>
-			</ul>
-		</li>
-	</ul>
-	<blockquote>
-		<p>除小欖音以外均以老派音製作，方案不能直接同新派音兼容，可能已不貼合實際情況，如：</p>
-		<ul>
-			<li>曉匣喻母細音字部份字跟廣州讀<code>j</code>，但未變齊。</li>
-			<li>如「爺」讀<code>he4</code>，但係「園」讀<code>jyun4</code>（本應讀<code>hyun4</code>）</li>
-			<li>由於個個方言都變化程度唔同，我一個人絕無辦法去執晒，只能設定兩種音都出到字。</li>
-			<li>如小欖話只有極少數作爲白讀音殘留，例如「穴」<code>hyut6</code>，「嫌」<code>him4</code>。則可以特例處理。</li>
-			<li>師韻讀<code>y</code>定讀<code>i</code>？
-				<ul>
-					<li>其實理論上全部應該讀<code>y</code>，但係不能避免的人遇到隻唔識既字，就直情跟廣州音。此處不作改變，如不能辨別者，請手動更改方案。</li>
-				</ul>
-			</li>
-			<li>關於白讀字請見<a href="https://github.com/HoengSaan/rime-gukwan#%E6%96%B9%E6%A1%88">方案</a></li>
-		</ul>
-	</blockquote>
-</details>
-
-<mark>部份地方音須根據說明自行修改方案。</mark>
-
-### 輸入方式
-
-菊韻支持竝默認開啓三拼，即所有漢字皆可以三鍵輸入（不含聲調）。
-
-**三拼輸入不影響聲調輸入**，用家仍然可以使用傳統打法——即全拼，輸入拼音完整形式：聲母+韻母+聲調，聲調可以省畧。
-
-如不能接受三拼輸入，下文有解說如何關閉三拼。
-
-<img src="pic\key.png"/>
-
-<details>
-	<summary>鍵值詳細說明</summary>
-	<h4>子音（聲母）</h4>
-	<ul>
-		<li>不區分平翹日以之方言（多數方言）
-			<ul>
-				<li>以<code>q</code>輸入<code>kw</code>：如「裙」<code>kwan</code>則爲<code>qan</code></li>
-				<li>以<code>x</code>輸入<code>gw</code>：如「轟」<code>gwang</code>則爲<code>xar</code></li>
-				<li>以<code>r</code>輸入<code>ng</code>：如「我」<code>ngo</code>則爲<code>ngo</code>（不支持單獨成韻，即「吳」<code>ng</code>無法以<code>r</code>輸入）</li>
-			</ul>
-		</li>
-		<li>區分平翹日以之方言（僅<code>gukwan-default</code>同<code>gukwan-fanwan</code>）
-			<ul>
-				<li>以<code>z</code>輸入<code>zh</code>（實質模糊音，默認關閉）</li>
-				<li>以<code>c</code>輸入<code>ch</code>（實質模糊音，默認關閉）</li>
-				<li>以<code>s</code>輸入<code>sh</code>（實質模糊音，默認關閉）</li>
-				<li>以<code>q</code>輸入<code>kw</code></li>
-				<li>以<code>x</code>輸入<code>gw</code></li>
-				<li>以<code>r</code>輸入<code>ng</code>｜<code>ngi</code>｜<code>nj</code>：如「言」<code>ngin</code>則爲<code>rin</code>，如「仍」<code>njing</code>則爲<code>rir</code>
-				</li>
-			</ul>
-		</li>
-	</ul>
-	<h4>母音（韻母）</h4>
-	<ul>
-		<li>無韻尾情況（如<code>laa</code>，<code>loe</code>等）
-			<ul>
-				<li>以<code>a</code>輸入<code>aa</code>：如「瓜」<code>gwaa</code>則爲<code>xa</code></li>
-				<li>以<code>y</code>輸入<code>yu</code>（<code>jyu</code>）：如「擧」<code>gyu</code>則爲<code>gy</code></li>
-			</ul>
-		</li>
-		<li>有韻尾情況（如<code>laang</code>，<code>loeng</code>等）
-			<ul>
-				<li>以<code>e</code>輸入<code>oe</code>：如「涼」<code>loeng</code>則爲<code>ler</code></li>
-				<li>以<code>r</code>輸入<code>aa</code>：如「逛」<code>gwaang</code>則爲<code>xrr</code></li>
-				<li>以<code>y</code>輸入<code>yu</code>（<code>jyu</code>）:如「血」<code>hyut</code>則爲<code>hyt</code></li>
-				<li>以<code>u</code>輸入<code>eo</code>：如「論」<code>leon</code>則爲<code>lun</code></li>
-			</ul>
-		</li>
-		<li>以下三拼僅部分方案適用
-			<ul>
-				<li>以<code>r/e</code>輸入<code>ae</code>：如「斬」<code>zhaem</code>則爲<code>z(h)aam</code>｜<code>z(h)rm</code>｜<code>z(h)em</code>（僅<code>gukwan-default</code>）</li>
-				<li>以<code>u</code>輸入<code>oo</code>【僅限<code>ooi</code>】：如「淚」<code>looi</code>則爲<code>lui</code>（部份方案）</li>
-				<li>以<code>o</code>輸入<code>oo</code>【僅限<code>oong/ook</code>】：如「朗」<code>loong</code>則爲<code>lor</code>（部份方案）</li>
-			</ul>
-		</li>
-	</ul>
-	<p>以<code>e</code>輸入<code>oe</code>是考慮<code>e</code>系韻母本身以白讀音爲主，較少使用。而<code>u</code>同<code>eo/oo</code>；<code>o</code>同<code>oo</code>在多數方言下都爲互補，不影響輸入。</p>
-	<h4>其他</h4>
-	<p>以下兩個簡拼默認關閉，無論開啓關閉都可以以三拼形式輸入。</p>
-	<ul>
-		<li><code>ji</code>簡拼<code>j</code>：如「影」<code>jing</code>則爲<code>jr</code>（<code>jir</code>）</li>
-		<li><code>nji</code>簡拼<code>nj</code>：如「仍」<code>njing</code>則爲<code>njr</code>（<code>rir</code>｜<code>njir</code>）</li>
-		<li><code>wu</code>簡拼<code>u</code>：如「換」<code>wun</code>則爲<code>un</code></li>
-	</ul>
-</details>
-<img src="pic\srmpir.png"/>
-
-#### 關閉三拼
-
-三拼是本人加速輸入全拼之做法，其會影響首拼出字之效率。若不想使用三拼，可在方案文件關閉以下選項（行頭加井號）：
-
-```yaml
-- derive/^kw/q/ # 簡拼(kw->q)
-- derive/^gw/x/ # 簡拼(gw->q)
-#- derive/^nj/r/                         # 簡拼(nj->r)
-- derive/^ng([aeiouy])/r$1/ # 簡拼(ng->r)
-- derive/([aeiouy])ng/$1r/ # 簡拼(ng->r)
-
-- derive/aa(?=\d)/a/ # 簡拼(aa->a)【毋須關閉】
-- derive/aa([iumnptkr]|ng)/r$1/ # 簡拼(aa->r)
-- derive/^jy?([aeiou])/y$1/ # 簡拼(jy->y)【毋須關閉】
-- derive/yu(?!ng|k)/y/ # 簡拼(yu->y)【毋須關閉】
-- derive/oe(ng|k|r)/e$1/ # 簡拼(oe->e)
-- derive/eo([ntiy])/u$1/ # 簡拼(eo->u)
-- derive/oo(i|y)/u$1/ # 簡拼(oo->u)
-```
-
-### 特殊輸入
-
-**支持漢英混打**，各種特殊符號輸入，日期時間輸入等。
+支持各類方言、三拼輸入、漢英混打，各種特殊符號、日期時間輸入，各類反查等。
 
 <img src="pic\showcase.png"/>
 
@@ -251,6 +87,145 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 	</li>
 </ul>
 
+### 多方言適應
+
+菊韻可支持多地方言。已爲各種方言口音預設大量轉換規則同模糊音，方便自行定製。（需對 Regex 同音韻學有基本瞭解）
+
+- 廣州系
+  - `jyut6ping3-gw`【廣州話】：完全使用`rime-cantonese`字表同詞庫，增添菊韻所有功能以改善打字體驗。適合穗港澳等操廣州話人士。
+  - `jyut6ping3-gw-cp`【廣州話】：完全使用`rime-cantonese`字表同詞庫，增添菊韻所有功能以改善打字體驗。適合穗港澳等操廣州話人士。**關閉三拼以符合習慣全拼用戶。**
+
+- 順德系——中山市
+
+  - 小欖鎮
+    - `gukwan-siulaam`【小欖音】：以小欖話比較有代表性特徵製作，兼容新派發音。
+    - `gukwan-siulaam-bofung`『小欖寶豐音』：小欖鎮寶豐村，兼容新派發音。
+    - `gukwan-dungsing`『東昇音』：舊東昇鎮鎮區音
+    - `gukwan-dungsing-gosaa`『東昇高沙音』：舊東昇鎮高沙村
+    - `gukwan-dungsing-taaiping`『東昇太平音』：舊東昇鎮太平村
+    - `gukwan-dungsing-taanbui`『東昇坦背音』：舊東昇鎮坦背村
+
+  - 古鎮鎮
+    
+    - `gukwan-guzan-hoizau`『古鎮海洲音』：古鎮鎮海洲村
+    
+  - 東鳳鎮・阜沙鎮
+    
+  - `gukwan-dungfau`『東阜音』：綜合東阜兩鎮各方音（沙蓢港口亦可用）
+    
+    - `gukwan-dungfung-dunggubou`：東鳳鎮東罟埗
+    - `gukwan-dungfung-saigubau`：東鳳鎮西罟埗
+    - `gukwan-dungfung-tungon`：東鳳鎮同安村
+    
+    - `gukwan-fausaa-locung`：阜沙鎮羅松村
+    - `gukwan-fausaa-daaijauwai`：阜沙鎮大有圍
+    
+  - 橫欄鎮
+    
+    - `gukwan-waanglaan`『橫欄音』：綜合橫欄鎮各方音
+    
+  - 南頭鎮
+    - `gukwan-naamtau-daisaa`『南頭低沙音』：南頭鎮低沙村
+    - `gukwan-naamtau-geusam`『南頭滘心音』：南頭鎮滘心村
+    - `gukwan-naamtau-paaihom`『南頭排坎音』：南頭鎮排坎村
+    - `gukwan-naamtau-naamsing`『南頭南城音』：南頭鎮南城村
+    
+  - 黃圃鎮
+    
+    - `gukwan-wongpou`『黃圃音』：黃圃鎮區音
+    
+  - 民眾鎮
+    - `gukwan-longmong`『浪網音』：舊浪網鎮區音。
+    - `gukwan-longmong`『浪網群安音』：舊浪網鎮群安村音。
+
+- 順德系——順德市
+
+  - `gukwan-daailoeng`【大良話】：以大良話比較有代表性特徵製作，兼容部份新派發音。
+
+  - `gukwan-cancyn`【陳村話】：以陳村話比較有代表性特徵製作，兼容部份新派發音。
+  - `gukwan-gwanon`【均安話】：未製作
+
+- 香山系——中山市
+
+  - `gukwan-sekki`【石岐鎮】：以石歧話新派音製作。（老派音需要自行製作字表，菊韻字表不能轉換）
+
+> 方案不能直接同新派音兼容，可能已不貼合實際情況，如：
+>
+> - 曉匣喻母細音字部份字跟廣州讀`j`，但未變齊。
+>   - 如「爺」讀`he4`，但係「園」讀`jyun4`（本應讀`hyun4`）
+>   - 由於個個方言都變化程度唔同，我一個人絕無辦法去執晒，只能設定兩種音都出到字。
+>   - 如小欖話只有極少數作爲白讀音殘留，例如「穴」`hyut6`，「嫌」`him4`。則可以特例處理。
+> - 師韻讀`y`定讀`i`
+>   - 其實讀開`y`就應該全部讀`y`，但係不能避免的人遇到隻唔識既字，就直情跟廣州音。此處不作改變，如不能辨別者，請手動更改方案。
+> - 關於白讀字請見`readme-dialect.md`（[Link](https://github.com/HoengSaan/rime-gukwan/blob/main/readme-dialect.md)）。
+
+<mark>建議根據說明自行調整方案。</mark>
+
+### 三拼輸入
+
+菊韻支持竝默認開啓三拼，即所有漢字皆可以三鍵輸入（不含聲調）。
+
+**三拼輸入不影響聲調輸入**，用家仍然可以使用傳統打法——即全拼，輸入拼音完整形式：聲母+韻母+聲調，聲調可以省畧。
+
+如不能接受三拼輸入，下文有解說如何關閉三拼。
+
+<img src="pic\key.png"/>
+
+#### 鍵值
+
+##### 子音（聲母）
+
+- 不區分平翹日以之方言（多數方言）
+  - 以`q`輸入`kw`：如「裙」`kwan`則爲`qan`
+  - 以`x`輸入`gw`：如「轟」`gwang`則爲`xar`
+  - 以`r`輸入`ng`：如「我」`ngo`則爲`ngo`（不支持單獨成韻，即「吳」`ng`無法以`r`輸入）
+- 區分平翹日以之方言（僅`gukwan-default`）
+  - 以`z`輸入`zh`（實質模糊音，默認關閉）
+  - 以`c`輸入`ch`（實質模糊音，默認關閉）
+  - 以`s`輸入`sh`（實質模糊音，默認關閉）
+  - 以`q`輸入`kw`
+  - 以`x`輸入`gw`
+  - 以`r`輸入`ng`｜`ngi`｜`nj`：如「言」`ngin`則爲`rin`，如「仍」`njing`則爲`rir`
+
+##### 母音（韻母）
+
+- 無韻尾情況（如`laa`，`loe`等）
+  - 以`a`輸入`aa`：如「瓜」`gwaa`則爲`xa`
+  - 以`y`輸入`yu`（`jyu`）：如「擧」`gyu`則爲`gy`
+- 有韻尾情況（如`laang`，`loeng`等）
+  - 以`e`輸入`oe`：如「涼」`loeng`則爲`ler`
+  - 以`r`輸入`aa`：如「逛」`gwaang`則爲`xrr`
+  - 以`y`輸入`yu`（`jyu`）:如「血」`hyut`則爲`hyt`
+  - 以`u`輸入`eo`：如「論」`leon`則爲`lun`
+- 以下三拼僅部分方案適用
+  - 以`r/e`輸入`ae`：如「斬」`zhaem`則爲`z(h)aam`｜`z(h)rm`｜`z(h)em`（僅`gukwan-default`）
+  - 以`u`輸入`oo`【僅限`ooi`】：如「淚」`looi`則爲`lui`（部份方案）
+  - 以`o`輸入`oo`【僅限`oong/ook`】：如「朗」`loong`則爲`lor`（部份方案）
+
+以`e`輸入`oe`是考慮`e`系韻母本身以白讀音爲主，較少使用。而`u`同`eo/oo`；`o`同`oo`兩對音在多數方言可基本互補，不影響輸入。
+
+<img src="pic\srmpir.png"/>
+
+#### 關閉三拼
+
+三拼是本人加速輸入全拼之做法，其會影響首拼出字之效率。若不想使用三拼，可在方案文件關閉以下選項（行頭加井號）：
+
+```yaml
+- derive/^kw/q/ # 簡拼(kw->q)
+- derive/^gw/x/ # 簡拼(gw->q)
+#- derive/^nj/r/                         # 簡拼(nj->r)
+- derive/^ng([aeiouy])/r$1/ # 簡拼(ng->r)
+- derive/([aeiouy])ng/$1r/ # 簡拼(ng->r)
+
+- derive/aa(?=\d)/a/ # 簡拼(aa->a)【毋須關閉】
+- derive/aa([iumnptkr]|ng)/r$1/ # 簡拼(aa->r)
+- derive/^jy?([aeiou])/y$1/ # 簡拼(jy->y)【毋須關閉】
+- derive/yu(?!ng|k)/y/ # 簡拼(yu->y)【毋須關閉】
+- derive/oe(ng|k|r)/e$1/ # 簡拼(oe->e)
+- derive/eo([ntiy])/u$1/ # 簡拼(eo->u)
+#- derive/oo(i|y)/u$1/ # 簡拼(oo->u)
+```
+
 ### 反査支持
 
 多數人士通曉廣州話、普通話卻未必熟識自己鄉下發音，故設各種反査。反査亦可用來各種疑難雜字。
@@ -274,7 +249,9 @@ This is a schema based on [Rime Input Method](https://rime.im/).
   - `gukwan.kwongtung.dict.yaml`數據來源係簡筆字，本人亦仔細審覈過，但都無法保證三萬幾條地名全數正確。
   - jyut6ping3 部份詞庫（例如`jyut6ping3.phrase.dict.yaml`）有明顯簡轉繁痕跡，已超出本人處理範圍。
 - 語言模型：
-  - 語言模型是改善輸入體驗最有效方法，但粵語同官話語言模型不能完全通用，需自行訓練，已超出本人能力範圍。
+  - 語言模型是改善輸入體驗有效方法之一，**但粵語同官話語言模型不能完全通用，且現有大模型，即萬象模型因基於簡體字表，菊韻等繁體字表不能使用**。繁體模型目前我所知僅有[八股文](https://github.com/lotem/rime-octagram-data/)一個（注意：自帶八股文爲簡化版），可參攷`補靪範例`自行打補靪使用。
+- 聯想・預測功能：
+  - 粵語無現成可用。無法解決。
 
 ## 安裝
 
