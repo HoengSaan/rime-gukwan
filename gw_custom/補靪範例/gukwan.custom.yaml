@@ -32,4 +32,4 @@ patch:
     - name: emoji_cantonese_suggestion
       reset: 0
       states: [ 無繪, 有繪 ]
-  translator/dict: gukwan-extended
+  translator/dictionary: gukwan-extended
