@@ -14,7 +14,7 @@ __include: gukwan.schema:/
 schema:
   __include: gukwan.schema:/schema
   schema_id: gukwan-fausaa-locung
-  name: 菊韻東阜音
+  name: 菊韻阜沙羅松音
   version: "19.0b"
   author:
     - 靈帝（Hoengsaan）
