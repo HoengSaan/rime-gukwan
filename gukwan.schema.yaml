@@ -109,7 +109,6 @@ engine:
     - lua_translator@*number_gukwan         # 數字數額金額蘇州碼
     - lua_translator@*time_gukwan           # 日期時間
   filters:
-    #- lua_filter@*is_in_user_dict          # 測試用
     - reverse_lookup_filter@reverse_lookup  # 反查
     - reverse_lookup_filter@special_typing  # 輸入
     - lua_filter@*autocap_filter            # 自動大階
@@ -557,6 +556,3 @@ recognizer:
     number: "^S[0-9]+[.]?[0-9]*"
     calculator: "^cC.+"
     gregorian_to_lunar: "^N[0-9]{1,8}"
-
-# 測試用
-#is_in_user_dict: false

@@ -222,27 +222,28 @@ colors:
   - &light_enter_pressed_text_color 0xb6edee      #回車鍵按下時文字顏色
   - &light_key_hint_color 0x0041ad                #按鍵小字顏色
   #菊韻
-  - &gukwan_main_color 0xd14d00                    #作為按鍵背景的暗藍色
-  - &gukwan_bg_color 0xa44700                      #背景的背景的暗灰色
-  - &gukwan_border_color 0xf0c41a                  #作為邊框的稍亮一點點的藍色
-  - &gukwan_main_text_color 0xD8BFD8               #作為字符主要顏色的淺黃色
-  - &gukwan_sub_candidate_color 0xd2cbb2           #作為非高亮候選的闇淺黃色
-  - &gukwan_code_text_color 0xfdf793               #已解析的編碼的黃色
-  - &gukwan_code_unparsed_color 0xcf3a3c           #未解析編碼的紅色
-  - &gukwan_comment_color 0xfee8ad                #高亮註釋顏色
-  - &gukwan_sub_comment_color 0xd9c693            #其他註釋顏色
-  - &gukwan_func_key_bg_color 0x10052b            #功能鍵背景色
-  - &gukwan_func_key_text_color 0xffc391          #功能鍵文本色
-  - &gukwan_func_key_pressed_bg_color 0x261c40    #功能鍵按下時背景色
-  - &gukwan_func_key_pressed_text_color 0xffddc2  #功能鍵按下時文本色
-  - &gukwan_shift_lock_bg_color 0x14254a          #Shift鎖定時背景顏色
-  - &gukwan_shift_lock_text_color 0xfff23b        #Shift鎖定時文字顏色
-  - &gukwan_shift_lock_pressed_bg_color 0x140e36  #Shift鎖定時按下的背景顏色
-  - &gukwan_enter_bg_color 0x4f0a1c               #回車鍵顏色
-  - &gukwan_enter_text_color 0x807e71             #回車鍵文字顏色
-  - &gukwan_enter_pressed_bg_color 0x01316b       #回車鍵按下時顏色
-  - &gukwan_enter_pressed_text_color 0x86a2b3     #回車鍵按下時文字顏色
-  - &gukwan_key_hint_color 0x006400               #按鍵小字顏色
+  - &gukwan_main_color 0xD3A243                    # 作為按鍵背景「枯葉」
+  - &gukwan_bg_color 0xF3D56E                      # 背景「野菊」
+  - &gukwan_border_color 0xBF7F30                  # 邊框「向日葵」
+  - &gukwan_main_text_color 0x250D00               # 主要文本「黑檀」
+  - &gukwan_sub_candidate_color 0x47885E           # 非高亮候選「綠青」
+  - &gukwan_code_text_color 0xFFD34E               # 已解析編碼「菊花」
+  - &gukwan_code_unparsed_color 0xBA2636           # 未解析編碼「硃」
+  - &gukwan_comment_color 0x47885E                 # 高亮註釋「綠青」
+  - &gukwan_sub_comment_color 0xDDBB99             # 其他註釋「白茶」
+  - &gukwan_func_key_bg_color 0x602020             # 功能鍵背景色「栗子」
+  - &gukwan_func_key_text_color 0xFDDEA5           # 功能鍵文本色「紙」
+  - &gukwan_func_key_pressed_bg_color 0x8B4726     # 功能鍵按下時（背景）「影木」
+  - &gukwan_func_key_pressed_text_color 0xF3E5AB   # 功能鍵按下時（文字）
+  - &gukwan_shift_lock_bg_color 0x704214           # Shift鎖定時（背景）
+  - &gukwan_shift_lock_text_color 0xFFD700         # Shift鎖定時（文字）「蒲公英」
+  - &gukwan_shift_lock_pressed_bg_color 0x583511   # Shift鎖定時按下（背景）「普洱」
+  - &gukwan_shift_lock_pressed_text_color 0xE8D3D1 # Shift鎖定時按下（文字）「灰櫻」
+  - &gukwan_enter_bg_color 0x8C3E0E                # 回車鍵（背景）
+  - &gukwan_enter_text_color 0xBFAF8F              # 回車鍵（文字）
+  - &gukwan_enter_pressed_bg_color 0x640125        # 回車鍵按下時（背景）「葡萄」
+  - &gukwan_enter_pressed_text_color 0xD1C7A4      # 回車鍵按下時（文字）
+  - &gukwan_key_hint_color 0x69821B                # 按鍵小字「苔」
 
 preset_color_schemes:
   default:

@@ -38,6 +38,10 @@ patch:
   # 調用定製擴展詞庫
   translator/dictionary: gukwan-extended
 
+  # 測試用
+  engine/filters/@before 0: lua_filter@*is_in_user_dict
+  is_in_user_dict: true
+
   # 預測（電腦不建議開啓）
   # librime-predict 簡體可考慮用 wanxiang-lts-zh-predict.db
   # https://github.com/rime/librime-predict
