@@ -12,7 +12,7 @@
 
 ---
 name: gukwan.chars
-version: "18.7.2b"
+version: "19.1.1b"
 sort: by_weight
 ...
 
@@ -6979,7 +6979,7 @@ sort: by_weight
 暲	zjiong1	0%
 昌	cjiong1	
 裮	cjiong1	0%
-倡	cjiong1	
+倡	cjiong1	0%
 猖	cjiong1	
 閶	cjiong1	
 琩	cjiong1	0%
@@ -8249,7 +8249,7 @@ sort: by_weight
 輘	lang4	0%
 倰	lang4	0%
 祾	lang4	0%
-僧	sang1	
+僧	sang1	0%
 鬙	sang1	0%
 䒏	sang1	0%
 崩	bang1	
@@ -11103,10 +11103,10 @@ sort: by_weight
 絯	haai5	0%
 侅	haai5	0%
 駴	haai5	0%
-楷	kaai2	
-𠢲	kaai2	0%
-𥏪	kaai2	0%
-鍇	kaai2	0%
+楷	haai2	
+𠢲	haai2	0%
+𥏪	haai2	0%
+鍇	haai2	0%
 騃	ngaai5	0%
 𤶗	ngaai5	0%
 娾	ngaai5	0%
@@ -11610,25 +11610,26 @@ sort: by_weight
 愃	hyun2	0%
 𧡩	hyun2	0%
 諼	hyun2	0%
-飯	faan5	0%
-軬	faan5	0%
-笲	faan5	0%
-䪻	faan5	0%
-混	wan5	
-鯶	wan5	0%
-渾	wan5	0%
-緷	wan5	0%
-焜	wan5	0%
-倱	wan5	0%
-棍	wan5	0%
-睔	wan5	0%
-㮯	wan5	0%
-䚠	wan5	0%
-𨡫	wan5	0%
-䧰	wan5	0%
-掍	wan5	0%
-睴	wan5	0%
-煇	wan5	0%
+飯	faan6	0%
+軬	faan6	0%
+笲	faan6	0%
+䪻	faan6	0%
+混	wan6	
+鯶	wan6	0%
+渾	wan6	0%
+緷	wan6	0%
+焜	wan6	0%
+倱	wan6	0%
+棍	wan6	0%
+䫟	wan6	0%
+睔	wan6	0%
+㮯	wan6	0%
+䚠	wan6	0%
+𨡫	wan6	0%
+䧰	wan6	0%
+掍	wan6	0%
+睴	wan6	0%
+煇	wan6	0%
 翉	pun2	0%
 忖	cyun2	
 𢩭	cyun2	0%
@@ -13332,7 +13333,7 @@ sort: by_weight
 郠	gang2	0%
 綆	gang2	0%
 鯁	gang2	
-埂	gang2	0%
+埂	gang2	
 骾	gang2	0%
 𧋑	gang2	0%
 丙	bing2	
@@ -13852,7 +13853,7 @@ sort: by_weight
 棷	sau2	0%
 駷	sau2	0%
 橾	sau2	0%
-吼	hau2	0%
+吼	hau2	
 吽	hau2	0%
 呴	hau2	0%
 㸸	hau2	0%
@@ -14296,7 +14297,7 @@ sort: by_weight
 𨸱	nim5	0%
 姌	nim5	0%
 點	dim2	
-玷	dim2	
+玷	dim2	0%
 𦒻	dim2	0%
 㓠	dim2	0%
 䍄	dim2	0%
@@ -14439,8 +14440,8 @@ sort: by_weight
 鞚	hung3	0%
 空	hung3	
 𤗇	hung3	0%
-糉	zung3	
-粽	zung3	
+糉	zung3	0%
+粽	zung3	0%
 䁓	zung3	0%
 傯	zung3	0%
 㚇	zung3	0%
@@ -14702,7 +14703,7 @@ sort: by_weight
 𨑤	ki3	0%
 蚑	ki3	0%
 吱	ki3	0%
-縊	ji3	
+縊	ji3	0%
 㱲	ji3	0%
 螠	ji3	0%
 翅	cji3	
@@ -17105,7 +17106,6 @@ sort: by_weight
 䚋	wan6	0%
 𧡡	wan6	0%
 𤸫	wan6	0%
-緷	wan6	0%
 訓	hwan3	
 爋	hwan3	0%
 臐	hwan3	0%
@@ -18097,7 +18097,7 @@ sort: by_weight
 燎	liu6	0%
 㙩	liu6	0%
 𤻲	liu6	0%
-療	liu6	
+療	liu6	0%
 熮	liu6	0%
 膫	liu6	0%
 鷯	liu6	0%
@@ -18704,7 +18704,7 @@ sort: by_weight
 唱	cjiong3	
 𪛋	cjiong3	0%
 廠	cjiong3	0%
-倡	cjiong3	0%
+倡	cjiong3	
 刱	choong3	
 創	choong3	
 愴	choong3	
@@ -18924,7 +18924,7 @@ sort: by_weight
 詗	hwing3	0%
 醟	hwing3	0%
 矎	hwing3	0%
-摒	bing3	
+摒	bing3	0%
 併	bing3	
 并	bing3	
 偋	bing6	0%
@@ -19398,7 +19398,7 @@ sort: by_weight
 濅	zam3	0%
 𥧲	zam3	0%
 祲	zam3	0%
-妊	njam6	0%
+妊	njam6	
 絍	njam6	
 鵀	njam6	0%
 任	njam6	
@@ -19684,7 +19684,7 @@ sort: by_weight
 讒	zhaem6	0%
 艬	zhaem6	0%
 𪒠	aem3	0%
-梵	faan6	0%
+梵	faan6	
 帆	faan6	0%
 颿	faan6	0%
 汎	faan3	
@@ -24205,7 +24205,7 @@ sort: by_weight
 𪀐	gap1	0%
 岌	ngap6	0%
 㱞	ngap6	0%
-泣	kap1	
+泣	kap1	0%
 㬤	kap1	0%
 湆	kap1	0%
 𩎕	sap1	0%
