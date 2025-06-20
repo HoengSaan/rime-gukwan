@@ -12,7 +12,7 @@
 
 ---
 name: gukwan.chars
-version: "19.1.1b"
+version: "19.1.2b"
 sort: by_weight
 ...
 
@@ -4078,6 +4078,7 @@ sort: by_weight
 䘇	man4	0%
 䰚	man4	0%
 鳼	man4	0%
+汶	man4	
 鼤	man4	0%
 閩	man4	0%
 雲	wan4	
@@ -4741,7 +4742,7 @@ sort: by_weight
 劗	cyun4	0%
 官	gun1	
 悹	gun1	0%
-莞	gun1	
+莞	gun1	0%
 棺	gun1	
 觀	gun1	
 貫	gun1	0%
@@ -6457,10 +6458,10 @@ sort: by_weight
 𩑸	ho1	0%
 㱒	ho1	0%
 抲	ho1	0%
-珂	ho1	
-𠳌	ho1	0%
-䯊	ho1	0%
-軻	ho1	
+珂	o1	
+𠳌	o1	0%
+䯊	o1	0%
+軻	o1	
 阿	o1	
 娿	o1	0%
 痾	o1	0%
@@ -9987,18 +9988,18 @@ sort: by_weight
 𠈈	cy2	0%
 𧺼	cy2	0%
 𡘌	cy2	0%
-豸	cri5	0%
-褫	cri5	0%
-陊	cri5	0%
-䊓	cri5	0%
-踶	cri5	0%
-傂	cri5	0%
-杝	cri5	0%
-阤	cri5	0%
-䚦	cri5	0%
-廌	cri5	0%
-褆	cri5	0%
-徥	cri5	0%
+豸	zri6	0%
+褫	zri6	0%
+陊	zri6	0%
+䊓	zri6	0%
+踶	zri6	0%
+傂	zri6	0%
+杝	zri6	0%
+阤	zri6	0%
+䚦	zri6	0%
+廌	zri6	0%
+褆	zri6	0%
+徥	zri6	0%
 徙	saai2	
 壐	saai2	0%
 璽	saai2	
@@ -10205,20 +10206,20 @@ sort: by_weight
 牝	pi5	0%
 履	li5	
 水	sjooi2	
-壘	looi5	
-蜼	looi5	0%
-猚	looi5	0%
-櫐	looi5	0%
-蘽	looi5	0%
-㶟	looi5	0%
-𡻭	looi5	0%
-轠	looi5	0%
-鸓	looi5	0%
-藟	looi5	0%
-誄	looi5	0%
-耒	looi5	
-讄	looi5	0%
-𤢹	looi5	0%
+壘	looi6	
+蜼	looi6	0%
+猚	looi6	0%
+櫐	looi6	0%
+蘽	looi6	0%
+㶟	looi6	0%
+𡻭	looi6	0%
+轠	looi6	0%
+鸓	looi6	0%
+藟	looi6	0%
+誄	looi6	0%
+耒	looi6	
+讄	looi6	0%
+𤢹	looi6	0%
 揆	kwai5	0%
 楑	kwai5	0%
 𢜽	kwai5	0%
@@ -11072,9 +11073,9 @@ sort: by_weight
 䒓	kaai2	0%
 𡢖	kaai2	0%
 𦝨	kaai2	0%
-廌	craai5	0%
-豸	craai5	0%
-𧳋	craai5	0%
+廌	zraai6	0%
+豸	zraai6	0%
+𧳋	zraai6	0%
 嬭	naai5	0%
 㚷	naai5	0%
 罷	baa6	
@@ -13191,11 +13192,11 @@ sort: by_weight
 倣	fong2	
 放	fong2	0%
 瓬	fong2	0%
-枉	jong2	
-𢼟	jong2	0%
-𣢫	jong2	0%
-汪	jong2	0%
-往	wong5	
+枉	wong2	
+𢼟	wong2	0%
+𣢫	wong2	0%
+汪	wong2	0%
+往	wong5	0%
 暀	wong5	0%
 怳	hwong2	
 𧧢	hwong2	0%
@@ -17083,7 +17084,7 @@ sort: by_weight
 問	man6	
 璺	man6	0%
 絻	man6	0%
-汶	man6	
+汶	man6	0%
 紊	man6	
 聞	man6	0%
 莬	man6	0%
@@ -19760,8 +19761,8 @@ sort: by_weight
 䀰	guk1	0%
 唂	guk1	0%
 縠	huk6	0%
-槲	huk6	
-斛	huk6	
+槲	huk6	3%
+斛	huk6	3%
 螜	huk6	0%
 𧂔	huk6	0%
 礐	huk6	0%
@@ -19896,7 +19897,7 @@ sort: by_weight
 𥣜	puk1	0%
 𪔿	puk1	0%
 攴	puk1	0%
-撲	puk1	
+撲	puk1	0%
 骲	puk1	0%
 𪐙	puk1	0%
 䴆	puk1	0%
@@ -20683,9 +20684,9 @@ sort: by_weight
 質	zjat1	
 晊	zjat1	0%
 郅	zjat1	0%
-桎	zjat1	
+桎	zjat1	0%
 櫍	zjat1	0%
-蛭	zjat1	
+蛭	zjat1	0%
 騭	zjat1	0%
 劕	zjat1	0%
 銍	zjat1	0%

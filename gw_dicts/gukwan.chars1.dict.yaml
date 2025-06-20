@@ -12,7 +12,7 @@
 
 ---
 name: gukwan.chars1
-version: "19.1.1b"
+version: "19.1.2b"
 sort: by_weight
 ...
 
@@ -66,6 +66,7 @@ sort: by_weight
 呢	nei1	5%
 呢	ei1	
 梨	li2	
+蜊	li6	5%
 荾	sai1	0%
 茜	sai1	3%
 荽	sai1	
@@ -159,6 +160,7 @@ sort: by_weight
 嗔	zjan1	
 繽	ban1	
 蘋	ping4	
+筠	gwan1	3%
 閩	man5	
 鶉	cjeon1	
 瞤	sjeon3	0%
@@ -181,6 +183,7 @@ sort: by_weight
 㩮	hin1	0%
 掀	kin4	3%
 赶	gon2	0%
+琿	fai1	3%
 昆	kwan1	
 晜	kwan1	0%
 𥊽	kwan1	0%
@@ -232,6 +235,7 @@ sort: by_weight
 寏	hjyun4	0%
 院	hjyun4	0%
 捖	hjyun4	0%
+莞	gun2	
 瘢	baan1	0%
 䊡	maan6	0%
 饅	maan6	5%
@@ -297,6 +301,7 @@ sort: by_weight
 釗	cjiu1	
 貓	miu1	0%
 猫	miu1	0%
+鴞	hiu1	5%
 轎	kiu2	
 繑	keu2	0%
 繑	kiu5	
@@ -374,6 +379,7 @@ sort: by_weight
 呀	aa6	
 哇	waa5	
 扒	paa4	
+楂	zhaa1	5%
 苴	zhaa2	
 咤	craak1	
 吒	craak1	
@@ -592,6 +598,7 @@ sort: by_weight
 𦓨	zy6	0%
 使	shai2	
 駛	shai2	
+洱	ni2	
 裏	looi5	
 裏	lyi5	
 歭	zri6	3%
@@ -953,11 +960,13 @@ sort: by_weight
 怖	bu3	
 嚏	tai3	5%
 劑	zai1	
+第	daai6	
 締	dai3	
 睇	tai2	
 係	hai6	
 謎	mai4	
 嬖	pi3	0%
+睥	pai5	
 睥	be1	
 戾	looi6	
 戾	lai2	0%
@@ -1080,6 +1089,7 @@ sort: by_weight
 耖	chaeu1	
 潦	liu5	
 潦	liu2	
+癆	lou4	5%
 噪	cou3	
 靠	kaau3	
 耗	hou3	
@@ -1151,7 +1161,9 @@ sort: by_weight
 購	kau3	
 佝	kyu1	
 妊	njam4	
+噤	kam1	
 蔭	jam1	
+闖	crong2	
 啖	daam6	
 殮	lim5	
 墊	din3	
@@ -1160,6 +1172,7 @@ sort: by_weight
 湴	baan6	3%
 梵	faan4	5%
 欠	hem3	3%
+斛	gok3	
 哭	huk6	
 速	cuk1	
 遬	cuk1	0%
@@ -1183,6 +1196,7 @@ sort: by_weight
 轆	luk1	
 碌	luk1	
 鏃	zuk6	5%
+撲	pok3	
 濮	buk6	5%
 伏	buk6	
 馥	fuk1	
@@ -1215,8 +1229,8 @@ sort: by_weight
 擢	crok3	
 鐲	zruk6	
 搦	nik1	
-桎	zrat6	
-蛭	zrat6	
+桎	zjat6	
+蛭	zjat6	
 寔	sjat6	0%
 秩	dit6	
 秩	dip6	
@@ -1377,6 +1391,7 @@ sort: by_weight
 積	zek3	0%
 脊	zik3	
 脊	zek3	
+嗌	aai3	
 膉	jek1	
 膉	ek1	
 膉	jet1	

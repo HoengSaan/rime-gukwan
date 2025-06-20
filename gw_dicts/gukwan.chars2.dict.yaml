@@ -12,7 +12,7 @@
 
 ---
 name: gukwan.chars2
-version: "19.1.1b"
+version: "19.1.2b"
 sort: by_weight
 ...
 
@@ -1192,8 +1192,8 @@ sort: by_weight
 㫡	dung1	0%
 㫡	zjung1	0%
 㫢	hyo3	0%
-㫤	crong2	0%
-㫤	crong3	0%
+㫤	criong2	0%
+㫤	criong3	0%
 㫥	ming4	0%
 㫦	tou1	0%
 㫧	bou6	0%
