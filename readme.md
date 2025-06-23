@@ -82,12 +82,14 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 	<li>以下功能須安裝<code>rime-kikwin</code>方可使用：
 		<ul>
 			<li><mark>無日文輸入需求不建議使用</mark></li>
-			<li>假名：以細階輸入平假名，大階輸入片假名，鍵值爲&lt;code&gt;`G&lt;/code&gt; （gaa ming）。輸入方式同其他 IME（如 Microsoft IME、ATOK 等）基本無區別</li>
-			<li>顏文字：以日文輸入各種顏文字，鍵值爲&lt;code&gt;`K&lt;/code&gt;（kaomoji）</li>
-			<li>和文：允許半混打日文，鍵值爲&lt;code&gt;`R&lt;/code&gt;（romaji）</li>
+            <li>假名：以細階輸入平假名，大階輸入片假名，鍵值爲<code>`G</code> （gaa ming）。輸入方式同其他 IME（如 Microsoft IME、ATOK 等）基本無區別</li>
+			<li>顏文字：以日文輸入各種顏文字，鍵值爲<code>`K</code>（kaomoji）</li>
+            <li>和文：允許半混打日文，鍵值爲<code>`R</code>（romaji）</li>
 		</ul>
 	</li>
 </ul>
+
+Android可用自帶主題（`菊韻.trime.yaml`），使用功能更加方便。
 
 ### 多方言適應
 
@@ -98,7 +100,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
   - `jyut6ping3-gw-cp`【廣州話】：完全使用`rime-cantonese`字表同詞庫，增添菊韻所有功能以改善打字體驗。適合穗港澳等操廣州話人士。**關閉三拼以符合習慣全拼用戶。**
 - 順德系——中山市
   - 小欖鎮
-    - `gukwan-siulaam`【小欖音】：以小欖話比較有代表性特徵製作，兼容新派發音。
+    - `gukwan-siulaam`【小欖話】：以小欖話比較有代表性特徵製作，兼容新派發音。
     - `gukwan-siulaam-bofung`『小欖寶豐音』：小欖鎮寶豐村，兼容新派發音。
     - `gukwan-dungsing`『東昇音』：舊東昇鎮鎮區音
     - `gukwan-dungsing-gosaa`『東昇高沙音』：舊東昇鎮高沙村
@@ -218,6 +220,8 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 - 倉頡五代（rime-cangjie5），倉頡反査。鍵值爲<code>`C</code>（CoongKit/CongKit ）。
 - 訓讀（[rime-kunyomi](https://github.com/sgalal/rime-kunyomi)），和語訓讀（現代音）反査。鍵值爲<code>`F</code>（FanDuk）。
 - 兩分（[rime-loengfan](https://github.com/CanCLID/rime-loengfan)），粵語廣州話兩分拆字反査。鍵值爲<code>`L</code>（LiongFan/LoengFan）。
+
+Android可用自帶主題（`菊韻.trime.yaml`），使用功能更加方便。
 
 > [!NOTE]
 >
