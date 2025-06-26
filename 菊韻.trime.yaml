@@ -10,7 +10,7 @@
 # Learn how to use Gukwan in the readme file, available on the project's github page.
 # Source: https://github.com/Wenti-D/Astralwelkin
 
-config_version: '19.2b'
+config_version: '19.2.1b'
 name: 菊韻                                #方案名稱
 author: 'Windy_D <windy0deng@gmail.com>, Hoengsaan (Lingdai)'  #作者信息
 
@@ -48,7 +48,6 @@ style:
     - .default
     - default
     - letter
-    - double_pinyin_mspy
     - bopomofo
     - number
     - basic_symbol
@@ -2506,7 +2505,7 @@ preset_keyboards:
       - {click: 'e', long_click: '@', swipe_left: '⟨', swipe_right: '⟩', hint: '⟨   ⟩'}
       - {click: 'r', long_click: '^', swipe_left: '【', swipe_right: '】', hint: '【   】'}
       - {click: 't', long_click: '*', swipe_left: '/', swipe_right: '\', hint: '/   \'}
-      - {click: 'y', long_click: redo}
+      - {click: 'y', long_click: redo, swipe_left: '`Q', swipe_right: '`W', hint: '平　片'}
       - {click: 'u', long_click: '+', swipe_left: '{', swipe_right: '}', hint: '{   }'}
       - {click: 'i', long_click: '×', swipe_left: '[', swipe_right: ']', hint: '[   ]'}
       - {click: 'o', long_click: '=', swipe_left: '(', swipe_right: ')', hint: '(   )'}
@@ -2602,69 +2601,6 @@ preset_keyboards:
       - {click: ',', long_click: Extra_keyboard}
       - {click: space, width: 39, swipe_up: Up, swipe_left: Left, swipe_right: Right, swipe_down: Down}
       - {click: '.', long_click: '…'}
-      - {click: Return, width: 16, key_text_size: 24, key_text_offset_y: -2, key_back_color: enter_bg_color, key_text_color: enter_text_color, hilited_key_back_color: enter_pressed_bg_color, hilited_key_text_color: enter_pressed_text_color}
-
-  double_pinyin_mspy:
-    name: 微軟雙拼鍵盤
-    author: 'Windy_D'
-    ascii_mode: 0
-    reset_ascii_mode: true
-    width: 10
-    #height默認，不寫
-    key_text_offset_y: -.6    #按鍵文本偏移（下正上負）
-    key_hint_offset_y: *lower_hint_shift    #按鍵下方註釋偏移（下正上負）
-    key_symbol_offset_y: *upper_hint_shift  #按鍵上方註釋偏移（下正上負）
-    keys:
-      #第一行
-      - {click: '1', long_click: '¹', swipe_up: '¹', swipe_down: '₁', hint: '₁'}
-      - {click: '2', long_click: '²', swipe_up: '²', swipe_down: '₂', hint: '₂'}
-      - {click: '3', long_click: '³', swipe_up: '³', swipe_down: '₃', hint: '₃'}
-      - {click: '4', long_click: '⁴', swipe_up: '⁴', swipe_down: '₄', hint: '₄'}
-      - {click: '5', long_click: '⁵', swipe_up: '⁵', swipe_down: '₅', hint: '₅'}
-      - {click: '6', long_click: '⁶', swipe_up: '⁶', swipe_down: '₆', hint: '₆'}
-      - {click: '7', long_click: '⁷', swipe_up: '⁷', swipe_down: '₇', hint: '₇'}
-      - {click: '8', long_click: '⁸', swipe_up: '⁸', swipe_down: '₈', hint: '₈'}
-      - {click: '9', long_click: '⁹', swipe_up: '⁹', swipe_down: '₉', hint: '₉'}
-      - {click: '0', long_click: '⁰', swipe_up: '⁰', swipe_down: '₀', hint: '₀'}
-      #第二行
-      - {click: 'q', long_click: '`', swipe_left: '`R', swipe_right: '`G', hint: '和　假'}
-      - {click: 'w', long_click: '|', swipe_left: '<', swipe_right: '>', hint: '<   >'}
-      - {click: 'e', long_click: '@', swipe_left: '⟨', swipe_right: '⟩', hint: '⟨   ⟩'}
-      - {click: 'r', long_click: '^', swipe_left: '【', swipe_right: '】', hint: '【   】'}
-      - {click: 't', long_click: '*', swipe_left: '/', swipe_right: '\', hint: '/   \'}
-      - {click: 'y', long_click: redo}
-      - {click: 'u', long_click: '+', swipe_left: '{', swipe_right: '}', hint: '{   }'}
-      - {click: 'i', long_click: '×', swipe_left: '[', swipe_right: ']', hint: '[   ]'}
-      - {click: 'o', long_click: '=', swipe_left: '(', swipe_right: ')', hint: '(   )'}
-      - {click: 'p', long_click: '・', swipe_left: '`', swipe_right: '`P', hint: '穗　普'}
-      #第三行
-      - {width: 5}
-      - {click: 'a', long_click: 'select_all', swipe_left: '`C', swipe_right: '`K', hint: '倉　顏'}
-      - {click: 's', long_click: '#', swipe_left: '℃', swipe_right: '℉', hint: '℃   ℉'}
-      - {click: 'd', long_click: '$', swipe_left: '¢', swipe_right: '€', hint: '¢   €'}
-      - {click: 'f', long_click: '¥', swipe_left: '£', swipe_right: '₿', hint: '£   ₿'}
-      - {click: 'g', long_click: '_', swipe_left: '〈', swipe_right: '〉', hint: '〈   〉'}
-      - {click: 'h', long_click: '——', swipe_left: '『', swipe_right: '』', hint: '『   』'}
-      - {click: 'j', long_click: '-', swipe_left: '《', swipe_right: '》', hint: '《   》'}
-      - {click: 'k', long_click: '÷', swipe_left: '「', swipe_right: '」', hint: '「   」'}
-      - {click: 'l', long_click: '~', swipe_left: '`F', swipe_right: '`L', hint: '訓　兩'}
-      - {click: ';', long_click: ':'}
-      #第四行
-      - {click: Shift_L, width: 14, key_text_offset_y: 0}
-      - {click: 'z', long_click: undo}
-      - {click: 'x', long_click: cut}
-      - {click: 'c', long_click: copy, swipe_down: Keyboard_emoji, hint: '繪文字'}
-      - {click: 'v', long_click: paste, swipe_down: Keyboard_clipboard, hint: '剪貼板'}
-      - {click: 'b', long_click: '&', swipe_left: "'", swipe_right: '"', hint: "'   \""}
-      - {click: 'n', long_click: '%', swipe_left: ';', swipe_right: ':', hint: ';   :'}
-      - {click: 'm', long_click: '¿', swipe_left: '!', swipe_right: '?', hint: '!   ?'}
-      - {click: BackSpace, swipe_down: Delete, hint: Del, width: 16, key_text_offset_y: 0}
-      #第五行
-      - {click: Keyboard_basic_symbol, width: 12.5, key_text_offset_y: 0, long_click: Settings, swipe_left: Theme_settings, swipe_right: Color_switch, hint: "題　色"}
-      - {click: Schema_switch, width: 12.5, key_text_offset_y: 0, long_click: IME_switch, swipe_down: Menu, hint: '方案'}
-      - {click: ',', label: ，, long_click: Extra_keyboard}
-      - {click: space, width: 39, swipe_up: Up, swipe_left: Left, swipe_right: Right, swipe_down: Down}
-      - {click: '.', label: 。, long_click: '……', swipe_left: '々', swipe_right: '、', hint: ' 々   、'}
       - {click: Return, width: 16, key_text_size: 24, key_text_offset_y: -2, key_back_color: enter_bg_color, key_text_color: enter_text_color, hilited_key_back_color: enter_pressed_bg_color, hilited_key_text_color: enter_pressed_text_color}
 
   bopomofo:

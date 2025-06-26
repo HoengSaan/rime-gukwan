@@ -13,7 +13,7 @@
 schema:
   schema_id: gukwan
   name: 菊韻
-  version: "18.6b"
+  version: "19.2.1b"
   author:
     - 靈帝（Hoengsaan）
   
@@ -32,6 +32,8 @@ schema:
     - kanas
     - kaomoji
     - kikwin
+    - gukwan-hiragana
+    - gukwan-katakana
     - gukwan-melt-eng
 
 # 開關 "reset: 0" 默認第一選項 "reset: 1" 默認第二選項 如此類推 無reset則保留上次使用狀態
@@ -89,6 +91,8 @@ engine:
     - affix_segmentor@kanas                 # 假名輸入
     - affix_segmentor@kaomoji               # 顏文字輸入
     - affix_segmentor@kikwin                # 和語輸入
+    - affix_segmentor@gukwan-hiragana       # 平假名（同文主題用）
+    - affix_segmentor@gukwan-katakana       # 片假名（同文主題用）
     - abc_segmentor
     - punct_segmentor
     - fallback_segmentor
@@ -103,6 +107,8 @@ engine:
     - script_translator@kanas               # 假名輸入
     - script_translator@kaomoji             # 顏文字輸入
     - script_translator@kikwin              # 和語輸入
+    - script_translator@gukwan-hiragana     # 平假名（同文主題用）
+    - script_translator@gukwan-katakana     # 片假名（同文主題用）
     - table_translator@gukwan-melt-eng      # 英語混打
     - lua_translator@*unicode               # Unicode
     - lua_translator@*calc_translator       # 計數機
@@ -503,8 +509,24 @@ kikwin:
   suffix: ";"
   tips: 〔和文〕
 
+gukwan-hiragana:
+  tag: gukwan-hiragana
+  dictionary: gukwan-hiragana
+  enable_user_dict: false
+  prefix: "`Q"
+  suffix: ";"
+  tips: 〔平假〕
+
+gukwan-katakana:
+  tag: gukwan-katakana
+  dictionary: gukwan-katakana
+  enable_user_dict: false
+  prefix: "`W"
+  suffix: ";"
+  tips: 〔片假〕
+
 special_typing: 
-  tags: [ kanas, kaomoji, kikwin ]
+  tags: [ kanas, kaomoji, kikwin, gukwan-hiragana, gukwan-katakana ]
   overwrite_comment: false
 
 gukwan-melt-eng:
@@ -552,6 +574,8 @@ recognizer:
     kanas: "^`G[a-zA-Z-]*;?$"
     kaomoji: "^`K[a-z-]*;?$"
     kikwin: "^`R[a-z-]*;?$"
+    gukwan-hiragana: "^`Q[a-z-]*;?$"
+    gukwan-katakana: "^`W[a-z-]*;?$"
     unicode: "^U[a-f0-9]+"
     number: "^S[0-9]+[.]?[0-9]*"
     calculator: "^cC.+"
