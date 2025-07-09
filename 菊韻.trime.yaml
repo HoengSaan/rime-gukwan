@@ -10,7 +10,7 @@
 # Learn how to use Gukwan in the readme file, available on the project's github page.
 # Source: https://github.com/Wenti-D/Astralwelkin
 
-config_version: '19.2.2b'
+config_version: '19.2.3b'
 name: 菊韻                                #方案名稱
 author: 'Windy_D <windy0deng@gmail.com>, Hoengsaan (Lingdai)'  #作者信息
 
@@ -2531,7 +2531,7 @@ preset_keyboards:
       - {click: 'b', long_click: '&', swipe_left: "'", swipe_right: '"', hint: "'   \""}
       - {click: 'n', long_click: '%', swipe_left: ';', swipe_right: ':', hint: ';   :'}
       - {click: 'm', long_click: '¿', swipe_left: '!', swipe_right: '?', hint: '!   ?'}
-      - {click: BackSpace, swipe_down: Delete, width: 16, key_text_offset_y: 0}
+      - {click: BackSpace, swipe_down: Delete, hint: '⇨', width: 16, key_text_offset_y: 0}
       #第五行
       - {click: Keyboard_basic_symbol, width: 12.5, key_text_offset_y: 0, long_click: Settings, swipe_left: Theme_settings, swipe_right: Color_switch, hint: "題　色"}
       - {click: Schema_switch, width: 12.5, key_text_offset_y: 0, long_click: IME_switch, swipe_down: Menu, hint: '方案'}
@@ -2594,7 +2594,7 @@ preset_keyboards:
       - {click: 'b', long_click: '&', swipe_left: "'", swipe_right: '"', hint: "'   \""}
       - {click: 'n', long_click: '%', swipe_left: ';', swipe_right: ':', hint: ';   :'}
       - {click: 'm', long_click: '¿', swipe_left: '!', swipe_right: '?', hint: '!   ?'}
-      - {click: BackSpace, swipe_down: Delete, width: 16, key_text_offset_y: 0}
+      - {click: BackSpace, swipe_down: Delete, hint: '⇨', width: 16, key_text_offset_y: 0}
       #第五行
       - {click: Keyboard_basic_symbol, width: 12.5, key_text_offset_y: 0, long_click: Settings, swipe_left: Theme_settings, swipe_right: Color_switch, hint: "題　色"}
       - {click: Schema_switch, width: 12.5, key_text_offset_y: 0, long_click: IME_switch, swipe_down: Menu, hint: '方案'}
@@ -2665,7 +2665,7 @@ preset_keyboards:
     - {click: space, width: 27.5, swipe_up: Up, swipe_left: Left, swipe_right: Right, swipe_down: Down}
     - {label: 'ㄦ', click: "-", long_click: Extra_keyboard}
     - {click: '，', long_click: '。'}
-    - {click: BackSpace, swipe_down: Delete, key_text_offset_y: 0}
+    - {click: BackSpace, swipe_down: Delete, hint: '⇨', key_text_offset_y: 0}
     - {click: Return, key_text_size: 42, key_text_offset_y: -8, key_back_color: enter_bg_color, key_text_color: enter_text_color, hilited_key_back_color: enter_pressed_bg_color, hilited_key_text_color: enter_pressed_text_color}
 
   number:
@@ -2675,8 +2675,6 @@ preset_keyboards:
     reset_ascii_mode: true
     width: 20
     height: 47
-    key_text_offset_y: -.4    #按鍵文本偏移（下正上負）
-    key_symbol_offset_y: -1.6 #按鍵上方註釋偏移（下正上負）
     keys:
       #第一行
       - {click: '=', swipe_up: '+', swipe_down: '-', swipe_left: '*', swipe_right: '/', hint: '四則'}
@@ -2710,14 +2708,14 @@ preset_keyboards:
     width: 20
     height: 47
     key_text_offset_y: -.4    #按鍵文本偏移（下正上負）
-    key_symbol_offset_y: -1.6 #按鍵上方註釋偏移（下正上負）
+    key_symbol_offset_y: 1.6 #按鍵上方註釋偏移（下正上負）
     keys:
       #第一行
       - {click: cut, long_click: cut_all}
       - {click: Home, long_click: Page_Up}
       - {click: Up}
       - {click: Delete, label: '⇨'}
-      - {click: BackSpace, long_click: Clear}
+      - {click: BackSpace}
       #第二行
       - {click: copy, long_click: copy_all}
       - {click: Left}
@@ -2728,11 +2726,11 @@ preset_keyboards:
       - {click: paste}
       - {click: End, long_click: Page_Down}
       - {click: Down}
-      - {click: '', label: ''}
+      - {click: ''}
       - {click: Liquid_fixed_space}
       #第四行
       - {click: Keyboard_default}
-      - {click: '', label: ''}
+      - {click: '', label: '❌', long_click: Clear, hint: '長壓確認'}
       - {click: undo}
       - {click: redo}
       - {click: Return, key_text_size: 24, key_text_offset_y: -2, key_back_color: enter_bg_color, key_text_color: enter_text_color, hilited_key_back_color: enter_pressed_bg_color, hilited_key_text_color: enter_pressed_text_color}
@@ -2779,7 +2777,7 @@ preset_keyboards:
       - {click: '✓'}
       - {click: '‰', long_click: '‱'}
       - {click: '¡'}
-      - {click: BackSpace, swipe_down: Delete, width: 16, key_text_offset_y: 0}
+      - {click: BackSpace, swipe_down: Delete, hint: '⇨', width: 16, key_text_offset_y: 0}
       #第四行
       - {click: Keyboard_default, width: 12.5, key_text_offset_y: 0}
       - {click: Keyboard_number, width: 12.5, key_text_offset_y: 0}
@@ -2831,7 +2829,7 @@ preset_keyboards:
       - {click: '≝', long_click: '≟', swipe_down: '∝', hint: '∝'}
       - {click: '∽', long_click: '∼', swipe_down: '≌', hint: '≌'}
       - {click: '⇔', long_click: '⇌', swipe_left: '', swipe_right: '', hint: '   '}
-      - {click: BackSpace, swipe_down: Delete, width: 16, key_text_offset_y: 0}
+      - {click: BackSpace, swipe_down: Delete, hint: '⇨', width: 16, key_text_offset_y: 0}
       #第四行
       - {click: Keyboard_default, width: 12.5, key_text_offset_y: 0}
       - {click: Keyboard_number, width: 12.5, key_text_offset_y: 0}
@@ -2882,7 +2880,7 @@ preset_keyboards:
       - {click: 'β', long_click: '&', swipe_left: "'", swipe_right: '"', hint: "'   \""}
       - {click: 'ν', long_click: '_', swipe_left: ';', swipe_right: ':', hint: ';   :'}
       - {click: 'μ', long_click: '¿', swipe_left: '!', swipe_right: '?', hint: '!   ?'}
-      - {click: BackSpace, swipe_down: Delete, width: 16, key_text_offset_y: 0}
+      - {click: BackSpace, swipe_down: Delete, hint: '⇨', width: 16, key_text_offset_y: 0}
       #第四行
       - {click: Keyboard_Greek_symbol, width: 15, key_text_offset_y: 0}
       - {click: ',', long_click: '«'}
@@ -2937,7 +2935,7 @@ preset_keyboards:
       - {click: '✓'}
       - {click: '‰', long_click: '‱'}
       - {click: '¡'}
-      - {click: BackSpace, swipe_down: Delete, width: 16, key_text_offset_y: 0}
+      - {click: BackSpace, swipe_down: Delete, hint: '⇨', width: 16, key_text_offset_y: 0}
       #第四行
       - {click: Keyboard_Greek, width: 15, key_text_offset_y: 0}
       - {click: ',', long_click: '«'}
@@ -3002,7 +3000,7 @@ preset_keyboards:
       - {click: 'ь', long_click: 'ъ', swipe_left: ';', swipe_right: ':', hint: ';   :'}
       - {click: 'б', swipe_left: '!', swipe_right: '?', hint: '!   ?'}
       - {click: 'ю', long_click: 'ю́'}
-      - {click: BackSpace, swipe_down: Delete, width: 9.5, key_text_offset_y: 0}
+      - {click: BackSpace, swipe_down: Delete, hint: '⇨', width: 9.5, key_text_offset_y: 0}
       #第四行
       - {click: Keyboard_Cyrillic_symbol, width: 15, key_text_offset_y: 0}
       - {click: ',', width: 10}
@@ -3057,7 +3055,7 @@ preset_keyboards:
       - {click: '✓'}
       - {click: '‰', long_click: '‱'}
       - {click: '¡'}
-      - {click: BackSpace, swipe_down: Delete, width: 16, key_text_offset_y: 0}
+      - {click: BackSpace, swipe_down: Delete, hint: '⇨', width: 16, key_text_offset_y: 0}
       #第四行
       - {click: Keyboard_Cyrillic, width: 15, key_text_offset_y: 0}
       - {click: ',', width: 10}
@@ -3148,7 +3146,7 @@ preset_keyboards:
       - {click: 'j'}
       - {click: 'ʎ', long_click: 'ȴ'}
       - {click: 'ɰ', long_click: 'ʟ'}
-      - {click: BackSpace, swipe_down: Delete, key_text_offset_y: 0}
+      - {click: BackSpace, swipe_down: Delete, hint: '⇨', key_text_offset_y: 0}
       #第六行
       - {click: Keyboard_IPA_symbol_1, width: 15, key_text_offset_y: 0}
       - {click: 'ˈ', width: 10}
@@ -3238,7 +3236,7 @@ preset_keyboards:
       - {width: *ipa_key_width}
       - {click: 'ɑ'}
       - {click: 'ɒ'}
-      - {click: BackSpace, swipe_down: Delete, key_text_offset_y: 0}
+      - {click: BackSpace, swipe_down: Delete, hint: '⇨', key_text_offset_y: 0}
       #第六行
       - {click: Keyboard_IPA_symbol_1, width: 15, key_text_offset_y: 0}
       - {click: 'ˈ', width: 10}
@@ -3330,7 +3328,7 @@ preset_keyboards:
       - {click: 'ǂ̃'}
       - {click: IPA_voiceless_below}
       - {click: IPA_ejective}
-      - {click: BackSpace, swipe_down: Delete, key_text_offset_y: 0}
+      - {click: BackSpace, swipe_down: Delete, hint: '⇨', key_text_offset_y: 0}
       #第六行
       - {click: Keyboard_IPA_symbol_1, width: 15, key_text_offset_y: 0}
       - {click: 'ˈ', width: 10}
@@ -3386,7 +3384,7 @@ preset_keyboards:
       - {click: IPA_extra_short}
       - {click: '|'}
       - {click: '‖'}
-      - {click: BackSpace, swipe_down: Delete, width: 16, key_text_offset_y: 0}
+      - {click: BackSpace, swipe_down: Delete, hint: '⇨', width: 16, key_text_offset_y: 0}
       #第四行
       - {click: Keyboard_IPA, width: 15, key_text_offset_y: 0}
       - {click: ','}
@@ -3441,7 +3439,7 @@ preset_keyboards:
       - {click: IPA_creaky_voiced}
       - {click: IPA_nasalized}
       - {click: IPA_rhoticity}
-      - {click: BackSpace, swipe_down: Delete, width: 16, key_text_offset_y: 0}
+      - {click: BackSpace, swipe_down: Delete, hint: '⇨', width: 16, key_text_offset_y: 0}
       #第四行
       - {click: Keyboard_IPA, width: 15, key_text_offset_y: 0}
       - {click: IPA_tie_bar_above, width: 12.5}
