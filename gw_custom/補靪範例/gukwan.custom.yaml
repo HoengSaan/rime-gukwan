@@ -34,13 +34,25 @@ patch:
       reset: 0
       states: [ 直出, 預測 ]
       abbrev: [ 直, 測 ]
+  
+  engine/filters:
+    - lua_filter@*is_in_user_dict
+    - reverse_lookup_filter@reverse_lookup  # 反查
+    - reverse_lookup_filter@special_typing  # 輸入
+    - lua_filter@*autocap_filter            # 自動大階
+    - simplifier@emoji_cantonese_suggestion # 繪文字輸入
+    - simplifier@hant_hk                    # 香港繁體
+    - simplifier@hant_tw                    # 臺灣正體
+    - simplifier@hans_jp                    # 日本新字體
+    - simplifier                            # 大陸簡體
+    - lua_filter@*en_spacer                 # 英語自動空格
+    - lua_filter@*text_formatting           # 换行:\n, 制表符：\t, 回車符：\r, 空格：\s
+    - uniquifier                            # 去重
+  
+  is_in_user_dict: true
 
   # 調用定製擴展詞庫
   translator/dictionary: gukwan-extended
-
-  # 測試用
-  engine/filters/@before 0: lua_filter@*is_in_user_dict
-  is_in_user_dict: true
 
   # 預測（電腦不建議開啓）
   # librime-predict 簡體可考慮用 wanxiang-lts-zh-predict.db

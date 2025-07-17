@@ -133,15 +133,36 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 - 香山系——中山市
   - `gukwan-sekki`【石岐鎮】：以石歧話新派音製作。（老派音需要自行製作字表，菊韻字表不能轉換）
 
-> 方案不能直接同新派音兼容，可能已不貼合實際情況，如：
->
-> - 曉匣喻母細音字部份字跟廣州讀`j`，但未變齊。
->   - 如「爺」讀`he4`，但係「園」讀`jyun4`（本應讀`hyun4`）
->   - 由於個個方言都變化程度唔同，我一個人絕無辦法去執晒，只能設定兩種音都出到字。
->   - 如小欖話只有極少數作爲白讀音殘留，例如「穴」`hyut6`，「嫌」`him4`。則可以特例處理。
-> - 師韻讀`y`定讀`i`
->   - 其實讀開`y`就應該全部讀`y`，但係不能避免的人遇到隻唔識既字，就直情跟廣州音。此處不作改變，如不能辨別者，請手動更改方案。
-> - 關於白讀字請見`readme-dialect.md`（[Link](https://github.com/HoengSaan/rime-gukwan/blob/main/readme-dialect.md)）。
+<blockquote>
+    <details>
+  <summary>方案不能直接同新派音兼容，可能已不貼合實際情況，如：</summary>
+  <ul>
+    <li>
+      曉匣喻母細音字受廣州影響讀<code>j</code>，但變化未完全。
+      <ul>
+        <li>
+          如「爺」讀<code>he4</code>，但係「園」讀<code>jyun4</code>（本應讀<code>hyn4</code>）
+        </li>
+        <li>
+          由於個個方言都變化程度唔同，我一個人絕無辦法去執晒，只能設定兩種音都出到字。
+        </li>
+        <li>
+            如小欖話只有極少數作爲白讀音殘留，例如「穴」<code>hyut6</code>等。則可以特例處理。</li>
+        </ul>
+            <li>師韻讀<code>yu</code>定讀<code>i</code><ul>
+                            <li>
+              其實讀開<code>yu</code>就應該全部讀<code>i</code>，但係不能避免遇到隻冇識既字，就直情跟hin1廣州音。此處不作改變，如不能辨別者，請手動更改方案。
+            </li>
+            <li>
+                關於白讀字請見<code>readme-dialect.md</code>）。
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</details>
+</blockquote>
 
 <mark>建議根據說明自行調整方案。</mark>
 
@@ -163,17 +184,13 @@ This is a schema based on [Rime Input Method](https://rime.im/).
   - 以`q`輸入`kw`：如「裙」`kwan`則爲`qan`
   - 以`x`輸入`gw`：如「轟」`gwang`則爲`xar`
   - 以`r`輸入`ng`：如「我」`ngo`則爲`ngo`（不支持單獨成韻，即「吳」`ng`無法以`r`輸入）
-- 區分平翹日以之方言（僅`gukwan-default`）
-  - 以`z`輸入`zh`（實質模糊音，默認關閉）
-  - 以`c`輸入`ch`（實質模糊音，默認關閉）
-  - 以`s`輸入`sh`（實質模糊音，默認關閉）
-  - 以`q`輸入`kw`
-  - 以`x`輸入`gw`
+- 區分平翹日以之方言增補（僅`gukwan-default`，可參攷此三拼並自行適配梧州話等方言）
+  - 以`z/c/s`輸入`zh/ch/sh`（實質模糊音，默認關閉）
   - 以`r`輸入`ng`｜`ngi`｜`nj`：如「言」`ngin`則爲`rin`，如「仍」`njing`則爲`rir`
 
 ##### 母音（韻母）
 
-- 無韻尾情況（如`laa`，`loe`等）
+- 無韻尾情況（如`laa`，`loe`等），等同於普通粵拼
   - 以`a`輸入`aa`：如「瓜」`gwaa`則爲`xa`
   - 以`y`輸入`yu`（`jyu`）：如「擧」`gyu`則爲`gy`
 - 有韻尾情況（如`laang`，`loeng`等）
@@ -281,7 +298,7 @@ Android可用自帶主題（`菊韻.trime.yaml`），使用功能更加方便。
    4. [rime-loengfan](https://github.com/CanCLID/rime-loengfan)（**可選**，用於廣州話拆字反査）
    5. [rime-luna-pinyin](https://github.com/rime/rime-luna-pinyin)（**可選**，若閣下已刪除則須重新安裝，否則無法使用官話反査）
    6. [rime-cangjie](https://github.com/rime/rime-cangjie)（**可選**，若閣下已刪除則須重新安裝，否則無法使用倉頡反査）
-   7. [rime-kikwin](https://github.com/Hoengsaan/rime-kikwin/)（**可選**，用於日文半混打，低性能設備建議關閉，只使用`rime-kanas`同`rime-kaomoji`）
+   7. [rime-kikwin](https://github.com/Hoengsaan/rime-kikwin/)（**可選**，用於日文半混打，假名輸入，顏文字輸入）
 3. 設定方案，重新部署
 
 ## 定製
@@ -422,7 +439,7 @@ Android可用自帶主題（`菊韻.trime.yaml`），使用功能更加方便。
 - `number_gukwan.lua`：以阿拉伯數字輸入轉換漢語數字，來自[yanhuacuo/98wubi-tables](https://github.com/yanhuacuo/98wubi-tables)。增加轉換蘇州碼子功能。增加直接轉換功能。由於源文件採取[Unlicense 許可](https://unlicense.org/)，本文件亦不設限。
 - `time_gukwan.lua`：以各種格式輸入是日日期時間，來自[amzxyz/rime_wanxiang](amzxyz/rime_wanxiang)。隨源文件以[CC BY 4.0 許可](https://creativecommons.org/licenses/by/4.0/)發佈。
 
-以下 Python 同 CMD 腳本，爲本人借助AI所作。
+以下 Python 同 CMD 腳本，爲本人借助AI所作。位置爲`/gw_custom`
 
 - `去除輸入碼.py`：自動去除詞庫輸入碼。
 - `繁簡轉換.cmd`：使用 OpenCC 進行繁簡轉換。
@@ -432,11 +449,12 @@ Android可用自帶主題（`菊韻.trime.yaml`），使用功能更加方便。
 
 以下爲本倉庫自帶，毋須額外下載。關於其他依賴文件請參攷[如何在 RIME 輸入法安裝菊韻輸入法 – なかやま園](https://zonsan.fc2.page/?p=1563)。
 
-- [`rime-cantonese-emoji`](https://github.com/rime/rime-emoji-cantonese)：用於輸入繪文字，隨源文件以[CC 0 許可](https://creativecommons.org/public-domain/cc0/)發佈。
+- [`rime-cantonese-emoji`](https://github.com/rime/rime-emoji-cantonese)：用於輸入繪文字，並無進行修改，隨源文件以[CC 0 許可](https://creativecommons.org/public-domain/cc0/)發佈。
 - `symbols-gukwan.yaml`：菊韻定製標點符號（類似 Microsoft 日本語 IME）同特殊符號輸入。
 - `菊韻.trime.yaml`：同文輸入法主題，基於[Wenti-D/Astralwelkin](https://github.com/Wenti-D/Astralwelkin)，隨源文件以[MIT 許可](https://mit-license.org/)發佈。不同點如下：
-  - 鍵值更改，允許一鍵反査（q 鍵、p 鍵、a 鍵）。
-  - 專用配色，參攷小欖特色菊花，但未夠膽用黃色驚太鮮豔，結果就變成屎黃色((o(；□；`)o))。
+  - 基本鍵盤鍵值更改，以更貼近 QWERTY 鍵盤體驗
+  - 增刪部份鍵盤、增加編輯器、以及各類微細修改
+  - 更多配色（正在製作）
 - `OpenCC 開放中文轉換`：開箱即用，用於繁簡轉換，隨源文件以[Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0.html)發佈。**位置爲`/gw_custom`。**
 
 ## 銘謝
@@ -444,7 +462,7 @@ Android可用自帶主題（`菊韻.trime.yaml`），使用功能更加方便。
 在此特別致謝於上文中所提及方案、字表、詞庫同腳本創作者，亦感謝以下書籍及網站的作者和編者。若無諸位努力，本人亦無法製作菊韻。
 
 - 高然《中山方言誌》
-- 何惠玲、馮國強《中山市沙田族羣的方音傳承及其民俗變遷》（以上皆簡稱爲《沙田方言》
+- 何惠玲、馮國強《中山市沙田族羣的方音傳承及其民俗變遷》（簡稱爲《沙田方言》）
 - 中山市地方誌編撰委員會《中山市志(1979-2005)》
 - 葉卉時《廣府方言順德話》
 - 羅言發《澳門粵語音系的歷史變遷及其成因》

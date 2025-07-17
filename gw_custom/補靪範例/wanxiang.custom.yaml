@@ -1,0 +1,40 @@
+# wanxiang.schema.yaml
+
+# 菊韻補靪範例
+# 瞭解如何使用菊韻請閱覽readme文件，詳細請至本方案github頁：
+# https://github.com/HoengSaan/rime-gukwan
+# This is a patch template for Gukwan Cantonese Input Method.
+# Learn how to use Gukwan in the readme file, available on the project's github page. 
+
+# 方案
+patch:
+  # 更改開關
+  switches:
+    - name: ascii_mode
+      reset: 0
+      states: [ 中, 英 ]
+    - name: full_shape
+      reset: 0
+      states: [ 半, 全 ]
+    - name: s2t
+      reset: 1
+      states: [ 简, 繁 ]
+    - name: ascii_punct
+      reset: 0
+      states: [ ￥, ＄ ]
+    - name: emoji
+      reset: 0
+      states: [ 🙁, 😄 ]  
+    #- name: chinese_english
+    #  states: [ 翻译关, 翻译开 ]
+    #- name: tone_display
+    #  states: [ 声调关, 声调开 ]
+    - name: tone_hint
+      states: [ 無, 音 ]
+    - name: super_tips
+      states: [ 🌙, 💡 ]
+      reset: 1
+    - name: prediction
+      states: [ 直, 測 ]
+    - name: search_single_char
+      states: [ 詞, 單 ]

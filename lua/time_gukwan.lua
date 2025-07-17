@@ -2050,7 +2050,7 @@ local function get_upcoming_holidays()
   if mothers_day_days_left and mothers_day_days_left >= 0 then
     -- 直接使用完整日期
     local formatted_date = mothers_day_date:sub(1, 4) .. "年" .. mothers_day_date:sub(5, 6) .. "月" .. mothers_day_date:sub(7, 8) .. "日"
-    table.insert(upcoming_holidays, {"母親节", formatted_date, mothers_day_days_left})
+    table.insert(upcoming_holidays, {"母親節", formatted_date, mothers_day_days_left})
   end
   
   -- 父亲节：每年6月的第三个星期日
@@ -2359,16 +2359,16 @@ local function translator(input, seg, env)
         local summary = 
             string.format("※%s\n", greeting) ..
             line .. "\n" ..
-            string.format("☉今日是：%s %s\n",  zero_holiday or "", zero_jieqi or "") ..
-            string.format("☉%d年%d月%d日 %s\n", year, month, day, week_day_str) ..
-            string.format("☉農曆：%s\n", lunar_info_str) ..
+            string.format("☉ 今日是：%s %s\n",  zero_holiday or "", zero_jieqi or "") ..
+            string.format("☉ %d年%d月%d日 %s\n", year, month, day, week_day_str) ..
+            string.format("☉ 農曆%s\n", lunar_info_str) ..
             line .. "\n" ..
-            string.format("◉%d進度：\n", year) ..
-            string.format("◈%s\n",progress_bar) ..
-            string.format("◈本年第[ %d ]週，本月第[ %d ]週\n", week_of_year, week_of_month) ..
-            string.format("◈離 %d 年： [ %d ]日\n", next_year, diff_days_next_year) ..
-            string.format("◈今年已過[ %d ]日\n", day_of_year - 1) .. 
-            string.format("◈今日是第[ %d ]日\n", day_of_year) ..
+            string.format("◉ %d進度：\n", year) ..
+            string.format("◈ %s\n",progress_bar) ..
+            string.format("◈ 本年第[ %d ]週，本月第[ %d ]週\n", week_of_year, week_of_month) ..
+            string.format("◈ 離 %d 年： [ %d ]日\n", next_year, diff_days_next_year) ..
+            string.format("◈ 今年已過[ %d ]日\n", day_of_year - 1) .. 
+            string.format("◈ 今日是第[ %d ]日\n", day_of_year) ..
             line .. "\n" ..
             string.format("◉ 離：\n") ..
             string.format("◈ %s %s 重有 [ %d ]日\n", holiday_data[1][1], holiday_data[1][2], holiday_data[1][3]) .. 
