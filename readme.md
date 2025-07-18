@@ -452,7 +452,7 @@ Android可用自帶主題（`菊韻.trime.yaml`），使用功能更加方便。
 - [`rime-cantonese-emoji`](https://github.com/rime/rime-emoji-cantonese)：用於輸入繪文字，並無進行修改，隨源文件以[CC 0 許可](https://creativecommons.org/public-domain/cc0/)發佈。
 - `symbols-gukwan.yaml`：菊韻定製標點符號（類似 Microsoft 日本語 IME）同特殊符號輸入。
 - `菊韻.trime.yaml`：同文輸入法主題，基於[Wenti-D/Astralwelkin](https://github.com/Wenti-D/Astralwelkin)，隨源文件以[MIT 許可](https://mit-license.org/)發佈。不同點如下：
-  - 基本鍵盤鍵值更改，以更貼近 QWERTY 鍵盤體驗
+  - 所有基本鍵盤鍵值重整，以更貼近 QWERTY 鍵盤體驗
   - 增刪部份鍵盤、增加編輯器、以及各類微細修改
   - 更多配色（正在製作）
 - `OpenCC 開放中文轉換`：開箱即用，用於繁簡轉換，隨源文件以[Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0.html)發佈。**位置爲`/gw_custom`。**
