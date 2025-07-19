@@ -10,7 +10,7 @@
 # Learn how to use Gukwan in the readme file, available on the project's github page.
 # Source: https://github.com/Wenti-D/Astralwelkin
 
-config_version: '19.3b'
+config_version: '19.4b'
 name: 菊韻                                #方案名稱
 author: 'Windy_D <windy0deng@gmail.com>, Hoengsaan (Lingdai)'  #作者信息
 
@@ -60,6 +60,8 @@ style:
     - IPA_symbol_1
     - IPA_symbol_2
     - editor
+    - hiragana
+    - katakana
   proximity_correction: true    #避免按到縫隙
   reset_ascii_mode: true        #自動轉回中文
   latin_locale: en_US           #這些
@@ -496,6 +498,8 @@ preset_keys:
   Keyboard_IPA_symbol_1: {label: '/ [ {', send: Eisu_toggle, select: IPA_symbol_1}
   Keyboard_IPA_symbol_2: {label: '◌̥◌ʰ', send: Eisu_toggle, select: IPA_symbol_2}
   Keyboard_editor: {label: '編輯', send: Eisu_toggle, select: editor}
+  Keyboard_hiragana: {label: 'いろは', send: Eisu_toggle, select: hiragana}
+  Keyboard_katakana: {label: 'イロハ', send: Eisu_toggle, select: katakana}
   Keyboard_fancy: {label: '分詞', send: apostrophe, functional: false}
   IPA_exhigh: {label: '◌̋', text: "̋"}
   IPA_high: {label: '◌́', text: "́"}
@@ -2530,8 +2534,8 @@ preset_keyboards:
       - {click: 'd', swipe_left: '《', swipe_right: '》', hint: '《   》'}
       - {click: 'f', swipe_left: '「', swipe_right: '」', hint: '「   」'}
       - {click: 'g', swipe_left: '『', swipe_right: '』', hint: '『   』'}
-      - {click: 'h', swipe_left: '【', swipe_right: '】', hint: '【   】'}
-      - {click: 'j', swipe_left: ';', swipe_right: ':', hint: ';   :'}
+      - {click: 'h', long_click: Keyboard_hiragana, swipe_left: '【', swipe_right: '】', hint: '【   】'}
+      - {click: 'j', long_click: Keyboard_katakana, swipe_left: ';', swipe_right: ':', hint: ';   :'}
       - {click: 'k', swipe_left: "'", swipe_right: '"', hint: "'   \""}
       - {click: 'l', long_click: '-', swipe_up: '-', swipe_down: '_', hint: '_'}
       - {width: 5}
@@ -2591,9 +2595,9 @@ preset_keyboards:
       - {click: 's', long_click: Number_Lua, swipe_left: '〈', swipe_right: '〉', hint: '〈   〉'}
       - {click: 'd', long_click: Date_Lua, swipe_left: '《', swipe_right: '》', hint: '《   》'}
       - {click: 'f', long_click: Unicode_Lua, swipe_left: '「', swipe_right: '」', hint: '「   」'}
-      - {click: 'g', long_click: Google, swipe_left: '『', swipe_right: '』', hint: '『   』'}
-      - {click: 'h', swipe_left: '【', swipe_right: '】', hint: '【   】'}
-      - {click: 'j', swipe_left: ';', swipe_right: ':', hint: ';   :'}
+      - {click: 'g', swipe_left: '『', swipe_right: '』', hint: '『   』'}
+      - {click: 'h', long_click: Keyboard_hiragana, swipe_left: '【', swipe_right: '】', hint: '【   】'}
+      - {click: 'j', long_click: Keyboard_katakana, swipe_left: ';', swipe_right: ':', hint: ';   :'}
       - {click: 'k', swipe_left: "'", swipe_right: '"', hint: "'   \""}
       - {click: 'l', long_click: '-', swipe_up: '-', swipe_down: '_', hint: '_'}
       - {width: 5}
@@ -2623,19 +2627,19 @@ preset_keyboards:
     width: 20
     height: 47
     keys:
-      #第一行
-      - {click: '=', swipe_up: '+', swipe_down: '-', swipe_left: '*', swipe_right: '/', hint: '四則'}
+      #第二行
+      - {click: '', swipe_up: '+', swipe_down: '-', swipe_left: '*', swipe_right: '/', hint: '四則'}
       - {click: '1'}
       - {click: '2'}
       - {click: '3'}
       - {click: BackSpace}
-      #第二行
+      #第三行
       - {click: Left}
       - {click: '4'}
       - {click: '5'}
       - {click: '6'}
       - {click: Right}
-      #第三行
+      #第四行
       - {click: '%'}
       - {click: '7'}
       - {click: '8'}
@@ -2680,6 +2684,84 @@ preset_keyboards:
       - {click: '', label: '❌', long_click: Clear, hint: '長壓確認'}
       - {click: undo}
       - {click: redo}
+      - {click: Return, key_text_size: 24, key_text_offset_y: -2, key_back_color: enter_bg_color, key_text_color: enter_text_color, hilited_key_back_color: enter_pressed_bg_color, hilited_key_text_color: enter_pressed_text_color}
+
+  hiragana:
+    name: 平假名小鍵盤
+    author: 'Hoengssaan (Lingdai)'
+    ascii_mode: 1
+    reset_ascii_mode: true
+    width: 20
+    keys:
+      #第一行
+      - {click: 'ー', width: 10}
+      - {click: 'っ', width: 10}
+      - {click: 'あ', swipe_left: 'い', swipe_up: 'う', swipe_right: 'え', swipe_down: お'}
+      - {click: 'か', swipe_left: 'き', swipe_up: 'く', swipe_right: 'け', swipe_down: 'こ'}
+      - {click: 'さ', swipe_left: 'し', swipe_up: 'す', swipe_right: 'せ', swipe_down: 'そ'}
+      - {click: BackSpace}
+      #第二行
+      - {click: 'が', swipe_left: 'ぎ', swipe_up: 'ぐ', swipe_right: 'げ', swipe_down: 'ご'}
+      - {click: 'た', swipe_left: 'ち', swipe_up: 'つ', swipe_right: 'て', swipe_down: 'と'}
+      - {click: 'な', swipe_left: 'に', swipe_up: 'ぬ', swipe_right: 'ね', swipe_down: 'の'}
+      - {click: 'は', swipe_left: 'ひ', swipe_up: 'ふ', swipe_right: 'へ', swipe_down: 'ほ'}
+      - {click: 'ざ', swipe_left: 'じ', swipe_up: 'ず', swipe_right: 'ぜ', swipe_down: 'ぞ'}
+      #第三行
+      - {click: Left}
+      - {click: 'だ', swipe_left: 'ぢ', swipe_up: 'づ', swipe_right: 'で', swipe_down: 'ど'}
+      - {click: 'ば', swipe_left: 'び', swipe_up: 'ぶ', swipe_right: 'べ', swipe_down: 'ぼ'}
+      - {click: 'ぱ', swipe_left: 'ぴ', swipe_up: 'ぷ', swipe_right: 'ぺ', swipe_down: 'ぽ'}
+      - {click: Right}
+      #第四行
+      - {click: Keyboard_katakana}
+      - {click: 'ま', swipe_left: 'み', swipe_up: 'む', swipe_right: 'め', swipe_down: 'も'}
+      - {click: 'や', swipe_left: 'い', swipe_up: 'ゆ', swipe_right: 'え', swipe_down: 'よ'}
+      - {click: 'ら', swipe_left: 'り', swipe_up: 'る', swipe_right: 'れ', swipe_down: 'ろ'}
+      - {click: Liquid_fixed_space}
+      #第五行
+      - {click: Keyboard_default}
+      - {click: 'ぁ', swipe_left: 'ぃ', swipe_up: 'ぅ', swipe_right: 'ぇ', swipe_down: 'ぉ'}
+      - {click: 'わ', swipe_left: 'ゐ', swipe_up: 'う', swipe_right: 'ゑ', swipe_down: 'を'}
+      - {click: 'ん'}
+      - {click: Return, key_text_size: 24, key_text_offset_y: -2, key_back_color: enter_bg_color, key_text_color: enter_text_color, hilited_key_back_color: enter_pressed_bg_color, hilited_key_text_color: enter_pressed_text_color}
+      
+  katakana:
+    name: 片假名小鍵盤
+    author: 'Hoengssaan (Lingdai)'
+    ascii_mode: 1
+    reset_ascii_mode: true
+    width: 20
+    keys:
+      #第一行
+      - {click: 'ー', width: 10}
+      - {click: 'ッ', width: 10}
+      - {click: 'ア', swipe_left: 'イ', swipe_up: 'ウ', swipe_right: 'エ', swipe_down: 'オ'}
+      - {click: 'カ', swipe_left: 'キ', swipe_up: 'ク', swipe_right: 'ケ', swipe_down: 'コ'}
+      - {click: 'サ', swipe_left: 'シ', swipe_up: 'ス', swipe_right: 'セ', swipe_down: 'ソ'}
+      - {click: BackSpace}
+      #第二行
+      - {click: 'ガ', swipe_left: 'ギ', swipe_up: 'グ', swipe_right: 'ゲ', swipe_down: 'ゴ'}
+      - {click: 'タ', swipe_left: 'チ', swipe_up: 'ツ', swipe_right: 'テ', swipe_down: 'ト'}
+      - {click: 'ナ', swipe_left: 'ニ', swipe_up: 'ヌ', swipe_right: 'ネ', swipe_down: 'ノ'}
+      - {click: 'ハ', swipe_left: 'ヒ', swipe_up: 'フ', swipe_right: 'ヘ', swipe_down: 'ホ'}
+      - {click: 'ザ', swipe_left: 'ジ', swipe_up: 'ズ', swipe_right: 'ゼ', swipe_down: 'ゾ'}
+      #第三行
+      - {click: Left}
+      - {click: 'ダ', swipe_left: 'ヂ', swipe_up: 'ヅ', swipe_right: 'デ', swipe_down: 'ド'}
+      - {click: 'バ', swipe_left: 'ビ', swipe_up: 'ブ', swipe_right: 'ベ', swipe_down: 'ボ'}
+      - {click: 'パ', swipe_left: 'ピ', swipe_up: 'プ', swipe_right: 'ペ', swipe_down: 'ポ'}
+      - {click: Right}
+      #第四行
+      - {click: Keyboard_hiragana}
+      - {click: 'マ', swipe_left: 'ミ', swipe_up: 'ム', swipe_right: 'メ', swipe_down: 'モ'}
+      - {click: 'ヤ', swipe_left: 'イ', swipe_up: 'ユ', swipe_right: 'エ', swipe_down: 'ヨ'}
+      - {click: 'ラ', swipe_left: 'リ', swipe_up: 'ル', swipe_right: 'レ', swipe_down: 'ロ'}
+      - {click: Liquid_fixed_space}
+      #第五行
+      - {click: Keyboard_default}
+      - {click: 'ァ', swipe_left: 'ィ', swipe_up: 'ゥ', swipe_right: 'ェ', swipe_down: 'ォ'}
+      - {click: 'ワ', swipe_left: 'ヰ', swipe_up: 'ウ', swipe_right: 'ヱ', swipe_down: 'ヲ'}
+      - {click: 'ン'}
       - {click: Return, key_text_size: 24, key_text_offset_y: -2, key_back_color: enter_bg_color, key_text_color: enter_text_color, hilited_key_back_color: enter_pressed_bg_color, hilited_key_text_color: enter_pressed_text_color}
 
   basic_symbol:
