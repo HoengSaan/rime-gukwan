@@ -10,7 +10,7 @@
 # Learn how to use Gukwan in the readme file, available on the project's github page.
 # Source: https://github.com/Wenti-D/Astralwelkin
 
-config_version: '19.4b'
+config_version: '19.4.1b'
 name: 菊韻                                #方案名稱
 author: 'Windy_D <windy0deng@gmail.com>, Hoengsaan (Lingdai)'  #作者信息
 
@@ -2605,7 +2605,7 @@ preset_keyboards:
       - {click: Shift_L, width: 14, key_text_offset_y: 0, has_menu: Keyboard_fancy}
       - {click: 'z', long_click: undo, swipe_down: Keyboard_editor, hint: '編輯器'}
       - {click: 'x', long_click: cut, swipe_down: Keyboard_emoji, hint: '繪文字'}
-      - {click: 'c', long_click: copy, swipe_down: Calc, hint: '計數機'}
+      - {click: 'c', long_click: copy, swipe_down: Calc_Lua, hint: '計數機'}
       - {click: 'v', long_click: paste, swipe_down: Keyboard_clipboard, hint: '剪貼板'}
       - {click: 'b', long_click: Date, swipe_down: Extra_keyboard, hint: 'αбʃ'}
       - {click: 'n', long_click: Time, swipe_down: Keyboard_number, hint: '123'}
@@ -2624,32 +2624,38 @@ preset_keyboards:
     author: 'Hoengssaan (Lingdai)'
     ascii_mode: 1
     reset_ascii_mode: true
-    width: 20
+    width: 11.5
     height: 47
     keys:
+      #第一行
+      - {click: '#', long_click: '@', swipe_left: '¢', swipe_right: '€' , hint: '¢   €'}
+      - {click: '¥', long_click: '$', swipe_up: '$', swipe_left: '£', swipe_right: '₩', hint: '£   ₩'}
+      - {click: '%', swipe_left: '‰', swipe_right: '‱'}
+      - {click: '1', width: 18}
+      - {click: '2', width: 18}
+      - {click: '3', width: 18}
+      - {click: BackSpace, swipe_down: Delete, hint: '⇨'}
       #第二行
-      - {click: '', swipe_up: '+', swipe_down: '-', swipe_left: '*', swipe_right: '/', hint: '四則'}
-      - {click: '1'}
-      - {click: '2'}
-      - {click: '3'}
-      - {click: BackSpace}
-      #第三行
+      - {click: '+'}
+      - {click: '-'}
       - {click: Left}
-      - {click: '4'}
-      - {click: '5'}
-      - {click: '6'}
+      - {click: '4', width: 18}
+      - {click: '5', width: 18}
+      - {click: '6', width: 18}
       - {click: Right}
       #第四行
-      - {click: '%'}
-      - {click: '7'}
-      - {click: '8'}
-      - {click: '9'}
+      - {click: '*', long_click: '×', swipe_up: '×'}
+      - {click: '/', long_click: '÷', swipe_up: '÷'}
+      - {click: '=', long_click: '≠', swipe_up: '≠', swipe_left: '≈', swipe_right: '≒', hint: '≈   ≒'}
+      - {click: '7', width: 18}
+      - {click: '8', width: 18}
+      - {click: '9', width: 18}
       - {click: Liquid_fixed_space}
       #第四行
-      - {click: Keyboard_default}
-      - {click: '_'}
-      - {click: '0'}
-      - {click: '.'}
+      - {click: Keyboard_default, width: 17.25}
+      - {click: Keyboard_math_symbol, width: 17.25}
+      - {click: '0', width: 36}
+      - {click: '.', width: 18}
       - {click: Return, key_text_size: 24, key_text_offset_y: -2, key_back_color: enter_bg_color, key_text_color: enter_text_color, hilited_key_back_color: enter_pressed_bg_color, hilited_key_text_color: enter_pressed_text_color}
 
   editor:
