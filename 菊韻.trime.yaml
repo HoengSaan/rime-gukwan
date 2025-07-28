@@ -10,7 +10,7 @@
 # Learn how to use Gukwan in the readme file, available on the project's github page.
 # Source: https://github.com/Wenti-D/Astralwelkin
 
-config_version: '19.4.1b'
+config_version: '19.4.3b'
 name: 菊韻                                #方案名稱
 author: 'Windy_D <windy0deng@gmail.com>, Hoengsaan (Lingdai)'  #作者信息
 
@@ -412,10 +412,10 @@ preset_keys:
   End: {label: '行尾', send: End}
   Page_Up: {label: '上䈎', send: Page_Up}
   Page_Down: {label: '下䈎', send: Page_Down}
-  Left: {label: '←', send: Left}
-  Down: {label: '↓', send: Down}
-  Up: {label: '↑', send: Up}
-  Right: {label: '→', send: Right}
+  Left: {label: '←', repeatable: true, send: Left}
+  Down: {label: '↓', repeatable: true, send: Down}
+  Up: {label: '↑', repeatable: true, send: Up}
+  Right: {label: '→', repeatable: true, send: Right}
   select_all: {label: 全選, send: Control+a}
   Clear: {label: 清除, text: "{Control+a}{BackSpace}"} #全選並刪除
   cut: {label: 剪切, send: Control+x}
@@ -2628,9 +2628,9 @@ preset_keyboards:
     height: 47
     keys:
       #第一行
-      - {click: '#', long_click: '@', swipe_left: '¢', swipe_right: '€' , hint: '¢   €'}
+      - {click: '#', long_click: '@', swipe_up: '@', swipe_left: '¢', swipe_right: '€' , hint: '¢   €'}
       - {click: '¥', long_click: '$', swipe_up: '$', swipe_left: '£', swipe_right: '₩', hint: '£   ₩'}
-      - {click: '%', swipe_left: '‰', swipe_right: '‱'}
+      - {click: '%', swipe_left: '‰', swipe_right: '‱', hint: '‰   ‱'}
       - {click: '1', width: 18}
       - {click: '2', width: 18}
       - {click: '3', width: 18}
@@ -2671,7 +2671,7 @@ preset_keyboards:
       - {click: cut, long_click: cut_all}
       - {click: Home, long_click: Page_Up}
       - {click: Up}
-      - {click: Delete, label: '⇨'}
+      - {click: Delete}
       - {click: BackSpace}
       #第二行
       - {click: copy, long_click: copy_all}
@@ -2705,7 +2705,7 @@ preset_keyboards:
       - {click: 'あ', swipe_left: 'い', swipe_up: 'う', swipe_right: 'え', swipe_down: お'}
       - {click: 'か', swipe_left: 'き', swipe_up: 'く', swipe_right: 'け', swipe_down: 'こ'}
       - {click: 'さ', swipe_left: 'し', swipe_up: 'す', swipe_right: 'せ', swipe_down: 'そ'}
-      - {click: BackSpace}
+      - {click: BackSpace, swipe_down: Delete, hint: '⇨'}
       #第二行
       - {click: 'が', swipe_left: 'ぎ', swipe_up: 'ぐ', swipe_right: 'げ', swipe_down: 'ご'}
       - {click: 'た', swipe_left: 'ち', swipe_up: 'つ', swipe_right: 'て', swipe_down: 'と'}
@@ -2744,7 +2744,7 @@ preset_keyboards:
       - {click: 'ア', swipe_left: 'イ', swipe_up: 'ウ', swipe_right: 'エ', swipe_down: 'オ'}
       - {click: 'カ', swipe_left: 'キ', swipe_up: 'ク', swipe_right: 'ケ', swipe_down: 'コ'}
       - {click: 'サ', swipe_left: 'シ', swipe_up: 'ス', swipe_right: 'セ', swipe_down: 'ソ'}
-      - {click: BackSpace}
+      - {click: BackSpace, swipe_down: Delete, hint: '⇨'}
       #第二行
       - {click: 'ガ', swipe_left: 'ギ', swipe_up: 'グ', swipe_right: 'ゲ', swipe_down: 'ゴ'}
       - {click: 'タ', swipe_left: 'チ', swipe_up: 'ツ', swipe_right: 'テ', swipe_down: 'ト'}
