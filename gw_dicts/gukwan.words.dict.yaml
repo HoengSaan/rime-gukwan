@@ -13,7 +13,7 @@
 
 ---
 name: gukwan.words
-version: "16.6b"
+version: "19.4.4b"
 sort: by_weight
 ... 
 
@@ -11151,7 +11151,7 @@ sort: by_weight
 肥料
 肥佬
 肥美
-肥妹 fi4 mui1
+肥妹	fi4 mui1
 肥滿
 肥𥹉
 肥膩
@@ -27318,7 +27318,7 @@ sort: by_weight
 落貼
 落臺
 落堂
-落畫	look6	waa2
+落畫	look6 waa2
 落鑊
 落戶
 落棧
@@ -54427,7 +54427,7 @@ sort: by_weight
 夠有突
 教友派
 校驗碼
-教研室
+教研室 
 教育署
 教育局
 教員室
@@ -77648,8 +77648,7 @@ sort: by_weight
 假手於人
 假性近視
 架上繪畫	gaa2 sjiong5 kui2 waa2
-架上繪畫	gaa2 sjiong5 wui6
-waa2
+架上繪畫	gaa2 sjiong5 wui6 waa2
 架車咁逼
 價低者得
 咖啡和茶

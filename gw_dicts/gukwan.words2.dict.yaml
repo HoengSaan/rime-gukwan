@@ -12,7 +12,7 @@
 
 ---
 name: gukwan.words2
-version: "18.5b"
+version: "19.4.4b"
 sort: by_weight
 use_preset_vocabulary: true
 ...
@@ -114,16 +114,16 @@ Z	Z
 
 # Other
 %	pat6 sen1
-+ gaa1 hou4
++	gaa1 hou4
 +	gaa1
 -	gaem2 hou4
 -	gaem2
-× sjing4 hou4
-× sjing4
-÷ cryo4 hou4
-÷ cryo4
-≠ bat1 dang2 jyo1
-≠ jok3 dang2 jyo1
+×	sjing4 hou4
+×	sjing4
+÷	cryo4 hou4
+÷	cryo4
+≠	bat1 dang2 jyo1
+≈	jok3 dang2 jyo1
 
 # 檯波術語
 # 見https://github.com/HoengSaan/rime-gukwan/wiki/檯波術語
@@ -138,7 +138,7 @@ Cue Ball	kiu1 bo1
 黑柴點	
 Pink波	ping1 bo1
 粉波	
-Pink波點	
+Pink波點	ping1 bo1 dim2	
 粉波點	
 藍波	
 藍波點	
