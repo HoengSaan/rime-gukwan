@@ -498,8 +498,8 @@ preset_keys:
   Keyboard_IPA_symbol_1: {label: '/ [ {', send: Eisu_toggle, select: IPA_symbol_1}
   Keyboard_IPA_symbol_2: {label: '◌̥◌ʰ', send: Eisu_toggle, select: IPA_symbol_2}
   Keyboard_editor: {label: '編輯', send: Eisu_toggle, select: editor}
-  Keyboard_hiragana: {label: 'いろは', send: Eisu_toggle, select: hiragana}
-  Keyboard_katakana: {label: 'イロハ', send: Eisu_toggle, select: katakana}
+  Keyboard_Hiragana: {label: 'いろは', send: Eisu_toggle, select: hiragana}
+  Keyboard_Katakana: {label: 'イロハ', send: Eisu_toggle, select: katakana}
   Keyboard_fancy: {label: '分詞', send: apostrophe, functional: false}
   IPA_exhigh: {label: '◌̋', text: "̋"}
   IPA_high: {label: '◌́', text: "́"}
@@ -561,7 +561,18 @@ preset_keys:
   Liquid_fixed_left: {label: ' ← ', send: Left}
   Liquid_fixed_right: {label: ' → ', send: Right}
   Liquid_fixed_return: {label: '  ↲  ', repeatable: true, send: Return, functional: false}
-  Commit_Caret: {label: '^',commit: '^', functional: false}
+  Commit_Caret: {label: '^', commit: '^', functional: false}
+  Commit_Hash: {label: '#', commit: '#', functional: false}
+  Commit_At: {label: '@', commit: '@', functional: false}
+  Commit_Dollar: {label: '$', commit: '$', functional: false}
+  Commit_Percent: {label: '%', commit: '%', functional: false}
+  Commit_Ampersand: {label: '&', commit: '&', functional: false}
+  Commit_Plus: {label: '+', commit: '+', functional: false}
+  Commit_Minus: {label: '-', commit: '-', functional: false}
+  Commit_Asterisk: {label: '*', commit: '*', functional: false}
+  Commit_Slash: {label: '/', commit: '/', functional: false}
+  Commit_Equal: {label: '=', commit: '=', functional: false}
+  Commit_Dot: {label: '.', commit: '.', functional: false}
   Number_Lua: {label: '三〥柒', text: 'S', functional: false}
   Calc_Lua: {label: 計數機, text: 'cC', functional: false}
   Date_Lua: {label: '年月日', text: 'N', functional: false}
@@ -615,7 +626,6 @@ liquid_keyboard:
   history:
     name: 常用
     type: HISTORY
-  # 以下是 emoji
   emoji_face:
     name: ' 😀 '
     type: SINGLE
@@ -2490,8 +2500,6 @@ liquid_keyboard:
       - 🇨🇫
       - 🇨🇳
 
-  # 以上是emoji
-
 
 # 鍵盤佈局
 preset_keyboards:
@@ -2530,24 +2538,24 @@ preset_keyboards:
       #第三行
       - {width: 5}
       - {click: 'a', long_click: 'select_all', swipe_left: {commit: '/'}, swipe_right: {commit: '\'}, hint: '/   \'}
-      - {click: 's', swipe_left: '〈', swipe_right: '〉', hint: '〈   〉'}
-      - {click: 'd', swipe_left: '《', swipe_right: '》', hint: '《   》'}
-      - {click: 'f', swipe_left: '「', swipe_right: '」', hint: '「   」'}
-      - {click: 'g', swipe_left: '『', swipe_right: '』', hint: '『   』'}
-      - {click: 'h', long_click: Keyboard_hiragana, swipe_left: '【', swipe_right: '】', hint: '【   】'}
-      - {click: 'j', long_click: Keyboard_katakana, swipe_left: ';', swipe_right: ':', hint: ';   :'}
-      - {click: 'k', swipe_left: "'", swipe_right: '"', hint: "'   \""}
+      - {click: 's', swipe_left: {commit: '{'}, swipe_right: {commit: '}'}, hint: '{   }'}
+      - {click: 'd', swipe_left: {commit: '['}, swipe_right: {commit: ']'}, hint: '[   ]'}
+      - {click: 'f', swipe_left: '〈', swipe_right: '〉', hint: '〈   〉'}
+      - {click: 'g', swipe_left: '《', swipe_right: '》', hint: '《   》'}
+      - {click: 'h', swipe_left: '「', swipe_right: '」', hint: '「   」'}
+      - {click: 'j', swipe_left: '『', swipe_right: '』', hint: '『   』'}
+      - {click: 'k', swipe_left: '【', swipe_right: '】', hint: '【   】'}
       - {click: 'l', long_click: '-', swipe_up: '-', swipe_down: '_', hint: '_'}
       - {width: 5}
       #第四行
       - {click: Shift_L, width: 14, key_text_offset_y: 0, has_menu: Keyboard_fancy}
       - {click: 'z', long_click: undo, swipe_down: Keyboard_editor, hint: '編輯器'}
       - {click: 'x', long_click: cut, swipe_down: Keyboard_emoji, hint: '繪文字'}
-      - {click: 'c', long_click: copy, swipe_down: Keyboard_clipboard, hint: '剪貼板'}
-      - {click: 'v', long_click: paste}
-      - {click: 'b', long_click: Extra_keyboard}
-      - {click: 'n', long_click: Keyboard_number}
-      - {click: 'm', swipe_left: '<', swipe_right: '>', hint: '<   >'}
+      - {click: 'c', long_click: copy}
+      - {click: 'v', long_click: paste, swipe_down: Keyboard_clipboard, hint: '剪貼板'}
+      - {click: 'b', long_click: Extra_keyboard, swipe_left: ';', swipe_right: ':', hint: ';   :'}
+      - {click: 'n', long_click: Keyboard_number, swipe_left: "'", swipe_right: '"', hint: "'   \""}
+      - {click: 'm', long_click: Keyboard_Hiragana, swipe_left: '<', swipe_right: '>', hint: '<   >'}
       - {click: BackSpace, swipe_down: Delete, hint: '⇨', width: 16, key_text_offset_y: 0}
       #第五行
       - {click: Keyboard_basic_symbol, width: 12.5, key_text_offset_y: 0, long_click: Settings, swipe_down: Theme_settings, hint: '主題'}
@@ -2592,24 +2600,24 @@ preset_keyboards:
       #第三行
       - {width: 5}
       - {click: 'a', long_click: 'select_all', swipe_left: {commit: '/'}, swipe_right: {commit: '\'}, hint: '/   \'}
-      - {click: 's', long_click: Number_Lua, swipe_left: '〈', swipe_right: '〉', hint: '〈   〉'}
-      - {click: 'd', long_click: Date_Lua, swipe_left: '《', swipe_right: '》', hint: '《   》'}
-      - {click: 'f', long_click: Unicode_Lua, swipe_left: '「', swipe_right: '」', hint: '「   」'}
-      - {click: 'g', swipe_left: '『', swipe_right: '』', hint: '『   』'}
-      - {click: 'h', long_click: Keyboard_hiragana, swipe_left: '【', swipe_right: '】', hint: '【   】'}
-      - {click: 'j', long_click: Keyboard_katakana, swipe_left: ';', swipe_right: ':', hint: ';   :'}
-      - {click: 'k', swipe_left: "'", swipe_right: '"', hint: "'   \""}
+      - {click: 's', swipe_left: {commit: '{'}, swipe_right: {commit: '}'}, hint: '{   }'}
+      - {click: 'd', swipe_left: {commit: '['}, swipe_right: {commit: ']'}, hint: '[   ]'}
+      - {click: 'f', swipe_left: '〈', swipe_right: '〉', hint: '〈   〉'}
+      - {click: 'g', swipe_left: '《', swipe_right: '》', hint: '《   》'}
+      - {click: 'h', swipe_left: '「', swipe_right: '」', hint: '「   」'}
+      - {click: 'j', swipe_left: '『', swipe_right: '』', hint: '『   』'}
+      - {click: 'k', swipe_left: '【', swipe_right: '】', hint: '【   】'}
       - {click: 'l', long_click: '-', swipe_up: '-', swipe_down: '_', hint: '_'}
       - {width: 5}
       #第四行
       - {click: Shift_L, width: 14, key_text_offset_y: 0, has_menu: Keyboard_fancy}
       - {click: 'z', long_click: undo, swipe_down: Keyboard_editor, hint: '編輯器'}
       - {click: 'x', long_click: cut, swipe_down: Keyboard_emoji, hint: '繪文字'}
-      - {click: 'c', long_click: copy, swipe_down: Keyboard_clipboard, hint: '剪貼板'}
-      - {click: 'v', long_click: paste}
-      - {click: 'b', long_click: Extra_keyboard}
-      - {click: 'n', long_click: Keyboard_number}
-      - {click: 'm', swipe_left: '<', swipe_right: '>', hint: '<   >'}
+      - {click: 'c', long_click: copy}
+      - {click: 'v', long_click: paste, swipe_down: Keyboard_clipboard, hint: '剪貼板'}
+      - {click: 'b', long_click: Extra_keyboard, swipe_left: ';', swipe_right: ':', hint: ';   :'}
+      - {click: 'n', long_click: Keyboard_number, swipe_left: "'", swipe_right: '"', hint: "'   \""}
+      - {click: 'm', long_click: Keyboard_Hiragana, swipe_left: '<', swipe_right: '>', hint: '<   >'}
       - {click: BackSpace, swipe_down: Delete, hint: '⇨', width: 16, key_text_offset_y: 0}
       #第五行
       - {click: Keyboard_basic_symbol, width: 12.5, key_text_offset_y: 0, long_click: Settings, swipe_down: Theme_settings, hint: '主題'}
@@ -2622,40 +2630,40 @@ preset_keyboards:
   number:
     name: 數字小鍵盤
     author: 'Hoengssaan (Lingdai)'
-    ascii_mode: 1
+    ascii_mode: 0
     reset_ascii_mode: true
     width: 11.5
     height: 47
     keys:
       #第一行
-      - {click: '#', long_click: '@', swipe_up: '@', swipe_left: '¢', swipe_right: '€' , hint: '¢   €'}
-      - {click: '¥', long_click: '$', swipe_up: '$', swipe_left: '£', swipe_right: '₩', hint: '£   ₩'}
-      - {click: '%', swipe_left: '‰', swipe_right: '‱', hint: '‰   ‱'}
-      - {click: '1', width: 18}
-      - {click: '2', width: 18}
-      - {click: '3', width: 18}
+      - {click: Commit_Hash, long_click: Commit_At, swipe_up: Commit_At, swipe_left: '¢', swipe_right: '€' , hint: '¢   €'}
+      - {click: '¥', long_click: Commit_Dollar, swipe_up: Commit_Dollar, swipe_left: '£', swipe_right: '₩', hint: '£   ₩'}
+      - {click: Commit_Percent, long_click: Commit_Ampersand, swipe_up: Commit_Ampersand, swipe_left: '‰', swipe_right: '‱', hint: '‰   ‱'}
+      - {click: '1', width: 18, repeatable: true, key_text_color: on_key_text_color}
+      - {click: '2', width: 18, repeatable: true, key_text_color: on_key_text_color}
+      - {click: '3', width: 18, repeatable: true, key_text_color: on_key_text_color}
       - {click: BackSpace, swipe_down: Delete, hint: '⇨'}
       #第二行
-      - {click: '+'}
-      - {click: '-'}
+      - {click: Commit_Plus}
+      - {click: Commit_Minus}
       - {click: Left}
-      - {click: '4', width: 18}
-      - {click: '5', width: 18}
-      - {click: '6', width: 18}
+      - {click: '4', width: 18, repeatable: true, key_text_color: on_key_text_color}
+      - {click: '5', width: 18, repeatable: true, key_text_color: on_key_text_color}
+      - {click: '6', width: 18, repeatable: true, key_text_color: on_key_text_color}
       - {click: Right}
       #第四行
-      - {click: '*', long_click: '×', swipe_up: '×'}
-      - {click: '/', long_click: '÷', swipe_up: '÷'}
-      - {click: '=', long_click: '≠', swipe_up: '≠', swipe_left: '≈', swipe_right: '≒', hint: '≈   ≒'}
-      - {click: '7', width: 18}
-      - {click: '8', width: 18}
-      - {click: '9', width: 18}
+      - {click: Commit_Asterisk, long_click: '×', swipe_up: '×'}
+      - {click: Commit_Slash, long_click: '÷', swipe_up: '÷'}
+      - {click: Commit_Equal, long_click: '≠', swipe_up: '≠', swipe_left: '≈', swipe_right: '≒', hint: '≈   ≒'}
+      - {click: '7', width: 18, repeatable: true, key_text_color: on_key_text_color}
+      - {click: '8', width: 18, repeatable: true, key_text_color: on_key_text_color}
+      - {click: '9', width: 18, repeatable: true, key_text_color: on_key_text_color}
       - {click: Liquid_fixed_space}
       #第四行
-      - {click: Keyboard_default, width: 17.25}
-      - {click: Keyboard_math_symbol, width: 17.25, long_click: Calc_Lua, swipe_up: Calc_Lua}
-      - {click: '0', width: 36}
-      - {click: '.', width: 18}
+      - {click: Keyboard_default, width: 17.25, long_click: Number_Lua, swipe_down: Date_Lua, hint: '年月日'}
+      - {click: Keyboard_math_symbol, width: 17.25, long_click: Calc_Lua, swipe_down: Unicode_Lua, hint: 'Unicode'}
+      - {click: '0', width: 36, repeatable: true, key_text_color: on_key_text_color, hint: '欲使腳本須方案本身支持'}
+      - {click: Commit_Dot, width: 18, repeatable: true, key_text_color: on_key_text_color}
       - {click: Return, key_text_size: 24, key_text_offset_y: -2, key_back_color: enter_bg_color, key_text_color: enter_text_color, hilited_key_back_color: enter_pressed_bg_color, hilited_key_text_color: enter_pressed_text_color}
 
   editor:
@@ -2706,27 +2714,27 @@ preset_keyboards:
       - {click: 'さ', swipe_left: 'し', swipe_up: 'す', swipe_right: 'せ', swipe_down: 'そ'}
       - {click: BackSpace, swipe_down: Delete, hint: '⇨'}
       #第二行
-      - {click: 'が', swipe_left: 'ぎ', swipe_up: 'ぐ', swipe_right: 'げ', swipe_down: 'ご', key_text_color: on_key_text_color}
+      - {click: 'が', swipe_left: 'ぎ', swipe_up: 'ぐ', swipe_right: 'げ', swipe_down: 'ご', key_text_color: off_key_text_color}
       - {click: 'た', swipe_left: 'ち', swipe_up: 'つ', swipe_right: 'て', swipe_down: 'と'}
       - {click: 'な', swipe_left: 'に', swipe_up: 'ぬ', swipe_right: 'ね', swipe_down: 'の'}
       - {click: 'は', swipe_left: 'ひ', swipe_up: 'ふ', swipe_right: 'へ', swipe_down: 'ほ'}
-      - {click: 'ざ', swipe_left: 'じ', swipe_up: 'ず', swipe_right: 'ぜ', swipe_down: 'ぞ', key_text_color: on_key_text_color}
+      - {click: 'ざ', swipe_left: 'じ', swipe_up: 'ず', swipe_right: 'ぜ', swipe_down: 'ぞ', key_text_color: off_key_text_color}
       #第三行
       - {click: Left}
-      - {click: 'だ', swipe_left: 'ぢ', swipe_up: 'づ', swipe_right: 'で', swipe_down: 'ど', key_text_color: on_key_text_color}
-      - {click: 'ば', swipe_left: 'び', swipe_up: 'ぶ', swipe_right: 'べ', swipe_down: 'ぼ', key_text_color: on_key_text_color}
-      - {click: 'ぱ', swipe_left: 'ぴ', swipe_up: 'ぷ', swipe_right: 'ぺ', swipe_down: 'ぽ', key_text_color: on_key_text_color}
+      - {click: 'だ', swipe_left: 'ぢ', swipe_up: 'づ', swipe_right: 'で', swipe_down: 'ど', key_text_color: off_key_text_color}
+      - {click: 'ば', swipe_left: 'び', swipe_up: 'ぶ', swipe_right: 'べ', swipe_down: 'ぼ', key_text_color: off_key_text_color}
+      - {click: 'ぱ', swipe_left: 'ぴ', swipe_up: 'ぷ', swipe_right: 'ぺ', swipe_down: 'ぽ', key_text_color: off_key_text_color}
       - {click: Right}
       #第四行
-      - {click: Keyboard_katakana}
+      - {click: Keyboard_Katakana}
       - {click: 'ま', swipe_left: 'み', swipe_up: 'む', swipe_right: 'め', swipe_down: 'も'}
-      - {click: 'や', swipe_left: 'い', swipe_up: 'ゆ', swipe_right: 'え', swipe_down: 'よ'}
+      - {click: 'や', swipe_left: 'い', swipe_up: 'ゆ', swipe_right: '𛀁', swipe_down: 'よ'}
       - {click: 'ら', swipe_left: 'り', swipe_up: 'る', swipe_right: 'れ', swipe_down: 'ろ'}
       - {click: 'ー', long_click: '々', swipe_up: '々', swipe_left: 'ゝ', swipe_right: 'ヽ', hint: 'ゝ   ヽ'}
       #第五行
-      - {click: Keyboard_default}
-      - {click: 'ぁ', swipe_left: 'ぃ', swipe_up: 'ぅ', swipe_right: 'ぇ', swipe_down: 'ぉ', width: 10}
-      - {click: 'ゃ', swipe_left: 'ぃ', swipe_up: 'ゅ', swipe_right: 'ぇ', swipe_down: 'ょ', width: 10}
+      - {click: Keyboard_default, long_click: Keyboard_Greek}
+      - {click: 'ぁ', swipe_left: 'ぃ', swipe_up: 'ぅ', swipe_right: 'ぇ', swipe_down: 'ぉ', width: 10, key_text_color: on_key_text_color}
+      - {click: 'ゃ', swipe_left: 'ぃ', swipe_up: 'ゅ', swipe_right: 'ぇ', swipe_down: 'ょ', width: 10, key_text_color: on_key_text_color}
       - {click: 'わ', swipe_left: 'ゐ', swipe_up: 'う', swipe_right: 'ゑ', swipe_down: 'を'}
       - {click: 'っ', width: 10, long_click: 'ゕ', swipe_up: 'ゕ', swipe_down: 'ゖ', hint: 'ゖ'}
       - {click: 'ん', width: 10, long_click: '〆', swipe_up: '〆', swipe_down: '〒', hint: '〒'}
@@ -2746,27 +2754,27 @@ preset_keyboards:
       - {click: 'サ', swipe_left: 'シ', swipe_up: 'ス', swipe_right: 'セ', swipe_down: 'ソ'}
       - {click: BackSpace, swipe_down: Delete, hint: '⇨'}
       #第二行
-      - {click: 'ガ', swipe_left: 'ギ', swipe_up: 'グ', swipe_right: 'ゲ', swipe_down: 'ゴ', key_text_color: on_key_text_color}
+      - {click: 'ガ', swipe_left: 'ギ', swipe_up: 'グ', swipe_right: 'ゲ', swipe_down: 'ゴ', key_text_color: off_key_text_color}
       - {click: 'タ', swipe_left: 'チ', swipe_up: 'ツ', swipe_right: 'テ', swipe_down: 'ト'}
       - {click: 'ナ', swipe_left: 'ニ', swipe_up: 'ヌ', swipe_right: 'ネ', swipe_down: 'ノ'}
       - {click: 'ハ', swipe_left: 'ヒ', swipe_up: 'フ', swipe_right: 'ヘ', swipe_down: 'ホ'}
-      - {click: 'ザ', swipe_left: 'ジ', swipe_up: 'ズ', swipe_right: 'ゼ', swipe_down: 'ゾ', key_text_color: on_key_text_color}
+      - {click: 'ザ', swipe_left: 'ジ', swipe_up: 'ズ', swipe_right: 'ゼ', swipe_down: 'ゾ', key_text_color: off_key_text_color}
       #第三行
       - {click: Left}
-      - {click: 'ダ', swipe_left: 'ヂ', swipe_up: 'ヅ', swipe_right: 'デ', swipe_down: 'ド', key_text_color: on_key_text_color}
-      - {click: 'バ', swipe_left: 'ビ', swipe_up: 'ブ', swipe_right: 'ベ', swipe_down: 'ボ', key_text_color: on_key_text_color}
-      - {click: 'パ', swipe_left: 'ピ', swipe_up: 'プ', swipe_right: 'ペ', swipe_down: 'ポ', key_text_color: on_key_text_color}
+      - {click: 'ダ', swipe_left: 'ヂ', swipe_up: 'ヅ', swipe_right: 'デ', swipe_down: 'ド', key_text_color: off_key_text_color}
+      - {click: 'バ', swipe_left: 'ビ', swipe_up: 'ブ', swipe_right: 'ベ', swipe_down: 'ボ', key_text_color: off_key_text_color}
+      - {click: 'パ', swipe_left: 'ピ', swipe_up: 'プ', swipe_right: 'ペ', swipe_down: 'ポ', key_text_color: off_key_text_color}
       - {click: Right}
       #第四行
-      - {click: Keyboard_hiragana}
+      - {click: Keyboard_Hiragana}
       - {click: 'マ', swipe_left: 'ミ', swipe_up: 'ム', swipe_right: 'メ', swipe_down: 'モ'}
       - {click: 'ヤ', swipe_left: 'イ', swipe_up: 'ユ', swipe_right: 'エ', swipe_down: 'ヨ'}
       - {click: 'ラ', swipe_left: 'リ', swipe_up: 'ル', swipe_right: 'レ', swipe_down: 'ロ'}
       - {click: 'ー', long_click: '々', swipe_up: '々', swipe_left: 'ゝ', swipe_right: 'ヽ', hint: 'ゝ   ヽ'}
       #第五行
-      - {click: Keyboard_default}
-      - {click: 'ァ', swipe_left: 'ィ', swipe_up: 'ゥ', swipe_right: 'ェ', swipe_down: 'ォ', width: 10}
-      - {click: 'ゃ', swipe_left: 'ぃ', swipe_up: 'ゅ', swipe_right: 'ぇ', swipe_down: 'ょ', width: 10}
+      - {click: Keyboard_default, long_click: Keyboard_Greek}
+      - {click: 'ァ', swipe_left: 'ィ', swipe_up: 'ゥ', swipe_right: 'ェ', swipe_down: 'ォ', width: 10, key_text_color: on_key_text_color}
+      - {click: 'ャ', swipe_left: 'ィ', swipe_up: 'ュ', swipe_right: 'ェ', swipe_down: 'ョ', width: 10, key_text_color: on_key_text_color}
       - {click: 'ワ', swipe_left: 'ヰ', swipe_up: 'ウ', swipe_right: 'ヱ', swipe_down: 'ヲ'}
       - {click: 'ッ', width: 10, long_click: 'ヵ', swipe_up: 'ヵ', swipe_down: 'ヶ', hint: 'ヶ'}
       - {click: 'ン', width: 10, long_click: '〆', swipe_up: '〆', swipe_down: '〒', hint: '〒'}
@@ -2925,12 +2933,13 @@ preset_keyboards:
       - {click: '.', long_click: '»'}
       - {click: Return, width: 16, key_text_size: 24, key_text_offset_y: -2, key_back_color: enter_bg_color, key_text_color: enter_text_color, hilited_key_back_color: enter_pressed_bg_color, hilited_key_text_color: enter_pressed_text_color}
       #第五行
-      - {width: 10}
-      - {click: Keyboard_default, width: 20, height: *sub_key_height}
-      - {click: Keyboard_Greek_Selected, width: 20, key_back_color: enter_bg_color, key_text_color: off_key_text_color}
-      - {click: Keyboard_Cyrillic, width: 20}
-      - {click: Keyboard_IPA, width: 20}
-      - {width: 10}
+      - {width: 7.5}
+      - {click: Keyboard_default, width: 17, height: *sub_key_height}
+      - {click: Keyboard_Greek_Selected, width: 17, key_back_color: enter_bg_color, key_text_color: off_key_text_color}
+      - {click: Keyboard_Cyrillic, width: 17}
+      - {click: Keyboard_IPA, width: 17}
+      - {click: Keyboard_Hiragana, width: 17, key_text_size: 12}
+      - {width: 7.5}
 
   Greek_symbol:
     name: 希臘字母符號鍵盤
@@ -2980,12 +2989,13 @@ preset_keyboards:
       - {click: '.', long_click: '»'}
       - {click: Return, width: 16, key_text_size: 24, key_text_offset_y: -2, key_back_color: enter_bg_color, key_text_color: enter_text_color, hilited_key_back_color: enter_pressed_bg_color, hilited_key_text_color: enter_pressed_text_color}
       #第五行
-      - {width: 10}
-      - {click: Keyboard_default, width: 20, height: *sub_key_height}
-      - {click: Keyboard_Greek_Selected, width: 20, key_back_color: enter_bg_color, key_text_color: off_key_text_color}
-      - {click: Keyboard_Cyrillic, width: 20}
-      - {click: Keyboard_IPA, width: 20}
-      - {width: 10}
+      - {width: 7.5}
+      - {click: Keyboard_default, width: 17, height: *sub_key_height}
+      - {click: Keyboard_Greek_Selected, width: 17, key_back_color: enter_bg_color, key_text_color: off_key_text_color}
+      - {click: Keyboard_Cyrillic, width: 17}
+      - {click: Keyboard_IPA, width: 17}
+      - {click: Keyboard_Hiragana, width: 17, key_text_size: 12}
+      - {width: 7.5}
         
   Cyrillic:
     name: 西里爾字母鍵盤
@@ -3045,12 +3055,13 @@ preset_keyboards:
       - {click: '.', width: 10}
       - {click: Return, width: 16, key_text_size: 24, key_text_offset_y: -2, key_back_color: enter_bg_color, key_text_color: enter_text_color, hilited_key_back_color: enter_pressed_bg_color, hilited_key_text_color: enter_pressed_text_color}
       #第五行
-      - {width: 10}
-      - {click: Keyboard_default, width: 20, height: *sub_key_height}
-      - {click: Keyboard_Greek, width: 20}
-      - {click: Keyboard_Cyrillic_Selected, width: 20, key_back_color: enter_bg_color, key_text_color: off_key_text_color}
-      - {click: Keyboard_IPA, width: 20}
-      - {width: 10}
+      - {width: 7.5}
+      - {click: Keyboard_default, width: 17, height: *sub_key_height}
+      - {click: Keyboard_Greek, width: 17}
+      - {click: Keyboard_Cyrillic_Selected, width: 17, key_back_color: enter_bg_color, key_text_color: off_key_text_color}
+      - {click: Keyboard_IPA, width: 17}
+      - {click: Keyboard_Hiragana, width: 17, key_text_size: 12}
+      - {width: 7.5}
 
   Cyrillic_symbol:
     name: 西里爾字母符號鍵盤
@@ -3100,12 +3111,13 @@ preset_keyboards:
       - {click: '.', width: 10}
       - {click: Return, width: 16, key_text_size: 24, key_text_offset_y: -2, key_back_color: enter_bg_color, key_text_color: enter_text_color, hilited_key_back_color: enter_pressed_bg_color, hilited_key_text_color: enter_pressed_text_color}
       #第五行
-      - {width: 10}
-      - {click: Keyboard_default, width: 20, height: *sub_key_height}
-      - {click: Keyboard_Greek, width: 20}
-      - {click: Keyboard_Cyrillic_Selected, width: 20, key_back_color: enter_bg_color, key_text_color: off_key_text_color}
-      - {click: Keyboard_IPA, width: 20}
-      - {width: 10}
+      - {width: 7.5}
+      - {click: Keyboard_default, width: 17, height: *sub_key_height}
+      - {click: Keyboard_Greek, width: 17}
+      - {click: Keyboard_Cyrillic_Selected, width: 17, key_back_color: enter_bg_color, key_text_color: off_key_text_color}
+      - {click: Keyboard_IPA, width: 17}
+      - {click: Keyboard_Hiragana, width: 17, key_text_size: 12}
+      - {width: 7.5}
 
   IPA1:
     name: 國際音標鍵盤（第一頁）
@@ -3192,12 +3204,13 @@ preset_keyboards:
       - {click: '.', width: 10}
       - {click: Return, width: 16, key_text_size: 24, key_text_offset_y: -2, key_back_color: enter_bg_color, key_text_color: enter_text_color, hilited_key_back_color: enter_pressed_bg_color, hilited_key_text_color: enter_pressed_text_color}
       #第七行
-      - {width: 10}
-      - {click: Keyboard_default, width: 20, height: *sub_key_height}
-      - {click: Keyboard_Greek, width: 20}
-      - {click: Keyboard_Cyrillic, width: 20}
-      - {click: Keyboard_IPA_Selected, width: 20, key_back_color: enter_bg_color, key_text_color: off_key_text_color}
-      - {width: 10}
+      - {width: 7.5}
+      - {click: Keyboard_default, width: 17, height: *sub_key_height}
+      - {click: Keyboard_Greek, width: 17}
+      - {click: Keyboard_Cyrillic, width: 17}
+      - {click: Keyboard_IPA_Selected, width: 17, key_back_color: enter_bg_color, key_text_color: off_key_text_color}
+      - {click: Keyboard_Hiragana, width: 17, key_text_size: 12}
+      - {width: 7.5}
 
   IPA2:
     name: 國際音標鍵盤（第二頁）
@@ -3282,12 +3295,13 @@ preset_keyboards:
       - {click: '.', width: 10}
       - {click: Return, width: 16, key_text_size: 24, key_text_offset_y: -2, key_back_color: enter_bg_color, key_text_color: enter_text_color, hilited_key_back_color: enter_pressed_bg_color, hilited_key_text_color: enter_pressed_text_color}
       #第七行
-      - {width: 10}
-      - {click: Keyboard_default, width: 20, height: *sub_key_height}
-      - {click: Keyboard_Greek, width: 20}
-      - {click: Keyboard_Cyrillic, width: 20}
-      - {click: Keyboard_IPA_Selected, width: 20, key_back_color: enter_bg_color, key_text_color: off_key_text_color}
-      - {width: 10}
+      - {width: 7.5}
+      - {click: Keyboard_default, width: 17, height: *sub_key_height}
+      - {click: Keyboard_Greek, width: 17}
+      - {click: Keyboard_Cyrillic, width: 17}
+      - {click: Keyboard_IPA_Selected, width: 17, key_back_color: enter_bg_color, key_text_color: off_key_text_color}
+      - {click: Keyboard_Hiragana, width: 17, key_text_size: 12}
+      - {width: 7.5}
 
   IPA3:
     name: 國際音標鍵盤（第三頁）
@@ -3374,12 +3388,13 @@ preset_keyboards:
       - {click: '.', width: 10}
       - {click: Return, width: 16, key_text_size: 24, key_text_offset_y: -2, key_back_color: enter_bg_color, key_text_color: enter_text_color, hilited_key_back_color: enter_pressed_bg_color, hilited_key_text_color: enter_pressed_text_color}
       #第七行
-      - {width: 10}
-      - {click: Keyboard_default, width: 20, height: *sub_key_height}
-      - {click: Keyboard_Greek, width: 20}
-      - {click: Keyboard_Cyrillic, width: 20}
-      - {click: Keyboard_IPA_Selected, width: 20, key_back_color: enter_bg_color, key_text_color: off_key_text_color}
-      - {width: 10}
+      - {width: 7.5}
+      - {click: Keyboard_default, width: 17, height: *sub_key_height}
+      - {click: Keyboard_Greek, width: 17}
+      - {click: Keyboard_Cyrillic, width: 17}
+      - {click: Keyboard_IPA_Selected, width: 17, key_back_color: enter_bg_color, key_text_color: off_key_text_color}
+      - {click: Keyboard_Hiragana, width: 17, key_text_size: 12}
+      - {width: 7.5}
 
   IPA_symbol_1:
     name: 國際音標符號（第一頁）
@@ -3429,12 +3444,13 @@ preset_keyboards:
       - {click: '.'}
       - {click: Return, width: 16, key_text_size: 24, key_text_offset_y: -2, key_back_color: enter_bg_color, key_text_color: enter_text_color, hilited_key_back_color: enter_pressed_bg_color, hilited_key_text_color: enter_pressed_text_color}
       #第五行
-      - {width: 10}
-      - {click: Keyboard_default, width: 20, height: *sub_key_height}
-      - {click: Keyboard_Greek, width: 20}
-      - {click: Keyboard_Cyrillic, width: 20}
-      - {click: Keyboard_IPA_Selected, width: 20, key_back_color: enter_bg_color, key_text_color: off_key_text_color}
-      - {width: 10}
+      - {width: 7.5}
+      - {click: Keyboard_default, width: 17, height: *sub_key_height}
+      - {click: Keyboard_Greek, width: 17}
+      - {click: Keyboard_Cyrillic, width: 17}
+      - {click: Keyboard_IPA_Selected, width: 17, key_back_color: enter_bg_color, key_text_color: off_key_text_color}
+      - {click: Keyboard_Hiragana, width: 17, key_text_size: 12}
+      - {width: 7.5}
 
   IPA_symbol_2:
     name: 國際音標符號（第二頁）
@@ -3484,9 +3500,10 @@ preset_keyboards:
       - {click: IPA_tie_bar_below, width: 12.5}
       - {click: Return, width: 16, key_text_size: 24, key_text_offset_y: -2, key_back_color: enter_bg_color, key_text_color: enter_text_color, hilited_key_back_color: enter_pressed_bg_color, hilited_key_text_color: enter_pressed_text_color}
       #第五行
-      - {width: 10}
-      - {click: Keyboard_default, width: 20, height: *sub_key_height}
-      - {click: Keyboard_Greek, width: 20}
-      - {click: Keyboard_Cyrillic, width: 20}
-      - {click: Keyboard_IPA_Selected, width: 20, key_back_color: enter_bg_color, key_text_color: off_key_text_color}
-      - {width: 10}
+      - {width: 7.5}
+      - {click: Keyboard_default, width: 17, height: *sub_key_height}
+      - {click: Keyboard_Greek, width: 17}
+      - {click: Keyboard_Cyrillic, width: 17}
+      - {click: Keyboard_IPA_Selected, width: 17, key_back_color: enter_bg_color, key_text_color: off_key_text_color}
+      - {click: Keyboard_Hiragana, width: 17, key_text_size: 12}
+      - {width: 7.5}
