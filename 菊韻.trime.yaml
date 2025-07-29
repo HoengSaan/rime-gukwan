@@ -10,7 +10,7 @@
 # Learn how to use Gukwan in the readme file, available on the project's github page.
 # Source: https://github.com/Wenti-D/Astralwelkin
 
-config_version: '19.4.5b'
+config_version: '19.4.7b'
 name: 菊韻                                #方案名稱
 author: 'Windy_D <windy0deng@gmail.com>, Hoengsaan (Lingdai)'  #作者信息
 
@@ -137,7 +137,7 @@ style:
     - {start: "", composition: "%s", end: "", letter_spacing: 0}   #letter_spacing需要Android5.0
     - {start: "\n", label: "%s.", candidate: "%s", comment: "%s", end: "", sep: "☁️️"}
       
-#備用顏色，擺爛
+#備用顏色
 fallback_colors:
   candidate_text_color: text_color
   comment_text_color: candidate_text_color
@@ -338,40 +338,40 @@ preset_color_schemes:
     name: "菊韻"
     author: "Lingdai (Hoengsaan)"
     light_scheme: white_night
-    #悬浮窗颜色
-    border_color: *gukwan_border_color                        #悬浮窗边框
-    label_color: *gukwan_sub_candidate_color                  #编码高亮
-    hilited_text_color: *gukwan_code_text_color               #已解析编码
-    text_color: *gukwan_code_unparsed_color                   #未解析/无法解析的编码
-    hilited_back_color: *gukwan_main_color                    #已解析编码的背景
-    text_back_color: *gukwan_bg_color                         #未解析编码的背景
-    #候选区颜色
-    back_color: *gukwan_bg_color                              #候选区背景
-    candidate_background : *gukwan_bg_color                   #候选区背景？
-    hilited_candidate_back_color: *gukwan_main_color          #候选区高亮背景
-    candidate_separator_color: *pure_black                  #候选项分割线
-    candidate_text_color: *gukwan_sub_candidate_color         #其他候选文本
-    hilited_candidate_text_color: *gukwan_main_text_color     #候选高亮文本
-    comment_text_color: *gukwan_sub_comment_color             #候选项注释文本
-    hilited_comment_text_color: *gukwan_comment_color         #高亮候选项注释文本
-    #键盘颜色
-    key_back_color: *gukwan_main_color                              #按键背景色
-    hilited_key_back_color: *gukwan_border_color                    #按键按下时背景色
-    key_text_color: *gukwan_main_text_color                         #按键字符颜色
-    key_symbol_color: *gukwan_key_hint_color                        #按键小字颜色
-    hilited_key_symbol_color: *pure_white                         #按下时小字颜色
-    preview_back_color: *gukwan_border_color                        #气泡背景色
-    preview_text_color: *pure_white                               #气泡字符颜色
-    keyboard_back_color: *gukwan_bg_color                           #键盘整体背景色
-    key_border_color: *gukwan_border_color                          #按键边框颜色
-    off_key_back_color: *gukwan_func_key_bg_color                   #功能键背景色
-    off_key_text_color: *gukwan_func_key_text_color                 #功能键文本色
-    hilited_off_key_back_color: *gukwan_func_key_pressed_bg_color   #功能键按下时背景色
-    hilited_off_key_text_color: *gukwan_func_key_pressed_text_color #功能键按下时文本色
-    on_key_back_color: *gukwan_shift_lock_bg_color                  #Shift锁定时背景色
-    hilited_on_key_back_color: *gukwan_shift_lock_pressed_bg_color  #Shift锁定时按下的背景颜色
-    on_key_text_color: *gukwan_shift_lock_text_color                #Shift锁定时文字颜色
-    hilited_on_key_text_color: *pure_white                        #Shift锁定时按下的文字颜色
+    #懸浮窗顏色
+    border_color: *gukwan_border_color                        #懸浮窗邊框
+    label_color: *gukwan_sub_candidate_color                  #編碼高亮
+    hilited_text_color: *gukwan_code_text_color               #已解析編碼
+    text_color: *gukwan_code_unparsed_color                   #未解析/無法解析的編碼
+    hilited_back_color: *gukwan_main_color                    #已解析編碼的背景
+    text_back_color: *gukwan_bg_color                         #未解析編碼的背景
+    #候選區顏色
+    back_color: *gukwan_bg_color                              #候選區背景
+    candidate_background : *gukwan_bg_color                   #候選區背景？
+    hilited_candidate_back_color: *gukwan_main_color          #候選區高亮背景
+    candidate_separator_color: *pure_black                  #候選項分割線
+    candidate_text_color: *gukwan_sub_candidate_color         #其他候選文本
+    hilited_candidate_text_color: *gukwan_main_text_color     #候選高亮文本
+    comment_text_color: *gukwan_sub_comment_color             #候選項註釋文本
+    hilited_comment_text_color: *gukwan_comment_color         #高亮候選項註釋文本
+    #鍵盤顏色
+    key_back_color: *gukwan_main_color                              #按鍵背景色
+    hilited_key_back_color: *gukwan_border_color                    #按鍵按下時背景色
+    key_text_color: *gukwan_main_text_color                         #按鍵字符顏色
+    key_symbol_color: *gukwan_key_hint_color                        #按鍵小字顏色
+    hilited_key_symbol_color: *pure_white                         #按下時小字顏色
+    preview_back_color: *gukwan_border_color                        #氣泡背景色
+    preview_text_color: *pure_white                               #氣泡字符顏色
+    keyboard_back_color: *gukwan_bg_color                           #鍵盤整體背景色
+    key_border_color: *gukwan_border_color                          #按鍵邊框顏色
+    off_key_back_color: *gukwan_func_key_bg_color                   #功能鍵背景色
+    off_key_text_color: *gukwan_func_key_text_color                 #功能鍵文本色
+    hilited_off_key_back_color: *gukwan_func_key_pressed_bg_color   #功能鍵按下時背景色
+    hilited_off_key_text_color: *gukwan_func_key_pressed_text_color #功能鍵按下時文本色
+    on_key_back_color: *gukwan_shift_lock_bg_color                  #Shift鎖定時背景色
+    hilited_on_key_back_color: *gukwan_shift_lock_pressed_bg_color  #Shift鎖定時按下的背景顏色
+    on_key_text_color: *gukwan_shift_lock_text_color                #Shift鎖定時文字顏色
+    hilited_on_key_text_color: *pure_white                        #Shift鎖定時按下的文字顏色
     enter_bg_color: *gukwan_enter_bg_color
     enter_text_color: *gukwan_enter_text_color
     enter_pressed_bg_color: *gukwan_enter_pressed_bg_color
@@ -417,11 +417,11 @@ preset_keys:
   Up: {label: '↑', repeatable: true, send: Up}
   Right: {label: '→', repeatable: true, send: Right}
   select_all: {label: 全選, send: Control+a}
-  Clear: {label: 清除, text: "{Control+a}{BackSpace}"} #全選並刪除
+  Clear: {label: 清除, text: "{Control+a}{BackSpace}"}
   cut: {label: 剪切, send: Control+x}
-  cut_all: {label: 全挪, text: "{Control+a}{Control+x}"} #全選並剪切
+  cut_all: {label: 全挪, text: "{Control+a}{Control+x}"}
   copy: {label: 複製, send: Control+c}
-  copy_all: {label: 全謄, text: "{Control+a}{Control+c}"} #全選並複製
+  copy_all: {label: 全謄, text: "{Control+a}{Control+c}"}
   paste: {label: 粘貼, send: Control+v}
   paste_text: {label: 粘貼文本, send: Control+Shift+Alt+v} #>=Android 6.0
   share_text: {label: 分享文本, send: Control+Alt+s} #>=Android 6.0
@@ -561,6 +561,7 @@ preset_keys:
   Liquid_fixed_left: {label: ' ← ', send: Left}
   Liquid_fixed_right: {label: ' → ', send: Right}
   Liquid_fixed_return: {label: '  ↲  ', repeatable: true, send: Return, functional: false}
+  # For Number
   Commit_Caret: {label: '^', commit: '^', functional: false}
   Commit_Hash: {label: '#', commit: '#', functional: false}
   Commit_At: {label: '@', commit: '@', functional: false}
@@ -577,6 +578,7 @@ preset_keys:
   Calc_Lua: {label: 計數機, text: 'cC', functional: false}
   Date_Lua: {label: '年月日', text: 'N', functional: false}
   Unicode_Lua: {label: 'Uni', text: 'U', functional: false}
+  # For Gukwan Reverse Lookup
   Cantonese_rl: {label: 穗, text: '`', functional: false}
   Mandarin_rl: {label: 普, text: '`P', functional: false}
   Cangjie_rl: {label: 倉, text: '`C', functional: false}
@@ -1725,7 +1727,7 @@ liquid_keyboard:
       - 🌉
       - 🌁
   emoji_object:
-    name: ' 🪣 '
+    name: ' 🔧 '
     type: SINGLE
     keys: 
       - ⌚️
@@ -2240,266 +2242,281 @@ liquid_keyboard:
       - 🕦
       - 🕧
   emoji_flag:
-    name: ' 🇨🇳 '
+    name: ' 🇺🇳 '
     type: SINGLE
     keys: 
-      - 🏳️
-      - 🏴
-      - 🏴‍☠️
+      # 1. 非國家地區旗幟
       - 🏁
       - 🚩
-      - 🇺🇳
-      - 🇦🇱
-      - 🇩🇿
-      - 🇦🇫
-      - 🇦🇷
-      - 🇦🇪
-      - 🇦🇼
-      - 🇴🇲
-      - 🇦🇿
-      - 🇪🇬
-      - 🇪🇹
-      - 🇮🇪
-      - 🇪🇪
-      - 🇦🇩
-      - 🇦🇴
-      - 🇦🇮
-      - 🇦🇬
-      - 🇦🇹
-      - 🇦🇽
-      - 🇦🇺
-      - 🇲🇴
-      - 🇧🇧
-      - 🇵🇬
-      - 🇧🇸
-      - 🇵🇰
-      - 🇵🇾
-      - 🇵🇸
-      - 🇧🇭
-      - 🇵🇦
-      - 🇧🇷
-      - 🇧🇾
-      - 🇧🇲
-      - 🇧🇬
-      - 🇲🇵
-      - 🇲🇰
-      - 🇧🇯
-      - 🇧🇪
-      - 🇵🇪
-      - 🇮🇸
-      - 🇵🇷
-      - 🇵🇱
-      - 🇧🇦
-      - 🇧🇴
-      - 🇧🇿
-      - 🇧🇼
-      - 🇧🇹
-      - 🇧🇫
-      - 🇧🇮
-      - 🇮🇴
-      - 🇰🇵
-      - 🇬🇶
-      - 🇩🇰
-      - 🇩🇪
-      - 🇹🇱
-      - 🇹🇬
-      - 🇩🇴
-      - 🇩🇲
-      - 🇷🇺
-      - 🇪🇨
-      - 🇪🇷
-      - 🇫🇷
-      - 🇫🇴
-      - 🇵🇫
-      - 🇬🇫
-      - 🇹🇫
-      - 🇻🇦
-      - 🇵🇭
-      - 🇫🇯
-      - 🇫🇮
-      - 🇨🇻
-      - 🇫🇰
-      - 🇬🇲
-      - 🇨🇬
-      - 🇨🇩
-      - 🇨🇴
-      - 🇨🇷
-      - 🇬🇩
-      - 🇬🇱
-      - 🇬🇪
-      - 🇬🇬
-      - 🇨🇺
-      - 🇬🇵
-      - 🇬🇺
-      - 🇬🇾
-      - 🇰🇿
-      - 🇭🇹
-      - 🇰🇷
-      - 🇳🇱
-      - 🇧🇶
-      - 🇸🇽
-      - 🇲🇪
-      - 🇭🇳
-      - 🇰🇮
-      - 🇩🇯
-      - 🇰🇬
-      - 🇬🇳
-      - 🇬🇼
-      - 🇨🇦
-      - 🇬🇭
-      - 🇮🇨
-      - 🇬🇦
-      - 🇰🇭
-      - 🇨🇿
-      - 🇿🇼
-      - 🇨🇲
-      - 🇶🇦
-      - 🇰🇾
-      - 🇨🇨
-      - 🇰🇲
-      - 🇽🇰
-      - 🇨🇮
-      - 🇰🇼
-      - 🇭🇷
-      - 🇰🇪
-      - 🇨🇰
-      - 🇨🇼
-      - 🇱🇻
-      - 🇱🇸
-      - 🇱🇦
-      - 🇱🇧
-      - 🇱🇹
-      - 🇱🇷
-      - 🇱🇾
-      - 🇱🇮
-      - 🇷🇪
-      - 🇱🇺
-      - 🇷🇼
-      - 🇷🇴
-      - 🇲🇬
-      - 🇮🇲
-      - 🇲🇻
-      - 🇲🇹
-      - 🇲🇼
-      - 🇲🇾
-      - 🇲🇱
-      - 🇲🇭
-      - 🇲🇶
-      - 🇾🇹
-      - 🇲🇺
-      - 🇲🇷
-      - 🇺🇸
-      - 🇦🇸
-      - 🇻🇮
-      - 🇲🇳
-      - 🇲🇸
-      - 🇧🇩
-      - 🇫🇲
-      - 🇲🇲
-      - 🇲🇩
-      - 🇲🇦
-      - 🇲🇨
-      - 🇲🇿
-      - 🇲🇽
-      - 🇳🇦
-      - 🇿🇦
-      - 🇦🇶
-      - 🇬🇸
-      - 🇸🇸
-      - 🇳🇷
-      - 🇳🇮
-      - 🇳🇵
-      - 🇳🇪
-      - 🇳🇬
-      - 🇳🇺
-      - 🇳🇴
-      - 🇳🇫
-      - 🇪🇺
-      - 🇵🇼
-      - 🇵🇳
-      - 🇵🇹
-      - 🇯🇵
       - 🎌
-      - 🇸🇪
-      - 🇨🇭
-      - 🇸🇻
-      - 🇼🇸
-      - 🇷🇸
-      - 🇸🇱
-      - 🇸🇳
-      - 🇨🇾
-      - 🇸🇨
-      - 🇸🇦
-      - 🇧🇱
-      - 🇨🇽
-      - 🇸🇹
-      - 🇸🇭
-      - 🇰🇳
-      - 🇱🇨
-      - 🇸🇲
-      - 🇵🇲
-      - 🇻🇨
-      - 🇱🇰
-      - 🇸🇰
-      - 🇸🇮
-      - 🇸🇿
-      - 🇸🇩
-      - 🇸🇷
-      - 🇸🇧
-      - 🇸🇴
-      - 🇹🇯
-      - 🇹🇭
-      - 🇹🇿
-      - 🇹🇴
-      - 🇹🇨
-      - 🇹🇹
-      - 🇹🇳
-      - 🇹🇻
-      - 🇹🇷
-      - 🇹🇲
-      - 🇹🇰
-      - 🇼🇫
-      - 🇻🇺
-      - 🇬🇹
-      - 🇻🇪
-      - 🇧🇳
-      - 🇺🇬
-      - 🇺🇦
-      - 🇺🇾
-      - 🇺🇿
-      - 🇪🇸
-      - 🇪🇭
-      - 🇬🇷
+      - 🏴
+      - 🏳️
+      - 🏳️‍🌈
+      - 🏳️‍⚧️
+      - 🏴‍☠️
+      - 🇺🇳
+      - 🇪🇺
+      - 🇦🇶
+      # 2. 東亞旗幟
+      - 🇨🇳
       - 🇭🇰
-      - 🇸🇬
-      - 🇳🇨
-      - 🇳🇿
-      - 🇭🇺
-      - 🇸🇾
-      - 🇯🇲
-      - 🇦🇲
-      - 🇾🇪
-      - 🇮🇶
-      - 🇮🇷
-      - 🇮🇱
-      - 🇮🇹
-      - 🇮🇳
-      - 🇮🇩
+      - 🇲🇴
+      - 🇹🇼
+      - 🇯🇵
+      - 🇰🇷
+      - 🇰🇵
+      - 🇲🇳
+      # 3. 名國旗幟
+      - 🇺🇸
       - 🇬🇧
       - 🏴󠁧󠁢󠁥󠁮󠁧󠁿
       - 🏴󠁧󠁢󠁳󠁣󠁴󠁿
       - 🏴󠁧󠁢󠁷󠁬󠁳󠁿
-      - 🇻🇬
-      - 🇯🇴
+      - 🇷🇺
+      - 🇮🇳
+      - 🇧🇷
+      - 🇿🇦
+      - 🇨🇦
+      - 🇦🇺
+      - 🇳🇿
+      - 🇩🇪
+      - 🇫🇷
+      - 🇮🇹
+      - 🇪🇸
+      - 🇸🇦
+      - 🇹🇷
+      - 🇮🇷
+      - 🇮🇱
+      - 🇵🇰
+      # 4. 東南亞旗幟
+      - 🇮🇩
+      - 🇵🇭
+      - 🇹🇭
       - 🇻🇳
-      - 🇿🇲
-      - 🇯🇪
-      - 🇹🇩
+      - 🇲🇾
+      - 🇸🇬
+      - 🇲🇲
+      - 🇰🇭
+      - 🇱🇦
+      - 🇧🇳
+      - 🇹🇱
+      - 🇵🇬
+      # 5. 歐洲旗幟
+      - 🇦🇱
+      - 🇦🇩
+      - 🇦🇹
+      - 🇧🇾
+      - 🇧🇪
+      - 🇧🇬
+      - 🇭🇷
+      - 🇨🇾
+      - 🇨🇿
+      - 🇩🇰
+      - 🇪🇪
+      - 🇫🇴
+      - 🇫🇮
+      - 🇬🇪
       - 🇬🇮
+      - 🇬🇱
+      - 🇬🇷
+      - 🇭🇺
+      - 🇮🇸
+      - 🇮🇪
+      - 🇱🇻
+      - 🇱🇮
+      - 🇱🇹
+      - 🇱🇺
+      - 🇲🇹
+      - 🇲🇩
+      - 🇲🇨
+      - 🇲🇪
+      - 🇳🇱
+      - 🇲🇰
+      - 🇳🇴
+      - 🇵🇱
+      - 🇵🇹
+      - 🇷🇴
+      - 🇷🇸
+      - 🇸🇰
+      - 🇸🇮
+      - 🇸🇪
+      - 🇨🇭
+      - 🇺🇦
+      - 🇻🇦
+      - 🇦🇽
+      - 🇬🇬
+      - 🇯🇪
+      - 🇮🇲
+      - 🇸🇽
+      - 🇧🇱
+      - 🇵🇲
+      - 🇻🇨
+      - 🇮🇨
+      - 🇽🇰
+      - 🇸🇲
+      # 6. 中東旗幟
+      - 🇦🇪
+      - 🇧🇭
+      - 🇮🇶
+      - 🇯🇴
+      - 🇰🇼
+      - 🇱🇧
+      - 🇴🇲
+      - 🇵🇸
+      - 🇶🇦
+      - 🇸🇾
+      - 🇾🇪
+      - 🇦🇲
+      - 🇦🇿
+      - 🇹🇲
+      - 🇧🇦
+      # 7. 中南亞旗幟
+      - 🇦🇫
+      - 🇧🇩
+      - 🇧🇹
+      - 🇱🇰
+      - 🇲🇻
+      - 🇳🇵
+      - 🇮🇴
+      - 🇰🇿
+      - 🇰🇬
+      - 🇹🇯
+      - 🇺🇿
+      # 8. 美洲旗幟
+      - 🇦🇬
+      - 🇦🇮
+      - 🇦🇷
+      - 🇧🇧
+      - 🇧🇿
+      - 🇧🇲
+      - 🇧🇴
       - 🇨🇱
+      - 🇨🇴
+      - 🇨🇷
+      - 🇨🇺
+      - 🇩🇲
+      - 🇩🇴
+      - 🇪🇨
+      - 🇸🇻
+      - 🇫🇰
+      - 🇬🇩
+      - 🇬🇵
+      - 🇬🇹
+      - 🇬🇾
+      - 🇭🇹
+      - 🇭🇳
+      - 🇯🇲
+      - 🇲🇶
+      - 🇲🇽
+      - 🇳🇮
+      - 🇵🇦
+      - 🇵🇾
+      - 🇵🇪
+      - 🇵🇷
+      - 🇧🇶
+      - 🇰🇳
+      - 🇱🇨
+      - 🇻🇮
+      - 🇸🇷
+      - 🇹🇹
+      - 🇹🇨
+      - 🇺🇾
+      - 🇻🇪
+      - 🇻🇬
+      - 🇦🇸
+      - 🇨🇼
+      - 🇫🇲
+      - 🇲🇸
+      - 🇵🇼
+      - 🇦🇼
+      - 🇧🇸
+      - 🇲🇵
+      # 9. 大洋洲旗幟
+      - 🇬🇺
+      - 🇫🇯
+      - 🇸🇧
+      - 🇻🇺
+      - 🇼🇸
+      - 🇰🇮
+      - 🇳🇷
+      - 🇳🇨
+      - 🇵🇫
+      - 🇬🇫
+      - 🇹🇫
+      - 🇳🇺
+      - 🇨🇰
+      - 🇹🇴
+      - 🇹🇻
+      - 🇼🇫
+      - 🇵🇳
+      - 🇬🇸
+      - 🇳🇫 
+      - 🇹🇰
+      # 10. 非洲旗幟
+      - 🇨🇮
+      - 🇩🇿
+      - 🇦🇴
+      - 🇧🇯
+      - 🇧🇼
+      - 🇧🇫
+      - 🇧🇮
+      - 🇨🇻
+      - 🇨🇲
       - 🇨🇫
-      - 🇨🇳
-
+      - 🇹🇩
+      - 🇰🇲
+      - 🇨🇬
+      - 🇨🇩
+      - 🇩🇯
+      - 🇪🇬
+      - 🇬🇶
+      - 🇪🇷
+      - 🇸🇿
+      - 🇪🇹
+      - 🇬🇦
+      - 🇬🇲
+      - 🇬🇭
+      - 🇬🇳
+      - 🇬🇼
+      - 🇰🇪
+      - 🇱🇸
+      - 🇱🇷
+      - 🇱🇾
+      - 🇲🇬
+      - 🇲🇼
+      - 🇲🇱
+      - 🇲🇷
+      - 🇲🇺
+      - 🇾🇹
+      - 🇲🇦
+      - 🇲🇿
+      - 🇳🇦
+      - 🇳🇪
+      - 🇳🇬
+      - 🇷🇪
+      - 🇷🇼
+      - 🇸🇹
+      - 🇸🇳
+      - 🇸🇨
+      - 🇸🇱
+      - 🇸🇴
+      - 🇿🇲
+      - 🇿🇼
+      - 🇸🇩
+      - 🇸🇸
+      - 🇹🇬
+      - 🇹🇳
+      - 🇺🇬
+      - 🇪🇭
+      - 🇹🇿
+      - 🇧🇮
+      - 🇲🇭
+      - 🇸🇭
+      - 🇨🇨
+      - 🇰🇾
+      - 🇨🇽
+      - 🇩🇬
+      - 🇦🇨
 
 # 鍵盤佈局
 preset_keyboards:
