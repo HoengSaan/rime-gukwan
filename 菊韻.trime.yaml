@@ -10,7 +10,7 @@
 # Learn how to use Gukwan in the readme file, available on the project's github page.
 # Source: https://github.com/Wenti-D/Astralwelkin
 
-config_version: '19.4.3b'
+config_version: '19.4.5b'
 name: 菊韻                                #方案名稱
 author: 'Windy_D <windy0deng@gmail.com>, Hoengsaan (Lingdai)'  #作者信息
 
@@ -557,7 +557,7 @@ preset_keys:
   Keyboard_emoji: {label: 繪文字, send: function, command: liquid_keyboard, option: ' 😀 '}
   Liquid_fixed_exit: {label: ' ↶ ', send: function, command: liquid_keyboard, option: "-1"}
   Liquid_fixed_backspace: {label: ' ⇦ ', repeatable: true, send: BackSpace}
-  Liquid_fixed_space: {label: '  ⎵ ', repeatable: true, functional: false, send: space}
+  Liquid_fixed_space: {label: ' ⎵ ', repeatable: true, functional: false, send: space}
   Liquid_fixed_left: {label: ' ← ', send: Left}
   Liquid_fixed_right: {label: ' → ', send: Right}
   Liquid_fixed_return: {label: '  ↲  ', repeatable: true, send: Return, functional: false}
@@ -2515,7 +2515,7 @@ preset_keyboards:
       - {click: '7', long_click: '&', swipe_up: '&'}
       - {click: '8', long_click: '*', swipe_up: '*'}
       - {click: '9', long_click: '(', swipe_up: '('}
-      - {click: '0', long_click: ')', swipe_up: ')'}
+      - {click: '0', long_click: ')', swipe_up: ')', swipe_down: '/', hint: '/'}
       #第二行
       - {click: 'q', long_click: '`', swipe_up: '`', swipe_down: '~', hint: '~'}
       - {click: 'w'}
@@ -2543,18 +2543,18 @@ preset_keyboards:
       - {click: Shift_L, width: 14, key_text_offset_y: 0, has_menu: Keyboard_fancy}
       - {click: 'z', long_click: undo, swipe_down: Keyboard_editor, hint: '編輯器'}
       - {click: 'x', long_click: cut, swipe_down: Keyboard_emoji, hint: '繪文字'}
-      - {click: 'c', long_click: copy}
-      - {click: 'v', long_click: paste, swipe_down: Keyboard_clipboard, hint: '剪貼板'}
-      - {click: 'b', long_click: Date, swipe_down: Extra_keyboard, hint: 'αбʃ'}
-      - {click: 'n', long_click: Time, swipe_down: Keyboard_number, hint: '123'}
-      - {click: 'm', long_click: ChineseDate, swipe_left: '<', swipe_right: '>', hint: '<   >'}
+      - {click: 'c', long_click: copy, swipe_down: Keyboard_clipboard, hint: '剪貼板'}
+      - {click: 'v', long_click: paste}
+      - {click: 'b', long_click: Extra_keyboard}
+      - {click: 'n', long_click: Keyboard_number}
+      - {click: 'm', swipe_left: '<', swipe_right: '>', hint: '<   >'}
       - {click: BackSpace, swipe_down: Delete, hint: '⇨', width: 16, key_text_offset_y: 0}
       #第五行
       - {click: Keyboard_basic_symbol, width: 12.5, key_text_offset_y: 0, long_click: Settings, swipe_down: Theme_settings, hint: '主題'}
       - {click: Schema_switch, width: 12.5, key_text_offset_y: 0, long_click: IME_switch, swipe_down: Menu, hint: '方案'}
       - {click: ',', label: ，, long_click: '、', swipe_up: '、', swipe_down: Color_switch, hint: '配色'}
       - {click: space, width: 39, swipe_up: Up, swipe_left: Left, swipe_right: Right, swipe_down: Down}
-      - {click: '.', label: 。, long_click: '?', swipe_up: '?', swipe_left: '/', swipe_right: '・', hint: '/   ･'}
+      - {click: '.', label: 。, long_click: '?', swipe_up: '?', swipe_down: '・', hint: '・'}
       - {click: Return, width: 16, key_text_size: 24, key_text_offset_y: -2, key_back_color: enter_bg_color, key_text_color: enter_text_color, hilited_key_back_color: enter_pressed_bg_color, hilited_key_text_color: enter_pressed_text_color}
   
   gukwan:
@@ -2577,7 +2577,7 @@ preset_keyboards:
       - {click: '7', long_click: '&', swipe_up: '&'}
       - {click: '8', long_click: '*', swipe_up: '*'}
       - {click: '9', long_click: '(', swipe_up: '('}
-      - {click: '0', long_click: ')', swipe_up: ')'}
+      - {click: '0', long_click: ')', swipe_up: ')', swipe_down: '/', hint: '/'}
       #第二行
       - {click: 'q', long_click: '`', swipe_up: '`', swipe_down: '~', hint: '~'}
       - {click: 'w', long_click: Kunyomi_rl, swipe_left: Hiragana_rl, swipe_right: Katakana_rl, hint: '平   片'}
@@ -2605,18 +2605,18 @@ preset_keyboards:
       - {click: Shift_L, width: 14, key_text_offset_y: 0, has_menu: Keyboard_fancy}
       - {click: 'z', long_click: undo, swipe_down: Keyboard_editor, hint: '編輯器'}
       - {click: 'x', long_click: cut, swipe_down: Keyboard_emoji, hint: '繪文字'}
-      - {click: 'c', long_click: copy, swipe_down: Calc_Lua, hint: '計數機'}
-      - {click: 'v', long_click: paste, swipe_down: Keyboard_clipboard, hint: '剪貼板'}
-      - {click: 'b', long_click: Date, swipe_down: Extra_keyboard, hint: 'αбʃ'}
-      - {click: 'n', long_click: Time, swipe_down: Keyboard_number, hint: '123'}
-      - {click: 'm', long_click: ChineseDate, swipe_left: '<', swipe_right: '>', hint: '<   >'}
+      - {click: 'c', long_click: copy, swipe_down: Keyboard_clipboard, hint: '剪貼板'}
+      - {click: 'v', long_click: paste}
+      - {click: 'b', long_click: Extra_keyboard}
+      - {click: 'n', long_click: Keyboard_number}
+      - {click: 'm', swipe_left: '<', swipe_right: '>', hint: '<   >'}
       - {click: BackSpace, swipe_down: Delete, hint: '⇨', width: 16, key_text_offset_y: 0}
       #第五行
       - {click: Keyboard_basic_symbol, width: 12.5, key_text_offset_y: 0, long_click: Settings, swipe_down: Theme_settings, hint: '主題'}
       - {click: Schema_switch, width: 12.5, key_text_offset_y: 0, long_click: IME_switch, swipe_down: Menu, hint: '方案'}
       - {click: ',', label: ，, long_click: '、', swipe_up: '、', swipe_down: Color_switch, hint: '配色'}
       - {click: space, width: 39, swipe_up: Up, swipe_left: Left, swipe_right: Right, swipe_down: Down}
-      - {click: '.', label: 。, long_click: '?', swipe_up: '?', swipe_left: '/', swipe_right: '・', hint: '/   ･'}
+      - {click: '.', label: 。, long_click: '?', swipe_up: '?', swipe_down: '・', hint: '･'}
       - {click: Return, width: 16, key_text_size: 24, key_text_offset_y: -2, key_back_color: enter_bg_color, key_text_color: enter_text_color, hilited_key_back_color: enter_pressed_bg_color, hilited_key_text_color: enter_pressed_text_color}
 
   number:
@@ -2653,7 +2653,7 @@ preset_keyboards:
       - {click: Liquid_fixed_space}
       #第四行
       - {click: Keyboard_default, width: 17.25}
-      - {click: Keyboard_math_symbol, width: 17.25}
+      - {click: Keyboard_math_symbol, width: 17.25, long_click: Calc_Lua, swipe_up: Calc_Lua}
       - {click: '0', width: 36}
       - {click: '.', width: 18}
       - {click: Return, key_text_size: 24, key_text_offset_y: -2, key_back_color: enter_bg_color, key_text_color: enter_text_color, hilited_key_back_color: enter_pressed_bg_color, hilited_key_text_color: enter_pressed_text_color}
@@ -2700,35 +2700,36 @@ preset_keyboards:
     width: 20
     keys:
       #第一行
-      - {click: 'ー', width: 10}
-      - {click: 'っ', width: 10}
+      - {click: Liquid_fixed_space}
       - {click: 'あ', swipe_left: 'い', swipe_up: 'う', swipe_right: 'え', swipe_down: お'}
       - {click: 'か', swipe_left: 'き', swipe_up: 'く', swipe_right: 'け', swipe_down: 'こ'}
       - {click: 'さ', swipe_left: 'し', swipe_up: 'す', swipe_right: 'せ', swipe_down: 'そ'}
       - {click: BackSpace, swipe_down: Delete, hint: '⇨'}
       #第二行
-      - {click: 'が', swipe_left: 'ぎ', swipe_up: 'ぐ', swipe_right: 'げ', swipe_down: 'ご'}
+      - {click: 'が', swipe_left: 'ぎ', swipe_up: 'ぐ', swipe_right: 'げ', swipe_down: 'ご', key_text_color: on_key_text_color}
       - {click: 'た', swipe_left: 'ち', swipe_up: 'つ', swipe_right: 'て', swipe_down: 'と'}
       - {click: 'な', swipe_left: 'に', swipe_up: 'ぬ', swipe_right: 'ね', swipe_down: 'の'}
       - {click: 'は', swipe_left: 'ひ', swipe_up: 'ふ', swipe_right: 'へ', swipe_down: 'ほ'}
-      - {click: 'ざ', swipe_left: 'じ', swipe_up: 'ず', swipe_right: 'ぜ', swipe_down: 'ぞ'}
+      - {click: 'ざ', swipe_left: 'じ', swipe_up: 'ず', swipe_right: 'ぜ', swipe_down: 'ぞ', key_text_color: on_key_text_color}
       #第三行
       - {click: Left}
-      - {click: 'だ', swipe_left: 'ぢ', swipe_up: 'づ', swipe_right: 'で', swipe_down: 'ど'}
-      - {click: 'ば', swipe_left: 'び', swipe_up: 'ぶ', swipe_right: 'べ', swipe_down: 'ぼ'}
-      - {click: 'ぱ', swipe_left: 'ぴ', swipe_up: 'ぷ', swipe_right: 'ぺ', swipe_down: 'ぽ'}
+      - {click: 'だ', swipe_left: 'ぢ', swipe_up: 'づ', swipe_right: 'で', swipe_down: 'ど', key_text_color: on_key_text_color}
+      - {click: 'ば', swipe_left: 'び', swipe_up: 'ぶ', swipe_right: 'べ', swipe_down: 'ぼ', key_text_color: on_key_text_color}
+      - {click: 'ぱ', swipe_left: 'ぴ', swipe_up: 'ぷ', swipe_right: 'ぺ', swipe_down: 'ぽ', key_text_color: on_key_text_color}
       - {click: Right}
       #第四行
       - {click: Keyboard_katakana}
       - {click: 'ま', swipe_left: 'み', swipe_up: 'む', swipe_right: 'め', swipe_down: 'も'}
       - {click: 'や', swipe_left: 'い', swipe_up: 'ゆ', swipe_right: 'え', swipe_down: 'よ'}
       - {click: 'ら', swipe_left: 'り', swipe_up: 'る', swipe_right: 'れ', swipe_down: 'ろ'}
-      - {click: Liquid_fixed_space}
+      - {click: 'ー', long_click: '々', swipe_up: '々', swipe_left: 'ゝ', swipe_right: 'ヽ', hint: 'ゝ   ヽ'}
       #第五行
       - {click: Keyboard_default}
-      - {click: 'ぁ', swipe_left: 'ぃ', swipe_up: 'ぅ', swipe_right: 'ぇ', swipe_down: 'ぉ'}
+      - {click: 'ぁ', swipe_left: 'ぃ', swipe_up: 'ぅ', swipe_right: 'ぇ', swipe_down: 'ぉ', width: 10}
+      - {click: 'ゃ', swipe_left: 'ぃ', swipe_up: 'ゅ', swipe_right: 'ぇ', swipe_down: 'ょ', width: 10}
       - {click: 'わ', swipe_left: 'ゐ', swipe_up: 'う', swipe_right: 'ゑ', swipe_down: 'を'}
-      - {click: 'ん'}
+      - {click: 'っ', width: 10, long_click: 'ゕ', swipe_up: 'ゕ', swipe_down: 'ゖ', hint: 'ゖ'}
+      - {click: 'ん', width: 10, long_click: '〆', swipe_up: '〆', swipe_down: '〒', hint: '〒'}
       - {click: Return, key_text_size: 24, key_text_offset_y: -2, key_back_color: enter_bg_color, key_text_color: enter_text_color, hilited_key_back_color: enter_pressed_bg_color, hilited_key_text_color: enter_pressed_text_color}
       
   katakana:
@@ -2739,35 +2740,36 @@ preset_keyboards:
     width: 20
     keys:
       #第一行
-      - {click: 'ー', width: 10}
-      - {click: 'ッ', width: 10}
+      - {click: Liquid_fixed_space}
       - {click: 'ア', swipe_left: 'イ', swipe_up: 'ウ', swipe_right: 'エ', swipe_down: 'オ'}
       - {click: 'カ', swipe_left: 'キ', swipe_up: 'ク', swipe_right: 'ケ', swipe_down: 'コ'}
       - {click: 'サ', swipe_left: 'シ', swipe_up: 'ス', swipe_right: 'セ', swipe_down: 'ソ'}
       - {click: BackSpace, swipe_down: Delete, hint: '⇨'}
       #第二行
-      - {click: 'ガ', swipe_left: 'ギ', swipe_up: 'グ', swipe_right: 'ゲ', swipe_down: 'ゴ'}
+      - {click: 'ガ', swipe_left: 'ギ', swipe_up: 'グ', swipe_right: 'ゲ', swipe_down: 'ゴ', key_text_color: on_key_text_color}
       - {click: 'タ', swipe_left: 'チ', swipe_up: 'ツ', swipe_right: 'テ', swipe_down: 'ト'}
       - {click: 'ナ', swipe_left: 'ニ', swipe_up: 'ヌ', swipe_right: 'ネ', swipe_down: 'ノ'}
       - {click: 'ハ', swipe_left: 'ヒ', swipe_up: 'フ', swipe_right: 'ヘ', swipe_down: 'ホ'}
-      - {click: 'ザ', swipe_left: 'ジ', swipe_up: 'ズ', swipe_right: 'ゼ', swipe_down: 'ゾ'}
+      - {click: 'ザ', swipe_left: 'ジ', swipe_up: 'ズ', swipe_right: 'ゼ', swipe_down: 'ゾ', key_text_color: on_key_text_color}
       #第三行
       - {click: Left}
-      - {click: 'ダ', swipe_left: 'ヂ', swipe_up: 'ヅ', swipe_right: 'デ', swipe_down: 'ド'}
-      - {click: 'バ', swipe_left: 'ビ', swipe_up: 'ブ', swipe_right: 'ベ', swipe_down: 'ボ'}
-      - {click: 'パ', swipe_left: 'ピ', swipe_up: 'プ', swipe_right: 'ペ', swipe_down: 'ポ'}
+      - {click: 'ダ', swipe_left: 'ヂ', swipe_up: 'ヅ', swipe_right: 'デ', swipe_down: 'ド', key_text_color: on_key_text_color}
+      - {click: 'バ', swipe_left: 'ビ', swipe_up: 'ブ', swipe_right: 'ベ', swipe_down: 'ボ', key_text_color: on_key_text_color}
+      - {click: 'パ', swipe_left: 'ピ', swipe_up: 'プ', swipe_right: 'ペ', swipe_down: 'ポ', key_text_color: on_key_text_color}
       - {click: Right}
       #第四行
       - {click: Keyboard_hiragana}
       - {click: 'マ', swipe_left: 'ミ', swipe_up: 'ム', swipe_right: 'メ', swipe_down: 'モ'}
       - {click: 'ヤ', swipe_left: 'イ', swipe_up: 'ユ', swipe_right: 'エ', swipe_down: 'ヨ'}
       - {click: 'ラ', swipe_left: 'リ', swipe_up: 'ル', swipe_right: 'レ', swipe_down: 'ロ'}
-      - {click: Liquid_fixed_space}
+      - {click: 'ー', long_click: '々', swipe_up: '々', swipe_left: 'ゝ', swipe_right: 'ヽ', hint: 'ゝ   ヽ'}
       #第五行
       - {click: Keyboard_default}
-      - {click: 'ァ', swipe_left: 'ィ', swipe_up: 'ゥ', swipe_right: 'ェ', swipe_down: 'ォ'}
+      - {click: 'ァ', swipe_left: 'ィ', swipe_up: 'ゥ', swipe_right: 'ェ', swipe_down: 'ォ', width: 10}
+      - {click: 'ゃ', swipe_left: 'ぃ', swipe_up: 'ゅ', swipe_right: 'ぇ', swipe_down: 'ょ', width: 10}
       - {click: 'ワ', swipe_left: 'ヰ', swipe_up: 'ウ', swipe_right: 'ヱ', swipe_down: 'ヲ'}
-      - {click: 'ン'}
+      - {click: 'ッ', width: 10, long_click: 'ヵ', swipe_up: 'ヵ', swipe_down: 'ヶ', hint: 'ヶ'}
+      - {click: 'ン', width: 10, long_click: '〆', swipe_up: '〆', swipe_down: '〒', hint: '〒'}
       - {click: Return, key_text_size: 24, key_text_offset_y: -2, key_back_color: enter_bg_color, key_text_color: enter_text_color, hilited_key_back_color: enter_pressed_bg_color, hilited_key_text_color: enter_pressed_text_color}
 
   basic_symbol:
