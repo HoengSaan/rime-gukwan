@@ -200,8 +200,8 @@ This is a schema based on [Rime Input Method](https://rime.im/).
   - 以`u`輸入`eo`：如「論」`leon`則爲`lun`
 - 以下三拼僅部分方案適用
   - 以`r/e`輸入`ae`：如「斬」`zhaem`則爲`z(h)aam`｜`z(h)rm`｜`z(h)em`（僅`gukwan-default`）
-  - 以`u`輸入`oo`【僅限`ooi`】：如「淚」`looi`則爲`lui`（部份方案）
-  - 以`o`輸入`oo`【僅限`oong/ook`】：如「朗」`loong`則爲`lor`（部份方案）
+  - 以`u`輸入`oo`【僅限`ooi`】：如「淚」`looi`則爲`lui`
+  - 以`o`輸入`oo`【僅限`oong/ook`】：如「朗」`loong`則爲`lor`
 
 以`e`輸入`oe`是考慮`e`系韻母本身以白讀音爲主，較少使用。而`u`同`eo/oo`；`o`同`oo`兩對音在多數方言可基本互補，不影響輸入。
 
@@ -250,8 +250,7 @@ Android可用自帶主題（`菊韻.trime.yaml`），使用功能更加方便。
   - jyut6ping3 部份詞庫（例如`jyut6ping3.phrase.dict.yaml`）有明顯簡轉繁痕跡，已超出本人處理範圍。
 - 語言模型：
   - 語言模型是改善輸入體驗有效方法之一，**但粵語同官話語言模型不能完全通用，且現有大模型，即萬象模型因基於簡體字表，菊韻等繁體字表不能使用**。繁體模型目前我所知僅有[八股文](https://github.com/lotem/rime-octagram-data/)一個（注意：自帶八股文爲簡化版），可參攷`補靪範例`自行打補靪使用。
-- 聯想・預測功能：
-  - 粵語無現成可用。無法解決。現有全部聯想皆基於官話。
+- 聯想・預測功能：粵語無現成可用。無法解決。現有全部聯想皆基於官話。
 
 
 ### 字詞收錄之標準
@@ -342,9 +341,7 @@ Android可用自帶主題（`菊韻.trime.yaml`），使用功能更加方便。
 
 ### 補靪範例
 
-**<mark>請勿直接使用補靪範例，僅供參攷。</mark>**
-
-`gw_custom`內有本人使用補靪之範例，以供參攷。
+`gw_custom`內有本人使用補靪之範例，以供參攷。（**<mark>請勿直接使用</mark>**）
 
 當中有示範如何調用定製詞庫，語法模型，打字預測等。
 
@@ -358,11 +355,7 @@ Android可用自帶主題（`菊韻.trime.yaml`），使用功能更加方便。
 
 > [!NOTE]
 >
-> <del>`xxx.xxx-ps.scheme.yaml`爲寬式音標版，寬式音標並不能完全代表實際發音。所有寬式音標版存儲在`/ps`。如需使用請自行將其移出。</del>**音標版方案已被放棄，不再維護。所有放棄維護方案存儲於`/gw_archive。`**
->
-> <mark>以下方案並不能完全代表當地發音，請根據自身實際情況調整。</mark>
->
-> 由於本人所寫轉換規則有缺陷，導致部份字拼音提示不準確，敬請見諒。
+> **音標版方案已被放棄，不再維護。所有放棄維護方案存儲於`/gw_archive。`**
 
 - `gukwan.schema.yaml`：基底文件（**<u><mark>請勿刪除，刪除後所有方案都無法使用</mark></u>**）
 - `jyut6ping3-gw.schema.yaml`：三拼版`rime-cantonese`（廣州話），支持菊韻所有功能。
@@ -448,10 +441,13 @@ Android可用自帶主題（`菊韻.trime.yaml`），使用功能更加方便。
 
 - [`rime-cantonese-emoji`](https://github.com/rime/rime-emoji-cantonese)：用於輸入繪文字，並無進行修改，隨源文件以[CC 0 許可](https://creativecommons.org/public-domain/cc0/)發佈。
 - `symbols-gukwan.yaml`：菊韻定製標點符號（類似 Microsoft 日本語 IME）同特殊符號輸入。
-- `菊韻.trime.yaml`：同文輸入法主題，基於[Wenti-D/Astralwelkin](https://github.com/Wenti-D/Astralwelkin)，隨源文件以[MIT 許可](https://mit-license.org/)發佈。不同點如下：
-  - 所有基本鍵盤鍵值重整，以更貼近 QWERTY 鍵盤體驗
-  - 增刪部份鍵盤、增加編輯器、以及各類微細修改
-  - 更多配色（正在製作）
+- `菊韻.trime.yaml`：同文輸入法主題，基於[Wenti-D/Astralwelkin](https://github.com/Wenti-D/Astralwelkin)，源文件以[MIT 許可](https://mit-license.org/)發佈，不同點如下：
+  - 以[CC BY NC SA 4.0 許可](cc-by-nc-sa)發佈
+  - 增刪部份鍵盤佈局、以及各類微細修改
+    - 除次級鍵盤之外所有佈局皆已刪除。
+    - 36鍵基本鍵盤同小鍵盤重製
+    - 新增符號表、編輯器、19鍵假名鍵盤（不依賴任何方案，以滑動輸入）
+  - 更多配色、更多鍵盤佈局（正在製作）
 - `OpenCC 開放中文轉換`：開箱即用，用於繁簡轉換，隨源文件以[Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0.html)發佈。**位置爲`/gw_custom`。**
 
 ## 銘謝
