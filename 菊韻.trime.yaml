@@ -10,7 +10,7 @@
 # Learn how to use Gukwan in the readme file, available on the project's github page.
 # Source: https://github.com/Wenti-D/Astralwelkin
 
-config_version: '19.6.1b'
+config_version: '19.6.2b'
 name: 菊韻                                #方案名稱
 author: 'Windy_D <windy0deng@gmail.com>, Hoengsaan (Lingdai)'  #作者信息
 
@@ -494,6 +494,29 @@ colors:
   - &shinti_enter_pressed_bg_color 0x8B4513 # 回車鍵按下時（背景） 
   - &shinti_enter_pressed_text_color 0xFFE4B5 # 回車鍵按下時（文字） 
   - &shinti_key_hint_color 0xDA70D6 # 按鍵小字 
+  # 丙組：椰子
+  - &coconut_main_color 0xD4C99E # 按鍵背景
+  - &coconut_bg_color 0xF5F2E5 # 鍵盤背景
+  - &coconut_border_color 0x8B7E4B # 邊框
+  - &coconut_main_text_color 0x3A3416 # 主要字符
+  - &coconut_sub_candidate_color 0xA89C6D # 非高亮候選
+  - &coconut_code_text_color 0x30BDAE # 已解析編碼
+  - &coconut_code_unparsed_color 0x7D6E3F # 未解析編碼
+  - &coconut_comment_color 0xB8A86C # 高亮註釋
+  - &coconut_sub_comment_color 0xE0D9C0 # 其他註釋
+  - &coconut_func_key_bg_color 0x6B5E2F # 功能鍵背景色
+  - &coconut_func_key_text_color 0xF1EDDE # 功能鍵文本色
+  - &coconut_func_key_pressed_bg_color 0x554926 # 功能鍵按下時（背景）
+  - &coconut_func_key_pressed_text_color 0xE5DFCB # 功能鍵按下時（文字）
+  - &coconut_shift_lock_bg_color 0x8C7D48 # Shift鎖定時（背景）
+  - &coconut_shift_lock_text_color 0x21A732 # Shift鎖定時（文字）
+  - &coconut_shift_lock_pressed_bg_color 0x726535 # Shift鎖定時按下（背景）
+  - &coconut_shift_lock_pressed_text_color 0xDDD5B8 # Shift鎖定時按下（文字）
+  - &coconut_enter_bg_color 0x9D8E5A # 回車鍵（背景）
+  - &coconut_enter_text_color 0xE3DBC4 # 回車鍵（文字）
+  - &coconut_enter_pressed_bg_color 0x6B5D2E # 回車鍵按下時（背景）
+  - &coconut_enter_pressed_text_color 0xD4CBAD # 回車鍵按下時（文字）
+  - &coconut_key_hint_color 0xB2A57B # 按鍵小字
 
 preset_color_schemes:
   default:
@@ -1123,6 +1146,51 @@ preset_color_schemes:
     enter_pressed_text_color: *shinti_enter_pressed_text_color
     liquid_keyboard_background: *shinti_bg_color
     long_text_back_color: *shinti_main_color
+    
+  ab_coconut:
+    name: "椰海 / Coconut"
+    author: "Hoengsaan (Lingdai)"
+    #懸浮窗顏色
+    border_color: *coconut_border_color                        #懸浮窗邊框
+    label_color: *coconut_sub_candidate_color                  #編碼高亮
+    hilited_text_color: *coconut_code_text_color               #已解析編碼
+    text_color: *coconut_code_unparsed_color                   #未解析/無法解析的編碼
+    hilited_back_color: *coconut_bg_color                      #已解析編碼的背景
+    text_back_color: *coconut_bg_color                         #未解析編碼的背景
+    ##候選區顏色
+    back_color: *coconut_bg_color                              #候選區背景
+    candidate_background : *coconut_bg_color                   #候選區背景？
+    hilited_candidate_back_color: *coconut_main_color          #候選區高亮背景
+    candidate_separator_color: *pure_black                   #候選項分割線
+    candidate_text_color: *coconut_sub_candidate_color         #其他候選文本
+    hilited_candidate_text_color: *coconut_main_text_color     #候選高亮文本
+    comment_text_color: *coconut_sub_comment_color             #候選項註釋文本
+    hilited_comment_text_color: *coconut_comment_color         #高亮候選項註釋文本
+    ##鍵盤顏色
+    key_back_color: *coconut_main_color                               #按鍵背景色
+    hilited_key_back_color: *coconut_border_color                     #按鍵按下時背景色
+    key_text_color: *coconut_main_text_color                          #按鍵字符顏色
+    key_symbol_color: *coconut_key_hint_color                         #按鍵小字顏色
+    hilited_key_symbol_color: *pure_black                           #按下時小字顏色
+    preview_back_color: *coconut_border_color                         #氣泡背景色
+    preview_text_color: *pure_black                                 #氣泡字符顏色
+    keyboard_back_color: *coconut_bg_color                            #鍵盤整體背景色
+    key_border_color: *coconut_border_color                           #按鍵邊框顏色
+    off_key_back_color: *coconut_func_key_bg_color                    #功能鍵背景色
+    off_key_text_color: *coconut_func_key_text_color                  #功能鍵文本色
+    hilited_off_key_back_color: *coconut_func_key_pressed_bg_color    #功能鍵按下時背景色
+    hilited_off_key_text_color: *coconut_func_key_pressed_text_color  #功能鍵按下時文本色
+    on_key_back_color: *coconut_shift_lock_bg_color                   #Shift鎖定時背景色
+    hilited_on_key_back_color: *coconut_shift_lock_pressed_bg_color   #Shift鎖定時按下的背景顏色
+    on_key_text_color: *coconut_shift_lock_text_color                 #Shift鎖定時文字顏色
+    hilited_on_key_text_color: *coconut_shift_lock_pressed_text_color #Shift鎖定時按下的文字顏色
+    enter_bg_color: *coconut_enter_bg_color
+    enter_text_color: *coconut_enter_text_color
+    enter_pressed_bg_color: *coconut_enter_pressed_bg_color
+    enter_pressed_text_color: *coconut_enter_pressed_text_color
+    liquid_keyboard_background: *coconut_bg_color
+    long_text_back_color: *coconut_main_color
+
 
 android_keys:
   __include: trime:/android_keys
@@ -3613,7 +3681,7 @@ preset_keyboards:
       - {click: 'l', swipe_left: '【', swipe_right: '】', hint: '【   】', key_text_color: off_key_text_color}
       - {width: 5}
       #第四行
-      - {click: Shift_L, width: 14, key_text_offset_y: 0, has_menu: Keyboard_fancy}
+      - {click: Shift_L, width: 14, key_text_offset_y: 0}
       - {click: 'z', long_click: undo, swipe_down: Keyboard_editor, hint: '編輯器'}
       - {click: 'x', long_click: cut, swipe_down: Keyboard_emoji, hint: '繪文字'}
       - {click: 'c', long_click: copy, swipe_down: Keyboard_symbol, hint: '符號表'}
@@ -3675,7 +3743,7 @@ preset_keyboards:
       - {click: 'l', swipe_left: '【', swipe_right: '】', hint: '【   】', key_text_color: off_key_text_color}
       - {width: 5}
       #第四行
-      - {click: Shift_L, width: 14, key_text_offset_y: 0, has_menu: Keyboard_fancy}
+      - {click: Shift_L, width: 14, key_text_offset_y: 0}
       - {click: 'z', long_click: undo, swipe_down: Keyboard_editor, hint: '編輯器'}
       - {click: 'x', long_click: cut, swipe_down: Keyboard_emoji, hint: '繪文字'}
       - {click: 'c', long_click: copy, swipe_down: Keyboard_symbol, hint: '符號表'}
@@ -4572,3 +4640,84 @@ preset_keyboards:
       - {click: Keyboard_IPA_Selected, width: 17, key_back_color: enter_bg_color, key_text_color: off_key_text_color}
       - {click: Keyboard_Hiragana, width: 17, key_text_size: 12}
       - {width: 7.5}
+  
+  gukwan-cancyn:
+    import_preset: gukwan
+  
+  gukwan-daailoeng:
+    import_preset: gukwan
+  
+  gukwan-default:
+    import_preset: gukwan
+  
+  gukwan-dungfau:
+    import_preset: gukwan
+  
+  gukwan-dungfung-dunggubou:
+    import_preset: gukwan
+  
+  gukwan-dungfung-saigubou:
+    import_preset: gukwan
+  
+  gukwan-dungfung-tungon:
+    import_preset: gukwan
+  
+  gukwan-dungsing:
+    import_preset: gukwan
+  
+  gukwan-dungsing-gosaa:
+    import_preset: gukwan
+  
+  gukwan-dungsing-taaiping:
+    import_preset: gukwan
+  
+  gukwan-dungsing-taanbui:
+    import_preset: gukwan
+  
+  gukwan-fausaa-daaijauwai:
+    import_preset: gukwan
+  
+  gukwan-fausaa-locung:
+    import_preset: gukwan
+  
+  gukwan-guzan-hoizau:
+    import_preset: gukwan
+  
+  gukwan-longmong:
+    import_preset: gukwan
+  
+  gukwan-longmong-kwanon:
+    import_preset: gukwan
+  
+  gukwan-naamtau-daisaa:
+    import_preset: gukwan
+  
+  gukwan-naamtau-geusam:
+    import_preset: gukwan
+  
+  gukwan-naamtau-naamsing:
+    import_preset: gukwan
+  
+  gukwan-naamtau-paaihom:
+    import_preset: gukwan
+  
+  gukwan-sekki:
+    import_preset: gukwan
+  
+  gukwan-siulaam:
+    import_preset: gukwan
+  
+  gukwan-siulaam-bofung:
+    import_preset: gukwan
+  
+  gukwan-waanglaan:
+    import_preset: gukwan
+  
+  gukwan-wongpou:
+    import_preset: gukwan
+  
+  jyut6ping3-gw:
+    import_preset: gukwan
+  
+  jyut6ping3-gw-cp:
+    import_preset: gukwan
