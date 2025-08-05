@@ -10,7 +10,7 @@
 # Learn how to use Gukwan in the readme file, available on the project's github page.
 # Source: https://github.com/Wenti-D/Astralwelkin
 
-config_version: '19.6.2b'
+config_version: '19.6.3b'
 name: 菊韻                                #方案名稱
 author: 'Windy_D <windy0deng@gmail.com>, Hoengsaan (Lingdai)'  #作者信息
 
@@ -242,28 +242,28 @@ colors:
   - &gukwan_enter_pressed_text_color 0xD1C7A4      # 回車鍵按下時（文字）
   - &gukwan_key_hint_color 0x69821B                # 按鍵小字「苔」
   # 乙組一：酒紅  
-  - &vinho_main_color 0xAA0C0C # 按鍵背景   
-  - &vinho_bg_color 0x330000 # 鍵盤背景 
-  - &vinho_border_color 0x7F0000 # 邊框 
-  - &vinho_main_text_color 0xF0D6D6 # 主要字符 
-  - &vinho_sub_candidate_color 0xD32F2F # 非高亮候選 
-  - &vinho_code_text_color 0xEF9A9A # 已解析編碼 
-  - &vinho_code_unparsed_color 0xC62828 # 未解析編碼 
-  - &vinho_comment_color 0xF44336 # 高亮註釋 
-  - &vinho_sub_comment_color 0xE57373 # 其他註釋 
-  - &vinho_func_key_bg_color 0x7F0000 # 功能鍵背景色 
-  - &vinho_func_key_text_color 0xFFCDD2 # 功能鍵文本色 
-  - &vinho_func_key_pressed_bg_color 0x4A0000 # 功能鍵按下時（背景）
-  - &vinho_func_key_pressed_text_color 0xEF9A9A # 功能鍵按下時（文字）
-  - &vinho_shift_lock_bg_color 0x8E0000 # Shift鎖定時（背景）
-  - &vinho_shift_lock_text_color 0xFFCCBC # Shift鎖定時（文字）
-  - &vinho_shift_lock_pressed_bg_color 0x6A0000 # Shift鎖定時按下（背景）
-  - &vinho_shift_lock_pressed_text_color 0xFFAB91 # Shift鎖定時按下（文字）
-  - &vinho_enter_bg_color 0xD50000 # 回車鍵（背景）
-  - &vinho_enter_text_color 0xFFE0E0 # 回車鍵（文字）
-  - &vinho_enter_pressed_bg_color 0x9B0000 # 回車鍵按下時（背景）
-  - &vinho_enter_pressed_text_color 0xFFCCCB # 回車鍵按下時（文字）
-  - &vinho_key_hint_color 0xE5E9E5 # 按鍵小字 
+  - &vinho_main_color 0xAA0C0C 
+  - &vinho_bg_color 0x330000
+  - &vinho_border_color 0x7F0000
+  - &vinho_main_text_color 0xF0D6D6
+  - &vinho_sub_candidate_color 0xD32F2F
+  - &vinho_code_text_color 0xEF9A9A
+  - &vinho_code_unparsed_color 0xC62828
+  - &vinho_comment_color 0xF44336
+  - &vinho_sub_comment_color 0xE57373
+  - &vinho_func_key_bg_color 0x7F0000
+  - &vinho_func_key_text_color 0xFFCDD2
+  - &vinho_func_key_pressed_bg_color 0x4A0000
+  - &vinho_func_key_pressed_text_color 0xEF9A9A
+  - &vinho_shift_lock_bg_color 0x8E0000
+  - &vinho_shift_lock_text_color 0xFFCCBC
+  - &vinho_shift_lock_pressed_bg_color 0x6A0000
+  - &vinho_shift_lock_pressed_text_color 0xFFAB91
+  - &vinho_enter_bg_color 0xD50000
+  - &vinho_enter_text_color 0xFFE0E0
+  - &vinho_enter_pressed_bg_color 0x9B0000
+  - &vinho_enter_pressed_text_color 0xFFCCCB
+  - &vinho_key_hint_color 0xE5E9E5
   # 乙組一：峯櫻
   - &sakura_main_color 0xFFB6C1 # 按鍵背景 
   - &sakura_bg_color 0xFFF0F5 # 鍵盤背景 
@@ -288,28 +288,28 @@ colors:
   - &sakura_enter_pressed_text_color 0xFFE4E1 # 回車鍵按下時（文字） 
   - &sakura_key_hint_color 0xE9967A # 按鍵小字 
   # 乙組二：番瓜
-  - &pumpkin_main_color 0xA5420D # 按鍵背景 
-  - &pumpkin_bg_color 0x331A0D # 鍵盤背景 
-  - &pumpkin_border_color 0xFF8C42 # 邊框 
-  - &pumpkin_main_text_color 0xFFE4C4 # 主要字符 
-  - &pumpkin_sub_candidate_color 0xFFA559 # 非高亮候選 
-  - &pumpkin_code_text_color 0xB35C22 # 已解析編碼 
-  - &pumpkin_code_unparsed_color 0xFFB347 # 未解析編碼 
-  - &pumpkin_comment_color 0xFF9E4F # 高亮註釋 
-  - &pumpkin_sub_comment_color 0x663311 # 其他註釋 
-  - &pumpkin_func_key_bg_color 0xB34D0F # 功能鍵背景色 
-  - &pumpkin_func_key_text_color 0xFFD8B6 # 功能鍵文本色 
-  - &pumpkin_func_key_pressed_bg_color 0x8C3D0C # 功能鍵按下時（背景）
-  - &pumpkin_func_key_pressed_text_color 0xFFC999 # 功能鍵按下時（文字）
-  - &pumpkin_shift_lock_bg_color 0xFF8C42 # Shift鎖定時（背景）
-  - &pumpkin_shift_lock_text_color 0xFFE8C4 # Shift鎖定時（文字）
-  - &pumpkin_shift_lock_pressed_bg_color 0xE66C20 # Shift鎖定時按下（背景）
-  - &pumpkin_shift_lock_pressed_text_color 0xFFD4A3 # Shift鎖定時按下（文字）
-  - &pumpkin_enter_bg_color 0xD45B1A # 回車鍵（背景）
-  - &pumpkin_enter_text_color 0xFFE0C2 # 回車鍵（文字）
-  - &pumpkin_enter_pressed_bg_color 0xE67C30 # 回車鍵按下時（背景）
-  - &pumpkin_enter_pressed_text_color 0xFFCCA3 # 回車鍵按下時（文字）
-  - &pumpkin_key_hint_color 0xFF9E4F # 按鍵小字 
+  - &pumpkin_main_color 0xA5420D
+  - &pumpkin_bg_color 0x331A0D
+  - &pumpkin_border_color 0xFF8C42
+  - &pumpkin_main_text_color 0xFFE4C4
+  - &pumpkin_sub_candidate_color 0xFFA559
+  - &pumpkin_code_text_color 0xB35C22
+  - &pumpkin_code_unparsed_color 0xFFB347
+  - &pumpkin_comment_color 0xFF9E4F
+  - &pumpkin_sub_comment_color 0x663311
+  - &pumpkin_func_key_bg_color 0xB34D0F
+  - &pumpkin_func_key_text_color 0xFFD8B6
+  - &pumpkin_func_key_pressed_bg_color 0x8C3D0C
+  - &pumpkin_func_key_pressed_text_color 0xFFC999
+  - &pumpkin_shift_lock_bg_color 0xFF8C42
+  - &pumpkin_shift_lock_text_color 0xFFE8C4
+  - &pumpkin_shift_lock_pressed_bg_color 0xE66C20
+  - &pumpkin_shift_lock_pressed_text_color 0xFFD4A3
+  - &pumpkin_enter_bg_color 0xD45B1A
+  - &pumpkin_enter_text_color 0xFFE0C2
+  - &pumpkin_enter_pressed_bg_color 0xE67C30
+  - &pumpkin_enter_pressed_text_color 0xFFCCA3
+  - &pumpkin_key_hint_color 0xFF9E4F
     # 乙組二：金盞
   - &calendula_main_color 0xFFA500  # 按鍵背景
   - &calendula_bg_color 0xEEE0C5 # 鍵盤背景
@@ -334,28 +334,28 @@ colors:
   - &calendula_enter_pressed_text_color 0xFFD4A3 # 回車鍵按下時（文字）
   - &calendula_key_hint_color 0xB22B00 # 按鍵小字
   # 乙組三：竹林
-  - &bamboo_main_color 0x8FC31F # 按鍵背景
-  - &bamboo_bg_color 0xE5F0C5 # 鍵盤背景
-  - &bamboo_border_color 0x6B8E23 # 邊框
-  - &bamboo_main_text_color 0x1A2F08 # 主要字符
-  - &bamboo_sub_candidate_color 0x5E8C3A # 非高亮候選
-  - &bamboo_code_text_color 0xC8E2A3 # 已解析編碼
-  - &bamboo_code_unparsed_color 0x42602D # 未解析編碼
-  - &bamboo_comment_color 0x7BA23F # 高亮註釋
-  - &bamboo_sub_comment_color 0xBED3A2 # 其他註釋
-  - &bamboo_func_key_bg_color 0x3D5C1C # 功能鍵背景色
-  - &bamboo_func_key_text_color 0xE8F4D4 # 功能鍵文本色
-  - &bamboo_func_key_pressed_bg_color 0x2B4C14 # 功能鍵按下時（背景）
-  - &bamboo_func_key_pressed_text_color 0xE0EBCB # 功能鍵按下時（文字）
-  - &bamboo_shift_lock_bg_color 0x4D6B27 # Shift鎖定時（背景）
-  - &bamboo_shift_lock_text_color 0xE3F0A6 # Shift鎖定時（文字）
-  - &bamboo_shift_lock_pressed_bg_color 0x3A5620 # Shift鎖定時按下（背景）
-  - &bamboo_shift_lock_pressed_text_color 0xD8E3BB # Shift鎖定時按下（文字）
-  - &bamboo_enter_bg_color 0x5B7E3D # 回車鍵（背景）
-  - &bamboo_enter_text_color 0xD1E0B7 # 回車鍵（文字）
-  - &bamboo_enter_pressed_bg_color 0x2F5D3C # 回車鍵按下時（背景）
-  - &bamboo_enter_pressed_text_color 0xC4D6A9 # 回車鍵按下時（文字）
-  - &bamboo_key_hint_color 0x7A9F59 # 按鍵小字
+  - &bamboo_main_color 0x8FC31F
+  - &bamboo_bg_color 0xE5F0C5
+  - &bamboo_border_color 0x6B8E23
+  - &bamboo_main_text_color 0x1A2F08
+  - &bamboo_sub_candidate_color 0x5E8C3A
+  - &bamboo_code_text_color 0xC8E2A3
+  - &bamboo_code_unparsed_color 0x42602D
+  - &bamboo_comment_color 0x7BA23F
+  - &bamboo_sub_comment_color 0xBED3A2
+  - &bamboo_func_key_bg_color 0x3D5C1C
+  - &bamboo_func_key_text_color 0xE8F4D4
+  - &bamboo_func_key_pressed_bg_color 0x2B4C14
+  - &bamboo_func_key_pressed_text_color 0xE0EBCB
+  - &bamboo_shift_lock_bg_color 0x4D6B27
+  - &bamboo_shift_lock_text_color 0xE3F0A6
+  - &bamboo_shift_lock_pressed_bg_color 0x3A5620
+  - &bamboo_shift_lock_pressed_text_color 0xD8E3BB
+  - &bamboo_enter_bg_color 0x5B7E3D
+  - &bamboo_enter_text_color 0xD1E0B7
+  - &bamboo_enter_pressed_bg_color 0x2F5D3C
+  - &bamboo_enter_pressed_text_color 0xC4D6A9
+  - &bamboo_key_hint_color 0x7A9F59
   # 乙組三：松葉
   - &pine_main_color 0x2E5E23 # 按鍵背景
   - &pine_bg_color 0x0D1F0A # 鍵盤背景
@@ -380,28 +380,28 @@ colors:
   - &pine_enter_pressed_text_color 0xA8C8A0 # 回車鍵按下時（文字）
   - &pine_key_hint_color 0x4D7A3D # 按鍵小字
   # 乙組四：紫陽
-  - &hydrangea_main_color 0x7DB9DE # 按鍵背景
-  - &hydrangea_bg_color 0xE0F7FF # 鍵盤背景
-  - &hydrangea_border_color 0x5DAC81 # 邊框
-  - &hydrangea_main_text_color 0x0A1E37 # 主要字符
-  - &hydrangea_sub_candidate_color 0x6A8372 # 非高亮候選
-  - &hydrangea_code_text_color 0xA5DEE4 # 已解析編碼
-  - &hydrangea_code_unparsed_color 0x3E62AD # 未解析編碼
-  - &hydrangea_comment_color 0x4F726C # 高亮註釋
-  - &hydrangea_sub_comment_color 0xB8D5D7 # 其他註釋
-  - &hydrangea_func_key_bg_color 0x3A5B92 # 功能鍵背景色
-  - &hydrangea_func_key_text_color 0xE4F4FC # 功能鍵文本色
-  - &hydrangea_func_key_pressed_bg_color 0x2E4B7A # 功能鍵按下時（背景）
-  - &hydrangea_func_key_pressed_text_color 0xC9E3E8 # 功能鍵按下時（文字）
-  - &hydrangea_shift_lock_bg_color 0x4B7CB5 # Shift鎖定時（背景）
-  - &hydrangea_shift_lock_text_color 0xFFFACD # Shift鎖定時（文字）
-  - &hydrangea_shift_lock_pressed_bg_color 0x3A5F8E # Shift鎖定時按下（背景）
-  - &hydrangea_shift_lock_pressed_text_color 0xE0DFE5 # Shift鎖定時按下（文字）
-  - &hydrangea_enter_bg_color 0x4368A7 # 回車鍵（背景）
-  - &hydrangea_enter_text_color 0xC8D5E1 # 回車鍵（文字）
-  - &hydrangea_enter_pressed_bg_color 0x2F4D7E # 回車鍵按下時（背景）
-  - &hydrangea_enter_pressed_text_color 0xD6E9F4 # 回車鍵按下時（文字）
-  - &hydrangea_key_hint_color 0x5D8CAE # 按鍵小字
+  - &hydrangea_main_color 0x7DB9DE
+  - &hydrangea_bg_color 0xE0F7FF
+  - &hydrangea_border_color 0x5DAC81
+  - &hydrangea_main_text_color 0x0A1E37
+  - &hydrangea_sub_candidate_color 0x6A8372
+  - &hydrangea_code_text_color 0xA5DEE4
+  - &hydrangea_code_unparsed_color 0x3E62AD
+  - &hydrangea_comment_color 0x4F726C
+  - &hydrangea_sub_comment_color 0xB8D5D7
+  - &hydrangea_func_key_bg_color 0x3A5B92
+  - &hydrangea_func_key_text_color 0xE4F4FC
+  - &hydrangea_func_key_pressed_bg_color 0x2E4B7A
+  - &hydrangea_func_key_pressed_text_color 0xC9E3E8
+  - &hydrangea_shift_lock_bg_color 0x4B7CB5
+  - &hydrangea_shift_lock_text_color 0xFFFACD
+  - &hydrangea_shift_lock_pressed_bg_color 0x3A5F8E
+  - &hydrangea_shift_lock_pressed_text_color 0xE0DFE5
+  - &hydrangea_enter_bg_color 0x4368A7
+  - &hydrangea_enter_text_color 0xC8D5E1
+  - &hydrangea_enter_pressed_bg_color 0x2F4D7E
+  - &hydrangea_enter_pressed_text_color 0xD6E9F4
+  - &hydrangea_key_hint_color 0x5D8CAE
   # 乙組四：矢車菊
   - &centaurea_main_color 0x5A7FC4 # 按鍵背景
   - &centaurea_bg_color 0x1A2B50 # 鍵盤背景
@@ -426,28 +426,28 @@ colors:
   - &centaurea_enter_pressed_text_color 0xE4F4FC # 回車鍵按下時（文字）
   - &centaurea_key_hint_color 0x911115 # 按鍵小字
   # 乙組五：紫藤
-  - &wisteria_main_color 0xC7A2E0 # 按鍵背景
-  - &wisteria_bg_color 0xE6D4F7 # 鍵盤背景
-  - &wisteria_border_color 0x9D5FB0 # 邊框
-  - &wisteria_main_text_color 0x1A0033 # 主要字符
-  - &wisteria_sub_candidate_color 0x7F4E97 # 非高亮候選
-  - &wisteria_code_text_color 0xE9CFFF # 已解析編碼
-  - &wisteria_code_unparsed_color 0xC44B8C # 未解析編碼
-  - &wisteria_comment_color 0x8A6BBE # 高亮註釋
-  - &wisteria_sub_comment_color 0xD4BBE5 # 其他註釋
-  - &wisteria_func_key_bg_color 0x5D3D6E # 功能鍵背景色
-  - &wisteria_func_key_text_color 0xF8F2FF # 功能鍵文本色
-  - &wisteria_func_key_pressed_bg_color 0x7A5687 # 功能鍵按下時（背景）
-  - &wisteria_func_key_pressed_text_color 0xEDE0F5 # 功能鍵按下時（文字）
-  - &wisteria_shift_lock_bg_color 0x6A4B8D # Shift鎖定時（背景）
-  - &wisteria_shift_lock_text_color 0xFFF0FE # Shift鎖定時（文字）
-  - &wisteria_shift_lock_pressed_bg_color 0x4E3565 # Shift鎖定時按下（背景）
-  - &wisteria_shift_lock_pressed_text_color 0xE6D7EF # Shift鎖定時按下（文字）
-  - &wisteria_enter_bg_color 0x8E6CA4 # 回車鍵（背景）
-  - &wisteria_enter_text_color 0xE8DFED # 回車鍵（文字）
-  - &wisteria_enter_pressed_bg_color 0x6C4173 # 回車鍵按下時（背景）
-  - &wisteria_enter_pressed_text_color 0xD8C9E5 # 回車鍵按下時（文字）
-  - &wisteria_key_hint_color 0xA37FC1 # 按鍵小字
+  - &wisteria_main_color 0xC7A2E0
+  - &wisteria_bg_color 0xE6D4F7
+  - &wisteria_border_color 0x9D5FB0
+  - &wisteria_main_text_color 0x1A0033
+  - &wisteria_sub_candidate_color 0x7F4E97
+  - &wisteria_code_text_color 0xE9CFFF
+  - &wisteria_code_unparsed_color 0xC44B8C
+  - &wisteria_comment_color 0x8A6BBE
+  - &wisteria_sub_comment_color 0xD4BBE5
+  - &wisteria_func_key_bg_color 0x5D3D6E
+  - &wisteria_func_key_text_color 0xF8F2FF
+  - &wisteria_func_key_pressed_bg_color 0x7A5687
+  - &wisteria_func_key_pressed_text_color 0xEDE0F5
+  - &wisteria_shift_lock_bg_color 0x6A4B8D
+  - &wisteria_shift_lock_text_color 0xFFF0FE
+  - &wisteria_shift_lock_pressed_bg_color 0x4E3565
+  - &wisteria_shift_lock_pressed_text_color 0xE6D7EF
+  - &wisteria_enter_bg_color 0x8E6CA4
+  - &wisteria_enter_text_color 0xE8DFED
+  - &wisteria_enter_pressed_bg_color 0x6C4173
+  - &wisteria_enter_pressed_text_color 0xD8C9E5
+  - &wisteria_key_hint_color 0xA37FC1
   # 乙組五：薰衣草
   - &lavender_main_color 0x7E5E9B # 按鍵背景
   - &lavender_bg_color 0x4A365C # 鍵盤背景
@@ -472,29 +472,29 @@ colors:
   - &lavender_enter_pressed_text_color 0xD0BEE5 # 回車鍵按下時（文字）
   - &lavender_key_hint_color 0xB38AD4 # 按鍵小字
   # 丙組：新地
-  - &shinti_main_color 0xB03060 # 按鍵背景 
-  - &shinti_bg_color 0x301934 # 鍵盤背景 
-  - &shinti_border_color 0x800000 # 邊框 
-  - &shinti_main_text_color 0xFFD700 # 主要字符 
-  - &shinti_sub_candidate_color 0x9370DB # 非高亮候選 
-  - &shinti_code_text_color 0x4B0082 # 已解析編碼 
-  - &shinti_code_unparsed_color 0x8B4513 # 未解析編碼 
-  - &shinti_comment_color 0xFF1493 # 高亮註釋 
-  - &shinti_sub_comment_color 0x9932CC # 其他註釋 
-  - &shinti_func_key_bg_color 0x8B0000 # 功能鍵背景色 
-  - &shinti_func_key_text_color 0xFFFAF0 # 功能鍵文本色 
-  - &shinti_func_key_pressed_bg_color 0x660033 # 功能鍵按下時（背景） 
-  - &shinti_func_key_pressed_text_color 0xFFDAB9 # 功能鍵按下時（文字） 
-  - &shinti_shift_lock_bg_color 0x8B008B # Shift鎖定時（背景） 
-  - &shinti_shift_lock_text_color 0xE6E6FA # Shift鎖定時（文字） 
-  - &shinti_shift_lock_pressed_bg_color 0x4B0082 # Shift鎖定時按下（背景） 
-  - &shinti_shift_lock_pressed_text_color 0xD8BFD8 # Shift鎖定時按下（文字） 
-  - &shinti_enter_bg_color 0xC71585 # 回車鍵（背景） 
-  - &shinti_enter_text_color 0xFFF5EE # 回車鍵（文字） 
-  - &shinti_enter_pressed_bg_color 0x8B4513 # 回車鍵按下時（背景） 
-  - &shinti_enter_pressed_text_color 0xFFE4B5 # 回車鍵按下時（文字） 
-  - &shinti_key_hint_color 0xDA70D6 # 按鍵小字 
-  # 丙組：椰子
+  - &shinti_main_color 0xB03060
+  - &shinti_bg_color 0x301934
+  - &shinti_border_color 0x800000
+  - &shinti_main_text_color 0xFFD700
+  - &shinti_sub_candidate_color 0x9370DB
+  - &shinti_code_text_color 0x4B0082
+  - &shinti_code_unparsed_color 0x8B4513
+  - &shinti_comment_color 0xFF1493
+  - &shinti_sub_comment_color 0x9932CC
+  - &shinti_func_key_bg_color 0x8B0000
+  - &shinti_func_key_text_color 0xFFFAF0
+  - &shinti_func_key_pressed_bg_color 0x660033
+  - &shinti_func_key_pressed_text_color 0xFFDAB9
+  - &shinti_shift_lock_bg_color 0x8B008B
+  - &shinti_shift_lock_text_color 0xE6E6FA
+  - &shinti_shift_lock_pressed_bg_color 0x4B0082
+  - &shinti_shift_lock_pressed_text_color 0xD8BFD8
+  - &shinti_enter_bg_color 0xC71585
+  - &shinti_enter_text_color 0xFFF5EE
+  - &shinti_enter_pressed_bg_color 0x8B4513
+  - &shinti_enter_pressed_text_color 0xFFE4B5
+  - &shinti_key_hint_color 0xDA70D6
+  # 丙組：椰海
   - &coconut_main_color 0xD4C99E # 按鍵背景
   - &coconut_bg_color 0xF5F2E5 # 鍵盤背景
   - &coconut_border_color 0x8B7E4B # 邊框
@@ -517,44 +517,90 @@ colors:
   - &coconut_enter_pressed_bg_color 0x6B5D2E # 回車鍵按下時（背景）
   - &coconut_enter_pressed_text_color 0xD4CBAD # 回車鍵按下時（文字）
   - &coconut_key_hint_color 0xB2A57B # 按鍵小字
+  # 丙組：白炭
+  - &charcoal_main_color 0x6C757D
+  - &charcoal_bg_color 0x495057
+  - &charcoal_border_color 0xAAAAAA
+  - &charcoal_main_text_color 0x212529
+  - &charcoal_sub_candidate_color 0x868E96
+  - &charcoal_code_text_color 0xCED4DA
+  - &charcoal_code_unparsed_color 0x5C636A
+  - &charcoal_comment_color 0xEEE2C6
+  - &charcoal_sub_comment_color 0xEEE2C6
+  - &charcoal_func_key_bg_color 0x343A40
+  - &charcoal_func_key_text_color 0xC8C9CA
+  - &charcoal_func_key_pressed_bg_color 0x252A2E
+  - &charcoal_func_key_pressed_text_color 0xE9ECEF
+  - &charcoal_shift_lock_bg_color 0x545B62
+  - &charcoal_shift_lock_text_color 0x771111
+  - &charcoal_shift_lock_pressed_bg_color 0x3E4449
+  - &charcoal_shift_lock_pressed_text_color 0xD6D9DC
+  - &charcoal_enter_bg_color 0x5F666D
+  - &charcoal_enter_text_color 0xD6D9DC
+  - &charcoal_enter_pressed_bg_color 0x37424B
+  - &charcoal_enter_pressed_text_color 0xC8CBCC
+  - &charcoal_key_hint_color 0xEEEEEE
+  # 丙組：海傍
+  - &costa_main_color 0x3A6EA5
+  - &costa_bg_color 0x1F3D66
+  - &costa_border_color 0xD4E6F7
+  - &costa_main_text_color 0x0A1F33
+  - &costa_sub_candidate_color 0x5A8BB8
+  - &costa_code_text_color 0xA7C8E9
+  - &costa_code_unparsed_color 0x2E5A8C
+  - &costa_comment_color 0xB8D4ED
+  - &costa_sub_comment_color 0xE0EDFA
+  - &costa_func_key_bg_color 0x1D4B7F
+  - &costa_func_key_text_color 0x4A7EB0
+  - &costa_func_key_pressed_bg_color 0x142C50
+  - &costa_func_key_pressed_text_color 0x4EA2D3
+  - &costa_shift_lock_bg_color 0x2D5288
+  - &costa_shift_lock_text_color 0xC6E0FF
+  - &costa_shift_lock_pressed_bg_color 0x22416B
+  - &costa_shift_lock_pressed_text_color 0xBCD6F5
+  - &costa_enter_bg_color 0x3E7BA9
+  - &costa_enter_text_color 0xD4E1EE
+  - &costa_enter_pressed_bg_color 0x1E4D6E
+  - &costa_enter_pressed_text_color 0xB0CCE3
+  - &costa_key_hint_color 0xC4DEF5
 
 preset_color_schemes:
   default:
-    name: "菊韻 / Chrysanthemum"
+    name: "菊韻 / Gukwan"
     author: "Hoengsaan (Lingdai)"
     #懸浮窗顏色
     border_color: *gukwan_border_color                        #懸浮窗邊框
     label_color: *gukwan_sub_candidate_color                  #編碼高亮
     hilited_text_color: *gukwan_code_text_color               #已解析編碼
-    text_color: *gukwan_code_unparsed_color                   #未解析/無法解析的編碼
-    hilited_back_color: *gukwan_main_color                    #已解析編碼的背景
-    text_back_color: *gukwan_bg_color                         #未解析編碼的背景
+    text_color: *gukwan_code_unparsed_color                   #未解析編碼
+    hilited_back_color: *gukwan_main_color                    #已解析編碼之背景
+    text_back_color: *gukwan_bg_color                         #未解析編碼之背景
     #候選區顏色
-    back_color: *gukwan_bg_color                              #候選區背景
+    back_color: *gukwan_bg_color                              #候選區背景？
     candidate_background : *gukwan_bg_color                   #候選區背景？
     hilited_candidate_back_color: *gukwan_main_color          #候選區高亮背景
-    candidate_separator_color: *pure_black                  #候選項分割線
+    candidate_separator_color: *pure_black                    #候選項分割線
     candidate_text_color: *gukwan_sub_candidate_color         #其他候選文本
     hilited_candidate_text_color: *gukwan_main_text_color     #候選高亮文本
     comment_text_color: *gukwan_sub_comment_color             #候選項註釋文本
     hilited_comment_text_color: *gukwan_comment_color         #高亮候選項註釋文本
     #鍵盤顏色
-    key_back_color: *gukwan_main_color                              #按鍵背景色
-    hilited_key_back_color: *gukwan_border_color                    #按鍵按下時背景色
-    key_text_color: *gukwan_main_text_color                         #按鍵字符顏色
-    key_symbol_color: *gukwan_key_hint_color                        #按鍵小字顏色
-    hilited_key_symbol_color: *pure_white                         #按下時小字顏色
-    preview_back_color: *gukwan_border_color                        #氣泡背景色
-    preview_text_color: *pure_white                               #氣泡字符顏色
-    keyboard_back_color: *gukwan_bg_color                           #鍵盤整體背景色
-    key_border_color: *gukwan_border_color                          #按鍵邊框顏色
-    off_key_back_color: *gukwan_func_key_bg_color                   #功能鍵背景色
-    off_key_text_color: *gukwan_func_key_text_color                 #功能鍵文本色
-    hilited_off_key_back_color: *gukwan_func_key_pressed_bg_color   #功能鍵按下時背景色
-    hilited_off_key_text_color: *gukwan_func_key_pressed_text_color #功能鍵按下時文本色
-    on_key_back_color: *gukwan_shift_lock_bg_color                  #Shift鎖定時背景色
-    hilited_on_key_back_color: *gukwan_shift_lock_pressed_bg_color  #Shift鎖定時按下的背景顏色
-    on_key_text_color: *gukwan_shift_lock_text_color                #Shift鎖定時文字顏色
+    key_back_color: *gukwan_main_color                               #按鍵背景色
+    hilited_key_back_color: *gukwan_border_color                     #按鍵按下時背景色
+    key_text_color: *gukwan_main_text_color                          #按鍵字符顏色
+    key_symbol_color: *gukwan_key_hint_color                         #按鍵小字顏色
+    hilited_key_symbol_color: *pure_white                            #按下時小字顏色
+    preview_back_color: *gukwan_border_color                         #氣泡背景色
+    preview_text_color: *pure_white                                  #氣泡字符顏色
+    keyboard_back_color: *gukwan_bg_color                            #鍵盤整體背景色
+    key_border_color: *gukwan_border_color                           #按鍵邊框顏色
+    off_key_back_color: *gukwan_func_key_bg_color                    #功能鍵背景色
+    off_key_text_color: *gukwan_func_key_text_color                  #功能鍵文本色
+    hilited_off_key_back_color: *gukwan_func_key_pressed_bg_color    #功能鍵按下時背景色
+    hilited_off_key_text_color: *gukwan_func_key_pressed_text_color  #功能鍵按下時背景色
+    on_key_back_color: *gukwan_shift_lock_bg_color                   #Shift鎖定時背景色
+    hilited_on_key_back_color: *gukwan_shift_lock_pressed_bg_color   #Shift鎖定時按下的背景顏色
+    on_key_text_color: *gukwan_shift_lock_text_color                 #Shift鎖定時文字顏色
     hilited_on_key_text_color: *gukwan_shift_lock_pressed_text_color #Shift鎖定時按下的文字顏色
     enter_bg_color: *gukwan_enter_bg_color
     enter_text_color: *gukwan_enter_text_color
@@ -568,39 +614,39 @@ preset_color_schemes:
     author: "Hoengsaan (Lingdai)"
     light_scheme: bb_sakura
     #懸浮窗顏色
-    border_color: *vinho_border_color                        #懸浮窗邊框
-    label_color: *vinho_sub_candidate_color                  #編碼高亮
-    hilited_text_color: *vinho_code_text_color               #已解析編碼
-    text_color: *vinho_code_unparsed_color                   #未解析/無法解析的編碼
-    hilited_back_color: *vinho_main_color                    #已解析編碼的背景
-    text_back_color: *vinho_bg_color                         #未解析編碼的背景
+    border_color: *vinho_border_color
+    label_color: *vinho_sub_candidate_color
+    hilited_text_color: *vinho_code_text_color
+    text_color: *vinho_code_unparsed_color
+    hilited_back_color: *vinho_main_color
+    text_back_color: *vinho_bg_color
     #候選區顏色
-    back_color: *vinho_bg_color                              #候選區背景？
-    candidate_background : *vinho_bg_color                   #候選區背景？
-    hilited_candidate_back_color: *vinho_main_color          #候選區高亮背景
-    candidate_separator_color: *pure_black                  #候選項分割線
-    candidate_text_color: *vinho_sub_candidate_color         #其他候選文本
-    hilited_candidate_text_color: *vinho_main_text_color     #候選高亮文本
-    comment_text_color: *vinho_sub_comment_color             #候選項註釋文本
-    hilited_comment_text_color: *vinho_comment_color         #高亮候選項註釋文本
+    back_color: *vinho_bg_color
+    candidate_background : *vinho_bg_color
+    hilited_candidate_back_color: *vinho_main_color
+    candidate_separator_color: *pure_black
+    candidate_text_color: *vinho_sub_candidate_color
+    hilited_candidate_text_color: *vinho_main_text_color
+    comment_text_color: *vinho_sub_comment_color
+    hilited_comment_text_color: *vinho_comment_color
     #鍵盤顏色
-    key_back_color: *vinho_main_color                              #按鍵背景色
-    hilited_key_back_color: *vinho_border_color                    #按鍵按下時背景色
-    key_text_color: *vinho_main_text_color                         #按鍵字符顏色
-    key_symbol_color: *vinho_key_hint_color                        #按鍵小字顏色
-    hilited_key_symbol_color: *pure_white                         #按下時小字顏色
-    preview_back_color: *vinho_border_color                        #氣泡背景色
-    preview_text_color: *pure_white                               #氣泡字符顏色
-    keyboard_back_color: *vinho_bg_color                           #鍵盤整體背景色
-    key_border_color: *vinho_border_color                          #按鍵邊框顏色
-    off_key_back_color: *vinho_func_key_bg_color                   #功能鍵背景色
-    off_key_text_color: *vinho_func_key_text_color                 #功能鍵文本色
-    hilited_off_key_back_color: *vinho_func_key_pressed_bg_color   #功能鍵按下時背景色
-    hilited_off_key_text_color: *vinho_func_key_pressed_text_color #功能鍵按下時文本色
-    on_key_back_color: *vinho_shift_lock_bg_color                  #Shift鎖定時背景色
-    hilited_on_key_back_color: *vinho_shift_lock_pressed_bg_color  #Shift鎖定時按下的背景顏色
-    on_key_text_color: *vinho_shift_lock_text_color                #Shift鎖定時文字顏色
-    hilited_on_key_text_color: *vinho_shift_lock_pressed_text_color #Shift鎖定時按下的文字顏色
+    key_back_color: *vinho_main_color
+    hilited_key_back_color: *vinho_border_color
+    key_text_color: *vinho_main_text_color
+    key_symbol_color: *vinho_key_hint_color
+    hilited_key_symbol_color: *pure_white
+    preview_back_color: *vinho_border_color
+    preview_text_color: *pure_white
+    keyboard_back_color: *vinho_bg_color
+    key_border_color: *vinho_border_color
+    off_key_back_color: *vinho_func_key_bg_color
+    off_key_text_color: *vinho_func_key_text_color
+    hilited_off_key_back_color: *vinho_func_key_pressed_bg_color
+    hilited_off_key_text_color: *vinho_func_key_pressed_text_color
+    on_key_back_color: *vinho_shift_lock_bg_color
+    hilited_on_key_back_color: *vinho_shift_lock_pressed_bg_color
+    on_key_text_color: *vinho_shift_lock_text_color
+    hilited_on_key_text_color: *vinho_shift_lock_pressed_text_color
     enter_bg_color: *vinho_enter_bg_color
     enter_text_color: *vinho_enter_text_color
     enter_pressed_bg_color: *vinho_enter_pressed_bg_color
@@ -613,39 +659,39 @@ preset_color_schemes:
     author: "Hoengsaan (Lingdai)"
     dark_scheme: ba_vinho
     #懸浮窗顏色
-    border_color: *sakura_border_color                        #懸浮窗邊框
-    label_color: *sakura_sub_candidate_color                  #編碼高亮
-    hilited_text_color: *sakura_code_text_color               #已解析編碼
-    text_color: *sakura_code_unparsed_color                   #未解析/無法解析的編碼
-    hilited_back_color: *sakura_bg_color                      #已解析編碼的背景
-    text_back_color: *sakura_bg_color                         #未解析編碼的背景
+    border_color: *sakura_border_color
+    label_color: *sakura_sub_candidate_color
+    hilited_text_color: *sakura_code_text_color
+    text_color: *sakura_code_unparsed_color
+    hilited_back_color: *sakura_bg_color
+    text_back_color: *sakura_bg_color
     ##候選區顏色
-    back_color: *sakura_bg_color                              #候選區背景
-    candidate_background : *sakura_bg_color                   #候選區背景？
-    hilited_candidate_back_color: *sakura_main_color          #候選區高亮背景
-    candidate_separator_color: *pure_black                   #候選項分割線
-    candidate_text_color: *sakura_sub_candidate_color         #其他候選文本
-    hilited_candidate_text_color: *sakura_main_text_color     #候選高亮文本
-    comment_text_color: *sakura_sub_comment_color             #候選項註釋文本
-    hilited_comment_text_color: *sakura_comment_color         #高亮候選項註釋文本
+    back_color: *sakura_bg_color
+    candidate_background : *sakura_bg_color
+    hilited_candidate_back_color: *sakura_main_color
+    candidate_separator_color: *pure_black 
+    candidate_text_color: *sakura_sub_candidate_color
+    hilited_candidate_text_color: *sakura_main_text_color
+    comment_text_color: *sakura_sub_comment_color
+    hilited_comment_text_color: *sakura_comment_color
     ##鍵盤顏色
-    key_back_color: *sakura_main_color                               #按鍵背景色
-    hilited_key_back_color: *sakura_border_color                     #按鍵按下時背景色
-    key_text_color: *sakura_main_text_color                          #按鍵字符顏色
-    key_symbol_color: *sakura_key_hint_color                         #按鍵小字顏色
-    hilited_key_symbol_color: *pure_black                           #按下時小字顏色
-    preview_back_color: *sakura_border_color                         #氣泡背景色
-    preview_text_color: *pure_black                                 #氣泡字符顏色
-    keyboard_back_color: *sakura_bg_color                            #鍵盤整體背景色
-    key_border_color: *sakura_border_color                           #按鍵邊框顏色
-    off_key_back_color: *sakura_func_key_bg_color                    #功能鍵背景色
-    off_key_text_color: *sakura_func_key_text_color                  #功能鍵文本色
-    hilited_off_key_back_color: *sakura_func_key_pressed_bg_color    #功能鍵按下時背景色
-    hilited_off_key_text_color: *sakura_func_key_pressed_text_color  #功能鍵按下時文本色
-    on_key_back_color: *sakura_shift_lock_bg_color                   #Shift鎖定時背景色
-    hilited_on_key_back_color: *sakura_shift_lock_pressed_bg_color   #Shift鎖定時按下的背景顏色
-    on_key_text_color: *sakura_shift_lock_text_color                 #Shift鎖定時文字顏色
-    hilited_on_key_text_color: *sakura_shift_lock_pressed_text_color #Shift鎖定時按下的文字顏色
+    key_back_color: *sakura_main_color
+    hilited_key_back_color: *sakura_border_color
+    key_text_color: *sakura_main_text_color
+    key_symbol_color: *sakura_key_hint_color
+    hilited_key_symbol_color: *pure_black
+    preview_back_color: *sakura_border_color
+    preview_text_color: *pure_black
+    keyboard_back_color: *sakura_bg_color
+    key_border_color: *sakura_border_color
+    off_key_back_color: *sakura_func_key_bg_color
+    off_key_text_color: *sakura_func_key_text_color
+    hilited_off_key_back_color: *sakura_func_key_pressed_bg_color
+    hilited_off_key_text_color: *sakura_func_key_pressed_text_color
+    on_key_back_color: *sakura_shift_lock_bg_color
+    hilited_on_key_back_color: *sakura_shift_lock_pressed_bg_color
+    on_key_text_color: *sakura_shift_lock_text_color
+    hilited_on_key_text_color: *sakura_shift_lock_pressed_text_color
     enter_bg_color: *sakura_enter_bg_color
     enter_text_color: *sakura_enter_text_color
     enter_pressed_bg_color: *sakura_enter_pressed_bg_color
@@ -658,39 +704,39 @@ preset_color_schemes:
     author: "Hoengsaan (Lingdai)"
     light_scheme: bd_calendula
     #懸浮窗顏色
-    border_color: *pumpkin_border_color                        #懸浮窗邊框
-    label_color: *pumpkin_sub_candidate_color                  #編碼高亮
-    hilited_text_color: *pumpkin_code_text_color               #已解析編碼
-    text_color: *pumpkin_code_unparsed_color                   #未解析/無法解析的編碼
-    hilited_back_color: *pumpkin_bg_color                      #已解析編碼的背景
-    text_back_color: *pumpkin_bg_color                         #未解析編碼的背景
+    border_color: *pumpkin_border_color
+    label_color: *pumpkin_sub_candidate_color
+    hilited_text_color: *pumpkin_code_text_color
+    text_color: *pumpkin_code_unparsed_color
+    hilited_back_color: *pumpkin_bg_color 
+    text_back_color: *pumpkin_bg_color
     ##候選區顏色
-    back_color: *pumpkin_bg_color                              #候選區背景
-    candidate_background : *pumpkin_bg_color                   #候選區背景？
-    hilited_candidate_back_color: *pumpkin_main_color          #候選區高亮背景
-    candidate_separator_color: *pure_black                   #候選項分割線
-    candidate_text_color: *pumpkin_sub_candidate_color         #其他候選文本
-    hilited_candidate_text_color: *pumpkin_main_text_color     #候選高亮文本
-    comment_text_color: *pumpkin_sub_comment_color             #候選項註釋文本
-    hilited_comment_text_color: *pumpkin_comment_color         #高亮候選項註釋文本
+    back_color: *pumpkin_bg_color
+    candidate_background : *pumpkin_bg_color
+    hilited_candidate_back_color: *pumpkin_main_color
+    candidate_separator_color: *pure_black 
+    candidate_text_color: *pumpkin_sub_candidate_color
+    hilited_candidate_text_color: *pumpkin_main_text_color
+    comment_text_color: *pumpkin_sub_comment_color
+    hilited_comment_text_color: *pumpkin_comment_color
     ##鍵盤顏色
-    key_back_color: *pumpkin_main_color                               #按鍵背景色
-    hilited_key_back_color: *pumpkin_border_color                     #按鍵按下時背景色
-    key_text_color: *pumpkin_main_text_color                          #按鍵字符顏色
-    key_symbol_color: *pumpkin_key_hint_color                         #按鍵小字顏色
-    hilited_key_symbol_color: *pure_black                           #按下時小字顏色
-    preview_back_color: *pumpkin_border_color                         #氣泡背景色
-    preview_text_color: *pure_black                                 #氣泡字符顏色
-    keyboard_back_color: *pumpkin_bg_color                            #鍵盤整體背景色
-    key_border_color: *pumpkin_border_color                           #按鍵邊框顏色
-    off_key_back_color: *pumpkin_func_key_bg_color                    #功能鍵背景色
-    off_key_text_color: *pumpkin_func_key_text_color                  #功能鍵文本色
-    hilited_off_key_back_color: *pumpkin_func_key_pressed_bg_color    #功能鍵按下時背景色
-    hilited_off_key_text_color: *pumpkin_func_key_pressed_text_color  #功能鍵按下時文本色
-    on_key_back_color: *pumpkin_shift_lock_bg_color                   #Shift鎖定時背景色
-    hilited_on_key_back_color: *pumpkin_shift_lock_pressed_bg_color   #Shift鎖定時按下的背景顏色
-    on_key_text_color: *pumpkin_shift_lock_text_color                 #Shift鎖定時文字顏色
-    hilited_on_key_text_color: *pumpkin_shift_lock_pressed_text_color #Shift鎖定時按下的文字顏色
+    key_back_color: *pumpkin_main_color
+    hilited_key_back_color: *pumpkin_border_color
+    key_text_color: *pumpkin_main_text_color
+    key_symbol_color: *pumpkin_key_hint_color
+    hilited_key_symbol_color: *pure_black  
+    preview_back_color: *pumpkin_border_color
+    preview_text_color: *pure_black  
+    keyboard_back_color: *pumpkin_bg_color
+    key_border_color: *pumpkin_border_color
+    off_key_back_color: *pumpkin_func_key_bg_color
+    off_key_text_color: *pumpkin_func_key_text_color
+    hilited_off_key_back_color: *pumpkin_func_key_pressed_bg_color
+    hilited_off_key_text_color: *pumpkin_func_key_pressed_text_color
+    on_key_back_color: *pumpkin_shift_lock_bg_color
+    hilited_on_key_back_color: *pumpkin_shift_lock_pressed_bg_color
+    on_key_text_color: *pumpkin_shift_lock_text_color
+    hilited_on_key_text_color: *pumpkin_shift_lock_pressed_text_color
     enter_bg_color: *pumpkin_enter_bg_color
     enter_text_color: *pumpkin_enter_text_color
     enter_pressed_bg_color: *pumpkin_enter_pressed_bg_color
@@ -703,39 +749,39 @@ preset_color_schemes:
     author: "Hoengsaan (Lingdai)"
     dark_scheme: bc_pumpkin
     #懸浮窗顏色
-    border_color: *calendula_border_color                        #懸浮窗邊框
-    label_color: *calendula_sub_candidate_color                  #編碼高亮
-    hilited_text_color: *calendula_code_text_color               #已解析編碼
-    text_color: *calendula_code_unparsed_color                   #未解析/無法解析的編碼
-    hilited_back_color: *calendula_main_color                    #已解析編碼的背景
-    text_back_color: *calendula_bg_color                         #未解析編碼的背景
+    border_color: *calendula_border_color
+    label_color: *calendula_sub_candidate_color
+    hilited_text_color: *calendula_code_text_color
+    text_color: *calendula_code_unparsed_color
+    hilited_back_color: *calendula_main_color
+    text_back_color: *calendula_bg_color
     #候選區顏色
-    back_color: *calendula_bg_color                              #候選區背景？
-    candidate_background : *calendula_bg_color                   #候選區背景？
-    hilited_candidate_back_color: *calendula_main_color          #候選區高亮背景
-    candidate_separator_color: *pure_black                  #候選項分割線
-    candidate_text_color: *calendula_sub_candidate_color         #其他候選文本
-    hilited_candidate_text_color: *calendula_main_text_color     #候選高亮文本
-    comment_text_color: *calendula_sub_comment_color             #候選項註釋文本
-    hilited_comment_text_color: *calendula_comment_color         #高亮候選項註釋文本
+    back_color: *calendula_bg_color
+    candidate_background : *calendula_bg_color
+    hilited_candidate_back_color: *calendula_main_color
+    candidate_separator_color: *pure_black
+    candidate_text_color: *calendula_sub_candidate_color
+    hilited_candidate_text_color: *calendula_main_text_color
+    comment_text_color: *calendula_sub_comment_color
+    hilited_comment_text_color: *calendula_comment_color
     #鍵盤顏色
-    key_back_color: *calendula_main_color                              #按鍵背景色
-    hilited_key_back_color: *calendula_border_color                    #按鍵按下時背景色
-    key_text_color: *calendula_main_text_color                         #按鍵字符顏色
-    key_symbol_color: *calendula_key_hint_color                        #按鍵小字顏色
-    hilited_key_symbol_color: *pure_white                         #按下時小字顏色
-    preview_back_color: *calendula_border_color                        #氣泡背景色
-    preview_text_color: *pure_white                               #氣泡字符顏色
-    keyboard_back_color: *calendula_bg_color                           #鍵盤整體背景色
-    key_border_color: *calendula_border_color                          #按鍵邊框顏色
-    off_key_back_color: *calendula_func_key_bg_color                   #功能鍵背景色
-    off_key_text_color: *calendula_func_key_text_color                 #功能鍵文本色
-    hilited_off_key_back_color: *calendula_func_key_pressed_bg_color   #功能鍵按下時背景色
-    hilited_off_key_text_color: *calendula_func_key_pressed_text_color #功能鍵按下時文本色
-    on_key_back_color: *calendula_shift_lock_bg_color                  #Shift鎖定時背景色
-    hilited_on_key_back_color: *calendula_shift_lock_pressed_bg_color  #Shift鎖定時按下的背景顏色
-    on_key_text_color: *calendula_shift_lock_text_color                #Shift鎖定時文字顏色
-    hilited_on_key_text_color: *calendula_shift_lock_pressed_text_color #Shift鎖定時按下的文字顏色
+    key_back_color: *calendula_main_color
+    hilited_key_back_color: *calendula_border_color
+    key_text_color: *calendula_main_text_color
+    key_symbol_color: *calendula_key_hint_color
+    hilited_key_symbol_color: *pure_white
+    preview_back_color: *calendula_border_color
+    preview_text_color: *pure_white
+    keyboard_back_color: *calendula_bg_color
+    key_border_color: *calendula_border_color
+    off_key_back_color: *calendula_func_key_bg_color
+    off_key_text_color: *calendula_func_key_text_color
+    hilited_off_key_back_color: *calendula_func_key_pressed_bg_color
+    hilited_off_key_text_color: *calendula_func_key_pressed_text_color
+    on_key_back_color: *calendula_shift_lock_bg_color
+    hilited_on_key_back_color: *calendula_shift_lock_pressed_bg_color
+    on_key_text_color: *calendula_shift_lock_text_color
+    hilited_on_key_text_color: *calendula_shift_lock_pressed_text_color
     enter_bg_color: *calendula_enter_bg_color
     enter_text_color: *calendula_enter_text_color
     enter_pressed_bg_color: *calendula_enter_pressed_bg_color
@@ -748,39 +794,39 @@ preset_color_schemes:
     author: "Hoengsaan (Lingdai)"
     light_scheme: bf_bamboo
     #懸浮窗顏色
-    border_color: *pine_border_color                        #懸浮窗邊框
-    label_color: *pine_sub_candidate_color                  #編碼高亮
-    hilited_text_color: *pine_code_text_color               #已解析編碼
-    text_color: *pine_code_unparsed_color                   #未解析/無法解析的編碼
-    hilited_back_color: *pine_main_color                    #已解析編碼的背景
-    text_back_color: *pine_bg_color                         #未解析編碼的背景
+    border_color: *pine_border_color
+    label_color: *pine_sub_candidate_color
+    hilited_text_color: *pine_code_text_color
+    text_color: *pine_code_unparsed_color
+    hilited_back_color: *pine_main_color
+    text_back_color: *pine_bg_color
     #候選區顏色
-    back_color: *pine_bg_color                              #候選區背景
-    candidate_background : *pine_bg_color                   #候選區背景？
-    hilited_candidate_back_color: *pine_main_color          #候選區高亮背景
-    candidate_separator_color: *pure_black                  #候選項分割線
-    candidate_text_color: *pine_sub_candidate_color         #其他候選文本
-    hilited_candidate_text_color: *pine_main_text_color     #候選高亮文本
-    comment_text_color: *pine_sub_comment_color             #候選項註釋文本
-    hilited_comment_text_color: *pine_comment_color         #高亮候選項註釋文本
+    back_color: *pine_bg_color
+    candidate_background : *pine_bg_color
+    hilited_candidate_back_color: *pine_main_color
+    candidate_separator_color: *pure_black
+    candidate_text_color: *pine_sub_candidate_color
+    hilited_candidate_text_color: *pine_main_text_color
+    comment_text_color: *pine_sub_comment_color
+    hilited_comment_text_color: *pine_comment_color
     #鍵盤顏色
-    key_back_color: *pine_main_color                              #按鍵背景色
-    hilited_key_back_color: *pine_border_color                    #按鍵按下時背景色
-    key_text_color: *pine_main_text_color                         #按鍵字符顏色
-    key_symbol_color: *pine_key_hint_color                        #按鍵小字顏色
-    hilited_key_symbol_color: *pure_black                         #按下時小字顏色
-    preview_back_color: *pine_border_color                        #氣泡背景色
-    preview_text_color: *pure_black                               #氣泡字符顏色
-    keyboard_back_color: *pine_bg_color                           #鍵盤整體背景色
-    key_border_color: *pine_border_color                          #按鍵邊框顏色
-    off_key_back_color: *pine_func_key_bg_color                   #功能鍵背景色
-    off_key_text_color: *pine_func_key_text_color                 #功能鍵文本色
-    hilited_off_key_back_color: *pine_func_key_pressed_bg_color   #功能鍵按下時背景色
-    hilited_off_key_text_color: *pine_func_key_pressed_text_color #功能鍵按下時文本色
-    on_key_back_color: *pine_shift_lock_bg_color                  #Shift鎖定時背景色
-    hilited_on_key_back_color: *pine_shift_lock_pressed_bg_color  #Shift鎖定時按下的背景顏色
-    on_key_text_color: *pine_shift_lock_text_color                #Shift鎖定時文字顏色
-    hilited_on_key_text_color: *pine_shift_lock_pressed_text_color #Shift鎖定時按下的文字顏色
+    key_back_color: *pine_main_color
+    hilited_key_back_color: *pine_border_color
+    key_text_color: *pine_main_text_color
+    key_symbol_color: *pine_key_hint_color
+    hilited_key_symbol_color: *pure_black
+    preview_back_color: *pine_border_color
+    preview_text_color: *pure_black
+    keyboard_back_color: *pine_bg_color
+    key_border_color: *pine_border_color
+    off_key_back_color: *pine_func_key_bg_color
+    off_key_text_color: *pine_func_key_text_color
+    hilited_off_key_back_color: *pine_func_key_pressed_bg_color
+    hilited_off_key_text_color: *pine_func_key_pressed_text_color
+    on_key_back_color: *pine_shift_lock_bg_color
+    hilited_on_key_back_color: *pine_shift_lock_pressed_bg_color
+    on_key_text_color: *pine_shift_lock_text_color
+    hilited_on_key_text_color: *pine_shift_lock_pressed_text_color
     enter_bg_color: *pine_enter_bg_color
     enter_text_color: *pine_enter_text_color
     enter_pressed_bg_color: *pine_enter_pressed_bg_color
@@ -793,39 +839,39 @@ preset_color_schemes:
     author: "Hoengsaan (Lingdai)"
     dark_scheme: be_pine
     #懸浮窗顏色
-    border_color: *bamboo_border_color                        #懸浮窗邊框
-    label_color: *bamboo_sub_candidate_color                  #編碼高亮
-    hilited_text_color: *bamboo_code_text_color               #已解析編碼
-    text_color: *bamboo_code_unparsed_color                   #未解析/無法解析的編碼
-    hilited_back_color: *bamboo_main_color                    #已解析編碼的背景
-    text_back_color: *bamboo_bg_color                         #未解析編碼的背景
+    border_color: *bamboo_border_color
+    label_color: *bamboo_sub_candidate_color
+    hilited_text_color: *bamboo_code_text_color
+    text_color: *bamboo_code_unparsed_color
+    hilited_back_color: *bamboo_main_color
+    text_back_color: *bamboo_bg_color
     #候選區顏色
-    back_color: *bamboo_bg_color                              #候選區背景
-    candidate_background : *bamboo_bg_color                   #候選區背景？
-    hilited_candidate_back_color: *bamboo_main_color          #候選區高亮背景
-    candidate_separator_color: *pure_black                  #候選項分割線
-    candidate_text_color: *bamboo_sub_candidate_color         #其他候選文本
-    hilited_candidate_text_color: *bamboo_main_text_color     #候選高亮文本
-    comment_text_color: *bamboo_sub_comment_color             #候選項註釋文本
-    hilited_comment_text_color: *bamboo_comment_color         #高亮候選項註釋文本
+    back_color: *bamboo_bg_color
+    candidate_background : *bamboo_bg_color
+    hilited_candidate_back_color: *bamboo_main_color
+    candidate_separator_color: *pure_black
+    candidate_text_color: *bamboo_sub_candidate_color
+    hilited_candidate_text_color: *bamboo_main_text_color
+    comment_text_color: *bamboo_sub_comment_color
+    hilited_comment_text_color: *bamboo_comment_color
     #鍵盤顏色
-    key_back_color: *bamboo_main_color                              #按鍵背景色
-    hilited_key_back_color: *bamboo_border_color                    #按鍵按下時背景色
-    key_text_color: *bamboo_main_text_color                         #按鍵字符顏色
-    key_symbol_color: *bamboo_key_hint_color                        #按鍵小字顏色
-    hilited_key_symbol_color: *pure_white                         #按下時小字顏色
-    preview_back_color: *bamboo_border_color                        #氣泡背景色
-    preview_text_color: *pure_white                               #氣泡字符顏色
-    keyboard_back_color: *bamboo_bg_color                           #鍵盤整體背景色
-    key_border_color: *bamboo_border_color                          #按鍵邊框顏色
-    off_key_back_color: *bamboo_func_key_bg_color                   #功能鍵背景色
-    off_key_text_color: *bamboo_func_key_text_color                 #功能鍵文本色
-    hilited_off_key_back_color: *bamboo_func_key_pressed_bg_color   #功能鍵按下時背景色
-    hilited_off_key_text_color: *bamboo_func_key_pressed_text_color #功能鍵按下時文本色
-    on_key_back_color: *bamboo_shift_lock_bg_color                  #Shift鎖定時背景色
-    hilited_on_key_back_color: *bamboo_shift_lock_pressed_bg_color  #Shift鎖定時按下的背景顏色
-    on_key_text_color: *bamboo_shift_lock_text_color                #Shift鎖定時文字顏色
-    hilited_on_key_text_color: *bamboo_shift_lock_pressed_text_color #Shift鎖定時按下的文字顏色
+    key_back_color: *bamboo_main_color
+    hilited_key_back_color: *bamboo_border_color
+    key_text_color: *bamboo_main_text_color
+    key_symbol_color: *bamboo_key_hint_color
+    hilited_key_symbol_color: *pure_white
+    preview_back_color: *bamboo_border_color
+    preview_text_color: *pure_white
+    keyboard_back_color: *bamboo_bg_color
+    key_border_color: *bamboo_border_color
+    off_key_back_color: *bamboo_func_key_bg_color
+    off_key_text_color: *bamboo_func_key_text_color
+    hilited_off_key_back_color: *bamboo_func_key_pressed_bg_color
+    hilited_off_key_text_color: *bamboo_func_key_pressed_text_color
+    on_key_back_color: *bamboo_shift_lock_bg_color
+    hilited_on_key_back_color: *bamboo_shift_lock_pressed_bg_color
+    on_key_text_color: *bamboo_shift_lock_text_color
+    hilited_on_key_text_color: *bamboo_shift_lock_pressed_text_color
     enter_bg_color: *bamboo_enter_bg_color
     enter_text_color: *bamboo_enter_text_color
     enter_pressed_bg_color: *bamboo_enter_pressed_bg_color
@@ -838,39 +884,39 @@ preset_color_schemes:
     author: "Hoengsaan (Lingdai)"
     light_scheme: bh_hydrangea
     #懸浮窗顏色
-    border_color: *centaurea_border_color                        #懸浮窗邊框
-    label_color: *centaurea_sub_candidate_color                  #編碼高亮
-    hilited_text_color: *centaurea_code_text_color               #已解析編碼
-    text_color: *centaurea_code_unparsed_color                   #未解析/無法解析的編碼
-    hilited_back_color: *centaurea_main_color                    #已解析編碼的背景
-    text_back_color: *centaurea_bg_color                         #未解析編碼的背景
+    border_color: *centaurea_border_color
+    label_color: *centaurea_sub_candidate_color
+    hilited_text_color: *centaurea_code_text_color
+    text_color: *centaurea_code_unparsed_color
+    hilited_back_color: *centaurea_main_color
+    text_back_color: *centaurea_bg_color
     #候選區顏色
-    back_color: *centaurea_bg_color                              #候選區背景
-    candidate_background : *centaurea_bg_color                   #候選區背景？
-    hilited_candidate_back_color: *centaurea_main_color          #候選區高亮背景
-    candidate_separator_color: *pure_black                  #候選項分割線
-    candidate_text_color: *centaurea_sub_candidate_color         #其他候選文本
-    hilited_candidate_text_color: *centaurea_main_text_color     #候選高亮文本
-    comment_text_color: *centaurea_sub_comment_color             #候選項註釋文本
-    hilited_comment_text_color: *centaurea_comment_color         #高亮候選項註釋文本
+    back_color: *centaurea_bg_color
+    candidate_background : *centaurea_bg_color
+    hilited_candidate_back_color: *centaurea_main_color
+    candidate_separator_color: *pure_black
+    candidate_text_color: *centaurea_sub_candidate_color
+    hilited_candidate_text_color: *centaurea_main_text_color
+    comment_text_color: *centaurea_sub_comment_color
+    hilited_comment_text_color: *centaurea_comment_color
     #鍵盤顏色
-    key_back_color: *centaurea_main_color                              #按鍵背景色
-    hilited_key_back_color: *centaurea_border_color                    #按鍵按下時背景色
-    key_text_color: *centaurea_main_text_color                         #按鍵字符顏色
-    key_symbol_color: *centaurea_key_hint_color                        #按鍵小字顏色
-    hilited_key_symbol_color: *pure_black                         #按下時小字顏色
-    preview_back_color: *centaurea_border_color                        #氣泡背景色
-    preview_text_color: *pure_black                               #氣泡字符顏色
-    keyboard_back_color: *centaurea_bg_color                           #鍵盤整體背景色
-    key_border_color: *centaurea_border_color                          #按鍵邊框顏色
-    off_key_back_color: *centaurea_func_key_bg_color                   #功能鍵背景色
-    off_key_text_color: *centaurea_func_key_text_color                 #功能鍵文本色
-    hilited_off_key_back_color: *centaurea_func_key_pressed_bg_color   #功能鍵按下時背景色
-    hilited_off_key_text_color: *centaurea_func_key_pressed_text_color #功能鍵按下時文本色
-    on_key_back_color: *centaurea_shift_lock_bg_color                  #Shift鎖定時背景色
-    hilited_on_key_back_color: *centaurea_shift_lock_pressed_bg_color  #Shift鎖定時按下的背景顏色
-    on_key_text_color: *centaurea_shift_lock_text_color                #Shift鎖定時文字顏色
-    hilited_on_key_text_color: *centaurea_shift_lock_pressed_text_color #Shift鎖定時按下的文字顏色
+    key_back_color: *centaurea_main_color
+    hilited_key_back_color: *centaurea_border_color
+    key_text_color: *centaurea_main_text_color
+    key_symbol_color: *centaurea_key_hint_color
+    hilited_key_symbol_color: *pure_black
+    preview_back_color: *centaurea_border_color
+    preview_text_color: *pure_black
+    keyboard_back_color: *centaurea_bg_color
+    key_border_color: *centaurea_border_color
+    off_key_back_color: *centaurea_func_key_bg_color
+    off_key_text_color: *centaurea_func_key_text_color
+    hilited_off_key_back_color: *centaurea_func_key_pressed_bg_color
+    hilited_off_key_text_color: *centaurea_func_key_pressed_text_color
+    on_key_back_color: *centaurea_shift_lock_bg_color
+    hilited_on_key_back_color: *centaurea_shift_lock_pressed_bg_color
+    on_key_text_color: *centaurea_shift_lock_text_color
+    hilited_on_key_text_color: *centaurea_shift_lock_pressed_text_color
     enter_bg_color: *centaurea_enter_bg_color
     enter_text_color: *centaurea_enter_text_color
     enter_pressed_bg_color: *centaurea_enter_pressed_bg_color
@@ -883,39 +929,39 @@ preset_color_schemes:
     author: "Hoengsaan (Lingdai)"
     dark_scheme: bg_centaurea
     #懸浮窗顏色
-    border_color: *hydrangea_border_color                        #懸浮窗邊框
-    label_color: *hydrangea_sub_candidate_color                  #編碼高亮
-    hilited_text_color: *hydrangea_code_text_color               #已解析編碼
-    text_color: *hydrangea_code_unparsed_color                   #未解析/無法解析的編碼
-    hilited_back_color: *hydrangea_main_color                    #已解析編碼的背景
-    text_back_color: *hydrangea_bg_color                         #未解析編碼的背景
+    border_color: *hydrangea_border_color
+    label_color: *hydrangea_sub_candidate_color
+    hilited_text_color: *hydrangea_code_text_color
+    text_color: *hydrangea_code_unparsed_color
+    hilited_back_color: *hydrangea_main_color
+    text_back_color: *hydrangea_bg_color
     #候選區顏色
-    back_color: *hydrangea_bg_color                              #候選區背景
-    candidate_background : *hydrangea_bg_color                   #候選區背景？
-    hilited_candidate_back_color: *hydrangea_main_color          #候選區高亮背景
-    candidate_separator_color: *pure_black                  #候選項分割線
-    candidate_text_color: *hydrangea_sub_candidate_color         #其他候選文本
-    hilited_candidate_text_color: *hydrangea_main_text_color     #候選高亮文本
-    comment_text_color: *hydrangea_sub_comment_color             #候選項註釋文本
-    hilited_comment_text_color: *hydrangea_comment_color         #高亮候選項註釋文本
+    back_color: *hydrangea_bg_color
+    candidate_background : *hydrangea_bg_color
+    hilited_candidate_back_color: *hydrangea_main_color
+    candidate_separator_color: *pure_black
+    candidate_text_color: *hydrangea_sub_candidate_color
+    hilited_candidate_text_color: *hydrangea_main_text_color
+    comment_text_color: *hydrangea_sub_comment_color
+    hilited_comment_text_color: *hydrangea_comment_color
     #鍵盤顏色
-    key_back_color: *hydrangea_main_color                              #按鍵背景色
-    hilited_key_back_color: *hydrangea_border_color                    #按鍵按下時背景色
-    key_text_color: *hydrangea_main_text_color                         #按鍵字符顏色
-    key_symbol_color: *hydrangea_key_hint_color                        #按鍵小字顏色
-    hilited_key_symbol_color: *pure_white                         #按下時小字顏色
-    preview_back_color: *hydrangea_border_color                        #氣泡背景色
-    preview_text_color: *pure_white                               #氣泡字符顏色
-    keyboard_back_color: *hydrangea_bg_color                           #鍵盤整體背景色
-    key_border_color: *hydrangea_border_color                          #按鍵邊框顏色
-    off_key_back_color: *hydrangea_func_key_bg_color                   #功能鍵背景色
-    off_key_text_color: *hydrangea_func_key_text_color                 #功能鍵文本色
-    hilited_off_key_back_color: *hydrangea_func_key_pressed_bg_color   #功能鍵按下時背景色
-    hilited_off_key_text_color: *hydrangea_func_key_pressed_text_color #功能鍵按下時文本色
-    on_key_back_color: *hydrangea_shift_lock_bg_color                  #Shift鎖定時背景色
-    hilited_on_key_back_color: *hydrangea_shift_lock_pressed_bg_color  #Shift鎖定時按下的背景顏色
-    on_key_text_color: *hydrangea_shift_lock_text_color                #Shift鎖定時文字顏色
-    hilited_on_key_text_color: *hydrangea_shift_lock_pressed_text_color #Shift鎖定時按下的文字顏色
+    key_back_color: *hydrangea_main_color
+    hilited_key_back_color: *hydrangea_border_color
+    key_text_color: *hydrangea_main_text_color
+    key_symbol_color: *hydrangea_key_hint_color
+    hilited_key_symbol_color: *pure_white
+    preview_back_color: *hydrangea_border_color
+    preview_text_color: *pure_white
+    keyboard_back_color: *hydrangea_bg_color
+    key_border_color: *hydrangea_border_color
+    off_key_back_color: *hydrangea_func_key_bg_color
+    off_key_text_color: *hydrangea_func_key_text_color
+    hilited_off_key_back_color: *hydrangea_func_key_pressed_bg_color
+    hilited_off_key_text_color: *hydrangea_func_key_pressed_text_color
+    on_key_back_color: *hydrangea_shift_lock_bg_color
+    hilited_on_key_back_color: *hydrangea_shift_lock_pressed_bg_color
+    on_key_text_color: *hydrangea_shift_lock_text_color
+    hilited_on_key_text_color: *hydrangea_shift_lock_pressed_text_color
     enter_bg_color: *hydrangea_enter_bg_color
     enter_text_color: *hydrangea_enter_text_color
     enter_pressed_bg_color: *hydrangea_enter_pressed_bg_color
@@ -928,39 +974,39 @@ preset_color_schemes:
     author: "Hoengsaan (Lingdai)"
     light_scheme: bj_wisteria
     #懸浮窗顏色
-    border_color: *lavender_border_color                        #懸浮窗邊框
-    label_color: *lavender_sub_candidate_color                  #編碼高亮
-    hilited_text_color: *lavender_code_text_color               #已解析編碼
-    text_color: *lavender_code_unparsed_color                   #未解析/無法解析的編碼
-    hilited_back_color: *lavender_main_color                    #已解析編碼的背景
-    text_back_color: *lavender_bg_color                         #未解析編碼的背景
+    border_color: *lavender_border_color
+    label_color: *lavender_sub_candidate_color
+    hilited_text_color: *lavender_code_text_color
+    text_color: *lavender_code_unparsed_color
+    hilited_back_color: *lavender_main_color
+    text_back_color: *lavender_bg_color
     #候選區顏色
-    back_color: *lavender_bg_color                              #候選區背景
-    candidate_background : *lavender_bg_color                   #候選區背景？
-    hilited_candidate_back_color: *lavender_main_color          #候選區高亮背景
-    candidate_separator_color: *pure_black                  #候選項分割線
-    candidate_text_color: *lavender_sub_candidate_color         #其他候選文本
-    hilited_candidate_text_color: *lavender_main_text_color     #候選高亮文本
-    comment_text_color: *lavender_sub_comment_color             #候選項註釋文本
-    hilited_comment_text_color: *lavender_comment_color         #高亮候選項註釋文本
+    back_color: *lavender_bg_color
+    candidate_background : *lavender_bg_color
+    hilited_candidate_back_color: *lavender_main_color
+    candidate_separator_color: *pure_black
+    candidate_text_color: *lavender_sub_candidate_color
+    hilited_candidate_text_color: *lavender_main_text_color
+    comment_text_color: *lavender_sub_comment_color
+    hilited_comment_text_color: *lavender_comment_color
     #鍵盤顏色
-    key_back_color: *lavender_main_color                              #按鍵背景色
-    hilited_key_back_color: *lavender_border_color                    #按鍵按下時背景色
-    key_text_color: *lavender_main_text_color                         #按鍵字符顏色
-    key_symbol_color: *lavender_key_hint_color                        #按鍵小字顏色
-    hilited_key_symbol_color: *pure_black                         #按下時小字顏色
-    preview_back_color: *lavender_border_color                        #氣泡背景色
-    preview_text_color: *pure_black                               #氣泡字符顏色
-    keyboard_back_color: *lavender_bg_color                           #鍵盤整體背景色
-    key_border_color: *lavender_border_color                          #按鍵邊框顏色
-    off_key_back_color: *lavender_func_key_bg_color                   #功能鍵背景色
-    off_key_text_color: *lavender_func_key_text_color                 #功能鍵文本色
-    hilited_off_key_back_color: *lavender_func_key_pressed_bg_color   #功能鍵按下時背景色
-    hilited_off_key_text_color: *lavender_func_key_pressed_text_color #功能鍵按下時文本色
-    on_key_back_color: *lavender_shift_lock_bg_color                  #Shift鎖定時背景色
-    hilited_on_key_back_color: *lavender_shift_lock_pressed_bg_color  #Shift鎖定時按下的背景顏色
-    on_key_text_color: *lavender_shift_lock_text_color                #Shift鎖定時文字顏色
-    hilited_on_key_text_color: *lavender_shift_lock_pressed_text_color #Shift鎖定時按下的文字顏色
+    key_back_color: *lavender_main_color
+    hilited_key_back_color: *lavender_border_color
+    key_text_color: *lavender_main_text_color
+    key_symbol_color: *lavender_key_hint_color
+    hilited_key_symbol_color: *pure_black
+    preview_back_color: *lavender_border_color
+    preview_text_color: *pure_black
+    keyboard_back_color: *lavender_bg_color
+    key_border_color: *lavender_border_color
+    off_key_back_color: *lavender_func_key_bg_color
+    off_key_text_color: *lavender_func_key_text_color
+    hilited_off_key_back_color: *lavender_func_key_pressed_bg_color
+    hilited_off_key_text_color: *lavender_func_key_pressed_text_color
+    on_key_back_color: *lavender_shift_lock_bg_color
+    hilited_on_key_back_color: *lavender_shift_lock_pressed_bg_color
+    on_key_text_color: *lavender_shift_lock_text_color
+    hilited_on_key_text_color: *lavender_shift_lock_pressed_text_color
     enter_bg_color: *lavender_enter_bg_color
     enter_text_color: *lavender_enter_text_color
     enter_pressed_bg_color: *lavender_enter_pressed_bg_color
@@ -973,39 +1019,39 @@ preset_color_schemes:
     author: "Hoengsaan (Lingdai)"
     dark_scheme: bi_lavender
     #懸浮窗顏色
-    border_color: *wisteria_border_color                        #懸浮窗邊框
-    label_color: *wisteria_sub_candidate_color                  #編碼高亮
-    hilited_text_color: *wisteria_code_text_color               #已解析編碼
-    text_color: *wisteria_code_unparsed_color                   #未解析/無法解析的編碼
-    hilited_back_color: *wisteria_main_color                    #已解析編碼的背景
-    text_back_color: *wisteria_bg_color                         #未解析編碼的背景
+    border_color: *wisteria_border_color
+    label_color: *wisteria_sub_candidate_color
+    hilited_text_color: *wisteria_code_text_color
+    text_color: *wisteria_code_unparsed_color
+    hilited_back_color: *wisteria_main_color
+    text_back_color: *wisteria_bg_color
     #候選區顏色
-    back_color: *wisteria_bg_color                              #候選區背景
-    candidate_background : *wisteria_bg_color                   #候選區背景？
-    hilited_candidate_back_color: *wisteria_main_color          #候選區高亮背景
-    candidate_separator_color: *pure_black                  #候選項分割線
-    candidate_text_color: *wisteria_sub_candidate_color         #其他候選文本
-    hilited_candidate_text_color: *wisteria_main_text_color     #候選高亮文本
-    comment_text_color: *wisteria_sub_comment_color             #候選項註釋文本
-    hilited_comment_text_color: *wisteria_comment_color         #高亮候選項註釋文本
+    back_color: *wisteria_bg_color
+    candidate_background : *wisteria_bg_color
+    hilited_candidate_back_color: *wisteria_main_color
+    candidate_separator_color: *pure_black
+    candidate_text_color: *wisteria_sub_candidate_color
+    hilited_candidate_text_color: *wisteria_main_text_color
+    comment_text_color: *wisteria_sub_comment_color
+    hilited_comment_text_color: *wisteria_comment_color
     #鍵盤顏色
-    key_back_color: *wisteria_main_color                              #按鍵背景色
-    hilited_key_back_color: *wisteria_border_color                    #按鍵按下時背景色
-    key_text_color: *wisteria_main_text_color                         #按鍵字符顏色
-    key_symbol_color: *wisteria_key_hint_color                        #按鍵小字顏色
-    hilited_key_symbol_color: *pure_white                         #按下時小字顏色
-    preview_back_color: *wisteria_border_color                        #氣泡背景色
-    preview_text_color: *pure_white                               #氣泡字符顏色
-    keyboard_back_color: *wisteria_bg_color                           #鍵盤整體背景色
-    key_border_color: *wisteria_border_color                          #按鍵邊框顏色
-    off_key_back_color: *wisteria_func_key_bg_color                   #功能鍵背景色
-    off_key_text_color: *wisteria_func_key_text_color                 #功能鍵文本色
-    hilited_off_key_back_color: *wisteria_func_key_pressed_bg_color   #功能鍵按下時背景色
-    hilited_off_key_text_color: *wisteria_func_key_pressed_text_color #功能鍵按下時文本色
-    on_key_back_color: *wisteria_shift_lock_bg_color                  #Shift鎖定時背景色
-    hilited_on_key_back_color: *wisteria_shift_lock_pressed_bg_color  #Shift鎖定時按下的背景顏色
-    on_key_text_color: *wisteria_shift_lock_text_color                #Shift鎖定時文字顏色
-    hilited_on_key_text_color: *wisteria_shift_lock_pressed_text_color #Shift鎖定時按下的文字顏色
+    key_back_color: *wisteria_main_color
+    hilited_key_back_color: *wisteria_border_color
+    key_text_color: *wisteria_main_text_color
+    key_symbol_color: *wisteria_key_hint_color
+    hilited_key_symbol_color: *pure_white
+    preview_back_color: *wisteria_border_color
+    preview_text_color: *pure_white
+    keyboard_back_color: *wisteria_bg_color
+    key_border_color: *wisteria_border_color
+    off_key_back_color: *wisteria_func_key_bg_color
+    off_key_text_color: *wisteria_func_key_text_color
+    hilited_off_key_back_color: *wisteria_func_key_pressed_bg_color
+    hilited_off_key_text_color: *wisteria_func_key_pressed_text_color
+    on_key_back_color: *wisteria_shift_lock_bg_color
+    hilited_on_key_back_color: *wisteria_shift_lock_pressed_bg_color
+    on_key_text_color: *wisteria_shift_lock_text_color
+    hilited_on_key_text_color: *wisteria_shift_lock_pressed_text_color
     enter_bg_color: *wisteria_enter_bg_color
     enter_text_color: *wisteria_enter_text_color
     enter_pressed_bg_color: *wisteria_enter_pressed_bg_color
@@ -1018,39 +1064,39 @@ preset_color_schemes:
     author: "Windy_D"
     light_scheme: bz_white_night
     #懸浮窗顏色
-    border_color: *dark_border_color                        #懸浮窗邊框
-    label_color: *dark_sub_candidate_color                  #編碼高亮
-    hilited_text_color: *dark_code_text_color               #已解析編碼
-    text_color: *dark_code_unparsed_color                   #未解析/無法解析的編碼
-    hilited_back_color: *dark_main_color                    #已解析編碼的背景
-    text_back_color: *dark_bg_color                         #未解析編碼的背景
+    border_color: *dark_border_color
+    label_color: *dark_sub_candidate_color
+    hilited_text_color: *dark_code_text_color
+    text_color: *dark_code_unparsed_color
+    hilited_back_color: *dark_main_color
+    text_back_color: *dark_bg_color
     #候選區顏色
-    back_color: *dark_bg_color                              #候選區背景？
-    candidate_background : *dark_bg_color                   #候選區背景？
-    hilited_candidate_back_color: *dark_main_color          #候選區高亮背景
-    candidate_separator_color: *pure_black                  #候選項分割線
-    candidate_text_color: *dark_sub_candidate_color         #其他候選文本
-    hilited_candidate_text_color: *dark_main_text_color     #候選高亮文本
-    comment_text_color: *dark_sub_comment_color             #候選項註釋文本
-    hilited_comment_text_color: *dark_comment_color         #高亮候選項註釋文本
+    back_color: *dark_bg_color
+    candidate_background : *dark_bg_color
+    hilited_candidate_back_color: *dark_main_color
+    candidate_separator_color: *pure_black
+    candidate_text_color: *dark_sub_candidate_color
+    hilited_candidate_text_color: *dark_main_text_color
+    comment_text_color: *dark_sub_comment_color
+    hilited_comment_text_color: *dark_comment_color
     #鍵盤顏色
-    key_back_color: *dark_main_color                              #按鍵背景色
-    hilited_key_back_color: *dark_border_color                    #按鍵按下時背景色
-    key_text_color: *dark_main_text_color                         #按鍵字符顏色
-    key_symbol_color: *dark_key_hint_color                        #按鍵小字顏色
-    hilited_key_symbol_color: *pure_white                         #按下時小字顏色
-    preview_back_color: *dark_border_color                        #氣泡背景色
-    preview_text_color: *pure_white                               #氣泡字符顏色
-    keyboard_back_color: *dark_bg_color                           #鍵盤整體背景色
-    key_border_color: *dark_border_color                          #按鍵邊框顏色
-    off_key_back_color: *dark_func_key_bg_color                   #功能鍵背景色
-    off_key_text_color: *dark_func_key_text_color                 #功能鍵文本色
-    hilited_off_key_back_color: *dark_func_key_pressed_bg_color   #功能鍵按下時背景色
-    hilited_off_key_text_color: *dark_func_key_pressed_text_color #功能鍵按下時文本色
-    on_key_back_color: *dark_shift_lock_bg_color                  #Shift鎖定時背景色
-    hilited_on_key_back_color: *dark_shift_lock_pressed_bg_color  #Shift鎖定時按下的背景顏色
-    on_key_text_color: *dark_shift_lock_text_color                #Shift鎖定時文字顏色
-    hilited_on_key_text_color: *pure_white                        #Shift鎖定時按下的文字顏色
+    key_back_color: *dark_main_color
+    hilited_key_back_color: *dark_border_color
+    key_text_color: *dark_main_text_color
+    key_symbol_color: *dark_key_hint_color
+    hilited_key_symbol_color: *pure_white
+    preview_back_color: *dark_border_color
+    preview_text_color: *pure_white
+    keyboard_back_color: *dark_bg_color
+    key_border_color: *dark_border_color
+    off_key_back_color: *dark_func_key_bg_color
+    off_key_text_color: *dark_func_key_text_color
+    hilited_off_key_back_color: *dark_func_key_pressed_bg_color
+    hilited_off_key_text_color: *dark_func_key_pressed_text_color
+    on_key_back_color: *dark_shift_lock_bg_color
+    hilited_on_key_back_color: *dark_shift_lock_pressed_bg_color
+    on_key_text_color: *dark_shift_lock_text_color
+    hilited_on_key_text_color: *pure_white 
     enter_bg_color: *dark_enter_bg_color
     enter_text_color: *dark_enter_text_color
     enter_pressed_bg_color: *dark_enter_pressed_bg_color
@@ -1063,39 +1109,39 @@ preset_color_schemes:
     author: "Windy_D"
     dark_scheme: by_astralwelkin
     #懸浮窗顏色
-    border_color: *light_border_color                        #懸浮窗邊框
-    label_color: *light_sub_candidate_color                  #編碼高亮
-    hilited_text_color: *light_code_text_color               #已解析編碼
-    text_color: *light_code_unparsed_color                   #未解析/無法解析的編碼
-    hilited_back_color: *light_bg_color                      #已解析編碼的背景
-    text_back_color: *light_bg_color                         #未解析編碼的背景
+    border_color: *light_border_color
+    label_color: *light_sub_candidate_color
+    hilited_text_color: *light_code_text_color
+    text_color: *light_code_unparsed_color
+    hilited_back_color: *light_bg_color 
+    text_back_color: *light_bg_color
     ##候選區顏色
-    back_color: *light_bg_color                              #候選區背景
-    candidate_background : *light_bg_color                   #候選區背景？
-    hilited_candidate_back_color: *light_main_color          #候選區高亮背景
-    candidate_separator_color: *pure_black                   #候選項分割線
-    candidate_text_color: *light_sub_candidate_color         #其他候選文本
-    hilited_candidate_text_color: *light_main_text_color     #候選高亮文本
-    comment_text_color: *light_sub_comment_color             #候選項註釋文本
-    hilited_comment_text_color: *light_comment_color         #高亮候選項註釋文本
+    back_color: *light_bg_color
+    candidate_background : *light_bg_color
+    hilited_candidate_back_color: *light_main_color
+    candidate_separator_color: *pure_black 
+    candidate_text_color: *light_sub_candidate_color
+    hilited_candidate_text_color: *light_main_text_color
+    comment_text_color: *light_sub_comment_color
+    hilited_comment_text_color: *light_comment_color
     ##鍵盤顏色
-    key_back_color: *light_main_color                               #按鍵背景色
-    hilited_key_back_color: *light_border_color                     #按鍵按下時背景色
-    key_text_color: *light_main_text_color                          #按鍵字符顏色
-    key_symbol_color: *light_key_hint_color                         #按鍵小字顏色
-    hilited_key_symbol_color: *pure_black                           #按下時小字顏色
-    preview_back_color: *light_border_color                         #氣泡背景色
-    preview_text_color: *pure_black                                 #氣泡字符顏色
-    keyboard_back_color: *light_bg_color                            #鍵盤整體背景色
-    key_border_color: *light_border_color                           #按鍵邊框顏色
-    off_key_back_color: *light_func_key_bg_color                    #功能鍵背景色
-    off_key_text_color: *light_func_key_text_color                  #功能鍵文本色
-    hilited_off_key_back_color: *light_func_key_pressed_bg_color    #功能鍵按下時背景色
-    hilited_off_key_text_color: *light_func_key_pressed_text_color  #功能鍵按下時文本色
-    on_key_back_color: *light_shift_lock_bg_color                   #Shift鎖定時背景色
-    hilited_on_key_back_color: *light_shift_lock_pressed_bg_color   #Shift鎖定時按下的背景顏色
-    on_key_text_color: *light_shift_lock_text_color                 #Shift鎖定時文字顏色
-    hilited_on_key_text_color: *light_shift_lock_pressed_text_color #Shift鎖定時按下的文字顏色
+    key_back_color: *light_main_color
+    hilited_key_back_color: *light_border_color
+    key_text_color: *light_main_text_color
+    key_symbol_color: *light_key_hint_color
+    hilited_key_symbol_color: *pure_black  
+    preview_back_color: *light_border_color
+    preview_text_color: *pure_black  
+    keyboard_back_color: *light_bg_color
+    key_border_color: *light_border_color
+    off_key_back_color: *light_func_key_bg_color
+    off_key_text_color: *light_func_key_text_color
+    hilited_off_key_back_color: *light_func_key_pressed_bg_color
+    hilited_off_key_text_color: *light_func_key_pressed_text_color
+    on_key_back_color: *light_shift_lock_bg_color
+    hilited_on_key_back_color: *light_shift_lock_pressed_bg_color
+    on_key_text_color: *light_shift_lock_text_color
+    hilited_on_key_text_color: *light_shift_lock_pressed_text_color
     enter_bg_color: *light_enter_bg_color
     enter_text_color: *light_enter_text_color
     enter_pressed_bg_color: *light_enter_pressed_bg_color
@@ -1107,39 +1153,39 @@ preset_color_schemes:
     name: "冶遊 / Courting"
     author: "Hoengsaan (Lingdai)"
     #懸浮窗顏色
-    border_color: *shinti_border_color                        #懸浮窗邊框
-    label_color: *shinti_sub_candidate_color                  #編碼高亮
-    hilited_text_color: *shinti_code_text_color               #已解析編碼
-    text_color: *shinti_code_unparsed_color                   #未解析/無法解析的編碼
-    hilited_back_color: *shinti_main_color                    #已解析編碼的背景
-    text_back_color: *shinti_bg_color                         #未解析編碼的背景
+    border_color: *shinti_border_color
+    label_color: *shinti_sub_candidate_color
+    hilited_text_color: *shinti_code_text_color
+    text_color: *shinti_code_unparsed_color
+    hilited_back_color: *shinti_main_color
+    text_back_color: *shinti_bg_color
     #候選區顏色
-    back_color: *shinti_bg_color                              #候選區背景？
-    candidate_background : *shinti_bg_color                   #候選區背景？
-    hilited_candidate_back_color: *shinti_main_color          #候選區高亮背景
-    candidate_separator_color: *pure_black                  #候選項分割線
-    candidate_text_color: *shinti_sub_candidate_color         #其他候選文本
-    hilited_candidate_text_color: *shinti_main_text_color     #候選高亮文本
-    comment_text_color: *shinti_sub_comment_color             #候選項註釋文本
-    hilited_comment_text_color: *shinti_comment_color         #高亮候選項註釋文本
+    back_color: *shinti_bg_color
+    candidate_background : *shinti_bg_color
+    hilited_candidate_back_color: *shinti_main_color
+    candidate_separator_color: *pure_black
+    candidate_text_color: *shinti_sub_candidate_color
+    hilited_candidate_text_color: *shinti_main_text_color
+    comment_text_color: *shinti_sub_comment_color
+    hilited_comment_text_color: *shinti_comment_color
     #鍵盤顏色
-    key_back_color: *shinti_main_color                              #按鍵背景色
-    hilited_key_back_color: *shinti_border_color                    #按鍵按下時背景色
-    key_text_color: *shinti_main_text_color                         #按鍵字符顏色
-    key_symbol_color: *shinti_key_hint_color                        #按鍵小字顏色
-    hilited_key_symbol_color: *pure_white                         #按下時小字顏色
-    preview_back_color: *shinti_border_color                        #氣泡背景色
-    preview_text_color: *pure_white                               #氣泡字符顏色
-    keyboard_back_color: *shinti_bg_color                           #鍵盤整體背景色
-    key_border_color: *shinti_border_color                          #按鍵邊框顏色
-    off_key_back_color: *shinti_func_key_bg_color                   #功能鍵背景色
-    off_key_text_color: *shinti_func_key_text_color                 #功能鍵文本色
-    hilited_off_key_back_color: *shinti_func_key_pressed_bg_color   #功能鍵按下時背景色
-    hilited_off_key_text_color: *shinti_func_key_pressed_text_color #功能鍵按下時文本色
-    on_key_back_color: *shinti_shift_lock_bg_color                  #Shift鎖定時背景色
-    hilited_on_key_back_color: *shinti_shift_lock_pressed_bg_color  #Shift鎖定時按下的背景顏色
-    on_key_text_color: *shinti_shift_lock_text_color                #Shift鎖定時文字顏色
-    hilited_on_key_text_color: *shinti_shift_lock_pressed_text_color #Shift鎖定時按下的文字顏色
+    key_back_color: *shinti_main_color
+    hilited_key_back_color: *shinti_border_color
+    key_text_color: *shinti_main_text_color
+    key_symbol_color: *shinti_key_hint_color
+    hilited_key_symbol_color: *pure_white
+    preview_back_color: *shinti_border_color
+    preview_text_color: *pure_white
+    keyboard_back_color: *shinti_bg_color
+    key_border_color: *shinti_border_color
+    off_key_back_color: *shinti_func_key_bg_color
+    off_key_text_color: *shinti_func_key_text_color
+    hilited_off_key_back_color: *shinti_func_key_pressed_bg_color
+    hilited_off_key_text_color: *shinti_func_key_pressed_text_color
+    on_key_back_color: *shinti_shift_lock_bg_color
+    hilited_on_key_back_color: *shinti_shift_lock_pressed_bg_color
+    on_key_text_color: *shinti_shift_lock_text_color
+    hilited_on_key_text_color: *shinti_shift_lock_pressed_text_color
     enter_bg_color: *shinti_enter_bg_color
     enter_text_color: *shinti_enter_text_color
     enter_pressed_bg_color: *shinti_enter_pressed_bg_color
@@ -1151,39 +1197,39 @@ preset_color_schemes:
     name: "椰海 / Coconut"
     author: "Hoengsaan (Lingdai)"
     #懸浮窗顏色
-    border_color: *coconut_border_color                        #懸浮窗邊框
-    label_color: *coconut_sub_candidate_color                  #編碼高亮
-    hilited_text_color: *coconut_code_text_color               #已解析編碼
-    text_color: *coconut_code_unparsed_color                   #未解析/無法解析的編碼
-    hilited_back_color: *coconut_bg_color                      #已解析編碼的背景
-    text_back_color: *coconut_bg_color                         #未解析編碼的背景
+    border_color: *coconut_border_color
+    label_color: *coconut_sub_candidate_color
+    hilited_text_color: *coconut_code_text_color
+    text_color: *coconut_code_unparsed_color
+    hilited_back_color: *coconut_bg_color 
+    text_back_color: *coconut_bg_color
     ##候選區顏色
-    back_color: *coconut_bg_color                              #候選區背景
-    candidate_background : *coconut_bg_color                   #候選區背景？
-    hilited_candidate_back_color: *coconut_main_color          #候選區高亮背景
-    candidate_separator_color: *pure_black                   #候選項分割線
-    candidate_text_color: *coconut_sub_candidate_color         #其他候選文本
-    hilited_candidate_text_color: *coconut_main_text_color     #候選高亮文本
-    comment_text_color: *coconut_sub_comment_color             #候選項註釋文本
-    hilited_comment_text_color: *coconut_comment_color         #高亮候選項註釋文本
+    back_color: *coconut_bg_color
+    candidate_background : *coconut_bg_color
+    hilited_candidate_back_color: *coconut_main_color
+    candidate_separator_color: *pure_black 
+    candidate_text_color: *coconut_sub_candidate_color
+    hilited_candidate_text_color: *coconut_main_text_color
+    comment_text_color: *coconut_sub_comment_color
+    hilited_comment_text_color: *coconut_comment_color
     ##鍵盤顏色
-    key_back_color: *coconut_main_color                               #按鍵背景色
-    hilited_key_back_color: *coconut_border_color                     #按鍵按下時背景色
-    key_text_color: *coconut_main_text_color                          #按鍵字符顏色
-    key_symbol_color: *coconut_key_hint_color                         #按鍵小字顏色
-    hilited_key_symbol_color: *pure_black                           #按下時小字顏色
-    preview_back_color: *coconut_border_color                         #氣泡背景色
-    preview_text_color: *pure_black                                 #氣泡字符顏色
-    keyboard_back_color: *coconut_bg_color                            #鍵盤整體背景色
-    key_border_color: *coconut_border_color                           #按鍵邊框顏色
-    off_key_back_color: *coconut_func_key_bg_color                    #功能鍵背景色
-    off_key_text_color: *coconut_func_key_text_color                  #功能鍵文本色
-    hilited_off_key_back_color: *coconut_func_key_pressed_bg_color    #功能鍵按下時背景色
-    hilited_off_key_text_color: *coconut_func_key_pressed_text_color  #功能鍵按下時文本色
-    on_key_back_color: *coconut_shift_lock_bg_color                   #Shift鎖定時背景色
-    hilited_on_key_back_color: *coconut_shift_lock_pressed_bg_color   #Shift鎖定時按下的背景顏色
-    on_key_text_color: *coconut_shift_lock_text_color                 #Shift鎖定時文字顏色
-    hilited_on_key_text_color: *coconut_shift_lock_pressed_text_color #Shift鎖定時按下的文字顏色
+    key_back_color: *coconut_main_color
+    hilited_key_back_color: *coconut_border_color
+    key_text_color: *coconut_main_text_color
+    key_symbol_color: *coconut_key_hint_color
+    hilited_key_symbol_color: *pure_black  
+    preview_back_color: *coconut_border_color
+    preview_text_color: *pure_black  
+    keyboard_back_color: *coconut_bg_color
+    key_border_color: *coconut_border_color
+    off_key_back_color: *coconut_func_key_bg_color
+    off_key_text_color: *coconut_func_key_text_color
+    hilited_off_key_back_color: *coconut_func_key_pressed_bg_color
+    hilited_off_key_text_color: *coconut_func_key_pressed_text_color
+    on_key_back_color: *coconut_shift_lock_bg_color
+    hilited_on_key_back_color: *coconut_shift_lock_pressed_bg_color
+    on_key_text_color: *coconut_shift_lock_text_color
+    hilited_on_key_text_color: *coconut_shift_lock_pressed_text_color
     enter_bg_color: *coconut_enter_bg_color
     enter_text_color: *coconut_enter_text_color
     enter_pressed_bg_color: *coconut_enter_pressed_bg_color
@@ -1191,6 +1237,93 @@ preset_color_schemes:
     liquid_keyboard_background: *coconut_bg_color
     long_text_back_color: *coconut_main_color
 
+  ac_charcoal:
+    name: "白炭 / Charcoal"
+    author: "Hoengsaan (Lingdai)"
+    #懸浮窗顏色
+    border_color: *charcoal_border_color
+    laael_color: *charcoal_sub_candidate_color
+    hilited_text_color: *charcoal_code_text_color
+    text_color: *charcoal_code_unparsed_color
+    hilited_back_color: *charcoal_main_color
+    text_back_color: *charcoal_bg_color
+    #候選區顏色
+    back_color: *charcoal_bg_color
+    candidate_background : *charcoal_bg_color
+    hilited_candidate_back_color: *charcoal_main_color
+    candidate_separator_color: *pure_black
+    candidate_text_color: *charcoal_sub_candidate_color
+    hilited_candidate_text_color: *charcoal_main_text_color
+    comment_text_color: *charcoal_sub_comment_color
+    hilited_comment_text_color: *charcoal_comment_color
+    #鍵盤顏色
+    key_back_color: *charcoal_main_color
+    hilited_key_back_color: *charcoal_border_color
+    key_text_color: *charcoal_main_text_color
+    key_symbol_color: *charcoal_key_hint_color
+    hilited_key_symbol_color: *pure_white
+    preview_back_color: *charcoal_border_color
+    preview_text_color: *pure_white
+    keyboard_back_color: *charcoal_bg_color
+    key_border_color: *charcoal_border_color
+    off_key_back_color: *charcoal_func_key_bg_color
+    off_key_text_color: *charcoal_func_key_text_color
+    hilited_off_key_back_color: *charcoal_func_key_pressed_bg_color
+    hilited_off_key_text_color: *charcoal_func_key_pressed_text_color
+    on_key_back_color: *charcoal_shift_lock_bg_color
+    hilited_on_key_back_color: *charcoal_shift_lock_pressed_bg_color
+    on_key_text_color: *charcoal_shift_lock_text_color
+    hilited_on_key_text_color: *charcoal_shift_lock_pressed_text_color
+    enter_bg_color: *charcoal_enter_bg_color
+    enter_text_color: *charcoal_enter_text_color
+    enter_pressed_bg_color: *charcoal_enter_pressed_bg_color
+    enter_pressed_text_color: *charcoal_enter_pressed_text_color
+    liquid_keyboard_background: *charcoal_bg_color
+    long_text_back_color: *charcoal_main_color
+ 
+  ad_costa:
+    name: "海傍 / Costa"
+    author: "Hoengsaan (Lingdai)"
+    #懸浮窗顏色
+    border_color: *costa_border_color
+    laael_color: *costa_sub_candidate_color
+    hilited_text_color: *costa_code_text_color
+    text_color: *costa_code_unparsed_color
+    hilited_back_color: *costa_main_color
+    text_back_color: *costa_bg_color
+    #候選區顏色
+    back_color: *costa_bg_color
+    candidate_background : *costa_bg_color
+    hilited_candidate_back_color: *costa_main_color
+    candidate_separator_color: *pure_black
+    candidate_text_color: *costa_sub_candidate_color
+    hilited_candidate_text_color: *costa_main_text_color
+    comment_text_color: *costa_sub_comment_color
+    hilited_comment_text_color: *costa_comment_color
+    #鍵盤顏色
+    key_back_color: *costa_main_color
+    hilited_key_back_color: *costa_border_color
+    key_text_color: *costa_main_text_color
+    key_symbol_color: *costa_key_hint_color
+    hilited_key_symbol_color: *pure_white
+    preview_back_color: *costa_border_color
+    preview_text_color: *pure_white
+    keyboard_back_color: *costa_bg_color
+    key_border_color: *costa_border_color
+    off_key_back_color: *costa_func_key_bg_color
+    off_key_text_color: *costa_func_key_text_color
+    hilited_off_key_back_color: *costa_func_key_pressed_bg_color
+    hilited_off_key_text_color: *costa_func_key_pressed_text_color
+    on_key_back_color: *costa_shift_lock_bg_color
+    hilited_on_key_back_color: *costa_shift_lock_pressed_bg_color
+    on_key_text_color: *costa_shift_lock_text_color
+    hilited_on_key_text_color: *costa_shift_lock_pressed_text_color
+    enter_bg_color: *costa_enter_bg_color
+    enter_text_color: *costa_enter_text_color
+    enter_pressed_bg_color: *costa_enter_pressed_bg_color
+    enter_pressed_text_color: *costa_enter_pressed_text_color
+    liquid_keyboard_background: *costa_bg_color
+    long_text_back_color: *costa_main_color
 
 android_keys:
   __include: trime:/android_keys
@@ -1221,7 +1354,7 @@ preset_keys:
   Escape: {label: Esc, send: Escape}
   Home: {label: '行頭', send: Home}
   Insert: {label: Insert, send: Insert}
-  Delete: {label: '⇨', send: Delete}
+  Delete: {label: '⇨', send: Delete, repeatable: true}
   End: {label: '行尾', send: End}
   Page_Up: {label: '上䈎', send: Page_Up}
   Page_Down: {label: '下䈎', send: Page_Down}
@@ -1291,7 +1424,7 @@ preset_keys:
   Share: {label: 分享, command: send, option: "%2$s"} #分享指定文本: %s或者%1$s為當前字符
   Deploy: {label: 部署, command: broadcast, option: "com.osfans.trime.deploy"}
   Sync: {label: 同步, command: broadcast, option: "com.osfans.trime.sync"}
-  # 
+  #
   Nothing: {label: '擺爛', send: ''}  #當還沒想好放什麼的時候就放這個吧
   Keyboard_number: {label: '123', send: Eisu_toggle, select: number}
   Keyboard_basic_symbol: {label: '符號', send: Eisu_toggle, select: basic_symbol}
@@ -1374,7 +1507,7 @@ preset_keys:
   Keyboard_greek_font: {label: 字型, sned: function, command: liquid_keyboard, option: '希臘字'}
   Liquid_fixed_exit: {label: ' ↶ ', send: function, command: liquid_keyboard, option: "-1"}
   Liquid_fixed_backspace: {label: ' ⇦ ', repeatable: true, send: BackSpace}
-  Liquid_fixed_space: {label: ' ⎵ ', repeatable: true, functional: false, send: space}
+  Liquid_fixed_space: {label: '  ⎵ ', repeatable: true, functional: false, send: space}
   Liquid_fixed_left: {label: ' ← ', send: Left}
   Liquid_fixed_right: {label: ' → ', send: Right}
   Liquid_fixed_return: {label: '  ↲  ', repeatable: true, send: Return, functional: false}
@@ -1395,6 +1528,7 @@ preset_keys:
   Calc_Lua: {label: 計數機, text: 'cC', functional: false}
   Date_Lua: {label: '年月日', text: 'N', functional: false}
   Unicode_Lua: {label: 'Uni', text: 'U', functional: false}
+  Alt_space: {label: '', repeatable: true, functional: false, send: space}
   # For Gukwan Reverse Lookup
   Cantonese_rl: {label: 穗, text: '`', functional: false}
   Mandarin_rl: {label: 普, text: '`P', functional: false}
@@ -3791,7 +3925,7 @@ preset_keyboards:
       - {click: '7', width: 18, repeatable: true, key_text_color: off_key_text_color}
       - {click: '8', width: 18, repeatable: true, key_text_color: off_key_text_color}
       - {click: '9', width: 18, repeatable: true, key_text_color: off_key_text_color}
-      - {click: Liquid_fixed_space}
+      - {click: Alt_space}
       #第四行
       - {click: Keyboard_default, width: 17.25, long_click: Number_Lua, swipe_down: Date_Lua, hint: '年月日'}
       - {click: Keyboard_math_symbol, width: 17.25, long_click: Calc_Lua, swipe_down: Unicode_Lua, hint: 'Unicode'}
@@ -3825,7 +3959,7 @@ preset_keyboards:
       - {click: End, long_click: Page_Down}
       - {click: Down}
       - {click: ''}
-      - {click: Liquid_fixed_space}
+      - {click: Alt_space}
       #第四行
       - {click: Keyboard_default}
       - {click: '', label: '❌', long_click: Clear, hint: '長壓確認'}
@@ -3841,7 +3975,7 @@ preset_keyboards:
     width: 20
     keys:
       #第一行
-      - {click: Liquid_fixed_space}
+      - {click: Alt_space}
       - {click: 'あ', swipe_left: 'い', swipe_up: 'う', swipe_right: 'え', swipe_down: お'}
       - {click: 'か', swipe_left: 'き', swipe_up: 'く', swipe_right: 'け', swipe_down: 'こ'}
       - {click: 'さ', swipe_left: 'し', swipe_up: 'す', swipe_right: 'せ', swipe_down: 'そ'}
@@ -3881,7 +4015,7 @@ preset_keyboards:
     width: 20
     keys:
       #第一行
-      - {click: Liquid_fixed_space}
+      - {click: Alt_space}
       - {click: 'ア', swipe_left: 'イ', swipe_up: 'ウ', swipe_right: 'エ', swipe_down: 'オ'}
       - {click: 'カ', swipe_left: 'キ', swipe_up: 'ク', swipe_right: 'ケ', swipe_down: 'コ'}
       - {click: 'サ', swipe_left: 'シ', swipe_up: 'ス', swipe_right: 'セ', swipe_down: 'ソ'}
