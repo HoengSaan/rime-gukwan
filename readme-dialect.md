@@ -53,6 +53,80 @@
 
 爲免麻煩，特殊調打字同 2（陰上）通用。 
 
+## 支持方言列表
+
+- 廣州系
+  - `jyut6ping3-gw`【廣州話】：完全使用`rime-cantonese`字表同詞庫，增添菊韻所有功能以改善打字體驗。**適合穗港澳等操廣州話人士。**
+  - `jyut6ping3-gw-cp`【廣州話】：同上，**全拼版本**。
+- 順德系——中山市
+  - 小欖鎮
+    - `gukwan-siulaam`【小欖話】：以小欖話比較有代表性特徵製作，兼容新派發音。
+    - `gukwan-siulaam-bofung`『小欖寶豐音』：小欖鎮寶豐村，兼容新派發音。
+    - `gukwan-dungsing`『東昇音』：舊東昇鎮鎮區音
+    - `gukwan-dungsing-gosaa`『東昇高沙音』：舊東昇鎮高沙村
+    - `gukwan-dungsing-taaiping`『東昇太平音』：舊東昇鎮太平村
+    - `gukwan-dungsing-taanbui`『東昇坦背音』：舊東昇鎮坦背村
+  - 古鎮鎮
+    - `gukwan-guzan-hoizau`『古鎮海洲音』：古鎮鎮海洲村
+  - 東鳳鎮・阜沙鎮
+  - `gukwan-dungfau`『東阜音』：綜合東阜兩鎮各方音（沙蓢港口亦可用）
+    - `gukwan-dungfung-dunggubou`：東鳳鎮東罟埗
+    - `gukwan-dungfung-saigubau`：東鳳鎮西罟埗
+    - `gukwan-dungfung-tungon`：東鳳鎮同安村
+    - `gukwan-fausaa-locung`：阜沙鎮羅松村
+    - `gukwan-fausaa-daaijauwai`：阜沙鎮大有圍
+  - 橫欄鎮
+    - `gukwan-waanglaan`『橫欄音』：綜合橫欄鎮各方音
+  - 南頭鎮
+    - `gukwan-naamtau-daisaa`『南頭低沙音』：南頭鎮低沙村
+    - `gukwan-naamtau-geusam`『南頭滘心音』：南頭鎮滘心村
+    - `gukwan-naamtau-paaihom`『南頭排坎音』：南頭鎮排坎村
+    - `gukwan-naamtau-naamsing`『南頭南城音』：南頭鎮南城村
+  - 黃圃鎮
+    - `gukwan-wongpou`『黃圃音』：黃圃鎮區音
+  - 民眾鎮
+    - `gukwan-longmong`『浪網音』：舊浪網鎮區音。
+    - `gukwan-longmong-kwanon`『浪網群安音』：舊浪網鎮群安村音。
+- 順德系——順德市
+  - `gukwan-daailoeng`【大良話】：以大良話比較有代表性特徵製作，兼容部份新派發音。
+  - `gukwan-cancyn`【陳村話】：以陳村話比較有代表性特徵製作，兼容部份新派發音。
+  - `gukwan-gwanon`【均安話】：未製作
+- 香山系——中山市
+  - `gukwan-sekki`【石岐話】：以石歧話新派音製作。（老派音需要自行製作字表，菊韻字表不能轉換）
+
+<blockquote>
+    <details>
+  <summary>方案不能直接同新派音兼容，可能已不貼合實際情況，如：</summary>
+  <ul>
+    <li>
+      曉匣喻母細音字受廣州影響讀<code>j</code>，但變化未完全。
+      <ul>
+        <li>
+          如「爺」讀<code>he4</code>，但係「園」讀<code>jyun4</code>（本應讀<code>hyn4</code>）
+        </li>
+        <li>
+          由於個個方言都變化程度唔同，我一個人絕無辦法去執晒，只能設定兩種音都出到字。
+        </li>
+        <li>
+            如小欖話只有極少數作爲白讀音殘留，例如「穴」<code>hyut6</code>等。則可以特例處理。</li>
+        </ul>
+            <li>師韻讀<code>yu</code>定讀<code>i</code><ul>
+                            <li>
+              其實讀開<code>yu</code>就應該全部讀<code>i</code>，但係不能避免遇到隻冇識既字，就直情跟hin1廣州音。此處不作改變，如不能辨別者，請手動更改方案。
+            </li>
+            <li>
+                關於白讀字請見<code>readme-dialect.md</code>）。
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</details>
+</blockquote>
+
+<mark>建議根據說明自行調整方案。</mark>
+
 ## 順德系方言
 
 順德系方言主要分佈於順德市同其周邊，如中山，南海，番禺等。
@@ -69,9 +143,7 @@
 1. 以小欖爲中心，同周邊海洲、東昇、東鳳爲一類；
 2. 遠離小欖竝帶有一定蜑家特徵爲一類。
 
-南海，番禺方面目前無計劃，故未有查證。
-
-方案製作一般以市區・鎮區爲準。
+南海，番禺方面目前無計劃，故未有查證。方案製作一般以市區・鎮區爲準。
 
 ### 順德系方言共通特徵
 

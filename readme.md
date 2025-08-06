@@ -31,8 +31,6 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 
 支持各類方言、三拼輸入、漢英混打，各種特殊符號、日期時間輸入，各類反查等。
 
-<img src="pic\showcase.png"/>
-
 <ul>
 	<li>以下功能出廠自帶：
 		<ul>
@@ -92,82 +90,23 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 
 菊韻可支持多地方言。由於衆口難調，已爲各種方言口音預設大量轉換規則同模糊音，方便自行定製。（需對 Regex 同音韻學有基本瞭解）
 
-- 廣州系
-  - `jyut6ping3-gw`【廣州話】：完全使用`rime-cantonese`字表同詞庫，增添菊韻所有功能以改善打字體驗。**適合穗港澳等操廣州話人士。**
-  - `jyut6ping3-gw-cp`【廣州話】：同上，**全拼版本**。
-- 順德系——中山市
-  - 小欖鎮
-    - `gukwan-siulaam`【小欖話】：以小欖話比較有代表性特徵製作，兼容新派發音。
-    - `gukwan-siulaam-bofung`『小欖寶豐音』：小欖鎮寶豐村，兼容新派發音。
-    - `gukwan-dungsing`『東昇音』：舊東昇鎮鎮區音
-    - `gukwan-dungsing-gosaa`『東昇高沙音』：舊東昇鎮高沙村
-    - `gukwan-dungsing-taaiping`『東昇太平音』：舊東昇鎮太平村
-    - `gukwan-dungsing-taanbui`『東昇坦背音』：舊東昇鎮坦背村
-  - 古鎮鎮
-    - `gukwan-guzan-hoizau`『古鎮海洲音』：古鎮鎮海洲村
-  - 東鳳鎮・阜沙鎮
-  - `gukwan-dungfau`『東阜音』：綜合東阜兩鎮各方音（沙蓢港口亦可用）
-    - `gukwan-dungfung-dunggubou`：東鳳鎮東罟埗
-    - `gukwan-dungfung-saigubau`：東鳳鎮西罟埗
-    - `gukwan-dungfung-tungon`：東鳳鎮同安村
-    - `gukwan-fausaa-locung`：阜沙鎮羅松村
-    - `gukwan-fausaa-daaijauwai`：阜沙鎮大有圍
-  - 橫欄鎮
-    - `gukwan-waanglaan`『橫欄音』：綜合橫欄鎮各方音
-  - 南頭鎮
-    - `gukwan-naamtau-daisaa`『南頭低沙音』：南頭鎮低沙村
-    - `gukwan-naamtau-geusam`『南頭滘心音』：南頭鎮滘心村
-    - `gukwan-naamtau-paaihom`『南頭排坎音』：南頭鎮排坎村
-    - `gukwan-naamtau-naamsing`『南頭南城音』：南頭鎮南城村
-  - 黃圃鎮
-    - `gukwan-wongpou`『黃圃音』：黃圃鎮區音
-  - 民眾鎮
-    - `gukwan-longmong`『浪網音』：舊浪網鎮區音。
-    - `gukwan-longmong-kwanon`『浪網群安音』：舊浪網鎮群安村音。
-- 順德系——順德市
-  - `gukwan-daailoeng`【大良話】：以大良話比較有代表性特徵製作，兼容部份新派發音。
-  - `gukwan-cancyn`【陳村話】：以陳村話比較有代表性特徵製作，兼容部份新派發音。
-  - `gukwan-gwanon`【均安話】：未製作
-- 香山系——中山市
-  - `gukwan-sekki`【石岐話】：以石歧話新派音製作。（老派音需要自行製作字表，菊韻字表不能轉換）
+#### 支持方言列表
 
-<blockquote>
-    <details>
-  <summary>方案不能直接同新派音兼容，可能已不貼合實際情況，如：</summary>
-  <ul>
-    <li>
-      曉匣喻母細音字受廣州影響讀<code>j</code>，但變化未完全。
-      <ul>
-        <li>
-          如「爺」讀<code>he4</code>，但係「園」讀<code>jyun4</code>（本應讀<code>hyn4</code>）
-        </li>
-        <li>
-          由於個個方言都變化程度唔同，我一個人絕無辦法去執晒，只能設定兩種音都出到字。
-        </li>
-        <li>
-            如小欖話只有極少數作爲白讀音殘留，例如「穴」<code>hyut6</code>等。則可以特例處理。</li>
-        </ul>
-            <li>師韻讀<code>yu</code>定讀<code>i</code><ul>
-                            <li>
-              其實讀開<code>yu</code>就應該全部讀<code>i</code>，但係不能避免遇到隻冇識既字，就直情跟hin1廣州音。此處不作改變，如不能辨別者，請手動更改方案。
-            </li>
-            <li>
-                關於白讀字請見<code>readme-dialect.md</code>）。
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-  </ul>
-</details>
-</blockquote>
-<mark>建議根據說明自行調整方案。</mark>
+- `jyut6ping3-gw`【廣州話（廣州系）】：使用`rime-cantonese`字表同詞庫，增添菊韻所有功能以改善打字體驗。**適合穗港澳等操廣州話人士。**
+- `jyut6ping3-gw-cp`【廣州話（廣州系）】：同上，**全拼版本**。
+- `gukwan-siulaam`【小欖話（順德系）】：以小欖話比較有代表性特徵製作，兼容新派發音。
+- `gukwan-daailoeng`【大良話（順德系）】：以大良話比較有代表性特徵製作，兼容部份新派發音。
+- `gukwan-cancyn`【陳村話（順德系）】：以陳村話比較有代表性特徵製作，兼容部份新派發音。
+- `gukwan-gwanon`【均安話（順德系）】：未製作
+- `gukwan-sekki`【石岐話（香山系）】：以石歧話新派音製作。（老派音需要自行製作字表，菊韻字表不能轉換）
+
+詳細列表同方案細節請參攷`readme-dialect.md`（[Link](https://github.com/HoengSaan/rime-gukwan/blob/main/readme-dialect.md)）
 
 ### 輸入
 
 打字方式仍遵從當年`rime-jyutping`基本原則。輸入廣州話時同`rime-cantonese`竝無分別，故此不贅述。
 
-多數方案使用粵拼，部份方言使用擴展粵拼，詳細請見`readme-dialect.md`（[Link](https://github.com/HoengSaan/rime-gukwan/blob/main/readme-dialect.md)）。
+多數方案使用粵拼，部份方言使用擴展粵拼，詳細請參攷`readme-dialect.md`（[Link](https://github.com/HoengSaan/rime-gukwan/blob/main/readme-dialect.md)）。
 
 菊韻支持竝**默認開啓三拼**，即所有漢字皆可以三鍵輸入（不含聲調）。**三拼輸入不影響聲調輸入**，用家仍然可以使用傳統打法。如不能接受，下文有解說如何關閉三拼。
 
@@ -235,7 +174,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 - 訓讀（[rime-kunyomi](https://github.com/sgalal/rime-kunyomi)），和語訓讀（現代音）反査。鍵值爲<code>`F</code>（FanDuk）
 - 兩分（[rime-loengfan](https://github.com/CanCLID/rime-loengfan)），粵語廣州話兩分拆字反査。鍵值爲<code>`L</code>（LiongFan/LoengFan）
 
-Android可用自帶主題（`菊韻.trime.yaml`），使用功能更加方便。
+Android建議使用Trime並使用**菊韻主題**（`菊韻.trime.yaml`），使用功能更加方便。
 
 > [!NOTE]
 >
@@ -327,9 +266,7 @@ Android可用自帶主題（`菊韻.trime.yaml`），使用功能更加方便。
 
 ### 補靪範例
 
-`gw_custom`內有本人使用補靪之範例，以供參攷。（**<mark>請勿直接使用</mark>**）
-
-當中有示範如何調用定製詞庫，語法模型，打字預測等。
+`gw_custom`內有本人使用補靪之範例，示範如何調用定製詞庫，語法模型，打字預測等。（**<mark>請勿直接使用</mark>**）
 
 # 方案
 
@@ -421,9 +358,12 @@ Android可用自帶主題（`菊韻.trime.yaml`），使用功能更加方便。
   - 增刪部份鍵盤佈局、以及各類微細修改
     - 除次級鍵盤之外所有佈局皆已刪除。
     - 36鍵基本鍵盤同小鍵盤重製
-    - 新增符號表、編輯器、19鍵假名鍵盤（不依賴任何方案，以滑動輸入）
-  - 更多配色、更多鍵盤佈局（正在製作）
-- `OpenCC 開放中文轉換`：開箱即用，用於繁簡轉換，隨源文件以[Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0.html)發佈。**位置爲`/gw_custom`。**
+    - 新增符號表、編輯器、19鍵假名鍵盤（**不依賴任何方案**，以滑動輸入）
+  - 在元方案基礎，增加15個配色，其中有五對深淺色互通方案。
+  - 更多配色、更多鍵盤佈局正在製作
+- LXGW WenKai TC / 霞鶩文楷 TC：菊韻主題所用字型，來自於[lxgw/LxgwWenkaiTC](https://github.com/lxgw/LxgwWenKaiTC)，隨源文件以[SIL Open Font License 1.1](https://openfontlicense.org/)發佈。
+- WD-XL Lubrifont / WD-XL 滑油字：菊韻主題所用字型，來自於[NightFurySL2001/WD-XL-font](NightFurySL2001/WD-XL-font)，隨源文件以[SIL Open Font License 1.1](https://openfontlicense.org/)發佈。
+- `OpenCC 開放中文轉換`：開箱即用，用於繁簡轉換，隨源文件以[Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0.html)發佈。位置爲`/gw_custom`。
 
 ## 銘謝
 

@@ -10,7 +10,7 @@
 # Learn how to use Gukwan in the readme file, available on the project's github page.
 # Source: https://github.com/Wenti-D/Astralwelkin
 
-config_version: '19.6.3b'
+config_version: '19.6.4b'
 name: 菊韻                                #方案名稱
 author: 'Windy_D <windy0deng@gmail.com>, Hoengsaan (Lingdai)'  #作者信息
 
@@ -23,8 +23,6 @@ height:
   - &ipa_key_height 36
   - &ipa_key_width 8.33333333333333
   - &ipa_2_key_width 16.666666666666666
-  - &ipa_3_key_width 25
-  - &jpn_key_height 48
   - &26_key_height 44
   - &26_key_vert_gap 9
   - &ipa_key_vert_gap 2
@@ -68,15 +66,15 @@ style:
   locale: zh_CN                 #沒什麼
   speech_opencc_config: none    #好說的
   #字體
-  text_font: MiSans-Regular.otf                 #打出編碼字體
-  label_font: MiSans-Regular.otf                #懸浮窗序號字體
-  candidate_font: MiSans-Regular.otf            #候選項字體
-  comment_font: MiSans-Regular.otf              #候選項註釋字體
+  text_font: LXGWWenKaiTC-Regular.ttf           #打出編碼字體
+  label_font: LXGWWenKaiTC-Regular.ttf          #懸浮窗序號字體
+  candidate_font: LXGWWenKaiTC-Regular.ttf      #候選項字體
+  comment_font: LXGWWenKaiTC-Medium.ttf         #候選項註釋字體
   hanb_font: PlangothicP1-Regular.allideo.ttf   #後備字體
-  latin_font: MiSans-Regular.otf                #候選項及註釋的拉丁字體
-  key_font: MiSans-Regular.otf                  #按鍵字體
-  symbol_font: MiSans-Regular.otf               #按鍵註釋字體
-  preview_font: MiSans-Regular.otf              #按鍵氣泡字體
+  #latin_font: WD-XLLubrifontTC-Regular.otf      #候選項及註釋的拉丁字體
+  key_font: WD-XLLubrifontTC-Regular.otf        #按鍵字體
+  symbol_font: LXGWWenKaiTC-Medium.ttf          #按鍵註釋字體
+  preview_font: LXGWWenKaiTC-Regular.ttf        #按鍵氣泡字體
   #尺寸
   text_size: 14                   #編碼字號
   label_text_size: 21             #候選序號字號
@@ -1543,7 +1541,7 @@ preset_keys:
   Liquid_fixed_left: {label: ' ← ', send: Left}
   Liquid_fixed_right: {label: ' → ', send: Right}
   Liquid_fixed_return: {label: '  ↲  ', repeatable: true, send: Return, functional: false}
-  # For Number
+  # 
   Commit_Caret: {label: '^', commit: '^', functional: false}
   Commit_Hash: {label: '#', commit: '#', functional: false}
   Commit_At: {label: '@', commit: '@', functional: false}
@@ -1561,6 +1559,7 @@ preset_keys:
   Date_Lua: {label: '年月日', text: 'N', functional: false}
   Unicode_Lua: {label: 'Uni', text: 'U', functional: false}
   Alt_space: {label: ' ', repeatable: true, functional: false, send: space}
+  Gukwan_readme: {label: 關於, command: run, option: "https://github.com/HoengSaan/rime-gukwan"} #查看網頁: run 網址
   # For Gukwan Reverse Lookup
   Cantonese_rl: {label: 穗, text: '`', functional: false}
   Mandarin_rl: {label: 普, text: '`P', functional: false}
@@ -4123,8 +4122,8 @@ preset_keyboards:
       - {click: '¡'}
       - {click: BackSpace, swipe_down: Delete, hint: '⇨', width: 16, key_text_offset_y: 0, key_back_color: off_key_back_color, key_text_color: off_key_text_color, hilited_key_back_color: hilited_off_key_back_color, hilited_key_text_color: hilited_off_key_text_color}
       #第四行
-      - {click: Keyboard_default, width: 12.5, key_text_offset_y: 0, key_back_color: off_key_back_color, key_text_color: off_key_text_color, hilited_key_back_color: hilited_off_key_back_color, hilited_key_text_color: hilited_off_key_text_color}
-      - {click: Keyboard_number, width: 12.5, key_text_offset_y: 0, key_back_color: off_key_back_color, key_text_color: off_key_text_color, hilited_key_back_color: hilited_off_key_back_color, hilited_key_text_color: hilited_off_key_text_color}
+      - {click: Keyboard_default, long_click: Settings, width: 12.5, key_text_offset_y: 0, key_back_color: off_key_back_color, key_text_color: off_key_text_color, hilited_key_back_color: hilited_off_key_back_color, hilited_key_text_color: hilited_off_key_text_color}
+      - {click: Keyboard_number, long_click: Gukwan_readme, width: 12.5, key_text_offset_y: 0, key_back_color: off_key_back_color, key_text_color: off_key_text_color, hilited_key_back_color: hilited_off_key_back_color, hilited_key_text_color: hilited_off_key_text_color}
       - {click: '‹', long_click: '«'}
       - {click: space, width: 27, swipe_up: Up, swipe_left: Left, swipe_right: Right, swipe_down: Down}
       - {click: '›', long_click: '»'}
@@ -4175,8 +4174,8 @@ preset_keyboards:
       - {click: '⇔', long_click: '⇌', swipe_left: '', swipe_right: '', hint: '   '}
       - {click: BackSpace, swipe_down: Delete, hint: '⇨', width: 16, key_text_offset_y: 0, key_back_color: off_key_back_color, key_text_color: off_key_text_color, hilited_key_back_color: hilited_off_key_back_color, hilited_key_text_color: hilited_off_key_text_color}
       #第四行
-      - {click: Keyboard_default, width: 12.5, key_text_offset_y: 0, key_back_color: off_key_back_color, key_text_color: off_key_text_color, hilited_key_back_color: hilited_off_key_back_color, hilited_key_text_color: hilited_off_key_text_color}
-      - {click: Keyboard_number, width: 12.5, key_text_offset_y: 0, key_back_color: off_key_back_color, key_text_color: off_key_text_color, hilited_key_back_color: hilited_off_key_back_color, hilited_key_text_color: hilited_off_key_text_color}
+      - {click: Keyboard_default, long_click: Settings, width: 12.5, key_text_offset_y: 0, key_back_color: off_key_back_color, key_text_color: off_key_text_color, hilited_key_back_color: hilited_off_key_back_color, hilited_key_text_color: hilited_off_key_text_color}
+      - {click: Keyboard_number, long_click: Gukwan_readme, width: 12.5, key_text_offset_y: 0, key_back_color: off_key_back_color, key_text_color: off_key_text_color, hilited_key_back_color: hilited_off_key_back_color, hilited_key_text_color: hilited_off_key_text_color}
       - {click: '≪', key_text_size: 16}
       - {click: space, width: 27, swipe_up: Up, swipe_left: Left, swipe_right: Right, swipe_down: Down}
       - {click: '≫', key_text_size: 16}
