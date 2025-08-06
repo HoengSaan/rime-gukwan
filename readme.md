@@ -23,9 +23,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 
 此爲[RIME | 中州韻輸入法引擎](https://rime.im/)方案，是爲改善粵語輸入體驗，支持三拼，漢英混打（中英混打），輸入日期・時間・節日・節氣等各種功能。
 
-菊韻本身是爲輸入順德系方言設計，可用於輸入小欖話・順德話等順德系方言，亦支持輸入廣州話。
-
-更多資訊請閱讀下文竝參攷[菊韻 – なかやま園](https://zonsan.fc2.page/?cat=123)。[關於如何安裝](#安裝)。
+菊韻支持輸入除廣州話之外粵語方言，如小欖話、順德話、石歧話（新派）等。更多資訊請閱讀下文竝參攷[菊韻 – なかやま園](https://zonsan.fc2.page/?cat=123)。[關於如何安裝](#安裝)。
 
 菊韻爲本人自用，只要一日未有更合本人之粵語輸入方案，則維護不停。
 
@@ -95,8 +93,8 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 菊韻可支持多地方言。由於衆口難調，已爲各種方言口音預設大量轉換規則同模糊音，方便自行定製。（需對 Regex 同音韻學有基本瞭解）
 
 - 廣州系
-  - `jyut6ping3-gw`【廣州話】：完全使用`rime-cantonese`字表同詞庫，增添菊韻所有功能以改善打字體驗。適合穗港澳等操廣州話人士。
-  - `jyut6ping3-gw-cp`【廣州話】：完全使用`rime-cantonese`字表同詞庫，增添菊韻所有功能以改善打字體驗。適合穗港澳等操廣州話人士。**關閉三拼以符合習慣全拼用戶。**
+  - `jyut6ping3-gw`【廣州話】：完全使用`rime-cantonese`字表同詞庫，增添菊韻所有功能以改善打字體驗。**適合穗港澳等操廣州話人士。**
+  - `jyut6ping3-gw-cp`【廣州話】：同上，**全拼版本**。
 - 順德系——中山市
   - 小欖鎮
     - `gukwan-siulaam`【小欖話】：以小欖話比較有代表性特徵製作，兼容新派發音。
@@ -125,7 +123,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
     - `gukwan-wongpou`『黃圃音』：黃圃鎮區音
   - 民眾鎮
     - `gukwan-longmong`『浪網音』：舊浪網鎮區音。
-    - `gukwan-longmong`『浪網群安音』：舊浪網鎮群安村音。
+    - `gukwan-longmong-kwanon`『浪網群安音』：舊浪網鎮群安村音。
 - 順德系——順德市
   - `gukwan-daailoeng`【大良話】：以大良話比較有代表性特徵製作，兼容部份新派發音。
   - `gukwan-cancyn`【陳村話】：以陳村話比較有代表性特徵製作，兼容部份新派發音。
@@ -163,16 +161,15 @@ This is a schema based on [Rime Input Method](https://rime.im/).
   </ul>
 </details>
 </blockquote>
-
 <mark>建議根據說明自行調整方案。</mark>
 
-### 三拼輸入
+### 輸入
 
-菊韻支持竝默認開啓三拼，即所有漢字皆可以三鍵輸入（不含聲調）。
+打字方式仍遵從當年`rime-jyutping`基本原則。輸入廣州話時同`rime-cantonese`竝無分別，故此不贅述。
 
-**三拼輸入不影響聲調輸入**，用家仍然可以使用傳統打法——即全拼，輸入拼音完整形式：聲母+韻母+聲調，聲調可以省畧。
+多數方案使用粵拼，部份方言使用擴展粵拼，詳細請見`readme-dialect.md`（[Link](https://github.com/HoengSaan/rime-gukwan/blob/main/readme-dialect.md)）。
 
-如不能接受三拼輸入，下文有解說如何關閉三拼。
+菊韻支持竝**默認開啓三拼**，即所有漢字皆可以三鍵輸入（不含聲調）。**三拼輸入不影響聲調輸入**，用家仍然可以使用傳統打法。如不能接受，下文有解說如何關閉三拼。
 
 <img src="pic\key.png"/>
 
@@ -194,12 +191,13 @@ This is a schema based on [Rime Input Method](https://rime.im/).
   - 以`a`輸入`aa`：如「瓜」`gwaa`則爲`xa`
   - 以`y`輸入`yu`（`jyu`）：如「擧」`gyu`則爲`gy`
 - 有韻尾情況（如`laang`，`loeng`等）
-  - 以`e`輸入`oe`：如「涼」`loeng`則爲`ler`
+  - 以`e`輸入`oe`（`io`）：如「涼」`loeng`則爲`ler`
   - 以`r`輸入`aa`：如「逛」`gwaang`則爲`xrr`
   - 以`y`輸入`yu`（`jyu`）:如「血」`hyut`則爲`hyt`
   - 以`u`輸入`eo`：如「論」`leon`則爲`lun`
 - 以下三拼僅部分方案適用
-  - 以`r/e`輸入`ae`：如「斬」`zhaem`則爲`z(h)aam`｜`z(h)rm`｜`z(h)em`（僅`gukwan-default`）
+  - 以`r/e`輸入`ae`：如「斬」`zhaem`則爲`z(h)aam`｜`z(h)rm`｜`z(h)em`以`e`輸入`ia`：如「名」`miang`則爲`meng`（僅`gukwan-default`）
+  - 以`e`輸入`ia`：如「名」`miang`則爲`meng`（僅`gukwan-default`同`gukwan-sekki`）
   - 以`u`輸入`oo`【僅限`ooi`】：如「淚」`looi`則爲`lui`
   - 以`o`輸入`oo`【僅限`oong/ook`】：如「朗」`loong`則爲`lor`
 
@@ -231,11 +229,11 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 
 多數人士通曉廣州話、普通話卻未必熟識自己鄉下發音，故設各種反査。反査亦可用來各種疑難雜字。
 
-- 粵拼（[rime-cantonese](https://github.com/rime/rime-cantonese)），粵語廣州話反査。鍵值爲<code>` </code>。
-- 朙月拼音（rime-luna_pinyin），官語普通話反査 。鍵值爲<code>`P</code>（PuPing/PouPing）。
-- 倉頡五代（rime-cangjie5），倉頡反査。鍵值爲<code>`C</code>（CoongKit/CongKit ）。
-- 訓讀（[rime-kunyomi](https://github.com/sgalal/rime-kunyomi)），和語訓讀（現代音）反査。鍵值爲<code>`F</code>（FanDuk）。
-- 兩分（[rime-loengfan](https://github.com/CanCLID/rime-loengfan)），粵語廣州話兩分拆字反査。鍵值爲<code>`L</code>（LiongFan/LoengFan）。
+- 粵拼（[rime-cantonese](https://github.com/rime/rime-cantonese)），粵語廣州話反査。鍵值爲<code>` </code>
+- 朙月拼音（rime-luna_pinyin），官語普通話反査 。鍵值爲<code>`P</code>（PuPing/PouPing）
+- 倉頡五代（rime-cangjie5），倉頡反査。鍵值爲<code>`C</code>（CoongKit/CongKit）
+- 訓讀（[rime-kunyomi](https://github.com/sgalal/rime-kunyomi)），和語訓讀（現代音）反査。鍵值爲<code>`F</code>（FanDuk）
+- 兩分（[rime-loengfan](https://github.com/CanCLID/rime-loengfan)），粵語廣州話兩分拆字反査。鍵值爲<code>`L</code>（LiongFan/LoengFan）
 
 Android可用自帶主題（`菊韻.trime.yaml`），使用功能更加方便。
 
@@ -278,8 +276,6 @@ Android可用自帶主題（`菊韻.trime.yaml`），使用功能更加方便。
 
 若無法使用Python，安裝後請自行從`gw_dialects`複製需要使用方案。<mark>默認狀態下只有廣州話同基底方案可用。</mark>
 
-**識者不難，難者不識。**<mark>若有不明，可問AI。</mark>
-
 ### 簡略安裝流程
 
 1. 安裝 RIME
@@ -299,15 +295,7 @@ Android可用自帶主題（`菊韻.trime.yaml`），使用功能更加方便。
 
 ## 定製
 
-部份用家可根據自身情況添加以下字音到用戶字庫。
-
-### 必讀參攷文章
-
-定製可參攷[如何定製菊韻 – なかやま園](https://zonsan.fc2.page/?p=1569)，但當真要定製中州韻方案，<mark>懇請閣下閱讀以下文章</mark>：
-
-- [中州韻維基 - SpellingAlgebra](https://github.com/rime/home/wiki/SpellingAlgebra)
-- [amzxyz - Patch 方法论](https://github.com/amzxyz/rime_wanxiang_pro/blob/main/custom/patch%E6%96%B9%E6%B3%95%E8%AE%BA.md)
-- [oh-my-rime - 配置教程](https://www.mintimate.cc/zh/guide/)
+定製可參攷[如何定製菊韻 – なかやま園](https://zonsan.fc2.page/?p=1569)，但當真要定製中州韻方案，<mark>懇請閣下閱讀以下文章</mark>：[中州韻維基 - SpellingAlgebra](https://github.com/rime/home/wiki/SpellingAlgebra)｜[amzxyz - Patch 方法论](https://github.com/amzxyz/rime_wanxiang_pro/blob/main/custom/patch%E6%96%B9%E6%B3%95%E8%AE%BA.md)｜[oh-my-rime - 配置教程](https://www.mintimate.cc/zh/guide/)
 
 定製方案不應修改方案本身，閣下應使用補靪或根據原方案自製方案文件。
 
@@ -323,15 +311,13 @@ Android可用自帶主題（`菊韻.trime.yaml`），使用功能更加方便。
 
 菊韻添加新詞庫必須符合以下兩個要求： 
 
-1. 無輸入碼，菊韻輸入碼無法同其他方案通用。
+1. 無輸入碼。
    - 使用前請解壓`OpenCC.zip`至`gw_custom`，亦可自行編譯（[BYVoid/OpenCC](https://github.com/BYVoid/OpenCC)）。
-   - 將需要去除輸入碼之詞庫，放在`Dict_Source`，然後使用`去除輸入碼.py`即可去除輸入碼。
-   - 去除輸入碼版本默認輸出至`Dict_Removed`
-2. 詞庫必須使用繁體（OpenCC 標準），否則無法打字。
-   - 將需要繁化詞庫放在`Dict_Removed`，然後使用`繁簡轉換.cmd`，選擇`s2t.json`即可繁化。
-   - 轉換後默認輸出至`Dict_Removed`。
+   - 將需要去除輸入碼之詞庫，放在`Dict_Source`，然後使用`去除輸入碼.py`即可去除輸入碼。文件默認輸出至`Dict_Removed`
+2. 詞庫必須使用繁體（OpenCC 標準）。
+   - 將需要繁化詞庫放在`Dict_Removed`，然後使用`繁簡轉換.cmd`，選擇`s2t.json`即可繁化。文件默認輸出至`Dict_Removed`。
 
-若閣下詞庫已符合以上兩個要求，可直接將詞庫放在`Dict_Converted`。毋須使用以上兩個腳本。
+符合要求者，可直接將詞庫放在`Dict_Converted`。毋須使用以上兩個腳本。
 
 ##### 詞庫調用
 
@@ -344,12 +330,6 @@ Android可用自帶主題（`菊韻.trime.yaml`），使用功能更加方便。
 `gw_custom`內有本人使用補靪之範例，以供參攷。（**<mark>請勿直接使用</mark>**）
 
 當中有示範如何調用定製詞庫，語法模型，打字預測等。
-
-## 拼音
-
-打字方式仍遵從當年`rime-jyutping`基本原則。輸入廣州話時同`rime-cantonese`竝無分別，故此不贅述。
-
-多數方案使用粵拼，部份方言使用擴展粵拼，詳細請見`readme-dialect.md`（[Link](https://github.com/HoengSaan/rime-gukwan/blob/main/readme-dialect.md)）。
 
 # 方案
 
@@ -372,26 +352,21 @@ Android可用自帶主題（`菊韻.trime.yaml`），使用功能更加方便。
 ## 字詞
 
 `gukwan.dict.yaml`用於調用字表詞庫，默認亦調用 rime-cantonese 部份詞庫同粵語八股文。**位置爲`/gw_dicts`。**
-
-`gukwan-alt.dict.yaml`・`gukwan-asp.dict.yaml`・`gukwan-alt-asp.dict.yaml`爲部份方言專用。
-
-`jyut6ping3-gw.dict.yaml`爲廣州話專用。
+`gukwan-alt.dict.yaml`・`gukwan-asp.dict.yaml`・`gukwan-alt-asp.dict.yaml`爲方言專用。`jyut6ping3-gw.dict.yaml`爲廣州專用。
 
 - 字庫
   - `gukwan.chars.dict.yaml`：廣韻字表
   - `gukwan.chars1.dict.yaml`：廣韻異音訓讀增補
   - `gukwan.chars2.dict.yaml`：近代字異體字異音訓讀增補
     - 粵字平翹、日以之分參攷梧州話
-  - `gukwan.chars3.dict.yaml`：[alt] 廣韻字近代字非通用增補（特供部份方言使用）
-  - `gukwan.chars4.dict.yaml` ：[asp] 廣韻字近代字非通用增補（特供部份方言使用）
+  - `gukwan.chars3.dict.yaml`：[alt] 廣韻字近代字非通用增補（方言專用）
+  - `gukwan.chars4.dict.yaml` ：[asp] 廣韻字近代字非通用增補（方言專用）
 - 詞庫
   - `gukwan.words.dict.yaml`：粵拼詞庫
     - 基於`jyut6ping3.words.dict.yaml`，作者爲「粵語計算語言學基礎建設組」([@CanCLID](https://github.com/CanCLID)) ，隨源文件以[CC BY 4.0 許可](https://creativecommons.org/licenses/by/4.0/)發佈。已去除輸入碼竝改變部份字型。
     - 已開始爲部份詞標音。
-  - `gukwan.words1.dict.yaml`：部份小欖話辭彙同小欖周邊地名
-    - 收錄部份小欖話特有辭彙，小欖周邊地名街名，詳細見[小欖詞庫資料](https://github.com/HoengSaan/rime-gukwan/wiki/小欖詞庫資料)
+  - `gukwan.words1.dict.yaml`：地方詞增補
   - `gukwan.words2.dict.yaml`：粵拼詞庫增補同外來語
-    - 收錄粵拼詞庫所無之特殊辭彙同外來語。
   - `gukwan.wordsjp.dict.yaml`：廣州話專用
   - `gukwan.lettered.dict.yaml`：粵拼詞庫
     - 基於`jyut6ping3.lettered.dict.yaml`，作者爲「粵語計算語言學基礎建設組」([@CanCLID](https://github.com/CanCLID)) ，此部分則以[CC BY 4.0 許可](https://creativecommons.org/licenses/by/4.0/)發佈。
