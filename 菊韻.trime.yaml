@@ -10,7 +10,7 @@
 # Learn how to use Gukwan in the readme file, available on the project's github page.
 # Source: https://github.com/Wenti-D/Astralwelkin
 
-config_version: '19.7.1b'
+config_version: '19.7.2b'
 name: 菊韻                                #方案名稱
 author: 'Windy_D <windy0deng@gmail.com>, Hoengsaan (Lingdai)'  #作者信息
 
@@ -3844,9 +3844,9 @@ preset_keyboards:
       - {click: 'f', swipe_left: {commit: '('}, swipe_right: {commit: ')'}, hint: '(   )', key_text_color: on_key_text_color}
       - {click: 'g', swipe_left: '〈', swipe_right: '〉', hint: '〈   〉'}
       - {click: 'h', swipe_left: '《', swipe_right: '》', hint: '《   》'}
-      - {click: 'j', swipe_left: '「', swipe_right: '」', hint: '「   」', key_text_color: on_key_text_color}
-      - {click: 'k', swipe_left: '『', swipe_right: '』', hint: '『   』'}
-      - {click: 'l', swipe_left: '【', swipe_right: '】', hint: '【   】'}
+      - {click: 'j', long_click: Keyboard_Hiragana, swipe_left: '「', swipe_right: '」', hint: '「   」', key_text_color: on_key_text_color}
+      - {click: 'k', long_click: Keyboard_Katakana, swipe_left: '『', swipe_right: '』', hint: '『   』'}
+      - {click: 'l', long_click: Keyboard_Hangul, swipe_left: '【', swipe_right: '】', hint: '【   】'}
       - {width: 5}
       #第四行
       - {click: Shift_L, width: 14, key_text_offset_y: 0, key_back_color: off_key_back_color, key_text_color: off_key_text_color, hilited_key_back_color: hilited_off_key_back_color, hilited_key_text_color: hilited_off_key_text_color}
@@ -3856,7 +3856,7 @@ preset_keyboards:
       - {click: 'v', long_click: paste, swipe_down: Keyboard_clipboard, hint: '剪貼板'}
       - {click: 'b', long_click: Extra_keyboard, swipe_left: ';', swipe_right: ':', hint: ';   :'}
       - {click: 'n', long_click: Keyboard_number, swipe_left: "'", swipe_right: '"', hint: "'   \""}
-      - {click: 'm', long_click: Keyboard_Hiragana, swipe_left: '<', swipe_right: '>', hint: '<   >'}
+      - {click: 'm', swipe_left: '<', swipe_right: '>', hint: '<   >'}
       - {click: BackSpace, swipe_down: Delete, hint: '⇨', width: 16, key_text_offset_y: 0, key_back_color: off_key_back_color, key_text_color: off_key_text_color, hilited_key_back_color: hilited_off_key_back_color, hilited_key_text_color: hilited_off_key_text_color}
       #第五行
       - {click: Keyboard_basic_symbol, width: 12.5, key_text_offset_y: 0, long_click: Theme_settings, swipe_down: Color_switch, hint: '配色', key_back_color: off_key_back_color, key_text_color: off_key_text_color, hilited_key_back_color: hilited_off_key_back_color, hilited_key_text_color: hilited_off_key_text_color}
@@ -4788,7 +4788,7 @@ preset_keyboards:
       - {click: 'ᆞ', long_click: 'ᆢ', swipe_down: 'ᆡ', hint: 'ㆎ'}
       #第三行
       - {click: Shift_L, width: 10, key_text_offset_y: 0, key_back_color: off_key_back_color, key_text_color: off_key_text_color, hilited_key_back_color: hilited_off_key_back_color, hilited_key_text_color: hilited_off_key_text_color}
-      - {click: 'ᅀ', swipe_left: 'ᇫ', swipe_right: 'ᆰ', swipe_down: 'ᇫ', hint: 'ㅋ   ㆃ'}
+      - {click: 'ᅀ', swipe_left: 'ᇫ', swipe_right: 'ᇲ', swipe_down: 'ᇫ', hint: 'ㅿ   ㆃ'}
       - {click: 'ᄏ', swipe_left: 'ᆿ', swipe_right: 'ᆰ', swipe_down: 'ᆿ', hint: 'ㅋ   ㄺ'}
       - {click: 'ᄐ', swipe_left: 'ᇀ', swipe_right: 'ᆴ', swipe_down: 'ᇀ', hint: 'ㅌ   ㄾ'}
       - {click: 'ᄎ', swipe_down: 'ᆾ', hint: 'ㅊ'}
@@ -4853,9 +4853,9 @@ preset_keyboards:
       - {click: 'f', swipe_left: {commit: '('}, swipe_right: {commit: ')'}, hint: '(   )', key_text_color: on_key_text_color}
       - {click: 'g', swipe_left: '〈', swipe_right: '〉', hint: '〈   〉'}
       - {click: 'h', swipe_left: '《', swipe_right: '》', hint: '《   》'}
-      - {click: 'j', swipe_left: '「', swipe_right: '」', hint: '「   」', key_text_color: on_key_text_color}
-      - {click: 'k', swipe_left: '『', swipe_right: '』', hint: '『   』'}
-      - {click: 'l', swipe_left: '【', swipe_right: '】', hint: '【   】'}
+      - {click: 'j', long_click: Keyboard_Hiragana, swipe_left: '「', swipe_right: '」', hint: '「   」', key_text_color: on_key_text_color}
+      - {click: 'k', long_click: Keyboard_Katakana, swipe_left: '『', swipe_right: '』', hint: '『   』'}
+      - {click: 'l', long_click: Keyboard_Hangul, swipe_left: '【', swipe_right: '】', hint: '【   】'}
       - {width: 5}
       #第四行
       - {click: Shift_L, width: 14, key_text_offset_y: 0, key_back_color: off_key_back_color, key_text_color: off_key_text_color, hilited_key_back_color: hilited_off_key_back_color, hilited_key_text_color: hilited_off_key_text_color}
@@ -4865,7 +4865,7 @@ preset_keyboards:
       - {click: 'v', long_click: paste, swipe_down: Keyboard_clipboard, hint: '剪貼板'}
       - {click: 'b', long_click: Extra_keyboard, swipe_left: ';', swipe_right: ':', hint: ';   :'}
       - {click: 'n', long_click: Keyboard_number, swipe_left: "'", swipe_right: '"', hint: "'   \""}
-      - {click: 'm', long_click: Keyboard_Hiragana, swipe_left: '<', swipe_right: '>', hint: '<   >'}
+      - {click: 'm', swipe_left: '<', swipe_right: '>', hint: '<   >'}
       - {click: BackSpace, swipe_down: Delete, hint: '⇨', width: 16, key_text_offset_y: 0, key_back_color: off_key_back_color, key_text_color: off_key_text_color, hilited_key_back_color: hilited_off_key_back_color, hilited_key_text_color: hilited_off_key_text_color}
       #第五行
       - {click: Keyboard_basic_symbol, width: 12.5, key_text_offset_y: 0, long_click: Theme_settings, swipe_down: Color_switch, hint: '配色', key_back_color: off_key_back_color, key_text_color: off_key_text_color, hilited_key_back_color: hilited_off_key_back_color, hilited_key_text_color: hilited_off_key_text_color}
@@ -4999,9 +4999,9 @@ preset_keyboards:
       - {click: 'f', label: '火', swipe_left: {commit: '('}, swipe_right: {commit: ')'}, hint: '(   )', key_text_color: on_key_text_color}
       - {click: 'g', label: '土', swipe_left: '〈', swipe_right: '〉', hint: '〈   〉'}
       - {click: 'h', label: '竹', swipe_left: '《', swipe_right: '》', hint: '《   》'}
-      - {click: 'j', label: '十', swipe_left: '「', swipe_right: '」', hint: '「   」', key_text_color: on_key_text_color}
-      - {click: 'k', label: '大', swipe_left: '『', swipe_right: '』', hint: '『   』'}
-      - {click: 'l', label: '中', swipe_left: '【', swipe_right: '】', hint: '【   】'}
+      - {click: 'j', label: '十', long_click: Keyboard_Hiragana, swipe_left: '「', swipe_right: '」', hint: '「   」', key_text_color: on_key_text_color}
+      - {click: 'k', label: '大', long_click: Keyboard_Katakana, swipe_left: '『', swipe_right: '』', hint: '『   』'}
+      - {click: 'l', label: '中', long_click: Keyboard_Hangul, swipe_left: '【', swipe_right: '】', hint: '【   】'}
       - {width: 5}
       #第四行
       - {click: Shift_L, width: 14, key_text_offset_y: 0, key_back_color: off_key_back_color, key_text_color: off_key_text_color, hilited_key_back_color: hilited_off_key_back_color, hilited_key_text_color: hilited_off_key_text_color}
@@ -5011,7 +5011,7 @@ preset_keyboards:
       - {click: 'v', label: '女', long_click: paste, swipe_down: Keyboard_clipboard, hint: '剪貼板'}
       - {click: 'b', label: '月', long_click: Extra_keyboard, swipe_left: ';', swipe_right: ':', hint: ';   :'}
       - {click: 'n', label: '弓', long_click: Keyboard_number, swipe_left: "'", swipe_right: '"', hint: "'   \""}
-      - {click: 'm', label: '一', long_click: Keyboard_Hiragana, swipe_left: '<', swipe_right: '>', hint: '<   >'}
+      - {click: 'm', label: '一', swipe_left: '<', swipe_right: '>', hint: '<   >'}
       - {click: BackSpace, swipe_down: Delete, hint: '⇨', width: 16, key_text_offset_y: 0, key_back_color: off_key_back_color, key_text_color: off_key_text_color, hilited_key_back_color: hilited_off_key_back_color, hilited_key_text_color: hilited_off_key_text_color}
       #第五行
       - {click: Keyboard_basic_symbol, width: 12.5, key_text_offset_y: 0, long_click: Theme_settings, swipe_down: Color_switch, hint: '配色', key_back_color: off_key_back_color, key_text_color: off_key_text_color, hilited_key_back_color: hilited_off_key_back_color, hilited_key_text_color: hilited_off_key_text_color}
@@ -5067,9 +5067,9 @@ preset_keyboards:
       - {click: 'f', label: '火', swipe_left: {commit: '('}, swipe_right: {commit: ')'}, hint: '(   )', key_text_color: on_key_text_color}
       - {click: 'g', label: '土', swipe_left: '〈', swipe_right: '〉', hint: '〈   〉'}
       - {click: 'h', label: '的', swipe_left: '《', swipe_right: '》', hint: '《   》'}
-      - {click: 'j', label: '十', swipe_left: '「', swipe_right: '」', hint: '「   」', key_text_color: on_key_text_color}
-      - {click: 'k', label: '大', swipe_left: '『', swipe_right: '』', hint: '『   』'}
-      - {click: 'l', label: '中', swipe_left: '【', swipe_right: '】', hint: '【   】'}
+      - {click: 'j', label: '十', long_click: Keyboard_Hiragana, swipe_left: '「', swipe_right: '」', hint: '「   」', key_text_color: on_key_text_color}
+      - {click: 'k', label: '大', long_click: Keyboard_Katakana, swipe_left: '『', swipe_right: '』', hint: '『   』'}
+      - {click: 'l', label: '中', long_click: Keyboard_Hangul, swipe_left: '【', swipe_right: '】', hint: '【   】'}
       - {width: 5}
       #第四行
       - {click: Shift_L, width: 14, key_text_offset_y: 0, key_back_color: off_key_back_color, key_text_color: off_key_text_color, hilited_key_back_color: hilited_off_key_back_color, hilited_key_text_color: hilited_off_key_text_color}
@@ -5079,7 +5079,7 @@ preset_keyboards:
       - {click: 'v', label: '女', long_click: paste, swipe_down: Keyboard_clipboard, hint: '剪貼板'}
       - {click: 'b', label: '月', long_click: Extra_keyboard, swipe_left: ';', swipe_right: ':', hint: ';   :'}
       - {click: 'n', label: '弓', long_click: Keyboard_number, swipe_left: "'", swipe_right: '"', hint: "'   \""}
-      - {click: 'm', label: '一', long_click: Keyboard_Hiragana, swipe_left: '<', swipe_right: '>', hint: '<   >'}
+      - {click: 'm', label: '一', swipe_left: '<', swipe_right: '>', hint: '<   >'}
       - {click: BackSpace, swipe_down: Delete, hint: '⇨', width: 16, key_text_offset_y: 0, key_back_color: off_key_back_color, key_text_color: off_key_text_color, hilited_key_back_color: hilited_off_key_back_color, hilited_key_text_color: hilited_off_key_text_color}
       #第五行
       - {click: Keyboard_basic_symbol, width: 12.5, key_text_offset_y: 0, long_click: Theme_settings, swipe_down: Color_switch, hint: '配色', key_back_color: off_key_back_color, key_text_color: off_key_text_color, hilited_key_back_color: hilited_off_key_back_color, hilited_key_text_color: hilited_off_key_text_color}
@@ -5128,9 +5128,9 @@ preset_keyboards:
       - {click: 'f', label: 'ㄑ', swipe_left: {commit: '('}, swipe_right: {commit: ')'}, hint: '(   )', key_text_color: on_key_text_color}
       - {click: 'g', label: 'ㄕ', swipe_left: '〈', swipe_right: '〉', hint: '〈   〉'}
       - {click: 'h', label: 'ㄘ', swipe_left: '《', swipe_right: '》', hint: '《   》'}
-      - {click: 'j', label: 'ㄨ', swipe_left: '「', swipe_right: '」', hint: '「   」', key_text_color: on_key_text_color}
-      - {click: 'k', label: 'ㄜ', swipe_left: '『', swipe_right: '』', hint: '『   』'}
-      - {click: 'l', label: 'ㄠ', swipe_left: '【', swipe_right: '】', hint: '【   】'}
+      - {click: 'j', label: 'ㄨ', long_click: Keyboard_Hiragana, swipe_left: '「', swipe_right: '」', hint: '「   」', key_text_color: on_key_text_color}
+      - {click: 'k', label: 'ㄜ', long_click: Keyboard_Katakana, swipe_left: '『', swipe_right: '』', hint: '『   』'}
+      - {click: 'l', label: 'ㄠ', long_click: Keyboard_Hangul, swipe_left: '【', swipe_right: '】', hint: '【   】'}
       - {click: ';', label: 'ㄤ'}
       #第四行
       - {click: 'z', label: 'ㄈ', long_click: undo, swipe_down: Keyboard_editor, hint: '編輯器'}
@@ -5139,7 +5139,7 @@ preset_keyboards:
       - {click: 'v', label: 'ㄒ', long_click: paste, swipe_down: Keyboard_clipboard, hint: '剪貼板'}
       - {click: 'b', label: 'ㄖ', long_click: Extra_keyboard, swipe_left: ';', swipe_right: ':', hint: ';   :'}
       - {click: 'n', label: 'ㄙ', long_click: Keyboard_number, swipe_left: "'", swipe_right: '"', hint: "'   \""}
-      - {click: 'm', label: 'ㄩ', long_click: Keyboard_Hiragana}
+      - {click: 'm', label: 'ㄩ'}
       - {click: ',', label: 'ㄝ', long_click: '、', swipe_up: '、', swipe_down: '<', hint: '<', key_text_color: one_color}
       - {click: '.', label: 'ㄡ', long_click: '・', swipe_up: '・', swipe_down: '>', hint: '>', key_text_color: one_color}
       - {click: '/', label: 'ㄥ', long_click: '?', swipe_up: '?', key_text_color: one_color}
@@ -5191,9 +5191,9 @@ preset_keyboards:
       - {click: 'f', swipe_left: {commit: '('}, swipe_right: {commit: ')'}, hint: '(   )', key_text_color: on_key_text_color}
       - {click: 'g', swipe_left: '〈', swipe_right: '〉', hint: '〈   〉'}
       - {click: 'h', swipe_left: '《', swipe_right: '》', hint: '《   》'}
-      - {click: 'j', swipe_left: '「', swipe_right: '」', hint: '「   」', key_text_color: on_key_text_color}
-      - {click: 'k', swipe_left: '『', swipe_right: '』', hint: '『   』'}
-      - {click: 'l', swipe_left: '【', swipe_right: '】', hint: '【   】'}
+      - {click: 'j', long_click: Keyboard_Hiragana, swipe_left: '「', swipe_right: '」', hint: '「   」', key_text_color: on_key_text_color}
+      - {click: 'k', long_click: Keyboard_Katakana, swipe_left: '『', swipe_right: '』', hint: '『   』'}
+      - {click: 'l', long_click: Keyboard_Hangul, swipe_left: '【', swipe_right: '】', hint: '【   】'}
       - {click: ';', key_text_color: one_color}
       #第四行
       - {click: 'z', long_click: undo, swipe_down: Keyboard_editor, hint: '編輯器'}
@@ -5202,7 +5202,7 @@ preset_keyboards:
       - {click: 'v', long_click: paste, swipe_down: Keyboard_clipboard, hint: '剪貼板'}
       - {click: 'b', long_click: Extra_keyboard, swipe_left: ';', swipe_right: ':', hint: ';   :'}
       - {click: 'n', long_click: Keyboard_number, swipe_left: "'", swipe_right: '"', hint: "'   \""}
-      - {click: 'm', long_click: Keyboard_Hiragana}
+      - {click: 'm'}
       - {click: ',', long_click: '、', swipe_up: '、', swipe_down: '<', hint: '<', key_text_color: one_color}
       - {click: '.', long_click: '・', swipe_up: '・', swipe_down: '>', hint: '>', key_text_color: one_color}
       - {click: '/', long_click: '?', swipe_up: '?', key_text_color: one_color}
@@ -5255,9 +5255,9 @@ preset_keyboards:
       - {click: 'f', label: '土', swipe_left: {commit: '('}, swipe_right: {commit: ')'}, hint: '(   )', key_text_color: on_key_text_color}
       - {click: 'g', label: '王', swipe_left: '〈', swipe_right: '〉', hint: '〈   〉'}
       - {click: 'h', label: '目', swipe_left: '《', swipe_right: '》', hint: '《   》'}
-      - {click: 'j', label: '日', swipe_left: '「', swipe_right: '」', hint: '「   」', key_text_color: on_key_text_color}
-      - {click: 'k', label: '口', swipe_left: '『', swipe_right: '』', hint: '『   』'}
-      - {click: 'l', label: '田', swipe_left: '【', swipe_right: '】', hint: '【   】'}
+      - {click: 'j', label: '日', long_click: Keyboard_Hiragana, swipe_left: '「', swipe_right: '」', hint: '「   」', key_text_color: on_key_text_color}
+      - {click: 'k', label: '口', long_click: Keyboard_Katakana, swipe_left: '『', swipe_right: '』', hint: '『   』'}
+      - {click: 'l', label: '田', long_click: Keyboard_Hangul, swipe_left: '【', swipe_right: '】', hint: '【   】'}
       - {width: 5}
       #第四行
       - {click: Shift_L, width: 14, key_text_offset_y: 0, key_back_color: off_key_back_color, key_text_color: off_key_text_color, hilited_key_back_color: hilited_off_key_back_color, hilited_key_text_color: hilited_off_key_text_color}
@@ -5267,7 +5267,7 @@ preset_keyboards:
       - {click: 'v', label: '女', long_click: paste, swipe_down: Keyboard_clipboard, hint: '剪貼板'}
       - {click: 'b', label: '子', long_click: Extra_keyboard, swipe_left: ';', swipe_right: ':', hint: ';   :'}
       - {click: 'n', label: '已', long_click: Keyboard_number, swipe_left: "'", swipe_right: '"', hint: "'   \""}
-      - {click: 'm', label: '山', long_click: Keyboard_Hiragana, swipe_left: '<', swipe_right: '>', hint: '<   >'}
+      - {click: 'm', label: '山', swipe_left: '<', swipe_right: '>', hint: '<   >'}
       - {click: BackSpace, swipe_down: Delete, hint: '⇨', width: 16, key_text_offset_y: 0, key_back_color: off_key_back_color, key_text_color: off_key_text_color, hilited_key_back_color: hilited_off_key_back_color, hilited_key_text_color: hilited_off_key_text_color}
       #第五行
       - {click: Keyboard_basic_symbol, width: 12.5, key_text_offset_y: 0, long_click: Theme_settings, swipe_down: Color_switch, hint: '配色', key_back_color: off_key_back_color, key_text_color: off_key_text_color, hilited_key_back_color: hilited_off_key_back_color, hilited_key_text_color: hilited_off_key_text_color}
@@ -5338,9 +5338,9 @@ preset_keyboards:
       - {click: 'f', label: '大', swipe_left: {commit: '('}, swipe_right: {commit: ')'}, hint: '(   )', key_text_color: on_key_text_color}
       - {click: 'g', label: '一', swipe_left: '〈', swipe_right: '〉', hint: '〈   〉'}
       - {click: 'h', label: '在', swipe_left: '《', swipe_right: '》', hint: '《   》'}
-      - {click: 'j', label: '地', swipe_left: '「', swipe_right: '」', hint: '「   」', key_text_color: on_key_text_color}
-      - {click: 'k', label: '是', swipe_left: '『', swipe_right: '』', hint: '『   』'}
-      - {click: 'l', label: '上', swipe_left: '【', swipe_right: '】', hint: '【   】'}
+      - {click: 'j', label: '地', long_click: Keyboard_Hiragana, swipe_left: '「', swipe_right: '」', hint: '「   」', key_text_color: on_key_text_color}
+      - {click: 'k', label: '是', long_click: Keyboard_Katakana, swipe_left: '『', swipe_right: '』', hint: '『   』'}
+      - {click: 'l', label: '上', long_click: Keyboard_Hangul, swipe_left: '【', swipe_right: '】', hint: '【   】'}
       - {width: 5}
       #第四行
       - {click: Shift_L, width: 14, key_text_offset_y: 0, key_back_color: off_key_back_color, key_text_color: off_key_text_color, hilited_key_back_color: hilited_off_key_back_color, hilited_key_text_color: hilited_off_key_text_color}
@@ -5350,7 +5350,7 @@ preset_keyboards:
       - {click: 'v', label: '兒', long_click: paste, swipe_down: Keyboard_clipboard, hint: '剪貼板'}
       - {click: 'b', label: '了', long_click: Extra_keyboard, swipe_left: ';', swipe_right: ':', hint: ';   :'}
       - {click: 'n', label: '國', long_click: Keyboard_number, swipe_left: "'", swipe_right: '"', hint: "'   \""}
-      - {click: 'm', label: '同', long_click: Keyboard_Hiragana, swipe_left: '<', swipe_right: '>', hint: '<   >'}
+      - {click: 'm', label: '同', swipe_left: '<', swipe_right: '>', hint: '<   >'}
       - {click: BackSpace, swipe_down: Delete, hint: '⇨', width: 16, key_text_offset_y: 0, key_back_color: off_key_back_color, key_text_color: off_key_text_color, hilited_key_back_color: hilited_off_key_back_color, hilited_key_text_color: hilited_off_key_text_color}
       #第五行
       - {click: Keyboard_basic_symbol, width: 12.5, key_text_offset_y: 0, long_click: Theme_settings, swipe_down: Color_switch, hint: '配色', key_back_color: off_key_back_color, key_text_color: off_key_text_color, hilited_key_back_color: hilited_off_key_back_color, hilited_key_text_color: hilited_off_key_text_color}
@@ -5400,9 +5400,9 @@ preset_keyboards:
       - {click: 'f', label: '要', swipe_left: {commit: '('}, swipe_right: {commit: ')'}, hint: '(   )', key_text_color: on_key_text_color}
       - {click: 'g', label: '在', swipe_left: '〈', swipe_right: '〉', hint: '〈   〉'}
       - {click: 'h', label: '成', swipe_left: '《', swipe_right: '》', hint: '《   》'}
-      - {click: 'j', label: '中', swipe_left: '「', swipe_right: '」', hint: '「   」', key_text_color: on_key_text_color}
-      - {click: 'k', label: '是', swipe_left: '『', swipe_right: '』', hint: '『   』'}
-      - {click: 'l', label: '用', swipe_left: '【', swipe_right: '】', hint: '【   】'}
+      - {click: 'j', label: '中', long_click: Keyboard_Hiragana, swipe_left: '「', swipe_right: '」', hint: '「   」', key_text_color: on_key_text_color}
+      - {click: 'k', label: '是', long_click: Keyboard_Katakana, swipe_left: '『', swipe_right: '』', hint: '『   』'}
+      - {click: 'l', label: '用', long_click: Keyboard_Hangul, swipe_left: '【', swipe_right: '】', hint: '【   】'}
       - {width: 5}
       #第四行
       - {click: Shift_L, width: 14, key_text_offset_y: 0, key_back_color: off_key_back_color, key_text_color: off_key_text_color, hilited_key_back_color: hilited_off_key_back_color, hilited_key_text_color: hilited_off_key_text_color}
@@ -5412,7 +5412,7 @@ preset_keyboards:
       - {click: 'v', label: '沒', long_click: paste, swipe_down: Keyboard_clipboard, hint: '剪貼板'}
       - {click: 'b', label: '地', long_click: Extra_keyboard, swipe_left: ';', swipe_right: ':', hint: ';   :'}
       - {click: 'n', label: '他', long_click: Keyboard_number, swipe_left: "'", swipe_right: '"', hint: "'   \""}
-      - {click: 'm', label: '我', long_click: Keyboard_Hiragana, swipe_left: '<', swipe_right: '>', hint: '<   >'}
+      - {click: 'm', label: '我', swipe_left: '<', swipe_right: '>', hint: '<   >'}
       - {click: BackSpace, swipe_down: Delete, hint: '⇨', width: 16, key_text_offset_y: 0, key_back_color: off_key_back_color, key_text_color: off_key_text_color, hilited_key_back_color: hilited_off_key_back_color, hilited_key_text_color: hilited_off_key_text_color}
       #第五行
       - {click: Keyboard_basic_symbol, width: 12.5, key_text_offset_y: 0, long_click: Theme_settings, swipe_down: Color_switch, hint: '配色', key_back_color: off_key_back_color, key_text_color: off_key_text_color, hilited_key_back_color: hilited_off_key_back_color, hilited_key_text_color: hilited_off_key_text_color}
