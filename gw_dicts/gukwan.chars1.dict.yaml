@@ -12,10 +12,9 @@
 
 ---
 name: gukwan.chars1
-version: "19.1.2b"
+version: "19.8.1b"
 sort: by_weight
 ...
-
 僮	zhong6	
 筒	tung2	
 衷	crung1	
@@ -94,7 +93,7 @@ sort: by_weight
 雎	zyo1	
 鋤	chuo4	3%
 儲	cryo5	3%
-儲	creau5	
+儲	cru5	
 馳	cryo4	
 墟	hyu1	
 袪	kyo1	
@@ -120,7 +119,7 @@ sort: by_weight
 荼	to4	5%
 爐	lu1	0%
 軲	gu1	
-都	do1	5%
+都	do1	
 臍	ci4	
 莉	li4	
 銻	tai1	
@@ -618,7 +617,7 @@ sort: by_weight
 尾	mi1	3%
 禦	ngyo6	
 貯	cryo5	
-貯	creau5	
+貯	cru5	
 拒	kyo5	
 距	kyo5	
 齟	zhyo5	
@@ -739,7 +738,7 @@ sort: by_weight
 窈	miu5	
 嬲	nou5	
 嬲	nu1	
-趙	zriu5	
+趙	zriu6	
 膘	biu1	
 藐	meu2	
 巧	kiu2	0%
@@ -948,7 +947,7 @@ sort: by_weight
 詛	zyo2	
 詛	zho2	
 塑	sok3	
-處	sjyo2	0%
+處	sjyo2	
 孺	njyu4	
 赴	fu6	
 芋	hu6	
@@ -1140,7 +1139,7 @@ sort: by_weight
 掟	deng3	
 訂	deng3	
 掅	ching3	
-孕	jang6	
+孕	jan6	
 剩	zjing6	
 應	ing3	
 凭	bang6	3%
@@ -1323,7 +1322,7 @@ sort: by_weight
 折	sjit6	0%
 搣	mit1	
 搣	lit1	
-雪	syut1	
+鼈	bek3	5%
 噦	oet6	
 焫	naat3	
 啜	zryut1	
@@ -1542,4 +1541,4 @@ sort: by_weight
 劖	chaang4	
 𥊼	chaang4	
 捳	ngok6	
-䠄	lin2
+䠄	lin2	

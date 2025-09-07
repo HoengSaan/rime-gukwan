@@ -12,7 +12,7 @@
 
 ---
 name: gukwan.chars2
-version: "19.4.2b"
+version: "19.8.1b"
 sort: by_weight
 ...
 
@@ -464,7 +464,7 @@ sort: by_weight
 㚸	sy1	0%
 㚹	maeu5	0%
 㚹	liau5	0%
-㚺	jang6	0%
+㚺	jan6	0%
 㚻	gai1	0%
 㚼	niau2	0%
 㚼	niau5	0%
@@ -4753,7 +4753,7 @@ sort: by_weight
 咪	mai6	
 咪	mei1	0%
 咪	mi1	0%
-咯	gook3	0%
+咯	kook3	0%
 咯	lo1	
 咯	lok6	0%
 咱	zaa1	0%
@@ -4787,7 +4787,7 @@ sort: by_weight
 哸	cyi1	0%
 哸	syi1	0%
 哻	hon4	0%
-哼	hang1	0%
+哼	hang1	
 哼	hng1	
 哼	hng6	
 哾	sjyut3	0%
@@ -8667,8 +8667,8 @@ sort: by_weight
 聼	teng1	0%
 聼	ting1	0%
 聼	ting3	0%
-肇	sriu6	
-肏	ceau3	0%
+肇	sjiu6	
+肏	cou3	0%
 肐	gaak3	0%
 肐	gat1	0%
 肐	gook3	0%
@@ -11980,7 +11980,7 @@ sort: by_weight
 𦖭	hjyu4	0%
 𦖿	dap1	0%
 𦘒	nip6	0%
-𦘦	sriu6	0%
+𦘦	sjiu6	0%
 𦘩	paa4	0%
 𦙼	zy6	0%
 𦙼	cy4	0%
@@ -12560,4 +12560,3 @@ sort: by_weight
 𠵛	nguk6	
 厏	zhaa6	
 㩮	kin2	
-𰻞	beng2	5%
