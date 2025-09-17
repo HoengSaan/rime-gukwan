@@ -30,10 +30,6 @@ patch:
       reset: 0
       states: [ 無繪, 有繪 ]
       abbrev: [ 🙁, 😄 ]
-    - name: prediction
-      reset: 0
-      states: [ 直出, 預測 ]
-      abbrev: [ 直, 測 ]
   
   engine/filters:
     - lua_filter@*is_in_user_dict
@@ -53,16 +49,6 @@ patch:
 
   # 調用定製擴展詞庫
   translator/dictionary: gukwan-extended
-
-  # 預測（電腦不建議開啓）
-  # librime-predict 簡體可考慮用 wanxiang-lts-zh-predict.db
-  # https://github.com/rime/librime-predict
-  engine/processors/@before 0: predictor
-  engine/translators/@before 0: predict_translator
-  predictor:
-    db: predict.db
-    max_candidates: 10 # 最大預測候選數，如不想翻頁則請同 page_size 保持一致
-    max_iterations: 1 # 預測次數，0 即無限預測
 
   # 語法模型
   # rime-octagram 簡體可考慮用 RIME-LMDG 

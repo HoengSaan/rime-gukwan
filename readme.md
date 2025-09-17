@@ -15,7 +15,10 @@ This work is licensed under a
 
 部份文件使用其他許可，詳細請見[文件結構・許可](#文件結構・許可)。
 
-日文版菊韻（菊韻和語）：[HoengSaan/rime-kikwan: 日本語輸入方案菊韻 中州韻方案 Japanese IME (RIME Scheme)](https://github.com/HoengSaan/rime-kikwan)
+### 其他菊韻項目
+
+- 菊韻粵語：[rime-gukwan: 菊韻粵語輸入方案 基於中州韻 Cantonese IME (RIME Scheme)](https://github.com/HoengSaan/rime-gukwan)
+- 菊韻同文主題：[trime-gukwan: 同文輸入法36鍵鍵盤主題 Trime IME 36 Keys Keyboard Theme](https://github.com/HoengSaan/trime-gukwan/)
 
 # 簡介
 
@@ -60,13 +63,13 @@ This is a schema based on [Rime Input Method](https://rime.im/).
     - **鍵值已在腳本固定，如需修改須直接改變`time_gukwan.lua`**
   - 計數機：直接在 RIME 計數，鍵值爲`cC`（Calculator）。[學習如何使用計數機](https://github.com/gaboolic/rime-shuangpin-fuzhuma/blob/main/md/calc.md)
 - 以下功能須依賴`rime-kikwin`（<mark>無日文輸入需求不建議使用</mark>）：
-  - 假名：羅馬字方式，細階輸入平假名，大階輸入片假名，鍵值爲``G` （gaa ming）。
-  - 顏文字：以日文輸入各種顏文字，鍵值爲``K`（kaomoji）
-  - 和文：允許半混打日文，鍵值爲``R`（romaji）
+  - 假名：羅馬字方式，細階輸入平假名，大階輸入片假名，鍵值爲<code>`G</code> （gaa ming）。
+  - 顏文字：以日文輸入各種顏文字，鍵值爲<code>`K</code>（kaomoji）
+  - 和文：允許半混打日文，鍵值爲<code>`R</code>（romaji）
 
 ## Trime主題
 
-Android使用同文輸入法可用自帶主題（`菊韻.trime.yaml`），使用各種功能更加方便。基於[Wenti-D/Astralwelkin](https://github.com/Wenti-D/Astralwelkin)，源文件以[MIT 許可](https://mit-license.org/)發佈，菊韻以[CC BY NC SA 4.0 許可](cc-by-nc-sa)發佈。主題介紹請見：（未整）
+Android使用同文輸入法可用自帶主題（`gukwan~.trime.yaml`），使用各種功能更加方便。基於[Wenti-D/Astralwelkin](https://github.com/Wenti-D/Astralwelkin)，源文件以[MIT 許可](https://mit-license.org/)發佈，菊韻以[CC BY NC SA 4.0 許可](cc-by-nc-sa)發佈。主題介紹請見：[trime-gukwan: 同文輸入法36鍵鍵盤主題 Trime IME 36 Keys Keyboard Theme](https://github.com/HoengSaan/trime-gukwan/)
 
 ## 多方言適應
 
@@ -109,7 +112,6 @@ Android使用同文輸入法可用自帶主題（`菊韻.trime.yaml`），使用
 - 以`r`輸入`aa`：如「逛」`gwaang`則爲`xrr`
 - 以`y`輸入`yu`（`jyu`）:如「血」`hyut`則爲`hyt`
 - 以`u`輸入`eo`：如「論」`leon`則爲`lun`
-
 - 以`r/e`輸入`ae`：如「斬」`zhaem`則爲`z(h)aam`｜`z(h)rm`｜`z(h)em`以`e`輸入`ia`：如「名」`miang`則爲`meng`（僅`gukwan-default`）
 - 以`e`輸入`ia`：如「名」`miang`則爲`meng`（僅`gukwan-default`同`gukwan-sekki`）
 - 以`u`輸入`oo`【僅限`ooi`】：如「淚」`looi`則爲`lui`
@@ -190,6 +192,10 @@ Android建議使用Trime並使用**菊韻主題**（`菊韻.trime.yaml`），使
 
 安裝後請自行從`gw_dialects`複製所需方案。<mark>默認狀態下只有廣州話同基底方案可用。</mark>
 
+> [!WARNING]
+>
+> 必須安裝[rime-cantonese](https://github.com/rime/rime-cantonese)，否則無法使用。
+
 ### 簡略安裝流程
 
 1. 安裝 RIME：[Weasel 小狼毫](https://github.com/rime/weasel)（WINDOWS）[Squirrel 鼠鬚管](https://github.com/rime/squirrel)｜[fcitx5-macos](https://github.com/fcitx-contrib/fcitx5-macos)（MacOS）[ibus](https://github.com/ibus/ibus)→[ibus-rime](https://github.com/rime/ibus-rime)｜[fcitx5](https://github.com/fcitx/fcitx5)（Linux）[同文輸入法](https://github.com/osfans/trime)｜[fcitx5-Android](https://github.com/fcitx5-android/fcitx5-android)（Android）｜[倉輸入法](https://github.com/imfuxiao/Hamster)（iOS）
@@ -221,10 +227,8 @@ Android建議使用Trime並使用**菊韻主題**（`菊韻.trime.yaml`），使
 
 菊韻添加新詞庫必須符合以下兩個要求： 
 
-1. 無輸入碼。
-   - 使用前請解壓`OpenCC.zip`至`gw_custom`，亦可自行編譯（[BYVoid/OpenCC](https://github.com/BYVoid/OpenCC)）。之後將**需要去除輸入碼之詞庫**，放在`Dict_Source`，然後使用`去除輸入碼.py`即可去除輸入碼。文件默認輸出至`Dict_Removed`
-2. 詞庫必須使用繁體（OpenCC 標準）。
-   - 將**需要繁化詞庫**放在`Dict_Removed`，然後使用`繁簡轉換.cmd`，選擇`s2t.json`即可繁化。文件默認輸出至`Dict_Removed`。
+1. 無輸入碼：使用前請解壓`OpenCC.zip`至`gw_custom`，亦可自行編譯（[BYVoid/OpenCC](https://github.com/BYVoid/OpenCC)）。之後將**需要去除輸入碼之詞庫**，放在`Dict_Source`，然後使用`去除輸入碼.py`即可去除輸入碼。文件默認輸出至`Dict_Removed`
+2. 詞庫必須使用繁體（OpenCC 標準）：將**需要繁化詞庫**放在`Dict_Removed`，然後使用`繁簡轉換.cmd`，選擇`s2t.json`即可繁化。文件默認輸出至`Dict_Removed`。
 
 符合要求者，可直接將詞庫放在`Dict_Converted`。毋須使用以上兩個腳本。
 
@@ -320,16 +324,10 @@ Android建議使用Trime並使用**菊韻主題**（`菊韻.trime.yaml`），使
 
 - [`rime-cantonese-emoji`](https://github.com/rime/rime-emoji-cantonese)：用於輸入繪文字，並無進行修改，隨源文件以[CC 0 許可](https://creativecommons.org/public-domain/cc0/)發佈。
 - `symbols-gukwan.yaml`：菊韻定製標點符號（類似 Microsoft 日本語 IME）同特殊符號輸入。
-- `菊韻.trime.yaml`：同文輸入法主題，基於[Wenti-D/Astralwelkin](https://github.com/Wenti-D/Astralwelkin)，源文件以[MIT 許可](https://mit-license.org/)發佈，不同點如下：
-  - 以[CC BY NC SA 4.0 許可](cc-by-nc-sa)發佈
-  - 增刪部份鍵盤佈局、以及各類微細修改
-    - 除次級鍵盤之外所有佈局皆已刪除。
-    - 36鍵基本鍵盤同小鍵盤重製
-    - 新增符號表、編輯器、19鍵假名鍵盤（**不依賴任何方案**，以滑動輸入）
-  - 在元方案基礎，增加15個配色，其中有五對深淺色互通方案。
-  - 更多配色、更多鍵盤佈局正在製作
-- LXGW WenKai TC / 霞鶩文楷 TC：菊韻主題所用字型，來自於[lxgw/LxgwWenkaiTC](https://github.com/lxgw/LxgwWenKaiTC)，隨源文件以[SIL Open Font License 1.1](https://openfontlicense.org/)發佈。
-- WD-XL Lubrifont / WD-XL 滑油字：菊韻主題所用字型，來自於[NightFurySL2001/WD-XL-font](NightFurySL2001/WD-XL-font)，隨源文件以[SIL Open Font License 1.1](https://openfontlicense.org/)發佈。
+- `gukwan~.trime.yaml`：源文件以[MIT 許可](https://mit-license.org/)發佈，菊韻以[CC BY NC SA 4.0 許可](cc-by-nc-sa)發佈。主題介紹請見：[trime-gukwan: 同文輸入法36鍵鍵盤主題 Trime IME 36 Keys Keyboard Theme](https://github.com/HoengSaan/trime-gukwan/)
+  - WD-XL Lubrifont / WD-XL 滑油字：僅用於按鍵，來源爲[NightFurySL2001/WD-XL-font](https://github.com/HoengSaan/trime-gukwan/blob/main/NightFurySL2001/WD-XL-font)。由於**滑油字**闕失部份字符，部分佈局有闕字現象，不能接受者可使用其他字型。
+  - Shanggu / 尚古：僅用於候選欄，來源爲[GuiWonder/Shanggu](https://github.com/GuiWonder/Shanggu)。由於**尚古**闕失部分罕有字，不能接受者可使用**字雲**、**天珩字庫**或其他字型。（亦可作爲後備字型設置）
+  - Chocolate Classical Sans / 朱古力黑體：除按鍵・按鍵註釋・候選欄之外，來源爲[MoonlitOwen/ChocolateSans](https://github.com/MoonlitOwen/ChocolateSans)。
 - `OpenCC 開放中文轉換`：開箱即用，用於繁簡轉換，隨源文件以[Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0.html)發佈。位置爲`/gw_custom`。
 
 ## 銘謝
