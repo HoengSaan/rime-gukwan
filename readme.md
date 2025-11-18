@@ -57,7 +57,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
     - 【`/timestamp`】時間戳（Time Stamp），`vts`｜`/ts`
     - 【`/lunar`】農曆（NungLik），`vnl`｜`/nl`
     - 【`/zithi`】節氣（ZitHi）：`vzh`｜`/zh`｜；廿四節氣同日期
-    - 【`/festival`】節日（ZitNJat/ZitJat）：`vzj`｜`/zj``vzr`｜`/zr`；新舊曆節日同日期
+    - 【`/festival`】節日（ZitNJat/ZitJat）：`vzj`｜`/zj`｜`vzr`｜`/zr`；新舊曆節日同日期
     - 【`/info`】日期信息整合，鍵值爲`vday`｜`/day`（電話版中州韻多數不能正常顯示）
     - 【`N`+「`YYYYMMDD`】日期輸出：「新曆」「新曆轉舊曆」「舊曆轉新曆」「新曆轉干支」
     - **鍵值已在腳本固定，如需修改須直接改變`time_gukwan.lua`**
@@ -82,6 +82,7 @@ Android使用同文輸入法可用自帶主題（`gukwan~.trime.yaml`），使�
 - `gukwan-siulaam`【小欖話（順德系）】：以小欖話比較有代表性特徵製作，兼容部份新派發音。
 - `gukwan-daailoeng`【大良話（順德系）】：以大良話比較有代表性特徵製作，兼容部份新派發音。
 - `gukwan-cancyn`【陳村話（順德系）】：以陳村話比較有代表性特徵製作，兼容部份新派發音。
+- `gukwan-gwanaan`【均安話（順德系）】：以均安話比較有代表性特徵製作，兼容部份新派發音。
 - `gukwan-sekki`【石岐話（香山系）】：以石歧話新派音製作。（老派音需要自行製作字表，菊韻字表不能轉換）
 
 詳細列表同方案細節請參攷`readme-dialect.md`（[Link](https://github.com/HoengSaan/rime-gukwan/blob/main/readme-dialect.md)）
