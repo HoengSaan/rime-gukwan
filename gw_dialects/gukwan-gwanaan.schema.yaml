@@ -384,7 +384,7 @@ set_hint:
 translator:
   __include: gukwan.schema:/translator
   dictionary: gukwan-alt-asp
-  prism: gukwan-daailoeng  
+  prism: gukwan-gwanaan  
   comment_format:
     __patch:
       - set_hint
