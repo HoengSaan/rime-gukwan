@@ -30,6 +30,8 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 
 菊韻爲本人自用，只要一日未有更合本人之粵語輸入方案，則維護不停。
 
+**20.2b Update：參攷霧凇拼音整先個九宮格輸入法，未知可用性，在測試緊。同文可用jyut6ping3-gw-t9.schema.yaml（廣州話）同gukwan_t9_test.trime.yaml進行測試（臨時製作，佈局未定）**
+
 # 功能
 
 支持各類方言、三拼輸入、漢英混打，各種特殊符號、日期時間輸入，各類反查等。
