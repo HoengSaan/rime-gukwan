@@ -63,8 +63,9 @@ This is a schema based on [Rime Input Method](https://rime.im/).
     - **鍵值已在腳本固定，如需修改須直接改變`time_gukwan.lua`**
   - 計數機：直接在 RIME 計數，鍵值爲`cC`（Calculator）。[學習如何使用計數機](https://github.com/gaboolic/rime-shuangpin-fuzhuma/blob/main/md/calc.md)
   - **新增功能：九宮格輸入（仍在測試）**
-    - 參攷霧凇拼音。請以jyut6ping3-gw-t9.schema.yaml（廣州話）同trime-gukwan主題文件進行測試。由於九宮格同Rime先天劣勢，會導致：出詞效率差（極難解決）；無法實現漢英混打（準備處理）；聲調輸入麻煩（已解決，改動如下）
-    - 九宮格聲調輸入不再使用字母代替（即vxz等），而係直接輸入數字（建議下劃）。
+    - 參攷霧凇拼音。請以jyut6ping3-gw-t9.schema.yaml（廣州話）同trime-gukwan主題文件進行測試。由於九宮格同Rime先天劣勢，會導致：出詞效率差（極難解決）；無法實現漢英混打（解決方案如下）；聲調輸入麻煩（解決方案如下）
+    - 九宮格聲調輸入不再使用字母代替（即vxz等），而係直接輸入數字（1鍵由於被用作分詞，須下劃輸入）。
+    - 漢英混打直接新增一個36鍵鍵盤，以便輸入英文。（最好直接切換方案）
 - 以下功能須依賴`rime-kikwin`（<mark>無日文輸入需求不建議使用</mark>）：
   - 假名：羅馬字方式，細階輸入平假名，大階輸入片假名，鍵值爲<code>`G</code> （gaa ming）。
   - 顏文字：以日文輸入各種顏文字，鍵值爲<code>`K</code>（kaomoji）
