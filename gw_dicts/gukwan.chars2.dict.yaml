@@ -12,10 +12,9 @@
 
 ---
 name: gukwan.chars2
-version: "19.8.1b"
+version: "20.3b"
 sort: by_weight
 ...
-
 〇	ling4	
 㐀	jau1	0%
 㐂	hi2	5%
@@ -4912,6 +4911,8 @@ sort: by_weight
 嗅	hung3	0%
 嗆	ciong1	0%
 嗆	ciong3	0%
+嗆	cong1	
+嗆	cong3	
 嗍	shok3	0%
 嗎	ma3	
 嗎	maa3	
@@ -5000,7 +5001,8 @@ sort: by_weight
 噯	oi2	
 噯	oi3	0%
 噵	dou6	0%
-噶	gaa1	
+噶	gaa1	0%
+噶	gaa3	5%
 噶	gaat3	0%
 噶	got3	0%
 噷	hm1	
@@ -9616,7 +9618,9 @@ sort: by_weight
 軗	guk1	0%
 軗	sjyo4	0%
 軙	cran4	0%
-軚	taai5	
+軚	taai5	0%
+軚	taai1	
+軚	tai1	
 軛	aak1	0%
 軞	mou4	0%
 軠	kwong4	0%
@@ -10548,6 +10552,7 @@ sort: by_weight
 鱇	hoong1	0%
 鱈	syut3	
 鱉	bit3	
+鱉	bek3	
 鱋	hyo1	0%
 鱔	sjin5	5%
 鱔	sjin2	
@@ -12560,3 +12565,4 @@ sort: by_weight
 𠵛	nguk6	
 厏	zhaa6	
 㩮	kin2	
+𰻞	beng2	
