@@ -38,3 +38,6 @@ patch:
       states: [ 直, 測 ]
     - name: search_single_char
       states: [ 詞, 單 ]
+    - name: charset_filter
+      states: [ 小, 大 ]
+      reset: 1

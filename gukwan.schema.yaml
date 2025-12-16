@@ -13,7 +13,7 @@
 schema:
   schema_id: gukwan
   name: 菊韻
-  version: "19.2.1b"
+  version: "20.4b"
   author:
     - 靈帝（Hoengsaan）
   
@@ -114,6 +114,7 @@ engine:
     - lua_translator@*calc_translator       # 計數機
     - lua_translator@*number_gukwan         # 數字數額金額蘇州碼
     - lua_translator@*time_gukwan           # 日期時間
+    - lua_translator@*input_statistics_gw   # 打字統計
   filters:
     - reverse_lookup_filter@reverse_lookup  # 反查
     - reverse_lookup_filter@special_typing  # 輸入

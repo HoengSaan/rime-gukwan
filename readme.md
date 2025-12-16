@@ -62,6 +62,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
     - 【`N`+「`YYYYMMDD`】日期輸出：「新曆」「新曆轉舊曆」「舊曆轉新曆」「新曆轉干支」
     - **鍵值已在腳本固定，如需修改須直接改變`time_gukwan.lua`**
   - 計數機：直接在 RIME 計數，鍵值爲`cC`（Calculator）。[學習如何使用計數機](https://github.com/gaboolic/rime-shuangpin-fuzhuma/blob/main/md/calc.md)
+  - 打字統計：`/rtj`日統計｜`/ztj`週統計｜`/ytj`月統計｜`/ntj`年統計｜`/tj`生涯。
   - **新增功能：九宮格輸入（仍在測試）**
     - 參攷霧凇拼音。請以jyut6ping3-gw-t9.schema.yaml（廣州話）同trime-gukwan主題文件進行測試。由於九宮格同Rime先天劣勢，會導致：出詞效率差（極難解決）；無法實現漢英混打（解決方案如下）；聲調輸入麻煩（解決方案如下）
     - 九宮格聲調輸入不再使用字母代替（即vxz等），而係直接輸入數字（1鍵由於被用作分詞，須下劃輸入）。
@@ -311,11 +312,13 @@ Android建議使用Trime並使用**菊韻主題**（`菊韻.trime.yaml`），使
 - `calc_translator.lua`：計數機，來自[ChaosAlphard](https://github.com/ChaosAlphard)之 PR。隨源文件以[GPL 3.0 許可](https://www.gnu.org/licenses/gpl-3.0.en.html)發佈。
 - `autocap_filter.lua`：自動大寫英文詞彙，作者爲@abcdefg233 同@Mirtle，來自[iDvel/rime-ice](https://github.com/iDvel/rime-ice)。隨源文件以[GPL 3.0 許可](https://www.gnu.org/licenses/gpl-3.0.en.html)發佈。
 - `en_spacer.lua`：優化英文輸入體驗（自動空格），來自[iDvel/rime-ice](https://github.com/iDvel/rime-ice)。隨源文件以[GPL 3.0 許可](https://www.gnu.org/licenses/gpl-3.0.en.html)發佈。
+- `input_statistics.lua`：新增文本「你已击败了全国87％的用户」，來自[amzxyz/rime_wanxiang](amzxyz/rime_wanxiang)。隨源文件以[CC BY 4.0 許可](https://creativecommons.org/licenses/by/4.0/)發佈。
 
 以下 LUA 腳本繁化並增添小小功能。爲避免文件被覆蓋，故改名。
 
 - `number_gukwan.lua`：以阿拉伯數字輸入轉換漢語數字，來自[yanhuacuo/98wubi-tables](https://github.com/yanhuacuo/98wubi-tables)。增加轉換蘇州碼子功能。增加直接轉換功能。由於源文件採取[Unlicense 許可](https://unlicense.org/)，本文件亦不設限。
 - `time_gukwan.lua`：以各種格式輸入是日日期時間，來自[amzxyz/rime_wanxiang](amzxyz/rime_wanxiang)。隨源文件以[CC BY 4.0 許可](https://creativecommons.org/licenses/by/4.0/)發佈。
+- `input_statistics_gw.lua`：同`input_statistics.lua`，菊韻用。
 
 以下 Python 同 CMD 腳本，爲本人借助AI所作。位置爲`/gw_custom`
 
