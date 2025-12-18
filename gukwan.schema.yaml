@@ -13,7 +13,7 @@
 schema:
   schema_id: gukwan
   name: 菊韻
-  version: "20.4b"
+  version: "20.4.1b"
   author:
     - 靈帝（Hoengsaan）
   
@@ -72,6 +72,7 @@ switches:
  
 engine:
   processors:
+    - lua_processor@*backspace_limit        # 防止連續Backspacee在編碼爲空時刪除已上屏內容
     - ascii_composer
     - recognizer
     - key_binder

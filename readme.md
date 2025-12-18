@@ -30,6 +30,8 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 
 菊韻爲本人自用，只要一日未有更合本人之粵語輸入方案，則維護不停。
 
+加筆：閣下可提供自己方言之音韻特徵同字音表，本人可爲閣下製作方案。
+
 # 功能
 
 支持各類方言、三拼輸入、漢英混打，各種特殊符號、日期時間輸入，各類反查等。
@@ -43,12 +45,12 @@ This is a schema based on [Rime Input Method](https://rime.im/).
     - 二〇二五（數字小寫）
     - 貳零貳伍（數字大寫）
     - 〢〇〢〥（蘇州碼子）
-    - 即花碼，由於本身特性不支持亦不需要小數點。[瞭解更多](https://zh.wikipedia.org/zh-tw/苏州码子)
+      - 即花碼，由於本身特性不支持亦不需要小數點。[瞭解更多](https://zh.wikipedia.org/zh-tw/苏州码子)
     - 二千〇二十五（數額小寫）
     - 貳仟零貳拾伍（數額大寫）
     - 二千〇二十五圓整（金額小寫）
     - 貳仟零貳拾伍圓整（金額大寫）
-  - 日期・時間・節日・節氣輸入腳本：
+  - 日期・時間・節日・節氣輸入腳本（**鍵值已在腳本固定，如需修改須直接改變`time_gukwan.lua`**）：
     - 【`/date`】日期（NJatKi/JatKi）：`vjk`｜`/jk`｜`vrk`｜`/rk`；有多種格式，部份默認禁用
     - 【`/time`】時間（SHiGaen/SiGaan）：`vsg`｜`/sg`
     - 【`/week`】星期（SingKi）：`vsk`｜`/sk`
@@ -60,14 +62,13 @@ This is a schema based on [Rime Input Method](https://rime.im/).
     - 【`/festival`】節日（ZitNJat/ZitJat）：`vzj`｜`/zj`｜`vzr`｜`/zr`；新舊曆節日同日期
     - 【`/info`】日期信息整合，鍵值爲`vday`｜`/day`（電話版中州韻多數不能正常顯示）
     - 【`N`+「`YYYYMMDD`】日期輸出：「新曆」「新曆轉舊曆」「舊曆轉新曆」「新曆轉干支」
-    - **鍵值已在腳本固定，如需修改須直接改變`time_gukwan.lua`**
   - 計數機：直接在 RIME 計數，鍵值爲`cC`（Calculator）。[學習如何使用計數機](https://github.com/gaboolic/rime-shuangpin-fuzhuma/blob/main/md/calc.md)
   - 打字統計：`/rtj`日統計｜`/ztj`週統計｜`/ytj`月統計｜`/ntj`年統計｜`/tj`生涯。
   - **新增功能：九宮格輸入（仍在測試）**
     - 參攷霧凇拼音。請以jyut6ping3-gw-t9.schema.yaml（廣州話）同trime-gukwan主題文件進行測試。由於九宮格同Rime先天劣勢，會導致：出詞效率差（極難解決）；無法實現漢英混打（解決方案如下）；聲調輸入麻煩（解決方案如下）
-    - 九宮格聲調輸入不再使用字母代替（即vxz等），而係直接輸入數字（1鍵由於被用作分詞，須下劃輸入）。
-    - 漢英混打直接新增一個36鍵鍵盤，以便輸入英文。（最好直接切換方案）
-- 以下功能須依賴`rime-kikwin`（<mark>無日文輸入需求不建議使用</mark>）：
+      - 九宮格聲調輸入不再使用字母代替（即vxz等），而係直接輸入數字（1鍵由於被用作分詞，須下劃輸入）。
+      - 漢英混打直接新增一個36鍵鍵盤，以便輸入英文。（最好直接切換方案）
+- 以下功能依賴`rime-kikwin`（<mark>無日文輸入需求不建議使用</mark>）：
   - 假名：羅馬字方式，細階輸入平假名，大階輸入片假名，鍵值爲<code>`G</code> （gaa ming）。
   - 顏文字：以日文輸入各種顏文字，鍵值爲<code>`K</code>（kaomoji）
   - 和文：允許半混打日文，鍵值爲<code>`R</code>（romaji）
@@ -296,7 +297,7 @@ Android建議使用Trime並使用**菊韻主題**（`菊韻.trime.yaml`），使
 
 ## 漢英混打
 
-漢英混打實現是參攷[优化 Rime 英文输入体验 - Dvel's Blog](https://dvel.me/posts/make-rime-en-better/)，基於[tumuyan/melt_eng](https://github.com/tumuyan/rime-melt)（[iDvel/rime-ice](https://github.com/iDvel/rime-ice)版）。隨源文件以[Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0.html)發佈。英文大詞庫基於[Easy English Super](https://github.com/oniondelta/Onion_Rime_Files/tree/main)（字典：[skywind3000/ECDICT](https://github.com/skywind3000/ECDICT)，隨源文件以[MIT License](https://mit-license.org/)發佈，並禁止商用。
+漢英混打實現是參攷[优化 Rime 英文输入体验 - Dvel's Blog](https://dvel.me/posts/make-rime-en-better/)，基於[tumuyan/melt_eng](https://github.com/tumuyan/rime-melt)（[iDvel/rime-ice](https://github.com/iDvel/rime-ice)版）。隨源文件以[Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0.html)發佈。英文大詞庫基於[Easy English Super](https://github.com/oniondelta/Onion_Rime_Files/tree/main)（字典：[skywind3000/ECDICT](https://github.com/skywind3000/ECDICT)，隨源文件以[MIT License](https://mit-license.org/)發佈，並禁止商用。）
 
 - `gukwan-melt-eng.schema.yaml`：混打方案
 - `gukwan-melt-eng.dict.yaml`：混打辭典
@@ -309,16 +310,17 @@ Android建議使用Trime並使用**菊韻主題**（`菊韻.trime.yaml`），使
 相關文件根據源文件許可發佈。**位置爲`/lua`。**
 
 - `unicode.lua`：UNICODE 碼直接輸入字符，來自[shewer/librime-lua-script](https://github.com/shewer/librime-lua-script/tree/main)，隨源文件以[MIT 許可](https://mit-license.org/)發佈。
-- `calc_translator.lua`：計數機，來自[ChaosAlphard](https://github.com/ChaosAlphard)之 PR。隨源文件以[GPL 3.0 許可](https://www.gnu.org/licenses/gpl-3.0.en.html)發佈。
+- `calc_translator.lua`：計數機，來自[ChaosAlphard](https://github.com/ChaosAlphard)之 PR（非此repo）。隨源文件以[GPL 3.0 許可](https://www.gnu.org/licenses/gpl-3.0.en.html)發佈。
 - `autocap_filter.lua`：自動大寫英文詞彙，作者爲@abcdefg233 同@Mirtle，來自[iDvel/rime-ice](https://github.com/iDvel/rime-ice)。隨源文件以[GPL 3.0 許可](https://www.gnu.org/licenses/gpl-3.0.en.html)發佈。
-- `en_spacer.lua`：優化英文輸入體驗（自動空格），來自[iDvel/rime-ice](https://github.com/iDvel/rime-ice)。隨源文件以[GPL 3.0 許可](https://www.gnu.org/licenses/gpl-3.0.en.html)發佈。
-- `input_statistics.lua`：新增文本「你已击败了全国87％的用户」，來自[amzxyz/rime_wanxiang](amzxyz/rime_wanxiang)。隨源文件以[CC BY 4.0 許可](https://creativecommons.org/licenses/by/4.0/)發佈。
-
-以下 LUA 腳本繁化並增添小小功能。爲避免文件被覆蓋，故改名。
-
+- `en_spacer.lua`：優化英文輸入體驗（自動空格），同上。
 - `number_gukwan.lua`：以阿拉伯數字輸入轉換漢語數字，來自[yanhuacuo/98wubi-tables](https://github.com/yanhuacuo/98wubi-tables)。增加轉換蘇州碼子功能。增加直接轉換功能。由於源文件採取[Unlicense 許可](https://unlicense.org/)，本文件亦不設限。
-- `time_gukwan.lua`：以各種格式輸入是日日期時間，來自[amzxyz/rime_wanxiang](amzxyz/rime_wanxiang)。隨源文件以[CC BY 4.0 許可](https://creativecommons.org/licenses/by/4.0/)發佈。
-- `input_statistics_gw.lua`：同`input_statistics.lua`，菊韻用。
+
+以下腳本來自來自[amzxyz/rime_wanxiang](amzxyz/rime_wanxiang)。隨源文件以[CC BY 4.0 許可](https://creativecommons.org/licenses/by/4.0/)發佈：
+
+- `time_gukwan.lua`：以各種格式輸入是日日期時間。
+- `input_statistics.lua`：萬象拼音用（可被覆蓋），新增文本「你已击败了全国87％的用户」。
+- `input_statistics_gw.lua`：同`input_statistics.lua`，菊韻用，繁化，新增文本「閣下已擊敗全國87％個用戶」。
+- `lib/userdb.lua`｜`wanxiang.lua`：依賴
 
 以下 Python 同 CMD 腳本，爲本人借助AI所作。位置爲`/gw_custom`
 
