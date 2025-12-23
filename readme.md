@@ -17,8 +17,8 @@ This work is licensed under a
 
 ### 其他菊韻項目
 
-- 菊韻粵語：[rime-gukwan: 菊韻粵語輸入方案 基於中州韻 Cantonese IME (RIME Scheme)](https://github.com/HoengSaan/rime-gukwan)
 - 菊韻同文主題：[trime-gukwan: 同文輸入法36鍵鍵盤主題 Trime IME 36 Keys Keyboard Theme](https://github.com/HoengSaan/trime-gukwan/)
+- 菊韻和語【停止維護】：[rime-kikwin: 菊韻日本語入力法 基於中州韻 Japanese IME (RIME Scheme)](https://github.com/HoengSaan/rime-kikwin)
 
 # 簡介
 
@@ -64,11 +64,13 @@ This is a schema based on [Rime Input Method](https://rime.im/).
     - 【`N`+「`YYYYMMDD`】日期輸出：「新曆」「新曆轉舊曆」「舊曆轉新曆」「新曆轉干支」
   - 計數機：直接在 RIME 計數，鍵值爲`cC`（Calculator）。[學習如何使用計數機](https://github.com/gaboolic/rime-shuangpin-fuzhuma/blob/main/md/calc.md)
   - 打字統計：`/rtj`日統計｜`/ztj`週統計｜`/ytj`月統計｜`/ntj`年統計｜`/tj`生涯。
+  - 防止連續Backspacee在編碼爲空時刪除已上屏內容
+  - 允許輸入時，使用Ctrl+1~0直接上屏首個候前N個字（1即爲1隻字，0即爲10隻字），剩餘編碼保留並按音節拆分。可有效增強打字效率。
   - **新增功能：九宮格輸入（仍在測試）**
     - 參攷霧凇拼音。請以jyut6ping3-gw-t9.schema.yaml（廣州話）同trime-gukwan主題文件進行測試。由於九宮格同Rime先天劣勢，會導致：出詞效率差（極難解決）；無法實現漢英混打（解決方案如下）；聲調輸入麻煩（解決方案如下）
       - 九宮格聲調輸入不再使用字母代替（即vxz等），而係直接輸入數字（1鍵由於被用作分詞，須下劃輸入）。
       - 漢英混打直接新增一個36鍵鍵盤，以便輸入英文。（最好直接切換方案）
-- 以下功能依賴`rime-kikwin`（<mark>無日文輸入需求不建議使用</mark>）：
+- 以下功能依賴`rime-kikwin`（<mark>無日文輸入需求不建議使用</mark>）： 
   - 假名：羅馬字方式，細階輸入平假名，大階輸入片假名，鍵值爲<code>`G</code> （gaa ming）。
   - 顏文字：以日文輸入各種顏文字，鍵值爲<code>`K</code>（kaomoji）
   - 和文：允許半混打日文，鍵值爲<code>`R</code>（romaji）
@@ -101,7 +103,7 @@ Android使用同文輸入法可用自帶主題（`gukwan~.trime.yaml`），使�
 
 <img src="pic\key.png"/>
 
-### 鍵值
+### 三拼鍵值
 
 #### 子音（聲母）
 
@@ -317,9 +319,11 @@ Android建議使用Trime並使用**菊韻主題**（`菊韻.trime.yaml`），使
 
 以下腳本來自來自[amzxyz/rime_wanxiang](amzxyz/rime_wanxiang)。隨源文件以[CC BY 4.0 許可](https://creativecommons.org/licenses/by/4.0/)發佈：
 
-- `time_gukwan.lua`：以各種格式輸入是日日期時間。
+- `time_gukwan.lua`：以各種格式輸入是日日期時間，菊韻用，繁化。
 - `input_statistics.lua`：萬象拼音用（可被覆蓋），新增文本「你已击败了全国87％的用户」。
 - `input_statistics_gw.lua`：同`input_statistics.lua`，菊韻用，繁化，新增文本「閣下已擊敗全國87％個用戶」。
+- `backspace_limit.lua`：防止連續Backspacee在編碼爲空時刪除已上屏內容
+- `partial_commit.lua`：此腳本允許輸入時，使用Ctrl+1~0直接上屏首個候前N個字（1即爲1隻字，0即爲10隻字），剩餘編碼保留並按音節拆分。可有效增強打字效率。
 - `lib/userdb.lua`｜`wanxiang.lua`：依賴
 
 以下 Python 同 CMD 腳本，爲本人借助AI所作。位置爲`/gw_custom`
@@ -334,7 +338,7 @@ Android建議使用Trime並使用**菊韻主題**（`菊韻.trime.yaml`），使
 
 - [`rime-cantonese-emoji`](https://github.com/rime/rime-emoji-cantonese)：用於輸入繪文字，並無進行修改，隨源文件以[CC 0 許可](https://creativecommons.org/public-domain/cc0/)發佈。
 - `symbols-gukwan.yaml`：菊韻定製標點符號（類似 Microsoft 日本語 IME）同特殊符號輸入。
-- `gukwan~.trime.yaml`：源文件以[MIT 許可](https://mit-license.org/)發佈，菊韻以[CC BY NC SA 4.0 許可](cc-by-nc-sa)發佈。主題介紹請見：[trime-gukwan: 同文輸入法36鍵鍵盤主題 Trime IME 36 Keys Keyboard Theme](https://github.com/HoengSaan/trime-gukwan/)
+- `trime-gukwan`：源文件以[MIT 許可](https://mit-license.org/)發佈，菊韻以[CC BY NC SA 4.0 許可](cc-by-nc-sa)發佈。主題介紹請見：[trime-gukwan: 同文輸入法36鍵鍵盤主題 Trime IME 36 Keys Keyboard Theme](https://github.com/HoengSaan/trime-gukwan/)
   - WD-XL Lubrifont / WD-XL 滑油字：僅用於按鍵，來源爲[NightFurySL2001/WD-XL-font](https://github.com/HoengSaan/trime-gukwan/blob/main/NightFurySL2001/WD-XL-font)。由於**滑油字**闕失部份字符，部分佈局有闕字現象，不能接受者可使用其他字型。
   - Shanggu / 尚古：僅用於候選欄，來源爲[GuiWonder/Shanggu](https://github.com/GuiWonder/Shanggu)。由於**尚古**闕失部分罕有字，不能接受者可使用**字雲**、**天珩字庫**或其他字型。（亦可作爲後備字型設置）
   - Chocolate Classical Sans / 朱古力黑體：除按鍵・按鍵註釋・候選欄之外，來源爲[MoonlitOwen/ChocolateSans](https://github.com/MoonlitOwen/ChocolateSans)。
