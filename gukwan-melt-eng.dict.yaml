@@ -12,16 +12,10 @@
 
 ---
 name: gukwan-melt-eng
-version: "19.6.4b"
+version: "20.5b"
 import_tables:
+  - en_dicts/en_gw  # 補充詞庫
   - en_dicts/en_ext # 補充詞庫
   - en_dicts/en     # 主詞庫
+  - en_dicts/en_sup # 超級詞庫
 ...
-
-rime-cantonese	rimecantonese
-rime-gukwan	rimegukwan
-gukwan gukwan
-Cantonese	cantonese
-Hokkien	hokkien
-Taishanese	taishanese
-Trime	trime

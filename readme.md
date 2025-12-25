@@ -37,7 +37,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 支持各類方言、三拼輸入、漢英混打，各種特殊符號、日期時間輸入，各類反查等。
 
 - 以下功能出廠自帶：
-  - **漢英混打：允許漢字英文混打，基於 melt-eng。**
+  - **漢英混打：允許漢字英文混打，基於 melt-eng，增加超大詞庫。**
   - 繪文字（表情）：可以粵語輸入繪文字，默認關閉
   - 符號：特殊符號輸入，鍵值爲`/`。[學習如何使用符號](https://github.com/HoengSaan/rime-gukwan/blob/main/symbols-gukwan.yaml)
   - Unicode腳本：以 Unicode 編號直接輸入字符，適合輸入組合字符，空白字符等難複製特殊字符，鍵值爲`U`（unicode）
@@ -55,7 +55,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
     - 【`/time`】時間（SHiGaen/SiGaan）：`vsg`｜`/sg`
     - 【`/week`】星期（SingKi）：`vsk`｜`/sk`
     - 【`/datetime`】日時（NJatSHi/JatSi）：`vjs`｜`/js`｜`vrs`｜`/rs`；ISO 8601/RFC 3339 格式日期時間，以東八區（UTC+8）爲準
-    - 【`/weeknumber`】週數（Week Number）：`vwn`｜`/wn`；今年第幾周
+    - 【`/weeknumber`】週數（Week Number）：`vwn`｜`/wn`；今年第幾週
     - 【`/timestamp`】時間戳（Time Stamp），`vts`｜`/ts`
     - 【`/lunar`】農曆（NungLik），`vnl`｜`/nl`
     - 【`/zithi`】節氣（ZitHi）：`vzh`｜`/zh`｜；廿四節氣同日期
@@ -224,11 +224,11 @@ Android建議使用Trime並使用**菊韻主題**（`菊韻.trime.yaml`），使
 
 <mark>定製方案不應修改方案本身，閣下應使用補靪或根據原方案自製方案文件。</mark>
 
-### 漢英混打大詞庫
+### 漢英混打詞庫選擇
 
-大詞庫增加40萬條詞條，將大大增加英文輸入體驗。多數情況下並不影響打字，但並非完全無影響，故默認只調用小詞庫。
+菊韻漢英混打使用大詞庫，增加40萬條詞條，可以一定程度改善英文輸入體驗。多數情況下並不影響打字，但並非完全無影響。若想用返普通melt-eng，則用`gw_custom/Easy English Nano`內文件覆蓋默認方案。默認方案副本儲存於`gw_custom/Easy English Super`。自行打補靪亦可。
 
-若想使用大詞庫，只需將`gw_custom/Easy English Super`內文件覆蓋默認方案即可，同正常安裝無誤。反之，若想用返小詞庫，則用`gw_custom/Easy English Nano`內文件覆蓋大詞庫方案即可。
+測試用詞：`reincarnation`，如無候選項即爲小詞庫（Nano），反之則爲大詞庫（Super）。  
 
 ### 添加新詞庫
 
