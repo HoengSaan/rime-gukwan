@@ -12,7 +12,7 @@
 
 ---
 name: gukwan.chars1
-version: "20.3b"
+version: "20.5.1b"
 sort: by_weight
 ...
 僮	zhong6	
@@ -114,7 +114,8 @@ sort: by_weight
 姝	zjyu1	
 䇬	zjyu1	
 模	mo4	
-摸	mo1	3%
+摸	mo1	
+摸	mo2	
 乎	hwu4	
 胍	gwaa1	3%
 箍	ku1	
@@ -652,7 +653,8 @@ sort: by_weight
 愈	hjyu6	
 瘉	hjyu6	0%
 媽	maa1	
-𭡡	du6	
+𭡡	do6	
+𭡡	do6	
 肚	tu5	
 焸	hing2	3%
 簿	bu2	
@@ -1200,7 +1202,7 @@ sort: by_weight
 梵	faan4	5%
 欠	hem3	3%
 斛	gok3	
-哭	huk6	
+哭	huk3	
 速	cuk1	
 遬	cuk1	0%
 𧫷	cuk1	0%
