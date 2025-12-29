@@ -130,7 +130,7 @@
         </ul>
             <li>師韻讀<code>yu</code>定讀<code>i</code><ul>
                             <li>
-              其實讀開<code>yu</code>就應該全部讀<code>i</code>，但係不能避免遇到隻冇識既字，就直情跟hin1廣州音。此處不作改變，如不能辨別者，請手動更改方案。
+              其實讀開<code>yu</code>就應該全部讀<code>yu</code>，但係不能避免遇到隻唔識既字，就直情跟先廣州音。此處不作改變，如不能辨別者，請手動更改方案。
             </li>
             <li>
                 關於白讀字請見<code>readme-dialect.md</code>）。
@@ -142,7 +142,6 @@
   </ul>
 </details>
 </blockquote>
-
 <mark>請務必閱讀以下說明，並根據說明自行調整方案。</mark>
 
 ## 順德系方言

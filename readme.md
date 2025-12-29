@@ -93,11 +93,11 @@ Android使用同文輸入法可用自帶主題（`gukwan~.trime.yaml`），使�
 - `gukwan-gwanaan`【均安話（順德系）】：以均安話比較有代表性特徵製作，兼容部份新派發音。
 - `gukwan-sekki`【石岐話（香山系）】：以石歧話新派音製作。（老派音需要自行製作字表，菊韻字表不能轉換）
 
-詳細列表同方案細節請參攷`readme-dialect.md`（[Link](https://github.com/HoengSaan/rime-gukwan/blob/main/readme-dialect.md)）
+詳細列表同方案細節請參攷[`readme-dialect.md`](https://github.com/HoengSaan/rime-gukwan/blob/main/readme-dialect.md)。
 
 ## 輸入
 
-打字方式仍遵從當年`rime-jyutping`基本原則。輸入廣州話時同`rime-cantonese`竝無分別，故此不贅述。多數方案使用粵拼，部份方言使用擴展粵拼，詳細請參攷`readme-dialect.md`（[Link](https://github.com/HoengSaan/rime-gukwan/blob/main/readme-dialect.md)）。
+打字方式仍遵從當年`rime-jyutping`基本原則。輸入廣州話時同`rime-cantonese`竝無分別，故此不贅述。多數方案使用粵拼，部份方言使用擴展粵拼，詳細請參攷[`readme-dialect.md`](https://github.com/HoengSaan/rime-gukwan/blob/main/readme-dialect.md)。
 
 菊韻支持竝**默認開啓三拼**，即所有漢字皆可以三鍵輸入（不含聲調）。**三拼輸入不影響聲調輸入**，用家仍然可以使用傳統打法。如不能接受，下文有解說如何關閉三拼。
 
