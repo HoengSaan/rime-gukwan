@@ -1945,7 +1945,7 @@ local lunar_holidays = {
   ["中秋節"] = "0815",  -- 八月十五
   ["重陽節"] = "0909",  -- 九月初九
   ["臘八節"] = "1208",  -- 臘月初八
-  ["冬節"] = "1121",    -- 臘月廿三
+  ["小年"] = "1224"  -- 臘月廿四
 }
 
 -- 获取中文星期（例如 "星期一"）都是为了利用现有函数
@@ -2076,6 +2076,14 @@ local function get_upcoming_holidays()
           -- 格式化为 "yyyy年mm月dd日"
           formatted_date = jq_date:sub(1, 4) .. "年" .. jq_date:sub(6, 7) .. "月" .. jq_date:sub(9, 10) .. "日"
           table.insert(upcoming_holidays, {"清明節", formatted_date, days_left})
+      end
+      if jq_name == "冬至" then
+          -- 直接使用完整日期
+          local formatted_date = jq_date:gsub("%-", "")  -- 去掉日期中的"-"
+          local days_left = days_until(formatted_date)  -- 获取距离清明节的天数
+          -- 格式化为 "yyyy年mm月dd日"
+          formatted_date = jq_date:sub(1, 4) .. "年" .. jq_date:sub(6, 7) .. "月" .. jq_date:sub(9, 10) .. "日"
+          table.insert(upcoming_holidays, {"冬節", formatted_date, days_left})
       end
   end
 
