@@ -10,7 +10,7 @@ Yes, we reinvented the wheels again.
 
 ### 初聲
 
-![jhg1](pic\jhg1.png)
+<img src="pic\jhg1.png"/>
 
 青色者於多數環境不能正常組合。紅色者爲後備用。（知組Unicode無入，僅爲替代字符，tj實爲「ᄅᄐ」）
 
@@ -23,7 +23,7 @@ Yes, we reinvented the wheels again.
 
 ### 中聲
 
-![jhg2](pic\jhg2.png)
+<img src="pic\jhg2.png"/>
 
 青色者於多數環境不能正常組合。紅色者並未有實際用途。星號字處理較爲特殊，請仔細閱讀下方說明。
 
@@ -52,7 +52,7 @@ Yes, we reinvented the wheels again.
 
 ### 終聲
 
-![jhg3](pic\jhg3.png)
+<img src="pic\jhg3.png"/>
 
 青色者於實際環境或不能正常組合。
 
@@ -76,9 +76,9 @@ Yes, we reinvented the wheels again.
 
 ### 粵語 - 粵海片 - 南海類 - 順德南小片 - 小欖話
 
-![jhg4](pic\jhg4.png)
+<img src="pic\jhg4.png"/>
 
 ### 官話 - 北京官話 - 普通話
 
-![jhg5](pic\jhg5.png)
+<img src="pic\jhg5.png"/>
 
