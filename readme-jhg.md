@@ -78,7 +78,15 @@ Yes, we reinvented the wheels again.
 
 <img src="pic\jhg4.png"/>
 
-### 官話 - 北京官話 - 普通話
+### 粵語 - 粵海片 - 廣州類 - 廣州話
+
+廣州話是珠江流域以及廣東大多數地區之通用語。考慮到實際情況並無強行高擧並區分來孃。
+
+<img src="pic\jhg6.png"/>
+
+### 官話 - 北京官話 - 京師片 - 普通話
+
+普通話（國語/新國音）是基於北京話，是中國標準語。
 
 <img src="pic\jhg5.png"/>
 
