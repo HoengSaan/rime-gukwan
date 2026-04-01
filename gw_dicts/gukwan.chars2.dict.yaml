@@ -12,9 +12,10 @@
 
 ---
 name: gukwan.chars2
-version: "20.3b"
+version: "20.5.5b"
 sort: by_weight
 ...
+
 〇	ling4	
 㐀	jau1	0%
 㐂	hi2	5%
@@ -616,6 +617,7 @@ sort: by_weight
 㞗	giau1	
 㞗	kiau4	0%
 㞘	duk1	
+㞘	duk3	
 㞝	cik1	0%
 㞞	cung4	0%
 㞞	sung4	5%
@@ -1197,7 +1199,7 @@ sort: by_weight
 㫦	tou1	0%
 㫧	bou6	0%
 㫨	on1	0%
-㫩	cjeon1	0%
+㫩	cjeon1	
 㫪	zjung1	0%
 㫫	hin2	0%
 㫬	ceon4	0%
@@ -9285,6 +9287,7 @@ sort: by_weight
 褦	lia5	0%
 褦	naai6	5%
 褦	nang3	0%
+褦	nang1	
 褦	noi6	0%
 褩	bun1	0%
 褪	tan3	
@@ -12400,6 +12403,8 @@ sort: by_weight
 𨰻	bou2	0%
 𨳊	gau1	
 𨳍	cat6	
+𨳍	ceot6	
+𨳍	cot6	
 𨳒	diu2	
 𨴴	bing1	0%
 𨶙	lan2	

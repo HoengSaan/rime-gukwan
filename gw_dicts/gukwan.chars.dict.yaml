@@ -12,7 +12,7 @@
 
 ---
 name: gukwan.chars
-version: "19.8.1b"
+version: "20.5.5b"
 sort: by_weight
 ...
 
@@ -1014,7 +1014,7 @@ sort: by_weight
 提	sji4	0%
 𦑡	sji4	0%
 㖷	sji4	0%
-匙	sji4	0%
+匙	sji4	
 䈕	sji4	0%
 堤	sji4	0%
 禔	sji4	0%
@@ -16537,7 +16537,7 @@ sort: by_weight
 渙	wai3	0%
 濊	wai3	0%
 𥢶	kui3	0%
-酹	lyi6	
+酹	lyi6	0%
 頪	lyi6	0%
 㲕	lyi6	0%
 䬽	lyi6	0%

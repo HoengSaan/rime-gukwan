@@ -12,9 +12,10 @@
 
 ---
 name: gukwan.chars1
-version: "20.5.4b"
+version: "20.5.5b"
 sort: by_weight
 ...
+
 僮	zhong6	
 筒	tung2	
 衷	crung1	
@@ -45,7 +46,6 @@ sort: by_weight
 騎	ke4	
 皮	pi1	
 匙	cy4	
-匙	cji4	
 離	le4	0%
 璃	le1	0%
 疵	cy1	
@@ -1000,7 +1000,7 @@ sort: by_weight
 隸	dai6	
 唳	looi6	5%
 捩	lai2	5%
-納	naap6
+鈉	naap6	
 脆	coi3	
 篲	wai6	0%
 鏏	wai6	0%
@@ -1036,7 +1036,7 @@ sort: by_weight
 珮	pui3	5%
 妹	mui1	0%
 潰	kui2	
-酹	laai6	0%
+酹	laai6	5%
 代	daai6	0%
 袋	doi2	0%
 慨	koi2	
@@ -1286,6 +1286,8 @@ sort: by_weight
 怵	zreot1	
 絀	shot1	
 出	cjyut1	0%
+出	cjut1	0%
+出	cjot1	0%
 不	bat1	
 柫	fit1	
 爩	wat1	
@@ -1580,3 +1582,25 @@ sort: by_weight
 𥊼	chaang4	
 捳	ngok6	
 䠄	lin2	
+屋	uk3	
+捉	zhuk3	
+壢	lik2	
+壺	hu1	5%
+絡	luk1	0%
+絡	look1	0%
+娣	daai1	
+糯	nuo6	
+時	sjy4	
+蒔	sjy6	
+篾	met6	
+清	ceng1	
+織	zjek1	
+某	maau5	
+謀	maau4	
+眠	men4	
+蘆	lo4	0%
+臍	zy1	
+閃	saam1	
+溜	liu1	
+䘆	hen2	
+哭	huk3
