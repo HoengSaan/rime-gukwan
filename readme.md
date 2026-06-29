@@ -18,7 +18,8 @@ This work is licensed under a
 ### 其他菊韻項目
 
 - 菊韻同文主題：[trime-gukwan: 同文輸入法36鍵鍵盤主題 Trime IME 36 Keys Keyboard Theme](https://github.com/HoengSaan/trime-gukwan/)
-- 菊韻和語【停止維護】：[rime-kikwin: 菊韻日本語入力法 基於中州韻 Japanese IME (RIME Scheme)](https://github.com/HoengSaan/rime-kikwin)
+- 菊韻和語【停止維護】：[rime-kikwin: 菊韻日本語入力法 基於中州韻 Gukwan Japanese IME (RIME Scheme)](https://github.com/HoengSaan/rime-kikwin)
+- 菊韻諺文：[HoengSaan/rime-gugun: 菊韻諺文輸入法 音碼 基於中州韻 Gukwan Hangul IME (Rime Scheme)](https://github.com/HoengSaan/rime-gugun)
 
 # 簡介
 
@@ -28,9 +29,7 @@ This is a schema based on [Rime Input Method](https://rime.im/).
 
 菊韻支持輸入除廣州話之外粵語方言，如小欖話、順德話、石歧話（新派）等。更多資訊請閱讀下文竝參攷[菊韻 – なかやま園](https://zonsan.fc2.page/?cat=123)。[關於如何安裝](#安裝)。
 
-菊韻爲本人自用，只要一日未有更合本人之粵語輸入方案，則維護不停。
-
-加筆：閣下可提供自己方言之音韻特徵同字音表，本人可爲閣下製作方案。
+菊韻爲本人自用，只要一日未有更合本人之粵語輸入方案，則維護不停。（維護已停）
 
 # 功能
 
@@ -188,7 +187,8 @@ Android建議使用Trime並使用**菊韻主題**（`菊韻.trime.yaml`），使
   - 其他字如有韻書，處理同上。
   - 例外字，即不符合音韻規律，但不成規模者，則單獨記音。
   - 白讀音，儘量記載齊全。
-  - 順德系方言單字變調（如「哭」`huk6`「錢」`cin1`等），亦儘量記錄。
+  - 順德系方言單字變調（如「哭」`huk3`等），亦儘量記錄。
+  - 小欖話上陰入口語音一類（1* 4），陰上變調二類（2‘ 45）如有收錄，均視作陰平。
   - 【注意】多音字由於無單獨調整，不能保證發音準確。
 
 # 安裝
@@ -208,7 +208,7 @@ Android建議使用Trime並使用**菊韻主題**（`菊韻.trime.yaml`），使
 ### 簡略安裝流程
 
 1. 安裝 RIME：[Weasel 小狼毫](https://github.com/rime/weasel)（WINDOWS）[Squirrel 鼠鬚管](https://github.com/rime/squirrel)｜[fcitx5-macos](https://github.com/fcitx-contrib/fcitx5-macos)（MacOS）[ibus](https://github.com/ibus/ibus)→[ibus-rime](https://github.com/rime/ibus-rime)｜[fcitx5](https://github.com/fcitx/fcitx5)（Linux）[同文輸入法](https://github.com/osfans/trime)｜[fcitx5-Android](https://github.com/fcitx5-android/fcitx5-android)（Android）｜[倉輸入法](https://github.com/imfuxiao/Hamster)（iOS）
-2. 安裝菊韻同所需依賴
+2. 安裝菊韻同所需依賴（通常丟去程式文件夾即可）
    1. **rime-gukwan**（**本方案**）
    2. [rime-cantonese](https://github.com/rime/rime-cantonese)（**必選**，用於廣州話反査、粵語八股文、調用部份詞庫）
    3. [rime-kunyomi](https://github.com/sgalal/rime-kunyomi/)（**可選**，用於和語訓讀反査）
@@ -267,7 +267,9 @@ Android建議使用Trime並使用**菊韻主題**（`菊韻.trime.yaml`），使
 - `jyut6ping3-gw.schema.yaml`：三拼版`rime-cantonese`（廣州話），支持菊韻所有功能。
 - `jyut6ping3-gw-cp.schema.yaml`：關閉三拼功能，支持菊韻除三拼以外一切功能。
 
-關於非廣州話方案以及參攷用方案請見`readme-dialect.md`（[Link](https://github.com/HoengSaan/rime-gukwan/blob/main/readme-dialect.md)）。
+關於非廣州話方案以及參攷用方案請見`readme-dialect.md`。
+
+關於小欖話方案請見`readme-siulaam.md`（[Link](https://github.com/HoengSaan/rime-gukwan/blob/main/readme-siulaam.md)）。
 
 ## 字詞
 
